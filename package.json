@@ -1,0 +1,12 @@
+{
+  "name": "Al_Jazeera_-_Palestine_In_Focus",
+  "version": "0.0.1",
+  "dependencies": {
+    "metalsmith": "^0.11.0"
+  },
+  "author": "Piotr Fedorczyk <piotr@piotrf.pl>",
+  "contributors": [
+    "Laurian Gridinoc <laurian@gmail.com>",
+    "Mark Boas <mark.boas@gmail.com>"
+  ]
+}
