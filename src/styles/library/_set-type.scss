@@ -14,11 +14,11 @@
   font-size  : $font-size;
   line-height: $line-height;
 }
-// @mixin set-font-small {
-//   font-size  : $font-size-s;
-//   line-height: $line;
-// }
-// @mixin set-font-xsmall {
-//   font-size  : $font-size-xs;
-//   line-height: $line-s;
-// }
+@mixin set-type-small {
+  font-size  : $font-size-s;
+  line-height: $line-height;
+}
+@mixin set-type-xsmall {
+  font-size  : $font-size-xs;
+  line-height: $line-height;
+}

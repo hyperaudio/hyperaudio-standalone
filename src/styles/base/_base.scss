@@ -16,3 +16,7 @@ body {
   @include set-type-medium;
   font-family: $font-family;
 }
+
+body * {
+  @include box-sizing(border-box);
+}

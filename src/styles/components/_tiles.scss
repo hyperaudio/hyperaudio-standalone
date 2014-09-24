@@ -1,0 +1,30 @@
+/**
+ * Tiles
+ * ============================================ */
+
+.tile {
+  position: relative;
+}
+
+.tile__figure {
+  padding-right: $space;
+}
+
+.tile__meta {
+  @include set-type-xsmall;
+}
+.tile__title {
+  @include set-type-xsmall;
+  @include truncate;
+  margin-top: $space-x;
+  opacity: $opacity;
+}
+.tile__text {
+  @include set-type-xsmall;
+  @include truncate;
+  @include hyphenate;
+  opacity: $opacity;
+}
+.tile__transcript {
+  @include set-type-xsmall;
+}

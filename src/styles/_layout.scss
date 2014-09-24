@@ -1,0 +1,35 @@
+/*
+  ===============================================
+  # LAYOUT
+  ===============================================
+*/
+
+$sidebar-width: 265px;
+$footer-height: $space-h;
+$header-height: $space-h;
+
+// Site Side
+.site-side {
+  @include position-top-left(0,0);
+  @include position-bottom-left(0,0);
+  @include set-size($sidebar-width,100%);
+  @include transform(translate3d(0,0,0));
+  box-shadow: 0 $space-x ($space-x * (-1)) $shadow-strong;
+  overflow-y: auto;
+  position: fixed;
+  &.moved {
+    @include transform(translate3d(($sidebar-width * (-1)),0,0));
+  }
+}
+
+// Site Body
+.site-body {
+  height: 100%;
+}
+
+// Page Header
+.header { height: $header-height }
+
+// Page Footer
+@include stick-footer(50px, ".wrapper", ".push", ".footer");
+

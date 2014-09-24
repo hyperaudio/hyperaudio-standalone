@@ -5,4 +5,7 @@
 @mixin paint-default() {
   background: $background;
   color: $color;
+  * {
+    border-color: $graphite-HL;
+  }
 }

@@ -1,0 +1,22 @@
+/**
+ * Thumbnails
+ * ============================================ */
+
+.thumbnail {
+  height: 100%;
+  position: relative;
+}
+
+.thumbnail__image {
+  width: 100%;
+}
+.thumbnail__label {
+  @include position-bottom-right(0,0);
+  @include set-type-xsmall;
+  background: $mono-Blk;
+  color: $mono-Wt;
+  display: block;
+  font-weight: $font-weight-bold;
+  padding-left: $space-x;
+  padding-right: $space-x ;
+}

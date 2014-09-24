@@ -1,0 +1,20 @@
+/**
+ * Separators
+ * ============================================ */
+
+%separator {
+  border-color: $graphite-HL;
+  border-width: 1px 0 0 0;
+  clear: none;
+  margin: $space-x 0;
+}
+
+.separator--strong {
+  @extend %separator;
+  border-style: solid;
+}
+
+.separator--weak {
+  @extend %separator;
+  border-style: dotted;
+}
