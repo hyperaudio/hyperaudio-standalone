@@ -10,9 +10,9 @@
 //   font-size  : $font-size-l;
 //   line-height: $line-s;
 // }
-@mixin set-font-medium {
-  font-size  : $font-m;
-  line-height: $line-m;
+@mixin set-type-medium {
+  font-size  : $font-size;
+  line-height: $line-height;
 }
 // @mixin set-font-small {
 //   font-size  : $font-size-s;

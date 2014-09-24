@@ -3,5 +3,6 @@
  * ============================================ */
 
 @mixin paint-default() {
-
+  background: $background;
+  color: $color;
 }

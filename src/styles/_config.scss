@@ -7,90 +7,116 @@
 /* Colors
 ----------------------------------------------- */
 
-/* Shades of Grey
-------------------- */
-
 // Monochrome
-$black              : #000;
-$mono-dark          : #1E1E1E;
-$mono-strong        : #4D4D4D;
-$mono-medium        : #666;
-$mono-weak          : #BBB;
-$mono-light         : #E5E5E5;
-$white              : #fff;
+$mono-Blk           : #000;
+// $mono-LD
+$mono-D             : #606060;
+// $mono-HD
+$mono-M             : #9a9a9a;
+// $mono-LLt
+$mono-Lt            : #BBB;
+// $mono-HL
+$mono-Wt            : #fff;
 
 // Rainbow
-$red-dark           : #800408;
-$red-strong         : #AA2226;
-$red-medium         : #C0262B;
-$red-weak           : #DF9295;
-$red-light          : #F9E9E9;
+$red                : #F22613;
+$peach-schnapps     : #FDDBD8;
 
-$blue-dark          : #004770;
-$blue-strong        : #00578A;
-$blue-medium        : #4B88AC;
-$blue-weak          : #B2CCDB;
-$blue-light         : #E5EDF3;
+$seagull            : #81CFE0;
+$mabel              : #DBF5FA;
+
+$graphite-LD        : #788A91;
+$graphite-HD        : #9AA7AC;
+$graphite-LLt       : #BCC4C8;
+$graphite-HL        : #DADFE1;
 
 /* Shadows and glows
-------------------- */
+----------------------------------------------- */
 
-$shadow-heavy       : rgba(0,0,0,0.9);
-$shadow-strong      : rgba(0,0,0,0.7);
-$shadow-medium      : rgba(0,0,0,0.5);
-$shadow-weak        : rgba(0,0,0,0.25);
-$shadow-light       : rgba(0,0,0,0.1);
+$shadow-heavy       : rgba(0,0,0,0.85);
+$shadow-strong      : rgba(0,0,0,0.71);
+$shadow-medium      : rgba(0,0,0,0.57);
+$shadow-weak        : rgba(0,0,0,0.29);
+$shadow-light       : rgba(0,0,0,0.15);
 
-$flare-heavy        : rgba(255,255,255,0.9);
-$flare-strong       : rgba(255,255,255,0.75);
-$flare-medium       : rgba(255,255,255,0.5);
-$flare-weak         : rgba(255,255,255,0.25);
-$flare-light        : rgba(255,255,255,0.1);
+$flare-heavy        : rgba(255,255,255,0.85);
+$flare-strong       : rgba(255,255,255,0.71);
+$flare-medium       : rgba(255,255,255,0.57);
+$flare-weak         : rgba(255,255,255,0.29);
+$flare-light        : rgba(255,255,255,0.15);
 
 /* Typography
 ----------------------------------------------- */
 
 // Font Families
-$secondary-font     : 'Radley', 'Times New Roman', Times, serif;
-$primary-font       : 'Radley', 'Times New Roman', Times, serif;
+$primary-font       : 'Helvetica Neue', Arial, sans-serif;
 
 // Font Sizes
-$font-h             : 60px; // %huge-text
-$font-xxl           : 30px;
-$font-xl            : 24px;
-$font-l             : 19px;
-$font-m             : 16px;
-$font-s             : 14px;
-$font-xs            : 13px;
+$font-size-xl       : 24px;
+$font-size-l        : 20px;
+$font-size-m        : 16px;
+$font-size-s        : 14px;
+$font-size-xs       : 12px;
+
+// Font Weights
+$font-weight-light  : 300;
+$font-weight-regular: 400;
+$font-weight-medium : 500;
+$font-weight-bold   : 700;
 
 // Line Heights
-$line-l             : 1.8em;
-$line-m             : 1.65em;
-$line-s             : 1.45em;
-$line-xs            : 1.3em;
-$line-xxs           : 1em;
+$line-height-m      : 1.50em;
+$line-height-s      : 1.25em;
 
 /* Spaces
 ----------------------------------------------- */
-$space-h            : 100px;
-$space-xl           : 50px;
+
+$spaces: (
+  'h'   50px,
+  'l'   25px,
+  'm'   15px,
+  's'   10px,
+  'x'   5px,
+  'n'   0
+)!default;
+
+$space-h            : 50px;
 $space-l            : 20px;
 $space-m            : 15px;
 $space-s            : 10px;
 $space-x            : 5px;
+$space-n            : 0;
 
 /* Border Radii
 ----------------------------------------------- */
+
 $radius-absolute    : 1000px;
-$radius-l           : 7px;
-$radius-m           : 5px;
-$radius-s           : 2px;
+$radius-l           : 9px;
+$radius-m           : 6px;
+$radius-s           : 3px;
 
 /* Default Definitions
 ----------------------------------------------- */
-$default-background       : $white;
-$default-color            : $mono-strong;
-$default-line             : $line-m;
-$default-size             : $font-m;
-$default-transition-time  : 0.3s;
-$default-transition-delay : 0s;
+
+// Colors
+$background         : $mono-Wt;
+$color              : $mono-D;
+
+// Flares and shadows
+$flare              : $flare-medium;
+$shadow             : $shadow-medium;
+
+// Typography
+$font-family        : $primary-font;
+$font-size          : $font-size-m;
+$font-weight        : $font-weight-regular;
+$line-height        : $line-height-m;
+
+// Transitions
+$transition-delay   : 0s;
+$transition-time    : .5s;
+
+// Misc
+$border-radius      : $radius-s;
+$opacity            : .5;
+$space              : $space-m;

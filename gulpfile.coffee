@@ -26,7 +26,7 @@ gulp.task "compile-sass", ->
 #
 gulp.task "watch", ->
   gulp.watch "./src/styles/**/*.scss", [ "compile-sass" ]
-  gulp.watch ["./app/*.html"], ["html"]
+  gulp.watch ["./*.html"], ["html"]
 
 # Connect server
 #
