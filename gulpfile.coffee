@@ -3,6 +3,10 @@
 gulp    = require("gulp")
 $       = require("gulp-load-plugins")()
 
+handleError = (err) ->
+  console.log err.toString()
+  @emit "end"
+
 # DEFINE PARTIAL TASKS
 # ============================================== #
 
@@ -19,6 +23,7 @@ gulp.task "compile-sass", ->
       require("node-bourbon").includePaths,
       'node_modules'
       ]))
+    .on("error", handleError)
     .pipe gulp.dest("assets/styles")
     .pipe $.connect.reload()
 
