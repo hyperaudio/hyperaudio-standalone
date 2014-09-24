@@ -1,3 +1,5 @@
-# Node Modules
+# Node modules
+node_modules/
 
-node_modules
+# Compiled styles and scripts
+dist
