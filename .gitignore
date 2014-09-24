@@ -2,4 +2,5 @@
 node_modules/
 
 # Compiled styles and scripts
-dist
+assets/scripts
+assets/styles
