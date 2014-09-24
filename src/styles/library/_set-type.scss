@@ -1,0 +1,24 @@
+/**
+ * Set Type
+ * ============================================ */
+
+// @mixin set-font-xlarge {
+//   font-size  : $font-size-xl;
+//   line-height: $line-s;
+// }
+// @mixin set-font-large {
+//   font-size  : $font-size-l;
+//   line-height: $line-s;
+// }
+@mixin set-font-medium {
+  font-size  : $font-m;
+  line-height: $line-m;
+}
+// @mixin set-font-small {
+//   font-size  : $font-size-s;
+//   line-height: $line;
+// }
+// @mixin set-font-xsmall {
+//   font-size  : $font-size-xs;
+//   line-height: $line-s;
+// }

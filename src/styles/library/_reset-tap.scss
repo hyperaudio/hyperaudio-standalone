@@ -1,0 +1,10 @@
+/**
+ * Reset Tap
+ * ============================================ */
+
+@mixin reset-tap {
+  -webkit-tap-highlight-color: transparent;
+  &:-moz-focus-inner {
+    border: 0;
+  }
+}

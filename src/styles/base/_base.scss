@@ -1,0 +1,20 @@
+/**
+ * Base
+ * ============================================ */
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  @include paint-default;
+  @include set-font-medium;
+}
+
+// Text Selection
+::selection { background: $blue-light; }      /* Safari */
+::-moz-selection { background: $blue-light; } /* Firefox */

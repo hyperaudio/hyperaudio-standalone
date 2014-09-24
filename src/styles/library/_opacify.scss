@@ -1,0 +1,13 @@
+/**
+ * Opacify
+ * ============================================ */
+
+@mixin opacify($opacity: 0.75) {
+  @include transition(all $default-transition-time linear $default-transition-delay);
+  opacity: $opacity;
+  &:hover,
+  &:active,
+  &.is-active {
+    opacity: 1;
+  }
+}

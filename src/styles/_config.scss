@@ -1,0 +1,96 @@
+/*
+  ===============================================
+  # CONFIG
+  ===============================================
+*/
+
+/* Colors
+----------------------------------------------- */
+
+/* Shades of Grey
+------------------- */
+
+// Monochrome
+$black              : #000;
+$mono-dark          : #1E1E1E;
+$mono-strong        : #4D4D4D;
+$mono-medium        : #666;
+$mono-weak          : #BBB;
+$mono-light         : #E5E5E5;
+$white              : #fff;
+
+// Rainbow
+$red-dark           : #800408;
+$red-strong         : #AA2226;
+$red-medium         : #C0262B;
+$red-weak           : #DF9295;
+$red-light          : #F9E9E9;
+
+$blue-dark          : #004770;
+$blue-strong        : #00578A;
+$blue-medium        : #4B88AC;
+$blue-weak          : #B2CCDB;
+$blue-light         : #E5EDF3;
+
+/* Shadows and glows
+------------------- */
+
+$shadow-heavy       : rgba(0,0,0,0.9);
+$shadow-strong      : rgba(0,0,0,0.7);
+$shadow-medium      : rgba(0,0,0,0.5);
+$shadow-weak        : rgba(0,0,0,0.25);
+$shadow-light       : rgba(0,0,0,0.1);
+
+$flare-heavy        : rgba(255,255,255,0.9);
+$flare-strong       : rgba(255,255,255,0.75);
+$flare-medium       : rgba(255,255,255,0.5);
+$flare-weak         : rgba(255,255,255,0.25);
+$flare-light        : rgba(255,255,255,0.1);
+
+/* Typography
+----------------------------------------------- */
+
+// Font Families
+$secondary-font     : 'Radley', 'Times New Roman', Times, serif;
+$primary-font       : 'Radley', 'Times New Roman', Times, serif;
+
+// Font Sizes
+$font-h             : 60px; // %huge-text
+$font-xxl           : 30px;
+$font-xl            : 24px;
+$font-l             : 19px;
+$font-m             : 16px;
+$font-s             : 14px;
+$font-xs            : 13px;
+
+// Line Heights
+$line-l             : 1.8em;
+$line-m             : 1.65em;
+$line-s             : 1.45em;
+$line-xs            : 1.3em;
+$line-xxs           : 1em;
+
+/* Spaces
+----------------------------------------------- */
+$space-h            : 100px;
+$space-xl           : 50px;
+$space-l            : 20px;
+$space-m            : 15px;
+$space-s            : 10px;
+$space-x            : 5px;
+
+/* Border Radii
+----------------------------------------------- */
+$radius-absolute    : 1000px;
+$radius-l           : 7px;
+$radius-m           : 5px;
+$radius-s           : 2px;
+
+/* Default Definitions
+----------------------------------------------- */
+$default-background       : $white;
+$default-color            : $mono-strong;
+$default-line             : $line-m;
+$default-size             : $font-m;
+$default-transition-time  : 0.3s;
+$default-transition-delay : 0s;
