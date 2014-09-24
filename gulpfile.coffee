@@ -5,7 +5,10 @@ $       = require("gulp-load-plugins")()
 
 gulp.task "compile-sass", ->
   gulp.src("src/styles/**/*.scss")
-    .pipe($.sass(includePaths: require("node-bourbon").includePaths))
+    .pipe($.sass(includePaths: [
+      require("node-bourbon").includePaths,
+      'node_modules'
+      ]))
     .pipe gulp.dest("dist")
 
 gulp.task "watch", ->
