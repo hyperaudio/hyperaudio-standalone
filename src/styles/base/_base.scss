@@ -12,10 +12,7 @@ html {
 
 body {
   @include paint-default;
+  @include fill-selection($blue-HL);
   @include set-type-medium;
   font-family: $font-family;
 }
-
-// Text Selection
-// ::selection { background: $blue-light; }      /* Safari */
-// ::-moz-selection { background: $blue-light; } /* Firefox */
