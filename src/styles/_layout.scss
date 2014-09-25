@@ -52,10 +52,12 @@ $header-height: $footer-height;
 .page-body {
   @include transition(transform $transition-time);
   height: 100%;
-  opacity: 1;
+  &.moved--left,
+  &.moved--right {
+    opacity: $opacity;
+  }
   &.moved--left {
     @include transform(translate3d($sidebar-width * (-1),0,0));
-    opacity: $opacity;
   }
   &.moved--right {
     @include transform(translate3d($sidebar-width,0,0));
