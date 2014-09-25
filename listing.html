@@ -10,32 +10,38 @@
 </head>
 <body>
 
-  <div class="page-side--left moved" data-side-push="right" data-side-state="inactive">
+  <div class="page-side--left animated moved" data-side-push="right" data-side-state="inactive">
+    <h1>Menu</h1>
     <ol class="menu">
-      <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part One</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part Two</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part Three</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part Four</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Lost Cities of Palestine</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Against the Wall</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Area C</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Last Shepherds of the Valley</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Beyond the Walls</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Hunger Strike</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Going Against the Grain</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">The Pain Inside</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Forbidden Pilgrimage</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Inside Shin Bet</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">The Price of Oslo – Part One</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">The Price of Oslo – Part Two</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Gaza Lives On</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Gaza Left in the Dark</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Palestina Amore</a></li>
-      <li class="menu__item"><a href="#" class="menu__link">Gaza We are Coming</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">All Videos</a>
+        <ol>
+          <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part One</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part Two</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part Three</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part Four</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Lost Cities of Palestine</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Against the Wall</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Area C</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Last Shepherds of the Valley</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Beyond the Walls</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Hunger Strike</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Going Against the Grain</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">The Pain Inside</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Forbidden Pilgrimage</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Inside Shin Bet</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">The Price of Oslo – Part One</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">The Price of Oslo – Part Two</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Gaza Lives On</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Gaza Left in the Dark</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Palestina Amore</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Gaza We are Coming</a></li>
+        </ol>
+      </li>
     </ol>
   </div>
 
-  <div class="page-body">
+  <div class="page-body animated">
 
     <div class="wrapper">
 
@@ -167,13 +173,24 @@
       Palestine in Focus
     </footer>
 
-    <div class="page-overlay animated hide jsToggleSide" data-state="inactive" data-fold></div>
+    <div class="page-overlay animated jsToggleSide" data-state="inactive" data-fold></div>
 
   </div>
 
-  <div class="page-side--right moved" data-side-push="left" data-side-state="inactive">
-    Right Sidebar
-  </div>
+  <aside class="page-side--right animated moved" data-side-push="left" data-side-state="inactive">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2>Share</h2>
+    <ol class="menu">
+      <li class="menu__item"><a href="#" class="menu__link">Facebook</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Twitter</a></li>
+    </ol>
+  </aside>
   <script src="dist/scripts/vendor.js"></script>
   <script src="dist/scripts/aj.js"></script>
 </body>

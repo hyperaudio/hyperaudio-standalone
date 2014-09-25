@@ -14,12 +14,10 @@
 showSidebar         = (target, direction) ->
   @pageBody.addClass("moved--" + direction)
   $(target).removeClass "moved"
-  $(@overlay).data "state", "active"
 
 hideSidebar         = (target, direction) ->
   @pageBody.removeClass("moved--" + direction)
   $(target).addClass    "moved"
-  $(@overlay).data "state", "inactive"
 
 renderSidebar       = () ->
   $(@pageSide).each () ->
@@ -33,15 +31,17 @@ renderSidebar       = () ->
       hideSidebar @target, @direction
     # clipBody()
 
-alterSidebarState   = (target) ->
-  $(@pageBody).addClass "animated"
-  $(@pageSide).addClass "animated"
-  $(@pageSide).data     "side-state", "inactive"
+  states = []
+  $(@pageSide).each ->
+    @sideState = $(this).data("side-state")
+    states.push(@sideState)
+  if states.indexOf("active") is -1
+    toggleOverlay("inactive")
+  else
+    toggleOverlay("active")
 
-  # if this has target
-    # @targetSide       = $(@pageSide)
-  #else
-    # @targetSide       = $(".page-side--" + target)
+alterSidebarState   = (target) ->
+  $(@pageSide).data     "side-state", "inactive"
 
   @targetSide       = $(".page-side--" + target)
   @state            = $(@targetSide).data "side-state"
@@ -51,9 +51,10 @@ alterSidebarState   = (target) ->
   else
     $(@targetSide).data   "side-state", "active"
 
+  renderSidebar()
+
 onSidebarToggle    = (target) ->
   alterSidebarState(target)
-  renderSidebar()
 
 # Bind Clicks
 # ------------------------------------------ #

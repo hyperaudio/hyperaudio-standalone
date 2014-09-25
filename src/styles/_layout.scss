@@ -6,16 +6,23 @@
 
 $sidebar-width: 265px;
 $footer-height: $space-h;
-$header-height: $space-h;
+$header-height: $footer-height;
 
+.page-side--right,
+.page-side--left,
+.page-body {
+  @include transition(
+    transform $transition-time ease,
+    opacity $transition-time ease
+  );
+}
 
 %page-side {
   @include set-size($sidebar-width, 100%);
-  @include transition(transform $transition-time);
-  top: 0;
   bottom: 0;
   overflow-y: auto;
   position: fixed;
+  top: 0;
   width: $sidebar-width;
 }
 
@@ -45,11 +52,14 @@ $header-height: $space-h;
 .page-body {
   @include transition(transform $transition-time);
   height: 100%;
+  opacity: 1;
   &.moved--left {
     @include transform(translate3d($sidebar-width * (-1),0,0));
+    opacity: $opacity;
   }
   &.moved--right {
     @include transform(translate3d($sidebar-width,0,0));
+    opacity: $opacity;
   }
 }
 
@@ -57,12 +67,6 @@ $header-height: $space-h;
   @include position-top-right(0,0);
   @include position-bottom-left(0,0);
   z-index: 100;
-  &.show {
-    display: block;
-  }
-  &.hide {
-    display: none;
-  }
 }
 
 // Page Header
