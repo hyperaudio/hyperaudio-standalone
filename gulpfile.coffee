@@ -21,7 +21,7 @@ gulp.task "compile-sass", ->
   gulp.src("./src/styles/**/*.scss")
     .pipe($.sass(includePaths: [
       require("node-bourbon").includePaths,
-      'node_modules'
+      'bower_components'
       ]))
     .on("error", handleError)
     .pipe gulp.dest("assets/styles")

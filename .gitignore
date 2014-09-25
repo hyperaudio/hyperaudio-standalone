@@ -1,6 +1,9 @@
 # Node modules
 node_modules/
 
+# Bower components
+bower_components/
+
 # Compiled styles and scripts
-assets/scripts
-assets/styles
+dist/scripts
+dist/styles

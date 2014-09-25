@@ -1,0 +1,27 @@
+{
+  "name": "Palestine in Focus",
+  "version": "1.0.0",
+  "authors": [
+    "Piotr Fedorczyk <piotr@piotrf.pl>"
+  ],
+  "contributors": [
+    "Laurian Gridinoc <laurian@gmail.com>",
+    "Mark Boas <mark.boas@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.0.2",
+    "jquery": "~2.1.1",
+    "catalyst": "https://github.com/interactivethings/catalyst.git#1.0.0-beta"
+  }
+}
