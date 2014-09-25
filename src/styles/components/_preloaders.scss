@@ -20,7 +20,7 @@
 %preloader__blob {
   @include animation(preloader ($transition-time * 3.0) infinite ease-in-out);
   @include animation-fill-mode(both);
-  background-color: $shadow-weak;
+  background-color: $shadow;
   border-radius: 100%;
   display: inline-block;
 }

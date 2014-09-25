@@ -7,22 +7,19 @@
 @pageSide           = $("[class^=page-side--]")
 @pageBody           = $(".page-body")
 @pageFoot           = $(".page-footer")
-@pageOver           = $(".page-overlay")
 @pageSideToggle     = $(".jsToggleSide")
 
 # Define Magic
 # ------------------------------------------ #
 showSidebar         = (target, direction) ->
   @pageBody.addClass("moved--" + direction)
-  @pageOver.removeClass "hide"
-  @pageOver.addClass    "show"
   $(target).removeClass "moved"
+  $(@overlay).data "state", "active"
 
 hideSidebar         = (target, direction) ->
   @pageBody.removeClass("moved--" + direction)
-  @pageOver.removeClass "show"
-  @pageOver.addClass    "hide"
   $(target).addClass    "moved"
+  $(@overlay).data "state", "inactive"
 
 renderSidebar       = () ->
   $(@pageSide).each () ->
@@ -37,7 +34,6 @@ renderSidebar       = () ->
     # clipBody()
 
 alterSidebarState   = (target) ->
-  $(@pageOver).addClass "animated"
   $(@pageBody).addClass "animated"
   $(@pageSide).addClass "animated"
   $(@pageSide).data     "side-state", "inactive"
