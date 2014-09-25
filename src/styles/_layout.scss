@@ -8,28 +8,59 @@ $sidebar-width: 265px;
 $footer-height: $space-h;
 $header-height: $space-h;
 
-// Site Side
-.site-side {
-  @include position-top-left(0,0);
-  @include position-bottom-left(0,0);
-  @include set-size($sidebar-width,100%);
-  @include transform(translate3d(0,0,0));
-  box-shadow: 0 $space-x ($space-x * (-1)) $shadow-strong;
+
+%page-side {
+  @include set-size($sidebar-width, 100%);
+  @include transition(transform $transition-time);
+  top: 0;
+  bottom: 0;
   overflow-y: auto;
   position: fixed;
+  width: $sidebar-width;
+}
+
+// Page Side
+.page-side--left {
+  @extend %page-side;
+  @include transform(translate3d(0,0,0));
+  box-shadow: 0 $space-x ($space-x * (-1)) $shadow-strong;
+  left: 0;
   &.moved {
     @include transform(translate3d(($sidebar-width * (-1)),0,0));
   }
 }
 
-// Site Body
-.site-body {
+// Page Side
+.page-side--right {
+  @extend %page-side;
+  @include transform(translate3d($sidebar-width * (-1),0,0));
+  box-shadow: 0 $space-x ($space-x * (-1)) $shadow-strong;
+  left: 100%;
+  &.moved {
+    @include transform(translate3d(0,0,0));
+  }
+}
+
+// Page Body
+.page-body {
+  @include transition(transform $transition-time);
   height: 100%;
+  &.moved--left {
+    @include transform(translate3d($sidebar-width * (-1),0,0));
+  }
+  &.moved--right {
+    @include transform(translate3d($sidebar-width,0,0));
+  }
+}
+
+.page-overlay {
+  @include position-top-right(0,0);
+  @include position-bottom-left(0,0);
+  z-index: 100;
 }
 
 // Page Header
 .header { height: $header-height }
 
 // Page Footer
-@include stick-footer(50px, ".wrapper", ".push", ".footer");
-
+@include stick-footer($footer-height, ".wrapper", ".push", ".footer");

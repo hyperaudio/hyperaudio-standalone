@@ -48,8 +48,8 @@ gulp.task "compile-coffee", ->
     .pipe gulp.dest("./dist/scripts")
     .pipe $.coffee
       bare: true
-    .pipe gulp.dest("./dist/scripts")
     .on "error", handleError
+    .pipe gulp.dest("./dist/scripts")
     .pipe $.connect.reload()
 
 # Watch files

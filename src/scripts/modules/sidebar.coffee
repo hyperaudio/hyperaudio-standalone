@@ -4,56 +4,66 @@
 
 # Name Elements
 # ------------------------------------------ #
-@pageSide           = $(".page-sidebar")
+@pageSide           = $("[class^=page-side--]")
 @pageBody           = $(".page-body")
 @pageFoot           = $(".page-footer")
 @pageOver           = $(".page-overlay")
-@pageSideToggle     = $("[data-toggle-sidebar]")
+@pageSideToggle     = $(".jsToggleSide")
 
 # Define Magic
 # ------------------------------------------ #
-showSidebar         = () ->
+showSidebar         = (target, direction) ->
+  @pageBody.addClass("moved--" + direction)
   @pageOver.removeClass "hide"
-  @pageSide.removeClass "moved"
-  @pageBody.addClass    "moved"
-  @pageFoot.addClass    "moved"
   @pageOver.addClass    "show"
+  $(target).removeClass "moved"
 
-hideSidebar         = () ->
-  @pageBody.removeClass "moved"
-  @pageFoot.removeClass "moved"
+hideSidebar         = (target, direction) ->
+  @pageBody.removeClass("moved--" + direction)
   @pageOver.removeClass "show"
-  @pageSide.addClass    "moved"
   @pageOver.addClass    "hide"
+  $(target).addClass    "moved"
 
 renderSidebar       = () ->
-  @state            = $(@pageSide).data "side-state"
-  if @state is "active"
-    showSidebar()
-  else
-    hideSidebar()
-  clipBody()
+  $(@pageSide).each () ->
+    @target         = $(this)
+    @state          = $(@target).data("side-state")
+    @direction      = $(@target).data("side-push")
 
-alterSidebarState   = () ->
+    if @state is "active"
+      showSidebar @target, @direction
+    else
+      hideSidebar @target, @direction
+    # clipBody()
+
+alterSidebarState   = (target) ->
   $(@pageOver).addClass "animated"
   $(@pageBody).addClass "animated"
-  $(@pageFoot).addClass "animated"
   $(@pageSide).addClass "animated"
+  $(@pageSide).data     "side-state", "inactive"
 
-  @state            = $(@pageSide).data "side-state"
+  # if this has target
+    # @targetSide       = $(@pageSide)
+  #else
+    # @targetSide       = $(".page-side--" + target)
+
+  @targetSide       = $(".page-side--" + target)
+  @state            = $(@targetSide).data "side-state"
+
   if @state is "active"
-    $(@pageSide).data   "side-state", "inactive"
+    $(@targetSide).data   "side-state", "inactive"
   else
-    $(@pageSide).data   "side-state", "active"
+    $(@targetSide).data   "side-state", "active"
 
-onSidebarToggle    = () ->
-  alterSidebarState()
+onSidebarToggle    = (target) ->
+  alterSidebarState(target)
   renderSidebar()
 
 # Bind Clicks
 # ------------------------------------------ #
 @pageSideToggle.click( ->
-  onSidebarToggle()
+  @target = $(this).data("side-target")
+  onSidebarToggle(@target)
 )
 
 renderSidebar()

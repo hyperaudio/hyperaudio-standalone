@@ -10,24 +10,49 @@
 </head>
 <body>
 
-  <div class="site-side moved">
-    Site Side
+  <div class="page-side--left moved" data-side-push="right" data-side-state="inactive">
+    <ol class="menu">
+      <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part One</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part Two</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part Three</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Al Nakba – Part Four</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Lost Cities of Palestine</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Against the Wall</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Area C</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Last Shepherds of the Valley</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Beyond the Walls</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Hunger Strike</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Going Against the Grain</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">The Pain Inside</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Forbidden Pilgrimage</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Inside Shin Bet</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">The Price of Oslo – Part One</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">The Price of Oslo – Part Two</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Gaza Lives On</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Gaza Left in the Dark</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Palestina Amore</a></li>
+      <li class="menu__item"><a href="#" class="menu__link">Gaza We are Coming</a></li>
+    </ol>
   </div>
 
-  <div class="site-body">
+  <div class="page-body">
 
     <div class="wrapper">
 
       <header class="header">
         <div class="group">
           <div class="s-span-1of6">
-            <i class="icon-menu"></i> Menu
+            <a class="jsToggleSide" data-side-target="left">
+              <i class="icon-menu"></i> Menu
+            </a>
           </div>
           <div class="s-span-4of6">
             <h1>Palestine in Focus</h1>
           </div>
           <div class="s-span-1of6">
-            <i class="icon-menu"></i> About
+            <a class="jsToggleSide" data-side-target="right">
+              <i class="icon-menu"></i> About
+            </a>
           </div>
         </div>
       </header>
@@ -44,6 +69,9 @@
             <div class="s-span-1of6">
               <i class="icon-filter"></i> Filter
             </div>
+          </div>
+          <div class="toolbar__extension">
+            Toolbar Extension
           </div>
         </div>
 
@@ -139,8 +167,13 @@
       Palestine in Focus
     </footer>
 
+    <div class="page-overlay jsToggleSide" data-fold></div>
+
   </div>
 
+  <div class="page-side--right moved" data-side-push="left" data-side-state="inactive">
+    Right Sidebar
+  </div>
   <script src="dist/scripts/vendor.js"></script>
   <script src="dist/scripts/aj.js"></script>
 </body>
