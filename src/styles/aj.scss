@@ -9,6 +9,11 @@
 @import "bourbon";
 @import "catalyst/src/catalyst";
 
+/* Fonts
+----------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900,900italic|Raleway:700,400|Merriweather);
+@import "../fonts/aj/style.css";
+
 /* Settings
 ----------------------------------------------- */
 @import "config";
