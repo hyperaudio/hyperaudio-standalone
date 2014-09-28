@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <div class="page-side--left moved" data-side-push="right" data-side-state="inactive">
+  <div class="page-side--left moved" data-side-push="right" data-side-state="active">
     <h1>Menu</h1>
     <ol class="menu">
       <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
@@ -69,10 +69,10 @@
           <div class="toolbar__input">
             <input type="search" class="text-input" placeholder="Search…" value="1985" />
           </div>
-          <a class="toolbar__toggle">
+          <a class="toolbar__toggle jsToggleToolbarExt">
             <i class="icon-tools"></i> <span class="hide">Filter</span>
           </a>
-          <div class="toolbar__extension">
+          <div class="toolbar__extension" data-toolbarext-state="active">
             <div class="swipe-list">
               <ol class="swipe-list__wrapper">
                 <li class="swipe-list__item"><a class="swipe-list__link">1980</a></li>

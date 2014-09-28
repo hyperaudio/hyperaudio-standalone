@@ -1,4 +1,4 @@
-window.onload = ->
+renderSwipeList = () ->
   mySwiper = new Swiper(".swipe-list",
 
     #Your options here:

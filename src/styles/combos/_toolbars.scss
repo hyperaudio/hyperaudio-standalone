@@ -19,5 +19,9 @@ $toolbar-toggle-size: 40px;
   display: inline-block;
 }
 .toolbar__extension {
+  display: none;
   border-top: 1px solid $shadow;
+  &.toolbar__extension--active {
+    display: block;
+  }
 }

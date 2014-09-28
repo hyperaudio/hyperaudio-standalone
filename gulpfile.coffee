@@ -39,10 +39,10 @@ gulp.task "concat-vendor", ->
 # Compile Coffeescript
 # ---------------------------------------------- #
 gulp.task "compile-coffee", ->
-  gulp.src(
+  gulp.src([
     "./src/scripts/modules/*.coffee",
-    "./src/scripts/*.coffee"
-    )
+    "./src/scripts/scripts.coffee"
+    ])
     .pipe $.concat 'aj.coffee'
     .pipe gulp.dest("./dist/scripts")
     .pipe $.coffee

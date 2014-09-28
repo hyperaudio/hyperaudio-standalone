@@ -62,5 +62,3 @@ onSidebarToggle    = (target) ->
   @target = $(this).data("side-target")
   onSidebarToggle(@target)
 )
-
-renderSidebar()
