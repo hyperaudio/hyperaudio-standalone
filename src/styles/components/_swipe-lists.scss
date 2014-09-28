@@ -1,0 +1,49 @@
+/**
+ * Swipe List
+ * ============================================ */
+
+.swipe-list {
+  @include backface-visibility(hidden);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  z-index: 1; // Fix of Webkit flickering
+}
+.swipe-list__wrapper {
+  @include transition-duration(0s);
+  @include transition-property(left, top);
+  @include transition-timing-function(ease);
+  @include transform(translate3d(0,0,0));
+  @include box-sizing(content-box);
+  line-height: 1em;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+}
+.swiper-free-mode > .swipe-list__wrapper {
+  @include transition-timing-function(ease-out);
+  margin: 0 auto;
+}
+.swipe-list__item {
+  @include box-sizing(content-box);
+  float: left;
+  // display: inline-block;
+}
+.swipe-list__link {
+  display: block;
+  padding: $space-s;
+  .swipe-list__item--active & {
+    background: $blue-HL;
+  }
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+}

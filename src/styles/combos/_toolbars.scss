@@ -1,0 +1,23 @@
+/**
+ * Toolbars
+ * ============================================ */
+
+$toolbar-toggle-size: 40px;
+
+.toolbar {
+  border-bottom: 1px solid $shadow;
+  position: relative;
+}
+.toolbar__input {
+  margin-right: $toolbar-toggle-size;
+}
+.toolbar__toggle {
+  @include position-top-right(0,0);
+  width: $toolbar-toggle-size;
+  padding: $space-x $space-s;
+  text-align: right;
+  display: inline-block;
+}
+.toolbar__extension {
+  border-top: 1px solid $shadow;
+}

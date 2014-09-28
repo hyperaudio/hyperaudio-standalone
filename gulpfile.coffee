@@ -33,9 +33,8 @@ gulp.task "compile-sass", ->
 gulp.task "concat-vendor", ->
   gulp.src([
     "./bower_components/jquery/dist/jquery.js"
+    "./bower_components/swiper/src/idangerous.swiper.js"
   ]).pipe($.concat("vendor.js")).pipe gulp.dest("./dist/scripts")
-  return
-
 
 # Compile Coffeescript
 # ---------------------------------------------- #
