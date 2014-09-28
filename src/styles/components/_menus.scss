@@ -1,0 +1,32 @@
+/**
+ * Menus
+ * ============================================ */
+
+.menu-heading {
+  padding-left: $space-s;
+  padding-right: $space-s;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  border-bottom: 1px solid $shadow-light;
+}
+
+.menu {
+
+}
+
+.menu__item {
+  border-bottom: 1px solid $shadow-light;
+}
+
+.menu__link {
+  @include set-type-small;
+  display: block;
+  padding: $space-s;
+}
+
+.menu .menu {
+  .menu__link {
+    padding-left: $space-l;
+  }
+}

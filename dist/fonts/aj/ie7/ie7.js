@@ -13,6 +13,7 @@
 		el.innerHTML = '<span style="font-family: \'aj\'">' + entity + '</span>' + html;
 	}
 	var icons = {
+		'icon-logo-aljazeera': '&#xe615;',
 		'icon-users': '&#xe600;',
 		'icon-comment': '&#xe601;',
 		'icon-search': '&#xe602;',

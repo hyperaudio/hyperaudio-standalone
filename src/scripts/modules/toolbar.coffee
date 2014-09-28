@@ -11,8 +11,10 @@
 # ------------------------------------------ #
 showExtension       = () ->
   $(@toolbarExt).addClass "toolbar__extension--active"
+  $(@toolbarExt).removeClass "toolbar__extension--inactive"
 
 hideExtension       = () ->
+  $(@toolbarExt).addClass "toolbar__extension--inactive"
   $(@toolbarExt).removeClass "toolbar__extension--active"
 
 renderToolbar       = () ->

@@ -19,9 +19,19 @@ $toolbar-toggle-size: 40px;
   display: inline-block;
 }
 .toolbar__extension {
-  display: none;
-  border-top: 1px solid $shadow;
+  @include transition(
+    height $transition-time ease,
+    opacity $transition-time ease
+  );
+  overflow: hidden;
   &.toolbar__extension--active {
-    display: block;
+    border-top: 1px solid $shadow;
+    height: auto;
+    opacity: 1;
+  }
+  &.toolbar__extension--inactive {
+    border-top: 1px solid transparent;
+    height: 0px;
+    opacity: 0;
   }
 }
