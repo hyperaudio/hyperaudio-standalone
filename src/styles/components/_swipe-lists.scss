@@ -34,7 +34,7 @@
 }
 .swipe-list__link {
   display: block;
-  padding: $space-s;
+  padding: $space-s 7px;
   .swipe-list__item--active & {
     background: $blue-HL;
   }
