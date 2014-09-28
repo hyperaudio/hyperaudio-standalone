@@ -18,7 +18,6 @@ clipBody = () ->
 
 renderBody = () ->
   @state              = $(@pageBody).data("body-state")
-  console.log(@state)
   if @state is "clipped"
     clipBody()
   else
