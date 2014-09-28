@@ -29,7 +29,6 @@ renderSidebar       = () ->
       showSidebar @target, @direction
     else
       hideSidebar @target, @direction
-    # clipBody()
 
   states = []
   $(@pageSide).each ->
@@ -37,8 +36,10 @@ renderSidebar       = () ->
     states.push(@sideState)
   if states.indexOf("active") is -1
     toggleOverlay("inactive")
+    @pageBody.data "body-state", ""
   else
     toggleOverlay("active")
+    @pageBody.data "body-state", "clipped"
 
 alterSidebarState   = (target) ->
   $(@pageSide).data     "side-state", "inactive"
@@ -55,6 +56,7 @@ alterSidebarState   = (target) ->
 
 onSidebarToggle    = (target) ->
   alterSidebarState(target)
+  renderBody()
 
 # Bind Clicks
 # ------------------------------------------ #

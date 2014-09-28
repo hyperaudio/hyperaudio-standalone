@@ -3,8 +3,9 @@
  * ============================================ */
 
 .footer {
+  background: $shadow-light; // STYlE
   border-top-width: 1px;
   border-top-style: solid;
-  padding: $space-s;
+  padding: $space-x $space-s;
   text-align: center;
 }

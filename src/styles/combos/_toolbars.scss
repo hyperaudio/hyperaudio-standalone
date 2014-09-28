@@ -23,14 +23,14 @@ $toolbar-toggle-size: 40px;
     height $transition-time ease,
     opacity $transition-time ease
   );
+  border-top: 1px solid $shadow;
+  margin-top: -1px;
   overflow: hidden;
   &.toolbar__extension--active {
-    border-top: 1px solid $shadow;
     height: auto;
     opacity: 1;
   }
   &.toolbar__extension--inactive {
-    border-top: 1px solid transparent;
     height: 0px;
     opacity: 0;
   }

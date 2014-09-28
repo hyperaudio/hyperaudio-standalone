@@ -8,7 +8,7 @@
 ----------------------------------------------- */
 
 $sidebar-width: 265px;
-$footer-height: $space-h;
+$footer-height: 40px;
 $header-height: $footer-height;
 $page-side-footer-height: 120px;
 
@@ -31,7 +31,7 @@ $page-side-footer-height: 120px;
 
 %page-side {
   @include set-size($sidebar-width, 100%);
-  background: $shadow-light;
+  background: $shadow-light; // STYlE
   bottom: 0;
   overflow-y: auto;
   position: fixed;
@@ -83,6 +83,9 @@ $page-side-footer-height: 120px;
   &.moved--right {
     @include transform(translate3d($sidebar-width,0,0));
     opacity: $opacity;
+  }
+  &.clipped {
+    overflow: hidden;
   }
 }
 

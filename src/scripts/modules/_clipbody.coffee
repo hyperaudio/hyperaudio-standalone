@@ -2,18 +2,24 @@
 # ClipBody
 # ========================================== #
 
-# @body                 = $("body")
-# @sidebarState         = $(".page-sidebar").data "side-state"
-# @cardsortState        = $(".cardsort").data "cardsort-state"
+# Name Elements
+# ------------------------------------------ #
 
-# states = []
-# $(".modal").each ->
-#   @modalState = $(this).data "modal-state"
-#   states.push(@modalState)
-# states.push(@sidebarState)
-# states.push(@cardsortState)
+@pageBody             = $(".page-body")
 
-# if states.indexOf("active") is -1
-#   @body.removeClass "clipped"
-# else
-#   @body.addClass "clipped"
+# Define Magic
+# ------------------------------------------ #
+
+unclipBody = () ->
+  $(@pageBody).removeClass("clipped")
+
+clipBody = () ->
+  $(@pageBody).addClass("clipped")
+
+renderBody = () ->
+  @state              = $(@pageBody).data("body-state")
+  console.log(@state)
+  if @state is "clipped"
+    clipBody()
+  else
+    unclipBody()
