@@ -1,0 +1,80 @@
+/**
+ * Menus
+ * ============================================ */
+
+.menu {
+}
+
+.menu__heading {
+  border-bottom: 1px solid $shadow-light;
+  font-weight: bold;
+  line-height: 50px;
+  padding-left: $space-s;
+  padding-right: $space-s;
+}
+
+.menu__list {
+  display: block;
+}
+
+.menu__list-item {
+  display: block;
+}
+
+.menu__link {
+  @include set-type-small;
+  border-bottom: 1px solid $shadow-light;
+  display: block;
+  padding: $space-s;
+  position: relative;
+}
+
+.menu__link-pointer {
+  .menu__link & {
+    @include position-top-right(50%, $space-s);
+    line-height: $line-height;
+    margin-top: $line-height * -0.3;
+  }
+}
+
+.menu__link-back {
+  @include position-top-left(0,0);
+  @include position-bottom-left(0,0);
+  background: $mono-Lt;
+  height: 100%;
+  box-shadow: inset -1px 0 2px $shadow-light;
+  display: block;
+  padding: $space-m $space-s;
+  width: $space-h;
+}
+
+/* Menu Levels
+----------------------------------------------- */
+
+.menu__pane--lvl-0,
+.menu__pane--lvl-1 {
+  @include transition(transform $transition-time);
+  @include transform(perspective(0) rotateY(0deg) translate3d(0, 0, 0));
+  @include position-top-left(0,0);
+  box-shadow: inset -1px 0 2px $shadow-light;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  &.moved--right {
+    @include transform(perspective(500px) rotateY(20deg) translate($sidebar-width + $space-h));
+  }
+  &.moved--left {
+    @include transform-origin(left);
+    @include transform(perspective(500px) rotateY(-20deg) translate($sidebar-width * -1));
+  }
+}
+
+.menu__pane--lvl-0 {
+  background: $mono-Lt;
+  z-index: 5;
+}
+.menu__pane--lvl-1 {
+  background: $mono-HL;
+  padding-left: $space-h;
+  z-index: 10;
+}

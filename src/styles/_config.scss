@@ -15,7 +15,7 @@ $mono-D             : #606060;
 $mono-M             : #9a9a9a;
 // $mono-LLt
 $mono-Lt            : #BBB;
-// $mono-HL
+$mono-HL            : #D9D9D9;
 $mono-Wt            : #fff;
 
 // Rainbow
@@ -75,15 +75,15 @@ $line-height-x      : 1.0em;
 ----------------------------------------------- */
 
 $spaces: (
-  'h'   50px,
-  'l'   25px,
+  'h'   40px,
+  'l'   20px,
   'm'   15px,
   's'   10px,
   'x'   5px,
   'n'   0
 )!default;
 
-$space-h            : 50px;
+$space-h            : 40px;
 $space-l            : 20px;
 $space-m            : 15px;
 $space-s            : 10px;
@@ -123,3 +123,8 @@ $transition-time    : .5s;
 $border-radius      : $radius-s;
 $opacity            : .5;
 $space              : $space-s;
+
+/* Default Definitions
+----------------------------------------------- */
+
+$sidebar-width: 265px;

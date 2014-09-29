@@ -2,7 +2,7 @@
  * Toolbars
  * ============================================ */
 
-$toolbar-toggle-size: 40px;
+$toolbar-toggle-size: $space-h;
 
 .toolbar {
   border-bottom: 1px solid $shadow;
@@ -27,7 +27,7 @@ $toolbar-toggle-size: 40px;
   margin-top: -1px;
   overflow: hidden;
   &.toolbar__extension--active {
-    height: auto;
+    height: 37px;
     opacity: 1;
   }
   &.toolbar__extension--inactive {

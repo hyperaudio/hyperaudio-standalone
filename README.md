@@ -1,4 +1,4 @@
-Al Jazeera - Palestine in Focus Mobile
+Al Jazeera - Palestine Retold Mobile
 ======================================
 
 # 1. Installation

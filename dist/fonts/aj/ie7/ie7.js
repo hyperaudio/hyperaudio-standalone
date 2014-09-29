@@ -34,7 +34,12 @@
 		'icon-scrollbar': '&#xe611;',
 		'icon-twitter': '&#xe612;',
 		'icon-facebook': '&#xe613;',
-		'icon-googleplus': '&#xe614;',
+		'icon-gplus': '&#xe614;',
+		'icon-add-to-list': '&#xe616;',
+		'icon-s-arrow-left': '&#xe618;',
+		'icon-s-arrow-right': '&#xe617;',
+		'icon-m-arrow-left': '&#xe619;',
+		'icon-m-arrow-right': '&#xe61a;',
 		'0': 0
 		},
 		els = document.getElementsByTagName('*'),

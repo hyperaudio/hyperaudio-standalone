@@ -7,8 +7,7 @@
 /* Name Variables
 ----------------------------------------------- */
 
-$sidebar-width: 265px;
-$footer-height: 40px;
+$footer-height: $space-h;
 $header-height: $footer-height;
 $page-side-footer-height: 120px;
 
@@ -31,7 +30,7 @@ $page-side-footer-height: 120px;
 
 %page-side {
   @include set-size($sidebar-width, 100%);
-  background: $shadow-light; // STYlE
+  background: $mono-Lt; // STYLE
   bottom: 0;
   overflow-y: auto;
   position: fixed;
@@ -59,6 +58,10 @@ $page-side-footer-height: 120px;
   &.moved {
     @include transform(translate3d(0,0,0));
   }
+}
+
+.page-side__body {
+  overflow: hidden;
 }
 
 .page-side__foot {
