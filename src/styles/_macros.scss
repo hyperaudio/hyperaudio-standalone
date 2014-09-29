@@ -30,7 +30,7 @@ $page-side-footer-height: 120px;
 
 %page-side {
   @include set-size($sidebar-width, 100%);
-  background: $mono-Lt; // STYLE
+  background: $mono-D; // STYLE
   bottom: 0;
   overflow-y: auto;
   position: fixed;
@@ -74,6 +74,7 @@ $page-side-footer-height: 120px;
 ----------------------------------------------- */
 
 .page-body {
+  box-shadow: 0 0 5px $shadow-weak;
   height: 100%;
   opacity: 1;
   &.moved--left,

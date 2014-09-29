@@ -53,27 +53,28 @@
 
 .menu__pane--lvl-0,
 .menu__pane--lvl-1 {
-  @include transition(transform $transition-time);
-  @include transform(perspective(0) rotateY(0deg) translate3d(0, 0, 0));
+  @include transform(translate3d(0, 0, 0) scale(1,1));
   @include position-top-left(0,0);
-  box-shadow: inset -1px 0 2px $shadow-light;
+  box-shadow: -1px 0 2px $shadow-weak;
   height: 100%;
   position: fixed;
   width: 100%;
   &.moved--right {
-    @include transform(perspective(500px) rotateY(20deg) translate($sidebar-width + $space-h));
+    @include transform(translate($sidebar-width + $space-h) scale(0.98,0.98));
   }
   &.moved--left {
     @include transform-origin(left);
-    @include transform(perspective(500px) rotateY(-20deg) translate($sidebar-width * -1));
+    @include transform(scale(0.98,0.98) translate3d($space-s, 0, 0));
   }
 }
 
 .menu__pane--lvl-0 {
+  @include transition(transform $transition-time);
   background: $mono-Lt;
   z-index: 5;
 }
 .menu__pane--lvl-1 {
+  @include transition(transform $transition-time $transition-delay);
   background: $mono-HL;
   padding-left: $space-h;
   z-index: 10;
