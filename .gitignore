@@ -7,3 +7,6 @@ bower_components/
 # Compiled styles and scripts
 dist/scripts
 dist/styles
+
+# Other Stuff
+_todo.md
