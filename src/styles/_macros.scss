@@ -30,7 +30,6 @@ $page-side-footer-height: 120px;
 
 %page-side {
   @include set-size($sidebar-width, 100%);
-  background: $mono-D; // STYLE
   bottom: 0;
   overflow-y: auto;
   position: fixed;
@@ -41,6 +40,7 @@ $page-side-footer-height: 120px;
 // Page Side
 .page-side--left {
   @extend %page-side;
+  @include fill-invert();
   @include transform(translate3d(0,0,0));
   box-shadow: inset -1px 0 $space-x $shadow;
   left: 0;
@@ -53,6 +53,7 @@ $page-side-footer-height: 120px;
 .page-side--right {
   @extend %page-side;
   @include transform(translate3d($sidebar-width * (-1),0,0));
+  background: $mono-HL;
   box-shadow: inset 1px 0 $space-x $shadow;
   left: 100%;
   &.moved {
@@ -77,6 +78,8 @@ $page-side-footer-height: 120px;
   box-shadow: 0 0 5px $shadow-weak;
   height: 100%;
   opacity: 1;
+  position: relative;
+  z-index: 500;
   &.moved--left,
   &.moved--right {
     opacity: $opacity;

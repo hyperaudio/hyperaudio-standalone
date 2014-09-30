@@ -3,9 +3,23 @@
  * ============================================ */
 
 @mixin paint-default() {
-  background: $background;
   color: $color;
+}
+
+@mixin paint-invert() {
+  color: $background;
+}
+
+@mixin fill-default() {
+  background: $background;
   * {
-    border-color: $graphite-HL;
+    border-color: $mono-Lt;
+  }
+}
+
+@mixin fill-invert() {
+  background: $color;
+  * {
+    border-color: $mono-M;
   }
 }

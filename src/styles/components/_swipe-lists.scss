@@ -30,7 +30,6 @@
 .swipe-list__item {
   @include box-sizing(content-box);
   float: left;
-  // display: inline-block;
 }
 .swipe-list__link {
   display: block;
