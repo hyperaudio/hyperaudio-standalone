@@ -1,4 +1,4 @@
-Al Jazeera - Palestine Retold Mobile
+Al Jazeera - Palestine Remixed Mobile
 ======================================
 
 # 1. Installation
