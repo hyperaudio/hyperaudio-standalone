@@ -1,8 +1,0 @@
-/**
- * Fill text selection
- * ============================================ */
-
-@mixin fill-selection($color) {
-  ::selection { background: $color; }      /* Safari */
-  ::-moz-selection { background: $color; } /* Firefox */
-}

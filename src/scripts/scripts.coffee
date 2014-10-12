@@ -6,3 +6,4 @@ $(document).ready ->
   renderToolbar()
   renderSwipeList()
   renderBody()
+  renderFold()

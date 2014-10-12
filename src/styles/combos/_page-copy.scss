@@ -1,0 +1,58 @@
+/**
+ * Page Copy
+ * ============================================ */
+
+%page-copy-block {
+  @include breakpoint(m) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 55%;
+  }
+}
+
+.page-copy {
+  @include set-type-small;
+  position: relative;
+  padding-left: $space-s;
+  padding-right: $space-s;
+  @include breakpoint(m) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  p, blockquote,
+  figcaption {
+    @extend %page-copy-block;
+  }
+  p {
+    @include reset(first, margin-top);
+    @include indent;
+    @include hyphenate;
+    margin-top: $line;
+    text-align: justify;
+  }
+  figure + p {
+    margin-top: $line;
+    @include breakpoint(m) {
+      margin-top: $space-l;
+    }
+  }
+  figure {
+    margin-top: $line;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    @include breakpoint(m) {
+      margin-top: $space-l;
+    }
+  }
+  figcaption {
+    @include set-type-xsmall;
+    color: $mono-M;
+    font-style: italic;
+    margin-top: $space-s;
+    @include breakpoint(m) {
+      margin-top: $line;
+    }
+  }
+}

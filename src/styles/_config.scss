@@ -101,28 +101,24 @@ $radius-s           : 3px;
 /* Default Definitions
 ----------------------------------------------- */
 
-// Colors
-$background         : $mono-Wt;
-$color              : $mono-D;
+$background         : $mono-Wt        !default;
+$color              : $mono-D         !default;
 
-// Flares and shadows
-$flare              : $flare-medium;
-$shadow             : $shadow-light;
+$flare              : $flare-medium   !default;
+$shadow             : $shadow-medium  !default;
+$opacity            : .5              !default;
 
-// Typography
-$font-family        : $primary-font;
-$font-size          : $font-size-m;
-$font-weight        : $font-weight-regular;
-$line-height        : $line-height-m;
+$font               : $primary-font   !default;
+$size               : $font-s         !default;
+$weight             : $font-regular   !default;
+$line               : $line-m         !default;
+$spacing            : $spacing-m      !default;
 
-// Transitions
-$transition-delay   : .2s;
-$transition-time    : .5s;
+$delay              : 0s              !default;
+$time               : $time-m         !default;
 
-// Misc
-$border-radius      : $radius-s;
-$opacity            : .5;
-$space              : $space-s;
+$space              : $space-s        !default;
+$radius             : $radius-s       !default;
 
 /* Default Definitions
 ----------------------------------------------- */

@@ -1,0 +1,44 @@
+/**
+ * Page Fold
+ * ============================================ */
+
+.page-fold {
+  background: $red-LD;
+  background-position: center center;
+  background-size: cover;
+  color: $background;
+  display: block;
+  min-height: 500px;
+  &:after {
+    @include position-top-right(0,0);
+    @include position-bottom-left(0,0);
+    background: $shadow-medium;
+    content: "";
+    display: block;
+    z-index: 25;
+  }
+}
+
+.page-fold .hgroup {
+  @include position-top-left(inherit, $space);
+  @include position-top-right(inherit, $space);
+  z-index: 100;
+}
+
+.page-fold__scroll-indicator {
+  @include position-bottom-left(10%, 50%);
+  @include set-size(50px,50px);
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  display: block;
+  line-height: 50px;
+  margin-left: -25px;
+  text-align: center;
+  z-index: 100;
+  i {
+    font-size: 48px;
+  }
+  @include breakpoint(m) {
+    @include position-bottom-left(5%, 50%);
+  }
+}

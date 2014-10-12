@@ -40,6 +40,7 @@ gulp.task "concat-vendor", ->
 # ---------------------------------------------- #
 gulp.task "compile-coffee", ->
   gulp.src([
+    "./src/scripts/helpers/*.coffee",
     "./src/scripts/modules/*.coffee",
     "./src/scripts/scripts.coffee"
     ])
@@ -55,14 +56,15 @@ gulp.task "compile-coffee", ->
 # ---------------------------------------------- #
 gulp.task "watch", ->
   gulp.watch "./src/styles/**/*.scss", [ "compile-sass" ]
-  gulp.watch ["*.html"], ["html"]
+  gulp.watch ["dist/*.html"], ["html"]
   gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee"], ["compile-coffee"]
 
 # Connect server
 #
 gulp.task "connect", ->
   $.connect.server
-    root: "."
+    root: "./dist"
+    port: 8002
     livereload: true
 
 # DEFAULT TASK

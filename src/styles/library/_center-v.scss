@@ -1,8 +1,0 @@
-/**
- * Center horizontally
- * ============================================ */
-
-@mixin center-vertically {
-  @include position-top(50%);
-  @include translate(transformY(-50%));
-}

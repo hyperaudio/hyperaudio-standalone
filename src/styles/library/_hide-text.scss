@@ -1,9 +1,0 @@
-/**
- * Hide Text
- * ============================================ */
-
-@mixin hide-text {
-  overflow: hidden !important;
-  text-indent: -99999px !important;
-  white-space: nowrap !important;
-}

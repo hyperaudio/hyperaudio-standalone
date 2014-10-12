@@ -1,0 +1,140 @@
+/*
+  ===============================================
+  # Layout
+  ===============================================
+*/
+
+$head-height          : $space-l;
+$foot-height          : $head-height;
+$side-width           : 265px;
+$group-width          : 1000px;
+
+/* Globals
+----------------------------------------------- */
+
+.page-side--right,
+.page-side--left,
+.page-body {
+  @include transition(
+    transform $time ease,
+    opacity $time ease
+  );
+}
+
+.group {
+  max-width: $group-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Page Side
+----------------------------------------------- */
+
+%page-side {
+  @include set-size($side-width, 100%);
+  bottom: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: $side-width;
+}
+
+.page-side--left {
+  @extend %page-side;
+  @include transform(translate3d(0,0,0));
+  left: 0;
+  &.moved {
+    @include transform(translate3d(($side-width * (-1)),0,0));
+  }
+}
+
+.page-side--right {
+  @extend %page-side;
+  @include transform(translate3d($side-width * (-1),0,0));
+  left: 100%;
+  &.moved {
+    @include transform(translate3d(0,0,0));
+  }
+}
+
+.page-side__body {
+  overflow: hidden;
+}
+
+@include stick-footer($foot-height, ".page-side__body", ".page-side__push", ".page-side__foot");
+
+/* Page Body
+----------------------------------------------- */
+
+.page-body {
+  height: 100%;
+  opacity: 1;
+  position: relative;
+  z-index: 500;
+  &.moved--left,
+  &.moved--right {
+    opacity: $opacity;
+  }
+  &.moved--left {
+    @include transform(translate3d($side-width * (-1),0,0));
+  }
+  &.moved--right {
+    @include transform(translate3d($side-width,0,0));
+    opacity: $opacity;
+  }
+  &.clipped {
+    overflow: hidden;
+  }
+}
+
+/* Page Wrap
+----------------------------------------------- */
+
+.page-wrap {
+  padding-top: $head-height;
+}
+
+/* Page Fold
+----------------------------------------------- */
+
+.page-fold {
+  margin-top: ($head-height) * -1;
+  position: relative;
+  z-index: 1;
+}
+
+/* Page Head
+----------------------------------------------- */
+
+.page-head {
+  @include position-top-left(0,0);
+  @include position-top-right(0,0);
+  height: $head-height;
+  z-index: 50;
+}
+
+/* Page Content
+----------------------------------------------- */
+
+.page-content {
+  padding-top: $line;
+  padding-bottom: $line;
+  @include breakpoint(m) {
+    padding-top: $space-h;
+    padding-bottom: $space-h;
+  }
+}
+
+/* Page Foot
+----------------------------------------------- */
+
+@include stick-footer($foot-height, ".page-wrap", ".page-push", ".page-foot");
+
+/* Page Overlay
+----------------------------------------------- */
+
+.page-overlay {
+  @include position-top-right(0,0);
+  @include position-bottom-left(0,0);
+  z-index: 100;
+}

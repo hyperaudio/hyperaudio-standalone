@@ -10,15 +10,15 @@
     @include animation-delay(0);
   }
   .preloader__blob2 {
-    @include animation-delay($transition-time * 0.5);
+    @include animation-delay($time * 0.5);
   }
   .preloader__blob3 {
-    @include animation-delay($transition-time );
+    @include animation-delay($time );
   }
 }
 
 %preloader__blob {
-  @include animation(preloader ($transition-time * 3.0) infinite ease-in-out);
+  @include animation(preloader ($time * 3.0) infinite ease-in-out);
   @include animation-fill-mode(both);
   background-color: $shadow;
   border-radius: 100%;

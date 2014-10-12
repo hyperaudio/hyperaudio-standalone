@@ -1,0 +1,50 @@
+/**
+ * Heading Groups
+ * ============================================ */
+
+.hgroup {
+  text-align: center;
+}
+
+.hgroup__text,
+.hgroup__meta {
+  margin-top: $space-s;
+  @include breakpoint(m) {
+    margin-top: $space-m;
+  }
+}
+
+.hgroup__intro {
+  @include set-type-tiny;
+  letter-spacing: $spacing;
+  opacity: $opacity;
+  text-transform: uppercase;
+  margin-bottom: $space-x;
+  @include breakpoint(m) {
+    margin-bottom: $space-s;
+  }
+}
+
+.hgroup__title {
+  @include set-type-huge;
+  @include hyphenate;
+  font-weight: $font-bold;
+  @include breakpoint(m) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.hgroup__text {
+  @include set-type-small;
+  display: none;
+  @include breakpoint(m) {
+    display: block;
+  }
+}
+
+.hgroup__meta {
+  @include set-type-tiny;
+  font-style: italic;
+  opacity: $opacity;
+}

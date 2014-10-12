@@ -32,8 +32,8 @@
 .menu__link-pointer {
   .menu__link & {
     @include position-top-right(50%, $space-s);
-    line-height: $line-height;
-    margin-top: $line-height * -0.3;
+    line-height: $line;
+    margin-top: $line * -0.3;
   }
 }
 
@@ -69,12 +69,12 @@
 }
 
 .menu__pane--lvl-0 {
-  @include transition(transform $transition-time);
+  @include transition(transform $time);
   background: $mono-Lt;
   z-index: 5;
 }
 .menu__pane--lvl-1 {
-  @include transition(transform $transition-time $transition-delay);
+  @include transition(transform $time $delay);
   background: $mono-HL;
   padding-left: $space-h;
   z-index: 10;

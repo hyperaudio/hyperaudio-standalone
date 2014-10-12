@@ -20,8 +20,8 @@ $toolbar-toggle-size: $space-h;
 }
 .toolbar__extension {
   @include transition(
-    height $transition-time ease,
-    opacity $transition-time ease
+    height $time ease,
+    opacity $time ease
   );
   border-top: 1px solid $shadow;
   margin-top: -1px;

@@ -1,16 +1,12 @@
 {
-  "name": "Palestine Retold",
-  "version": "1.0.0",
+  "name": "aj-palestine-retold",
+  "version": "1.0.0-alpha",
   "authors": [
+    "Mark Boas <mark.boas@gmail.com>",
+    "Laurian Gridinoc <laurian@gmail.com>",
     "Piotr Fedorczyk <piotr@piotrf.pl>"
   ],
-  "contributors": [
-    "Laurian Gridinoc <laurian@gmail.com>",
-    "Mark Boas <mark.boas@gmail.com>"
-  ],
-  "moduleType": [
-    "node"
-  ],
+  "description": "Al Jazeera Palestine Retold, mobile to tablet friendly",
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -23,6 +19,8 @@
     "bourbon": "~4.0.2",
     "jquery": "~2.1.1",
     "catalyst": "https://github.com/interactivethings/catalyst.git#1.0.0-beta",
-    "swiper": "~2.7.0"
+    "swiper": "~2.7.0",
+    "hyperaudio": "git@github.com:AJInteractive/hyperaudio.git#~0.9.4",
+    "margarine": "https://github.com/piotrf/margarine.git#~1.0.18"
   }
 }

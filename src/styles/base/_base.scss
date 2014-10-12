@@ -11,11 +11,11 @@ html {
 }
 
 body {
-  @include paint-default;
-  @include fill-default;
   @include fill-selection($blue-HL);
   @include set-type-medium;
-  font-family: $font-family;
+  background: $background;
+  color: $color;
+  font-family: $font;
 }
 
 body * {
