@@ -12,7 +12,7 @@
 
 /* Fonts
 ----------------------------------------------- */
-// @import url(http://fonts.googleapis.com/css?family=Lato:400,900,900italic|Raleway:700,400|Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900,900italic|Raleway:700,400|Merriweather);
 @import "../fonts/aj/style.css";
 
 /* Settings
@@ -26,11 +26,12 @@
 /* Components
 ----------------------------------------------- */
 @import "components/brandmarks";
-@import "components/highlights";
 @import "components/hgroups";
+@import "components/highlights";
 @import "components/icons";
 @import "components/inputs";
 @import "components/links";
+@import "components/listings";
 @import "components/menus";
 @import "components/preloaders";
 @import "components/separators";

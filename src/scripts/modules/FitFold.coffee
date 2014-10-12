@@ -12,7 +12,3 @@ renderFold = () ->
     "height": foldHeight
   $(foldEl).css
     "top": foldDeliverable
-
-# Call the function where needed
-# ------------------------------------------ #
-$(window).on "resize", throttle(renderFold(), 500)
