@@ -43,6 +43,19 @@ gulp.task "concat-vendor", ->
     "./bower_components/hyperaudio/dist/assets/scripts/mixurltohtm.js"
   ]).pipe($.concat("vendor.js")).pipe gulp.dest("./dist/scripts")
 
+# Minify
+# ---------------------------------------------- #
+gulp.task "compress-js", ->
+  gulp.src([
+    "dist/scripts/vendor.js",
+    "dist/scripts/aj.js"
+  ]).pipe(
+    $.uglifyjs("scripts.js",
+      mangle: false
+      output:
+        beautify: false
+  )).pipe gulp.dest("dist/scripts")
+
 # Compile Coffeescript
 # ---------------------------------------------- #
 gulp.task "compile-coffee", ->
@@ -64,6 +77,7 @@ gulp.task "compile-coffee", ->
 gulp.task "watch", ->
   gulp.watch "./src/styles/**/*.scss", [ "compile-sass" ]
   gulp.watch ["dist/*.html"], ["html"]
+  gulp.watch ["dist/vendor.js", "dist/aj.js"], ["compress-js"]
   gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee"], ["compile-coffee"]
 
 # Connect server
@@ -81,6 +95,7 @@ gulp.task "default", [
   "compile-sass"
   "concat-vendor"
   "compile-coffee"
+  "compress-js"
   "connect"
   "watch"
 ]

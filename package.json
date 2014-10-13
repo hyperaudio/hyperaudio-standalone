@@ -10,6 +10,7 @@
     "gulp-load-plugins": "^0.6.0",
     "gulp-plumber": "^0.6.5",
     "gulp-sass": "^0.7.3",
+    "gulp-uglifyjs": "^0.4.4",
     "gulp-watch": "^1.0.7"
   },
   "author": [
