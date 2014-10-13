@@ -7,6 +7,8 @@ bower_components/
 # Compiled styles and scripts
 dist/scripts
 dist/styles
+dist/fonts/hyperaudio-player
+dist/fonts/hyperaudio
 
 # Other Stuff
 _todo.md

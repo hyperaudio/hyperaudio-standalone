@@ -120,26 +120,12 @@
           </div>
         </header>
 
-        <section class="page-fold" data-fold style="">
-          <div class="hgroup" data-fold-el>
-            <h1 class="hgroup__intro">An Al Jazeera Production</h1>
-            <h2 class="hgroup__title">Palestine Remix</h2>
-
-            <hr class="separator separator--compact" />
-
-            <div class="group">
-              <div class="s-span-1of1 m-span-3of5 m-center">
-                <p class="hgroup__text">In the autumn of 2006, Art of Islamic Pattern tutor Richard Henry from visited Iran in order to research material for a new British Museum course Islamic Geometric Art: Persian Patterns. Richard also gave a public lecture at the Middle East Association in April 2007. This was published in the Journal of the Iran Society.</p>
-                <p class="hgroup__meta">Some Subtitle</p>
-              </div>
-            </div>
+        <div class="HAP HAP--viewer">
+          <div id="viewer-wrapper" class="HAP-output">
+            <div id="output-canvas" class="HAP-canvas HAP-canvas--output"></div>
+            <div id="output-transcript" class="HAP-transcript HAP-transcript--output"></div>
           </div>
-          <div class="page-fold__indicator"><i class="icon-scroll-indicator"></i></div>
-        </section>
-
-        <section class="page-content">
-          Content
-        </section>
+        </div>
 
         <div class="page-push"></div>
 
@@ -160,6 +146,31 @@
     <div class="page-side__foot">Side Footer</div>
   </aside>
 
+  <div id="share-modal" class="modal">
+    <div class="modal-mask"></div>
+    <div class="modal-window">
+      <div class="modal-header">
+        Embed
+      </div>
+      <div class="modal-close">
+        g
+      </div>
+      <form>
+        <div class="modal-input">
+          <label for="share-embed-code">Copy &amp; paste into your page</label>
+          <textarea name="share-embed-code" id="share-embed-code" rows="3" readonly></textarea>
+          <p>Increase &lt;iframe&gt; height to 600 to display the text content</p>
+        </div>
+        <div class="modal-input">
+          <input type="submit" value="OK" />
+        </div>
+      </form>
+    </div>
+  </div>
+
   <script src="scripts/scripts.js"></script>
+  <script type="text/javascript">
+  HAMixUrlToHtm.init('Viewer');
+  </script>
 </body>
 </html>

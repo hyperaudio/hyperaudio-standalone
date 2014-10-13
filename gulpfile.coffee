@@ -72,6 +72,11 @@ gulp.task "compile-coffee", ->
     .pipe gulp.dest("./dist/scripts")
     .pipe $.connect.reload()
 
+# Copy Font Files from Bower Dependencies
+# ---------------------------------------------- #
+gulp.task "copyfiles", ->
+  gulp.src("./bower_components/hyperaudio/dist/assets/fonts/**/*").pipe gulp.dest("./dist/fonts")
+
 # Watch files
 # ---------------------------------------------- #
 gulp.task "watch", ->
@@ -96,6 +101,7 @@ gulp.task "default", [
   "concat-vendor"
   "compile-coffee"
   "compress-js"
+  "copyfiles"
   "connect"
   "watch"
 ]
