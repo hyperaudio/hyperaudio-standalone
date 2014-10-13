@@ -34,6 +34,13 @@ gulp.task "concat-vendor", ->
   gulp.src([
     "./bower_components/jquery/dist/jquery.js"
     "./bower_components/swiper/src/idangerous.swiper.js"
+    "./bower_components/popcorn-js/popcorn.js"
+    "./bower_components/popcorn-js/wrappers/common/popcorn._MediaElementProto.js"
+    "./bower_components/popcorn-js/wrappers/youtube/popcorn.HTMLYouTubeVideoElement.js"
+    "./bower_components/queue-async/queue.min.js"
+    "./bower_components/hyperaudio/dist/assets/scripts/popcorn-extras.js"
+    "./bower_components/hyperaudio/dist/assets/scripts/hyperaudio-pad.js"
+    "./bower_components/hyperaudio/dist/assets/scripts/mixurltohtm.js"
   ]).pipe($.concat("vendor.js")).pipe gulp.dest("./dist/scripts")
 
 # Compile Coffeescript

@@ -8,8 +8,6 @@ $(document).ready ->
   renderBody()
   renderFold()
 
-  # $(window).resize throttle(renderFold(), 500)
-
   $(window).resize throttle((event) ->
     renderFold()
   , 500)

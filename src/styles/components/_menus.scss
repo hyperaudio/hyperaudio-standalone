@@ -60,7 +60,7 @@
   position: fixed;
   width: 100%;
   &.moved--right {
-    @include transform(translate($sidebar-width + $space-h) scale(0.98,0.98));
+    @include transform(translate($side-width + $space-h) scale(0.98,0.98));
   }
   &.moved--left {
     @include transform-origin(left);

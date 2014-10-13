@@ -123,4 +123,7 @@ $radius             : $radius-s       !default;
 /* Default Definitions
 ----------------------------------------------- */
 
-$sidebar-width: 265px;
+$head-height          : $space-l;
+$foot-height          : $head-height;
+$side-width           : 265px;
+$group-width          : 1000px;
