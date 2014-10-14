@@ -13,23 +13,23 @@
 
   <aside id="pageSide--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="inactive">
     <div class="page-side__body">
-      <div class="menu" data-active-pane="0">
-        <div class="menu__pane--lvl-0">
+      <div id="page-menu" class="menu" data-active-pane="0">
+        <div id="page-menu-root" class="menu__pane--lvl-0">
           <h2 class="menu__heading">Menu</h2>
           <ol class="menu__list">
             <li class="menu__list-item"><a class="menu__link" href="index.html">Home</a></li>
             <li class="menu__list-item">
-              <a class="menu__link jsToggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="documentaries">Documentaries <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="documentaries">Documentaries <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__link jsToggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="themes">Themes Index <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="themes">Themes Index <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__link jsToggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="mashups">Featured Mashups <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="mashups">Featured Mashups <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
             </li>
           </ol>
         </div>
-        <div class="menu__pane--lvl-1 menu__pane--documentaries moved--right">
+        <div id="menu__pane--documentaries" class="menu__pane--lvl-1 moved--right">
           <h2 class="menu__heading">Documentaries</h2>
           <ol class="menu__list">
             <li class="menu__list-item"><a class="menu__link" href="longform.html">Al Nakba 1 2 3 4</a></li>
@@ -49,14 +49,14 @@
             <li class="menu__list-item"><a class="menu__link" href="longform.html">Palestina Amore</a></li>
             <li class="menu__list-item"><a class="menu__link" href="longform.html">Gaza We are Coming</a></li>
           </ol>
-          <a class="menu__link-back jsToggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
+          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
             <span class="menu__link-pointer">
               <i class="icon-m-arrow-left"></i>
             </span>
             <span class="hide">Back</span>
           </a>
         </div>
-        <div class="menu__pane--lvl-1 menu__pane--themes moved--right">
+        <div id="menu__pane--themes" class="menu__pane--lvl-1 moved--right">
           <h2 class="menu__heading">Themes Index</h2>
           <ol class="menu__list">
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Zionism</a></li>
@@ -68,14 +68,14 @@
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Zionism</a></li>
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Childred</a></li>
           </ol>
-          <a class="menu__link-back jsToggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
+          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
             <span class="menu__link-pointer">
               <i class="icon-m-arrow-left"></i>
             </span>
             <span class="hide">Back</span>
           </a>
         </div>
-        <div class="menu__pane--lvl-1 menu__pane--mashups moved--right">
+        <div id="menu__pane--mashups" class="menu__pane--lvl-1 moved--right">
           <h2 class="menu__heading">Featured Mashups</h2>
           <ol class="menu__list">
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Zionism</a></li>
@@ -87,7 +87,7 @@
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Zionism</a></li>
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Zionism</a></li>
           </ol>
-          <a class="menu__link-back jsToggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
+          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
             <span class="menu__link-pointer">
               <i class="icon-m-arrow-left"></i>
             </span>

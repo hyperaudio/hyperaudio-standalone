@@ -5,4 +5,3 @@ renderPage = () ->
     page.classList.add "clipped"
   else
     page.classList.remove "clipped"
-
