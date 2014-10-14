@@ -1,66 +1,62 @@
-# ========================================== #
-# Sidebar
-# ========================================== #
-
-# Name Elements
-# ------------------------------------------ #
-@pageSide           = $("[class^=page-side--]")
-@pageBody           = $(".page-body")
-@pageFoot           = $(".page-footer")
-@pageSideToggle     = $(".jsToggleSide")
-
-# Define Magic
-# ------------------------------------------ #
-showSidebar         = (target, direction) ->
-  @pageBody.addClass("moved--" + direction)
-  $(target).removeClass "moved"
-
-hideSidebar         = (target, direction) ->
-  @pageBody.removeClass("moved--" + direction)
-  $(target).addClass    "moved"
-
 renderSidebar       = () ->
-  $(@pageSide).each () ->
-    @target         = $(this)
-    @state          = $(@target).data("side-state")
-    @direction      = $(@target).data("side-push")
-
-    if @state is "active"
-      showSidebar @target, @direction
-    else
-      hideSidebar @target, @direction
+  page              = document.body
+  pageSides         = document.getElementsByClassName "page-side"
+  pageBody          = document.getElementById "page-body"
+  pageHead          = document.getElementById "page-head"
 
   states = []
-  $(@pageSide).each ->
-    @sideState = $(this).data("side-state")
-    states.push(@sideState)
+
+  [].forEach.call pageSides, (el) ->
+    target          = el
+    state           = el.getAttribute "data-side-state"
+    direction       = el.getAttribute "data-side-push"
+    states.push(state)
+
+    if state is "active"
+      pageBody.classList.add "moved--" + direction
+      pageHead.classList.add "moved--" + direction
+      target.classList.remove "moved"
+    else
+      pageBody.classList.remove "moved--" + direction
+      pageHead.classList.remove "moved--" + direction
+      target.classList.add "moved"
+
   if states.indexOf("active") is -1
-    toggleOverlay("inactive")
-    @pageBody.data "body-state", ""
+    page.setAttribute "data-page-state", ""
   else
-    toggleOverlay("active")
-    @pageBody.data "body-state", "clipped"
+    page.setAttribute "data-page-state", "clipped"
 
 alterSidebarState   = (target) ->
-  $(@pageSide).data     "side-state", "inactive"
+  pageSides         = document.getElementsByClassName "page-side"
+  [].forEach.call pageSides, (el) ->
+    el.setAttribute "data-side-state", "inactive"
 
-  @targetSide       = $(".page-side--" + target)
-  @state            = $(@targetSide).data "side-state"
-
-  if @state is "active"
-    $(@targetSide).data   "side-state", "inactive"
-  else
-    $(@targetSide).data   "side-state", "active"
-
+  unless target is "all"
+    targetSide = document.getElementById "pageSide--" + target
+    state      = targetSide.getAttribute "data-side-state"
+    if state is "active"
+      targetSide.setAttribute "data-side-state", "inactive"
+    else
+      targetSide.setAttribute "data-side-state", "active"
   renderSidebar()
 
 onSidebarToggle    = (target) ->
   alterSidebarState(target)
-  renderBody()
+  toggleOverlay(target)
+  renderPage()
 
 # Bind Clicks
-# ------------------------------------------ #
-@pageSideToggle.click( ->
-  @target = $(this).data("side-target")
-  onSidebarToggle(@target)
-)
+
+addEvent window, "load", ->
+  i = 0
+  pageSideTogglers = document.getElementsByClassName "toggleSide"
+  l = pageSideTogglers.length
+  while i < l
+    addEvent pageSideTogglers[i], "click", (e) ->
+      thisToggle = e.currentTarget
+      toggleTarget = thisToggle.getAttribute "data-side-target"
+      onSidebarToggle(toggleTarget)
+      e.returnValue = false
+      e.preventDefault()  if e.preventDefault
+      false
+    ++i

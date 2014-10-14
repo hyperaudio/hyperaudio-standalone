@@ -3,12 +3,15 @@
  * ============================================ */
 
 .page-fold {
-  background: $red-LD;
+  @include clearfix;
+  @include box-sizing(border-box);
+  background-color: $red-LD;
   background-position: center center;
   background-size: cover;
-  color: $background;
+  color: $mono-Wt;
   display: block;
-  min-height: 500px;
+  min-height: 400px;
+  position: relative;
   &:after {
     @include position-top-right(0,0);
     @include position-bottom-left(0,0);
@@ -19,9 +22,17 @@
   }
 }
 
-.page-fold .hgroup {
-  @include position-top-left(inherit, $space);
-  @include position-top-right(inherit, $space);
+.page-fold .page-header {
+  @include position-top-left(0,0);
+  @include position-top-right(0,0);
+  box-shadow: none;
+  z-index: 50;
+}
+
+.page-fold__el {
+  @include position-top-left(inherit, $space-s);
+  @include position-top-right(inherit, $space-s);
+  @include clearfix;
   z-index: 100;
 }
 
@@ -34,7 +45,7 @@
   line-height: 50px;
   margin-left: -25px;
   text-align: center;
-  z-index: 100;
+  z-index: 300;
   i {
     font-size: 48px;
   }

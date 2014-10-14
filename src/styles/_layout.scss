@@ -4,22 +4,8 @@
   ===============================================
 */
 
-$head-height          : $space-l;
-$foot-height          : $head-height;
-$side-width           : 265px;
-$group-width          : 1000px;
-
 /* Globals
 ----------------------------------------------- */
-
-.page-side--right,
-.page-side--left,
-.page-body {
-  @include transition(
-    transform $time ease,
-    opacity $time ease
-  );
-}
 
 .group {
   max-width: $group-width;
@@ -27,10 +13,46 @@ $group-width          : 1000px;
   margin-right: auto;
 }
 
+.page-side--right,
+.page-side--left,
+.page-body,
+.page-head,
+.page-head * {
+  @include transition(
+    transform $time ease,
+    opacity $time ease
+  );
+}
+
+.page-body,
+.page-head {
+  &.moved--left {
+    @include transform(translate3d($side-width * (-1),0,0));
+  }
+  &.moved--right {
+    @include transform(translate3d($side-width,0,0));
+  }
+}
+
+.page-head.moved--left,
+.page-head.moved--right {
+  * {
+    opacity: $opacity
+  }
+}
+
+.page-body {
+  &.moved--left,
+  &.moved--right {
+    opacity: $opacity;
+  }
+}
+
 /* Page Side
 ----------------------------------------------- */
 
 %page-side {
+  @include backface-visibility(hidden);
   @include set-size($side-width, 100%);
   bottom: 0;
   overflow-y: auto;
@@ -61,44 +83,39 @@ $group-width          : 1000px;
   overflow: hidden;
 }
 
+.page-side__foot {
+  @include box-sizing(border-box);
+  line-height: $foot-height;
+}
+
 @include stick-footer($foot-height, ".page-side__body", ".page-side__push", ".page-side__foot");
 
 /* Page Body
 ----------------------------------------------- */
 
 .page-body {
+  @include box-sizing(border-box);
+  @include clearfix;
   height: 100%;
   opacity: 1;
   position: relative;
-  z-index: 500;
-  &.moved--left,
-  &.moved--right {
-    opacity: $opacity;
-  }
-  &.moved--left {
-    @include transform(translate3d($side-width * (-1),0,0));
-  }
-  &.moved--right {
-    @include transform(translate3d($side-width,0,0));
-    opacity: $opacity;
-  }
-  &.clipped {
-    overflow: hidden;
-  }
 }
 
 /* Page Wrap
 ----------------------------------------------- */
 
 .page-wrap {
-  padding-top: $head-height;
+  @include clearfix;
+  padding: (($space-l * 1.5) + $head-height) 0 $space;
+  @include breakpoint(m) {
+    padding: ($space-h + $head-height) 0 $space-h;
+  }
 }
 
 /* Page Fold
 ----------------------------------------------- */
 
 .page-fold {
-  margin-top: ($head-height) * -1;
   position: relative;
   z-index: 1;
 }
@@ -107,10 +124,11 @@ $group-width          : 1000px;
 ----------------------------------------------- */
 
 .page-head {
-  @include position-top-left(0,0);
-  @include position-top-right(0,0);
-  height: $head-height;
-  z-index: 50;
+  @include transform(translate3d(0,0,0));
+  @include position-top-left(0,0, fixed);
+  @include set-size(100%, $head-height);
+  line-height: $head-height;
+  z-index: 100;
 }
 
 /* Page Content
@@ -125,16 +143,16 @@ $group-width          : 1000px;
   }
 }
 
-/* Page Foot
------------------------------------------------ */
-
-@include stick-footer($foot-height, ".page-wrap", ".page-push", ".page-foot");
-
 /* Page Overlay
 ----------------------------------------------- */
 
 .page-overlay {
-  @include position-top-right(0,0);
-  @include position-bottom-left(0,0);
+  width: 100%;
   z-index: 100;
+  &.shown-right {
+    @include position-top-right(0, $side-width, fixed);
+  }
+  &.shown-left {
+    @include position-top-left(0, $side-width, fixed);
+  }
 }

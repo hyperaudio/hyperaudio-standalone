@@ -8,5 +8,32 @@
   border-bottom-style: solid;
   padding: $space-s;
   text-align: center;
-  height: 60px;
+}
+
+.page-head__brandmark {
+  display: block;
+  line-height: inherit;
+  text-align: center;
+}
+
+/* Menu Items
+----------------------------------------------- */
+
+.page-head__menu-item--first,
+.page-head__menu-item--last {
+  z-index: 50;
+}
+.page-head__menu-item--first  { @include position-top-left(0,$space-x); }
+.page-head__menu-item--last   { @include position-top-right(0,$space-x); }
+
+/* Altered variation
+----------------------------------------------- */
+
+.page-head--altered {
+  // @include paint-default($force: "true");
+  background: $background;
+  box-shadow: 0 1px 2px $shadow-weak !important;
+  .page-head__brandmark a {
+    color: $mono-Wt !important;
+  }
 }

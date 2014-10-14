@@ -120,10 +120,10 @@ $time               : $time-m         !default;
 $space              : $space-s        !default;
 $radius             : $radius-s       !default;
 
-/* Default Definitions
------------------------------------------------ */
+// Layout Definitions
+// ----------------------------------------------
 
-$head-height          : $space-l;
-$foot-height          : $head-height;
-$side-width           : 265px;
+$head-height          : 40px;
+$foot-height          : 40px;
+$side-width           : 250px;
 $group-width          : 1000px;
