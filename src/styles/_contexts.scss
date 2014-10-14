@@ -1,5 +1,29 @@
+/*
+  ===============================================
+  # Context namespaces
+  ===============================================
+*/
+
 .tpl--home {
   .page-wrap {
-    padding: 0;
+    padding-top: 0;
+  }
+}
+
+.tpl--listing {
+  .page-wrap {
+    padding-top: $head-height;
+  }
+}
+
+.tpl--remix {
+  .page-wrap {
+    padding-top: $head-height;
+  }
+}
+
+.tpl--longform {
+  .page-wrap {
+    padding-top: 0;
   }
 }
