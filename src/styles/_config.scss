@@ -101,24 +101,25 @@ $radius-s           : 3px;
 /* Default Definitions
 ----------------------------------------------- */
 
-$background         : $mono-Wt        !default;
-$color              : $mono-D         !default;
+$background         : $mono-Wt;
+$color              : $mono-D;
+$link-color         : $red-LD;
 
-$flare              : $flare-medium   !default;
-$shadow             : $shadow-medium  !default;
-$opacity            : .5              !default;
+$flare              : $flare-medium;
+$shadow             : $shadow-medium;
+$opacity            : .5;
 
-$font               : $primary-font   !default;
-$size               : $font-s         !default;
-$weight             : $font-regular   !default;
-$line               : $line-m         !default;
-$spacing            : $spacing-m      !default;
+$font               : $primary-font;
+$size               : $font-s;
+$weight             : $font-regular;
+$line               : $line-m;
+$spacing            : $spacing-m;
 
-$delay              : 0s              !default;
-$time               : $time-m         !default;
+$delay              : 0s;
+$time               : $time-m;
 
-$space              : $space-s        !default;
-$radius             : $radius-s       !default;
+$space              : $space-s;
+$radius             : $radius-s;
 
 // Layout Definitions
 // ----------------------------------------------

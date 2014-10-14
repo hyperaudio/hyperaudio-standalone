@@ -9,27 +9,27 @@
   <link rel="stylesheet" href="fonts/hyperaudio-player/style.css">
   <link rel="stylesheet" href="styles/aj.css">
 </head>
-<body>
+<body class="tpl--home" data-page-state="clipped">
 
-  <aside class="page-side--left moved" data-side-push="right" data-side-state="inactive">
+  <aside id="pageSide--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="inactive">
     <div class="page-side__body">
-      <div class="menu" data-active-pane="0">
-        <div class="menu__pane--lvl-0">
+      <div id="page-menu" class="menu" data-active-pane="0">
+        <div id="page-menu-root" class="menu__pane--lvl-0">
           <h2 class="menu__heading">Menu</h2>
           <ol class="menu__list">
             <li class="menu__list-item"><a class="menu__link" href="index.html">Home</a></li>
             <li class="menu__list-item">
-              <a class="menu__link jsToggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="documentaries">Documentaries <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="documentaries">Documentaries <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__link jsToggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="themes">Themes Index <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="themes">Themes Index <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__link jsToggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="mashups">Featured Mashups <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="mashups">Featured Mashups <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
             </li>
           </ol>
         </div>
-        <div class="menu__pane--lvl-1 menu__pane--documentaries moved--right">
+        <div id="menu__pane--documentaries" class="menu__pane--lvl-1 moved--right">
           <h2 class="menu__heading">Documentaries</h2>
           <ol class="menu__list">
             <li class="menu__list-item"><a class="menu__link" href="longform.html">Al Nakba 1 2 3 4</a></li>
@@ -49,14 +49,14 @@
             <li class="menu__list-item"><a class="menu__link" href="longform.html">Palestina Amore</a></li>
             <li class="menu__list-item"><a class="menu__link" href="longform.html">Gaza We are Coming</a></li>
           </ol>
-          <a class="menu__link-back jsToggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
+          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
             <span class="menu__link-pointer">
               <i class="icon-m-arrow-left"></i>
             </span>
             <span class="hide">Back</span>
           </a>
         </div>
-        <div class="menu__pane--lvl-1 menu__pane--themes moved--right">
+        <div id="menu__pane--themes" class="menu__pane--lvl-1 moved--right">
           <h2 class="menu__heading">Themes Index</h2>
           <ol class="menu__list">
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Zionism</a></li>
@@ -68,14 +68,14 @@
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Zionism</a></li>
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Childred</a></li>
           </ol>
-          <a class="menu__link-back jsToggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
+          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
             <span class="menu__link-pointer">
               <i class="icon-m-arrow-left"></i>
             </span>
             <span class="hide">Back</span>
           </a>
         </div>
-        <div class="menu__pane--lvl-1 menu__pane--mashups moved--right">
+        <div id="menu__pane--mashups" class="menu__pane--lvl-1 moved--right">
           <h2 class="menu__heading">Featured Mashups</h2>
           <ol class="menu__list">
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Zionism</a></li>
@@ -87,7 +87,7 @@
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Zionism</a></li>
             <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Zionism</a></li>
           </ol>
-          <a class="menu__link-back jsToggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
+          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root">
             <span class="menu__link-pointer">
               <i class="icon-m-arrow-left"></i>
             </span>
@@ -98,44 +98,30 @@
     </div>
   </aside>
 
-  <div class="page-body" data-body-state="clipped">
+  <nav class="page-head" id="page-head" data-head-state="">
+    <h1 class="page-head__brandmark"><a href="/" title="Home Page" aria-hidden="true">Palestine Remix</a></h1>
+    <a class="button page-head__menu-item--first toggleSide" data-side-target="left" aria-hidden="true"><i class="icon-menu"></i> <span class="hide">Menu</span></a>
+    <a class="button page-head__menu-item--last toggleSide" data-side-target="right" aria-hidden="true"><i class="icon-info"></i> <span class="hide">About</span></a>
+  </nav>
 
-      <article class="page-wrap">
-
-        <header class="page-head">
-          <div class="group">
-            <div class="s-span-1of6 align-left">
-              <a class="jsToggleSide" data-side-target="left">
-                <i class="icon-menu"></i> <span class="hide">Menu</span>
-              </a>
-            </div>
-            <div class="s-span-4of6">
-              <h1>Palestine Remix</h1>
-            </div>
-            <div class="s-span-1of6 align-right">
-              <a class="jsToggleSide" data-side-target="right">
-                <i class="icon-info"></i> <span class="hide">About</span>
-              </a>
-            </div>
-          </div>
-        </header>
-
-        <section class="page-fold" data-fold style="background-image: url('images/temp1.png');">
-          <div class="hgroup" data-fold-el>
-            <h1 class="hgroup__intro">From the Journal of the Iran Society</h1>
-            <h2 class="hgroup__title">Pattern, Cognition and Contemplation: Exploring the Geometric Art of Iran</h2>
-
+  <div id="page-body" class="page-body">
+    <div class="page-wrap">
+      <header class="page-fold" id="page-cover">
+        <div class="page-fold__el" id="page-coverEl">
+          <div class="hgroup">
+            <h1 class="hgroup__intro">An Al Jazeera Production</h1>
+            <h2 class="hgroup__title">Palestine Remix</h2>
             <hr class="separator separator--compact" />
-
             <div class="group">
               <div class="s-span-1of1 m-span-3of5 m-center">
                 <p class="hgroup__text">In the autumn of 2006, Art of Islamic Pattern tutor Richard Henry from visited Iran in order to research material for a new British Museum course Islamic Geometric Art: Persian Patterns. Richard also gave a public lecture at the Middle East Association in April 2007. This was published in the Journal of the Iran Society.</p>
-                <p class="hgroup__meta">by Richard Henry, September 2007</p>
+                <p class="hgroup__meta">Some Subtitle</p>
               </div>
             </div>
           </div>
-          <div class="page-fold__indicator"><i class="icon-scroll-indicator"></i></div>
-        </section>
+        </div>
+        <div class="page-fold__indicator"><i class="icon-scroll-indicator"></i></div>
+      </header>
 
         <section class="page-content">
           <div class="group">
@@ -171,49 +157,23 @@
             </div>
           </div>
         </section>
-
-        <section class="page-content">
-          <div class="group">
-            <div class="s-span-1of1">
-              <div class="page-copy">
-                <div class="sources">
-                  <h2 class="sources__title">References</h2>
-                  <ol class="source_list">
-                    <li>Moff Betts The Human Body, Wooden Books 2004</li>
-                    <li>Titus Burckhardt Art of Islam – Language and Meaning, World of Islam Festival Trust, 1976</li>
-                    <li>Henry Corbin The Man of Light in Iranian Sufism, Omega, 1971</li>
-                  </ol>
-                  <h2 class="sources__title">Sources</h2>
-                  <ul class="source_list">
-                    <li>Issam El-Said and Ayse Parman Geometric Concepts in Islamic Art, World of Islam   Festival Trust, 1976</li>
-                    <li>Matila Ghyka The Geometry of Art and Life, Dover 1977</li>
-                    <li>Rene Guenon The Symbolism of the Cross, Sophia Perennis, 2004</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="page-push"></div>
-
-      </article>
-
-      <footer class="page-foot">
-        Page Footer
-      </footer>
-
-    <div class="page-overlay jsToggleSide" data-state="inactive" data-fold></div>
+      <div class="page-push"></div>
+    </div>
+    <footer class="page-foot">
+      Page Footer
+    </footer>
   </div>
 
-  <aside class="page-side--right moved" data-side-push="left" data-side-state="inactive">
+  <aside id="pageSide--right" class="page-side page-side--right moved" data-side-push="left" data-side-state="inactive">
     <div class="page-side__body">
       Side Body
       <div class="page-side__push"></div>
     </div>
     <div class="page-side__foot">Side Footer</div>
   </aside>
+  <div id="page-overlay" class="page-overlay toggleSide" data-overlay-state="inactive" data-side-target="all"></div>
 
-  <script src="scripts/scripts.js"></script>
+  <script src="scripts/vendor.js"></script>
+  <script src="scripts/aj.js"></script>
 </body>
 </html>
