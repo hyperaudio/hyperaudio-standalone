@@ -21,6 +21,7 @@ gulp.task "html", ->
 gulp.task "compile-sass", ->
   gulp.src("./src/styles/**/*.scss")
     .pipe $.sass(includePaths: [
+      require("node-bourbon").includePaths,
       'bower_components'
       ])
     .on "error", handleError
