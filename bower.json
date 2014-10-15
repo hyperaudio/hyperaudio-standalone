@@ -17,10 +17,9 @@
   ],
   "dependencies": {
     "bourbon": "~4.0.2",
-    "jquery": "~2.1.1",
     "catalyst": "https://github.com/interactivethings/catalyst.git#1.0.0-beta",
     "swiper": "~2.7.0",
-    "hyperaudio": "git@github.com:AJInteractive/hyperaudio.git#~0.9.8",
+    "hyperaudio": "git@github.com:AJInteractive/hyperaudio.git#~1.0.0",
     "margarine": "https://github.com/piotrf/margarine.git#~1.0.18"
   }
 }
