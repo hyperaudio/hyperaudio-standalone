@@ -1,0 +1,15 @@
+/**
+ * Paints
+ * ============================================ */
+
+@mixin paint-default {
+  color: $color;
+  background-color: $background;
+  border-color: $shadow-light;
+}
+
+@mixin paint-inverted {
+  color: $background ;
+  background-color: $shadow-medium;
+  border-color: $flare-light;
+}
