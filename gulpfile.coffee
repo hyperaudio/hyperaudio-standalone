@@ -7,6 +7,20 @@ handleError = (err) ->
   console.log err.toString()
   @emit "end"
 
+## Variables
+
+SASSPATHS = [
+  require("node-bourbon").includePaths,
+  'bower_components'
+]
+STYLES = [
+  "./src/styles/**/*.scss"
+]
+SCRIPTS = [
+  "./bower_components/swiper/dist/idangerous.swiper.min.js"
+  "./bower_components/hyperaudio/dist/assets/scripts/hyperaudio.js"
+]
+
 # DEFINE PARTIAL TASKS
 # ============================================== #
 
@@ -19,11 +33,8 @@ gulp.task "html", ->
 # Compile Sass
 # ---------------------------------------------- #
 gulp.task "compile-sass", ->
-  gulp.src("./src/styles/**/*.scss")
-    .pipe $.sass(includePaths: [
-      require("node-bourbon").includePaths,
-      'bower_components'
-      ])
+  gulp.src(STYLES)
+    .pipe $.sass(includePaths: SASSPATHS)
     .on "error", handleError
     .pipe gulp.dest "dist/styles"
     .pipe $.connect.reload()
@@ -31,24 +42,7 @@ gulp.task "compile-sass", ->
 # Concat Vendor
 # ---------------------------------------------- #
 gulp.task "concat-vendor", ->
-  gulp.src([
-    "./bower_components/swiper/src/idangerous.swiper.js"
-    "./bower_components/hyperaudio/dist/assets/scripts/vendor.js"
-    "./bower_components/hyperaudio/dist/assets/scripts/hyperaudio.js"
-  ]).pipe($.concat("vendor.js")).pipe gulp.dest("./dist/scripts")
-
-# Minify
-# ---------------------------------------------- #
-gulp.task "compress-js", ->
-  gulp.src([
-    "dist/scripts/vendor.js",
-    "dist/scripts/aj.js"
-  ]).pipe(
-    $.uglifyjs("scripts.js",
-      mangle: false
-      output:
-        beautify: false
-  )).pipe gulp.dest("dist/scripts")
+  gulp.src(SCRIPTS).pipe($.concat("vendor.js")).pipe gulp.dest("./dist/scripts")
 
 # Compile Coffeescript
 # ---------------------------------------------- #
@@ -74,13 +68,12 @@ gulp.task "copyfiles", ->
 # Watch files
 # ---------------------------------------------- #
 gulp.task "watch", ->
-  gulp.watch "./src/styles/**/*.scss", [ "compile-sass" ]
+  gulp.watch STYLES, [ "compile-sass" ]
   gulp.watch ["dist/*.html"], ["html"]
-  gulp.watch ["dist/vendor.js", "dist/aj.js"], ["compress-js"]
   gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee"], ["compile-coffee"]
 
 # Connect server
-#
+# ---------------------------------------------- #
 gulp.task "connect", ->
   $.connect.server
     root: "./dist"
@@ -94,7 +87,6 @@ gulp.task "default", [
   "compile-sass"
   "concat-vendor"
   "compile-coffee"
-  "compress-js"
   "copyfiles"
   "connect"
   "watch"

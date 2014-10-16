@@ -19,7 +19,7 @@
     "bourbon": "~4.0.2",
     "catalyst": "https://github.com/interactivethings/catalyst.git#1.0.0-beta",
     "swiper": "~2.7.0",
-    "hyperaudio": "git@github.com:AJInteractive/hyperaudio.git#~1.0.0",
+    "hyperaudio": "git@github.com:AJInteractive/hyperaudio.git#~1.0.7",
     "margarine": "https://github.com/piotrf/margarine.git#~1.0.18"
   }
 }
