@@ -8,9 +8,6 @@
   * {
     line-height: $head-height;
   }
-  a {
-    color: $link-color-inverted;
-  }
 }
 
 .page-head__brandmark {
@@ -37,11 +34,4 @@
 .page-head--altered {
   background: $background;
   box-shadow: 0 1px 2px $shadow-weak !important;
-  color: $color;
-  * {
-    color: $color;
-  }
-  a {
-    color: $link-color;
-  }
 }

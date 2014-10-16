@@ -133,8 +133,8 @@
 ----------------------------------------------- */
 
 .page-content {
-  padding-top: $line;
-  padding-bottom: $line;
+  padding-top: $space;
+  padding-bottom: $space;
   @include breakpoint(m) {
     padding-top: $space-h;
     padding-bottom: $space-h;

@@ -4,10 +4,9 @@
 
 .page-fold {
   @include clearfix;
-  background-color: $red-LD;
+  @include paint-inverted;
   background-position: center center;
   background-size: cover;
-  color: $mono-Wt;
   display: block;
   min-height: 400px;
   position: relative;
