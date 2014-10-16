@@ -1,0 +1,19 @@
+/**
+ * Buttons
+ * ============================================ */
+
+%button {
+  display: inline-block;
+  text-align: center;
+  padding: $space;
+}
+
+.pri-button {
+  @extend %button;
+  background: $link-color;
+  color: $background;
+}
+
+.sec-button {
+
+}
