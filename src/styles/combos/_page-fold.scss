@@ -4,7 +4,6 @@
 
 .page-fold {
   @include clearfix;
-  @include box-sizing(border-box);
   background-color: $red-LD;
   background-position: center center;
   background-size: cover;

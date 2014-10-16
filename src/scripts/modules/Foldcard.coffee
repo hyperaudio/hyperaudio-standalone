@@ -1,9 +1,9 @@
 renderFoldCards = () ->
   i = undefined
-  foldCards = document.querySelectorAll ".fold-card"
+  foldCards = document.querySelectorAll ".foldcard"
   i = 0
   while i < foldCards.length
     @foldCard   = foldCards[i]
-    @foldCardEl = @foldCard.querySelectorAll(".fold-card-el")[0]
+    @foldCardEl = @foldCard.querySelectorAll(".foldcard__el")[0]
     fitFold(@foldCard, @foldCardEl)
     ++i

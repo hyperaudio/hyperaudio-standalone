@@ -84,7 +84,6 @@
 }
 
 .page-side__foot {
-  @include box-sizing(border-box);
   line-height: $foot-height;
 }
 
@@ -94,7 +93,6 @@
 ----------------------------------------------- */
 
 .page-body {
-  @include box-sizing(border-box);
   @include clearfix;
   height: 100%;
   opacity: 1;
@@ -143,12 +141,10 @@
   }
 }
 
-/* Page Overlay
------------------------------------------------ */
-
 .page-overlay {
+  cursor: pointer;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
   &.shown-right {
     @include position-top-right(0, $side-width, fixed);
   }
