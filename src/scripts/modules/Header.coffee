@@ -1,3 +1,7 @@
+#**
+#* Header.js
+#* ============================================ *#
+
 renderHeader = () ->
   pageHead      = document.getElementById "page-head"
   pageHeadState = pageHead.getAttribute "data-head-state"

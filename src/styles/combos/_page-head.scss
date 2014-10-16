@@ -2,12 +2,15 @@
  * Page header
  * ============================================ */
 
-.page-header {
-  background: $shadow-light; // STYlE
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  padding: $space-s;
+.page-head {
   text-align: center;
+  z-index: 1000;
+  * {
+    line-height: $head-height;
+  }
+  a {
+    color: $link-color-inverted;
+  }
 }
 
 .page-head__brandmark {
@@ -22,9 +25,11 @@
 .page-head__menu-item--first,
 .page-head__menu-item--last {
   z-index: 50;
+  padding-left: $space;
+  padding-right: $space;
 }
-.page-head__menu-item--first  { @include position-top-left(0,$space-x); }
-.page-head__menu-item--last   { @include position-top-right(0,$space-x); }
+.page-head__menu-item--first  { @include position-top-left(0,0); }
+.page-head__menu-item--last   { @include position-top-right(0,0); }
 
 /* Altered variation
 ----------------------------------------------- */
@@ -32,6 +37,9 @@
 .page-head--altered {
   background: $background;
   box-shadow: 0 1px 2px $shadow-weak !important;
+  * {
+    color: $color;
+  }
   .page-head__brandmark a {
     color: $link-color;
   }

@@ -4,26 +4,16 @@
   ===============================================
 */
 
-.tpl--home {
+.tpl--home,
+.tpl--longform {
   .page-wrap {
-    padding-top: 0;
+    padding: 0;
   }
 }
 
-.tpl--listing {
-  .page-wrap {
-    padding-top: $head-height;
-  }
-}
-
+.tpl--listing,
 .tpl--remix {
   .page-wrap {
     padding-top: $head-height;
-  }
-}
-
-.tpl--longform {
-  .page-wrap {
-    padding-top: 0;
   }
 }

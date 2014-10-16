@@ -16,6 +16,9 @@ body {
   background: $background;
   color: $color;
   font-family: $font;
+  &.clipped {
+    overflow: hidden;
+  }
 }
 
 body * {

@@ -1,4 +1,5 @@
 document.addEventListener "DOMContentLoaded", ->
+
   console.log "السلام عليكم"
 
   renderCover()
@@ -6,6 +7,7 @@ document.addEventListener "DOMContentLoaded", ->
   renderOverlay()
   renderPage()
   renderSidebar()
+  renderFoldCards()
 
 window.onresize = throttle((event) ->
   renderCover()
