@@ -11,10 +11,10 @@
     padding: 0;
   }
   .page-fold {
-    @include animation(scaleIn 10s ease-in-out 0);
+    @include animation(scaleHIn 10s ease-in-out 0);
   }
   .page-fold__el {
-    @include animation(scaleOut 10s ease-in-out 0);
+    @include animation(scaleHOut 10s ease-in-out 0);
   }
 }
 

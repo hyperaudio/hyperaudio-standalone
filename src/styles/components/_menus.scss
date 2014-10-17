@@ -27,6 +27,10 @@
   position: relative;
 }
 
+.menu__key {
+  font-weight: $font-weight-bold;
+}
+
 .menu__link-pointer {
   .menu__link & {
     @include position-top-right(50%, $space-s);

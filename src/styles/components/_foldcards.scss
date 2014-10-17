@@ -3,6 +3,7 @@
  * ============================================ */
 
 .foldcard {
+  @include animation(scaleHIn 10s ease-in-out 0);
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -11,4 +12,5 @@
 .foldcard__el {
   @include position-top-left(inherit, $space);
   @include position-top-right(inherit, $space);
+  @include animation(scaleHOut 10s ease-in-out 0);
 }

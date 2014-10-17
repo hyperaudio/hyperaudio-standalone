@@ -33,6 +33,28 @@
   100%  { @include transform(scale(1,1)) }
 }
 
+/* scaleIn
+----------------------------------------------- */
+@-webkit-keyframes scaleHIn {
+  0%    { @include transform(scale(1.2,1)) }
+  100%  { @include transform(scale(1,1)) }
+}
+@keyframes scaleIn {
+  0%    { @include transform(scale(1.2,1)) }
+  100%  { @include transform(scale(1,1)) }
+}
+
+/* scaleOut
+----------------------------------------------- */
+@-webkit-keyframes scaleHOut {
+  0%    { @include transform(scale(0.8,1)) }
+  100%  { @include transform(scale(1,1)) }
+}
+@keyframes scaleIn {
+  0%    { @include transform(scale(0.8,1)) }
+  100%  { @include transform(scale(1,1)) }
+}
+
 /* Slide Down
 ----------------------------------------------- */
 @-webkit-keyframes slideDown {
