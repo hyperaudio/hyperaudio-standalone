@@ -1,0 +1,45 @@
+/* Pulse
+----------------------------------------------- */
+@-webkit-keyframes pulse {
+  0%    { opacity: 0.3; }
+  50%   { opacity: 0.7; }
+  100%  { opacity: 0.3; }
+}
+@keyframes pulse {
+  0%    { opacity: 0.3; }
+  50%   { opacity: 0.7; }
+  100%  { opacity: 0.3; }
+}
+
+/* scaleIn
+----------------------------------------------- */
+@-webkit-keyframes scaleIn {
+  0%    { @include transform(scale(1.2,1.2)) }
+  100%  { @include transform(scale(1,1)) }
+}
+@keyframes scaleIn {
+  0%    { @include transform(scale(1.2,1.2)) }
+  100%  { @include transform(scale(1,1)) }
+}
+
+/* scaleOut
+----------------------------------------------- */
+@-webkit-keyframes scaleOut {
+  0%    { @include transform(scale(0.8,0.8)) }
+  100%  { @include transform(scale(1,1)) }
+}
+@keyframes scaleIn {
+  0%    { @include transform(scale(0.8,0.8)) }
+  100%  { @include transform(scale(1,1)) }
+}
+
+/* Slide Down
+----------------------------------------------- */
+@-webkit-keyframes slideDown {
+  0%    { @include transform(translate3d(0,$space-h * -1,0)) }
+  100%  { @include transform(translate3d(0,0,0)) }
+}
+@keyframes slideDown {
+  0%    { @include transform(translate3d(0,$space-h * -1,0)) }
+  100%  { @include transform(translate3d(0,0,0)) }
+}

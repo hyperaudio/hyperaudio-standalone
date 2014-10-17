@@ -10,6 +10,12 @@
   .page-wrap {
     padding: 0;
   }
+  .page-fold {
+    @include animation(scaleIn 10s ease-in-out 0);
+  }
+  .page-fold__el {
+    @include animation(scaleOut 10s ease-in-out 0);
+  }
 }
 
 .tpl--listing,

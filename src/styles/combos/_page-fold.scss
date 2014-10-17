@@ -28,17 +28,17 @@
 }
 
 .page-fold__el {
+  @include clearfix;
   @include position-top-left(inherit, $space-s);
   @include position-top-right(inherit, $space-s);
-  @include clearfix;
+  @include transition(scale(0.7,0.7));
   z-index: 100;
 }
 
 .page-fold__scroll-indicator {
+  @include animation(pulse 2s infinite, slideDown 10s ease-in-out 0);
   @include position-bottom-left(10%, 50%);
   @include set-size(50px,50px);
-  -webkit-animation: pulse 2s infinite;
-  animation: pulse 2s infinite;
   display: block;
   line-height: 50px;
   margin-left: -25px;

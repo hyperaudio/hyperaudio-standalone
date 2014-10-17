@@ -104,6 +104,7 @@
 
 .page-wrap {
   @include clearfix;
+  overflow-x: hidden;
   padding: (($space-l * 1.5) + $head-height) 0 $space;
   @include breakpoint(m) {
     padding: ($space-h + $head-height) 0 $space-h;
