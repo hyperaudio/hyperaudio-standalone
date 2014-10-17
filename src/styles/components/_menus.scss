@@ -41,7 +41,8 @@
 
 .menu__link-back {
   @include position-bottom-left(0,0, fixed);
-  background: $mono-Lt;
+  @include transform(translate3d(0, 0, 0));
+  @include fill-red;
   height: 100%;
   box-shadow: inset -1px 0 2px $shadow-light;
   display: block;
@@ -61,6 +62,9 @@
   width: 100%;
   &.moved--right {
     @include transform(translate($side-width + $space-h) scale(0.98,0.98));
+    .menu__link-back {
+      @include transform(translate3d($side-width + $space-h * -1, 0, 0));
+    }
   }
   &.moved--left {
     @include transform-origin(left);
@@ -68,14 +72,14 @@
   }
 }
 
-.menu__pane--lvl-0 {
+.menu__pane--lvl-0.menu__pane--lvl-0 {
   @include transition(transform $time);
-  background: $mono-Lt;
+  @include fill-red;
   z-index: 5;
 }
-.menu__pane--lvl-1 {
+.menu__pane--lvl-1.menu__pane--lvl-1 {
   @include transition(transform $time $delay);
-  background: $mono-HL;
+  @include fill-red;
   overflow-y: auto;
   padding-left: $space-h;
   z-index: 10;

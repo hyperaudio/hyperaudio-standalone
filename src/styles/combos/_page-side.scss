@@ -1,3 +1,10 @@
 /**
  * Page Side
  * ============================================ */
+
+.page-side {
+  @include fill-inverted;
+}
+.page-side--right {
+  @include fill-green;
+}

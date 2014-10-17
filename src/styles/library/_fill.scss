@@ -1,0 +1,39 @@
+/**
+ * Paints
+ * ============================================ */
+
+@mixin fill-default {
+  color: $color;
+  background-color: $background;
+  border-color: $shadow-light;
+  a {
+    color: $red-LD;
+  }
+}
+
+@mixin fill-inverted {
+  color: $background;
+  background-color: $shadow-medium;
+  border-color: $flare-light;
+  a {
+    color: $red-LD;
+  }
+}
+
+@mixin fill-red {
+  color: $mono-Wt;
+  background-color: $red-LD;
+  border-color: $flare-light;
+  a {
+    color: $mono-Wt;
+  }
+}
+
+@mixin fill-green {
+  color: $mono-Wt;
+  background-color: $green-LD;
+  border-color: $flare-light;
+  a {
+    color: $mono-Wt;
+  }
+}

@@ -11,8 +11,7 @@
   text-align: center;
 }
 .take-away__el {
-  @include paint-inverted;
-  border-style: solid;
+  @include fill-inverted;
   border-width: 1px;
   padding: $space-h;;
 }

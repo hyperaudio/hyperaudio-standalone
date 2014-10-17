@@ -3,7 +3,6 @@
  * ============================================ */
 
 %separator {
-  border-style: solid;
   border-width: 0 0 1px 0;
   margin: $space-l 0;
   @include breakpoint(m) {
@@ -16,7 +15,6 @@
 
 .separator--compact {
   @extend %separator;
-  border-style: solid;
   margin: $space-m auto;
   width: $space-m;
   @include breakpoint(m) {

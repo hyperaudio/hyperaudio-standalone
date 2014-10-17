@@ -5,7 +5,8 @@
 $toolbar-toggle-size: $space-h;
 
 .toolbar {
-  border-bottom: 1px solid $shadow;
+  @include fill-default;
+  border-bottom-width: 1px;
   position: relative;
 }
 .toolbar__input {
