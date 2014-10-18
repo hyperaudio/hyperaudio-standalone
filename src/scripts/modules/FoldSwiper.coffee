@@ -20,6 +20,4 @@ renderFoldSwiper = () ->
       moveStartThreshold  : 20 # in pixels
       cssWidthAndHeight   : "height"
       DOMAnimation        : false
-      centeredSlides      : true
-      # mousewheelControl   : true
     ++i
