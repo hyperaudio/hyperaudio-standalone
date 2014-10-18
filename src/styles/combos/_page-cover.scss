@@ -10,6 +10,12 @@
   display: block;
   padding: ($page-head-height + ($space-h * 2)) $space-s ($space-h * 2);
   position: relative;
+  @include breakpoint(m) {
+    padding: ($page-head-height + ($space-h * 4)) $space-s ($space-h * 4)
+  }
+  @include breakpoint(l) {
+    padding: ($page-head-height + ($space-h * 5)) $space-s ($space-h * 5)
+  }
   &:after {
     @include position-top-right(0,0);
     @include position-bottom-left(0,0);

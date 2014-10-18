@@ -55,7 +55,6 @@
   @include backface-visibility(hidden);
   @include set-size($side-width, 100%);
   bottom: 0;
-  overflow-y: auto;
   position: fixed;
   top: 0;
   width: $side-width;
@@ -80,7 +79,6 @@
 }
 
 .page-side__body {
-  overflow: hidden;
 }
 
 .page-side__foot {
@@ -127,7 +125,6 @@
   @include transform(translate3d(0,0,0));
   @include position-top-left(0,0, fixed);
   width: 100%;
-  // @include set-size(100%, inherit);
   line-height: $page-head-height;
   z-index: 100;
 }

@@ -13,10 +13,13 @@ renderFoldSwiper = () ->
       slideElement        : "div"
 
       mode                : "horizontal"
-      loop                : false
-      speed               : 350
-      autoplay            : false
+      loop                : true
+      autoplay            : 5000
+      speed               : 500
 
       moveStartThreshold  : 20 # in pixels
       cssWidthAndHeight   : "height"
+      DOMAnimation        : false
+      centeredSlides      : true
+      # mousewheelControl   : true
     ++i

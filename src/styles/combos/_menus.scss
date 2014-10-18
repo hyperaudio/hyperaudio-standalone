@@ -16,8 +16,6 @@ $menu-back-offset : $tap-size;
 }
 .menu {
   color: $flare-medium;
-  width: $side-width;
-  height: 100%;
   a {
     color: $flare-medium;
   }
@@ -25,6 +23,7 @@ $menu-back-offset : $tap-size;
 .menu__pane {
   @include set-size(100%,100%);
   background-color: $mono-D;
+  overflow-y: auto;
 }
 .menu__head {
   background-position: center center;
@@ -65,9 +64,9 @@ $menu-back-offset : $tap-size;
   padding: $space;
 }
 .menu__body {
-  overflow-y: auto;
 }
 .menu__list {
+  @include clearfix;
   display: block;
 }
 .menu__item {
@@ -131,7 +130,6 @@ $menu-back-offset : $tap-size;
   @include transition(transform $time, opacity $time);
   @include transform(translate3d(0, 0, 0));
   @include position-top-left(0,0, fixed);
-  overflow-y: auto;
   opacity: 1;
   &.moved--right {
     @include transform(translate($side-width + $space-h));
@@ -165,7 +163,6 @@ $menu-back-offset : $tap-size;
 #menu__pane--remixes {
   @include position-top-left(0,$menu-back-offset, fixed);
   @include transition(transform $time);
-  overflow-y: auto;
   z-index: 10;
   width: $side-width - $menu-back-offset;
 }

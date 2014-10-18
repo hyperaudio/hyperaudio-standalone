@@ -8,7 +8,13 @@
 .take-away {
   background-size: cover;
   background-position: center center;
+  margin-left: $space-s;
+  margin-right: $space-s;
   text-align: center;
+  @include breakpoint(m) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .take-away__el {
   background-color: $shadow-medium;

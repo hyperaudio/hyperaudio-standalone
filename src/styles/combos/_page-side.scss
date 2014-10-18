@@ -4,6 +4,7 @@
 
 .page-side {
   @include fill-inverted;
+  overflow: hidden;
   &.page-side--left {
     background-color: $mono-LD;
   }

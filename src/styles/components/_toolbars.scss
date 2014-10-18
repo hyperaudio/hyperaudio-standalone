@@ -27,7 +27,6 @@ $toolbar-size        : 40px;
   );
   border-top: 1px solid $shadow;
   margin-top: -1px;
-  overflow: hidden;
   &.toolbar__extension--active {
     height: 37px;
     opacity: 1;
