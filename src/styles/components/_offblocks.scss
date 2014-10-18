@@ -1,0 +1,14 @@
+/**
+ * Off Blocks
+ * ============================================ */
+
+.offblock {
+  @include transition(opacity 3s 0, transform 3s 0);
+  @include transform(scale(0.95,0.95));
+  opacity: .2;
+}
+
+.offblock.offblock--on {
+  @include transform(scale(1,1));
+  opacity: 1;
+}

@@ -1,0 +1,134 @@
+/**
+ * Menus
+ * ============================================ */
+
+$menu-back-offset: 32px;
+
+.menu-reset {
+  // @include transform(translate3d($menu-back-offset * -1, 0, 0));
+  @include position-top-left(0,0, fixed);
+  @include fill-inverted;
+  height: 100%;
+  box-shadow: inset -1px 0 2px $shadow-light;
+  display: block;
+  padding: $space-m 0;
+  width: $menu-back-offset;
+  text-align: center;
+  z-index: 300;
+  .menu__link-icon {
+    position: static;
+  }
+  &.moved {
+    // @include transform(translate3d($menu-back-offset * -1, 0, 0));
+  }
+}
+.menu {
+  color: $flare-medium;
+  width: $side-width;
+  height: 100%;
+  a {
+    color: $flare-medium;
+  }
+}
+.menu__pane {
+  @include set-size(100%,100%);
+  box-shadow: -1px 0 2px $shadow-weak;
+  background-color: $mono-D;
+}
+.menu__head {
+  background-position: center center;
+  background-size: cover;
+  padding: $space;
+  position: relative;
+  &:before {
+    @include position-top-left(0,0);
+    @include position-bottom-right(0,0);
+    background: $shadow-medium;
+    content: "";
+    display: block;
+    z-index: 1;
+  }
+}
+.menu__title {
+  @include set-type-xlarge;
+  color: $mono-Wt;
+  font-weight: $font-bold;
+  margin-bottom: $space-x;
+  position: relative;
+  z-index: 10;
+}
+.menu__text {
+  @include set-type-small;
+  color: $flare-strong;
+  position: relative;
+  z-index: 10;
+}
+.menu__subtitle {
+  color: $flare-weak;
+  font-weight: $font-bold;
+  margin-top: $space-s;
+  padding: $space;
+}
+.menu__body {
+  overflow-y: auto;
+}
+.menu__list {
+  display: block;
+}
+.menu__item {
+  display: block;
+}
+.menu__link.menu__link {
+  @include truncate;
+  border-bottom: 1px solid $flare-light;
+  color: $flare-medium;
+  display: block;
+  line-height: $space-l;
+  padding: $space $space-s;
+  position: relative;
+}
+.menu__link-icon {
+  @include set-size($space-l, $space-l);
+  @include position-top-right(50%, $space-x);
+  line-height: $space-l;
+  margin-top: $space-l * -0.5;
+}
+.menu__foot {
+  padding-left: $space-x;
+  padding-right: $space-s;
+  &, a {
+    color: $flare-weak;
+    vertical-align: middle;
+  }
+}
+@include stick-footer(50px, ".menu__body", ".menu__push", ".menu__foot");
+
+/* Animation & Layout Properties
+----------------------------------------------- */
+
+.menu__pane {
+  @include transform(translate3d(0, 0, 0) scale(1,1));
+  @include position-top-left(0,0, fixed);
+  &.moved--right {
+    @include transform(translate($side-width + $space-h) scale(0.98,0.98));
+    .menu__link-back {
+      @include transform(translate3d($side-width + $space-h * -1, 0, 0));
+    }
+  }
+  &.moved--left {
+    @include transform-origin(left);
+    @include transform(scale(0.98,0.98) translate3d($space-s, 0, 0));
+  }
+}
+
+.menu__pane--0 {
+  @include transition(transform $time);
+  overflow-y: auto;
+  z-index: 5;
+}
+.menu__pane--1 {
+  @include transition(transform $time $delay);
+  overflow-y: auto;
+  padding-left: $menu-back-offset;
+  z-index: 10;
+}

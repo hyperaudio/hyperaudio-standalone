@@ -11,154 +11,175 @@
 </head>
 <body class="tpl--home">
 
-  <aside id="pageSide--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="inactive">
+  <aside id="pageSide--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="active">
     <div class="page-side__body">
-      <div id="page-menu" class="menu" data-active-pane="0">
-        <div id="page-menu-root" class="menu__pane--lvl-0">
+      <a id="menu-reset" class="menu-reset toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root" aria-hidden="false">
+        <span class="menu__link-icon">
+          <i class="icon-m-arrow-left"></i>
+        </span>
+        <span class="hide">Back</span>
+      </a>
+      <div id="page-menu" class="menu" data-active-pane="">
+        <div id="page-menu-root" class="menu__pane menu__pane--0">
+          <div class="menu__body">
+            <div class="menu__head" style="background-image: url('images/temp1.jpg')">
+              <h2 class="menu__title">Palestine Remix</h2>
+              <p class="menu__text">Start your search and discovery here</p>
+            </div>
+            <form>
+              <input class="text-input menu__search" type="search" placeholder="Search…"/>
+            </form>
+            <h3 class="menu__subtitle">Explore curated content</h3>
+            <ol class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="documentaries">Films <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="themes">Themes <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="mashups">Remixes <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+              </li>
+            </ol>
+            <h3 class="menu__subtitle">Browse by</h3>
+            <ol class="menu__list mbm">
+              <li class="menu__item">
+                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="eras">Periods <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="places">Locations <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="witnesses">Witnesses <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="characters">Characters <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+              </li>
+            </ol>
+            <div class="menu__push"></div>
+          </div>
+          <div class="menu__foot">
+            <span class="brandmark float-left mrx">
+              <i class="icon-logo-aljazeera"></i>
+            </span>
+            <span class="footnotes">
+              An Al Jazeera Production<br/>
+              <a href="about.html">About</a> • <a href="about.html">Credits</a>
+            </span>
+          </div>
+        </div>
+        <div id="menu__pane--documentaries" class="menu__pane menu__pane--1 moved--right">
+          <div class="menu__head" style="background-image: url('images/temp1.jpg')">
+            <h2 class="menu__title">Films</h2>
+            <p class="menu__text">Our full-lenght documentaries</p>
+          </div>
           <ol class="menu__list">
-            <li class="menu__list-item menu__heading"><a class="menu__link" href="index.html">Palestine Remix</a></li>
-            <li class="menu__list-item">
-              <form>
-                <input class="text-input" type="search" placeholder="Search…"/>
-              </form>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="documentaries">Films <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="themes">Themes <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="eras"><span class="menu__key">Events</span> by Eras <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="places"><span class="menu__key">Locations</span> of interest <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="people"><span class="menu__key">Characters</span> involved <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="mashups"><span class="menu__key">Remixes</span> we Loved <span class="menu__link-pointer"><i class="icon-s-arrow-right"></i></span></a>
-            </li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Al Nakba 1 2 3 4</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Lost Cities of Palestine</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Against the Wall</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Area C</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Last Shepherds of the Valley</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Beyond the Walls</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Hunger Strike</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Going Against the Grain</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">The Pain Inside</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Forbidden Pilgrimage</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Inside Shin Bet</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">The Price of Oslo 1 2</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Gaza Lives On</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Gaza Left in the Dark</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Palestina Amore</a></li>
+            <li class="menu__item"><a class="menu__link" href="longform.html">Gaza We are Coming</a></li>
           </ol>
         </div>
-        <div id="menu__pane--documentaries" class="menu__pane--lvl-1 moved--right">
-          <h2 class="menu__heading mls">Documentaries</h2>
+        <div id="menu__pane--themes" class="menu__pane menu__pane--1 moved--right">
+          <div class="menu__head" style="background-image: url('images/temp1.jpg')">
+            <h2 class="menu__title">Themes</h2>
+            <p class="menu__text">Fundametal topics in form of curated essays</p>
+          </div>
           <ol class="menu__list">
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Al Nakba 1 2 3 4</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Lost Cities of Palestine</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Against the Wall</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Area C</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Last Shepherds of the Valley</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Beyond the Walls</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Hunger Strike</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Going Against the Grain</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">The Pain Inside</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Forbidden Pilgrimage</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Inside Shin Bet</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">The Price of Oslo 1 2</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Gaza Lives On</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Gaza Left in the Dark</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Palestina Amore</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="longform.html">Gaza We are Coming</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Zionism</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Occupation</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Refugees</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Resistance</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Prisoners</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Negotiations</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">International Solidarity</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Children</a></li>
           </ol>
-          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root" aria-hidden="true">
-            <span class="menu__link-pointer">
-              <i class="icon-m-arrow-left"></i>
-            </span>
-            <span class="hide">Back</span>
-          </a>
         </div>
-        <div id="menu__pane--themes" class="menu__pane--lvl-1 moved--right">
-          <h2 class="menu__heading mls">Themes</h2>
+        <div id="menu__pane--witnesses" class="menu__pane menu__pane--1 moved--right">
+          <div class="menu__head" style="background-image: url('images/temp1.jpg')">
+            <h2 class="menu__title">Witnesses</h2>
+            <p class="menu__text">Browse video-content by key personages interviewed</p>
+          </div>
           <ol class="menu__list">
-            <li class="menu__list-item"><a class="menu__link" href="theme.html">Zionism</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="theme.html">Occupation</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="theme.html">Refugees</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="theme.html">Resistance</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="theme.html">Prisoners</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="theme.html">Negotiations</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="theme.html">International Solidarity</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="theme.html">Children</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Interviewee 1</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Interviewee 2</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Interviewee 3</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Interviewee 4</a></li>
+            <li class="menu__item"><a class="menu__link" href="theme.html">Interviewee 5</a></li>
           </ol>
-          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root" aria-hidden="true">
-            <span class="menu__link-pointer">
-              <i class="icon-m-arrow-left"></i>
-            </span>
-            <span class="hide">Back</span>
-          </a>
         </div>
-        <div id="menu__pane--people" class="menu__pane--lvl-1 moved--right">
-          <h2 class="menu__heading mls">Characters involved</h2>
+        <div id="menu__pane--characters" class="menu__pane menu__pane--1 moved--right">
+          <div class="menu__head" style="background-image: url('images/temp1.jpg')">
+            <h2 class="menu__title">Personages</h2>
+            <p class="menu__text">Browse video-content by characters involved</p>
+          </div>
           <ol class="menu__list">
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Name Surname</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Nome Cognome</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Imię Nazwisko</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Name Surname</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Nome Cognome</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Imię Nazwisko</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Name Surname</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Nome Cognome</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Imię Nazwisko</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Name Surname</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Nome Cognome</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Imię Nazwisko</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Name Surname</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Nome Cognome</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Imię Nazwisko</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Name Surname</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Nome Cognome</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Imię Nazwisko</a></li>
           </ol>
-          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root" aria-hidden="true">
-            <span class="menu__link-pointer">
-              <i class="icon-m-arrow-left"></i>
-            </span>
-            <span class="hide">Back</span>
-          </a>
         </div>
-        <div id="menu__pane--places" class="menu__pane--lvl-1 moved--right">
-          <h2 class="menu__heading mls">Locations of interest</h2>
+        <div id="menu__pane--places" class="menu__pane menu__pane--1 moved--right">
+          <div class="menu__head" style="background-image: url('images/temp1.jpg')">
+            <h2 class="menu__title">Places</h2>
+            <p class="menu__text">Browse video-content by key locations</p>
+          </div>
           <ol class="menu__list">
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Place</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Place</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Place</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Place</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Place</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Place</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Place</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Place</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Place</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Place</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Place</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Place</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Place</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Place</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Place</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Place</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Place</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Place</a></li>
           </ol>
-          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root" aria-hidden="true">
-            <span class="menu__link-pointer">
-              <i class="icon-m-arrow-left"></i>
-            </span>
-            <span class="hide">Back</span>
-          </a>
         </div>
-        <div id="menu__pane--eras" class="menu__pane--lvl-1 moved--right">
-          <h2 class="menu__heading mls">Events by Eras</h2>
+        <div id="menu__pane--eras" class="menu__pane menu__pane--1 moved--right">
+          <div class="menu__head" style="background-image: url('images/temp1.jpg')">
+            <h2 class="menu__title">Eras</h2>
+            <p class="menu__text">Browse video-content by key periods</p>
+          </div>
           <ol class="menu__list">
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Era 1</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Era 2</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Era 3</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="listing.html">Era 4</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Era 1</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Era 2</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Era 3</a></li>
+            <li class="menu__item"><a class="menu__link" href="listing.html">Era 4</a></li>
           </ol>
-          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root" aria-hidden="true">
-            <span class="menu__link-pointer">
-              <i class="icon-m-arrow-left"></i>
-            </span>
-            <span class="hide">Back</span>
-          </a>
         </div>
-        <div id="menu__pane--mashups" class="menu__pane--lvl-1 moved--right">
-          <h2 class="menu__heading mls">Remixes we Loved</h2>
+        <div id="menu__pane--mashups" class="menu__pane menu__pane--1 moved--right">
+          <div class="menu__head" style="background-image: url('images/temp1.jpg')">
+            <h2 class="menu__title">Contributed Remixes</h2>
+            <p class="menu__text">Video-remixes we particularily loved</p>
+          </div>
           <ol class="menu__list">
-            <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">My Palestina</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Which President are you?</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">It may possibly a long title, as it’s user generated</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Access to education</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">The Palestine I know</a></li>
-            <li class="menu__list-item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Once upon a time in Palestina</a></li>
+            <li class="menu__item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">My Palestina</a></li>
+            <li class="menu__item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Which President are you?</a></li>
+            <li class="menu__item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">It may possibly a long title, as it’s user generated</a></li>
+            <li class="menu__item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Access to education</a></li>
+            <li class="menu__item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">The Palestine I know</a></li>
+            <li class="menu__item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Once upon a time in Palestina</a></li>
           </ol>
-          <a class="menu__link-back toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root" aria-hidden="true">
-            <span class="menu__link-pointer">
-              <i class="icon-m-arrow-left"></i>
-            </span>
-            <span class="hide">Back</span>
-          </a>
         </div>
       </div>
     </div>
@@ -204,8 +225,8 @@
   </div>
   <aside id="pageSide--right" class="page-side page-side--right moved" data-side-push="left" data-side-state="inactive">
     <div class="page-side__body">
-      <div class="menu pts">
-        <h2 class="menu__title mls">Share this page</h2>
+      <div class="menu">
+        <h2 class="menu__title page-side__head">Share this page</h2>
         <ul class="menu__listing">
           <li class="menu__item"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=URL" class="button menu__link"><i class="icon-facebook" style="background-color: #3B5998"></i> Share on Facebook</a></li>
           <li class="menu__item"><a target="_blank" href="https://twitter.com/home?status=URL" class="button menu__link"><i class="icon-twitter" style="background-color: #4099FF"></i> Share on Twitter</a></li>
@@ -216,7 +237,6 @@
       <!-- <div class="page-side__push"></div> -->
     </div>
 <!--     <div class="page-side__foot">
-      There will be footer
     </div> -->
   </aside>
   <div id="page-overlay" class="page-overlay toggleSide" data-overlay-state="inactive" data-side-target="all"></div>

@@ -6,34 +6,22 @@
   color: $color;
   background-color: $background;
   border-color: $shadow-light;
-  a {
-    color: $red-LD;
-  }
 }
 
 @mixin fill-inverted {
   color: $background;
-  background-color: $shadow-medium;
+  background-color: $mono-D;
   border-color: $flare-light;
-  a {
-    color: $red-LD;
-  }
 }
 
 @mixin fill-red {
   color: $mono-Wt;
   background-color: $red-LD;
-  border-color: $flare-light;
-  a {
-    color: $mono-Wt;
-  }
+  border-color: $shadow-light;
 }
 
 @mixin fill-green {
   color: $mono-Wt;
   background-color: $green-LD;
-  border-color: $flare-light;
-  a {
-    color: $mono-Wt;
-  }
+  border-color: $shadow-light;
 }

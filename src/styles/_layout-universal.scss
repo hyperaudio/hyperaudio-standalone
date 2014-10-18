@@ -96,6 +96,7 @@
   @include clearfix;
   height: 100%;
   opacity: 1;
+  // overflow-x: hidden;
   position: relative;
 }
 
@@ -125,7 +126,8 @@
 .page-head {
   @include transform(translate3d(0,0,0));
   @include position-top-left(0,0, fixed);
-  @include set-size(100%, $head-height);
+  width: 100%;
+  // @include set-size(100%, inherit);
   line-height: $head-height;
   z-index: 100;
 }

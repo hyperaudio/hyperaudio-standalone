@@ -3,7 +3,7 @@ document.addEventListener "DOMContentLoaded", ->
   console.log "السلام عليكم"
 
   renderCover()
-  renderHeader()
+  renderHead()
   renderOverlay()
   renderPage()
   renderSidebar()
@@ -12,8 +12,9 @@ document.addEventListener "DOMContentLoaded", ->
 window.onresize = throttle((event) ->
   renderCover()
   renderOverlay()
-, 250)
+, 350)
 
 window.onscroll = throttle((event) ->
   toggleHead()
-, 250)
+  handleOffCanvasBlocks()
+, 350)

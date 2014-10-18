@@ -10,8 +10,7 @@
 
 .pri-button {
   @extend %button;
-  background: $link-color;
-  color: $background;
+  @include fill-red;
 }
 
 .sec-button {

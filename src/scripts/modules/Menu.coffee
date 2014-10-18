@@ -1,6 +1,7 @@
 menu                = document.getElementById("page-menu")
+menuReset           = document.getElementById("menu-reset")
 menuLvlRoot         = document.getElementById("page-menu-root")
-menuLvl1            = document.getElementsByClassName("menu__pane--lvl-1")
+menuLvl1            = document.getElementsByClassName("menu__pane--1")
 menuToggles         = document.getElementsByClassName("toggleMenuPane")
 
 # Define Magic
@@ -10,10 +11,12 @@ renderMenuPane      = (dir, id) ->
   targetMenuPane    = menu.getAttribute "data-active-pane"
   if dir is "drillup"
     menuLvlRoot.classList.remove "moved--left"
+    menuReset.classList.add "moved"
     [].forEach.call menuLvl1, (el) ->
       el.classList.add "moved--right"
   else if dir is "drilldown"
     menuLvlRoot.classList.add "moved--left"
+    menuReset.classList.remove "moved"
     document.getElementById("menu__pane--" + id).classList.remove "moved--right"
 
 alterMenuPaneState    = (lvl, id) ->

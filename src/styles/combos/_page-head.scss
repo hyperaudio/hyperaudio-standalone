@@ -12,8 +12,11 @@
 
 .page-head__brandmark {
   display: block;
-  line-height: inherit;
   text-align: center;
+  a {
+    display: inline-block;
+    line-height: $head-height;
+  }
 }
 
 /* Menu Items

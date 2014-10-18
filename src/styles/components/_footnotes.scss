@@ -1,0 +1,12 @@
+/**
+ * Footnotes
+ * ============================================ */
+
+.footnotes {
+  @include set-type-xsmall;
+  display: inline;
+  text-transform: uppercase;
+  a {
+    text-decoration: underline;
+  }
+}

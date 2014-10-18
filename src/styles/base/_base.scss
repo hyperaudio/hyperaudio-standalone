@@ -17,7 +17,6 @@ body {
   color: $color;
   font-family: $font;
   * {
-    border-color: inherit;
     border-style: solid;
   }
   &.clipped {

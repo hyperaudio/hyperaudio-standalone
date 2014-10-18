@@ -4,7 +4,22 @@
 
 .page-side {
   @include fill-inverted;
+  &.page-side--left {
+    background-color: $mono-LD;
+  }
 }
-.page-side--right {
-  @include fill-green;
+
+.page-side__head {
+  @include fill-inverted;
+  background-size: cover;
+  background-position: center center;
+  padding: $space-l $space;
+}
+
+.page-side--right .page-side__head {
+  background-image: url('../images/temp2.jpg');
+}
+
+.page-side--left .page-side__head {
+  background-image: url('../images/temp3.jpg');
 }

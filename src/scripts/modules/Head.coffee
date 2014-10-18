@@ -1,8 +1,6 @@
-#**
-#* Header.js
-#* ============================================ *#
+## Alter header appearance on scroll
 
-renderHeader = () ->
+renderHead = () ->
   pageHead      = document.getElementById "page-head"
   pageHeadState = pageHead.getAttribute "data-head-state"
   if pageHeadState is "altered"
@@ -18,4 +16,4 @@ toggleHead = ->
       pageHead.setAttribute "data-head-state", "altered"
     else
       pageHead.setAttribute "data-head-state", ""
-    renderHeader()
+    renderHead()

@@ -7,17 +7,6 @@
 /* Colors
 ----------------------------------------------- */
 
-// Monochrome
-$mono-Blk           : #000;
-// $mono-LD
-$mono-D             : #606060;
-// $mono-HD
-$mono-M             : #9a9a9a;
-// $mono-LLt
-$mono-Lt            : #BBB;
-$mono-HL            : #D9D9D9;
-$mono-Wt            : #fff;
-
 // Rainbow
 $graphite-LD        : #788A91;
 $graphite-HD        : #9AA7AC;
@@ -27,76 +16,24 @@ $graphite-HL        : #DADFE1;
 $red-LD             : #F22613;
 $red-HL             : #FDDBD8;
 
-$green-LD            : #007A3D;
-$green-HL            : #DBF5FA;
-
-/* Shadows and glows
------------------------------------------------ */
-
-$shadow-heavy       : rgba(0,0,0,0.85);
-$shadow-strong      : rgba(0,0,0,0.71);
-$shadow-medium      : rgba(0,0,0,0.57);
-$shadow-weak        : rgba(0,0,0,0.29);
-$shadow-light       : rgba(0,0,0,0.15);
-
-$flare-heavy        : rgba(255,255,255,0.85);
-$flare-strong       : rgba(255,255,255,0.71);
-$flare-medium       : rgba(255,255,255,0.57);
-$flare-weak         : rgba(255,255,255,0.29);
-$flare-light        : rgba(255,255,255,0.15);
+$green-LD           : #007A3D;
+$green-HL           : #DBF5FA;
 
 /* Typography
 ----------------------------------------------- */
 
-// Font Families
-$primary-font       : 'Merriweather', serif;
-$secondary-font     : 'Lato', sans-serif;
-$tertiary-font      : 'Raleway', sans-serif;
-
 // Font Sizes
-$font-size-xl       : 24px;
-$font-size-l        : 20px;
-$font-size-m        : 16px;
-$font-size-s        : 14px;
-$font-size-xs       : 12px;
+$font-xxl           : 20px;
+$font-xl            : 17px;
+$font-l             : 15px;
+$font-m             : 13px;
+$font-s             : 12px;
+$font-xs            : 11px;
+$font-xxs           : 10px;
 
-// Font Weights
-$font-weight-light  : 300;
-$font-weight-regular: 400;
-$font-weight-medium : 500;
-$font-weight-bold   : 700;
-
-// Line Heights
-$line-height-m      : 1.50em;
-$line-height-s      : 1.25em;
-$line-height-x      : 1.0em;
-
-/* Spaces
------------------------------------------------ */
-
-$spaces: (
-  'h'   40px,
-  'l'   20px,
-  'm'   15px,
-  's'   10px,
-  'x'   5px,
-  'n'   0
-)!default;
-
-$space-h            : 40px;
-$space-l            : 20px;
-$space-m            : 15px;
-$space-s            : 10px;
-$space-x            : 5px;
-$space-n            : 0;
-
-/* Border Radii
------------------------------------------------ */
-
-$radius-absolute    : 1000px;
-$radius-l           : 9px;
-$radius-m           : 6px;
-$radius-s           : 3px;
+// Font Families
+$primary-font       : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font     : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /* Default Definitions
 ----------------------------------------------- */
