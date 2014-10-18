@@ -8,10 +8,15 @@
   * {
     line-height: $page-head-height;
   }
+  a {
+    color: $mono-Wt;
+  }
 }
 
 .page-head__brandmark {
+  @include set-type-large;
   display: block;
+  font-weight: $font-bold;
   text-align: center;
   a {
     display: inline-block;
@@ -37,4 +42,7 @@
 .page-head--altered {
   background: $background;
   box-shadow: 0 1px 2px $shadow-weak !important;
+  a {
+    color: $link-color;
+  }
 }

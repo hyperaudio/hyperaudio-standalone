@@ -17,6 +17,7 @@ STYLES = [
   "./src/styles/**/*.scss"
 ]
 SCRIPTS = [
+  "./bower_components/swiper/dist/idangerous.swiper.min.js"
   "./bower_components/hyperaudio/dist/assets/scripts/hyperaudio.js"
 ]
 

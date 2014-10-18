@@ -4,6 +4,7 @@ document.addEventListener "DOMContentLoaded", ->
 
   renderCover()
   renderFoldCards()
+  renderFoldSwiper()
   renderHead()
   renderMenu()
   renderOverlay()

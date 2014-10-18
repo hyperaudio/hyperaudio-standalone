@@ -1,0 +1,49 @@
+/**
+ * Fold Swipers
+ * ============================================ */
+
+.foldswiper,
+.foldswiper__wrapper,
+.foldswiper__item {
+  height: 100%;
+}
+
+.foldswiper {
+  @include backface-visibility(hidden);
+  margin:0 auto;
+  overflow:hidden;
+  position:relative;
+  z-index:1; // Fix of Webkit flickering
+}
+.foldswiper__wrapper {
+  @include transition-duration(0s);
+  @include transition-property(left, top);
+  @include transition-timing-function(ease);
+  @include transform(translate3d(0,0,0));
+  @include box-sizing(content-box);
+  position:relative;
+  width:100%;
+}
+.swiper-free-mode > .foldswiper__wrapper {
+  @include transition-timing-function(ease-out);
+  margin: 0 auto;
+}
+.foldswiper__item {
+  @include box-sizing(content-box);
+  background-size: cover;
+  background-position: center center;
+  float: left;
+  position: relative;
+  white-space: normal;
+}
+.foldswiper__item-content {
+  padding-top: $page-head-height;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+}
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+}
