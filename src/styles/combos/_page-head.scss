@@ -6,7 +6,7 @@
   text-align: center;
   z-index: 1000;
   * {
-    line-height: $head-height;
+    line-height: $page-head-height;
   }
 }
 
@@ -15,7 +15,7 @@
   text-align: center;
   a {
     display: inline-block;
-    line-height: $head-height;
+    line-height: $page-head-height;
   }
 }
 

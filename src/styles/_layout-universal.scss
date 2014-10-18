@@ -84,10 +84,10 @@
 }
 
 .page-side__foot {
-  line-height: $foot-height;
+  line-height: $side-foot-height;
 }
 
-@include stick-footer($foot-height, ".page-side__body", ".page-side__push", ".page-side__foot");
+@include stick-footer($side-foot-height, ".page-side__body", ".page-side__push", ".page-side__foot");
 
 /* Page Body
 ----------------------------------------------- */
@@ -106,9 +106,9 @@
 .page-wrap {
   @include clearfix;
   overflow-x: hidden;
-  padding: (($space-l * 1.5) + $head-height) 0 $space;
+  padding: (($space-l * 1.5) + $page-head-height) 0 $space;
   @include breakpoint(m) {
-    padding: ($space-h + $head-height) 0 $space-h;
+    padding: ($space-h + $page-head-height) 0 $space-h;
   }
 }
 
@@ -128,7 +128,7 @@
   @include position-top-left(0,0, fixed);
   width: 100%;
   // @include set-size(100%, inherit);
-  line-height: $head-height;
+  line-height: $page-head-height;
   z-index: 100;
 }
 
@@ -155,3 +155,8 @@
     @include position-top-left(0, $side-width, fixed);
   }
 }
+
+/* Page Foot
+----------------------------------------------- */
+
+@include stick-footer($page-foot-height, ".page-wrap", ".page-push", ".page-foot");

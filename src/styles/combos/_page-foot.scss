@@ -2,10 +2,19 @@
  * Page Foot
  * ============================================ */
 
-.page-footer {
-  background: $shadow-light; // STYlE
-  border-top-width: 1px;
-  border-top-style: solid;
-  padding: $space-x $space-s;
+.page-foot {
+  @include fill-inverted;
+  padding-left: $space-s;
+  padding-right: $space-s;
   text-align: center;
+}
+
+.page-foot .brandmark {
+  margin-top: $space-m;
+  margin-bottom: $space-s;
+  text-align: center;
+}
+.page-foot .footnotes {
+  display: block;
+  color: $mono-M;
 }

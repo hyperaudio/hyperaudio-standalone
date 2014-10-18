@@ -8,7 +8,7 @@
   background-position: center center;
   background-size: cover;
   display: block;
-  padding: ($head-height + ($space-h * 2)) $space-s ($space-h * 2);
+  padding: ($page-head-height + ($space-h * 2)) $space-s ($space-h * 2);
   position: relative;
   &:after {
     @include position-top-right(0,0);
