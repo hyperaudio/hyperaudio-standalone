@@ -73,6 +73,13 @@ $menu-back-offset : $tap-size;
 .menu__item {
   display: block;
 }
+.menu__search {
+  background: $flare-medium;
+  &:active,
+  &:focus {
+    background: $mono-Wt;
+  }
+}
 .menu__link,
 .menu__link--alt {
   @include truncate;

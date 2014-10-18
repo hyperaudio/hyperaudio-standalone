@@ -2,22 +2,23 @@
  * Toolbars
  * ============================================ */
 
-$toolbar-toggle-size: $space-h;
+$toolbar-size        : 40px;
 
 .toolbar {
   @include fill-default;
+  line-height: $toolbar-size;
   border-bottom-width: 1px;
   position: relative;
 }
 .toolbar__input {
-  margin-right: $toolbar-toggle-size;
+  margin-right: $toolbar-size;
 }
 .toolbar__toggle {
   @include position-top-right(0,0);
-  width: $toolbar-toggle-size;
-  padding: $space-x $space-s;
+  width: $toolbar-size;
   text-align: right;
   display: inline-block;
+  padding-right: $space-s;
 }
 .toolbar__extension {
   @include transition(
