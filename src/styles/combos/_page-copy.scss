@@ -19,6 +19,26 @@
     padding-left: 0;
     padding-right: 0;
   }
+  * {
+    border-color: $shadow-light;
+  }
+  h3 {
+    @include set-type-xlarge;
+    margin-bottom: $line;
+    margin-top: $line;
+    font-weight: $font-bold;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  h4 {
+    @include set-type-medium;
+    @include reset(first, margin-top);
+    margin-bottom: $line;
+    margin-top: $line;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: $spacing;
+  }
   p, blockquote,
   figcaption {
     @extend %page-copy-block;
@@ -54,5 +74,21 @@
     @include breakpoint(m) {
       margin-top: $line;
     }
+  }
+  dl {
+    @include clearfix;
+    display: block;
+    > * {
+      height: auto;
+      float: left;
+      margin: 0 0 ($line / 2) 0;
+    }
+  }
+  dt {
+    color: $mono-M;
+    width: 40%;
+  }
+  dd {
+    width: 60%;
   }
 }
