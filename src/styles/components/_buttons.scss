@@ -2,17 +2,14 @@
  * Buttons
  * ============================================ */
 
-%button {
+.button {
   display: inline-block;
-  text-align: center;
-  padding: $space;
 }
 
 .pri-button {
-  @extend %button;
   @include fill-red;
 }
 
 .sec-button {
-
+  display: inline-block;
 }

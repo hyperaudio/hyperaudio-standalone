@@ -2,20 +2,17 @@
  * Menus
  * ============================================ */
 
-$menu-back-offset: 32px;
+$tap-size         : $tap-size;
+$menu-back-offset : $tap-size;
 
 .menu-reset {
   @include position-top-left(0,0, fixed);
   background-color: $mono-LD;
   height: 100%;
   display: block;
-  padding: $space-m 0;
   width: $menu-back-offset;
   text-align: center;
   z-index: 15;
-  .menu__link-icon {
-    position: static;
-  }
 }
 .menu {
   color: $flare-medium;
@@ -62,7 +59,7 @@ $menu-back-offset: 32px;
   z-index: 10;
 }
 .menu__subtitle {
-  color: $flare-weak;
+  color: $mono-M;
   font-weight: $font-bold;
   margin-top: $space-s;
   padding: $space;
@@ -76,14 +73,33 @@ $menu-back-offset: 32px;
 .menu__item {
   display: block;
 }
-.menu__link.menu__link {
+.menu__link,
+.menu__link--alt {
   @include truncate;
-  border-bottom: 1px solid $flare-light;
   color: $flare-medium;
   display: block;
   line-height: $space-l;
-  padding: $space $space-s;
   position: relative;
+  &.menu__link {
+    border-bottom-width: 1px;
+    border-color: $flare;
+    padding: $space $space-s;
+  }
+  &.menu__link--alt {
+    border-width: 1px;
+    border-color: $flare;
+    margin: 0 $space-s $space;
+    line-height: $tap-size;
+    i {
+      background-color: $flare;
+      float: left;
+      width: $tap-size;
+      height: $tap-size;
+      line-height: $tap-size;
+      text-align: center;
+      margin-right: $space;
+    }
+  }
 }
 .menu__link-icon {
   @include set-size($space-l, $space-l);
@@ -95,7 +111,7 @@ $menu-back-offset: 32px;
   padding-left: $space-x;
   padding-right: $space-s;
   &, a {
-    color: $flare-weak;
+    color: $mono-M;
     vertical-align: middle;
   }
 }

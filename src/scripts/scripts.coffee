@@ -17,5 +17,4 @@ window.onresize = throttle((event) ->
 
 window.onscroll = throttle((event) ->
   toggleHead()
-  handleOffCanvasBlocks()
 , 350)

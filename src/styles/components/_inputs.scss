@@ -2,15 +2,25 @@
  * Inputs
  * ============================================ */
 
-.text-input {
+%text-input {
   @include appearance(none);
   @include set-type-small;
+  border-radius: 0;
   border-width: 0;
   box-shadow: none;
   cursor: text;
+  color: $color;
   display: block;
   font-family: $font;
+  font-size: $size;
   padding: $space;
   text-indent: 0;
   width: 100%;
+  @include placeholder {
+    color: $shadow-light;
+  }
+}
+
+.text-input {
+  @extend %text-input;
 }
