@@ -5,21 +5,16 @@
 $menu-back-offset: 32px;
 
 .menu-reset {
-  // @include transform(translate3d($menu-back-offset * -1, 0, 0));
   @include position-top-left(0,0, fixed);
-  @include fill-inverted;
+  background-color: $mono-LD;
   height: 100%;
-  box-shadow: inset -1px 0 2px $shadow-light;
   display: block;
   padding: $space-m 0;
   width: $menu-back-offset;
   text-align: center;
-  z-index: 300;
+  z-index: 15;
   .menu__link-icon {
     position: static;
-  }
-  &.moved {
-    // @include transform(translate3d($menu-back-offset * -1, 0, 0));
   }
 }
 .menu {
@@ -32,7 +27,6 @@ $menu-back-offset: 32px;
 }
 .menu__pane {
   @include set-size(100%,100%);
-  box-shadow: -1px 0 2px $shadow-weak;
   background-color: $mono-D;
 }
 .menu__head {
@@ -40,6 +34,10 @@ $menu-back-offset: 32px;
   background-size: cover;
   padding: $space;
   position: relative;
+  a {
+    color: $mono-Wt;
+    text-decoration: underline;
+  }
   &:before {
     @include position-top-left(0,0);
     @include position-bottom-right(0,0);
@@ -107,28 +105,44 @@ $menu-back-offset: 32px;
 ----------------------------------------------- */
 
 .menu__pane {
-  @include transform(translate3d(0, 0, 0) scale(1,1));
+  @include transition(transform $time, opacity $time);
+  @include transform(translate3d(0, 0, 0));
   @include position-top-left(0,0, fixed);
+  overflow-y: auto;
+  opacity: 1;
   &.moved--right {
-    @include transform(translate($side-width + $space-h) scale(0.98,0.98));
-    .menu__link-back {
-      @include transform(translate3d($side-width + $space-h * -1, 0, 0));
-    }
+    @include transform(translate($side-width + $space-h));
   }
   &.moved--left {
     @include transform-origin(left);
-    @include transform(scale(0.98,0.98) translate3d($space-s, 0, 0));
+    @include transform(translate3d(($side-width - $menu-back-offset) * -1, 0, 0));
+    opacity: 0;
   }
 }
 
-.menu__pane--0 {
-  @include transition(transform $time);
-  overflow-y: auto;
+.menu-reset {
+  @include transition(transform $time, opacity $time);
+  @include transform(translate3d(translate3d(0, 0, 0), 0, 0));
+  &.moved {
+    @include transform(translate3d($menu-back-offset * -1, 0, 0));
+    border-right-color: transparent;
+    opacity: 0;
+  }
+}
+
+#menu__pane--root {
   z-index: 5;
 }
-.menu__pane--1 {
-  @include transition(transform $time $delay);
+#menu__pane--documentaries,
+#menu__pane--themes,
+#menu__pane--witnesses,
+#menu__pane--characters,
+#menu__pane--places,
+#menu__pane--eras,
+#menu__pane--remixes {
+  @include position-top-left(0,$menu-back-offset, fixed);
+  @include transition(transform $time);
   overflow-y: auto;
-  padding-left: $menu-back-offset;
   z-index: 10;
+  width: $side-width - $menu-back-offset;
 }

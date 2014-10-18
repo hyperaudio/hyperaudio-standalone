@@ -11,19 +11,13 @@
 </head>
 <body class="tpl--home">
 
-  <aside id="pageSide--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="active">
+  <aside id="pageSide--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="inactive">
     <div class="page-side__body">
-      <a id="menu-reset" class="menu-reset toggleMenuPane" data-menu-pane-target="0" data-menu-pane-target-id="root" aria-hidden="false">
-        <span class="menu__link-icon">
-          <i class="icon-m-arrow-left"></i>
-        </span>
-        <span class="hide">Back</span>
-      </a>
-      <div id="page-menu" class="menu" data-active-pane="">
-        <div id="page-menu-root" class="menu__pane menu__pane--0">
+      <div id="page-menu" class="menu" data-active-pane="root">
+        <div id="menu__pane--root" class="menu__pane">
           <div class="menu__body">
             <div class="menu__head" style="background-image: url('images/temp1.jpg')">
-              <h2 class="menu__title">Palestine Remix</h2>
+              <h2 class="menu__title"><a href="index.html">Palestine Remix</a></h2>
               <p class="menu__text">Start your search and discovery here</p>
             </div>
             <form>
@@ -32,28 +26,28 @@
             <h3 class="menu__subtitle">Explore curated content</h3>
             <ol class="menu__list">
               <li class="menu__item">
-                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="documentaries">Films <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+                <a class="menu__link toggleMenuPane" data-target-menu-pane-id="documentaries">Films <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
               </li>
               <li class="menu__item">
-                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="themes">Themes <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+                <a class="menu__link toggleMenuPane" data-target-menu-pane-id="themes">Themes <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
               </li>
               <li class="menu__item">
-                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="mashups">Remixes <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+                <a class="menu__link toggleMenuPane" data-target-menu-pane-id="remixes">Remixes <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
               </li>
             </ol>
             <h3 class="menu__subtitle">Browse by</h3>
             <ol class="menu__list mbm">
               <li class="menu__item">
-                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="eras">Periods <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+                <a class="menu__link toggleMenuPane" data-target-menu-pane-id="eras">Periods <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
               </li>
               <li class="menu__item">
-                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="places">Locations <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+                <a class="menu__link toggleMenuPane" data-target-menu-pane-id="places">Locations <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
               </li>
               <li class="menu__item">
-                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="witnesses">Witnesses <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+                <a class="menu__link toggleMenuPane" data-target-menu-pane-id="witnesses">Witnesses <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
               </li>
               <li class="menu__item">
-                <a class="menu__link toggleMenuPane" data-menu-pane-target="1" data-menu-pane-target-id="characters">Characters <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
+                <a class="menu__link toggleMenuPane" data-target-menu-pane-id="characters">Characters <span class="menu__link-icon"><i class="icon-s-arrow-right"></i></span></a>
               </li>
             </ol>
             <div class="menu__push"></div>
@@ -68,7 +62,7 @@
             </span>
           </div>
         </div>
-        <div id="menu__pane--documentaries" class="menu__pane menu__pane--1 moved--right">
+        <div id="menu__pane--documentaries" class="menu__pane moved--right">
           <div class="menu__head" style="background-image: url('images/temp1.jpg')">
             <h2 class="menu__title">Films</h2>
             <p class="menu__text">Our full-lenght documentaries</p>
@@ -92,7 +86,7 @@
             <li class="menu__item"><a class="menu__link" href="longform.html">Gaza We are Coming</a></li>
           </ol>
         </div>
-        <div id="menu__pane--themes" class="menu__pane menu__pane--1 moved--right">
+        <div id="menu__pane--themes" class="menu__pane moved--right">
           <div class="menu__head" style="background-image: url('images/temp1.jpg')">
             <h2 class="menu__title">Themes</h2>
             <p class="menu__text">Fundametal topics in form of curated essays</p>
@@ -108,7 +102,7 @@
             <li class="menu__item"><a class="menu__link" href="theme.html">Children</a></li>
           </ol>
         </div>
-        <div id="menu__pane--witnesses" class="menu__pane menu__pane--1 moved--right">
+        <div id="menu__pane--witnesses" class="menu__pane moved--right">
           <div class="menu__head" style="background-image: url('images/temp1.jpg')">
             <h2 class="menu__title">Witnesses</h2>
             <p class="menu__text">Browse video-content by key personages interviewed</p>
@@ -121,7 +115,7 @@
             <li class="menu__item"><a class="menu__link" href="theme.html">Interviewee 5</a></li>
           </ol>
         </div>
-        <div id="menu__pane--characters" class="menu__pane menu__pane--1 moved--right">
+        <div id="menu__pane--characters" class="menu__pane moved--right">
           <div class="menu__head" style="background-image: url('images/temp1.jpg')">
             <h2 class="menu__title">Personages</h2>
             <p class="menu__text">Browse video-content by characters involved</p>
@@ -138,7 +132,7 @@
             <li class="menu__item"><a class="menu__link" href="listing.html">Imię Nazwisko</a></li>
           </ol>
         </div>
-        <div id="menu__pane--places" class="menu__pane menu__pane--1 moved--right">
+        <div id="menu__pane--places" class="menu__pane moved--right">
           <div class="menu__head" style="background-image: url('images/temp1.jpg')">
             <h2 class="menu__title">Places</h2>
             <p class="menu__text">Browse video-content by key locations</p>
@@ -155,7 +149,7 @@
             <li class="menu__item"><a class="menu__link" href="listing.html">Place</a></li>
           </ol>
         </div>
-        <div id="menu__pane--eras" class="menu__pane menu__pane--1 moved--right">
+        <div id="menu__pane--eras" class="menu__pane moved--right">
           <div class="menu__head" style="background-image: url('images/temp1.jpg')">
             <h2 class="menu__title">Eras</h2>
             <p class="menu__text">Browse video-content by key periods</p>
@@ -167,7 +161,7 @@
             <li class="menu__item"><a class="menu__link" href="listing.html">Era 4</a></li>
           </ol>
         </div>
-        <div id="menu__pane--mashups" class="menu__pane menu__pane--1 moved--right">
+        <div id="menu__pane--remixes" class="menu__pane moved--right">
           <div class="menu__head" style="background-image: url('images/temp1.jpg')">
             <h2 class="menu__title">Contributed Remixes</h2>
             <p class="menu__text">Video-remixes we particularily loved</p>
@@ -181,6 +175,12 @@
             <li class="menu__item"><a class="menu__link" href="remix.html#/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282">Once upon a time in Palestina</a></li>
           </ol>
         </div>
+        <a id="menu-reset" class="menu-reset toggleMenuPane moved" data-target-menu-pane-id="root" aria-hidden="false">
+          <span class="menu__link-icon">
+            <i class="icon-m-arrow-left"></i>
+          </span>
+          <span class="hide">Back</span>
+        </a>
       </div>
     </div>
   </aside>
