@@ -11,16 +11,17 @@
   text-align: center;
 }
 .take-away__el {
-  @include fill-inverted;
+  background-color: $shadow-medium;
+  color: $mono-Wt;
   border-width: 1px;
-  padding: $space-h;;
+  padding: $space-h $space-m;
 }
 
 .take-away__title {
-  @include set-type-xsmall;
+  @include set-type-medium;
+  font-weight: $font-bold;
 }
 
 .take-away__action {
-  display: block;
   margin-top: $space;
 }

@@ -7,7 +7,12 @@
 }
 
 .pri-button {
-  @include fill-red;
+  // @include fill-red;
+  @include set-type-small;
+  display: inline-block;
+  font-weight: bold;
+  border-width: 2px;
+  padding: $space $space-s;
 }
 
 .sec-button {

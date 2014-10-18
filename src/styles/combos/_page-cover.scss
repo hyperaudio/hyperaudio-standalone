@@ -1,0 +1,56 @@
+/**
+ * Page Cover
+ * ============================================ */
+
+.page-cover {
+  @include clearfix;
+  @include fill-inverted;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  padding: ($head-height + ($space-h * 2)) $space-s ($space-h * 2);
+  position: relative;
+  &:after {
+    @include position-top-right(0,0);
+    @include position-bottom-left(0,0);
+    background: $shadow-medium;
+    content: "";
+    display: block;
+    z-index: 25;
+  }
+}
+
+.page-cover .page-header {
+  @include position-top-left(0,0);
+  @include position-top-right(0,0);
+  box-shadow: none;
+  z-index: 50;
+}
+
+.page-cover__el {
+  @include clearfix;
+  @include transition(scale(0.7,0.7));
+  position: relative;
+  z-index: 100;
+  &#page-coverEl {
+    @include position-top-left(inherit, $space-s);
+    @include position-top-right(inherit, $space-s);
+  }
+}
+
+.page-cover__scroll-indicator {
+  @include animation(pulse 2s infinite, slideDown 10s ease-in-out 0);
+  @include position-bottom-left(10%, 50%);
+  @include set-size(50px,50px);
+  display: block;
+  line-height: 50px;
+  margin-left: -25px;
+  text-align: center;
+  z-index: 300;
+  i {
+    font-size: 48px;
+  }
+  @include breakpoint(m) {
+    @include position-bottom-left(5%, 50%);
+  }
+}

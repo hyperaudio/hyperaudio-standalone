@@ -37,14 +37,10 @@
 
 .hgroup__text {
   @include set-type-small;
-  display: none;
-  @include breakpoint(m) {
-    display: block;
-  }
 }
 
 .hgroup__meta {
-  @include set-type-tiny;
+  @include set-type-xsmall;
   font-style: italic;
   opacity: $opacity;
 }
