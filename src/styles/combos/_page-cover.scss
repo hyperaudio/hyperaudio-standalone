@@ -44,9 +44,9 @@
   }
 }
 
-.page-cover__scroll-indicator {
+.page-cover__indicator {
   @include animation(pulse 2s infinite, slideDown 10s ease-in-out 0);
-  @include position-bottom-left(10%, 50%);
+  @include position-bottom-left($page-head-height, 50%);
   @include set-size(50px,50px);
   display: block;
   line-height: 50px;
