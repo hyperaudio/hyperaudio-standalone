@@ -1,0 +1,13 @@
+/**
+ * Listing
+ * ============================================ */
+
+.next {
+  @include transition(opacity $time);
+  display: none;
+  opacity: 0;
+  &.shown {
+    display: inherit;
+    opacity: 1;
+  }
+}

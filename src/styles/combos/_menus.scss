@@ -70,7 +70,10 @@ $menu-back-offset : $tap-size;
   display: block;
 }
 .menu__item {
+  border-bottom-width: 1px;
+  border-color: $flare;
   display: block;
+  position: relative;
 }
 .menu__search {
   background: $flare-medium;
@@ -87,8 +90,6 @@ $menu-back-offset : $tap-size;
   line-height: $space-l;
   position: relative;
   &.menu__link {
-    border-bottom-width: 1px;
-    border-color: $flare;
     padding: $space $space-s;
   }
   &.menu__link--alt {
@@ -106,6 +107,23 @@ $menu-back-offset : $tap-size;
       margin-right: $space;
     }
   }
+}
+.menu__supplement-toggle {
+  @include position-top-right(0,0);
+  display: block;
+  line-height: $space-l;
+  padding: $space $space-s;
+  text-transform: uppercase;
+  font-size: $font-xxs;
+  i {
+    font-size: 12px;
+  }
+}
+.menu__supplement {
+  @include set-type-xsmall;
+  border-top: 1px solid $flare-light;
+  margin: 0 $space-s $space;
+  padding-top: $space;
 }
 .menu__link-icon {
   @include set-size($space-l, $space-l);
