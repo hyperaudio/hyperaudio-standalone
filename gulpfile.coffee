@@ -34,7 +34,10 @@ gulp.task "html", ->
 # ---------------------------------------------- #
 gulp.task "compile-sass", ->
   gulp.src(STYLES)
-    .pipe $.sass(includePaths: SASSPATHS)
+    .pipe $.sass(
+      includePaths: SASSPATHS
+      outputStyle: "compressed"
+    )
     .on "error", handleError
     .pipe gulp.dest "dev/styles"
     .pipe $.connect.reload()
