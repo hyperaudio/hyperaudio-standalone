@@ -8,6 +8,7 @@ $menu-back-offset : $tap-size;
 .menu-reset {
   @include position-top-left(0,0, fixed);
   background-color: $mono-LD;
+  color: $flare-medium;
   height: 100%;
   display: block;
   width: $menu-back-offset;
@@ -16,9 +17,6 @@ $menu-back-offset : $tap-size;
 }
 .menu {
   color: $flare-medium;
-  a {
-    color: $flare-medium;
-  }
 }
 .menu__pane {
   @include set-size(100%,100%);

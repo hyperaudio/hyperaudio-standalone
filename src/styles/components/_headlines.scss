@@ -7,7 +7,8 @@
   background-size: cover;
   padding: $space;
   position: relative;
-  a {
+  a,
+  .headline & {
     color: $mono-Wt;
     text-decoration: underline;
   }
