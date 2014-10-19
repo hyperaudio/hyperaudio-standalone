@@ -14,8 +14,11 @@
   @include set-type-xsmall;
 }
 .tile__title {
-  @include set-type-xsmall;
+  @include set-type-tiny;
   @include truncate;
+  border-color: $shadow;
+  border-top-width: 1px;
+  padding-top: $space-x;
   margin-top: $space-x;
   opacity: $opacity;
 }

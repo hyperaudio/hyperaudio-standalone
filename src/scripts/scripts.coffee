@@ -15,6 +15,7 @@ document.addEventListener "DOMContentLoaded", ->
 window.onresize = throttle((event) ->
   renderCover()
   renderOverlay()
+  renderFoldCards()
 , 350)
 
 window.onscroll = throttle((event) ->

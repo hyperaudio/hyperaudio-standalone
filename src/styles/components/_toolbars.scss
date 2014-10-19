@@ -20,19 +20,3 @@ $toolbar-size        : 40px;
   display: inline-block;
   padding-right: $space-s;
 }
-.toolbar__extension {
-  @include transition(
-    height $time ease,
-    opacity $time ease
-  );
-  border-top: 1px solid $shadow;
-  margin-top: -1px;
-  &.toolbar__extension--active {
-    height: 37px;
-    opacity: 1;
-  }
-  &.toolbar__extension--inactive {
-    height: 0px;
-    opacity: 0;
-  }
-}
