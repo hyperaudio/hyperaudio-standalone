@@ -1,0 +1,45 @@
+/**
+ * Pagers
+ * ============================================ */
+
+.panel {
+  @include position-bottom-left(0,0, fixed);
+  @include position-bottom-right(0,0, fixed);
+  @include transition(transform $time);
+  @include transform(translate3d(0,100%,0));
+  box-shadow: 0 -1px 3px $shadow;
+  background-color: rgba(255,255,255,0.92);;
+  // height: 50%;
+  padding: $space;
+  z-index: 100;
+  &.panel--active {
+    @include transform(translate3d(0,0,0));
+  }
+}
+.panel__title {
+  @include set-type-medium;
+  border-color: $shadow-light;
+  border-bottom-width: 1px;
+  font-weight: $font-bold;
+  padding-bottom: $space;
+  text-align: center;
+}
+.panel__body {
+}
+.panel__subtitle {
+  color: $shadow-medium;
+  font-weight: $font-bold;
+  margin: $space 0;
+  text-align: center;
+}
+.panel__foot {
+  text-align: center;
+}
+.panel__action--sec {
+  @include position-top-right($space, $space);
+  font-weight: $font-bold;
+}
+.panel__action--pri {
+  @extend .pri-button;
+  display: block;
+}

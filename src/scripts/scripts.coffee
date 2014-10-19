@@ -8,6 +8,7 @@ document.addEventListener "DOMContentLoaded", ->
   renderHead()
   renderMenu()
   renderOverlay()
+  renderPanels()
   renderPage()
   renderSidebar()
 

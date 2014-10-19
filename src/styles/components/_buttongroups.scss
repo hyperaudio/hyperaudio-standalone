@@ -1,0 +1,21 @@
+/**
+ * Buttongroups
+ * ============================================ */
+
+.buttongroup {
+  white-space: nowrap;
+  overflow: auto;
+  text-align: center;
+}
+
+.buttongroup__item {
+  border-color: $mono-HL;
+  border-radius: $radius-s;
+  color: $mono-M;
+  border-width: 1px;
+  display: inline-block;
+  padding: $space-x;
+  &.buttongroup__item--active {
+    @include fill-red;
+  }
+}
