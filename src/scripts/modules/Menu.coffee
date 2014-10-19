@@ -22,55 +22,13 @@ renderMenu = () ->
     activePaneEl.classList.remove "moved--right"
     menuReset.classList.remove "moved"
 
+onMenuPaneToggle = (el) ->
+  targetPaneId  = el.getAttribute "data-target-menu-pane-id"
+  menu.setAttribute "data-active-pane", targetPaneId
+  renderMenu()
+
 # Bind Clicks
-
-addEvent window, "load", ->
-  i = 0
-  menuToggles = document.getElementsByClassName("toggleMenuPane")
-  l = menuToggles.length
-  while i < l
-    addEvent menuToggles[i], "click", (e) ->
-      thisToggle    = e.currentTarget
-      targetPaneId  = thisToggle.getAttribute "data-target-menu-pane-id"
-      menu.setAttribute "data-active-pane", targetPaneId
-      renderMenu()
-      e.returnValue = false
-      e.preventDefault() if e.preventDefault
-      false
-    ++i
-
-# menu                = document.getElementById("page-menu")
-# menuReset           = document.getElementById("menu-reset")
-# menuLvlRoot         = document.getElementById("page-menu-root")
-# menuLvl1            = document.getElementsByClassName("menu__pane--1")
-# menuToggles         = document.getElementsByClassName("toggleMenuPane")
-
-# # Define Magic
-# # ------------------------------------------ #
-
-# renderMenuPane      = (dir, id) ->
-#   targetMenuPane    = menu.getAttribute "data-active-pane"
-#   if dir is "drillup"
-#     menuLvlRoot.classList.remove "moved--left"
-#     menuReset.classList.add "moved"
-#     [].forEach.call menuLvl1, (el) ->
-#       el.classList.add "moved--right"
-#   else if dir is "drilldown"
-#     menuLvlRoot.classList.add "moved--left"
-#     menuReset.classList.remove "moved"
-#     document.getElementById("menu__pane--" + id).classList.remove "moved--right"
-
-# alterMenuPaneState    = (lvl, id) ->
-#   currentMenuPane     = menu.getAttribute "data-active-pane"
-#   targetMenuPaneLvl   = lvl
-
-#   if currentMenuPane == targetMenuPaneLvl
-#   else if currentMenuPane > targetMenuPaneLvl
-#     menu.setAttribute "data-active-pane", targetMenuPaneLvl
-#     renderMenuPane "drillup", id
-#   else if currentMenuPane < targetMenuPaneLvl
-#     menu.setAttribute "data-active-pane", targetMenuPaneLvl
-#     renderMenuPane "drilldown", id
-
-# onMenuPaneToggle    = (lvl, id) ->
-#   alterMenuPaneState(lvl, id)
+menuToggles = document.querySelectorAll ".toggleMenuPane"
+[].forEach.call menuToggles, (el) ->
+  el.addEventListener "click", (e) ->
+    onMenuPaneToggle(e.currentTarget)

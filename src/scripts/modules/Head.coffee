@@ -1,5 +1,3 @@
-## Alter header appearance on scroll
-
 renderHead = () ->
   pageHead      = document.getElementById "page-head"
   pageHeadState = pageHead.getAttribute "data-head-state"

@@ -1,50 +1,49 @@
-renderPanels       = () ->
+renderPanels        = () ->
   page              = document.body
-  panels            = document.getElementsByClassName "panel"
+  panels            = document.querySelectorAll ".panel"
+  states            = []
 
-  states = []
-
-  [].forEach.call panels, (el) ->
-    target          = el
-    state           = el.getAttribute "data-panel-state"
-    states.push(state)
-
-    if state is "active"
-      target.classList.add "panel--active"
+  # Populate states array with states of all panels
+  # Toggle visibility classes on panels according to the data attributes
+  [].forEach.call panels, (panel) ->
+    panelState      = panel.getAttribute "data-panel-state"
+    states.push(panelState)
+    if panelState is "active"
+      panel.classList.add "panel--active"
     else
-      target.classList.remove "panel--active"
+      panel.classList.remove "panel--active"
 
+  # See if there are any panels open and, if so, toggle overlay and clip body
   if states.indexOf("active") is -1
     page.setAttribute "data-page-state", ""
+    toggleOverlay "cover-none"
   else
     page.setAttribute "data-page-state", "clipped"
+    toggleOverlay("cover-all")
 
-alterPanelState   = (target) ->
-  targetPanel     = document.getElementById "panel--" + target
-  state           = targetPanel.getAttribute "data-panel-state"
-  if state is "active"
-    targetPanel.setAttribute "data-panel-state", "inactive"
+# Alters target panel's state and/or disables all panels when page-overlay was clicked
+alterPanelState     = (targetPanelId) ->
+  panels            = document.querySelectorAll ".panel"
+  if targetPanelId is "all"
+    [].forEach.call panels, (panel) ->
+      panel.setAttribute "data-panel-state", "inactive"
   else
-    targetPanel.setAttribute "data-panel-state", "active"
-  console.log(state)
+    targetPanel       = document.getElementById "panel--" + targetPanelId
+    targetPanelState  = targetPanel.getAttribute "data-panel-state"
+    if targetPanelState is "active"
+      targetPanel.setAttribute "data-panel-state", "inactive"
+    else
+      targetPanel.setAttribute "data-panel-state", "active"
   renderPanels()
 
-onPanelToggle    = (target) ->
-  alterPanelState(target)
-  # toggleOverlay(target)
+# Launch on click methods
+onPanelToggle    = (el) ->
+  targetPanelId  = el.getAttribute "data-panel-target"
+  alterPanelState(targetPanelId)
+  renderPanels()
 
-# Bind Clicks
-
-addEvent window, "load", ->
-  i = 0
-  panelTogglers = document.getElementsByClassName "togglePanel"
-  l = panelTogglers.length
-  while i < l
-    addEvent panelTogglers[i], "click", (e) ->
-      thisToggle = e.currentTarget
-      toggleTarget = thisToggle.getAttribute "data-panel-target"
-      onPanelToggle(toggleTarget)
-      e.returnValue = false
-      e.preventDefault()  if e.preventDefault
-      false
-    ++i
+# Bind clicks
+panelTogglers = document.querySelectorAll ".togglePanel"
+[].forEach.call panelTogglers, (el) ->
+  el.addEventListener "click", (e) ->
+    onPanelToggle(e.currentTarget)

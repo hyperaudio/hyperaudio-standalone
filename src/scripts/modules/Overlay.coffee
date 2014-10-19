@@ -1,19 +1,23 @@
 renderOverlay = () ->
   pageOverlay       = document.getElementById("page-overlay")
   pageOverlayState  = pageOverlay.getAttribute "data-overlay-state"
-  if pageOverlayState is "left"
-    pageOverlay.classList.add "shown-left"
+  if pageOverlayState is "cover-left"
+    pageOverlay.classList.add "cover-left"
     pageOverlay.classList.remove "hide"
-  else if pageOverlayState is "right"
-    pageOverlay.classList.add "shown-right"
+  else if pageOverlayState is "cover-right"
+    pageOverlay.classList.add "cover-right"
+    pageOverlay.classList.remove "hide"
+  else if pageOverlayState is "cover-all"
+    pageOverlay.classList.add "cover-all"
     pageOverlay.classList.remove "hide"
   else
     pageOverlay.classList.add "hide"
-    pageOverlay.classList.remove "shown-right"
-    pageOverlay.classList.remove "shown-left"
+    pageOverlay.classList.remove "cover-all"
+    pageOverlay.classList.remove "cover-right"
+    pageOverlay.classList.remove "cover-left"
   fitFold(pageOverlay)
 
-toggleOverlay = (dir) ->
-  pageOverlay = document.getElementById("page-overlay")
-  pageOverlay.setAttribute "data-overlay-state", dir
+toggleOverlay = (state) ->
+  pageOverlay       = document.getElementById("page-overlay")
+  pageOverlay.setAttribute "data-overlay-state", state
   renderOverlay()

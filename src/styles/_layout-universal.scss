@@ -27,9 +27,11 @@
 .page-body,
 .page-head {
   &.moved--left {
+    @include backface-visibility(hidden);
     @include transform(translate3d($side-width * (-1),0,0));
   }
   &.moved--right {
+    @include backface-visibility(hidden);
     @include transform(translate3d($side-width,0,0));
   }
 }
@@ -79,6 +81,7 @@
 }
 
 .page-side__body {
+
 }
 
 .page-side__foot {
@@ -91,10 +94,10 @@
 ----------------------------------------------- */
 
 .page-body {
+  @include backface-visibility(hidden);
   @include clearfix;
   height: 100%;
   opacity: 1;
-  // overflow-x: hidden;
   position: relative;
 }
 
@@ -138,18 +141,6 @@
   @include breakpoint(m) {
     padding-top: $space-h;
     padding-bottom: $space-h;
-  }
-}
-
-.page-overlay {
-  cursor: pointer;
-  width: 100%;
-  z-index: 1000;
-  &.shown-right {
-    @include position-top-right(0, $side-width, fixed);
-  }
-  &.shown-left {
-    @include position-top-left(0, $side-width, fixed);
   }
 }
 

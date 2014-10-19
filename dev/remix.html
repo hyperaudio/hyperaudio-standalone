@@ -53,7 +53,7 @@ the I.P.O., according to the prospectus." />
 </head>
 <body class="tpl--remix">
 
-  <aside id="pageSide--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="inactive">
+  <aside id="page-side--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="inactive">
     <div class="page-side__body">
       <div id="page-menu" class="menu" data-active-pane="root">
         <div id="menu__pane--root" class="menu__pane">
@@ -256,7 +256,7 @@ the I.P.O., according to the prospectus." />
       <a class="button toggleSide" data-side-target="left" aria-hidden="true"><i class="icon-menu"></i> <span class="hide">Menu</span></a>
     </div>
     <div class="page-head__menu-item--last">
-      <a class="button">EN</a>
+      <a class="button togglePanel" data-panel-target="language">EN</a>
       <a class="button float-right toggleSide" data-side-target="right" aria-hidden="true"><i class="icon-share"></i> <span class="hide">Share</span></a>
     </div>
   </nav>
@@ -279,7 +279,7 @@ the I.P.O., according to the prospectus." />
       <p class="footnotes">An Al Jazzeera Production, 2014 — &infin;</p>
     </footer>
   </div>
-  <aside id="pageSide--right" class="page-side page-side--right moved" data-side-push="left" data-side-state="inactive">
+  <aside id="page-side--right" class="page-side page-side--right moved" data-side-push="left" data-side-state="inactive">
     <div class="page-side__body">
       <div class="headline mbs" style="background-image: url('images/temp1.jpg')">
         <h2 class="headline__title">Share Palestine Remix</h2>
@@ -291,7 +291,7 @@ the I.P.O., according to the prospectus." />
       <a href="mailto:?subject=Message%20via%20piotrf.pl&amp;body=Hey%2C%20%0A%0Acheck%20this%20page%3A%20URL" class="menu__link--alt"><i class="icon-mail"></i> Recommend per E-mail</a>
     </div>
   </aside>
-  <div id="page-overlay" class="page-overlay toggleSide" data-overlay-state="inactive" data-side-target="all"></div>
+  <div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>
   <div id="share-modal" class="modal">
     <div class="modal-mask"></div>
     <div class="modal-window">
@@ -311,6 +311,15 @@ the I.P.O., according to the prospectus." />
           <input type="submit" value="OK" />
         </div>
       </form>
+    </div>
+  </div>
+  <div id="panel--language" class="panel" data-panel-state="inactive">
+    <h2 class="panel__title">Switch to other language</h2>
+    <div class="panel__body">
+      <a class="panel__action--pri togglePanel mbs" data-panel-target="language">Arabic</a>
+      <a class="panel__action--pri togglePanel mbs" data-panel-target="language">Turkish</a>
+      <a class="panel__action--pri togglePanel" data-panel-target="language">Bosnian</a>
+      <a class="panel__action--sec togglePanel" data-panel-target="language">Cancel</a>
     </div>
   </div>
 

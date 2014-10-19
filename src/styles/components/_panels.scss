@@ -3,15 +3,15 @@
  * ============================================ */
 
 .panel {
+  @include backface-visibility(hidden);
   @include position-bottom-left(0,0, fixed);
   @include position-bottom-right(0,0, fixed);
   @include transition(transform $time);
   @include transform(translate3d(0,100%,0));
-  box-shadow: 0 -1px 3px $shadow;
-  background-color: rgba(255,255,255,0.92);;
-  // height: 50%;
+  box-shadow: 0 -1px 5px $shadow-weak;
+  background-color: rgba(255,255,255,0.95);;
   padding: $space;
-  z-index: 100;
+  z-index: 500;
   &.panel--active {
     @include transform(translate3d(0,0,0));
   }
@@ -21,6 +21,7 @@
   border-color: $shadow-light;
   border-bottom-width: 1px;
   font-weight: $font-bold;
+  margin-bottom: $space;
   padding-bottom: $space;
   text-align: center;
 }
@@ -29,7 +30,7 @@
 .panel__subtitle {
   color: $shadow-medium;
   font-weight: $font-bold;
-  margin: $space 0;
+  margin-bottom: $space;
   text-align: center;
 }
 .panel__foot {
@@ -42,4 +43,5 @@
 .panel__action--pri {
   @extend .pri-button;
   display: block;
+  text-align: center;
 }

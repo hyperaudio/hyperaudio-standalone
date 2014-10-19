@@ -77,13 +77,11 @@ $menu-back-offset : $tap-size;
 .menu__supplement-toggle {
   @include position-top-right(0,0);
   display: block;
+  font-size: $font-xxs;
   line-height: $space-l;
+  opacity: $opacity;
   padding: $space $space-s;
   text-transform: uppercase;
-  font-size: $font-xxs;
-  i {
-    font-size: 12px;
-  }
 }
 .menu__supplement {
   @include set-type-xsmall;

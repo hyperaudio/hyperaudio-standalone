@@ -53,7 +53,7 @@ the I.P.O., according to the prospectus." />
 </head>
 <body class="tpl--listing">
 
-  <aside id="pageSide--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="inactive">
+  <aside id="page-side--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="inactive">
     <div class="page-side__body">
       <div id="page-menu" class="menu" data-active-pane="root">
         <div id="menu__pane--root" class="menu__pane">
@@ -256,7 +256,7 @@ the I.P.O., according to the prospectus." />
       <a class="button toggleSide" data-side-target="left" aria-hidden="true"><i class="icon-menu"></i> <span class="hide">Menu</span></a>
     </div>
     <div class="page-head__menu-item--last">
-      <a class="button">EN</a>
+      <a class="button togglePanel" data-panel-target="language">EN</a>
       <a class="button float-right toggleSide" data-side-target="right" aria-hidden="true"><i class="icon-share"></i> <span class="hide">Share</span></a>
     </div>
   </nav>
@@ -503,53 +503,8 @@ the I.P.O., according to the prospectus." />
       </a>
       <p class="footnotes">An Al Jazzeera Production, 2014 — &infin;</p>
     </footer>
-    <div id="panel--filter" class="panel panel--active" data-panel-state="inactive">
-      <h2 class="panel__title">Narrow down results</h2>
-      <div class="panel__body">
-        <h3 class="panel__subtitle">By Era</h3>
-        <div class="buttongroup mbl">
-          <a class="buttongroup__item">1799&ndash;1947</a>
-          <a class="buttongroup__item buttongroup__item--active">1948&ndash;1949</a>
-          <a class="buttongroup__item">1950&ndash;1967</a>
-          <a class="buttongroup__item">1968&ndash;1992</a>
-          <a class="buttongroup__item">1993&ndash;2014</a>
-        </div>
-        <h3 class="panel__subtitle">By Location</h3>
-        <div class="buttongroup mbl">
-          <a class="buttongroup__item">Vanishing Palestine</a>
-          <a class="buttongroup__item buttongroup__item--active">Wall</a>
-          <a class="buttongroup__item">West Bank</a>
-          <a class="buttongroup__item">Gaza</a>
-          <a class="buttongroup__item">Jerusalem</a>
-          <a class="buttongroup__item">Tel Aviv</a>
-          <a class="buttongroup__item">Jaffa</a>
-          <a class="buttongroup__item">Acre</a>
-          <a class="buttongroup__item">Jordan River</a>
-          <a class="buttongroup__item">Caesarea (near Haifa)</a>
-          <a class="buttongroup__item">Bethlehem</a>
-          <a class="buttongroup__item">Hebron</a>
-        </div>
-        <h3 class="panel__subtitle">By Person</h3>
-        <div class="buttongroup mbl">
-          <a class="buttongroup__item buttongroup__item--active">Name Surname</a>
-          <a class="buttongroup__item">Name Surname</a>
-          <a class="buttongroup__item">Name Surname</a>
-          <a class="buttongroup__item">Name Surname</a>
-          <a class="buttongroup__item">Name Surname</a>
-          <a class="buttongroup__item">Name Surname</a>
-          <a class="buttongroup__item">Name Surname</a>
-          <a class="buttongroup__item">Name Surname</a>
-          <a class="buttongroup__item">Name Surname</a>
-        </div>
-      </div>
-      <div class="panel__foot">
-        <a class="panel__action--pri togglePanel" data-panel-target="filter">Apply Filters</a>
-        <a class="panel__action--sec togglePanel" data-panel-target="filter">Cancel</a>
-      </div>
-      </div>
-    </div>
   </div>
-  <aside id="pageSide--right" class="page-side page-side--right moved" data-side-push="left" data-side-state="inactive">
+  <aside id="page-side--right" class="page-side page-side--right moved" data-side-push="left" data-side-state="inactive">
     <div class="page-side__body">
       <div class="headline mbs" style="background-image: url('images/temp1.jpg')">
         <h2 class="headline__title">Share Palestine Remix</h2>
@@ -561,7 +516,60 @@ the I.P.O., according to the prospectus." />
       <a href="mailto:?subject=Message%20via%20piotrf.pl&amp;body=Hey%2C%20%0A%0Acheck%20this%20page%3A%20URL" class="menu__link--alt"><i class="icon-mail"></i> Recommend per E-mail</a>
     </div>
   </aside>
-  <div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="inactive" data-side-target="all"></div>
+  <div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>
+  <div id="panel--filter" class="panel" data-panel-state="inactive">
+    <h2 class="panel__title">Narrow down results</h2>
+    <div class="panel__body">
+      <h3 class="panel__subtitle">By Era</h3>
+      <div class="buttongroup mbl">
+        <a class="buttongroup__item">1799&ndash;1947</a>
+        <a class="buttongroup__item buttongroup__item--active">1948&ndash;1949</a>
+        <a class="buttongroup__item">1950&ndash;1967</a>
+        <a class="buttongroup__item">1968&ndash;1992</a>
+        <a class="buttongroup__item">1993&ndash;2014</a>
+      </div>
+      <h3 class="panel__subtitle">By Location</h3>
+      <div class="buttongroup mbl">
+        <a class="buttongroup__item">Vanishing Palestine</a>
+        <a class="buttongroup__item buttongroup__item--active">Wall</a>
+        <a class="buttongroup__item">West Bank</a>
+        <a class="buttongroup__item">Gaza</a>
+        <a class="buttongroup__item">Jerusalem</a>
+        <a class="buttongroup__item">Tel Aviv</a>
+        <a class="buttongroup__item">Jaffa</a>
+        <a class="buttongroup__item">Acre</a>
+        <a class="buttongroup__item">Jordan River</a>
+        <a class="buttongroup__item">Caesarea (near Haifa)</a>
+        <a class="buttongroup__item">Bethlehem</a>
+        <a class="buttongroup__item">Hebron</a>
+      </div>
+      <h3 class="panel__subtitle">By Person</h3>
+      <div class="buttongroup mbl">
+        <a class="buttongroup__item buttongroup__item--active">Name Surname</a>
+        <a class="buttongroup__item">Name Surname</a>
+        <a class="buttongroup__item">Name Surname</a>
+        <a class="buttongroup__item">Name Surname</a>
+        <a class="buttongroup__item">Name Surname</a>
+        <a class="buttongroup__item">Name Surname</a>
+        <a class="buttongroup__item">Name Surname</a>
+        <a class="buttongroup__item">Name Surname</a>
+        <a class="buttongroup__item">Name Surname</a>
+      </div>
+    </div>
+    <div class="panel__foot">
+      <a class="panel__action--pri togglePanel" data-panel-target="filter">Apply Filters</a>
+      <a class="panel__action--sec togglePanel" data-panel-target="filter">Cancel</a>
+    </div>
+  </div>
+  <div id="panel--language" class="panel" data-panel-state="inactive">
+    <h2 class="panel__title">Switch to other language</h2>
+    <div class="panel__body">
+      <a class="panel__action--pri togglePanel mbs" data-panel-target="language">Arabic</a>
+      <a class="panel__action--pri togglePanel mbs" data-panel-target="language">Turkish</a>
+      <a class="panel__action--pri togglePanel" data-panel-target="language">Bosnian</a>
+      <a class="panel__action--sec togglePanel" data-panel-target="language">Cancel</a>
+    </div>
+  </div>
 
 <script async defer src="scripts/vendor.js"></script>
 <script src="scripts/aj.js"></script>

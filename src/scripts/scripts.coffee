@@ -10,7 +10,7 @@ document.addEventListener "DOMContentLoaded", ->
   renderOverlay()
   renderPanels()
   renderPage()
-  renderSidebar()
+  renderSides()
 
 window.onresize = throttle((event) ->
   renderCover()
