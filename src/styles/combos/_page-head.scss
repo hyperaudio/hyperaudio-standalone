@@ -10,6 +10,10 @@
   }
   a {
     color: $mono-Wt;
+    display: inline-block;
+    line-height: $page-head-height;
+    height: $page-head-height;
+    padding: 0 $space-s;
   }
 }
 
@@ -18,10 +22,6 @@
   display: block;
   font-weight: $font-bold;
   text-align: center;
-  a {
-    display: inline-block;
-    line-height: $page-head-height;
-  }
 }
 
 /* Menu Items
@@ -29,9 +29,8 @@
 
 .page-head__menu-item--first,
 .page-head__menu-item--last {
+  overflow: hidden;
   z-index: 50;
-  padding-left: $space;
-  padding-right: $space;
 }
 .page-head__menu-item--first  { @include position-top-left(0,0); }
 .page-head__menu-item--last   { @include position-top-right(0,0); }
