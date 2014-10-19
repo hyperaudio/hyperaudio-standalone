@@ -25,38 +25,6 @@ $menu-back-offset : $tap-size;
   background-color: $mono-D;
   overflow-y: auto;
 }
-.menu__head {
-  background-position: center center;
-  background-size: cover;
-  padding: $space;
-  position: relative;
-  a {
-    color: $mono-Wt;
-    text-decoration: underline;
-  }
-  &:before {
-    @include position-top-left(0,0);
-    @include position-bottom-right(0,0);
-    background: $shadow-medium;
-    content: "";
-    display: block;
-    z-index: 1;
-  }
-}
-.menu__title {
-  @include set-type-xlarge;
-  color: $mono-Wt;
-  font-weight: $font-bold;
-  margin-bottom: $space-x;
-  position: relative;
-  z-index: 10;
-}
-.menu__text {
-  @include set-type-small;
-  color: $flare-strong;
-  position: relative;
-  z-index: 10;
-}
 .menu__subtitle {
   color: $mono-M;
   font-weight: $font-bold;
