@@ -27,6 +27,8 @@
   text-align: center;
 }
 .panel__body {
+  padding-left: $space-s;
+  padding-right: $space-s;
 }
 .panel__subtitle {
   color: $shadow-medium;
