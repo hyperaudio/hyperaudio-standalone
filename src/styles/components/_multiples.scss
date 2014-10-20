@@ -2,21 +2,24 @@
  * Buttongroups
  * ============================================ */
 
-.multiple--horizontal {
-  // @include mask-h(100%);
+.multiple--vertical {
+  @include mask-v(100px);
+  max-height: 100px;
   overflow-y: scroll;
-  white-space: nowrap;
-  text-align: center;
+  padding: $space-x 0;
   .multiple__item {
     @extend .sec-button;
-    border-radius: $radius-s;
-    border-color: $shadow-light;
-    display: inline-block;
+    border-color: $flare-weak;
+    display: block;
     margin-bottom: 3px;
+  }
+  @include breakpoint(m) {
+    @include mask-v(200px);
+    max-height: 200px;
   }
 }
 
-.multiple--vertical {
+.multiple--horizontal {
   @include mask-h(100%);
   -webkit-overflow-scrolling: touch;
   padding-left: $space-s;

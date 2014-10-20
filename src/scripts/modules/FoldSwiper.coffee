@@ -21,7 +21,7 @@ renderFoldSwiper = () ->
       loop                : true
       # autoplay            : false
       autoplay            : 5000
-      speed               : 500
+      speed               : 750
       noSwiping           : true
 
       moveStartThreshold  : 20 # in pixels
