@@ -36,14 +36,14 @@
   .pager {
     @include position-bottom-left(0,0);
     @include position-bottom-right(0,0);
-    margin-bottom: $page-head-height;
+    margin-bottom: $page-head-height / 2;
     z-index: 20;
   }
 }
 .foldswiper__item-content {
   @include position-top-left(0,0);
   @include position-bottom-right(0,0);
-  padding: ($page-head-height + ($space-h * 2)) $space-s ($space-h * 2);
+  padding: ($page-head-height + $space-h) $space-s ($space-h * 2);
   @include breakpoint(m) {
     padding: ($page-head-height + ($space-h * 4)) $space-s ($space-h * 4)
   }
