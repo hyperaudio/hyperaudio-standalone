@@ -3,7 +3,7 @@
  * ============================================ */
 
 .buttonlist {
-  // @include mask-h();
+  @include mask-v(200px);
   max-height: 200px;
   overflow-y: scroll;
   padding: $space-s;

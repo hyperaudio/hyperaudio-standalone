@@ -45,16 +45,12 @@
   }
   p {
     @include reset(first, margin-top);
-    @include indent;
     @include hyphenate;
     margin-top: $line;
     text-align: justify;
   }
-  h2 + p,
-  h3 + p,
-  figure + p,
-  dl + p {
-   text-indent: 0;
+  p + p {
+    @include indent;
   }
   figure + p {
     margin-top: $line;
