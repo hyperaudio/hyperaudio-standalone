@@ -5,14 +5,14 @@
 .pager {
   display: block;
   text-align: center;
-}
-.pager__item {
-  @include set-size($space-x, $space-x);
-  background-color: $flare-weak;
-  border-radius: $radius-absolute;
-  display: inline-block;
-  margin: $space-x;
-  &.pager__item--active {
-    background-color: $mono-Wt;
+  > span {
+    @include set-size($space-x, $space-x);
+    background-color: $flare-weak;
+    border-radius: $radius-absolute;
+    display: inline-block;
+    margin: $space-x;
+    &.pager__item--active {
+      background-color: $mono-Wt;
+    }
   }
 }

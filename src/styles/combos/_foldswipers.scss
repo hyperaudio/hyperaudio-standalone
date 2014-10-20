@@ -10,17 +10,17 @@
 
 .foldswiper {
   @include backface-visibility(hidden);
-  margin:0 auto;
-  overflow:hidden;
-  position:relative;
-  z-index:1; // Fix of Webkit flickering
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; // Fix of Webkit flickering
 }
 .foldswiper__wrapper {
   @include box-sizing(content-box);
   @include transition(translate ease $time, left ease $time);
   @include transform(translate3d(0,0,0));
-  position:relative;
-  width:100%;
+  position: relative;
+  width: 100%;
 }
 .swiper-free-mode > .foldswiper__wrapper {
   @include transition-timing-function(ease-out);
@@ -32,36 +32,11 @@
   background-position: center center;
   float: left;
   position: relative;
-  white-space: normal;
-  .pager {
-    @include position-bottom-left(0,0);
-    @include position-bottom-right(0,0);
-    margin-bottom: $page-head-height / 2;
-    z-index: 20;
-  }
 }
-.foldswiper__item-content {
-  @include position-top-left(0,0);
-  @include position-bottom-right(0,0);
-  padding: ($page-head-height + $space-h) $space-s ($space-h * 2);
-  @include breakpoint(m) {
-    padding: ($page-head-height + ($space-h * 4)) $space-s ($space-h * 4)
-  }
-  @include breakpoint(l) {
-    padding: ($page-head-height + ($space-h * 5)) $space-s ($space-h * 5)
-  }
-  &:before {
-    @include position-top-left(0,0);
-    @include position-bottom-right(0,0);
-    background: $shadow-medium;
-    content: "";
-    display: block;
-    z-index: 5;
-  }
-  * {
-    position: relative;
-    z-index: 10;
-  }
+.foldswiper__pager {
+  @include position-bottom-left($space-x,$space-s);
+  @include position-bottom-right($space-x,$space-s);
+  display: block;
 }
 
 /* IE10 Windows Phone 8 Fixes */

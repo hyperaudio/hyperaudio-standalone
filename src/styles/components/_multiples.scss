@@ -1,0 +1,43 @@
+/**
+ * Buttongroups
+ * ============================================ */
+
+.multiple--horizontal {
+  @include mask-v(100px);
+  max-height: 100px;
+  overflow-y: scroll;
+  padding: $space-x 0;
+  .multiple__item {
+    @extend .sec-button;
+    border-color: $flare-weak;
+    display: block;
+    margin-bottom: 3px;
+  }
+  @include breakpoint(m) {
+    @include mask-v(200px);
+    max-height: 200px;
+  }
+}
+
+.multiple--vertical {
+  @include mask-h(100%);
+  -webkit-overflow-scrolling: touch;
+  padding-left: $space-s;
+  padding-right: $space-s;
+  margin-left: $space-s * -1;
+  margin-right: $space-s * -1;
+  white-space: nowrap;
+  overflow: auto;
+  text-align: center;
+  .multiple__item {
+    border-color: $mono-HL;
+    border-radius: $radius-s;
+    color: $mono-M;
+    border-width: 1px;
+    display: inline-block;
+    padding: $space-x;
+    &.buttongroup__item--active {
+      @include fill-red;
+    }
+  }
+}

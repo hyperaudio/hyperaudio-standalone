@@ -33,8 +33,6 @@
 ----------------------------------------------- */
 @import "components/brandmarks";
 @import "components/buttons";
-@import "components/buttongroups";
-@import "components/buttonlists";
 @import "components/flags";
 @import "components/foldcards";
 @import "components/footnotes";
@@ -43,8 +41,10 @@
 @import "components/highlights";
 @import "components/icons";
 @import "components/inputs";
+@import "components/labels";
 @import "components/links";
 @import "components/listings";
+@import "components/multiples";
 @import "components/nexts";
 @import "components/pagers";
 @import "components/panels";
@@ -64,7 +64,6 @@
 @import "combos/foldswipers";
 
 @import "combos/page-copy";
-@import "combos/page-cover";
 @import "combos/page-foot";
 @import "combos/page-head";
 @import "combos/page-overlay";

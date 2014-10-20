@@ -1,0 +1,10 @@
+/**
+ * Labels
+ * ============================================ */
+
+ .label {
+  @include set-type-tiny;
+  direction: block;
+  text-transform: uppercase;
+  letter-spacing: $spacing;
+}

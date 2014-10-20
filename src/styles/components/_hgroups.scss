@@ -2,45 +2,33 @@
  * Heading Groups
  * ============================================ */
 
-.hgroup {
+.hgroup,
+.hgroup > * {
   text-align: center;
-}
-
-.hgroup__text,
-.hgroup__meta {
-  margin-top: $space-s;
-  @include breakpoint(m) {
-    margin-top: $space-m;
-  }
-}
-
-.hgroup__intro {
-  @include set-type-small;
-  letter-spacing: $spacing;
-  opacity: $opacity;
-  text-transform: uppercase;
-  margin-bottom: $space-x;
-  @include breakpoint(m) {
-    margin-bottom: $space-s;
-  }
 }
 
 .hgroup__title {
   @include set-type-huge;
   @include hyphenate;
   font-weight: $font-bold;
-  @include breakpoint(m) {
-    margin-left: 10%;
-    margin-right: 10%;
+}
+
+.hgroup__title + * {
+  display: block;
+  padding-top: $space-s;
+  &:before {
+    border-top: 1px $flare-weak solid;
+    margin: $space-s auto;
+    padding-bottom: $space-s;
+    content: "";
+    display: block;
+    width: $space-l;
   }
 }
 
 .hgroup__text {
   @include set-type-small;
-}
-
-.hgroup__meta {
-  @include set-type-xsmall;
-  font-style: italic;
-  opacity: $opacity;
+  @include breakpoint(m) {
+    margin-top: $space-m;
+  }
 }
