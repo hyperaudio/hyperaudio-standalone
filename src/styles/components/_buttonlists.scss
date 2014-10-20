@@ -1,0 +1,19 @@
+/**
+ * Button List
+ * ============================================ */
+
+.buttonlist {
+  // @include mask-h();
+  max-height: 200px;
+  overflow-y: scroll;
+  padding: $space-s;
+}
+
+.buttonlist__item {
+  @extend .sec-button;
+  display: block;
+  margin-bottom: $space-x;
+  &:last-child {
+    margin: 0;
+  }
+}

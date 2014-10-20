@@ -7,7 +7,11 @@
   // @include animation(scaleHIn 10s ease-in-out 0);
   background-size: cover;
   background-position: center center;
+  color: $mono-Wt;
   position: relative;
+  a {
+    color: $mono-Wt;
+  }
 }
 
 .foldcard__el {
