@@ -3,6 +3,7 @@
  * ============================================ */
 
 .buttongroup {
+  @include mask-h();
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   overflow: auto;
