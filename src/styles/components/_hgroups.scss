@@ -15,7 +15,7 @@
 }
 
 .hgroup__intro {
-  @include set-type-tiny;
+  @include set-type-small;
   letter-spacing: $spacing;
   opacity: $opacity;
   text-transform: uppercase;

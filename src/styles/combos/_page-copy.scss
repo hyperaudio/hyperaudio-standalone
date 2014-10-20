@@ -11,7 +11,7 @@
 }
 
 .page-copy {
-  @include set-type-small;
+  @include set-type-medium;
   position: relative;
   padding-left: $space-s;
   padding-right: $space-s;
