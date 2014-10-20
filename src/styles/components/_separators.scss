@@ -4,9 +4,9 @@
 
 %separator {
   border-width: 0 0 1px 0;
-  margin: $space-l 0;
+  margin: $space-h auto;
   @include breakpoint(m) {
-    margin: $space-h 0;
+    margin: $space-h auto;
   }
   .page-fold & {
     opacity: $opacity
@@ -15,20 +15,14 @@
 
 .separator--compact {
   @extend %separator;
-  margin: $space-m auto;
   width: $space-m;
   @include breakpoint(m) {
     width: $space-l;
-    margin: ($space-m + $space-s) auto;
   }
 }
 .separator--weak {
   @extend %separator;
   border-color: $shadow-light;
-  margin: $space-x 0;
-  @include breakpoint(m) {
-    margin: $space-l 0;
-  }
 }
 .separator--silent {
   @extend %separator;
