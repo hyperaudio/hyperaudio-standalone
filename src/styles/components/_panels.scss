@@ -10,7 +10,8 @@
   @include transform(translate3d(0,100%,0));
   box-shadow: 0 -1px 5px $shadow-weak;
   background-color: rgba(255,255,255,0.95);;
-  padding: $space;
+  padding-bottom: $space;
+  padding-top: $space;
   z-index: 500;
   &.panel--active {
     @include transform(translate3d(0,0,0));
@@ -31,9 +32,6 @@
   color: $shadow-medium;
   font-weight: $font-bold;
   margin-bottom: $space;
-  text-align: center;
-}
-.panel__foot {
   text-align: center;
 }
 .panel__action--sec {
