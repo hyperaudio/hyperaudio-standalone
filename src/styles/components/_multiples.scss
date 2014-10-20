@@ -3,19 +3,16 @@
  * ============================================ */
 
 .multiple--horizontal {
-  @include mask-v(100px);
-  max-height: 100px;
+  // @include mask-h(100%);
   overflow-y: scroll;
-  padding: $space-x 0;
+  white-space: nowrap;
+  text-align: center;
   .multiple__item {
     @extend .sec-button;
-    border-color: $flare-weak;
-    display: block;
+    border-radius: $radius-s;
+    border-color: $shadow-light;
+    display: inline-block;
     margin-bottom: 3px;
-  }
-  @include breakpoint(m) {
-    @include mask-v(200px);
-    max-height: 200px;
   }
 }
 
