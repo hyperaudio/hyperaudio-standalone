@@ -1,0 +1,83 @@
+/**
+ * Fold Cards
+ * ============================================ */
+
+.foldcard {
+  @include clearfix;
+  @include fill-inverted;
+  // @include animation(scaleHIn 10s ease-in-out 0);
+  background-size: cover;
+  background-position: center center;
+  color: $mono-Wt;
+  min-height: 400px;
+  position: relative;
+  a {
+    color: $mono-Wt;
+  }
+  @include breakpoint(m) {
+    min-height: 500px;
+  }
+  @include breakpoint(l) {
+    min-height: 600px;
+  }
+}
+
+.foldcard__content {
+  @include position-top-left(0,0);
+  @include position-bottom-right(0,0);
+  padding: $page-head-height $space-s;
+  * {
+    position: relative;
+    z-index: 10;
+  }
+  &:before {
+    @include position-top-left(0,0);
+    @include position-bottom-right(0,0);
+    background: $shadow-medium;
+    content: "";
+    display: block;
+    z-index: 5;
+  }
+}
+
+.foldcard__head {
+  @include clearfix;
+  height: $page-head-height;
+  opacity: $opacity;
+  text-align: center;
+  position: relative;
+  > * {
+    @include position-bottom-left(0,0);
+    @include position-bottom-right(0,0);
+  }
+  @include breakpoint(m) {
+    height: $page-head-height + $space-h;
+  }
+  @include breakpoint(l) {
+    height: $page-head-height + ($space-h * 2);
+  }
+}
+.foldcard__body {
+  height: 100%;
+  position: relative;
+}
+.foldcard__foot {
+  @include position-bottom-left($page-head-height, $space-s);
+  @include position-bottom-right($page-head-height, $space-s);
+}
+.foldcard__indicator {
+  @include animation(pulse 2s infinite, slideDown 10s ease-in-out 0);
+  @include position-bottom-left($page-head-height, 50%);
+  @include set-size(50px,50px);
+  display: block;
+  line-height: 50px;
+  margin-left: -25px;
+  text-align: center;
+  z-index: 300;
+  i {
+    font-size: 48px;
+  }
+  @include breakpoint(m) {
+    @include position-bottom-left(5%, 50%);
+  }
+}
