@@ -65,7 +65,7 @@ $radius             : $radius-s;
 // ----------------------------------------------
 
 $page-head-height   : 40px;
-$page-foot-height   : 80px;
+$page-foot-height   : $page-head-height;
 $side-foot-height   : 40px;
 $side-width         : 270px;
 $group-width        : 100%;

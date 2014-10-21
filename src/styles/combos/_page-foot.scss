@@ -4,17 +4,22 @@
 
 .page-foot {
   @include fill-inverted;
+  line-height: $page-foot-height;
   padding-left: $space-s;
   padding-right: $space-s;
   text-align: center;
+  .footnotes {
+    line-height: $page-foot-height;
+    opacity: $opacity;
+  }
 }
 
 .page-foot .brandmark {
-  margin-top: $space-m;
-  margin-bottom: $space-s;
-  text-align: center;
-}
-.page-foot .footnotes {
   display: block;
-  color: $mono-M;
+  text-align: center;
+  width: auto;
+  i {
+    line-height: $page-foot-height;
+    font-size: 28px;
+  }
 }
