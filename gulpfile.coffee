@@ -18,7 +18,7 @@ STYLES = [
 ]
 SCRIPTS = [
   "./bower_components/swiper/dist/idangerous.swiper.min.js"
-  # "./bower_components/hyperaudio/dist/assets/scripts/hyperaudio.js"
+  "./bower_components/hyperaudio/dist/assets/scripts/hyperaudio.js"
 ]
 
 # DEFINE PARTIAL TASKS
