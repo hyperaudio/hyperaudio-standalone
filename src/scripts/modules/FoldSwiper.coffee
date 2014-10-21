@@ -20,7 +20,7 @@ renderFoldSwiper = () ->
       mode                : "horizontal"
       loop                : true
       # autoplay            : false
-      autoplay            : 5000
+      autoplay            : 6000
       speed               : 750
       noSwiping           : true
 

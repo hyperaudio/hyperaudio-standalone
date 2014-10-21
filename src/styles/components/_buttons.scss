@@ -24,4 +24,7 @@
   @extend %button;
   border-width: 1px;
   padding: $space-x $space-s;
+  border-color: $mono-HL;
+  border-radius: $radius-s;
+  color: $mono-M;
 }

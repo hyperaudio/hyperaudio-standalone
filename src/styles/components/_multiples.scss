@@ -7,14 +7,18 @@
   max-height: 100px;
   overflow-x: visible;
   overflow-y: scroll;
-  padding-top: $space-x;
-  padding-bottom: $space-x;
+  padding-top: $space-s;
+  padding-bottom: $space-s;
+  margin-top: $space-s * -1;
+  margin-bottom: $space-s * -1;
   position: relative;
+  // top: $space-x * -1;
   .multiple__item {
     @extend .sec-button;
     border-color: $flare-weak;
     display: block;
     margin-bottom: 3px;
+    margin-right: 1px;
   }
   @include breakpoint(m) {
     @include mask-v(200px);
@@ -23,19 +27,23 @@
 }
 
 .multiple--horizontal {
+  @include box-sizing(content-box);
+  @include mask-h(100%);
   -webkit-overflow-scrolling: touch;
-  white-space: nowrap;
-  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0 $space-s;
+  margin-right: $space-s * -1;
+  margin-left: $space-s * -1;
   position: relative;
   text-align: center;
+  white-space: nowrap;
   .multiple__item {
-    @extend %button;
-    @extend .sec-button;
-    border-color: $mono-HL;
+    @include set-type-small;
     border-radius: $radius-s;
-    margin-right: 1px;
-    color: $mono-M;
-    &.buttongroup__item--active {
+    display: inline-block;
+    padding: $space-x;
+    &.multiple__item--active {
       @include fill-red;
     }
   }

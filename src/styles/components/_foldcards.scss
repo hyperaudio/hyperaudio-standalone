@@ -5,7 +5,6 @@
 .foldcard {
   @include clearfix;
   @include fill-inverted;
-  // @include animation(scaleHIn 10s ease-in-out 0);
   background-size: cover;
   background-position: center center;
   color: $mono-Wt;
@@ -24,6 +23,7 @@
 }
 
 .foldcard__content {
+  // @include animation(scaleOut 3s ease-in-out 0);
   @include position-top-left(0,0);
   @include position-bottom-right(0,0);
   padding: $page-head-height $space-s;
@@ -72,30 +72,22 @@
     @include breakpoint(m) {
       display: block;
     }
+    .multiple__item {
+      border-color: $flare-light;
+      color: $flare-strong;
+    }
   }
   &.multiple--horizontal {
     .multiple__item {
-      border-color: $flare-weak;
+      border-width: 0 0 1px;
+      border-radius: 0;
+      padding: $space-s 0 0 0;
+      margin: 0 $space-x;
+      border-color: $flare-medium;
       color: $flare-strong;
     }
     @include breakpoint(m) {
       display: none;
     }
-  }
-}
-.foldcard__indicator {
-  @include animation(pulse 2s infinite, slideDown 10s ease-in-out 0);
-  @include position-bottom-left($page-head-height, 50%);
-  @include set-size(50px,50px);
-  display: block;
-  line-height: 50px;
-  margin-left: -25px;
-  text-align: center;
-  z-index: 300;
-  i {
-    font-size: 48px;
-  }
-  @include breakpoint(m) {
-    @include position-bottom-left(5%, 50%);
   }
 }

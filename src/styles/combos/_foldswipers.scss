@@ -37,6 +37,12 @@
   @include position-bottom-left($space-x,$space-s);
   @include position-bottom-right($space-x,$space-s);
   display: block;
+  input {
+    background-color: $flare-medium;
+    &:focus {
+      background-color: $mono-Wt;
+    }
+  }
 }
 .foldswiper__pager {
   margin-top: $space-s;
