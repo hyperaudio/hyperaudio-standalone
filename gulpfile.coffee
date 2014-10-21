@@ -27,7 +27,7 @@ SCRIPTS = [
 # HTML tasks
 # ---------------------------------------------- #
 gulp.task "html", ->
-  gulp.src "./dev/*.html"
+  gulp.src "./mobile/*.html"
     .pipe $.connect.reload()
 
 # Compile Sass
@@ -39,13 +39,13 @@ gulp.task "compile-sass", ->
       outputStyle: "compressed"
     )
     .on "error", handleError
-    .pipe gulp.dest "dev/styles"
+    .pipe gulp.dest "mobile/styles"
     .pipe $.connect.reload()
 
 # Concat Vendor
 # ---------------------------------------------- #
 gulp.task "concat-vendor", ->
-  gulp.src(SCRIPTS).pipe($.concat("vendor.js")).pipe gulp.dest("./dev/scripts")
+  gulp.src(SCRIPTS).pipe($.concat("vendor.js")).pipe gulp.dest("./mobile/scripts")
 
 # Compile Coffeescript
 # ---------------------------------------------- #
@@ -56,30 +56,30 @@ gulp.task "compile-coffee", ->
     "./src/scripts/scripts.coffee"
     ])
     .pipe $.concat 'aj.coffee'
-    .pipe gulp.dest("./dev/scripts")
+    .pipe gulp.dest("./mobile/scripts")
     .pipe $.coffee
       bare: true
     .on "error", handleError
-    .pipe gulp.dest("./dev/scripts")
+    .pipe gulp.dest("./mobile/scripts")
     .pipe $.connect.reload()
 
 # Copy Font Files from Bower Dependencies
 # ---------------------------------------------- #
 gulp.task "copyfiles", ->
-  gulp.src("./bower_components/hyperaudio/dist/assets/fonts/**/*").pipe gulp.dest("./dev/fonts")
+  gulp.src("./bower_components/hyperaudio/dist/assets/fonts/**/*").pipe gulp.dest("./mobile/fonts")
 
 # Watch files
 # ---------------------------------------------- #
 gulp.task "watch", ->
   gulp.watch STYLES, [ "compile-sass" ]
-  gulp.watch ["dev/*.html"], ["html"]
+  gulp.watch ["mobile/*.html"], ["html"]
   gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee"], ["compile-coffee"]
 
 # Connect server
 # ---------------------------------------------- #
 gulp.task "connect", ->
   $.connect.server
-    root: "./dev"
+    root: "./mobile"
     port: 8002
     livereload: true
 

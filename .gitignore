@@ -5,10 +5,10 @@ node_modules/
 bower_components/
 
 # Compiled styles and scripts
-dev/scripts
-dev/styles
-dev/fonts/hyperaudio-player
-dev/fonts/hyperaudio
+mobile/scripts
+mobile/styles
+mobile/fonts/hyperaudio-player
+mobile/fonts/hyperaudio
 
 # Other Stuff
 _todo.md

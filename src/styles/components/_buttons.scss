@@ -2,20 +2,26 @@
  * Buttons
  * ============================================ */
 
-.button {
+%button {
+  font-family: $secondary-font;
   display: inline-block;
+}
+
+.button {
+  @extend %button;
 }
 
 .pri-button {
-  @include set-type-small;
-  display: inline-block;
+  @include set-type-large;
+  @extend %button;
   font-weight: bold;
   border-width: 2px;
-  padding: $space $space-s;
+  padding: $space-s;
 }
 
 .sec-button {
+  @include set-type-medium;
+  @extend %button;
   border-width: 1px;
-  padding: $space-x;
-  display: inline-block;
+  padding: $space-x $space-s;
 }

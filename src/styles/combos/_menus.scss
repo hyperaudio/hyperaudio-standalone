@@ -96,6 +96,7 @@ $menu-back-offset : $tap-size;
   margin-top: $space-l * -0.5;
 }
 .menu__foot {
+  line-height: 15px;
   padding-left: $space-x;
   padding-right: $space-s;
   &, a {
