@@ -66,6 +66,23 @@
   @include position-bottom-left($page-head-height, $space-s);
   @include position-bottom-right($page-head-height, $space-s);
 }
+.foldcard__multiple {
+  &.multiple--vertical {
+    display: none;
+    @include breakpoint(m) {
+      display: block;
+    }
+  }
+  &.multiple--horizontal {
+    .multiple__item {
+      border-color: $flare-weak;
+      color: $flare-strong;
+    }
+    @include breakpoint(m) {
+      display: none;
+    }
+  }
+}
 .foldcard__indicator {
   @include animation(pulse 2s infinite, slideDown 10s ease-in-out 0);
   @include position-bottom-left($page-head-height, 50%);

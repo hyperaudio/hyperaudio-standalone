@@ -4,19 +4,9 @@
 
 @mixin mask-v($height: 100%) {
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAIwCAYAAACsm7qrAAAAAXNSR0IArs4c6QAAA3VJREFUWAm1mI2O2zAMg5M0e6i9/1MNaJLpYxb6COenN+AM1JAlkqLsdsBtHIbhd32GuT6v+mwEU33GI3NRoqwSYGOcMV0BYCtfYOiu0rfAZjkIP7aRDj2pA7N+lYv0fK6cgqYDzqY3JSvbhgNYqRNgd89bDYxLOU74kU70umj6CcbdA2yrLRhruLU+A8FGIFN9MI7jFYaSWdaZSVtn27adHuChTjTdxFLpYJ3ooCHBA6OmZBWIfo6xjW8FEoThFjd0gdkSzMk6ogfGJbEMJu1eFjRYJdIKAmzWJ4EF1cI6VkbDGAumn4M1P7BEB5z0YBnjXj8XaC77CRsq0Znl71j/fZ5gJTgEVWJj+X6ajpseGP+IWvAJRvq1NdZ5xn4QlXlwYqnESSWCBJNh3Y1MPXUQs47obNmCDKv5gaGMdkqfBtndOjRk5aTOpJ+D5fe6YIkOOOnRyxj3+laQ40BlXdyGwOFHYPxYx3Sy7XtIWlMYDCPA7d1dAizMTUaA2i48i25Mr+PSeQBhYrN5C6rUswx2ySM7A4Z14rkfGaC6E1w0pcRKQYNNf8D4ve6+mR7Qcx3jmGWdi1+c/cghJxk7dHKK3vNNRoLU3eIJDCPBnKxjOtk2l1sYHOYl2JfISNDgPiNAbReXYGNq0etAT0wIqnSw/F7qZRaE1p20epEWxp7JsPQDUaAjmYcgBR/AlJtD+wkbvXnKd+/lpiEoHTaW76fpuOmBkbEc5xyD4NO19Bj7UQsrA2SlYIJ3RGFgqeQMJwmSccktrEP5ZEDSrItft0oCgHkIsjsnVlPmlBgyLCmHVb9XK+3QrzZg5OycLKjANnr6Q+bGarbgZPO+eWOs4wyY9j0kbZZ1AtzenbpKnvQmI2Rt7eF6ljG9jkvnga3aPLh8L5VIJ5gMq821nytjG84QuIV1yKpXtiDNaiPv5//JqBd0Wvi9nr6ZAkOCzv+ILMrU9kYLnYWA2QkWYcgcYP35D0sBLP1pvxRzpPtO/6ezHJkNQcDroaPLRGfHTNPkFvr38F0Se+Zr9z6zZQsap+d1XYe55D0pDsX64xZlY1cusErvIozcxlqlPWMbBMc4e6/CjbQodtFr02VyJPiCQRBMYSdsrAanZ7Uo8ILEvCzL+/V6jXNtFS8DLC683cYERr3AVKBHWSu7MYX8SGee5/29DowE/wJIR3rN8KVTGAAAAABJRU5ErkJggg==);
-  -webkit-mask-attachment: scroll;
+  -webkit-mask-attachment: fixed;
   -webkit-mask-clip: padding;
   -webkit-mask-origin: border;
   -webkit-mask-repeat: repeat-x;
   -webkit-mask-size: 1px $height;
 }
-
-@mixin mask-h($width: 100%) {
-  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAACCAYAAADirOGHAAAAAXNSR0IArs4c6QAAAORJREFUSA3tVO0KwyAMVCnbYL/7/g8prEo/XM42rQRL2VC6QQvpxURzSZRopdST5EFyW/CeIHS5xl62M5Jp+4wxapomlUPsYt92oqyW4005U70s8xztbH6uKZcHfLXrv/jnDvxT/2u8iVz9IQQ/jqPTWnvidBDa52Aj3ZM9+oZhAEZf0zTeWuuoqy+zPK5AqBcdgPXet+tDgpwkDqMJjLBLPRoK/i5+vs65qWf0P73OX+NHPhB+i2muJXQZV9Zfm1/W8Am/zF3G+mZ9wL/OERpOCK9pMEWavu9XX9d1ioZVaNs2+t6/OfnSDGHbfgAAAABJRU5ErkJggg==);
-  -webkit-mask-attachment: scroll;
-  -webkit-mask-clip: padding;
-  -webkit-mask-origin: border;
-  -webkit-mask-repeat: repeat-y;
-  -webkit-mask-size: $width 1px;
-}
-

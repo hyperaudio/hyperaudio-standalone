@@ -9,6 +9,7 @@
   overflow-y: scroll;
   padding-top: $space-x;
   padding-bottom: $space-x;
+  position: relative;
   .multiple__item {
     @extend .sec-button;
     border-color: $flare-weak;
@@ -25,12 +26,14 @@
   -webkit-overflow-scrolling: touch;
   white-space: nowrap;
   overflow: auto;
+  position: relative;
   text-align: center;
   .multiple__item {
     @extend %button;
     @extend .sec-button;
     border-color: $mono-HL;
     border-radius: $radius-s;
+    margin-right: 1px;
     color: $mono-M;
     &.buttongroup__item--active {
       @include fill-red;
