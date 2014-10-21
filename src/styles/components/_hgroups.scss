@@ -24,6 +24,12 @@
     display: block;
     width: $space-l;
   }
+  @include breakpoint(m) {
+    &:before {
+      margin: $space-m auto;
+      padding-bottom: $space-m;
+    }
+  }
 }
 
 .hgroup__text {

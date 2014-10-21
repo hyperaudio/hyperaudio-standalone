@@ -22,7 +22,7 @@
 }
 
 .multiple--horizontal {
-  @include mask-h(100%);
+  // @include mask-h(100%);
   -webkit-overflow-scrolling: touch;
   padding-left: $space-s;
   padding-right: $space-s;
