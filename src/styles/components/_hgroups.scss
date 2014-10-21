@@ -15,11 +15,11 @@
 
 .hgroup__title + * {
   display: block;
-  padding-top: $space-s;
+  padding-top: $space-x;
   &:before {
     border-top: 1px $flare-weak solid;
-    margin: $space-s auto;
-    padding-bottom: $space-s;
+    margin: $space-x auto;
+    padding-bottom: $space-x;
     content: "";
     display: block;
     width: $space-l;
