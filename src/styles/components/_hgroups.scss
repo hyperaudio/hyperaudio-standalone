@@ -27,7 +27,7 @@
 }
 
 .hgroup__text {
-  @include set-type-small;
+  @include set-type-medium;
   @include breakpoint(m) {
     margin-top: $space-m;
   }

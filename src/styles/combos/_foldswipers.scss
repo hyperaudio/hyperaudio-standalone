@@ -33,10 +33,13 @@
   float: left;
   position: relative;
 }
-.foldswiper__pager {
+.foldswiper__foot {
   @include position-bottom-left($space-x,$space-s);
   @include position-bottom-right($space-x,$space-s);
   display: block;
+}
+.foldswiper__pager {
+  margin-top: $space-s;
 }
 
 /* IE10 Windows Phone 8 Fixes */
