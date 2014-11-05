@@ -1,0 +1,126 @@
+/*
+  ===============================================
+  # Layout
+  ===============================================
+*/
+
+/* Globals
+----------------------------------------------- */
+
+.group {
+  max-width: $group-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-side--right,
+.page-side--left,
+.page-body,
+.page-wrap,
+.page-head,
+.page-head * {
+  @include transition(
+    transform $time ease,
+    opacity $time ease
+  );
+}
+
+.page-head.moved--left,
+.page-head.moved--right {
+  * {
+    opacity: $opacity
+  }
+}
+
+.page-body {
+  &.moved--left,
+  &.moved--right {
+    .page-wrap {
+      opacity: $opacity;
+    }
+  }
+}
+
+/* Page Side
+----------------------------------------------- */
+
+%page-side {
+  @include backface-visibility(hidden);
+  @include set-size($side-width, 100%);
+  bottom: 0;
+  position: fixed;
+  top: 0;
+  width: $side-width;
+}
+
+.page-side.moved {
+  overflow: hidden;
+}
+
+.page-side__foot {
+  line-height: $side-foot-height;
+  overflow: hidden;
+}
+
+@include stick-footer($side-foot-height, ".page-side__body", ".page-side__push", ".page-side__foot");
+
+/* Page Body
+----------------------------------------------- */
+
+.page-body {
+  @include backface-visibility(hidden);
+  @include clearfix;
+  background-color: $mono-Wt;
+  height: 100%;
+  opacity: 1;
+  position: relative;
+  z-index: 50;
+}
+
+/* Page Wrap
+----------------------------------------------- */
+
+.page-wrap {
+  @include clearfix;
+  background-color: $mono-Wt;
+  overflow-x: hidden;
+  padding: (($space-l * 1.5) + $page-head-height) 0 $space;
+  @include breakpoint(m) {
+    padding: ($space-h + $page-head-height) 0 $space-h;
+  }
+}
+
+/* Page Cover
+----------------------------------------------- */
+
+.page-cover {
+  position: relative;
+  z-index: 1;
+}
+
+/* Page Head
+----------------------------------------------- */
+
+.page-head {
+  @include transform(translate3d(0,0,0));
+  @include position-top-left(0,0, fixed);
+  width: 100%;
+  line-height: $page-head-height;
+  z-index: 100;
+}
+
+/* Page Content
+----------------------------------------------- */
+
+.page-content {
+  padding-top: $space-l;
+  padding-bottom: $space-l;
+  @include breakpoint(m) {
+    padding-top: $space-h;
+    padding-bottom: $space-h;
+  }
+  @include breakpoint(l) {
+    padding-top: $space-h * 2;
+    padding-bottom: $space-h * 2;
+  }
+}

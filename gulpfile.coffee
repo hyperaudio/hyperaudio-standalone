@@ -16,9 +16,31 @@ SASSPATHS = [
 STYLES = [
   "./src/styles/**/*.scss"
 ]
-SCRIPTS = [
+SCRIPTQ1 = [
+  "./bower_components/pace/pace.js"
+]
+SCRIPTQ2 = [
+  "./bower_components/lunr.js/lunr.min.js"
+  "./bower_components/tether/tether.js"
+  "./bower_components/shepherd.js/shepherd.js"
+  "./bower_components/drop/drop.js"
   "./bower_components/swiper/dist/idangerous.swiper.min.js"
-  "./bower_components/hyperaudio/dist/assets/scripts/hyperaudio.js"
+  "./bower_components/hyperaudio/dist/assets/scripts/ha-core.js"
+  "./bower_components/fastclick/lib/fastclick.js"
+]
+SCRIPTQ3 = [
+  "./bower_components/popcorn-js/popcorn.js"
+  "./bower_components/popcorn-js/wrappers/common/popcorn._MediaElementProto.js"
+  "./bower_components/popcorn-js/wrappers/youtube/popcorn.HTMLYouTubeVideoElement.js"
+  "./bower_components/queue-async/queue.min.js"
+  "./src/scripts/ports/hyperaudio/popcorn-extras.js"
+  "./src/scripts/ports/hyperaudio/ha.js"
+  "./src/scripts/ports/hyperaudio/ha-wrapper.js"
+]
+TERRIBLESCRIPTQ = [
+  "./bower_components/newsquiz/libs/jquery/jquery.js"
+  "./bower_components/newsquiz/libs/tabletop.js"
+  "./bower_components/newsquiz/dist/newsquiz.min.js"
 ]
 
 # DEFINE PARTIAL TASKS
@@ -27,7 +49,7 @@ SCRIPTS = [
 # HTML tasks
 # ---------------------------------------------- #
 gulp.task "html", ->
-  gulp.src "./mobile/*.html"
+  gulp.src ["./dev/*.html", "./dev/partials/*.html"]
     .pipe $.connect.reload()
 
 # Compile Sass
@@ -39,13 +61,22 @@ gulp.task "compile-sass", ->
       outputStyle: "compressed"
     )
     .on "error", handleError
-    .pipe gulp.dest "mobile/styles"
+    .pipe gulp.dest "dev/assets/styles"
     .pipe $.connect.reload()
 
 # Concat Vendor
 # ---------------------------------------------- #
-gulp.task "concat-vendor", ->
-  gulp.src(SCRIPTS).pipe($.concat("vendor.js")).pipe gulp.dest("./mobile/scripts")
+gulp.task "concat-vendorq1", ->
+  gulp.src(SCRIPTQ1).pipe($.concat("vendorq1.js")).pipe gulp.dest("./dev/assets/scripts")
+
+gulp.task "concat-vendorq2", ->
+  gulp.src(SCRIPTQ2).pipe($.concat("vendorq2.js")).pipe gulp.dest("./dev/assets/scripts")
+
+gulp.task "concat-ports", ->
+  gulp.src(SCRIPTQ3).pipe($.concat("ports.js")).pipe gulp.dest("./dev/assets/scripts")
+
+gulp.task "concat-vendorqt", ->
+  gulp.src(TERRIBLESCRIPTQ).pipe($.concat("vendorqt.js")).pipe gulp.dest("./dev/assets/scripts")
 
 # Compile Coffeescript
 # ---------------------------------------------- #
@@ -56,24 +87,32 @@ gulp.task "compile-coffee", ->
     "./src/scripts/scripts.coffee"
     ])
     .pipe $.concat 'aj.coffee'
-    .pipe gulp.dest("./mobile/scripts")
+    .pipe gulp.dest("./dev/assets/scripts")
     .pipe $.coffee
       bare: true
     .on "error", handleError
-    .pipe gulp.dest("./mobile/scripts")
+    .pipe gulp.dest("./dev/assets/scripts")
     .pipe $.connect.reload()
 
 # Copy Font Files from Bower Dependencies
 # ---------------------------------------------- #
 gulp.task "copyfiles", ->
-  gulp.src("./bower_components/hyperaudio/dist/assets/fonts/**/*").pipe gulp.dest("./mobile/fonts")
+  gulp.src("./bower_components/hyperaudio/dist/assets/fonts/**/*").pipe gulp.dest("./dev/assets/fonts")
+
+# Build Dist
+# ---------------------------------------------- #
+gulp.task("node-build", $.shell.task ([
+  'node build'
+]))
 
 # Watch files
 # ---------------------------------------------- #
 gulp.task "watch", ->
   gulp.watch STYLES, [ "compile-sass" ]
-  gulp.watch ["mobile/*.html"], ["html"]
-  gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee"], ["compile-coffee"]
+  gulp.watch ["./dev/*.html","./dev/partials/*.html"], ["html"]
+  gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee", "./bower_components/**/*.js"], ["compile-coffee"]
+  gulp.watch SCRIPTQ3, ["concat-ports"]
+  gulp.watch ["./dev/assets/**/*.*"], ["node-build"]
 
 # Connect server
 # ---------------------------------------------- #
@@ -88,9 +127,13 @@ gulp.task "connect", ->
 
 gulp.task "default", [
   "compile-sass"
-  "concat-vendor"
+  "concat-vendorq1"
+  "concat-vendorq2"
+  "concat-vendorqt"
+  "concat-ports"
   "compile-coffee"
   "copyfiles"
+  "node-build"
   "connect"
   "watch"
 ]

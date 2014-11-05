@@ -1,0 +1,39 @@
+/**
+ * Listings
+ * ============================================ */
+
+.HAP-listing {
+  @extend .menu__list;
+}
+.HAP-listing li {
+  @extend .menu__item;
+}
+.HAP-listing li > a {
+  @extend .menu__link;
+}
+
+.HAP-listing > li {
+  &.folder {
+    > div {
+      display: none;
+    }
+  }
+}
+
+.HAP-listing li[data-channel="nochannel"] {
+  display: none;
+}
+
+.HAP-sidebar .folder.open > div:before {
+  content: '1';
+}
+
+.HAP-sidebar .folder.open > ul {
+  height: auto;
+}
+
+.HAP-sidebar .other-media .owned-by-user {
+}
+
+.HAP-sidebar .other-media .owned-by-user:hover {
+}

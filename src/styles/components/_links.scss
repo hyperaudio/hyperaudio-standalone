@@ -2,6 +2,11 @@
  * Links
  * ============================================ */
 
+%secondary-link {
+  display: inline-block;
+  border-bottom-width: 1px;
+}
+
 a {
   @include reset-tap;
   color: $link-color;

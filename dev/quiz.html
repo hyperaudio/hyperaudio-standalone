@@ -1,0 +1,47 @@
+{{> init }}
+<body class="tpl--quiz">
+{{> aside-left}}
+<header class="page-head" id="page-head" data-head-state="" data-head-state-persist="false">
+{{> header }}
+</header>
+<div id="page-body" class="page-body">
+  <div class="page-wrap">
+    <div class="foldcard" style="">
+      <div class="foldcard__content">
+        <div class="foldcard__head">
+          <!-- <span class="label">An Al Jazeera Production</span> -->
+        </div>
+        <div class="foldcard__body mth">
+          <div class="group">
+            <div class="s-span-1of1 m-span-4of5 m-center l-span-3of5 l-center">
+              <div class="hgroup">
+                <h2 class="hgroup__title">Beginner Quiz</h2>
+                <p class="hgroup__text">Check your Knowledge bla bla bla</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="page-content">
+      <div class="group">
+        <div class="s-span-1of1 m-span-3of5 m-center l-span-2of5 l-center">
+          <div id="quiz_container" class="quiz"></div>
+        </div>
+      </div>
+    </section>
+    <div class="page-push"></div>
+  </div>
+  {{> footer}}
+</div>
+{{> aside-right}}
+<div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>
+{{> panel-language}}
+<script src="{{path}}assets/scripts/vendorq2.js"></script>
+<script src="{{path}}assets/scripts/vendorqt.js"></script>
+<script src="{{path}}assets/scripts/aj.js"></script>
+<script type="text/javascript">
+var quiz = jQuery('#quiz_container').quiz('0ApwzQmkWl4rTdERxU0ZCVmc1TUZ3NmlzYlJxOWFiTGc');
+</script>
+</body>
+</html>

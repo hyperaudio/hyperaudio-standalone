@@ -1,0 +1,40 @@
+/**
+ * Search
+ * ============================================ */
+
+.search {
+  overflow: hidden;
+  position: relative;
+  .icon-search {
+    @include transition(transform $time);
+    @include transform(translate3d(0,0,0));
+    color: $shadow-light;
+  }
+  input:focus {
+    box-shadow: none;
+    border: none;
+  }
+}
+
+/* ********** DIRECTION DECLARATIONS ********** */
+
+@if $direction == "ltr" {
+  .search {
+    .icon-search {
+      @include position-top-left($space-s, $space-s);
+    }
+    input {
+      padding-left: $space-l + $space-s;
+    }
+  }
+}
+@if $direction == "rtl" {
+  .search {
+    .icon-search {
+      @include position-top-right($space-s, $space-s);
+    }
+    input {
+      padding-right: $space-l + $space-s;
+    }
+  }
+}

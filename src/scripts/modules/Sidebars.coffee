@@ -30,6 +30,7 @@ renderSides         = () ->
     # toggleOverlay "cover-none"
   else
     page.setAttribute "data-page-state", "clipped"
+  renderPage()
 
 # Alters target side's state and/or disables all panels when page-overlay was clicked
 alterSideState    = (targetSideId) ->

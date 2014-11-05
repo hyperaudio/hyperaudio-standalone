@@ -5,6 +5,7 @@
 .foldcard {
   @include clearfix;
   @include fill-inverted;
+  background-color: $mono-Wt;
   background-size: cover;
   background-position: center center;
   color: $mono-Wt;
@@ -15,15 +16,14 @@
     color: $mono-Wt;
   }
   @include breakpoint(m) {
-    min-height: 500px;
+    min-height: 600px;
   }
   @include breakpoint(l) {
-    min-height: 600px;
+    min-height: 700px;
   }
 }
 
 .foldcard__content {
-  // @include animation(scaleOut 3s ease-in-out 0);
   @include position-top-left(0,0);
   @include position-bottom-right(0,0);
   padding: $page-head-height $space-s;
@@ -59,7 +59,6 @@
   }
 }
 .foldcard__body {
-  height: 100%;
   position: relative;
 }
 .foldcard__foot {
@@ -79,12 +78,14 @@
   }
   &.multiple--horizontal {
     .multiple__item {
-      border-width: 0 0 1px;
       border-radius: 0;
-      padding: $space-s 0 0 0;
+      padding: $space-s 0 $space-m 0;
       margin: 0 $space-x;
-      border-color: $flare-medium;
       color: $flare-strong;
+      a {
+        border-color: $flare-medium;
+        border-width: 0 0 1px;
+      }
     }
     @include breakpoint(m) {
       display: none;

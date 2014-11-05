@@ -9,31 +9,44 @@
   @include transition(transform $time);
   @include transform(translate3d(0,100%,0));
   box-shadow: 0 -1px 5px $shadow-weak;
-  background-color: rgba(255,255,255,0.95);;
-  padding-bottom: $space;
-  padding-top: $space;
+  background-color: rgba(255,255,255,0.95);
   z-index: 500;
   &.panel--active {
     @include transform(translate3d(0,0,0));
   }
 }
-.panel__title {
-  @include set-type-medium;
+
+.panel__head,
+.panel__body,
+.panel__foot {
+  padding: $space-x;
+}
+.panel__head {
   border-color: $shadow-light;
   border-bottom-width: 1px;
-  font-weight: $font-bold;
-  margin-bottom: $space;
-  padding-bottom: $space;
-  text-align: center;
 }
 .panel__body {
-  padding-left: $space-s;
-  padding-right: $space-s;
+  @extend %well;
+  border-color: $shadow-light;
+  border-bottom-width: 1px;
+  padding-bottom: $space-s;
+  padding-top: $space-s;
+}
+.panel__foot {
+  background: $mono-Wt;
+}
+
+.panel__title {
+  @include set-type-medium;
+  font-weight: $font-bold;
+  padding: $space-x 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 .panel__subtitle {
   color: $shadow-medium;
   font-weight: $font-bold;
-  margin-bottom: $space;
+  margin-bottom: $space-x;
   text-align: center;
 }
 .panel__action--sec {
@@ -43,5 +56,7 @@
 .panel__action--pri {
   @extend .pri-button;
   display: block;
+  padding-left: $space-x;
+  line-height: $space-m;
   text-align: center;
 }

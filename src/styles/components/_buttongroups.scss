@@ -1,0 +1,39 @@
+/**
+ * Buttongroups
+ * ============================================ */
+
+.buttongroup {
+  &.buttongroup--of5 {
+    @include fit(5,5,5);
+    @include set-type-small;
+  }
+}
+
+.buttongroup__item {
+  border-radius: $radius-s;
+  padding: 2px;
+  text-align: right;
+  &:first-child {
+    border-left-radius: $radius-s;
+  }
+  &:first-child {
+    border-right-radius: $radius-s;
+  }
+}
+.buttongroup__item--active {
+  @include fill-red;
+}
+
+.buttongroup__label {
+  @include set-type-tiny;
+  float: left;
+  text-align: right;
+  width: 40%;
+}
+
+.buttongroup__value {
+  @include set-type-small;
+  float: left;
+  text-align: left;
+  width: 60%;
+}

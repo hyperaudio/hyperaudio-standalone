@@ -3,5 +3,11 @@
  * ============================================ */
 
 .highlight {
-  background: $blue-HL;
+  border-radius: $radius-s;
+  font-weight: $font-bold;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+a.highlight {
+
 }

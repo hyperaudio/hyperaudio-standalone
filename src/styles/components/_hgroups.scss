@@ -9,7 +9,7 @@
 
 .hgroup__title {
   @include set-type-huge;
-  @include hyphenate;
+  text-transform: uppercase;
   font-weight: $font-bold;
 }
 

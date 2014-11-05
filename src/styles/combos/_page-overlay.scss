@@ -7,14 +7,4 @@
   cursor: pointer;
   width: 100%;
   z-index: 250;
-  &.cover-left {
-    @include position-top-right(0, $side-width, fixed);
-  }
-  &.cover-right {
-    @include position-top-left(0, $side-width, fixed);
-  }
-  &.cover-all {
-    @include position-top-left(0, 0, fixed);
-    background: $shadow-light;
-  }
 }

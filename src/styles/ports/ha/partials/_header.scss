@@ -1,0 +1,53 @@
+/**
+ * Header
+ * ============================================ */
+
+.HAP-header {
+  display: none;
+  @include breakpoint(l) {
+    display: block;
+  }
+}
+
+.HAP-header {
+  .HAP--viewer & {
+    @include position-top-right(0,0);
+    width: 100%;
+    z-index: 5;
+  }
+  .HAP--pad & {
+    @include position-top-right(0,0);
+    @include set-size(100%,$HAP-header-height);
+    background: $shadow-light;
+    width: 100%;
+    z-index: 5;
+  }
+}
+
+.HAP-header__title {
+  display: none;
+}
+.HAP-header__menu {
+}
+.HAP-menu__link {
+  @include set-type-small;
+  font-weight: $font-bold;
+  padding: $space-x;
+  z-index: 5;
+  &#edit {
+    @include position-top-left($space-s,$space-s);
+  }
+  &#share {
+    @include position-top-right($space-s,$space-s);
+  }
+  &#save-button {
+    @include position-top-right($space-s,$space-s);
+  }
+}
+
+// Legacy behavioural CSS
+
+#share-button,
+#save-button-saving {
+  display: none;
+}

@@ -1,3 +1,6 @@
+# Distribution Package
+mobile/
+
 # Node modules
 node_modules/
 
@@ -5,13 +8,14 @@ node_modules/
 bower_components/
 
 # Compiled styles and scripts
-mobile/scripts
-mobile/styles
-mobile/fonts/hyperaudio-player
-mobile/fonts/hyperaudio
+mobile/
+
+dev/assets/scripts/
+
+dev/assets/styles/
+dev/assets/styles/aj.css
 
 # Other Stuff
-_todo.md
+TODO
 _icons.md
-
 sftp-config.json

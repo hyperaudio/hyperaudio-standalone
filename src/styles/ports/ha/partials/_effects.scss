@@ -1,0 +1,52 @@
+/**
+ * Effects
+ * ============================================ */
+
+.HAP-effect {
+  @include set-type-xsmall;
+  position: relative;
+  input[type="text"] {
+    @extend %text-input;
+    border-bottom: 1px solid $shadow-light;
+    padding: $space-x;
+    // background:
+  }
+  form > label {
+    display: block;
+    margin-bottom: $space-x;
+  }
+}
+
+.HAP-effect__checkboxes {
+  @include position-top-right($space-x, $space-x);
+}
+
+.HAP-effect input[type=text],
+.HAP-effect input[type=range] {
+  display: block;
+  width: 100%;
+}
+.HAP-effect input[type=text] {
+  @extend %text-input;
+}
+
+// .HAP-effect input[type=text]:focus {
+// }
+// .HAP-effect span:before {
+// }
+// .HAP-effect .HAP-effect-checkboxes {
+// }
+
+// Variations
+// ----------------------------------------------
+
+.HAP-effect {
+  // If effect lives in a transcript, add bottom spacing
+  .HAP-transcript & {
+    padding: $space-s;
+  }
+  // Hide effects in viewer mode
+  .HAP--viewer & {
+    display: none;
+  }
+}

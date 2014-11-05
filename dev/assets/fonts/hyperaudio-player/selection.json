@@ -1,0 +1,115 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M854.938 485.734l-438.323-271.565c-31.949-20.941-58.061-5.478-58.061 34.304v527.155c0 39.782 26.163 55.194 58.061 34.253l438.374-271.565c0 0 15.565-10.957 15.565-26.317-0.051-15.309-15.616-26.266-15.616-26.266z"
+				],
+				"tags": [
+					"play",
+					"media control"
+				],
+				"grid": 20
+			},
+			"properties": {
+				"id": 171,
+				"order": 4,
+				"prevSize": 20,
+				"code": 58880,
+				"name": "play",
+				"ligatures": ""
+			},
+			"setIdx": 4,
+			"iconIdx": 171
+		},
+		{
+			"icon": {
+				"paths": [
+					"M691.2 153.6c-50.893 0-92.16 15.667-92.16 66.56v583.68c0 50.893 41.267 66.56 92.16 66.56s92.16-15.667 92.16-66.56v-583.68c0-50.893-41.267-66.56-92.16-66.56zM332.8 153.6c-50.893 0-92.16 15.667-92.16 66.56v583.68c0 50.893 41.267 66.56 92.16 66.56s92.16-15.667 92.16-66.56v-583.68c0-50.893-41.267-66.56-92.16-66.56z"
+				],
+				"tags": [
+					"pause",
+					"media control"
+				],
+				"grid": 20
+			},
+			"properties": {
+				"id": 172,
+				"order": 5,
+				"prevSize": 20,
+				"code": 58881,
+				"name": "pause",
+				"ligatures": ""
+			},
+			"setIdx": 4,
+			"iconIdx": 172
+		},
+		{
+			"icon": {
+				"paths": [
+					"M594.586 108.134l123.085 99.635-155.136 150.016 102.4 102.4 150.118-155.238 101.99 125.798-0-322.611h-322.458zM357.786 562.586l-150.067 155.136-100.864-124.467v322.56h322.56l-124.467-100.813 155.187-150.067-102.349-102.349z"
+				],
+				"tags": [
+					"resize-enlarge",
+					"enlarge",
+					"fullscreen"
+				],
+				"grid": 20
+			},
+			"properties": {
+				"id": 179,
+				"order": 6,
+				"prevSize": 20,
+				"code": 58882,
+				"name": "resize-enlarge",
+				"ligatures": ""
+			},
+			"setIdx": 4,
+			"iconIdx": 179
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "hyperaudio-player"
+	},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "hyperaudio-player",
+				"majorVersion": 1,
+				"minorVersion": 0
+			},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 512,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 58880,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": false,
+			"showMetadata": false,
+			"includeMetadata": true,
+			"embed": true
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"png": false,
+			"sprites": true
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"search": ""
+	}
+}

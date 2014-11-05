@@ -10,7 +10,6 @@
   a,
   .headline & {
     color: $mono-Wt;
-    text-decoration: underline;
   }
   &:before {
     @include position-top-left(0,0);
@@ -24,10 +23,10 @@
 .headline__title {
   @include set-type-xlarge;
   color: $mono-Wt;
-  font-weight: $font-bold;
   margin-bottom: $space-x;
   position: relative;
   z-index: 10;
+  text-transform: uppercase;
 }
 .headline__text {
   @include set-type-small;

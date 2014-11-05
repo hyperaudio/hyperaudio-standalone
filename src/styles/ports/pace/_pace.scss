@@ -1,0 +1,20 @@
+/* This is a compiled file, you should be editing the file in the templates directory */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  @include transition(opacity $time);
+  opacity: 0;
+}
+
+.pace .pace-progress {
+  @include position-top-right(0,100%,fixed);
+  @include set-size(100%,2px);
+  background: $red-LD;
+  z-index: 1000;
+}

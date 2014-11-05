@@ -4,6 +4,11 @@
   ===============================================
 */
 
+/* Master Properties
+----------------------------------------------- */
+
+$direction          : "ltr"; // Possible options: "rtl", "ltr"
+
 /* Colors
 ----------------------------------------------- */
 
@@ -14,7 +19,8 @@ $graphite-LLt       : #BCC4C8;
 $graphite-HL        : #DADFE1;
 
 $red-LD             : #F22613;
-$red-HL             : #FDDBD8;
+$red-Lt             : #FDDBD8;
+$red-HL             : #fdf1f0;
 
 $green-LD           : #007A3D;
 $green-HL           : #DBF5FA;
@@ -32,10 +38,8 @@ $font-xs            : 11px;
 $font-xxs           : 10px;
 
 // Font Families
-// $primary-font       : 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$primary-font       : 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$secondary-font     : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-// $secondary-font     : 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$primary-font       : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$secondary-font     : 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 /* Default Definitions
 ----------------------------------------------- */

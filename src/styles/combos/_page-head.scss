@@ -14,6 +14,9 @@
     line-height: $page-head-height;
     height: $page-head-height;
     padding: 0 $space-s;
+    span {
+      color: $link-color;
+    }
   }
 }
 
@@ -22,6 +25,7 @@
   display: block;
   font-weight: $font-bold;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* Menu Items
@@ -30,10 +34,14 @@
 .page-head__menu-item--first,
 .page-head__menu-item--last {
   overflow: hidden;
+  line-height: 0;
+  min-width: 80px;
   z-index: 50;
+  // width: auto;
+  a {
+    line-height: $page-head-height;
+  }
 }
-.page-head__menu-item--first  { @include position-top-left(0,0); }
-.page-head__menu-item--last   { @include position-top-right(0,0); }
 
 /* Altered variation
 ----------------------------------------------- */
@@ -42,6 +50,33 @@
   background: $background;
   box-shadow: 0 1px 2px $shadow-weak !important;
   a {
-    color: $link-color;
+    color: $color;
+    span {
+      color: $link-color;
+    }
+  }
+}
+
+/* ********** DIRECTION DECLARATIONS ********** */
+
+@if $direction == "ltr" {
+  .page-head__menu-item--first  { @include position-top-left(0,0); }
+  .page-head__menu-item--first {
+    .toggleSide { float: left; }
+  }
+  .page-head__menu-item--last   { @include position-top-right(0,0); }
+  .page-head__menu-item--last {
+    .toggleSide { float: right; }
+  }
+}
+@if $direction == "rtl" {
+  .page-head__menu-item--first { @include position-top-right(0,0); text-align: right; }
+  .page-head__menu-item--first {
+    .toggleSide { float: right; }
+  }
+  .page-head__menu-item--last { @include position-top-left(0,0); }
+  .page-head__menu-item--last {
+    text-align: left;
+    .toggleSide { float: left; }
   }
 }

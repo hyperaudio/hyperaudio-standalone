@@ -1,0 +1,100 @@
+/**
+ * Transcript
+ * ============================================ */
+
+.HAP-transcript {
+  @include set-type-small;
+  position: relative; // absolutely necessary for scrollTo to function.
+  overflow: auto;
+  > article {
+
+  }
+  > article > section {
+    display: block;
+    padding: $transcript-padding;
+    margin-bottom: $transcript-padding;
+  }
+  a {
+    @include transition(opacity $time-s ease);
+    @include transform(translateZ(0));
+    padding: 0 2px;
+    margin: 0 -2px;
+    color: $mono-Blk;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    &:hover,
+    &:active {
+      color: $red-LD;
+      opacity: 1;
+    }
+    &.transcript__queue {
+      color: $mono-M;
+      opacity: .75;
+    }
+    &.selected {
+      background: $red-HL !important;
+      color: $red-LD !important;
+      opacity: 1;
+    }
+  }
+}
+
+.HAP-transcript__item {
+  position: relative;
+}
+
+// #source-transcript a.last {
+//   z-index: 2;
+// }
+
+// #source-transcript a.first,
+// #source-transcript a.last {
+//   cursor: move;
+// }
+
+#source-transcript a.first:before {
+  font-family: 'fontello';
+  content: 'y';
+  color: #111;
+  text-align: center;
+  line-height: 24px;
+  position: absolute;
+  width: 28px;
+  height: 24px;
+  background: #CED6F2;
+  left: -2px;
+  top: -26px;
+  border-width: 2px 2px 0 2px;
+  border-color: #cee #fff #fff #fff;
+  border-style: solid;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#source-transcript a.last:after {
+  font-family: 'fontello';
+  content: 'y';
+  color: #111;
+  text-align: center;
+  line-height: 24px;
+  position: absolute;
+  width: 28px;
+  height: 24px;
+  background: #CED6F2;
+  right: -2px;
+  bottom: -26px;
+  border-width: 0 2px 2px 2px;
+  border-color: #cee #fff #fff #fff;
+  border-style: solid;
+  text-shadow: 0 1px 0 #fff;
+}
+
+
+

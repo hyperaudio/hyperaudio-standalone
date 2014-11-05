@@ -10,8 +10,16 @@
     "gulp-load-plugins": "^0.6.0",
     "gulp-plumber": "^0.6.5",
     "gulp-sass": "^0.7.3",
+    "gulp-shell": "^0.2.10",
     "gulp-uglifyjs": "^0.4.4",
     "gulp-watch": "^1.0.7",
+    "handlebars": "^2.0.0-alpha.2",
+    "metalsmith": "^0.2.3",
+    "metalsmith-assets": "0.0.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-metadata": "*",
+    "metalsmith-static": "0.0.5",
+    "metalsmith-templates": "^0.1.0",
     "node-bourbon": "^1.2.3"
   },
   "author": [

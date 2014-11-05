@@ -1,0 +1,139 @@
+/*
+  ===============================================
+  # Quizzes
+  ===============================================
+*/
+
+.quiz {
+  @extend .page-copy;
+
+  .quiz_container {
+
+  }
+  .question_container {
+    @include reset(last, margin-bottom);
+    margin-bottom: $space-h;
+  }
+
+  // Questions
+  .question {
+    margin-bottom: $line /2;
+    h1 {
+      @extend %h3;
+      @include fill-inverted;
+      @include set-size(40px,40px);
+      border-radius: $radius-absolute;
+      line-height: 40px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    img {
+      width: 100%;
+    }
+    .videoembed {
+      @include scale-embed;
+      embed,
+      iframe,
+      object {
+        @include scale-embed__el;
+      }
+    }
+    p {
+      font-weight: $font-bold;
+      margin-top: $line /2;
+    }
+  }
+
+  // Answers
+  .possible_answers {
+    @extend .multiples--horizontal;
+  }
+  .correct_answer,
+  .possible_answer,
+  .wrong_answer {
+    @extend .multiple__item;
+    @include reset(last, margin-bottom);
+    cursor: pointer;
+    display: block;
+    list-style: none;
+    margin-bottom: $space-x;
+  }
+  .possible_answer:hover {
+    @include fill-green;
+  }
+  .wrong_answer {
+    @include fill-red;
+  }
+  .correct_answer {
+    @include fill-green;
+  }
+
+  // Result
+  .how_you_did {
+    @include fill-green;
+    @include set-type-large;
+    @include animation(pulse 2s infinite);
+    border-top: 2px solid $green-LD;
+    padding: $space 0;
+    margin-top: $space-h;
+    text-align: center;
+    .correct_answers {
+      font-weight: $font-bold;
+    }
+  }
+  .small {
+    display: none;
+  }
+}
+
+.quiz_container .question .hint {
+  font-weight: bold;
+}
+
+/*more styling for answers*/
+
+.quiz_container .revealed_answer p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  min-height: 3em;
+  font-weight: normal;
+}
+
+.quiz_container .revealed_answer a {
+  color: #E64522;
+  border-bottom: 0 !important;
+}
+
+.quiz_container .revealed_answer a:hover {
+  opacity: .75;
+  text-decoration: none;
+}
+
+.quiz_container .hide {display: none;}
+.quiz_container .show {display: block;}
+.quiz_container .revealed_answer {
+}
+
+/*multimedia styling*/
+
+.quiz_container img, .quiz_container .youtube {
+  // min-height: 200px;
+  // max-height: 200px;
+}
+
+.quiz_container .possible_answer img {
+  max-height: 24em;
+}
+
+.quiz_container .question img, .revealed_answer img, .selected img, .correct_answer img, .wrong_answer img {
+  max-height: 24em;
+  display: block;
+}
+
+/* media queries */
+
+@media (max-width: 480px) {
+  .quiz_container .question img, .revealed_answer img {
+    display: none;
+  }
+}

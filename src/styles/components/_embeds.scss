@@ -1,0 +1,10 @@
+/**
+ * Embeds
+ * ============================================ */
+
+.embed {
+  @include scale-embed;
+  iframe {
+    @include scale-embed__el;
+  }
+}

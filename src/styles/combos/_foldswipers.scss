@@ -5,6 +5,7 @@
 .foldswiper,
 .foldswiper__wrapper,
 .foldswiper__item {
+  direction: ltr;
   height: 100%;
 }
 
@@ -54,4 +55,14 @@
 }
 .swiper-wp8-vertical {
   -ms-touch-action: pan-x;
+}
+
+/* ********** DIRECTION DECLARATIONS ********** */
+
+@if $direction == "ltr" {
+}
+@if $direction == "rtl" {
+  .foldswiper__item {
+    direction: rtl;
+  }
 }

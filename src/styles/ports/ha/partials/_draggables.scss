@@ -1,0 +1,26 @@
+/**
+ * Effects
+ * ============================================ */
+
+.draggable {
+  @include transform(translateZ(0));
+  @include transition(opacity $time);
+  border-radius: $radius-s;
+  background: $red-Lt;
+  max-height: 4.7em;
+  opacity: .75;
+  overflow: hidden;
+  padding: $space-x;
+  pointer-events: none;
+  position: absolute;
+  width: 30%;
+  z-index: 1000;
+}
+
+.draggable.draggableEffect {
+  background: $shadow-medium;
+}
+
+#stage.dragdrop .item * {
+  pointer-events: none; /* ease the drag n drop */
+}

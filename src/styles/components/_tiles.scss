@@ -3,31 +3,63 @@
  * ============================================ */
 
 .tile {
+  display: block;
+  overflow: hidden;
   position: relative;
 }
 
-.tile__figure {
-  padding-right: $space;
+.tile__body {
+
 }
 
-.tile__meta {
-  @include set-type-xsmall;
+.tile__thumbnail {
+  width: 31%;
 }
+
+.tile__body {
+  @include breakpoint(m) {
+    padding-left: $space-s;
+  }
+}
+
+.tile__transcript {
+  @include set-type-xsmall;
+  @include hyphenate;
+}
+
 .tile__title {
   @include set-type-tiny;
   @include truncate;
-  border-color: $shadow;
-  border-top-width: 1px;
-  padding-top: $space-x;
+  color: $mono-LLt;
   margin-top: $space-x;
-  opacity: $opacity;
+  a {
+    @extend %secondary-link;
+    color: $mono-LLt;
+    padding-bottom: 1px;
+    border-color: $mono-HL;
+  }
+  @include breakpoint(l) {
+    margin-top: $space-s;
+  }
 }
-.tile__text {
-  @include set-type-xsmall;
-  @include truncate;
-  @include hyphenate;
-  opacity: $opacity;
+
+/* ********** DIRECTION DECLARATIONS ********** */
+
+@if $direction == "ltr" {
+  .tile__thumbnail {
+    float: left;
+  }
+  .tile__body {
+    margin-left: 31%;
+    padding-left: $space-x;
+  }
 }
-.tile__transcript {
-  @include set-type-xsmall;
+@if $direction == "rtl" {
+  .tile__thumbnail {
+    float: right;
+  }
+  .tile__body {
+    margin-right: 31%;
+    padding-right: $space-x;
+  }
 }

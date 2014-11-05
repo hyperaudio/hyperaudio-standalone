@@ -1,0 +1,51 @@
+
+
+#transcript a.first:before {
+  font-family: 'fontello';
+  content: 'y';
+  color: #111;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 24px;
+  position: absolute;
+  width: 28px;
+  height: 24px;
+  background: #CED6F2;
+  left: -2px;
+  top: -26px;
+  border-width: 2px 2px 0 2px;
+  border-color: #cee #fff #fff #fff;
+  border-style: solid;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#transcript a.last:after {
+  font-family: 'fontello';
+  content: 'y';
+  color: #111;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 24px;
+  position: absolute;
+  width: 28px;
+  height: 24px;
+  background: #CED6F2;
+  right: -2px;
+  bottom: -26px;
+  border-width: 0 2px 2px 2px;
+  border-color: #cee #fff #fff #fff;
+  border-style: solid;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#stage .item.edit a:hover:after {
+  position: absolute;
+  top: -18px;
+  right: -11px;
+  font-family: 'fontello';
+  content: 'd';
+  color: #a00;
+  font-size: 1.4em;
+  text-shadow: 0 2px 0 #fff, 0 -2px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
+}
+

@@ -10,6 +10,36 @@
   }
 }
 
+%h2 {
+  @include set-type-xlarge;
+  @include reset(first, margin-top);
+  font-weight: $font-bold;
+  margin-bottom: $line;
+  margin-top: $line;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%h3 {
+  @include set-type-xlarge;
+  @include reset(first, margin-top);
+  margin-bottom: $line;
+  margin-top: $line;
+  font-weight: $font-bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+%h4 {
+  @include set-type-medium;
+  @include reset(first, margin-top);
+  margin-bottom: $line;
+  margin-top: $line;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: $spacing;
+}
+
 .page-copy {
   @include set-type-medium;
   position: relative;
@@ -22,23 +52,9 @@
   * {
     border-color: $shadow-light;
   }
-  h3 {
-    @include set-type-xlarge;
-    margin-bottom: $line;
-    margin-top: $line;
-    font-weight: $font-bold;
-    text-align: center;
-    text-transform: capitalize;
-  }
-  h4 {
-    @include set-type-medium;
-    @include reset(first, margin-top);
-    margin-bottom: $line;
-    margin-top: $line;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: $spacing;
-  }
+  h2 { @extend %h2; }
+  h3 { @extend %h3; }
+  h4 { @extend %h4; }
   p, blockquote,
   figcaption {
     @extend %page-copy-block;
@@ -46,11 +62,8 @@
   p {
     @include reset(first, margin-top);
     @include hyphenate;
-    margin-top: $line;
+    margin-top: $line / 2;
     text-align: justify;
-  }
-  p + p {
-    @include indent;
   }
   figure + p {
     margin-top: $line;
@@ -59,10 +72,25 @@
     }
   }
   figure {
+    @include reset(first,margin-top);
     margin-top: $line;
     position: relative;
     img {
       width: 100%;
+    }
+    .drop {
+      @include set-size($tap-size, $tap-size);
+      border-radius: $radius-s;
+      background: $shadow-medium;
+      color: $mono-Wt;
+      display: block;
+      line-height: $tap-size;
+      text-align: center;
+      z-index: 95;
+      i {
+        position: relative;
+        top: 2px;
+      }
     }
     @include breakpoint(m) {
       margin-top: $space-l;
@@ -71,26 +99,51 @@
   figcaption {
     @include set-type-xsmall;
     color: $mono-M;
-    font-style: italic;
-    margin-top: $space-s;
+    margin-top: $space-x;
+    position: relative;
     @include breakpoint(m) {
-      margin-top: $line;
+      margin-top: $space-s;
     }
   }
   dl {
     @include clearfix;
     display: block;
-    > * {
-      height: auto;
-      float: left;
-      margin: 0 0 ($line / 2) 0;
-    }
+    margin-bottom: $line;
+  }
+  dt, dd {
+    width: 100%;
+    text-align: center;
   }
   dt {
-    color: $mono-M;
-    width: 40%;
+    @include reset(first, margin-top);
+    display: block;
+    margin-top: $line;
   }
   dd {
-    width: 60%;
+    color: $mono-M;
+  }
+  blockquote {
+    margin-top: $space-s;
+  }
+}
+
+/* ********** DIRECTION DECLARATIONS ********** */
+
+@if $direction == "ltr" {
+  .page-copy {
+    figure {
+      .drop {
+        @include position-top-right($space-x,$space-x);
+      }
+    }
+  }
+}
+@if $direction == "rtl" {
+  .page-copy {
+    figure {
+      .drop {
+        @include position-top-left($space-x,$space-x);
+      }
+    }
   }
 }

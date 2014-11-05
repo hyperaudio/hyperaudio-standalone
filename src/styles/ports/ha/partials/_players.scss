@@ -1,0 +1,113 @@
+/**
+ * Hyperaudio Player
+ * ============================================ */
+
+.HAP-player {
+  @include fill-inverted;
+  background: $mono-Blk;
+}
+.HAP-projector {
+  @include position-bottom-left(0,0);
+  @include position-top-right(0,0);
+  height: 100%;
+  position: relative;
+}
+.HAP-player--video {
+  @include scale-embed;
+  height: 100% !important;
+  padding-bottom: 0 !important; // Override the mixin madness!!
+}
+.HAP-player--video video {
+  @include scale-embed__el;
+}
+
+/* Controls
+----------------------------------------------- */
+
+.HAP-player-gui {
+  @include transition(opacity $time);
+  @include position-bottom-left(0,0);
+  @include position-bottom-right(0,0);
+  @include paint-invert;
+  @include set-type-xsmall;
+  box-shadow: 0 -1px 0 $flare-weak;
+  cursor: pointer;
+  display: block;
+  height: $player-height;
+  line-height: $player-height;
+  // opacity: 0;
+  z-index: 50;
+  .HAP-player:hover & {
+    opacity: 1;
+  }
+  * {
+    height: $player-height;
+    line-height: $player-height;
+  }
+}
+.HAP-player-controls {
+  padding-left: $player-height;
+  padding-right: $player-height;
+  .HAP-canvas--source & {
+    padding-right: 0;
+  }
+}
+.HAP-player-play,
+.HAP-player-fullscreen {
+  @include set-size($player-height, $player-height);
+  z-index: 50;
+}
+.HAP-player-play {
+  @include position-top-left(0,0);
+}
+.HAP-player-bar {
+  position: relative;
+}
+.HAP-player-progress {
+  @include transition(width $time linear);
+  background: $player-progress-color;
+  display: block;
+}
+.HAP-player-current-time {
+  @include position-top-left(0, $space-s);
+}
+.HAP-player-duration {
+  @include position-top-right(0, $space-s);
+  float: right;
+}
+.HAP-player-play {
+  box-shadow: inset -1px 0 0 $flare-weak;
+}
+.HAP-player-fullscreen {
+  @include position-top-right(0,0);
+  box-shadow: inset 1px 0 0 $flare-weak;
+}
+
+/* Iconography
+----------------------------------------------- */
+
+.HAP-player-play,
+.HAP-player-fullscreen {
+  font-family: $icon-font;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: $player-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //
+  text-align: center;
+  font-size: $icon-size;
+}
+
+.HAP-player-play:before {
+  content: "\e600";
+  .HAP-player-gui.playing & {
+    content: "\e601";
+  }
+}
+.HAP-player-fullscreen:before {
+  content: "\e602";
+}

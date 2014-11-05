@@ -1,0 +1,43 @@
+/**
+ * Toolbars
+ * ============================================ */
+
+.HAP-toolbar {
+  @include position-bottom-right(0,0);
+  background: $mono-Wt;
+  box-shadow: 0 0px 2px $shadow-light;
+  width: 100%;
+}
+
+.HAP-toolbar__pri-fraction,
+.HAP-toolbar__sec-fraction {
+  border-top: 1px solid $shadow-light;
+}
+.HAP-toolbar__pri-fraction {
+  padding: $transcript-padding;
+
+  #mix-title {
+    display: none;
+  }
+
+  .pri-button {
+    @include set-type-small;
+    display: block;
+    text-align: center;
+  }
+
+}
+
+.HAP-toolbar__sec-fraction {
+  background: #F3F3F3;
+
+  .HAP-droplet#fadeFX {
+    border-right: 1px solid $shadow-light;
+  }
+  .HAP-droplet#trimFX {
+    border-right: 1px solid $shadow-light;
+  }
+  .HAP-droplet#titleFX {
+  }
+
+}

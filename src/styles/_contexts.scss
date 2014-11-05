@@ -8,7 +8,9 @@
 .tpl--longform,
 .tpl--credits,
 .tpl--about,
-.tpl--theme {
+.tpl--map,
+.tpl--theme,
+.tpl--quiz {
   .page-wrap {
     padding: 0;
   }
@@ -26,4 +28,31 @@
     padding-top: $page-head-height;
     padding-bottom: 0;
   }
+}
+
+.tpl--pad {
+  .page-wrap {
+    padding-bottom: 0;
+  }
+}
+.tpl--remix {
+  .page-body {
+    padding-top: $page-head-height;
+  }
+  .HAP-header {
+    display: none;
+  }
+}
+
+// Stick Footer only internal pages, where the actually we have footer - fixes home page slider thingy
+.tpl--about,
+.tpl--credits,
+.tpl--listing,
+.tpl--longform,
+.tpl--map,
+.tpl--pad,
+.tpl--quiz,
+.tpl--theme,
+.tpl--viewer {
+  @include stick-footer($page-foot-height, ".page-wrap", ".page-push", ".page-foot");
 }

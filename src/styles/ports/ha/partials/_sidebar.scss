@@ -1,0 +1,14 @@
+/**
+ * Sidebar
+ * ============================================ */
+
+.HAP-sidebar {
+  @include fill-inverted;
+  height: 100%;
+}
+
+// .HAP-sidebar .HAP-listing {
+//   @include position-top-left($header-height, 0);
+//   @include position-bottom-right(0,0);
+//   overflow: auto;
+// }

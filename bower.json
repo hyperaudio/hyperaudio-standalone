@@ -19,7 +19,14 @@
     "bourbon": "~4.0.2",
     "catalyst": "https://github.com/interactivethings/catalyst.git#1.0.0-beta",
     "swiper": "~2.7.0",
-    "hyperaudio": "git@github.com:AJInteractive/hyperaudio.git#~1.0.9",
-    "margarine": "https://github.com/piotrf/margarine.git#~1.0.21"
+    "margarine": "https://github.com/piotrf/margarine.git#~1.0.21",
+    "fastclick": "~1.0.3",
+    "newsquiz": "git@github.com:motherjones/newsquiz.git",
+    "pace": "~1.0.1",
+    "drop": "~0.5.5",
+    "shepherd.js": "~0.5.1",
+    "lunr.js": "~0.5.6",
+    "popcorn-js": "~1.5.10",
+    "queue-async": "~1.0.7"
   }
 }

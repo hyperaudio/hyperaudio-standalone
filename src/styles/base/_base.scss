@@ -18,13 +18,22 @@ body {
   color: $color;
   font-family: $font;
   * {
+    @include box-sizing(border-box);
     border-style: solid;
   }
   &.clipped {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
 }
 
-body * {
-  @include box-sizing(border-box);
+/* ********** DIRECTION DECLARATIONS ********** */
+
+@if $direction == "ltr" {
+}
+@if $direction == "rtl" {
+  body,
+  body * {
+    direction: rtl;
+  }
 }

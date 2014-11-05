@@ -13,7 +13,6 @@
   margin-top: $space-s * -1;
   margin-bottom: $space-s * -1;
   position: relative;
-  // top: $space-x * -1;
   .multiple__item {
     @extend .sec-button;
     border-color: $flare-weak;
@@ -28,24 +27,43 @@
 }
 
 .multiple--horizontal {
+  @include backface-visibility(hidden);
   @include box-sizing(content-box);
   @include mask-h(100%);
+  direction: ltr;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 0 $space-s;
   margin-right: $space-s * -1;
   margin-left: $space-s * -1;
+  padding: 0 $space-s;
   position: relative;
   text-align: center;
   white-space: nowrap;
+  z-index: 1; // Fix of Webkit flickering
   .multiple__item {
     @include set-type-small;
     border-radius: $radius-s;
+    color: $mono-M;
     display: inline-block;
     padding: $space-x;
-    &.multiple__item--active {
-      @include fill-red;
+    &.multiple__item--selected {
+      color: $red-LD;
+    }
+  }
+  .multiple__wrapper {
+    @include box-sizing(content-box);
+    @include transition(translate ease $time, left ease $time);
+    @include transform(translate3d(0,0,0));
+    position: relative;
+    height: $line !important;
+    width: 100%;
+  }
+  &.multiple--centered {
+    .multiple__item {
+      @include box-sizing(content-box);
+      float: left;
+      position: relative;
     }
   }
 }

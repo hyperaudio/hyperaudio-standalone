@@ -6,7 +6,6 @@ $tap-size         : 32px;
 $menu-back-offset : $tap-size;
 
 .menu-reset {
-  @include position-top-left(0,0, fixed);
   background-color: $mono-LD;
   color: $flare-medium;
   height: 100%;
@@ -26,9 +25,10 @@ $menu-back-offset : $tap-size;
 }
 .menu__subtitle {
   color: $mono-M;
-  font-weight: $font-bold;
+  font-weight: $font-regular;
   margin-top: $space-s;
   padding: $space;
+  text-transform: uppercase;
 }
 .menu__body {
 }
@@ -71,29 +71,25 @@ $menu-back-offset : $tap-size;
       height: $tap-size;
       line-height: $tap-size;
       text-align: center;
-      margin-right: $space;
     }
   }
 }
 .menu__supplement-toggle {
-  @include position-top-right(0,0);
   display: block;
   font-size: $font-xxs;
   line-height: $space-l;
-  padding: $space $space-s;
   text-transform: uppercase;
 }
 .menu__supplement {
   @include set-type-xsmall;
   border-top: 1px solid $flare-light;
-  margin: 0 $space-s $space;
   padding-top: $space;
 }
 .menu__link-icon {
   @include set-size($space-l, $space-l);
-  @include position-top-right(50%, $space-x);
   line-height: $space-l;
   margin-top: $space-l * -0.5;
+  text-align: center;
 }
 .menu__foot {
   line-height: 15px;
@@ -139,13 +135,96 @@ $menu-back-offset : $tap-size;
 }
 #menu__pane--documentaries,
 #menu__pane--themes,
-#menu__pane--witnesses,
+#menu__pane--maps,
 #menu__pane--characters,
 #menu__pane--places,
 #menu__pane--eras,
-#menu__pane--remixes {
-  @include position-top-left(0,$menu-back-offset, fixed);
+#menu__pane--remixes,
+#menu__pane--quizzes {
   @include transition(transform $time);
   z-index: 10;
   width: $side-width - $menu-back-offset;
+}
+
+/* ********** DIRECTION DECLARATIONS ********** */
+
+@if $direction == "ltr" {
+  .menu-reset {
+    @include position-top-left(0,0, fixed);
+    @include transform(translate3d(translate3d(0, 0, 0), 0, 0));
+    &.moved {
+      @include transform(translate3d($menu-back-offset * -1, 0, 0));
+    }
+  }
+  #menu__pane--documentaries,
+  #menu__pane--themes,
+  #menu__pane--maps,
+  #menu__pane--characters,
+  #menu__pane--places,
+  #menu__pane--eras,
+  #menu__pane--remixes,
+  #menu__pane--quizzes {
+    @include position-top-left(0,$menu-back-offset, fixed);
+  }
+  .menu__supplement-toggle {
+    @include position-top-right(0,0);
+    padding: $space $space-s;
+    .flag {
+      margin-left: $space-x;
+    }
+  }
+  .menu__supplement {
+    margin: 0 $space-s $space;
+  }
+  .menu__link-icon {
+    @include position-top-right(50%, $space-x);
+  }
+  .menu__link--alt.menu__link--alt {
+    padding-right: $space-x;
+    i {
+      float: left;
+      margin-right: $space;
+    }
+  }
+}
+@if $direction == "rtl" {
+  .menu-reset {
+    @include position-top-right(0,0, fixed);
+    @include transform(translate3d(translate3d(0, 0, 0), 0, 0));
+    &.moved {
+      @include transform(translate3d($menu-back-offset, 0, 0));
+    }
+  }
+  #menu__pane--documentaries,
+  #menu__pane--themes,
+  #menu__pane--maps,
+  #menu__pane--characters,
+  #menu__pane--places,
+  #menu__pane--eras,
+  #menu__pane--remixes,
+  #menu__pane--quizzes {
+    @include position-top-right(0,$menu-back-offset, fixed);
+  }
+  .menu__supplement-toggle {
+    @include position-top-left(0,0);
+    padding: $space $space-s;
+    .flag {
+      margin-right: $space-x;
+    }
+  }
+  .menu__supplement {
+    margin: 0 $space-s $space;
+  }
+  .menu__link-icon {
+    @include position-top-left(50%, $space-x);
+    .icon-point-right:before { content: "\f109"; }
+    .icon-point-left:before { content: "\f10b"; }
+  }
+  .menu__link--alt.menu__link--alt {
+    padding-left: $space-x;
+    i {
+      float: right;
+      margin-left: $space;
+    }
+  }
 }

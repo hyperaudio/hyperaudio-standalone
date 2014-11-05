@@ -1,0 +1,47 @@
+/**
+ * Quotes
+ * ============================================ */
+
+.quote {
+  color: $mono-M;
+  font-family: $secondary-font;
+  padding: $space-l $space-m;
+  position: relative;
+  > * {
+    padding: 0;
+    text-indent: 0 !important; // Overrides .page-copy p:first-child @include indent
+  }
+}
+.quote__content.quote__content {
+  @include set-type-xlarge;
+  font-weight: $font-bold;
+  position: relative;
+  text-align: center;
+  &:before,
+  &:after {
+    color: rgba(0,0,0,0.07);
+    font-size: $font-xxl * 2;
+    display: block;
+  }
+  &:before {
+    @include position-top-left(0,0);
+    content: "“";
+  }
+  &:after {
+    @include position-bottom-right(0,0);
+    content: "”";
+    line-height: 0;
+  }
+}
+.quote__meta.quote__meta {
+  @include set-type-xsmall;
+  display: block;
+  text-align: center;
+}
+.quote__author-name {
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+.quote__author-bio {
+  @include set-type-tiny;
+}

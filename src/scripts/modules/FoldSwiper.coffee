@@ -1,7 +1,7 @@
 renderFoldSwiper = () ->
   foldSwipers     = document.querySelectorAll ".foldswiper"
   [].forEach.call foldSwipers, (foldSwiper) ->
-    swiper                = new Swiper foldSwiper,
+    swipaa                = new Swiper foldSwiper,
       wrapperClass        : "foldswiper__wrapper"
       slideClass          : "foldswiper__item"
       slideActiveClass    : "foldswiper__item--active"
@@ -16,10 +16,8 @@ renderFoldSwiper = () ->
       paginationActiveClass  : "pager__item--active"
       paginationVisibleClass : "pager__item--visible"
 
-
       mode                : "horizontal"
       loop                : true
-      # autoplay            : false
       autoplay            : 6000
       speed               : 750
       noSwiping           : true
@@ -27,4 +25,6 @@ renderFoldSwiper = () ->
       moveStartThreshold  : 20 # in pixels
       cssWidthAndHeight   : "height"
       DOMAnimation        : false
-      # mousewheelControl   : false
+      resizeReInit        : true
+      onSlideChangeEnd    : ->
+        swipaa.stopAutoplay()
