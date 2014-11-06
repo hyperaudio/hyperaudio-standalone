@@ -25,7 +25,6 @@ SCRIPTQ2 = [
   "./bower_components/shepherd.js/shepherd.js"
   "./bower_components/drop/drop.js"
   "./bower_components/swiper/dist/idangerous.swiper.min.js"
-  "./bower_components/hyperaudio/dist/assets/scripts/ha-core.js"
   "./bower_components/fastclick/lib/fastclick.js"
 ]
 SCRIPTQ3 = [
