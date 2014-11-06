@@ -3281,6 +3281,12 @@ var PlayerGUI = (function (window, document, hyperaudio) {
       } else if (this.player.target.webkitRequestFullScreen) {
         this.player.target.webkitRequestFullScreen();
       }
+
+      //console.log('adding fullscreen class');
+      var viewer = document.getElementById("viewer-wrapper");
+
+      viewer.setAttribute("class", "fullscreen "+viewer.className);
+
     },
 
     _cancelFullScreen: function () {
@@ -3293,6 +3299,11 @@ var PlayerGUI = (function (window, document, hyperaudio) {
       } else if (document.webkitCancelFullScreen) {
         document.webkitCancelFullScreen();
       }
+
+      //console.log('removing fullscreen class');
+      var viewer = document.getElementById("viewer-wrapper");
+
+      viewer.className = viewer.className.replace( /(?:^|\s)fullscreen(?!\S)/ , '' );
     },
 
     _isFullscreen: function () {
