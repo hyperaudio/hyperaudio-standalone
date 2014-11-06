@@ -203,6 +203,8 @@ var AJHAWrapper = {
       for (var i=0; i < params.length; i++) {
         var cmd = params[i].split(':');
 
+        console.log(cmd);
+
         if (isNaN(cmd[0])) {
 
           switch (cmd[0]) {
@@ -218,11 +220,14 @@ var AJHAWrapper = {
               break;
           }
         } else {
-          // It's a transcript
-          var times = cmd[1].split(',');
-          // buildTranscriptSection(i,cmd[0],times[0],times[1]);
-          if (times && times.length == 2) {
-            q.defer(buildTranscriptSection,i,cmd[0],times[0],times[1]);
+          // It's a transcript or a blank (ie trailing slash)
+
+          if (cmd[0].length > 0) { // we need to check for blank as apparently it's a number too!
+            var times = cmd[1].split(',');
+            // buildTranscriptSection(i,cmd[0],times[0],times[1]);
+            if (times && times.length == 2) {
+              q.defer(buildTranscriptSection,i,cmd[0],times[0],times[1]);
+            }
           }
         }
       }
