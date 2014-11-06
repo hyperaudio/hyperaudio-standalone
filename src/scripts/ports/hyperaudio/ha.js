@@ -537,6 +537,7 @@ var DragDrop = (function (window, document, hyperaudio) {
 
     this.lastTarget = target;
 
+
     // MB hack
     if (target.tagName == "A" || target.tagName == "INPUT" || target.tagName == "LABEL") {
       target = target.parentNode.parentNode;
@@ -545,6 +546,7 @@ var DragDrop = (function (window, document, hyperaudio) {
     if (target.tagName == "P" || target.tagName == "FORM") {
       target = target.parentNode;
     }
+
     //
 
     if ( target == this.dropArea ) {
@@ -3590,6 +3592,7 @@ var Transcript = (function(document, hyperaudio) {
           i, l = wordList.length;
 
         var onNewPara = function(parent) {
+          console.log('onNewPara 1');
           // self.iScroll.scrollToElement(parent, self.iScrollSpeed, null, self.iScrollOffsetY);
         };
 
@@ -4292,9 +4295,12 @@ var Projector = (function(window, document, hyperaudio, Popcorn) {
       var elems, e, eLen;
       var onNewPara = function(parent) {
 
+        console.log('onNewPara 0');
+
         // ScrollTo without iScroll - Piotr
 
         function scrollTo(element, to, duration) {
+          console.log('attempting to scroll');
           var start = element.scrollTop,
             change = to - start,
             currentTime = 0,
