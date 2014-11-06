@@ -537,6 +537,7 @@ var DragDrop = (function (window, document, hyperaudio) {
 
     this.lastTarget = target;
 
+
     // MB hack
     if (target.tagName == "A" || target.tagName == "INPUT" || target.tagName == "LABEL") {
       target = target.parentNode.parentNode;
@@ -545,6 +546,7 @@ var DragDrop = (function (window, document, hyperaudio) {
     if (target.tagName == "P" || target.tagName == "FORM") {
       target = target.parentNode;
     }
+
     //
 
     if ( target == this.dropArea ) {
