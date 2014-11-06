@@ -6,13 +6,13 @@ request.onreadystatechange = ->
   if @readyState is 4
     if @status >= 200 and @status < 400
       index = lunr.Index.load(JSON.parse(@responseText))
-      searchInputs = document.getElementsByClassName("search")
-      [].forEach.call searchInputs, (searchInput) ->
-        searchInput.addEventListener "change", doSearch
-        searchInput.setAttribute "value", getParameterByName("search") if getParameterByName("search")
+      listingSearchInput = document.getElementById("search")
+      unless listingSearchInput is null
+        listingSearchInput.addEventListener "change", doSearch
+        listingSearchInput.setAttribute "value", getParameterByName("search") if getParameterByName("search")
         event = document.createEvent("HTMLEvents")
         event.initEvent "change", true, false
-        searchInput.dispatchEvent event
+        listingSearchInput.dispatchEvent event
     else
       console.log("Silent Error")
 
@@ -30,6 +30,8 @@ doSearch = ->
   resultsContainer.removeChild resultsContainer.firstChild  while resultsContainer.firstChild
   query = document.getElementById("search").value.trim()
   results = index.search(query)
+  if results.length is 0
+    console.log("hello no results")
   r = 0
   while r < results.length
     # don't ask
@@ -40,7 +42,8 @@ doSearch = ->
       second = parseInt(idParts[2] / 1000)
       second = 1 if second is 0
       el = document.createElement("div")
-      el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a class=\"thumbnail tile__thumbnail\"><img src=\"images/" + idParts[0] + "/E/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p></div></div></li>"
+      el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a class=\"thumbnail tile__thumbnail\"><img src=\"http://10.24.21.20/~laurian/PALESTINE PROJECT/DATA/MEDIA/SEARCH/images/" + idParts[0] + "/E/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p></div></div></li>"
+      # el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a class=\"thumbnail tile__thumbnail\"><img src=\"images/" + idParts[0] + "/E/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p></div></div></li>"
       result = el.children[0]
       resultsContainer.appendChild result
       # AJAX
@@ -71,7 +74,6 @@ doSearch = ->
                 resultSentences.push sentences[s]
               s++
             document.querySelectorAll("#r" + id + " .tile__transcript")[0].innerHTML = resultSentences.join(". ") + "."
-      # Silent error
       request.send()
       request = null
     )()
