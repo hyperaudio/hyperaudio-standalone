@@ -32,12 +32,6 @@
   position: relative;
 }
 
-.shepherd-element.shepherd-element-attached-top.shepherd-element-attached-center.shepherd-has-title .shepherd-content:before,
-.shepherd-element.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-bottom.shepherd-has-title .shepherd-content:before,
-.shepherd-element.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-bottom.shepherd-has-title .shepherd-content:before {
-  border-bottom-color: $mono-D;
-}
-
 .shepherd-element.shepherd-has-title .shepherd-content header {
   margin-bottom: $space;
 }
@@ -102,6 +96,11 @@
 
 // Arrows
 
+.shepherd-element.shepherd-element-attached-top.shepherd-element-attached-center.shepherd-has-title .shepherd-content:before,
+.shepherd-element.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-bottom.shepherd-has-title .shepherd-content:before,
+.shepherd-element.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-bottom.shepherd-has-title .shepherd-content:before {
+  border-bottom-color: $green-LD;
+}
 .shepherd-element {
   &.shepherd-element-attached-bottom.shepherd-element-attached-center .shepherd-content { margin-bottom: 8px; }
   &.shepherd-element-attached-bottom.shepherd-element-attached-center .shepherd-content:before {
