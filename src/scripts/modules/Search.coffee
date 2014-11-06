@@ -5,7 +5,9 @@ request.onreadystatechange = ->
   if @readyState is 4
     if @status >= 200 and @status < 400
       index = lunr.Index.load(JSON.parse(@responseText))
-      document.getElementById("search").addEventListener "change", doSearch
+      searchInput = document.getElementById("search")
+      unless searchInput is null
+        searchInput.addEventListener "change", doSearch
     else
       console.log("Silent Error")
 

@@ -8,7 +8,6 @@ toggleHAPTour = (stepIndex) ->
     )
     tour.addStep "step0",
       title: "Tell your Palestine Story with our films. Create a Remix of video clips that matter to you."
-      # attachTo: '#panel-media bottom',
       classes: "example-step-extra-class"
       buttons: [
         classes: "sec-button"
@@ -107,17 +106,18 @@ toggleHAPTour = (stepIndex) ->
         action: tour.cancel
        ]
 
-    unless stepIndex is undefined
-      # console.log(step)
+    if stepIndex is undefined
       tour.start()
-      tour.show("step" + stepIndex)
     else
       tour.start()
+      tour.show("step" + stepIndex)
 
     # createCookie("HAPtourStatus", "done", 30)
 
 # Bind clicks
 HAPhelper = document.getElementById "HAP-helper"
-HAPhelper.addEventListener "click", (e) ->
-  createCookie("HAPtourStatus", "", 30)
-  toggleHAPTour("1")
+unless HAPhelper is null
+  HAPhelper.addEventListener "click", (e) ->
+    if Shepherd.activeTour is null or undefined
+      createCookie("HAPtourStatus", "")
+      toggleHAPTour("1")

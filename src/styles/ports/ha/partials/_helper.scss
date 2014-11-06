@@ -1,7 +1,8 @@
 .HAP-helper {
   @include position-top-right($space,$space);
   @include set-size(32px,32px);
-  background: $shadow-medium;
+  border-radius: $radius-s;
+  background: $shadow-weak;
   color: $mono-Wt;
   line-height: 35px;
   padding: 0;
