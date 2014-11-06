@@ -1,0 +1,10 @@
+.HAP-helper {
+  @include position-top-right($space,$space);
+  @include set-size(32px,32px);
+  background: $shadow-medium;
+  color: $mono-Wt;
+  line-height: 35px;
+  padding: 0;
+  text-align: center;
+  z-index: 30;
+}

@@ -9,90 +9,101 @@ toggleHAPTour = ->
       showCancelLink: true
     )
     tour.addStep "step0",
-      title: "Welcome to your Palestine Remix creator. Get to know our console and start remixing in seconds."
+      title: "Tell your Palestine Story with our films. Create a Remix of video clips that matter to you."
       # text: ""
       # attachTo: '#panel-media bottom',
       classes: "example-step-extra-class"
       buttons: [
         classes: "sec-button"
-        text: "Show me around"
+        text: "Show me how"
         action: tour.next
        ]
 
     tour.addStep "step1",
-      text: "A tip about the media index lorem ipsum Magna sed reprehenderit magna irure esse et fugiat do enim qui nisi nostrud veniam do in laborum et ex sint culpa officia veniam ut laborum labore ullamco eu sit fugiat nulla sed pariatur."
+      text: "Pick a film or search for a topic (like “children” or “Haifa”) in all of the films."
       # text: "Content of the tip"
       attachTo: "#panel-media right"
       classes: "example-step-extra-class"
       buttons: [
         classes: "sec-button"
-        text: "Next tip"
+        text: "OK"
         action: tour.next
        ]
 
     tour.addStep "step2",
-      text: "A tip about the source lorem ipsum Magna sed reprehenderit magna irure esse et fugiat do enim qui nisi nostrud veniam do in laborum et ex sint culpa officia veniam ut laborum labore ullamco eu sit fugiat nulla sed pariatur."
+      text: "Once you’ve chosen material for your remix, that film will show here."
       # text: "Content of the tip"
       attachTo: "#source-canvas bottom"
       classes: "example-step-extra-class"
       buttons: [
         classes: "sec-button"
-        text: "Next tip"
+        text: "OK"
         action: tour.next
        ]
 
     tour.addStep "step3",
-      text: "A tip about the output lorem ipsum Magna sed reprehenderit magna irure esse et fugiat do enim qui nisi nostrud veniam do in laborum et ex sint culpa officia veniam ut laborum labore ullamco eu sit fugiat nulla sed pariatur."
+      text: "Here you’ll find the whole transcript of the film. You can click on words and select them. Try it, it’s fun."
       # text: "Content of the tip"
       attachTo: "#source-transcript top"
       classes: "example-step-extra-class"
       buttons: [
         classes: "sec-button"
-        text: "Next tip"
+        text: "In a minute, I want to learn more"
         action: tour.next
        ]
 
     tour.addStep "step4",
-      text: "A tip about the transcript lorem ipsum Magna sed reprehenderit magna irure esse et fugiat do enim qui nisi nostrud veniam do in laborum et ex sint culpa officia veniam ut laborum labore ullamco eu sit fugiat nulla sed pariatur."
-      # text: "Content of the tip"
-      attachTo: "#output-canvas bottom"
-      classes: "example-step-extra-class"
-      buttons: [
-        classes: "sec-button"
-        text: "Next tip"
-        action: tour.next
-       ]
-
-    tour.addStep "step5",
-      text: "A tip about the transcript lorem ipsum Magna sed reprehenderit magna irure esse et fugiat do enim qui nisi nostrud veniam do in laborum et ex sint culpa officia veniam ut laborum labore ullamco eu sit fugiat nulla sed pariatur."
+      text: "Great! This is where you create your Remix, you simply select and drag text from the other side to here. <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
       # text: "Content of the tip"
       attachTo: "#output-transcript top"
       classes: "example-step-extra-class"
       buttons: [
         classes: "sec-button"
-        text: "Next tip"
+        text: "OK"
         action: tour.next
        ]
 
-    tour.addStep "step6",
-      text: "A tip about the effects lorem ipsum Magna sed reprehenderit magna irure esse et fugiat do enim qui nisi nostrud veniam do in laborum et ex sint culpa officia veniam ut laborum labore ullamco eu sit fugiat nulla sed pariatur."
+    tour.addStep "step5",
+      text: "You can also add effects and titles to your Remix, by dragging them from here."
       # text: "Content of the tip"
       attachTo: "#effects top"
       classes: "example-step-extra-class"
       buttons: [
         classes: "sec-button"
-        text: "Next tip"
+        text: "OK"
+        action: tour.next
+       ]
+
+    tour.addStep "step6",
+      text: "Your Remix is automatically saved and will appear here as you’re making it, you can play it anytime."
+      # text: "Content of the tip"
+      attachTo: "#output-canvas bottom"
+      classes: "example-step-extra-class"
+      buttons: [
+        classes: "sec-button"
+        text: "OK"
         action: tour.next
        ]
 
     tour.addStep "step7",
-      text: "A tip about saving and publishing lorem ipsum Magna sed reprehenderit magna irure esse et fugiat do enim qui nisi nostrud veniam do in laborum et ex sint culpa officia veniam ut laborum labore ullamco eu sit fugiat nulla sed pariatur."
+      text: "When you’re done telling your story, share it with your close ones."
       # text: "Content of the tip"
       attachTo: '#save-button top',
       classes: "example-step-extra-class"
       buttons: [
         classes: "sec-button"
-        text: "All clear, thanks!"
+        text: "Great"
+        action: tour.cancel
+       ]
+
+    tour.addStep "step8",
+      text: "I’ll be here if you need me."
+      # text: "Content of the tip"
+      attachTo: '#HAP-helper bottom',
+      classes: "example-step-extra-class"
+      buttons: [
+        classes: "sec-button"
+        text: "Thanks!"
         action: tour.cancel
        ]
 

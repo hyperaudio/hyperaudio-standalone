@@ -27,6 +27,11 @@
   }
 }
 
+.shepherd-content img {
+  width: 100%;
+  position: relative;
+}
+
 .shepherd-element.shepherd-element-attached-top.shepherd-element-attached-center.shepherd-has-title .shepherd-content:before,
 .shepherd-element.shepherd-element-attached-top.shepherd-element-attached-right.shepherd-target-attached-bottom.shepherd-has-title .shepherd-content:before,
 .shepherd-element.shepherd-element-attached-top.shepherd-element-attached-left.shepherd-target-attached-bottom.shepherd-has-title .shepherd-content:before {
