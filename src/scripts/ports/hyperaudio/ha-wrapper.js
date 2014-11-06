@@ -203,7 +203,7 @@ var AJHAWrapper = {
       for (var i=0; i < params.length; i++) {
         var cmd = params[i].split(':');
 
-        console.log(cmd);
+        //console.log(cmd);
 
         if (isNaN(cmd[0])) {
 
@@ -294,6 +294,8 @@ var AJHAWrapper = {
 
       // Events
 
+      // Sometimes we need to do things only when the transcript is ready
+
       document.addEventListener('transcriptready', function () {
 
         console.log("transcript ready");
@@ -318,41 +320,63 @@ var AJHAWrapper = {
 
           });
         }
+
+        function fireMixchangeEvent() {
+          console.log('here');
+          var event = document.createEvent('Event');
+          event.initEvent('mixchange', true, true);
+          document.dispatchEvent(event);
+        }
+
+        var durationSliders = document.getElementsByClassName('effect-duration');
+
+        for( var i = 0; i < durationSliders.length; i++){
+          durationSliders[i].addEventListener('change', fireMixchangeEvent, false);
+        }
+
+        var titleText = document.getElementsByClassName('effect-title');
+
+        for( var i = 0; i < titleText.length; i++){
+          titleText[i].addEventListener('change', fireMixchangeEvent, false);
+        }
+
+        var fullscreenCheck = document.getElementsByClassName('effect-fullscreen');
+
+        for( var i = 0; i < fullscreenCheck.length; i++){
+          fullscreenCheck[i].addEventListener('change', fireMixchangeEvent, false);
+        }
+
       }, false);
 
       // #/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282
 
       document.addEventListener('mixchange', function () {
-        console.log("mixchange message received");
-        console.log("--------------------------");
 
         var newUrlHash = "#";
 
         var mix = document.getElementById('output-transcript');
         //console.dir(mix);
         var sections = mix.getElementsByTagName('section');
-        console.dir(sections);
-        console.log(sections.length);
+        //console.dir(sections);
+        //console.log(sections.length);
 
         for ( var i = 0; i < sections.length; i++ ) {
           var firstChild = sections[i].firstChild;
-          var lastChild = sections[i].childNodes[sections[i].childElementCount - 2];
-
-          console.dir(sections[i]);
-          console.log(sections[i].innerHTML);
-          console.dir(firstChild);
-          console.dir(lastChild);
-          console.log(i);
-          console.log(firstChild.tagName);
 
           if (firstChild.tagName == "P") {
             //console.log('found text');
+
+            var paras = sections[i].getElementsByTagName('p');
+            var lastChild = paras[paras.length-1];
+
             var sTime = firstChild.firstChild.getAttribute('data-m');
-            var eTime = lastChild.lastChild.getAttribute('data-m');
+
+            //var eTime = lastChild.lastChild.getAttribute('data-m');
+
+            var anchors = lastChild.getElementsByTagName('a');
+            var eTime = anchors[anchors.length-1].getAttribute('data-m');
+
             var duration = parseInt(eTime) - parseInt(sTime);
-            console.log(sTime);
-            console.log(eTime);
-            console.log(duration);
 
             // maybe we should use data-id on sections to store videoId
             // there seems to be some provision for that in hyperaudio-pad.js
@@ -377,7 +401,6 @@ var AJHAWrapper = {
             console.log(newUrlHash);
           }
 
-          console.log("here");
 
           if (firstChild.tagName == "FORM") {
             console.log('found effect');
@@ -419,6 +442,7 @@ var AJHAWrapper = {
         console.log("attempting to change hash");
         document.location.hash = newUrlHash;
       }, false);
+
 
       /*document.getElementById('output-transcript').addEventListener('DOMNodeInserted', function() {
         console.log("DOMNodeInserted");
