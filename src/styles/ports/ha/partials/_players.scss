@@ -65,6 +65,7 @@
 }
 .HAP-player-progress {
   @include transition(width $time linear);
+  height: 3px;
   background: $player-progress-color;
   display: block;
 }
