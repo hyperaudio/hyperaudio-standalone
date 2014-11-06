@@ -4843,12 +4843,12 @@ var Projector = (function(window, document, hyperaudio, Popcorn) {
 
       if(type) {
         elem = {
-          title: el.querySelector('#effect-title'),
-          fullscreen: el.querySelector('#effect-fullscreen'),
-          delay: el.querySelector('#effect-delay'),
-          start: el.querySelector('#effect-start'),
-          duration: el.querySelector('#effect-duration'),
-          volume: el.querySelector('#effect-volume')
+          title: el.querySelector('.effect-title'),
+          fullscreen: el.querySelector('.effect-fullscreen'),
+          delay: el.querySelector('.effect-delay'),
+          start: el.querySelector('.effect-start'),
+          duration: el.querySelector('.effect-duration'),
+          volume: el.querySelector('.effect-volume')
         };
         media = {
           mp3: el.getAttribute('data-mp3'),
@@ -5547,7 +5547,7 @@ HAP = (function (window, document, HA) {
           }
           el.setAttribute('data-effect', 'fade');
           el.className += ' effect';
-          el.innerHTML = '<form onsubmit="return false"><label>Fade Effect: <span class="value">1</span>s</label><input id="effect-duration" type="range" value="1" min="0.5" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.previousSibling.querySelector(\'span\').innerHTML = this.value;"></form>';
+          el.innerHTML = '<form onsubmit="return false"><label>Fade Effect: <span class="value">1</span>s</label><input class="effect-duration" type="range" value="1" min="0.5" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.previousSibling.querySelector(\'span\').innerHTML = this.value;"></form>';
           stage.dropped(el, 'Fade');
           HA.gaEvent({
             origin: HAP.options.ga_origin,
@@ -5576,7 +5576,7 @@ HAP = (function (window, document, HA) {
           }
           el.setAttribute('data-effect', 'trim');
           el.className += ' HAP-effect';
-          el.innerHTML = '<form onsubmit="return false"><label>Trim: <span class="value">1</span>s</label><input id="effect-duration" type="range" value="1" min="0" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.previousSibling.querySelector(\'span\').innerHTML = this.value;"></form>';
+          el.innerHTML = '<form onsubmit="return false"><label>Trim: <span class="value">1</span>s</label><input class="effect-duration" type="range" value="1" min="0" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.previousSibling.querySelector(\'span\').innerHTML = this.value;"></form>';
           stage.dropped(el, 'Trim');
           HA.gaEvent({
             origin: HAP.options.ga_origin,
@@ -5607,9 +5607,9 @@ HAP = (function (window, document, HA) {
           el.className += ' HAP-effect';
           var html = '<form onsubmit="return false">' +
             '<label>Title: <span class="value">1</span>s</label>' +
-            '<div class="HAP-effect__checkboxes"><label for="effect-fullscreen">Full Screen:</label> <input type="checkbox" id="effect-fullscreen" checked onchange="if(this.checked) { this.setAttribute(\'checked\', true); } else { this.removeAttribute(\'checked\'); }"></div>' +
-            '<input id="effect-title" type="text" value="Title" onchange="this.setAttribute(\'value\', this.value);" onkeyup="this.setAttribute(\'value\', this.value);">' +
-            '<input id="effect-duration" type="range" value="1" min="0.5" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.parentNode.querySelector(\'span\').innerHTML = this.value;">' +
+            '<div class="HAP-effect__checkboxes"><label for="effect-fullscreen">Full Screen:</label> <input type="checkbox" class="effect-fullscreen" checked onchange="if(this.checked) { this.setAttribute(\'checked\', true); } else { this.removeAttribute(\'checked\'); }"></div>' +
+            '<input class="effect-title" type="text" value="Title" onchange="this.setAttribute(\'value\', this.value);" onkeyup="this.setAttribute(\'value\', this.value);">' +
+            '<input class="effect-duration" type="range" value="1" min="0.5" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.parentNode.querySelector(\'span\').innerHTML = this.value;">' +
             '</form>';
 
           // el.innerHTML = '<form onsubmit="return false"><label>Title: <span class="value">1</span>s</label><input id="effect-title" type="text" value="Title" onchange="this.setAttribute(\'value\', this.value);"><input id="effect-duration" type="range" value="1" min="0.5" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.parentNode.querySelector(\'span\').innerHTML = this.value;"></form>';

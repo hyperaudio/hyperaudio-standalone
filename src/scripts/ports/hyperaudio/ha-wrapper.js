@@ -95,7 +95,7 @@ var AJHAWrapper = {
 
       // Pad compatible
 
-      var element = '<form onsubmit="return false"><label>Title: <span class="value">'+duration+'</span>s</label><div class="HAP-effect__checkboxes"><label for="effect-fullscreen">Full Screen:</label> <input id="effect-fullscreen" '+fullscreenCheck+' onchange="if(this.checked) { this.setAttribute(\'checked\', true); } else { this.removeAttribute(\'checked\'); }" type="checkbox"></div><input id="effect-title" value="'+title+'" onchange="this.setAttribute(\'value\', this.value);" onkeyup="this.setAttribute(\'value\', this.value);" type="text"><input id="effect-duration" value="'+duration+'" min="0.5" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.parentNode.querySelector(\'span\').innerHTML = this.value;" type="range">';
+      var element = '<form onsubmit="return false"><label>Title: <span class="value">'+duration+'</span>s</label><div class="HAP-effect__checkboxes"><label for="effect-fullscreen">Full Screen:</label> <input class="effect-fullscreen" '+fullscreenCheck+' onchange="if(this.checked) { this.setAttribute(\'checked\', true); } else { this.removeAttribute(\'checked\'); }" type="checkbox"></div><input class="effect-title" value="'+title+'" onchange="this.setAttribute(\'value\', this.value);" onkeyup="this.setAttribute(\'value\', this.value);" type="text"><input class="effect-duration" value="'+duration+'" min="0.5" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.parentNode.querySelector(\'span\').innerHTML = this.value;" type="range">';
 
       if (mixTitle == null) {
         mixTitle = title;
@@ -119,7 +119,7 @@ var AJHAWrapper = {
 
       // Pad compatible
 
-      var element = '<form onsubmit="return false"><label>'+label+'<span class="value">1</span>s</label><input id="effect-duration" value="'+duration+'" min="'+min+'" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.previousSibling.querySelector(\'span\').innerHTML = this.value;" type="range">';
+      var element = '<form onsubmit="return false"><label>'+label+'<span class="value">1</span>s</label><input class="effect-duration" value="'+duration+'" min="'+min+'" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.previousSibling.querySelector(\'span\').innerHTML = this.value;" type="range">';
 
       var section = output.childNodes[index-1];
       section.innerHTML += element;
@@ -336,18 +336,23 @@ var AJHAWrapper = {
 
         for ( var i = 0; i < sections.length; i++ ) {
           var firstChild = sections[i].firstChild;
-          //console.dir(firstChild);
+          var lastChild = sections[i].childNodes[sections[i].childElementCount - 2];
+
+          console.dir(sections[i]);
+          console.log(sections[i].innerHTML);
+          console.dir(firstChild);
+          console.dir(lastChild);
           console.log(i);
           console.log(firstChild.tagName);
 
           if (firstChild.tagName == "P") {
             //console.log('found text');
             var sTime = firstChild.firstChild.getAttribute('data-m');
-            var eTime = firstChild.lastChild.getAttribute('data-m');
+            var eTime = lastChild.lastChild.getAttribute('data-m');
             var duration = parseInt(eTime) - parseInt(sTime);
-            //console.log(sTime);
-            //console.log(eTime);
-            //console.log(duration);
+            console.log(sTime);
+            console.log(eTime);
+            console.log(duration);
 
             // maybe we should use data-id on sections to store videoId
             // there seems to be some provision for that in hyperaudio-pad.js
