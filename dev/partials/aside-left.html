@@ -7,9 +7,9 @@
             <h2 class="headline__title"><i class="icon-home"></i> <a href="{{path}}">Palestine Remix</a></h2>
             <p class="headline__text">Start your search and discovery here</p>
           </div>
-          <form>
+          <form action="{{path}}search/">
             <div class="search">
-              <input class="text-input menu__search" type="search" placeholder="e.g. 1948, Ahmed Abu Al-Sukkhar, Haifa"/>
+              <input class="text-input menu__search" name="search" type="search" placeholder="Search, e.g. 1948, Ahmed Abu Al-Sukkhar, Haifa…" value=""/>
               <i class="icon-search"></i>
             </div>
           </form>
@@ -37,7 +37,7 @@
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="eras">Date <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="places">Place <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="places">Location <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="characters">Witness <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
@@ -115,15 +115,9 @@
           <h2 class="headline__title">Maps</h2>
           <p class="headline__text">Explore our Palestine Maps</p>
         </div>
-        <h3 class="menu__subtitle">Interactive maps</h3>
         <ol class="menu__list">
           <li class="menu__item"><a class="menu__link" href="{{path}}maps/">Vanishing Palestine</a></li>
           <li class="menu__item"><a class="menu__link" href="{{path}}maps/">Another Map</a></li>
-        </ol>
-        <h3 class="menu__subtitle">Video projections</h3>
-        <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/1/24000">The Wall</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/9/1108000">Another Map</a></li>
         </ol>
       </div>
       <div id="menu__pane--quizzes" class="menu__pane moved--right">
@@ -146,27 +140,27 @@
           <li class="menu__item">
             <a class="menu__link" href="{{path}}search/">Era I</a>
             <span class="menu__supplement-toggle toggleNext">1799 &ndash; 1947 <span class="flag">?</span></span>
-            <div class="menu__supplement next">This is Era 1 - (the story of transferring Palestine into a Jewish state started politically in 1799 when Napoleon (France) called for that). This era ends with the UN officially adopting a resolution of partition of Palestine into an Arab and Jewish state (in 29 Nov 1947)</div>
+            <div class="menu__supplement next">This era begins when Napoleon Bonaparte issued a proclamation urging Jews in France to "return" to Palestine. It concludes with the end of the British Mandate.</div>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="{{path}}search/">Era II</a>
             <span class="menu__supplement-toggle toggleNext">1948 &ndash; 1949 <span class="flag">?</span></span>
-            <div class="menu__supplement next">This is Al Nakba Climax (which means the massive ethnic cleansing and expulsion of over 800 000 Palestinians from their homes, erasing Palestine from the world map and transferring it into Israel, a country recognized by the UN, the international community and dealing with it in political arena).</div>
+            <div class="menu__supplement next">This era is known as the "Nakba", when more than 800 000 Palestinians were expelled from their homes during the 1948 Palestine war. Palestine was effectively erased from the world map.</div>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="{{path}}search/">Era III</a>
             <span class="menu__supplement-toggle toggleNext">1950 &ndash; 1967 <span class="flag">?</span></span>
-            <div class="menu__supplement next">This is Era 3 where Israel is established and continued into slow ethnic cleansing and expulsion and military rule of over 150 000 Palestinians who remain inside Israel and were forced to hold Israeli passports and forced to live in Palestinians ghettos inside Israel. And making sure not to allow Palestinians refugees the right to return.</div>
+            <div class="menu__supplement next">This era saw Israel extend its control over Palestinians and their land. Inside Isreal, more than 150 000 Palestinians inside Israel were forced into ghettos. Meanwhile, Israel refused to allow over a million Palestinian refugees the right to return to their historic homelands.</div>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="{{path}}search/">Era IV</a>
             <span class="menu__supplement-toggle toggleNext">1968 &ndash; 1992 <span class="flag">?</span></span>
-            <div class="menu__supplement next">This is Era 4 where Israel occupied the rest of history Palestine (known as the West Bank and Gaza Strip) in addition to the Golan Heights and Egyptian Sinai. Causing more than 300 000 out of their homes, some of them refugees for the 2nd time in their lives. International community did not recognize Israeli settlements (colonies) inside the occupied territories and still regard them according to international  law illegal. In this era the apartheid system was created and the Palestinians ghettos inside the occupied territories.</div>
+            <div class="menu__supplement next">This era saw Israel's occupation expand to the area now known as the West Bank and Gaza Strip. More than 300 000 were forced out of their homes, some of them refugees for the second time in their lives. Israel established illegal settlements inside the occupied territories. </div>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="{{path}}search/">Era V</a>
             <span class="menu__supplement-toggle toggleNext">1993 &ndash; 2014 <span class="flag">?</span></span>
-            <div class="menu__supplement next">This is Era 5 – for the first time Israel recognized the PLO (Palestinians Liberation Movement) and sign with it a peace accord, and the world accepted Israel as a peace lover country. Yet, on the ground occupation continues, ethnic cleansing and expulsion continues and more and more Palestinians both inside Israel and in the occupied territories are subject to discrimination, humiliation and living in ghettos that were bombed by F-16 for the first time in 2001, a big blockage on Gaza in 2005 and then with massive war with thousands of causalities starting in 2008 on Gaza.</div>
+            <div class="menu__supplement next">This era marks the first time Israel recognized the Palestinian Liberation Organization as a legitimate movement. Despite signing a peace accord with the Palestinians, Israel's occupation intensifies. Palestinians in the occupied territoris and inside Israel are subjected to daily humilitation, discrimination and violence.</div>
           </li>
         </ol>
       </div>
