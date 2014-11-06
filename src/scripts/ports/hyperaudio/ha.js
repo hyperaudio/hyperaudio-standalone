@@ -578,9 +578,9 @@ var DragDrop = (function (window, document, hyperaudio) {
 
     var event = document.createEvent('Event');
     event.initEvent('mixchange', true, true);
-    
 
-    
+
+
 
     clearTimeout(this.dragTimeout);
 
@@ -1054,7 +1054,7 @@ var SideMenu = (function (document, hyperaudio) {
         error: function(event) {
           self.error = true;
         }
-      });    
+      });
     });
 
     var self = this,
@@ -3590,7 +3590,13 @@ var Transcript = (function(document, hyperaudio) {
           i, l = wordList.length;
 
         var onNewPara = function(parent) {
-          // self.iScroll.scrollToElement(parent, self.iScrollSpeed, null, self.iScrollOffsetY);
+
+          var transcriptHolders = document.getElementsByClassName("HAP-transcript");
+          [].forEach.call(transcriptHolders, function(transcriptHolder) {
+            var currentPosition  = parent.offsetTop;
+            scrollTo(transcriptHolder, currentPosition, 350)
+          });
+
         };
 
         for(i = 0; i < l; i++) {
@@ -4292,34 +4298,11 @@ var Projector = (function(window, document, hyperaudio, Popcorn) {
       var elems, e, eLen;
       var onNewPara = function(parent) {
 
-        // ScrollTo without iScroll - Piotr
-
-        function scrollTo(element, to, duration) {
-          var start = element.scrollTop,
-            change = to - start,
-            currentTime = 0,
-            increment = 20;
-          var animateScroll = function(){
-            currentTime += increment;
-            var val = Math.easeInOutQuad(currentTime, start, change, duration);
-            element.scrollTop = val;
-            if(currentTime < duration) {
-              setTimeout(animateScroll, increment);
-            }
-          };
-          animateScroll();
-        };
-
-        Math.easeInOutQuad = function (t, b, c, d) {
-          t /= d/2;
-          if (t < 1) return c/2*t*t + b;
-          t--;
-          return -c/2 * (t*(t-2) - 1) + b;
-        };
-
-        var transcriptOutput = document.getElementById("output-transcript");
-        var currentPosition  = parent.offsetTop;
-        scrollTo(transcriptOutput, currentPosition, 350)
+        var transcriptHolders = document.getElementsByClassName("HAP-transcript");
+        [].forEach.call(transcriptHolders, function(transcriptHolder) {
+          var currentPosition  = parent.offsetTop;
+          scrollTo(transcriptHolder, currentPosition, 350)
+        });
 
       };
 
