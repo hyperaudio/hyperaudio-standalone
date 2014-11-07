@@ -321,6 +321,35 @@ var AJHAWrapper = {
 
     // Sometimes we need to detect things only when the transcript is ready
 
+
+    function fireMixchangeEvent() {
+      var event = document.createEvent('Event');
+      event.initEvent('mixchange', true, true);
+      document.dispatchEvent(event);
+    }
+
+    function setEffectsListeners() {
+      var durationSliders = document.getElementsByClassName('effect-duration');
+
+      for( var i = 0; i < durationSliders.length; i++){
+        durationSliders[i].addEventListener('change', fireMixchangeEvent, false);
+      }
+
+      var titleText = document.getElementsByClassName('effect-title');
+
+      for( var i = 0; i < titleText.length; i++){
+        titleText[i].addEventListener('change', fireMixchangeEvent, false);
+      }
+
+      var fullscreenCheck = document.getElementsByClassName('effect-fullscreen');
+
+      for( var i = 0; i < fullscreenCheck.length; i++){
+        fullscreenCheck[i].addEventListener('change', fireMixchangeEvent, false);
+      }     
+    }
+
+    setEffectsListeners();
+
     document.addEventListener('transcriptready', function () {
 
       console.log("transcript ready");
@@ -346,30 +375,6 @@ var AJHAWrapper = {
         });
       }
 
-      function fireMixchangeEvent() {
-        var event = document.createEvent('Event');
-        event.initEvent('mixchange', true, true);
-        document.dispatchEvent(event);
-      }
-
-      var durationSliders = document.getElementsByClassName('effect-duration');
-
-      for( var i = 0; i < durationSliders.length; i++){
-        durationSliders[i].addEventListener('change', fireMixchangeEvent, false);
-      }
-
-      var titleText = document.getElementsByClassName('effect-title');
-
-      for( var i = 0; i < titleText.length; i++){
-        titleText[i].addEventListener('change', fireMixchangeEvent, false);
-      }
-
-      var fullscreenCheck = document.getElementsByClassName('effect-fullscreen');
-
-      for( var i = 0; i < fullscreenCheck.length; i++){
-        fullscreenCheck[i].addEventListener('change', fireMixchangeEvent, false);
-      }
-
       var sidemenuItems = document.getElementsByClassName('menu__link');
 
       for( var i = 0; i < sidemenuItems.length; i++){
@@ -382,6 +387,10 @@ var AJHAWrapper = {
       }
 
       document.addEventListener('mixchange', function () {
+
+        // an effect may have been added to the mix
+        
+        setEffectsListeners();
 
         var newUrlHash = "#";
 
