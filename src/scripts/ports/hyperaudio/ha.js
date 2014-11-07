@@ -5701,6 +5701,21 @@ HAP = (function (window, document, HA) {
       var viewer = document.querySelector(this.options.targetViewer);
       var video = document.getElementById("output-canvas");
       var text = document.getElementById("output-transcript");
+
+      var sourceSet = false;
+
+      // we make these checks in case HAP is initiated after the first time with initial page load
+      // ie when a link is clicked and we need to change content (not load as initially)
+
+      if (video == null) {
+        sourceSet = true;
+        video = document.getElementById("source-canvas");
+      }
+
+      if (text == null) {
+        text = document.getElementById("source-transcript");
+      }
+
       // var text = document.createElement('div');
       // var video = document.createElement('div');
       if(mixId) {
@@ -5708,9 +5723,11 @@ HAP = (function (window, document, HA) {
         // HA.addClass(video, 'video');
         // text.setAttribute('id', 'stage');
       } else {
-        video.setAttribute('id', 'source-canvas');
-        HA.addClass(video, 'video');
-        text.setAttribute('id', 'source-transcript');
+        if (sourceSet == false) {
+          video.setAttribute('id', 'source-canvas');
+          HA.addClass(video, 'video');
+          text.setAttribute('id', 'source-transcript');
+        }
         // text.appendChild(document.createElement('p')); // Otherwise iScroll complains.
       }
       viewer.appendChild(video);

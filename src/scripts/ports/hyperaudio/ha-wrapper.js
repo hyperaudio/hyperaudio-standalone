@@ -156,199 +156,219 @@ var AJHAWrapper = {
 
     //var videoInfo = ['mnY0rynBSTM,107384621.m3u8?p=standard*mobile&s=e4570b1860ec64fc4f1226e6612c1098','sI8R9B_caDY,107385223.mobile.mp4?s=8083e99329c10022f3c0f9ab4fdb065a','fJISrenMzws,107445262.mobile.mp4?s=2ada419278dc8fe349d47fbcbd2047f6'];
 
-    var state = document.location.hash;
-    var params = state.split('/');
+    function buildState() {
+      console.log("building state");
+      var state = document.location.hash;
+      var params = state.split('/');
 
-    // first pass - create the sections
+      // first pass - create the sections
 
-    for (var i=1; i < params.length; i++) {
-      output.appendChild(document.createElement('section'));
-    }
+      for (var i=1; i < params.length; i++) {
+        output.appendChild(document.createElement('section'));
+      }
 
-    var q = queue(1);
+      var q = queue(1);
 
-    if (params[1].split(':').length == 1) {
+      if (params[1].split(':').length == 1) {
 
-      longformId = params[1];
-      longformMedia = videoInfo[longformId].split(',')[1];
+        longformId = params[1];
+        longformMedia = videoInfo[longformId].split(',')[1];
 
-      // check for timing parameters which means it's been shared
+        // check for timing parameters which means it's been shared
 
-      if (params.length > 2) {
-        startTime = params[2];
-        endTime = params[3];
+        if (params.length > 2) {
+          startTime = params[2];
+          endTime = params[3];
 
-        document.addEventListener('transcriptready', function () {
+          document.addEventListener('transcriptready', function () {
 
-          HAP.transcript.options.player.play(parseInt(startTime/1000));
+            HAP.transcript.options.player.play(parseInt(startTime/1000));
 
-          HAP.transcript.options.player.addEventListener('timeupdate', function () {
-            var currentTime = HAP.transcript.options.player.videoElem.currentTime;
-            if (currentTime > parseInt(endTime/1000) && selectPause == false) {
-              HAP.transcript.options.player.pause();
+            HAP.transcript.options.player.addEventListener('timeupdate', function () {
+              var currentTime = HAP.transcript.options.player.videoElem.currentTime;
+              if (currentTime > parseInt(endTime/1000) && selectPause == false) {
+                HAP.transcript.options.player.pause();
+                selectPause = true;
+              }
+            }, false);
+
+            // cancels the check to pause video
+
+            document.addEventListener('click', function () {
               selectPause = true;
-            }
+            }, false);
+
           }, false);
-
-          // cancels the check to pause video
-
-          document.addEventListener('click', function () {
-            selectPause = true;
-          }, false);
-
-        }, false);
-      }
-    } else {
-
-      for (var i=0; i < params.length; i++) {
-        var cmd = params[i].split(':');
-
-        //console.log(cmd);
-
-        if (isNaN(cmd[0])) {
-
-          switch (cmd[0]) {
-            case "t": // title
-              var details = cmd[1].split(',');
-              buildTitle(i,unescape(details[0]),details[1],details[2]);
-              break;
-            case "r": // trime
-              buildTimedEffect(i,cmd[1],"trim", effectsLabelTrim, "0");
-              break;
-            case "f": // fade
-              buildTimedEffect(i,cmd[1],"fade", effectsLabelFade, "0.5");
-              break;
-          }
-        } else {
-          // It's a transcript or a blank (ie trailing slash)
-
-          if (cmd[0].length > 0) { // we need to check for blank as apparently it's a number too!
-            var times = cmd[1].split(',');
-            // buildTranscriptSection(i,cmd[0],times[0],times[1]);
-            if (times && times.length == 2) {
-              q.defer(buildTranscriptSection,i,cmd[0],times[0],times[1]);
-            }
-          }
         }
-      }
-    }
-
-    q.awaitAll(function() {
-      //var mixHTML = output[0].outerHTML;
-      var mixHTML = output.outerHTML;
-
-      if (mixTitle == null) {
-        mixTitle = "untitled";
-      }
-
-      if(target == 'Viewer') {
-
-        // Hyperaudio Viewer Set Up
-
-        HAP.init({
-          viewer: true,
-          origin: 'Viewer',
-          editBtn: '#edit',
-          shareBtn: '#share',
-          mixHTML : mixHTML,
-          mixTitle : mixTitle,
-          longformId : longformId,
-          longformMedia : longformMedia,
-          transcripts: transcriptsPath
-        });
-
-        var sourceTranscript = document.getElementById('source-transcript');
-
-        if (sourceTranscript) {
-          sourceTranscript.onmouseup = function() {
-
-            var selection = HAP.transcript.getSelection();
-
-            if (selection.start) {
-
-              alert("'" + selection.text + "' :" + window.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000));
-
-              //clear selection
-
-              [].forEach.call(document.querySelectorAll("a"), function(el) {
-                el.classList.remove('selected');
-              });
-            }
-          }
-        }
-
-        ajOnInitCallback();
-
       } else {
 
-        // Hyperaudio Pad Set Up
+        for (var i=0; i < params.length; i++) {
+          var cmd = params[i].split(':');
 
-        HAP.init({
-          mixHTML : mixHTML,
-          mixTitle : mixTitle,
-          longformId : longformId,
-          longformMedia : longformMedia,
-          transcripts: transcriptsPath
-        });
+          console.log(cmd);
+
+          if (isNaN(cmd[0])) {
+
+            switch (cmd[0]) {
+              case "t": // title
+                var details = cmd[1].split(',');
+                buildTitle(i,unescape(details[0]),details[1],details[2]);
+                break;
+              case "r": // trim
+                buildTimedEffect(i,cmd[1],"trim", effectsLabelTrim, "0");
+                break;
+              case "f": // fade
+                buildTimedEffect(i,cmd[1],"fade", effectsLabelFade, "0.5");
+                break;
+            }
+          } else {
+            // It's a transcript or a blank (ie trailing slash)
+
+            if (cmd[0].length > 0) { // we need to check for blank as apparently it's a number too!
+              var times = cmd[1].split(',');
+              // buildTranscriptSection(i,cmd[0],times[0],times[1]);
+              if (times && times.length == 2) {
+                q.defer(buildTranscriptSection,i,cmd[0],times[0],times[1]);
+              }
+            }
+          }
+        }
       }
 
-      // Events
+      q.awaitAll(function() {
+        //var mixHTML = output[0].outerHTML;
+        var mixHTML = output.outerHTML;
 
-      // Sometimes we need to do things only when the transcript is ready
+        if (mixTitle == null) {
+          mixTitle = "untitled";
+        }
 
-      document.addEventListener('transcriptready', function () {
+        if(target == 'Viewer') {
 
-        console.log("transcript ready");
+          // Hyperaudio Viewer Set Up
 
-        if (target != 'Viewer') {
+          HAP.init({
+            viewer: true,
+            origin: 'Viewer',
+            editBtn: '#edit',
+            shareBtn: '#share',
+            mixHTML : mixHTML,
+            mixTitle : mixTitle,
+            longformId : longformId,
+            longformMedia : longformMedia,
+            transcripts: transcriptsPath
+          });
+
+          var sourceTranscript = document.getElementById('source-transcript');
+
+          if (sourceTranscript) {
+            sourceTranscript.onmouseup = function() {
+
+              var selection = HAP.transcript.getSelection();
+
+              if (selection.start) {
+
+                alert("'" + selection.text + "' :" + window.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000));
+
+                //clear selection
+
+                [].forEach.call(document.querySelectorAll("a"), function(el) {
+                  el.classList.remove('selected');
+                });
+              }
+            }
+          }
 
           ajOnInitCallback();
 
-        }
+        } else {
 
-        var video = document.getElementsByTagName('video');
+          // Hyperaudio Pad Set Up
 
-        for (var i=0; i < video.length; i++) {
-
-          video[i].addEventListener('click', function () {
-
-            if (HAP.transcript.options.player.videoElem.paused) {
-              HAP.transcript.options.player.play();
-            } else {
-              HAP.transcript.options.player.pause();
-            }
-
+          HAP.init({
+            mixHTML : mixHTML,
+            mixTitle : mixTitle,
+            longformId : longformId,
+            longformMedia : longformMedia,
+            transcripts: transcriptsPath
           });
         }
 
-        function fireMixchangeEvent() {
-          console.log('here');
-          var event = document.createEvent('Event');
-          event.initEvent('mixchange', true, true);
-          document.dispatchEvent(event);
+
+
+
+        // #/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282
+
+
+      });
+    }
+
+    buildState();
+
+    // Events
+
+    // Sometimes we need to detect things only when the transcript is ready
+
+    document.addEventListener('transcriptready', function () {
+
+      console.log("transcript ready");
+
+      if (target != 'Viewer') {
+
+        ajOnInitCallback();
+
+      }
+
+      var video = document.getElementsByTagName('video');
+
+      for (var i=0; i < video.length; i++) {
+
+        video[i].addEventListener('click', function () {
+
+          if (HAP.transcript.options.player.videoElem.paused) {
+            HAP.transcript.options.player.play();
+          } else {
+            HAP.transcript.options.player.pause();
+          }
+
+        });
+      }
+
+      function fireMixchangeEvent() {
+        console.log('here');
+        var event = document.createEvent('Event');
+        event.initEvent('mixchange', true, true);
+        document.dispatchEvent(event);
+      }
+
+      var durationSliders = document.getElementsByClassName('effect-duration');
+
+      for( var i = 0; i < durationSliders.length; i++){
+        durationSliders[i].addEventListener('change', fireMixchangeEvent, false);
+      }
+
+      var titleText = document.getElementsByClassName('effect-title');
+
+      for( var i = 0; i < titleText.length; i++){
+        titleText[i].addEventListener('change', fireMixchangeEvent, false);
+      }
+
+      var fullscreenCheck = document.getElementsByClassName('effect-fullscreen');
+
+      for( var i = 0; i < fullscreenCheck.length; i++){
+        fullscreenCheck[i].addEventListener('change', fireMixchangeEvent, false);
+      }
+
+      var sidemenuItems = document.getElementsByClassName('menu__link');
+
+      console.log(sidemenuItems);
+
+      for( var i = 0; i < sidemenuItems.length; i++){
+
+        if (sidemenuItems[i].href.length > 0) {
+          sidemenuItems[i].addEventListener('click', buildState, false);
         }
-
-        var durationSliders = document.getElementsByClassName('effect-duration');
-
-        for( var i = 0; i < durationSliders.length; i++){
-          durationSliders[i].addEventListener('change', fireMixchangeEvent, false);
-        }
-
-        var titleText = document.getElementsByClassName('effect-title');
-
-        for( var i = 0; i < titleText.length; i++){
-          titleText[i].addEventListener('change', fireMixchangeEvent, false);
-        }
-
-        var fullscreenCheck = document.getElementsByClassName('effect-fullscreen');
-
-        for( var i = 0; i < fullscreenCheck.length; i++){
-          fullscreenCheck[i].addEventListener('change', fireMixchangeEvent, false);
-        }
-
-      }, false);
-
-      // #/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282
+      }
 
       document.addEventListener('mixchange', function () {
 
@@ -444,18 +464,6 @@ var AJHAWrapper = {
       }, false);
 
 
-      /*document.getElementById('output-transcript').addEventListener('DOMNodeInserted', function() {
-        console.log("DOMNodeInserted");
-        var mixHTML = document.getElementById('output-transcript').innerHTML;
-        console.log(mixHTML);
-      }, false);
-
-      document.getElementById('output-transcript').addEventListener('DOMNodeRemoved', function() {
-        console.log("DOMNodeRemoved");
-        var mixHTML = document.getElementById('output-transcript').innerHTML;
-        console.log(mixHTML);
-      }, false);*/
-
-    });
+    }, false);
   }
 };
