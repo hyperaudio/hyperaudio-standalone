@@ -85,8 +85,8 @@ var AJHAWrapper = {
             var section = output.childNodes[index-1];
             section.innerHTML += element2;
 
-            var ytid = videoInfo[parseInt(tid)].split(',')[0];
-            var mp4id = videoInfo[parseInt(tid)].split(',')[1];
+            var ytid = AJHAVideoInfo[parseInt(tid)].split(',')[0];
+            var mp4id = AJHAVideoInfo[parseInt(tid)].split(',')[1];
 
             var attribute = document.createAttribute('data-unit');
             attribute.value = "0.001";
@@ -183,6 +183,11 @@ var AJHAWrapper = {
         if (params.length > 1) {
           startTime = params[2];
           endTime = params[3];
+
+          console.log("params");
+          console.log(params);
+          console.log("startTime");
+          console.log(startTime);
 
           document.addEventListener('transcriptready', function () {
 
@@ -342,7 +347,6 @@ var AJHAWrapper = {
       }
 
       function fireMixchangeEvent() {
-        console.log('here');
         var event = document.createEvent('Event');
         event.initEvent('mixchange', true, true);
         document.dispatchEvent(event);
@@ -368,12 +372,12 @@ var AJHAWrapper = {
 
       var sidemenuItems = document.getElementsByClassName('menu__link');
 
-      console.log(sidemenuItems);
-
       for( var i = 0; i < sidemenuItems.length; i++){
 
         if (sidemenuItems[i].href.length > 0) {
-          sidemenuItems[i].addEventListener('click', buildState, false);
+          sidemenuItems[i].addEventListener('click', function() {
+            window.onhashchange = buildState;           
+          }, false);
         }
       }
 
