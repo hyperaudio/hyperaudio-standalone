@@ -11,12 +11,7 @@
   @include set-type-huge;
   text-transform: uppercase;
   font-weight: $font-bold;
-}
-
-.hgroup__title + * {
-  display: block;
-  padding-top: $space-x;
-  &:before {
+  &:after {
     border-top: 1px $flare-weak solid;
     margin: $space-x auto;
     padding-bottom: $space-x;
@@ -25,11 +20,23 @@
     width: $space-l;
   }
   @include breakpoint(m) {
-    &:before {
+    &:after {
       margin: $space-m auto;
       padding-bottom: $space-m;
     }
   }
+}
+
+.hgroup__subtitle {
+  @include set-type-small;
+  display: none;
+  @include breakpoint(m) {
+    display: block;
+  }
+}
+
+.hgroup__title + * {
+  padding-top: $space-x;
 }
 
 .hgroup__text {

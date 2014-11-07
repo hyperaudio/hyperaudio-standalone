@@ -48,7 +48,7 @@ TERRIBLESCRIPTQ = [
 # HTML tasks
 # ---------------------------------------------- #
 gulp.task "html", ->
-  gulp.src ["./dev/*.html", "./dev/partials/*.html"]
+  gulp.src ["./dev/**/*.html"]
     .pipe $.connect.reload()
 
 # Compile Sass
@@ -108,7 +108,7 @@ gulp.task("node-build", $.shell.task ([
 # ---------------------------------------------- #
 gulp.task "watch", ->
   gulp.watch STYLES, [ "compile-sass" ]
-  gulp.watch ["./dev/*.html","./dev/partials/*.html"], ["html"]
+  gulp.watch ["./dev/**/*.html"], ["html"]
   gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee", "./bower_components/**/*.js"], ["compile-coffee"]
   gulp.watch SCRIPTQ3, ["concat-ports"]
   gulp.watch ["./dev/assets/**/*.*"], ["node-build"]
