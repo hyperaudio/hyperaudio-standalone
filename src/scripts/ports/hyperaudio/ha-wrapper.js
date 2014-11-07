@@ -332,18 +332,21 @@ var AJHAWrapper = {
       var durationSliders = document.getElementsByClassName('effect-duration');
 
       for( var i = 0; i < durationSliders.length; i++){
+        durationSliders[i].removeEventListener('change', fireMixchangeEvent, false);
         durationSliders[i].addEventListener('change', fireMixchangeEvent, false);
       }
 
       var titleText = document.getElementsByClassName('effect-title');
 
       for( var i = 0; i < titleText.length; i++){
+        titleText[i].removeEventListener('change', fireMixchangeEvent, false);
         titleText[i].addEventListener('change', fireMixchangeEvent, false);
       }
 
       var fullscreenCheck = document.getElementsByClassName('effect-fullscreen');
 
       for( var i = 0; i < fullscreenCheck.length; i++){
+        fullscreenCheck[i].removeEventListener('change', fireMixchangeEvent, false);
         fullscreenCheck[i].addEventListener('change', fireMixchangeEvent, false);
       }     
     }
@@ -389,7 +392,7 @@ var AJHAWrapper = {
       document.addEventListener('mixchange', function () {
 
         // an effect may have been added to the mix
-        
+
         setEffectsListeners();
 
         var newUrlHash = "#";
