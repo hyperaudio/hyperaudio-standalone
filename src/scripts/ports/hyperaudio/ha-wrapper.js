@@ -32,6 +32,19 @@ var AJHAWrapper = {
 
   init : function(target, transcriptsPath, ajOnInitCallback) {
 
+    var v = document.createElement('video');
+    var canPlayMP4 = !!v.canPlayType && v.canPlayType('video/mp4') != "";
+
+    console.log("canPlayMP4");
+    console.log(canPlayMP4);
+
+    //var testVideo = document.createElement('video');
+    //var videoUrls = AJHAVideoInfo[0];
+    //testVideo.src = videoUrls.split(',')[1];
+    //var canPlayMP4 = testVideo.canPlayType();
+
+    
+
     // constants
 
     var effectsLabelFade = "Fade Effect: ";
@@ -91,8 +104,17 @@ var AJHAWrapper = {
             var attribute = document.createAttribute('data-unit');
             attribute.value = "0.001";
             section.setAttributeNode(attribute);
-            attribute = document.createAttribute('data-mp4');
-            attribute.value = mp4id;
+
+            // use YouTube for non MP4 supporting browsers
+
+            if (canPlayMP4) {
+              attribute = document.createAttribute('data-mp4');
+              attribute.value = mp4id;
+            } else {
+              attribute = document.createAttribute('data-yt');
+              attribute.value = ytid;              
+            }
+
             section.setAttributeNode(attribute);
             section.classList.add('HAP-transcript__item');
           } else {
@@ -176,7 +198,12 @@ var AJHAWrapper = {
       if (params[1].split(':').length == 1) {
 
         longformId = params[1];
-        longformMedia = AJHAVideoInfo[longformId].split(',')[1];
+
+        if (canPlayMP4) {
+          longformMedia = AJHAVideoInfo[longformId].split(',')[1];
+        } else {
+          longformMedia = AJHAVideoInfo[longformId].split(',')[0];
+        }
 
         // check for timing parameters which means it's been shared or jumped to
 
@@ -268,7 +295,8 @@ var AJHAWrapper = {
             mixTitle : mixTitle,
             longformId : longformId,
             longformMedia : longformMedia,
-            transcripts: transcriptsPath
+            transcripts: transcriptsPath,
+            mp4Compat: canPlayMP4
           });
 
           var sourceTranscript = document.getElementById('source-transcript');
@@ -302,7 +330,8 @@ var AJHAWrapper = {
             mixTitle : mixTitle,
             longformId : longformId,
             longformMedia : longformMedia,
-            transcripts: transcriptsPath
+            transcripts: transcriptsPath,
+            mp4Compat: canPlayMP4
           });
         }
 

@@ -2140,13 +2140,6 @@ var api = (function(hyperaudio) {
               owner: "",
               namespace: null,
               meta: "",
-              source: {
-                mp4: {
-                  type: "video/mp4",
-                  url: HAP.options.longformMedia,
-                  thumbnail: ""
-                }
-              },
               channel: null,
               tags: [],
               modified : "",
@@ -2156,6 +2149,26 @@ var api = (function(hyperaudio) {
             modified: "",
             created: ""
           };
+
+          if (HAP.options.mp4Compat) {
+            transcriptObj.media.source = {
+              mp4: {
+                type: "video/mp4",
+                url: HAP.options.longformMedia,
+                thumbnail: ""
+              }            
+            };            
+          } else {
+            transcriptObj.media.source = {
+              youtube: {
+                type: "video/youtube",
+                url: HAP.options.longformMedia,
+                thumbnail: ""
+              }            
+            };            
+          }
+
+
 
           //var json = JSON.parse(this.responseText);
           self.transcript = transcriptObj;
