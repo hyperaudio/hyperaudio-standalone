@@ -195,82 +195,85 @@ var AJHAWrapper = {
 
       // checking if it's a longform 
 
-      if (params[1].split(':').length == 1) {
+      if (state) {
 
-        longformId = params[1];
+        if (params[1].split(':').length == 1) {
 
-        if (canPlayMP4) {
-          longformMedia = AJHAVideoInfo[longformId].split(',')[1];
-        } else {
-          longformMedia = AJHAVideoInfo[longformId].split(',')[0];
-        }
+          longformId = params[1];
 
-        // check for timing parameters which means it's been shared or jumped to
-
-        if (params.length > 1) {
-          startTime = params[2];
-          endTime = params[3];
-
-          console.log("params");
-          console.log(params);
-          console.log("startTime");
-          console.log(startTime);
-
-          document.addEventListener('transcriptready', function () {
-
-            if (startTime) {
-
-              HAP.transcript.options.player.play(parseInt(startTime/1000));
-
-              HAP.transcript.options.player.addEventListener('timeupdate', function () {
-                var currentTime = HAP.transcript.options.player.videoElem.currentTime;
-                if (endTime)
-                {
-                  if (currentTime > parseInt(endTime/1000) && selectPause == false) {
-                    HAP.transcript.options.player.pause();
-                    selectPause = true;
-                  }
-                }
-              }, false);
-
-              // cancels the check to pause video
-
-              document.addEventListener('click', function () {
-                selectPause = true;
-              }, false);
-            }
-
-          }, false);
-        }
-      } else {
-
-        for (var i=0; i < params.length; i++) {
-          var cmd = params[i].split(':');
-
-          console.log(cmd);
-
-          if (isNaN(cmd[0])) {
-
-            switch (cmd[0]) {
-              case "t": // title
-                var details = cmd[1].split(',');
-                buildTitle(i,unescape(details[0]),details[1],details[2]);
-                break;
-              case "r": // trim
-                buildTimedEffect(i,cmd[1],"trim", effectsLabelTrim, "0");
-                break;
-              case "f": // fade
-                buildTimedEffect(i,cmd[1],"fade", effectsLabelFade, "0.5");
-                break;
-            }
+          if (canPlayMP4) {
+            longformMedia = AJHAVideoInfo[longformId].split(',')[1];
           } else {
-            // It's a transcript or a blank (ie trailing slash)
+            longformMedia = AJHAVideoInfo[longformId].split(',')[0];
+          }
 
-            if (cmd[0].length > 0) { // we need to check for blank as apparently it's a number too!
-              var times = cmd[1].split(',');
-              // buildTranscriptSection(i,cmd[0],times[0],times[1]);
-              if (times && times.length == 2) {
-                q.defer(buildTranscriptSection,i,cmd[0],times[0],times[1]);
+          // check for timing parameters which means it's been shared or jumped to
+
+          if (params.length > 1) {
+            startTime = params[2];
+            endTime = params[3];
+
+            console.log("params");
+            console.log(params);
+            console.log("startTime");
+            console.log(startTime);
+
+            document.addEventListener('transcriptready', function () {
+
+              if (startTime) {
+
+                HAP.transcript.options.player.play(parseInt(startTime/1000));
+
+                HAP.transcript.options.player.addEventListener('timeupdate', function () {
+                  var currentTime = HAP.transcript.options.player.videoElem.currentTime;
+                  if (endTime)
+                  {
+                    if (currentTime > parseInt(endTime/1000) && selectPause == false) {
+                      HAP.transcript.options.player.pause();
+                      selectPause = true;
+                    }
+                  }
+                }, false);
+
+                // cancels the check to pause video
+
+                document.addEventListener('click', function () {
+                  selectPause = true;
+                }, false);
+              }
+
+            }, false);
+          }
+        } else {
+
+          for (var i=0; i < params.length; i++) {
+            var cmd = params[i].split(':');
+
+            console.log(cmd);
+
+            if (isNaN(cmd[0])) {
+
+              switch (cmd[0]) {
+                case "t": // title
+                  var details = cmd[1].split(',');
+                  buildTitle(i,unescape(details[0]),details[1],details[2]);
+                  break;
+                case "r": // trim
+                  buildTimedEffect(i,cmd[1],"trim", effectsLabelTrim, "0");
+                  break;
+                case "f": // fade
+                  buildTimedEffect(i,cmd[1],"fade", effectsLabelFade, "0.5");
+                  break;
+              }
+            } else {
+              // It's a transcript or a blank (ie trailing slash)
+
+              if (cmd[0].length > 0) { // we need to check for blank as apparently it's a number too!
+                var times = cmd[1].split(',');
+                // buildTranscriptSection(i,cmd[0],times[0],times[1]);
+                if (times && times.length == 2) {
+                  q.defer(buildTranscriptSection,i,cmd[0],times[0],times[1]);
+                }
               }
             }
           }
@@ -347,9 +350,7 @@ var AJHAWrapper = {
       });
     }
 
-    if (document.location.hash) {
-      buildState();
-    }
+    buildState();
 
     // Events
 
