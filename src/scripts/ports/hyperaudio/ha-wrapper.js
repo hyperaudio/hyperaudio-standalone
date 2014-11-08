@@ -347,7 +347,9 @@ var AJHAWrapper = {
       });
     }
 
-    buildState();
+    if (document.location.hash) {
+      buildState();
+    }
 
     // Events
 
