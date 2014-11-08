@@ -47,7 +47,19 @@ Open http://localhost:8002/ in the browser.
 # Documentation
 
 ## Switching to Arabic UI
-
 Set $direction variable in _config.scss.
 
-## 
+## Enabling viewer and pad walk-through tips locally
+Remove cookies and comment out: 
+
+```
+    createCookie("HAPtourStatus", "done", 30)
+```
+
+…in HAPtour.coffee and
+
+```
+    createCookie("HAVtourStatus", "done", 30)
+```
+
+…in HAVtour.coffee

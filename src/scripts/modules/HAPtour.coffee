@@ -112,7 +112,7 @@ toggleHAPTour = (stepIndex) ->
       tour.start()
       tour.show("step" + stepIndex)
 
-    # createCookie("HAPtourStatus", "done", 30)
+    createCookie("HAPtourStatus", "done", 30)
 
 # Bind clicks
 HAPhelper = document.getElementById "HAP-helper"

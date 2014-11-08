@@ -39,4 +39,4 @@ toggleHAVTour = ->
 
     tour.start()
 
-    # createCookie("HAVtourStatus", "done", 30)
+    createCookie("HAVtourStatus", "done", 30)
