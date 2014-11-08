@@ -28,8 +28,9 @@
 }
 
 .hgroup__subtitle {
-  @include set-type-small;
+  @include set-type-large;
   display: none;
+  font-weight: $font-bold;
   @include breakpoint(m) {
     display: block;
   }
