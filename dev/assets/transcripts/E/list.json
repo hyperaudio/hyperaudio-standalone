@@ -1,9 +1,18 @@
 [
-  { "_id": 0,
-    "label": "Going against the grain"
-  },
   { "_id": 1,
     "label": "Against the wall"
+  },
+  { "_id": 17,
+    "label": "Al Nakba 1"
+  },
+  { "_id": 18,
+    "label": "Al Nakba 2"
+  },
+  { "_id": 19,
+    "label": "Al Nakba 3"
+  },
+  { "_id": 20,
+    "label": "Al Nakba 4"
   },
   { "_id": 2,
     "label": "Area C"
@@ -23,6 +32,12 @@
   { "_id": 7,
     "label": "Gaza we are coming"
   },
+  { "_id": 0,
+    "label": "Going against the grain"
+  },
+  { "_id": 16,
+    "label": "Hunger Strike"
+  },
   { "_id": 8,
     "label": "Inside Shin Bet"
   },
@@ -35,31 +50,16 @@
   { "_id": 11,
     "label": "Palestine Amore"
   },
-  { "_id": 12,
-    "label": "The pain inside"
-  },
   { "_id": 13,
     "label": "Stronger than words"
+  },
+  { "_id": 12,
+    "label": "The pain inside"
   },
   { "_id": 14,
     "label": "The price of Oslo 1"
   },
   { "_id": 15,
     "label": "The price of Oslo 2"
-  },
-  { "_id": 16,
-    "label": "Hunger Strike"
-  },
-  { "_id": 17,
-    "label": "Al Nakba 1"
-  },
-  { "_id": 18,
-    "label": "Al Nakba 2"
-  },
-  { "_id": 19,
-    "label": "Al Nakba 3"
-  },
-  { "_id": 20,
-    "label": "Al Nakba 4"
   }
 ]
