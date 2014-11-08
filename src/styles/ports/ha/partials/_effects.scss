@@ -3,6 +3,7 @@
  * ============================================ */
 
 .HAP-effect {
+  @extend %well;
   @include set-type-xsmall;
   position: relative;
   input[type="text"] {
@@ -13,7 +14,13 @@
   }
   form > label {
     display: block;
+    font-weight: $font-bold;
     margin-bottom: $space-x;
+    margin-left: $transcript-padding * -1;
+    margin-right: $transcript-padding * -1;
+    margin-top: $transcript-padding * -1;
+    padding: $space-x $transcript-padding;
+    text-align: center;
   }
 }
 
