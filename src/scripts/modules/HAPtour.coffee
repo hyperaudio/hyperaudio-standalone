@@ -46,7 +46,7 @@ toggleHAPTour = (stepIndex) ->
        ]
 
     tour.addStep "step4",
-      title: "Great! This is where you create your Remix, you simply select and drag text from the other side to here. <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
+      title: "This is where you create your Remix, you simply select and drag text from the other side to here. <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
       attachTo: "#output-transcript top"
       classes: "example-step-extra-class"
       buttons: [
