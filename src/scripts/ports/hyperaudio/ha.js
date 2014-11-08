@@ -3037,6 +3037,7 @@ var Player = (function(window, document, hyperaudio, Popcorn) {
         }
       } else {
         if(play) {
+          console.log("attempting to play 2");
           media.play();
         }
       }

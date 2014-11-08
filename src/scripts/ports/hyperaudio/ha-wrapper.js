@@ -218,24 +218,27 @@ var AJHAWrapper = {
 
           document.addEventListener('transcriptready', function () {
 
-            HAP.transcript.options.player.play(parseInt(startTime/1000));
+            if (startTime) {
 
-            HAP.transcript.options.player.addEventListener('timeupdate', function () {
-              var currentTime = HAP.transcript.options.player.videoElem.currentTime;
-              if (endTime)
-              {
-                if (currentTime > parseInt(endTime/1000) && selectPause == false) {
-                  HAP.transcript.options.player.pause();
-                  selectPause = true;
+              HAP.transcript.options.player.play(parseInt(startTime/1000));
+
+              HAP.transcript.options.player.addEventListener('timeupdate', function () {
+                var currentTime = HAP.transcript.options.player.videoElem.currentTime;
+                if (endTime)
+                {
+                  if (currentTime > parseInt(endTime/1000) && selectPause == false) {
+                    HAP.transcript.options.player.pause();
+                    selectPause = true;
+                  }
                 }
-              }
-            }, false);
+              }, false);
 
-            // cancels the check to pause video
+              // cancels the check to pause video
 
-            document.addEventListener('click', function () {
-              selectPause = true;
-            }, false);
+              document.addEventListener('click', function () {
+                selectPause = true;
+              }, false);
+            }
 
           }, false);
         }
