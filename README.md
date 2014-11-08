@@ -34,12 +34,6 @@ Should you have problems installing Node, please refer to [this article](http://
     $ gulp
 ```
 
-# Building the thing.
-
-```
-    …
-```
-
 Open http://localhost:8002/ in the browser.
 
 ======================================
