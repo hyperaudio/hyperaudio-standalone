@@ -6,8 +6,10 @@
   @include fill-inverted;
 }
 
-// .HAP-sidebar .HAP-listing {
-//   @include position-top-left($header-height, 0);
-//   @include position-bottom-right(0,0);
-//   overflow: auto;
-// }
+.HAP-sidebar .search  {
+  @include position-top-left(0,0);
+  background-color: $mono-D;
+  line-height: 0;
+  width: 100%;
+  z-index: 50;
+}
