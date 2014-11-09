@@ -27,4 +27,8 @@
   border-color: $mono-HL;
   border-radius: $radius-s;
   color: $mono-M;
+  &.block {
+    display: block;
+    text-align: center;
+  }
 }

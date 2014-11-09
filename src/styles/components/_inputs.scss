@@ -25,3 +25,8 @@
 .text-input {
   @extend %text-input;
 }
+pre.text-input {
+  display: block;
+  background: $mono-Wt;
+  text-align: center;
+}

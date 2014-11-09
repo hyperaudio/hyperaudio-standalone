@@ -107,10 +107,10 @@ gulp.task("node-build", $.shell.task ([
 # Watch files
 # ---------------------------------------------- #
 gulp.task "watch", ->
-  gulp.watch STYLES, [ "compile-sass" ]
-  gulp.watch ["./dev/**/*.html"], ["html"]
-  gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee", "./bower_components/**/*.js"], ["compile-coffee"]
-  gulp.watch SCRIPTQ3, ["concat-ports"]
+  gulp.watch STYLES, [ "compile-sass", "node-build" ]
+  gulp.watch ["./dev/**/*.html"], ["html", "node-build"]
+  gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee", "./bower_components/**/*.js"], ["compile-coffee", "node-build"]
+  gulp.watch SCRIPTQ3, ["concat-ports", "node-build"]
   gulp.watch ["./dev/assets/**/*.*"], ["node-build"]
 
 # Connect server

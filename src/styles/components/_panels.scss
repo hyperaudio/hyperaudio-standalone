@@ -49,6 +49,11 @@
   margin-bottom: $space-x;
   text-align: center;
 }
+.panel__subtitle--alt {
+  color: $shadow-medium;
+  margin-bottom: $space-x;
+  text-align: center;
+}
 .panel__action--sec {
   @include position-top-right($space, $space);
   font-weight: $font-bold;

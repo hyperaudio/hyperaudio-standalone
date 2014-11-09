@@ -46,9 +46,10 @@
                           <input type="text" value="Untitled Mix - click to edit" id="mix-title" onfocus="if(this.value=='Untitled Mix - click to edit')this.value='Untitled Mix'" />
                         </form>
                       </h1>
+                      <a class="pri-button togglePanel" data-panel-target="share">Share</a>
                       <a class="pri-button" id="share-button">Share</a>
-                      <a class="pri-button" id="save-button">Share</a>
-                      <a class="pri-button" id="save-button-saving">Saving...</a>
+                      <a class="pri-button" id="save-button" style="display: none !important">Share</a>
+                      <a class="pri-button" id="save-button-saving" style="display: none !important">Saving...</a>
                     </header>
                   </div>
                 </div>
@@ -60,6 +61,8 @@
     </div>
   </div>
 </div>
+<div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>
+{{> panel-share}}
 <script src="{{path}}assets/scripts/vendorq2.js"></script>
 <script src="{{path}}assets/scripts/aj.js"></script>
 <script src="{{path}}assets/scripts/ports.js"></script>

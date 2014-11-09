@@ -24,6 +24,7 @@ metalsmith.use(markdown({}));
 Handlebars.registerPartial('init', fs.readFileSync('./dev/partials/init.html').toString());
 Handlebars.registerPartial('panel-filter', fs.readFileSync('./dev/partials/panel-filter.html').toString());
 Handlebars.registerPartial('panel-language', fs.readFileSync('./dev/partials/panel-language.html').toString());
+Handlebars.registerPartial('panel-share', fs.readFileSync('./dev/partials/panel-share.html').toString());
 
 Handlebars.registerPartial('header', fs.readFileSync('./dev/partials/header.html').toString());
 Handlebars.registerPartial('footer', fs.readFileSync('./dev/partials/footer.html').toString());
