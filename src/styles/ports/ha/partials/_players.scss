@@ -30,7 +30,7 @@
   @include position-bottom-right(0,0);
   @include paint-invert;
   @include set-type-xsmall;
-  box-shadow: 0 -1px 0 $flare-weak;
+  border-top: solid 1px $flare-weak;
   cursor: pointer;
   display: block;
   height: $player-height;
@@ -81,7 +81,7 @@
 }
 .HAP-player-fullscreen {
   @include position-top-right(0,0);
-  box-shadow: inset 1px 0 0 $flare-weak;
+  box-shadow: inset 2px 0 0 $flare-weak;
 }
 
 /* Iconography

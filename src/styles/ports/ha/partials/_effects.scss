@@ -51,6 +51,7 @@
   // If effect lives in a transcript, add bottom spacing
   .HAP-transcript & {
     padding: $space-s;
+    box-shadow: none;
   }
   // Hide effects in viewer mode
   .HAP--viewer & {

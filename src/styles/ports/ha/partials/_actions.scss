@@ -4,7 +4,7 @@
 
 .HAP-transcript__item {
   .actions {
-    @include position-top-right(0,$space-l / -2);
+    @include position-top-right($transcript-padding,0);
     @include set-size($space-l,$space-l);
     background: $red-LD;
     cursor: pointer;
@@ -48,10 +48,7 @@
 }
 
 .HAP-transcript__item.edit {
-  @extend %well;
-  box-shadow: inset 0 0 3px $shadow-light;
-  margin-bottom: $space-s;
-  padding: $space-s;
+  background: $mono-Wt;
   a:hover {
     color: $red-LD;
     &:after {

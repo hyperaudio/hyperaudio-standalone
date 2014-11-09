@@ -1,3 +1,13 @@
 .HAP-canvas {
   background: $mono-Blk;
 }
+.HAP-canvas--source {
+  &:after {
+    @include position-top-right(0,0);
+    content: " ";
+    height: 100%;
+    width: 1px;
+    display: block;
+    box-shadow: inset -1px 0 0 $flare-weak;
+  }
+}
