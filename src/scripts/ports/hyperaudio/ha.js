@@ -558,7 +558,6 @@ var DragDrop = (function (window, document, hyperaudio) {
       var items = this.list.querySelectorAll('.HAP-transcript__item'),
         i = 0, l = items.length;
 
-
       for ( ; i < l; i++ ) {
 
         if ( target == items[i] ) {
@@ -580,9 +579,6 @@ var DragDrop = (function (window, document, hyperaudio) {
 
     var event = document.createEvent('Event');
     event.initEvent('mixchange', true, true);
-
-
-
 
     clearTimeout(this.dragTimeout);
 
@@ -977,19 +973,6 @@ var SideMenu = (function (document, hyperaudio) {
     this.music = typeof this.options.music == 'string' ? document.querySelector(this.options.music) : this.options.music;
     this.mediaCallback = this.options.callback;
 
-    // var handle = document.querySelector('#sidemenu-handle');
-    // handle._tap = new Tap({el: handle});
-    // handle.addEventListener('tap', this.toggleMenu.bind(this), false);
-
-    // this.updateStatus();
-
-    // handle the tab bar
-    // var tabs = document.querySelectorAll('#sidemenu .tabbar li');
-    // for ( i = tabs.length-1; i >= 0; i-- ) {
-    //   tabs[i]._tap = new Tap({el: tabs[i]});
-    //   tabs[i].addEventListener('tap', this.selectPanel.bind(this), false);
-    // }
-
     this.initTranscripts();
     // this.initMusic();
   }
@@ -1183,7 +1166,7 @@ var SideMenu = (function (document, hyperaudio) {
       });
     };
 
-    getUsername();
+    //getUsername();
 
   };
 
@@ -1919,192 +1902,6 @@ var api = (function(hyperaudio) {
         callback.call(this, success);
       }
     },
-    // signin: function(auth, callback) {
-    //   var self = this;
-    //   // auth = {username,password}
-    //   xhr({
-    //     url: this.url + this.options.signin,
-    //     type: 'POST',
-    //     data: JSON.stringify(auth),
-    //     complete: function(event) {
-    //       var json = JSON.parse(this.responseText);
-    //       self.guest = !json.user;
-    //       if(!self.guest) {
-    //         self.username = json.user;
-
-    //         hyperaudio.gaEvent({
-    //           type: 'API',
-    //           action: 'login: User signed in'
-    //         });
-
-    //         self.callback(callback, true);
-    //       } else {
-    //         self.username = '';
-    //         self.callback(callback, false);
-    //       }
-    //     },
-    //     error: function(event) {
-    //       self.error = true;
-    //       self.callback(callback, false);
-    //     }
-    //   });
-    // },
-    getUsername: function(callback, force) {
-
-      console.log("calling getUsername");
-      var self = this;
-
-      // force = typeof force === 'undefined' ? true : force; // default force = true.
-
-      if(!force && (this.guest || this.username)) {
-        setTimeout(function() {
-          self.callback(callback, true);
-        }, 0);
-      } else {
-        xhr({
-          url: this.url + this.options.whoami,
-          complete: function(event) {
-            var json = JSON.parse(this.responseText);
-            self.guest = !json.user;
-            if(!self.guest) {
-              self.username = json.user;
-            } else {
-              self.username = '';
-            }
-            self.callback(callback, true);
-          },
-          error: function(event) {
-            self.error = true;
-            self.callback(callback, false);
-          }
-        });
-      }
-    },
-    getChannels: function(options) {
-      var self = this,
-        getUsername, getUrl, getChannels;
-
-      options = hyperaudio.extend({
-        user: false, // When true, the api returns the current user's transcripts.
-        callback: null
-      }, options);
-
-      getUsername = function() {
-        self.getUsername(function(success) {
-          if(success && !self.guest) {
-            getChannels();
-          } else {
-            self.callback(options.callback, false);
-          }
-        });
-      };
-
-      getUrl = function() {
-        var url = self.url;
-        if(options.user) {
-          url += self.username + '/';
-        }
-        url += self.options.transcripts + self.options.channels;
-        return url;
-      };
-
-      getChannels = function() {
-        /*xhr({
-          url: getUrl(),
-          complete: function(event) {
-            var json = JSON.parse(this.responseText);
-            self.callback(options.callback, json);
-          },
-          error: function(event) {
-            self.error = true;
-            self.callback(options.callback, false);
-          }
-        });*/
-      };
-
-      if(options.user) {
-        getUsername();
-      } else {
-        getChannels();
-      }
-    },
-    getTranscripts: function(options) {
-      var self = this,
-        getUsername, getUrl, getTranscripts;
-
-      options = hyperaudio.extend({
-        user: false, // When true, the api returns the current user's transcripts.
-        channel: '', // The channel name. Empty string disables feature. See 'nochannel' for media without any channel.
-        callback: null
-      }, options);
-
-      getUsername = function() {
-        self.getUsername(function(success) {
-          if(success && !self.guest) {
-            getTranscripts();
-          } else {
-            self.callback(options.callback, false);
-          }
-        });
-      };
-
-      getUrl = function() {
-        var url = self.url;
-        if(options.user) {
-          url += self.username + '/';
-        }
-        url += self.options.transcripts;
-        if(options.channel) {
-          url += self.options.channels + options.channel;
-        }
-        url += self.options.transcripts_filter;
-        return url;
-      };
-
-      getTranscripts = function() {
-
-        xhr({
-          url: getUrl(),
-          complete: function(event) {
-            var json = JSON.parse(this.responseText);
-            self.callback(options.callback, json);
-          },
-          error: function(event) {
-            self.error = true;
-            self.callback(options.callback, false);
-          }
-        });
-      };
-
-      if(options.user) {
-        getUsername();
-      } else {
-        getTranscripts();
-      }
-    },
-    getTranscriptsOLD: function(callback, force) {
-      var self = this;
-      if(!force && this.transcripts) {
-        setTimeout(function() {
-          self.callback(callback, true);
-        }, 0);
-      } else {
-        xhr({
-          // In future may want a version that returns only your own transcripts.
-          // url: self.url + (self.guest ? '' : self.username + '/') + self.options.transcripts,
-          url: this.url + this.options.transcripts,
-          complete: function(event) {
-            var json = JSON.parse(this.responseText);
-            self.transcripts = json;
-            self.callback(callback, true);
-          },
-          error: function(event) {
-            self.error = true;
-            self.callback(callback, false);
-          }
-        });
-      }
-    },
     getTranscript: function(id, callback, force) {
 
       var self = this;
@@ -2182,150 +1979,12 @@ var api = (function(hyperaudio) {
         self.callback(callback, false);
       }
     },
-    getMixes: function(callback, force) {
-      var self = this;
-      if(!force && this.mixes) {
-        setTimeout(function() {
-          self.callback(callback, true);
-        }, 0);
-      } else {
-        // Do not need to get username for a general request.
-        this.getUsername(function(success) {
-          if(success) {
-            xhr({
-              url: self.url + (self.guest ? '' : self.username + '/') + self.options.mixes,
-              complete: function(event) {
-                var json = JSON.parse(this.responseText);
-                self.mixes = json;
-                self.callback(callback, true);
-              },
-              error: function(event) {
-                self.error = true;
-                self.callback(callback, false);
-              }
-            });
-          } else {
-            self.error = true; // Setting the common error prop is redundant, since it would have been set in getUsername failure.
-            self.callback(callback, false);
-          }
-        });
-      }
-    },
     getMixFromUrl: function (id, callback, force) {
       var self = this;
 
       self.mix = {_id:"",content:HAP.options.mixHTML,created:"",desc:"",label:HAP.options.mixTitle,modified:"", namespace:null, owner: "", tags:[], type: ""};
 
       self.callback(callback, true);
-    },
-    getMix: function(id, callback, force) {
-
-      var self = this;
-      if(!force && this.mix && this.mix._id === id) {
-        setTimeout(function() {
-
-          self.callback(callback, true);
-        }, 0);
-      } else {
-
-        this.getUsername(function(success) {
-          if(success && id) {
-            xhr({
-              url: this.url + (this.guest ? '' : this.username + '/') + this.options.mixes + id,
-              complete: function(event) {
-                var json = JSON.parse(this.responseText);
-                self.mix = json;
-
-                self.callback(callback, true);
-              },
-              error: function(event) {
-                self.error = true;
-                self.callback(callback, false);
-              }
-            });
-          } else {
-            self.error = true; // Setting the common error prop is redundant, since it would have been set in getUsername failure.
-            self.callback(callback, false);
-          }
-        });
-      }
-    },
-    putMix: function(mix, callback) {
-      var self = this;
-
-      // Are we storing the current Mix we're editing in here?
-      // Yes, but only refreshing the mix data here on Load and Save.
-      // The current mix data will be in the stage's HTML.
-
-      if(typeof mix === 'object') {
-        var type = 'POST',
-          id = '';
-
-        this.getUsername(function(success) {
-
-          if(success && !self.guest && self.username) {
-
-            // Check: Mix IDs match and user is owner.
-
-            if(self.mix && self.mix._id && self.mix._id === mix._id && self.username === mix.owner) {
-              type = 'PUT';
-              id = self.mix._id;
-              // Check some stuff?
-            } else {
-              // Check some stuff?
-            }
-
-            xhr({
-              url: self.url + self.username + '/' + self.options.mixes + id,
-              type: type,
-              data: JSON.stringify(mix),
-              complete: function(event) {
-                var json = JSON.parse(this.responseText);
-                self.mix = json;
-                self.callback(callback, {
-                  saved: true
-                });
-              },
-              error: function(event) {
-                self.error = true;
-                self.callback(callback, false);
-              }
-            });
-          } else if(success) {
-            // The user needs to login
-            self.callback(callback, {
-              needLogin: true
-            });
-          } else {
-            self.callback(callback, false);
-          }
-        }, true); // Force the call to get username before attempting to save.
-      } else {
-        setTimeout(function() {
-          self.callback(callback, false);
-        }, 0);
-      }
-    },
-    getBGM: function(callback, force) {
-      var self = this;
-      if(!force && this.bgm) {
-        setTimeout(function() {
-          self.callback(callback, true);
-        }, 0);
-      } else {
-        xhr({
-          url: this.url + this.options.bgm,
-          complete: function(event) {
-            var json = JSON.parse(this.responseText);
-            self.bgm = json;
-            self.callback(callback, true);
-          },
-          error: function(event) {
-            self.error = true;
-            self.callback(callback, false);
-          }
-        });
-      }
     }
   };
 
