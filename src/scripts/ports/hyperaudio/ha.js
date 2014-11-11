@@ -944,16 +944,6 @@ var fadeFX = (function (window, document) {
 
 var SideMenu = (function (document, hyperaudio) {
 
-  var CLASS_ON_DEMAND = 'on-demand';
-  var CLASS_YOUR_ITEM = 'owned-by-user';
-  var CLASS_YOUR_MEDIA = 'user-media';
-  var CLASS_OTHER_MEDIA = 'other-media';
-
-  var CHANNEL_OTHER_TITLE = 'Other...';
-  var CHANNEL_OTHER_API = 'nochannel';
-
-  var CHANNEL_EMPTY_TEXT = 'empty';
-
   function SideMenu (options) {
     this.options = {
       el: '#sidemenu',
@@ -982,27 +972,12 @@ var SideMenu = (function (document, hyperaudio) {
       div = document.createElement('div'),
       ul = document.createElement('ul');
     hyperaudio.addClass(li, 'folder');
-    if(channel) {
-      hyperaudio.addClass(li, CLASS_ON_DEMAND);
-      li.setAttribute('data-channel', channel);
-      if(user) {
-        li.setAttribute('data-user', '1');
-      }
-    }
+
     div.innerHTML = title;
     li.appendChild(div);
     li.appendChild(ul);
     parent.appendChild(li);
     return ul;
-  };
-
-  SideMenu.prototype.makeMenuItem = function(title, id) {
-    var li = document.createElement('li');
-    if(id) {
-      li.setAttribute('data-id', id);
-    }
-    li.innerHTML = title;
-    return li;
   };
 
   SideMenu.prototype.initTranscripts = function () {
@@ -1038,199 +1013,6 @@ var SideMenu = (function (document, hyperaudio) {
         self.error = true;
       }
     });
- 
-
-    var self = this,
-      username = '',
-      getUsername,
-      getChannels, getUserChannels,
-      prepareChannels, prepareUserChannels,
-      selectMedia,
-      getTranscripts;
-
-    getUsername = function() {
-      hyperaudio.api.getUsername(function(success) {
-        if(success) {
-          username = this.username;
-          if(username) {
-            getUserChannels();
-          } else {
-            getChannels();
-          }
-        }
-      });
-    };
-
-    getUserChannels = function() {
-      hyperaudio.api.getChannels({
-        user: true,
-        callback: function(success) {
-          if(success) {
-            prepareUserChannels(success);
-          }
-        }
-      });
-    };
-
-    getChannels = function() {
-      hyperaudio.api.getChannels({
-        callback: function(success) {
-          if(success) {
-            prepareChannels(success);
-          }
-        }
-      });
-    };
-
-    prepareUserChannels = function(channels) {
-      var owner = self.makeMenuFolder(self.transcripts, 'Your Media');
-      hyperaudio.addClass(owner, CLASS_YOUR_MEDIA);
-      if(channels && channels.length) {
-        for(var i = 0, l = channels.length; i < l; i++) {
-          self.makeMenuFolder(owner, channels[i], channels[i], true);
-        }
-      }
-      self.makeMenuFolder(owner, CHANNEL_OTHER_TITLE, CHANNEL_OTHER_API, true);
-      getChannels();
-    };
-
-    prepareChannels = function(channels) {
-      var owner = self.makeMenuFolder(self.transcripts, 'Media');
-      hyperaudio.addClass(owner, CLASS_OTHER_MEDIA);
-      if(channels && channels.length) {
-        for(var i = 0, l = channels.length; i < l; i++) {
-          self.makeMenuFolder(owner, channels[i], channels[i], false);
-        }
-      }
-      self.makeMenuFolder(owner, CHANNEL_OTHER_TITLE, CHANNEL_OTHER_API, false);
-
-      self.transcripts._tap = new Tap({el: self.transcripts});
-      // self.transcripts.addEventListener('tap', self.selectMedia.bind(self), false);
-      self.transcripts.addEventListener('tap', selectMedia, false);
-    };
-
-    selectMedia = function (event) {
-      event.stopPropagation();  // just in case [Not sure this does anything with a tap event.]
-
-      var item = event.target;
-      var folder = self.toggleFolder(event);
-
-      if(folder) {
-        if(self.isOnDemand(folder)) {
-          // capture class now! Otherwise, multi clicks cause multi xhr.
-          hyperaudio.removeClass(folder, CLASS_ON_DEMAND);
-          getTranscripts(folder);
-        }
-        return;
-      }
-
-      var id = item.getAttribute('data-id');
-
-      if ( !id || !self.mediaCallback ) {
-        return;
-      }
-
-      hyperaudio.Address.setParam('t', id);
-
-      self.mediaCallback(item);
-    };
-
-    getTranscripts = function(folder) {
-
-      var channel = folder.getAttribute('data-channel');
-      var user = !!folder.getAttribute('data-user');
-      folder = folder.querySelector('ul');
-      hyperaudio.api.getTranscripts({
-        user: user,
-        channel: channel,
-        callback: function(transcripts) {
-          var trans, item;
-          if(transcripts) {
-            if(transcripts.length) {
-              for(var i = 0, l = transcripts.length; i < l; i++) {
-                trans = transcripts[i];
-                item = self.makeMenuItem(trans.label, trans._id);
-                if(username && trans.owner === username) {
-                  hyperaudio.addClass(item, CLASS_YOUR_ITEM);
-                }
-                folder.appendChild(item);
-              }
-            } else {
-              folder.appendChild(self.makeMenuItem(CHANNEL_EMPTY_TEXT));
-            }
-          } else {
-            // failed, so put the class back on to enable retry
-            hyperaudio.addClass(folder, CLASS_ON_DEMAND);
-          }
-        }
-      });
-    };
-
-    //getUsername();
-
-  };
-
-  // OBSOLETE METHOD
-  SideMenu.prototype.selectMedia = function (e) {
-    e.stopPropagation();  // just in case [Not sure this does anything with a tap event.]
-
-    var item = e.target;
-
-    if(this.toggleFolder(e)) {
-      if(this.isOnDemand(e)) {
-        // capture class now!
-      }
-      return;
-    }
-
-    if ( !item.getAttribute('data-id') || !this.mediaCallback ) {
-      return;
-    }
-
-    this.mediaCallback(item);
-  };
-
-  SideMenu.prototype.isOnDemand = function (target) {
-    // Copes with clicks on Folder div text and the li
-
-    if ( hyperaudio.hasClass(target.parentNode, CLASS_ON_DEMAND) ) {
-      target = target.parentNode;
-    }
-
-    if ( hyperaudio.hasClass(target, CLASS_ON_DEMAND) ) {
-      return target;
-    }
-    return false;
-  };
-
-  SideMenu.prototype.isFolder = function (target) {
-    // Copes with clicks on Folder div text and the li
-
-    if ( hyperaudio.hasClass(target.parentNode, 'folder') ) {
-      target = target.parentNode;
-    }
-
-    if ( hyperaudio.hasClass(target, 'folder') ) {
-      return target;
-    }
-    return false;
-  };
-
-  SideMenu.prototype.toggleFolder = function (e) {
-
-    var folder = this.isFolder(e.target);
-    if(folder) {
-      hyperaudio.toggleClass(folder, 'open');
-
-      var name = folder.querySelector('div').innerHTML;
-      hyperaudio.gaEvent({
-        type: 'SIDEMENU',
-        action: 'togglefolder: ' + (hyperaudio.hasClass(folder, 'open') ? 'Opened' : 'Closed') + ' -> ' + name
-      });
-
-      return folder;
-    }
-    return false;
   };
 
   return SideMenu;
