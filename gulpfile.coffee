@@ -33,6 +33,7 @@ SCRIPTQ3 = [
   "./bower_components/popcorn-js/wrappers/youtube/popcorn.HTMLYouTubeVideoElement.js"
   "./bower_components/queue-async/queue.min.js"
   "./src/scripts/ports/hyperaudio/popcorn-extras.js"
+  "./src/scripts/ports/hyperaudio/ha-data.js"
   "./src/scripts/ports/hyperaudio/ha.js"
   "./src/scripts/ports/hyperaudio/ha-wrapper.js"
 ]
