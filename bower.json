@@ -26,7 +26,7 @@
     "drop": "~0.5.5",
     "shepherd.js": "~0.5.1",
     "lunr.js": "~0.5.6",
-    "lunr-languages": "git://github.com/AJInteractive/lunr-languages.git#master",
+    "lunr-languages": "git://github.com/AJInteractive/lunr-languages.git#18a33ff8343af42d8d30883a031d42f03a2e7471",
     "xregexp": "*",
     "popcorn-js": "~1.5.10",
     "queue-async": "~1.0.7"

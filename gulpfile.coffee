@@ -20,9 +20,11 @@ SCRIPTQ1 = [
   "./bower_components/pace/pace.js"
 ]
 SCRIPTQ2 = [
+  "./bower_components/xregexp/xregexp-all.js"
   "./bower_components/lunr.js/lunr.min.js"
   "./bower_components/lunr-languages/lunr.stemmer.support.js"
   "./bower_components/lunr-languages/lunr.tr.js"
+  "./bower_components/lunr-languages/lunr.ar.js"
   "./bower_components/tether/tether.js"
   "./bower_components/shepherd.js/shepherd.js"
   "./bower_components/drop/drop.js"
