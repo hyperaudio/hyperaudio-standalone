@@ -997,7 +997,7 @@ var SideMenu = (function (document, hyperaudio) {
           trans = json[i];
           list = document.createElement('li');
           anchor = document.createElement('a');
-          //anchor.setAttribute('data-id', trans._id);
+          anchor.setAttribute('data-id', trans._id);
           anchor.setAttribute('href', "#/"+trans._id);
           anchor.innerHTML = trans.label;
           anchor.addEventListener('click', function() {

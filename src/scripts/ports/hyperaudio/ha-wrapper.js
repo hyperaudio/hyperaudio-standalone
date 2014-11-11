@@ -290,6 +290,7 @@ var AJHAWrapper = {
 
           ajOnInitCallback();
 
+
         } else {
 
           // Hyperaudio Pad Set Up
@@ -385,8 +386,24 @@ var AJHAWrapper = {
 
       // detect clicks on the pad menu
       document.addEventListener('padmenuclick', function() {
+        console.log('padmenuclick');
+        window.onhashchange = function() {
 
-        window.onhashchange = buildState;
+          var longformId = document.location.hash.split('/')[1];
+          var longformMedia;
+
+          if (isNaN(longformId) == false)
+          { 
+            if (canPlayMP4) {
+              longformMedia = AJHAVideoInfo[longformId].split(',')[1];
+            } else {
+              longformMedia = AJHAVideoInfo[longformId].split(',')[0];
+            }
+            HAP.options.longformId = longformId;
+            HAP.options.longformMedia = longformMedia;
+            HAP.transcript.load();
+          }
+        };
       }, false);
 
       document.addEventListener('mixchange', function () {
