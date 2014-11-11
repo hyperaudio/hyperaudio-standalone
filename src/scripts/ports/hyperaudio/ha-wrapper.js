@@ -413,7 +413,11 @@ var AJHAWrapper = {
         });
       }
 
+
+
       var sidemenuItems = document.getElementsByClassName('menu__link');
+
+
 
       for( var i = 0; i < sidemenuItems.length; i++){
 
@@ -423,6 +427,12 @@ var AJHAWrapper = {
           }, false);
         }
       }
+
+
+      document.addEventListener('padmenuclick', function() {
+        console.log('padmenuclick');
+        window.onhashchange = buildState;
+      }, false);
 
       document.addEventListener('mixchange', function () {
 

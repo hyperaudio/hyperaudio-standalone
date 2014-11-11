@@ -1041,14 +1041,20 @@ var SideMenu = (function (document, hyperaudio) {
         complete: function(event) {
           var json = JSON.parse(this.responseText);
 
-          var alltrans = self.makeMenuFolder(self.transcripts, 'Test Folder Name');
+          var alltrans = self.makeMenuFolder(self.transcripts, '');
 
           for(var i = 0, l = json.length; i < l; i++) {
             trans = json[i];
             list = document.createElement('li');
             anchor = document.createElement('a');
-            anchor.setAttribute('data-id', trans._id);
+            //anchor.setAttribute('data-id', trans._id);
+            anchor.setAttribute('href', "#/"+trans._id);
             anchor.innerHTML = trans.label;
+            anchor.addEventListener('click', function() {
+              var ev = document.createEvent('Event');
+              ev.initEvent('padmenuclick', true, true);
+              document.dispatchEvent(ev);        
+            }, false);
             list.appendChild(anchor);
             alltrans.appendChild(list);
           }
