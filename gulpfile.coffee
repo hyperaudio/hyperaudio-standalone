@@ -21,6 +21,8 @@ SCRIPTQ1 = [
 ]
 SCRIPTQ2 = [
   "./bower_components/lunr.js/lunr.min.js"
+  "./bower_components/lunr-languages/lunr.stemmer.support.js"
+  "./bower_components/lunr-languages/lunr.tr.js"
   "./bower_components/tether/tether.js"
   "./bower_components/shepherd.js/shepherd.js"
   "./bower_components/drop/drop.js"
