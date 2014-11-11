@@ -1026,44 +1026,36 @@ var SideMenu = (function (document, hyperaudio) {
 
     var self = this;
 
-    //addTestFolders();
+    var username = '';
 
-    hyperaudio.api.getUsername(function(success) {
+    xhr({
+      url: HAP.options.transcripts + 'list.json',
+      complete: function(event) {
+        var json = JSON.parse(this.responseText);
 
-      var username = '';
+        var alltrans = self.makeMenuFolder(self.transcripts, '');
 
-      if(success) {
-        username = this.username;
-      }
-
-      xhr({
-        url: HAP.options.transcripts + 'list.json',
-        complete: function(event) {
-          var json = JSON.parse(this.responseText);
-
-          var alltrans = self.makeMenuFolder(self.transcripts, '');
-
-          for(var i = 0, l = json.length; i < l; i++) {
-            trans = json[i];
-            list = document.createElement('li');
-            anchor = document.createElement('a');
-            //anchor.setAttribute('data-id', trans._id);
-            anchor.setAttribute('href', "#/"+trans._id);
-            anchor.innerHTML = trans.label;
-            anchor.addEventListener('click', function() {
-              var ev = document.createEvent('Event');
-              ev.initEvent('padmenuclick', true, true);
-              document.dispatchEvent(ev);        
-            }, false);
-            list.appendChild(anchor);
-            alltrans.appendChild(list);
-          }
-        },
-        error: function(event) {
-          self.error = true;
+        for(var i = 0, l = json.length; i < l; i++) {
+          trans = json[i];
+          list = document.createElement('li');
+          anchor = document.createElement('a');
+          //anchor.setAttribute('data-id', trans._id);
+          anchor.setAttribute('href', "#/"+trans._id);
+          anchor.innerHTML = trans.label;
+          anchor.addEventListener('click', function() {
+            var ev = document.createEvent('Event');
+            ev.initEvent('padmenuclick', true, true);
+            document.dispatchEvent(ev);        
+          }, false);
+          list.appendChild(anchor);
+          alltrans.appendChild(list);
         }
-      });
+      },
+      error: function(event) {
+        self.error = true;
+      }
     });
+ 
 
     var self = this,
       username = '',
@@ -1958,6 +1950,8 @@ var api = (function(hyperaudio) {
     //   });
     // },
     getUsername: function(callback, force) {
+
+      console.log("calling getUsername");
       var self = this;
 
       // force = typeof force === 'undefined' ? true : force; // default force = true.
