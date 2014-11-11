@@ -1,5 +1,3 @@
-
-
 var AJHAWrapper = {
 
   // Todo validate url input so that an invalid url does not cause JS errors.
@@ -10,16 +8,6 @@ var AJHAWrapper = {
 
     var v = document.createElement('video');
     var canPlayMP4 = !!v.canPlayType && v.canPlayType('video/mp4') != "";
-
-    console.log("canPlayMP4");
-    console.log(canPlayMP4);
-
-    //var testVideo = document.createElement('video');
-    //var videoUrls = AJHAVideoInfo[0];
-    //testVideo.src = videoUrls.split(',')[1];
-    //var canPlayMP4 = testVideo.canPlayType();
-
-    
 
     // constants
 
@@ -38,6 +26,9 @@ var AJHAWrapper = {
     var mixTitle = null;
 
     function buildTranscriptSection(index, tid, stime, length, callback) {
+
+      console.log('tid');
+      console.log(tid);
 
       var element2 = document.createElement('p');
       var attribute = document.createAttribute('dir');
@@ -154,7 +145,6 @@ var AJHAWrapper = {
       section.classList.add('HAP-effect');
     }
 
-    //var videoInfo = ['mnY0rynBSTM,107384621.m3u8?p=standard*mobile&s=e4570b1860ec64fc4f1226e6612c1098','sI8R9B_caDY,107385223.mobile.mp4?s=8083e99329c10022f3c0f9ab4fdb065a','fJISrenMzws,107445262.mobile.mp4?s=2ada419278dc8fe349d47fbcbd2047f6'];
 
     function buildState() {
       console.log("building state");
@@ -169,7 +159,7 @@ var AJHAWrapper = {
 
       var q = queue(1);
 
-      // checking if it's a longform 
+      // checking if it's a full video 
 
       if (state) {
 
@@ -186,13 +176,9 @@ var AJHAWrapper = {
           // check for timing parameters which means it's been shared or jumped to
 
           if (params.length > 1) {
+            
             startTime = params[2];
             endTime = params[3];
-
-            console.log("params");
-            console.log(params);
-            console.log("startTime");
-            console.log(startTime);
 
             document.addEventListener('transcriptready', function () {
 
@@ -211,7 +197,7 @@ var AJHAWrapper = {
                   }
                 }, false);
 
-                // cancels the check to pause video
+                // cancels the check to pause video at passed through end time
 
                 document.addEventListener('click', function () {
                   selectPause = true;
@@ -246,7 +232,7 @@ var AJHAWrapper = {
 
               if (cmd[0].length > 0) { // we need to check for blank as apparently it's a number too!
                 var times = cmd[1].split(',');
-                // buildTranscriptSection(i,cmd[0],times[0],times[1]);
+
                 if (times && times.length == 2) {
                   q.defer(buildTranscriptSection,i,cmd[0],times[0],times[1]);
                 }
@@ -257,10 +243,11 @@ var AJHAWrapper = {
       }
 
       q.awaitAll(function() {
-        //var mixHTML = output[0].outerHTML;
+
         var mixHTML = output.outerHTML;
 
         if (mixTitle == null) {
+
           mixTitle = "untitled";
         }
 
@@ -317,11 +304,7 @@ var AJHAWrapper = {
           });
         }
 
-
-
-
         // #/t:Test%20Max,1,1.2/0:2150,97910/r:1/t:And%20Now%20For%20Something...,0,2/1:23500,5310/f:1.5/2:3126,41282
-
 
       });
     }
@@ -371,7 +354,6 @@ var AJHAWrapper = {
       if (target != 'Viewer') {
 
         ajOnInitCallback();
-
       }
 
       var video = document.getElementsByTagName('video');
@@ -389,6 +371,7 @@ var AJHAWrapper = {
         });
       }
 
+      // detect clicks on the viewer menu
       var sidemenuItems = document.getElementsByClassName('menu__link');
 
       for( var i = 0; i < sidemenuItems.length; i++){
@@ -400,8 +383,9 @@ var AJHAWrapper = {
         }
       }
 
+      // detect clicks on the pad menu
       document.addEventListener('padmenuclick', function() {
-        console.log('padmenuclick');
+
         window.onhashchange = buildState;
       }, false);
 
@@ -412,25 +396,20 @@ var AJHAWrapper = {
         setEffectsListeners();
 
         var newUrlHash = "#";
-
         var mix = document.getElementById('output-transcript');
-        //console.dir(mix);
         var sections = mix.getElementsByTagName('section');
-        //console.dir(sections);
-        //console.log(sections.length);
 
         for ( var i = 0; i < sections.length; i++ ) {
           var firstChild = sections[i].firstChild;
 
+          // if it's a para it's text
+
           if (firstChild.tagName == "P") {
-            //console.log('found text');
 
             var paras = sections[i].getElementsByTagName('p');
             var lastChild = paras[paras.length-1];
 
             var sTime = firstChild.firstChild.getAttribute('data-m');
-
-            //var eTime = lastChild.lastChild.getAttribute('data-m');
 
             var anchors = lastChild.getElementsByTagName('a');
             var eTime = anchors[anchors.length-1].getAttribute('data-m');
@@ -460,9 +439,9 @@ var AJHAWrapper = {
             console.log(newUrlHash);
           }
 
+          // If it's a form it's an effect
 
           if (firstChild.tagName == "FORM") {
-            console.log('found effect');
             var type = firstChild.firstChild.firstChild.nodeValue;
             var duration = firstChild.childNodes[1].value;
             var prefix = "";
@@ -491,17 +470,11 @@ var AJHAWrapper = {
             } else {
               newUrlHash += "/" + prefix + ":" + duration;
             }
-
-            //console.log(type);
-            //console.log("-"+type+"-");
-            //console.log(prefix);
-            console.log(newUrlHash);
           }
         }
-        console.log("attempting to change hash");
+
         document.location.hash = newUrlHash;
       }, false);
-
 
     }, false);
   }

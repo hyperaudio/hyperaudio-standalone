@@ -2117,107 +2117,76 @@ var api = (function(hyperaudio) {
 
       var transcriptObj;
 
-      xhr({
-        url: HAP.options.transcripts + HAP.options.longformId + ".html",
-        complete: function(event) {
-          var html = this.responseText;
-          var parser = new DOMParser();
-          var doc = parser.parseFromString(html, "text/html");
-          var label = doc.getElementsByTagName('header')[0].innerHTML;
+      if (HAP.options.longformId) {
+        xhr({
+          url: HAP.options.transcripts + HAP.options.longformId + ".html",
+          complete: function(event) {
+            var html = this.responseText;
+            var parser = new DOMParser();
+            var doc = parser.parseFromString(html, "text/html");
+            var label = doc.getElementsByTagName('header')[0].innerHTML;
 
-          transcriptObj = {
-            _id: "",
-            label: label,
-            type: "html",
-            owner: "",
-            meta: {
-              status: null,
-              state: 2,
-              mod9: {
-                jobid: ""
-              }
-            },
-            content: this.responseText,
-            media: {
+            transcriptObj = {
               _id: "",
-              label: "",
-              desc: "",
-              type: "video",
+              label: label,
+              type: "html",
               owner: "",
-              namespace: null,
-              meta: "",
-              channel: null,
-              tags: [],
-              modified : "",
-              created : "",
-            },
-            status: "",
-            modified: "",
-            created: ""
-          };
-
-          if (HAP.options.mp4Compat) {
-            transcriptObj.media.source = {
-              mp4: {
-                type: "video/mp4",
-                url: HAP.options.longformMedia,
-                thumbnail: ""
-              }            
-            };            
-          } else {
-            transcriptObj.media.source = {
-              youtube: {
-                type: "video/youtube",
-                url: HAP.options.longformMedia,
-                thumbnail: ""
-              }            
-            };            
-          }
-
-
-
-          //var json = JSON.parse(this.responseText);
-          self.transcript = transcriptObj;
-          self.callback(callback, true);
-        },
-        error: function(event) {
-          self.error = true;
-          self.callback(callback, false);
-        }
-      });
-
-
-      /*if(!force && this.transcript && this.transcript._id === id) {
-        setTimeout(function() {
-          self.callback(callback, true);
-        }, 0);
-      } else {
-        // Do not need to get username for an ID specific request.
-        this.getUsername(function(success) {
-          if(success && id) {
-            xhr({
-              // url: self.url + (self.guest ? '' : self.username + '/') + self.options.transcripts + id,
-              url: self.url + self.options.transcripts + id,
-              complete: function(event) {
-                var json = JSON.parse(this.responseText);
-                self.transcript = json;
-                //MB DEBUG
-                console.log("getTranscript");
-                console.log(self.transcript);
-                //
-                self.callback(callback, true);
+              meta: {
+                status: null,
+                state: 2,
+                mod9: {
+                  jobid: ""
+                }
               },
-              error: function(event) {
-                self.error = true;
-                self.callback(callback, false);
-              }
-            });
-          } else {
-            self.error = true; // Setting the common error prop is redundant, since it would have been set in getUsername failure.
+              content: this.responseText,
+              media: {
+                _id: "",
+                label: "",
+                desc: "",
+                type: "video",
+                owner: "",
+                namespace: null,
+                meta: "",
+                channel: null,
+                tags: [],
+                modified : "",
+                created : "",
+              },
+              status: "",
+              modified: "",
+              created: ""
+            };
+
+            if (HAP.options.mp4Compat) {
+              transcriptObj.media.source = {
+                mp4: {
+                  type: "video/mp4",
+                  url: HAP.options.longformMedia,
+                  thumbnail: ""
+                }            
+              };            
+            } else {
+              transcriptObj.media.source = {
+                youtube: {
+                  type: "video/youtube",
+                  url: HAP.options.longformMedia,
+                  thumbnail: ""
+                }            
+              };            
+            }
+
+            //var json = JSON.parse(this.responseText);
+            self.transcript = transcriptObj;
+            self.callback(callback, true);
+          },
+          error: function(event) {
+            self.error = true;
             self.callback(callback, false);
           }
-        });
-      }*/
+        });      
+      } else {
+        self.callback(callback, false);
+      }
     },
     getMixes: function(callback, force) {
       var self = this;
