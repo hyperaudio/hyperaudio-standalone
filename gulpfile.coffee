@@ -127,7 +127,7 @@ gulp.task "watch", ->
 # ---------------------------------------------- #
 gulp.task "connect", ->
   $.connect.server
-    root: "./mobile"
+    root: "./mobile-" + L
     port: 8002
     livereload: true
 
