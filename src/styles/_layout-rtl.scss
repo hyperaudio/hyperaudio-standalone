@@ -5,6 +5,7 @@
 */
 
 @if $direction == "rtl" {
+  
   .page-body,
   .page-head {
     &.moved--left {

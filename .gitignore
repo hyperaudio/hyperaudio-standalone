@@ -1,5 +1,9 @@
 # Distribution Package
 mobile/
+mobile-E/
+mobile-A/
+mobile-B/
+mobile-T/
 
 # Node modules
 node_modules/
@@ -11,6 +15,8 @@ bower_components/
 mobile/
 
 dev/assets/scripts/
+dev/assets/scripts/vendorq1.js
+dev/assets/scripts/vendorqt.js
 
 dev/assets/styles/
 dev/assets/styles/aj.css

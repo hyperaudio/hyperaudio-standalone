@@ -1,3 +1,6 @@
+var L = 'E'
+if (process.env.LCODE) L = process.env.LCODE;
+
 var extname = require('path').extname;
 var Metalsmith = require('metalsmith');
 
@@ -11,17 +14,17 @@ var assets = require('metalsmith-assets');
 
 var metalsmith = Metalsmith(__dirname);
 metalsmith.source('./src/content');
-metalsmith.destination('./mobile');
+metalsmith.destination('./mobile-' + L);
 
 metalsmith.use(metadata({
-  "films": "data/films.json",
-  "themes": "data/themes.json",
-  "longforms": "data/muse/longforms.json"
+  "films": "data/" + L + "/films.json",
+  "themes": "data/" + L + "/themes.json",
+  "longforms": "data/" + L + "/muse/longforms.json"
 }));
 
 metalsmith.use(markdown({}));
 
-Handlebars.registerPartial('init', fs.readFileSync('./dev/partials/init.html').toString());
+Handlebars.registerPartial('init', fs.readFileSync('./dev/partials/init-' + L + '.html').toString());
 Handlebars.registerPartial('panel-filter', fs.readFileSync('./dev/partials/panel-filter.html').toString());
 Handlebars.registerPartial('panel-language', fs.readFileSync('./dev/partials/panel-language.html').toString());
 Handlebars.registerPartial('panel-share', fs.readFileSync('./dev/partials/panel-share.html').toString());
@@ -89,16 +92,3 @@ metalsmith.build(function(err){
   if (err) throw err;
 });
 
-// "plugins": {
-//   "metalsmith-markdown": {},
-  // "metalsmith-templates": {
-  //   "engine": "handlebars",
-  //   "directory": "palestineremix-mobile/dev",
-  //   "partials": {
-  //     "footer": "footer.html"
-  //   }
-  // },
-//   "metalsmith-assets": {
-//     "source": "./public",
-//     "destination": "."
-//   }
