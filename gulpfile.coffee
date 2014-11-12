@@ -1,5 +1,8 @@
 "use strict"
 
+L       = 'E'
+L       = process.env.LCODE if process.env.LCODE
+
 gulp    = require("gulp")
 $       = require("gulp-load-plugins")()
 
