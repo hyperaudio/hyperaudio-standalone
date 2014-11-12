@@ -134,7 +134,7 @@ var AJHAWrapper = {
 
       // Pad compatible
 
-      var element = '<form onsubmit="return false"><label>'+label+'<span class="value">1</span>s</label><input class="effect-duration" value="'+duration+'" min="'+min+'" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.previousSibling.querySelector(\'span\').innerHTML = this.value;" type="range">';
+      var element = '<form onsubmit="return false"><label>'+label+'<span class="value">'+duration+'</span>s</label><input class="effect-duration" value="'+duration+'" min="'+min+'" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.previousSibling.querySelector(\'span\').innerHTML = this.value;" type="range">';
 
       var section = output.childNodes[index-1];
       section.innerHTML += element;
@@ -346,7 +346,7 @@ var AJHAWrapper = {
       }     
     }
 
-    setEffectsListeners();
+    
 
     document.addEventListener('transcriptready', function () {
 
@@ -355,6 +355,31 @@ var AJHAWrapper = {
       if (target != 'Viewer') {
 
         ajOnInitCallback();
+      }
+
+      setEffectsListeners();
+
+      // general hash change detector
+
+      function updatePadShareUrl() {
+
+        var url = window.location.href;
+
+        document.getElementById('hap-share-url').innerHTML = url;
+
+        document.getElementById('hap-share-facebook').href += url;
+        document.getElementById('hap-share-twitter').href += url;
+        document.getElementById('hap-share-google').href += url;
+        document.getElementById('hap-share-email').href += url;
+
+      }
+
+      updatePadShareUrl();
+
+      
+      window.onhashchange = function() {
+        console.log("hash change");
+        updatePadShareUrl();
       }
 
       var video = document.getElementsByTagName('video');
