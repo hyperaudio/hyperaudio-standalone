@@ -361,11 +361,25 @@ var AJHAWrapper = {
 
       // general hash change detector
 
-      document.getElementById('hap-share-url').innerHTML = document.location;
+      function updatePadShareUrl() {
 
+        var url = window.location.href;
+
+        document.getElementById('hap-share-url').innerHTML = url;
+
+        document.getElementById('hap-share-facebook').href += url;
+        document.getElementById('hap-share-twitter').href += url;
+        document.getElementById('hap-share-google').href += url;
+        document.getElementById('hap-share-email').href += url;
+
+      }
+
+      updatePadShareUrl();
+
+      
       window.onhashchange = function() {
         console.log("hash change");
-        document.getElementById('hap-share-url').innerHTML = document.location;
+        updatePadShareUrl();
       }
 
       var video = document.getElementsByTagName('video');
