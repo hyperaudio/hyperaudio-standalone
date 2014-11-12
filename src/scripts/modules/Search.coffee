@@ -61,10 +61,18 @@ doSearch = ->
               words = sentences[s].split(" ")
               i = 0
               while i < search.length
-                keyword = lunr.stemmer(search[i].toLowerCase())
+                keyword = lunr.stemmer(search[i].toLowerCase()) if L == 'E'
+                keyword = lunr.stemmer(search[i].toLowerCase()) if L == 'B'
+                keyword = lunr.ar.stemmer(search[i].toLowerCase()) if L == 'A'
+                keyword = lunr.tr.stemmer(search[i].toLowerCase()) if L == 'T'
+
                 j = 0
                 while j < words.length
-                  if words[j].toLowerCase().indexOf(keyword) is 0 or words[j].toLowerCase().indexOf("-" + keyword) > -1
+                  sword = lunr.stemmer(words[j].toLowerCase()) if L == 'E'
+                  sword = lunr.stemmer(words[j].toLowerCase()) if L == 'B'
+                  sword = lunr.ar.stemmer(words[j].toLowerCase()) if L == 'A'
+                  sword = lunr.tr.stemmer(words[j].toLowerCase()) if L == 'T'
+                  if sword.indexOf(keyword) is 0
                     words[j] = "<a class=\"highlight\" href=\"/../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + words[j] + "</a>"
                     match++
                   j++
