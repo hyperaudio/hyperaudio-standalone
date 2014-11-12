@@ -17,6 +17,7 @@ metalsmith.source('./src/content');
 metalsmith.destination('./mobile-' + L);
 
 metalsmith.use(metadata({
+  "L": "data/" + L + "/language.json",
   "films": "data/" + L + "/films.json",
   "themes": "data/" + L + "/themes.json",
   "longforms": "data/" + L + "/muse/longforms.json"
