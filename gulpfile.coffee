@@ -17,9 +17,11 @@ SASSPATHS = [
   'bower_components'
 ]
 STYLES = [
-  "./src/styles/**/*.scss"
+  # "./src/styles/**/*.scss"
+  "./src/styles/lang/" + L + "/loader.scss"
 ]
 SCRIPTQ1 = [
+  "./src/scripts/lang/" + L + "/lang.js"
   "./bower_components/pace/pace.js"
 ]
 SCRIPTQ2 = [
