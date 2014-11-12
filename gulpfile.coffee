@@ -17,9 +17,11 @@ SASSPATHS = [
   'bower_components'
 ]
 STYLES = [
-  "./src/styles/**/*.scss"
+  # "./src/styles/**/*.scss"
+  "./src/styles/lang/" + L + "/loader.scss"
 ]
 SCRIPTQ1 = [
+  "./src/scripts/lang/" + L + "/lang.js"
   "./bower_components/pace/pace.js"
 ]
 SCRIPTQ2 = [
@@ -108,9 +110,9 @@ gulp.task "copyfiles", ->
 
 # Build Dist
 # ---------------------------------------------- #
-gulp.task("node-build", $.shell.task ([
-  'node build'
-]))
+gulp.task("node-build", 
+  $.shell.task ['node build'], { env: { LCODE: L} }
+)
 
 # Watch files
 # ---------------------------------------------- #
@@ -125,7 +127,7 @@ gulp.task "watch", ->
 # ---------------------------------------------- #
 gulp.task "connect", ->
   $.connect.server
-    root: "./mobile"
+    root: "./mobile-" + L
     port: 8002
     livereload: true
 
