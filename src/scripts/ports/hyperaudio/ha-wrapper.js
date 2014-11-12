@@ -357,6 +357,15 @@ var AJHAWrapper = {
         ajOnInitCallback();
       }
 
+      // general hash change detector
+
+      document.getElementById('hap-share-url').innerHTML = document.location;
+
+      window.onhashchange = function() {
+        console.log("hash change");
+        document.getElementById('hap-share-url').innerHTML = document.location;
+      }
+
       var video = document.getElementsByTagName('video');
 
       for (var i=0; i < video.length; i++) {
