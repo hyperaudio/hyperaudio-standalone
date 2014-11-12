@@ -110,9 +110,9 @@ gulp.task "copyfiles", ->
 
 # Build Dist
 # ---------------------------------------------- #
-gulp.task("node-build", $.shell.task ([
-  'node build'
-]))
+gulp.task("node-build", 
+  $.shell.task ['node build'], { env: { LCODE: L} }
+)
 
 # Watch files
 # ---------------------------------------------- #

@@ -1,5 +1,9 @@
 # Distribution Package
 mobile/
+mobile-E/
+mobile-A/
+mobile-B/
+mobile-T/
 
 # Node modules
 node_modules/
