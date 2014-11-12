@@ -134,7 +134,7 @@ var AJHAWrapper = {
 
       // Pad compatible
 
-      var element = '<form onsubmit="return false"><label>'+label+'<span class="value">1</span>s</label><input class="effect-duration" value="'+duration+'" min="'+min+'" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.previousSibling.querySelector(\'span\').innerHTML = this.value;" type="range">';
+      var element = '<form onsubmit="return false"><label>'+label+'<span class="value">'+duration+'</span>s</label><input class="effect-duration" value="'+duration+'" min="'+min+'" max="5" step="0.1" onchange="this.setAttribute(\'value\', this.value); this.previousSibling.querySelector(\'span\').innerHTML = this.value;" type="range">';
 
       var section = output.childNodes[index-1];
       section.innerHTML += element;
@@ -346,7 +346,7 @@ var AJHAWrapper = {
       }     
     }
 
-    setEffectsListeners();
+    
 
     document.addEventListener('transcriptready', function () {
 
@@ -356,6 +356,8 @@ var AJHAWrapper = {
 
         ajOnInitCallback();
       }
+
+      setEffectsListeners();
 
       // general hash change detector
 
