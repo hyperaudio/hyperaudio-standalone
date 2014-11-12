@@ -111,7 +111,7 @@ gulp.task "copyfiles", ->
 # Build Dist
 # ---------------------------------------------- #
 gulp.task("node-build", 
-  $.shell.task ['node build'], { env: { LCODE: L} }
+  $.shell.task ['node build'], { env: { LCODE: L } }
 )
 
 # Watch files
@@ -130,6 +130,14 @@ gulp.task "connect", ->
     root: "./mobile-" + L
     port: 8002
     livereload: true
+    middleware: (connect, o) ->
+      [(->
+        url = require("url")
+        proxy = require("proxy-middleware")
+        options = url.parse("http://interactive.aljazeera.com/aje/PalestineRemix/transcripts")
+        options.route = "/aje/PalestineRemix/transcripts"
+        proxy options
+      )()]
 
 # DEFAULT TASK
 # ============================================== #

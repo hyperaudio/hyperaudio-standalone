@@ -48,7 +48,7 @@ doSearch = ->
       resultsContainer.appendChild result
       # AJAX
       request = new XMLHttpRequest()
-      request.open "GET", "http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/text/" + L + "/" + id + ".txt", true
+      request.open "GET", "/aje/PalestineRemix/transcripts/text/" + L + "/" + id + ".txt", true
       request.onreadystatechange = ->
         if @readyState is 4
           if @status >= 200 and @status < 400

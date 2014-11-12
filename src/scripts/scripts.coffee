@@ -1,6 +1,6 @@
 document.addEventListener "DOMContentLoaded", ->
 
-  console.log "السلام عليكم"
+  # console.log "السلام عليكم"
 
   renderDrops()
   renderFoldCards()
