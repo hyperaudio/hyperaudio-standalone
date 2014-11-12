@@ -1,7 +1,7 @@
 # Load search index
 index = undefined # we will load the index in here
 request = new XMLHttpRequest()
-request.open "GET", "http://framebuffer.hyperaudio.net/AJ/transcripts/data/E/index.json", true
+request.open "GET", "http://framebuffer.hyperaudio.net/AJ/transcripts/data/" + L + "/index.json", true
 request.onreadystatechange = ->
   if @readyState is 4
     if @status >= 200 and @status < 400
