@@ -29,6 +29,7 @@
     }
     img {
       width: 100%;
+      display: block;
     }
     .videoembed {
       @include scale-embed;
@@ -70,12 +71,14 @@
 
   // Result
   .how_you_did {
-    @include fill-green;
+    @extend %well;
+    border-top: 1px solid $shadow-light;
     @include set-type-large;
-    @include animation(pulse 2s infinite);
-    border-top: 2px solid $green-LD;
-    padding: $space 0;
+    padding: $space-s;
     margin-top: $space-h;
+    margin-left: $space * -1;
+    margin-right: $space * -1;
+    margin-bottom: $space * -2;
     text-align: center;
     .correct_answers {
       font-weight: $font-bold;
@@ -93,10 +96,8 @@
 /*more styling for answers*/
 
 .quiz_container .revealed_answer p {
-  font-size: 1.2em;
-  line-height: 1.5em;
-  min-height: 3em;
-  font-weight: normal;
+  font-weight: $font-bold;
+  text-align: center;
 }
 
 .quiz_container .revealed_answer a {
@@ -128,12 +129,4 @@
 .quiz_container .question img, .revealed_answer img, .selected img, .correct_answer img, .wrong_answer img {
   max-height: 24em;
   display: block;
-}
-
-/* media queries */
-
-@media (max-width: 480px) {
-  .quiz_container .question img, .revealed_answer img {
-    display: none;
-  }
 }
