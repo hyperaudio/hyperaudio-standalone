@@ -193,6 +193,7 @@ var AJHAWrapper = {
       for (var i=0; i < params.length; i++) {
         var cmd = params[i].split(':');
 
+        console.log(params);
         console.log(cmd);
 
         if (isNaN(cmd[0])) {
@@ -223,6 +224,7 @@ var AJHAWrapper = {
       }
     }
 
+    var q;
 
     function buildState() {
       console.log("building state");
@@ -235,7 +237,7 @@ var AJHAWrapper = {
         output.appendChild(document.createElement('section'));
       }
 
-      var q = queue(1);
+      q = queue(1);
 
       // do we have any hash params? 
 
