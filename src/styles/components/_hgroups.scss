@@ -28,11 +28,16 @@
 }
 
 .hgroup__subtitle {
-  @include set-type-large;
+  @include set-type-xsmall;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   display: none;
-  font-weight: $font-bold;
   @include breakpoint(m) {
+    @include set-type-large;
     display: block;
+    letter-spacing: 0;
+    font-weight: $font-bold;
+    text-transform: none;
   }
 }
 
