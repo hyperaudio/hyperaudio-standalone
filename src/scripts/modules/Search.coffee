@@ -20,7 +20,7 @@ request.onreadystatechange = ->
 getParameterByName = (name) ->
   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]")
   regex = new RegExp("[\\?&]" + name + "=([^&#]*)")
-  results = regex.exec(location.search)
+  results = regex.exec(window.top.location.search) 
   (if results is null then "" else decodeURIComponent(results[1].replace(/\+/g, " ")))
 
 # Do the magic
