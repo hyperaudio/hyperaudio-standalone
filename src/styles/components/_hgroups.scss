@@ -32,11 +32,13 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   display: none;
+  opacity: $opacity;
   @include breakpoint(m) {
     @include set-type-large;
     display: block;
     letter-spacing: 0;
     font-weight: $font-bold;
+    opacity: 1;
     text-transform: none;
   }
 }
