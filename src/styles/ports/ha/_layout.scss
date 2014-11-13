@@ -32,3 +32,7 @@
     @include set-size(100%,60%);
   }
 }
+
+.HAP.fullscreen .HAP-canvas {
+  height: 100%;
+}

@@ -60,6 +60,8 @@
   @include stick-footer($page-foot-height, ".page-wrap", ".page-push", ".page-foot");
 }
 
+// Adjustments of PAD and VIEWER on Desktop, rely on adding .tpl--compact class to body of both pages
+
 .tpl--remix.tpl--compact,
 .tpl--pad.tpl--compact {
   .page-head,
