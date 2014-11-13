@@ -57,3 +57,7 @@ Remove cookies and comment out:
 ```
 
 …in HAVtour.coffee
+
+## Iframing PAD and VIEWER in desktop version
+
+Add in .tpl--compact to `<body>` tag

@@ -42,6 +42,9 @@
   .HAP-header {
     display: none;
   }
+  .HAP-transcript.HAP-transcript--output {
+    padding-bottom: 0;
+  }
 }
 
 // Stick Footer only internal pages, where the actually we have footer - fixes home page slider thingy
@@ -55,4 +58,19 @@
 .tpl--theme,
 .tpl--viewer {
   @include stick-footer($page-foot-height, ".page-wrap", ".page-push", ".page-foot");
+}
+
+.tpl--remix.tpl--compact,
+.tpl--pad.tpl--compact {
+  .page-head,
+  .page-side,
+  .page-foot {
+    display: none;
+  }
+  .page-body {
+    padding-top: 0;
+  }
+  #HAP-remix-helper {
+    display: inline-block;
+  }
 }

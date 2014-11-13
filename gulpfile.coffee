@@ -110,14 +110,14 @@ gulp.task "copyfiles", ->
 
 # Build Dist
 # ---------------------------------------------- #
-gulp.task("node-build", 
+gulp.task("node-build",
   $.shell.task ['node build'], { env: { LCODE: L } }
 )
 
 # Watch files
 # ---------------------------------------------- #
 gulp.task "watch", ->
-  gulp.watch STYLES, [ "compile-sass", "node-build" ]
+  gulp.watch ["./src/styles/**/*.scss"], [ "compile-sass", "node-build" ]
   gulp.watch ["./dev/**/*.html"], ["html", "node-build"]
   gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee", "./bower_components/**/*.js"], ["compile-coffee", "node-build"]
   gulp.watch SCRIPTQ3, ["concat-ports", "node-build"]
