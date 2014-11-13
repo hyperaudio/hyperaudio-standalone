@@ -7,7 +7,9 @@ renderDrops     = () ->
       content                 : ->
         return this.target.nextElementSibling.innerHTML
       position                : 'left middle'
-      openOn                  : 'click'
+      openOn                  : 'hover'
       constrainToWindow       : true
       constrainToScrollParent : true
       remove                  : true
+    dropTarget.addEventListener "click", (e) ->
+      shareable.toggle()
