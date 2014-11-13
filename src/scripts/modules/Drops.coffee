@@ -11,5 +11,8 @@ renderDrops     = () ->
       constrainToWindow       : true
       constrainToScrollParent : true
       remove                  : true
-    dropTarget.addEventListener "click", (e) ->
+    window.addEventListener "click", () ->
+      shareable.close()
+    dropTarget.addEventListener "click", () ->
       shareable.toggle()
+      event.stopPropagation()
