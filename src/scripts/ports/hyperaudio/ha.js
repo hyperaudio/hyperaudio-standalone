@@ -1003,7 +1003,7 @@ var SideMenu = (function (document, hyperaudio) {
           anchor.addEventListener('click', function() {
             var ev = document.createEvent('Event');
             ev.initEvent('padmenuclick', true, true);
-            document.dispatchEvent(ev);        
+            document.dispatchEvent(ev);
           }, false);
           list.appendChild(anchor);
           alltrans.appendChild(list);
@@ -1736,16 +1736,16 @@ var api = (function(hyperaudio) {
                   type: "video/mp4",
                   url: HAP.options.longformMedia,
                   thumbnail: ""
-                }            
-              };            
+                }
+              };
             } else {
               transcriptObj.media.source = {
                 youtube: {
                   type: "video/youtube",
                   url: HAP.options.longformMedia,
                   thumbnail: ""
-                }            
-              };            
+                }
+              };
             }
 
             //var json = JSON.parse(this.responseText);
@@ -1756,7 +1756,7 @@ var api = (function(hyperaudio) {
             self.error = true;
             self.callback(callback, false);
           }
-        });      
+        });
       } else {
         self.callback(callback, false);
       }
@@ -2735,7 +2735,7 @@ var PlayerGUI = (function (window, document, hyperaudio) {
         holders[i].className = holders[i].className.replace( /(?:^|\s)fullscreen(?!\S)/ , '' );
       }
 
-      
+
     },
 
     _isFullscreen: function () {
@@ -3023,7 +3023,7 @@ var Transcript = (function(document, hyperaudio) {
 
         var onNewPara = function(parent) {
 
-          var transcriptHolders = document.getElementsByClassName("HAP-transcript");
+          var transcriptHolders = document.getElementsByClassName("HAP-transcript--output");
           [].forEach.call(transcriptHolders, function(transcriptHolder) {
             var currentPosition  = parent.offsetTop;
             scrollTo(transcriptHolder, currentPosition, 350)
@@ -3730,7 +3730,7 @@ var Projector = (function(window, document, hyperaudio, Popcorn) {
       var elems, e, eLen;
       var onNewPara = function(parent) {
 
-        var transcriptHolders = document.getElementsByClassName("HAP-transcript");
+        var transcriptHolders = document.getElementsByClassName("HAP-transcript--output");
         [].forEach.call(transcriptHolders, function(transcriptHolder) {
           var currentPosition  = parent.offsetTop;
           scrollTo(transcriptHolder, currentPosition, 350)
