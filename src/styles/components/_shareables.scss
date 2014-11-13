@@ -1,0 +1,20 @@
+/**
+ * Shareables
+ * ============================================ */
+
+.shareables {
+  z-index: 95;
+}
+.shareable {
+  @include set-size(26px, 26px);
+  border-radius: $radius-s;
+  background: $shadow-medium;
+  color: $mono-Wt;
+  display: inline-block;
+  line-height: 26px;
+  text-align: center;
+  i {
+    position: relative;
+    top: 2px;
+  }
+}

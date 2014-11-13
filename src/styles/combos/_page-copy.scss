@@ -78,20 +78,6 @@
     img {
       width: 100%;
     }
-    .drop {
-      @include set-size($tap-size, $tap-size);
-      border-radius: $radius-s;
-      background: $shadow-medium;
-      color: $mono-Wt;
-      display: block;
-      line-height: $tap-size;
-      text-align: center;
-      z-index: 95;
-      i {
-        position: relative;
-        top: 2px;
-      }
-    }
     @include breakpoint(m) {
       margin-top: $space-l;
     }
@@ -132,7 +118,7 @@
 @if $direction == "ltr" {
   .page-copy {
     figure {
-      .drop {
+      .shareables {
         @include position-top-right($space-x,$space-x);
       }
     }
@@ -141,7 +127,7 @@
 @if $direction == "rtl" {
   .page-copy {
     figure {
-      .drop {
+      .shareables {
         @include position-top-left($space-x,$space-x);
       }
     }
