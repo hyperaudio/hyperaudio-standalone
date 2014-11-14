@@ -6,6 +6,23 @@ var AJHAWrapper = {
 
   init : function(target, transcriptsPath, ajOnInitCallback) {
 
+    // browser sniff
+
+    var mobileDevice = false;
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      mobileDevice = true;
+    } 
+
+    if (mobileDevice == false) { // add the Remix icon and link
+      var body = document.getElementsByTagName('body');
+      body[0].classList.add('tpl--compact');
+      var remixButton = document.getElementById('HAP-remix-helper');
+      if (remixButton) {
+        remixButton.href = "../create/"+document.location.hash;
+      }
+    }
+
     var v = document.createElement('video');
     var canPlayMP4 = !!v.canPlayType && v.canPlayType('video/mp4') != "";
 
@@ -364,6 +381,7 @@ var AJHAWrapper = {
     document.addEventListener('transcriptready', function () {
 
       console.log("transcript ready");
+
 
       if (target != 'Viewer') {
 
