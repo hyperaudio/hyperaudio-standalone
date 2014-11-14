@@ -1,3 +1,9 @@
+unless window.parent is window.top
+  if document.body.classList
+    document.body.classList.add "tpl--compact"
+  else
+    document.body.className += " tpl--compact"
+
 renderHead = () ->
   pageHead      = document.getElementById "page-head"
   unless pageHead is null
