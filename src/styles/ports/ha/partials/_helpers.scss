@@ -1,5 +1,5 @@
 .HAP-helpers {
-  @include position-top-right($space,0);
+  @include position-top-right($space-x,0);
   z-index: 30;
 }
 
@@ -12,7 +12,7 @@
   height: 32px;
   line-height: 35px;
   min-width: 32px;
-  margin-right: $space;
+  margin-left: $space;
   padding: 0 $space-x;
   text-align: center;
 }

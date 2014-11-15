@@ -308,8 +308,10 @@ var AJHAWrapper = {
               if (selection.start) {
 
                 selectionTextContent = "'" + selection.text + "' :";
-                selectionTextURI = window.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
-                toggleHAVDrop(selection, selectionTextContent, selectionTextURI);
+                selectionTextURI     = window.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
+                selectionElement     = window.getSelection();
+
+                toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
 
                 //clear selection
 

@@ -4,10 +4,8 @@ toggleHAVDrop = (el, text, uri) ->
   console.log "uri: " + uri
 
   # HAVdrop = new Drop
-  #   target: ->
-  #     document.createElement el
-  #   content: ->
-  #     return text
+  #   target: el
+  #   content: text
   #   position: 'top center'
   #   openOn: 'always'
 
