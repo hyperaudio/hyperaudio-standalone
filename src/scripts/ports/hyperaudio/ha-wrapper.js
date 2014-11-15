@@ -12,7 +12,7 @@ var AJHAWrapper = {
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       mobileDevice = true;
-    } 
+    }
 
     if (mobileDevice == false) { // add the Remix icon and link
       var body = document.getElementsByTagName('body');
@@ -96,7 +96,7 @@ var AJHAWrapper = {
               attribute.value = mp4id;
             } else {
               attribute = document.createAttribute('data-yt');
-              attribute.value = ytid;              
+              attribute.value = ytid;
             }
 
             section.setAttributeNode(attribute);
@@ -174,7 +174,7 @@ var AJHAWrapper = {
       // check for timing parameters which means it's been shared or jumped to
 
       if (params.length > 1) {
-        
+
         startTime = params[2];
         endTime = params[3];
 
@@ -203,7 +203,7 @@ var AJHAWrapper = {
           }
 
         }, false);
-      }      
+      }
     }
 
     function buildMix(params) {
@@ -256,14 +256,14 @@ var AJHAWrapper = {
 
       q = queue(1);
 
-      // do we have any hash params? 
+      // do we have any hash params?
 
       if (state) {
 
         // checking if it's a full video
 
         if (params[1].split(':').length == 1) {
-          
+
           buildVideo(params);
 
         } else {
@@ -307,7 +307,9 @@ var AJHAWrapper = {
 
               if (selection.start) {
 
-                alert("'" + selection.text + "' :" + window.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000));
+                selectionTextContent = "'" + selection.text + "' :";
+                selectionTextURI = window.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
+                toggleHAVDrop(selection, selectionTextContent, selectionTextURI);
 
                 //clear selection
 
@@ -373,10 +375,10 @@ var AJHAWrapper = {
       for( var i = 0; i < fullscreenCheck.length; i++){
         fullscreenCheck[i].removeEventListener('change', fireMixchangeEvent, false);
         fullscreenCheck[i].addEventListener('change', fireMixchangeEvent, false);
-      }     
+      }
     }
 
-    
+
 
     document.addEventListener('transcriptready', function () {
 
@@ -410,7 +412,7 @@ var AJHAWrapper = {
 
       updatePadShareUrl();
 
-      
+
       window.onhashchange = function() {
         console.log("hash change");
         updatePadShareUrl();
@@ -438,7 +440,7 @@ var AJHAWrapper = {
 
         if (sidemenuItems[i].href.length > 0) {
           sidemenuItems[i].addEventListener('click', function() {
-            window.onhashchange = buildState;           
+            window.onhashchange = buildState;
           }, false);
         }
       }
@@ -452,7 +454,7 @@ var AJHAWrapper = {
           var longformMedia;
 
           if (isNaN(longformId) == false)
-          { 
+          {
             if (canPlayMP4) {
               longformMedia = AJHAVideoInfo[longformId].split(',')[1];
             } else {
