@@ -1,6 +1,9 @@
 .HAP-helpers {
   @include position-top-right($space-x,0);
   z-index: 30;
+  @include breakpoint(m) {
+    @include position-top-right($space,$space);
+  }
 }
 
 .HAP-helper {
