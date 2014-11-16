@@ -1,5 +1,41 @@
 {
+	
+	"search__placeholder": "Search, e.g. 1948, Ahmed Abu Al-Sukkhar, Haifa…",
+
+	"header__current-lang": "EN",
+	"header__menu": "Menu",
+	"header__share": "Share",
+
+	"panel-lang__change-lang": "Change language",
+	"panel-lang__cancel": "Cancel",
+
+	"panel-share__share-remix": "Share your remix",
+	"panel-share__share-remix-with": "Share your Remix with your closest:",
+	"panel-share__save-loc": "Save location of your Remix to come back to it later:",
+	"panel-share__done": "Done",
+	"panel-share__close": "Close",
+
+	"aside-right__share-page": "Share this page",
+	"aside-right__share-page2": "Love it like we do? Pass it on.",
+
+	"aside-left__title": "Palestine Remix",
+	"aside-left__subtitle": "Start your search and discovery here",
+	"aside-left__subtitle2": "Explore curated content",
+	"aside-left__films": "Films",
+	"aside-left__remixes": "Remixes",
+	"aside-left__glossary": "Glossary",
+	"aside-left__maps": "Maps",
+	"aside-left__quizzes": "Quizzes",
+	"aside-left__browseby": "Browse by",
+	"aside-left__byDate": "Date",
+	"aside-left__byPlace": "Place",
+	"aside-left__byWitness": "Witness",
+	"aside-left__footAJ": "Al Jazeera Network",
+	"aside-left__footProj": "The Project",
+	"aside-left__footTeam": "The Team",
+
 	"longform__watch-full-doc": "Watch the full documentary (45')",
+
 	"pad__start-creating-remix": "Start creating your Remix by selecting a film…",
 	"pad__fade": "Fade",
 	"pad__trim": "Trim",

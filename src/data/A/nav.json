@@ -1,0 +1,88 @@
+{
+"films": [
+  { "_id": 1,
+    "label": "Against the wall",
+    "file": "against-the-wall"
+  },
+  { "_id": 17,
+    "label": "Al Nakba 1",
+    "file": ""
+  },
+  { "_id": 18,
+    "label": "Al Nakba 2",
+    "file": ""
+  },
+  { "_id": 19,
+    "label": "Al Nakba 3",
+    "file": ""
+  },
+  { "_id": 20,
+    "label": "Al Nakba 4",
+    "file": ""
+  },
+  { "_id": 2,
+    "label": "Area C",
+    "file": ""
+  },
+  { "_id": 3,
+    "label": "Beyond the walls",
+    "file": ""
+  },
+  { "_id": 4,
+    "label": "Forbidden Pilgrimage",
+    "file": ""
+  },
+  { "_id": 5,
+    "label": "Gaza left in the dark",
+    "file": "gaza-left-in-the-dark"
+  },
+  { "_id": 6,
+    "label": "Gaza lives on",
+    "file": ""
+  },
+  { "_id": 7,
+    "label": "Gaza we are coming",
+    "file": ""
+  },
+  { "_id": 0,
+    "label": "Going against the grain",
+    "file": ""
+  },
+  { "_id": 16,
+    "label": "Hunger Strike",
+    "file": ""
+  },
+  { "_id": 8,
+    "label": "Inside Shin Bet",
+    "file": ""
+  },
+  { "_id": 9,
+    "label": "Last shepherds of the valley",
+    "file": ""
+  },
+  { "_id": 10,
+    "label": "Lost cities of Palestine",
+    "file": ""
+  },
+  { "_id": 11,
+    "label": "Palestine Amore",
+    "file": ""
+  },
+  { "_id": 13,
+    "label": "Stronger than words",
+    "file": ""
+  },
+  { "_id": 12,
+    "label": "The pain inside",
+    "file": ""
+  },
+  { "_id": 14,
+    "label": "The price of Oslo 1",
+    "file": ""
+  },
+  { "_id": 15,
+    "label": "The price of Oslo 2",
+    "file": ""
+  }
+]
+}
