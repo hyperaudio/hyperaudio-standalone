@@ -2690,7 +2690,11 @@ var PlayerGUI = (function (window, document, hyperaudio) {
       }
     },
 
+
     fullscreen: function () {
+
+      console.log("fullscreen function");
+
       if ( !this._isFullscreen() ) {
         this._requestFullScreen();
         return;
@@ -2711,10 +2715,11 @@ var PlayerGUI = (function (window, document, hyperaudio) {
       //console.log('adding fullscreen class');
       var holders = document.getElementsByClassName("HAP");
 
+      console.log("request fullscreen");
+
       for (var i = 0; i < holders.length; i++) {
         holders[i].setAttribute("class", "fullscreen "+holders[i].className);
       }
-
     },
 
     _cancelFullScreen: function () {
@@ -2731,7 +2736,10 @@ var PlayerGUI = (function (window, document, hyperaudio) {
       //console.log('removing fullscreen class');
       var holders = document.getElementsByClassName("HAP");
 
+      console.log("cancel fullscreen request");
+
       for (var i = 0; i < holders.length; i++) {
+        console.log(holders[i].className);
         holders[i].className = holders[i].className.replace( /(?:^|\s)fullscreen(?!\S)/ , '' );
       }
 

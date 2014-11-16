@@ -404,10 +404,10 @@ var AJHAWrapper = {
 
           document.getElementById('hap-share-url').innerHTML = url;
 
-          document.getElementById('hap-share-facebook').href += url;
-          document.getElementById('hap-share-twitter').href += url;
-          document.getElementById('hap-share-google').href += url;
-          document.getElementById('hap-share-email').href += url;
+          document.getElementById('hap-share-facebook').href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+          document.getElementById('hap-share-twitter').href = "https://twitter.com/home?status=" + url;
+          document.getElementById('hap-share-google').href = "https://plus.google.com/share?url=" + url;
+          document.getElementById('hap-share-email').href = "mailto:?subject=Message%20via%20PALESTINE%20REMIX&body=Hey%2C%20%0A%0Acheck%20this%20page%3A%20" + url;
         }
 
       }
