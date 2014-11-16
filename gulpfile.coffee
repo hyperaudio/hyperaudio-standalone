@@ -134,8 +134,8 @@ gulp.task "connect", ->
       [(->
         url = require("url")
         proxy = require("proxy-middleware")
-        options = url.parse("http://interactive.aljazeera.com/aje/PalestineRemix/transcripts")
-        options.route = "/aje/PalestineRemix/transcripts"
+        options = url.parse("http://interactive.aljazeera.com/AJE/PalestineRemix/transcripts")
+        options.route = "/AJE/PalestineRemix/transcripts"
         proxy options
       )()]
 

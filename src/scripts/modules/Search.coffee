@@ -1,7 +1,7 @@
 # Load search index
 index = undefined # we will load the index in here
 request = new XMLHttpRequest()
-request.open "GET", "/aje/PalestineRemix/transcripts/data/" + L + "/index.json", true
+request.open "GET", "/AJE/PalestineRemix/transcripts/data/" + L + "/index.json", true
 request.onreadystatechange = ->
   if @readyState is 4
     if @status >= 200 and @status < 400
@@ -48,7 +48,7 @@ doSearch = ->
       resultsContainer.appendChild result
       # AJAX
       request = new XMLHttpRequest()
-      request.open "GET", "/aje/PalestineRemix/transcripts/text/" + L + "/" + id + ".txt", true
+      request.open "GET", "/AJE/PalestineRemix/transcripts/text/" + L + "/" + id + ".txt", true
       request.onreadystatechange = ->
         if @readyState is 4
           if @status >= 200 and @status < 400
