@@ -20,7 +20,8 @@ metalsmith.use(metadata({
   "L": "data/" + L + "/language.json",
   "films": "data/" + L + "/films.json",
   "themes": "data/" + L + "/themes.json",
-  "longforms": "data/" + L + "/muse/longforms.json"
+  "longforms": "data/" + L + "/muse/longforms.json",
+  "nav": "data/" + L + "/nav.json"
 }));
 
 metalsmith.use(markdown({}));

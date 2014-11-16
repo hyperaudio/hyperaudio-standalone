@@ -4,43 +4,43 @@
       <div id="menu__pane--root" class="menu__pane">
         <div class="menu__body">
           <div class="headline" style="background-image: url('{{path}}assets/images/temp8.jpg')">
-            <h2 class="headline__title"><i class="icon-home"></i> <a href="{{path}}">Palestine Remix</a></h2>
-            <p class="headline__text">Start your search and discovery here</p>
+            <h2 class="headline__title"><i class="icon-home"></i> <a href="{{path}}">{{L.aside-left__title}}</a></h2>
+            <p class="headline__text">{{L.aside-left__subtitle}}</p>
           </div>
           <form action="{{path}}search/">
             <div class="search">
-              <input class="text-input menu__search" name="search" type="search" placeholder="Search, e.g. 1948, Ahmed Abu Al-Sukkhar, Haifa…" value=""/>
+              <input class="text-input menu__search" name="search" type="search" placeholder="{{L.search__placeholder}}" value=""/>
               <i class="icon-search"></i>
             </div>
           </form>
-          <h3 class="menu__subtitle">Explore curated content</h3>
+          <h3 class="menu__subtitle">{{L.aside-left__subtitle2}}</h3>
           <ol class="menu__list">
             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="documentaries">Films <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="documentaries">{{L.aside-left__films}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="remixes">Remixes <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="remixes">{{L.aside-left__remixes}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="themes">Glossary <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="themes">{{L.aside-left__glossary}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="maps">Maps <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="maps">{{L.aside-left__maps}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="quizzes">Quizzes <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="quizzes">{{L.aside-left__quizzes}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
           </ol>
-          <h3 class="menu__subtitle">Browse by</h3>
+          <h3 class="menu__subtitle">{{L.aside-left__browseby}}</h3>
           <ol class="menu__list mbm">
             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="eras">Date <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="eras">{{L.aside-left__byDate}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="places">Place <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="places">{{L.aside-left__byPlace}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="characters">Witness <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="characters">{{L.aside-left__byWitness}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
           </ol>
           <div class="menu__push"></div>
@@ -50,39 +50,25 @@
             <i class="icon-aj"></i>
           </span>
           <span class="footnotes">
-            Al Jazeera Network<br/>
-            <a href="{{path}}about/">The Project</a> • <a href="{{path}}credits/">The Team</a>
+            {{L.aside-left__footAJ}}<br/>
+            <a href="{{path}}about/">{{L.aside-left__footProj}}</a> • <a href="{{path}}credits/">{{L.aside-left__footTeam}}</a>
           </span>
         </div>
       </div>
       <div id="menu__pane--documentaries" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/temp3.jpg')">
-          <h2 class="headline__title">Films</h2>
+          <h2 class="headline__title">{{L.aside-left__films}}</h2>
           <p class="headline__text">Film descriptions</p>
         </div>
         <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/against-the-wall/">Against the Wall</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Al Nakba</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Area C</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/beyond-the-walls/">Beyond the Walls</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Forbidden Pilgrimage</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Gaza Left in the Dark</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Gaza Lives On</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Gaza We are Coming</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/going-against-the-grain/">Going Against the Grain</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Hunger Strike</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Inside Shin Bet</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Last Shepherds of the Valley</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Lost Cities of Palestine</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Palestina Amore</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">Stronger than Words</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/the-pain-inside/">The Pain Inside</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}films/gaza-left-in-the-dark/">The Price of Oslo</a></li>
+        {{#each nav.films}}
+          <li class="menu__item"><a class="menu__link" href="{{path}}films/{{file}}/">{{label}}</a></li>
+        {{/each}}
         </ol>
       </div>
       <div id="menu__pane--remixes" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/temp4.jpg')">
-          <h2 class="headline__title">Remixes</h2>
+          <h2 class="headline__title">{{L.aside-left__remixes}}</h2>
           <p class="headline__text">Our films—remixed by you—into new Palestinian stories</p>
         </div>
         <ol class="menu__list">
@@ -96,7 +82,7 @@
       </div>
       <div id="menu__pane--themes" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/temp6.jpg')">
-          <h2 class="headline__title">Glossary</h2>
+          <h2 class="headline__title">{{L.aside-left__glossary}}</h2>
           <p class="headline__text">Keywords to help understand Palestine Remix</p>
         </div>
         <ol class="menu__list">
@@ -112,7 +98,7 @@
       </div>
       <div id="menu__pane--maps" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/temp8.jpg')">
-          <h2 class="headline__title">Maps</h2>
+          <h2 class="headline__title">{{L.aside-left__maps}}</h2>
           <p class="headline__text">Explore our Palestine Maps</p>
         </div>
         <h3 class="menu__subtitle">Interactive Maps</h3>
@@ -128,7 +114,7 @@
       </div>
       <div id="menu__pane--quizzes" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/temp7.jpg')">
-          <h2 class="headline__title">Quizzes</h2>
+          <h2 class="headline__title">{{L.aside-left__quizzes}}</h2>
           <p class="headline__text">How would you rate your level of knowledge on Palestinian issues?</p>
         </div>
         <ol class="menu__list">
