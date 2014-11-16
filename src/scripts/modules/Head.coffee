@@ -1,4 +1,4 @@
-unless window.parent is window.top
+unless window.parent is window
   if document.body.classList
     document.body.classList.add "tpl--compact"
   else
