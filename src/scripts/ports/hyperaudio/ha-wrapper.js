@@ -23,6 +23,28 @@ var AJHAWrapper = {
       }
     }
 
+    function isFullScreen() {
+      return !!(document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.webkitCurrentFullScreenElement || document.msFullscreenElement || false);
+    }
+
+    function fullscreenHandler() {
+      var holders = document.getElementsByClassName("HAP");
+
+      if (isFullScreen() == true) {
+        for (var i = 0; i < holders.length; i++) {
+          holders[i].setAttribute("class", "fullscreen "+holders[i].className);
+        }
+      } else {
+        for (var i = 0; i < holders.length; i++) {
+          holders[i].className = holders[i].className.replace( /(?:^|\s)fullscreen(?!\S)/ , '' );
+        }
+      }
+    }
+
+    document.addEventListener("fullscreenchange", fullscreenHandler, false);      
+    document.addEventListener("webkitfullscreenchange", fullscreenHandler, false);
+    document.addEventListener("mozfullscreenchange", fullscreenHandler, false);
+
     var v = document.createElement('video');
     var canPlayMP4 = !!v.canPlayType && v.canPlayType('video/mp4') != "";
 
