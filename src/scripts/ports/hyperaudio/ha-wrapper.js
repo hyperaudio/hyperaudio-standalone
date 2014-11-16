@@ -337,6 +337,12 @@ var AJHAWrapper = {
 
                 //clear selection
 
+                console.log(selectionTextContent);
+                console.log(selectionTextURI);
+                //console.log(selectionElement);
+
+                document.getElementById("share-selection").innerHTML = selectionTextContent + selectionTextURI;
+
                 [].forEach.call(document.querySelectorAll("a"), function(el) {
                   el.classList.remove('selected');
                 });
