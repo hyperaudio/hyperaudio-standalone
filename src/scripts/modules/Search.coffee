@@ -73,7 +73,7 @@ doSearch = ->
                   sword = lunr.ar.stemmer(words[j].toLowerCase()) if L == 'A'
                   sword = lunr.tr.stemmer(words[j].toLowerCase()) if L == 'T'
                   if sword.indexOf(keyword) is 0
-                    words[j] = "<a class=\"highlight\" href=\"/../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + words[j] + "</a>"
+                    words[j] = "<a class=\"highlight\" href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + words[j] + "</a>"
                     match++
                   j++
                 i++
