@@ -15,8 +15,8 @@ var AJHAWrapper = {
     }
 
     if (mobileDevice == false) { // add the Remix icon and link
-      var body = document.getElementsByTagName('body');
-      body[0].classList.add('tpl--compact');
+      // var body = document.getElementsByTagName('body');
+      // body[0].classList.add('tpl--compact');
       var remixButton = document.getElementById('HAP-remix-helper');
       if (remixButton) {
         remixButton.href = "../create/"+document.location.hash;
