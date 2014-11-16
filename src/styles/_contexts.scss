@@ -77,3 +77,7 @@
     display: inline-block;
   }
 }
+
+html.english .noenglish, html.arabic .noarabic, html.turkish .noturkish, html.bosnian .nobosnian {
+  display: none;
+}
