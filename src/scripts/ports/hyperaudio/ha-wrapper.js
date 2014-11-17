@@ -41,7 +41,7 @@ var AJHAWrapper = {
       }
     }
 
-    document.addEventListener("fullscreenchange", fullscreenHandler, false);      
+    document.addEventListener("fullscreenchange", fullscreenHandler, false);
     document.addEventListener("webkitfullscreenchange", fullscreenHandler, false);
     document.addEventListener("mozfullscreenchange", fullscreenHandler, false);
 
@@ -331,17 +331,21 @@ var AJHAWrapper = {
 
                 selectionTextContent = "'" + selection.text + "' :";
                 selectionTextURI     = window.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
-                selectionElement     = window.getSelection();
+                selectionElement     = document.getElementById("share-selection");
 
-                toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
+                alterPanelState("share-transcript");
 
-                //clear selection
+                [].forEach.call(document.querySelectorAll(".jsSetShareTranscriptURL"), function(el) {
+                  var shareLinkHref   = el.getAttribute("href");
+                  var shareLinkNuHref = shareLinkHref.replace("UURRLL", selectionTextURI);
+                  el.setAttribute("href", shareLinkNuHref);
+                  el.classList.remove('selected');
+                });
 
-                console.log(selectionTextContent);
-                console.log(selectionTextURI);
-                //console.log(selectionElement);
 
-                document.getElementById("share-selection").innerHTML = selectionTextContent + selectionTextURI;
+                // toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
+
+                document.getElementById('hav-share-url').innerHTML = selectionTextURI;
 
                 [].forEach.call(document.querySelectorAll("a"), function(el) {
                   el.classList.remove('selected');
