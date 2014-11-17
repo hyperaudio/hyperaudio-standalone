@@ -55,3 +55,8 @@
 .HAP-transcript__item {
   position: relative;
 }
+
+.HAP--pad .HAP-transcript--source p,
+.HAP--viewer .HAP-transcript--output p {
+  margin-bottom: $line / 2;
+}
