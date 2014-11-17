@@ -5,29 +5,29 @@
 .listing {
   @extend %well;
   @include fit(1, 2, 3);
-  margin-bottom: -1px;
+  margin-top: -1px;
 }
 
 .listing__item {
-  border-bottom-width: 1px;
+  border-top-width: 1px;
   border-color: $mono-HL;
   padding: $space-x;
   @include breakpoint(m) {
-    border-right-width: 1px;
-    margin-right: -1px;
+    // border-right-width: 1px;
+    // margin-right: -1px;
     &:nth-of-type(2n) {
       border-right-width: 0;
     }
   }
   @include breakpoint(l) {
     padding: $space-s;
-    border-right-width: 1px;
-    margin-right: -1px;
+    // border-right-width: 1px;
+    // margin-right: -1px;
     &:nth-of-type(2n) {
-      border-right-width: 1px;
+      // border-right-width: 1px;
     }
     &:nth-of-type(3n) {
-      border-right-width: 0;
+      // border-right-width: 0;
     }
   }
 }
