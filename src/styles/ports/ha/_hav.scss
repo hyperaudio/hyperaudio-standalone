@@ -2,6 +2,14 @@
  * Hyperaudio Viewer
  * ============================================ */
 
+
+.HAP--viewer {
+  .HAP-transcript--output {
+    p {
+      margin-bottom: $line / 2;
+    }
+  }
+}
 // #output-transcript .effect {
 //   display: none;
 // }
