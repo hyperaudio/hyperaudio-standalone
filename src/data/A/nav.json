@@ -26,7 +26,7 @@
   },
   { "_id": 3,
     "label": "Beyond the walls",
-    "file": ""
+    "file": "beyond-the-walls"
   },
   { "_id": 4,
     "label": "Forbidden Pilgrimage",
@@ -46,7 +46,7 @@
   },
   { "_id": 0,
     "label": "Going against the grain",
-    "file": ""
+    "file": "going-against-the-grain"
   },
   { "_id": 16,
     "label": "Hunger Strike",
@@ -74,7 +74,7 @@
   },
   { "_id": 12,
     "label": "The pain inside",
-    "file": ""
+    "file": "the-pain-inside"
   },
   { "_id": 14,
     "label": "The price of Oslo 1",
