@@ -337,7 +337,7 @@ var AJHAWrapper = {
 
                 [].forEach.call(document.querySelectorAll(".jsSetShareTranscriptURL"), function(el) {
                   var shareLinkHref   = el.getAttribute("href");
-                  var shareLinkNuHref = shareLinkHref.replace("UURRLL", selectionTextURI).replace("TTEEXXTT", selectionTextContent);
+                  var shareLinkNuHref = shareLinkHref.replace("UURRLL", escape(selectionTextURI)).replace("TTEEXXTT", escape(selectionTextContent));
                   el.setAttribute("href", shareLinkNuHref);
                   el.classList.remove('selected');
                 });
