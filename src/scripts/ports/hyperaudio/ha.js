@@ -2584,6 +2584,13 @@ var PlayerGUI = (function (window, document, hyperaudio) {
     this.controlsElem.appendChild(this.playButton);
     this.playButton.addEventListener('click', this.play.bind(this), false);
 
+    // Adding HD Button
+
+    this.hdButton = document.createElement('span');
+    this.hdButton.className = cssClass + '-hd'; 
+    this.controlsElem.appendChild(this.hdButton);
+    buttonCount += 1;
+
     // PREV/NEXT buttons
     if ( this.options.navigation ) {
       this.prevButton = document.createElement('span');
