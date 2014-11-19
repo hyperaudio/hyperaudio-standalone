@@ -433,6 +433,7 @@ var AJHAWrapper = {
         if (HAP.options.origin != "Viewer") {
 
           var url = window.location.href;
+          url = url.replace("/create/","/view/");
 
           document.getElementById('hap-share-url').innerHTML = url;
 
