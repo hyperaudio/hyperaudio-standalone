@@ -1,27 +1,27 @@
 {
 
-	"search__placeholder": "Search, e.g. 1948, Ahmed Abu Al-Sukkhar, Haifa…",
+	"search__placeholder": "ابحث، مثال٬ حيفا",
 
-	"header__current-lang": "EN",
-	"header__menu": "Menu",
-	"header__share": "Share",
+	"header__current-lang": "AR",
+	"header__menu": "القائمة",
+	"header__share": "شارك",
 
-	"panel-lang__change-lang": "Change language",
-	"panel-lang__cancel": "Cancel",
+	"panel-lang__change-lang": "اختر اللغة",
+	"panel-lang__cancel": "الغاء",
 
-	"panel-share__share-remix": "Share your remix",
-	"panel-share__share-remix-with": "Share your Remix with your closest:",
-	"panel-share__save-loc": "Save location of your Remix to come back to it later:",
-	"panel-share__done": "Done",
-	"panel-share__close": "Close",
+	"panel-share__share-remix": "شارك الريمكس",
+	"panel-share__share-remix-with": "شارك الريمكس مع أصدقائك",
+	"panel-share__save-loc": "احتفظ لتعود للرابط لاحقا",
+	"panel-share__done": "تأكيد",
+	"panel-share__close": "إغلاق",
 
-	"panel-share-transcript__share-remix": "Share quote",
-	"panel-share-transcript__share-remix-with": "Share this quote with your closest:",
-	"panel-share-transcript__save-loc": "Save location of your quote to access it later:",
-	"panel-share-transcript__done": "Done",
-	"panel-share-transcript__close": "Close",
+	"panel-share-transcript__share-remix": "شارك المقطع",
+	"panel-share-transcript__share-remix-with": "شارك المقطع مع أصدقائك",
+	"panel-share-transcript__save-loc": "احتفظ لتعود للرابط لاحقا",
+	"panel-share-transcript__done": "تأكيد",
+	"panel-share-transcript__close": "إغلا",
 
-	"aside-right__share-page": "Share this page",
+	"aside-right__share-page": "شارك هذه الصفحة",
 	"aside-right__share-page2": "Love it like we do? Pass it on.",
 
 	"aside-left__title": "Palestine Remix",
@@ -43,12 +43,12 @@
 	"longform__watch-full-doc": "Watch the full documentary (45')",
 
 	"pad__start-creating-remix": "Start creating your Remix by selecting a film…",
-	"pad__fade": "Fade",
-	"pad__trim": "Trim",
-	"pad__title": "Title",
-	"pad__share": "Share",
-	"pad__share2": "Share",
-	"pad__share3": "Share",
-	"pad__saving": "Saving…"
+	"pad__fade": "اخفي",
+	"pad__trim": "قصر",
+	"pad__title":"عنوان",
+	"pad__share": "شارك",
+	"pad__share2": "شارك",
+	"pad__share3": "شارك",
+	"pad__saving": "حفظ"
 
 }
