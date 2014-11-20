@@ -62,6 +62,7 @@
 }
 .HAP-player-bar {
   position: relative;
+  direction: ltr;
 }
 .HAP-player-progress {
   @include transition(width $time linear);
