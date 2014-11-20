@@ -497,6 +497,7 @@ var AJHAWrapper = {
             }
             HAP.options.longformId = longformId;
             HAP.options.longformMedia = longformMedia;
+            console.log(longformMedia);
             HAP.transcript.load();
           }
         };

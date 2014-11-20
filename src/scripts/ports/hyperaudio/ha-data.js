@@ -2,7 +2,7 @@ var VIDEOS = {
 	E: 
 [
 "http://www.youtube.com/watch?v=4hRzdAgc8FM,http://player.vimeo.com/external/109585527.hd.mp4?s=7bd504c45f373de7f627177e3c3f1bcb",
-"http://www.youtube.com/watch?v=HomYG95MO3k,http://player.vimeo.com/external/109585525.hd.mp4?s=dbcb3c3e779426f92f5ef51f64acbba5",
+"http://www.youtube.com/watch?v=HomYG95MO3k,http://player.vimeo.com/external/109585525.mobile.mp4?s=0e9cf2efcd029f38f4ac24adf0e04527,http://player.vimeo.com/external/109585525.hd.mp4?s=dbcb3c3e779426f92f5ef51f64acbba5",
 "http://www.youtube.com/watch?v=TwJHG2KSsG0,http://player.vimeo.com/external/110884059.hd.mp4?s=3eb6e351f73ca929189cbf1e2d74c8c4",
 "http://www.youtube.com/watch?v=oy4PWG6LCAs,http://player.vimeo.com/external/109585524.hd.mp4?s=988c547e4e5d25236d5862976af9e836",
 "http://www.youtube.com/watch?v=2JqmcqkIrFE,http://player.vimeo.com/external/110467198.hd.mp4?s=2f954a2e824e152bc3bf29a616511b92",
@@ -65,5 +65,4 @@ var VIDEOS = {
 var AJHAVideoInfo;
 if (L == "E") AJHAVideoInfo = VIDEOS.E;
 if (L == "A") AJHAVideoInfo = VIDEOS.A;
-
 
