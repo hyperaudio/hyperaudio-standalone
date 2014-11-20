@@ -9,13 +9,17 @@
     <header id="header" class="HAP-header">
       <h1 id="mix-title" class="HAP-header__title"></h1>
       <ul class="HAP-header__menu HAP-menu">
-        <li class="HAP-menu__item"><a class="HAP-menu__link HAP-button" id="edit" href="viewer.html" target="_top" title="Edit"><span class="hidden">Remix</span></a></li>
-        <li class="HAP-menu__item"><a class="HAP-menu__link HAP-button" id="share" title="Share"><span class="hidden">Share</span></a></li>
+        <li class="HAP-menu__item">
+          <a class="HAP-menu__link HAP-button" id="edit" href="viewer.html" target="_top" title="Edit"><span class="hidden"><em>Re</em>mix</span></a>
+        </li>
+        <li class="HAP-menu__item">
+          <a class="HAP-menu__link HAP-button" id="share" title="Share"><span class="hidden">Share</span></a>
+        </li>
       </ul>
     </header>
     <div id="viewer-wrapper" class="HAP-output">
       <div class="HAP-helpers">
-        <a class="HAP-helper" target="_new" id="HAP-remix-helper" href="../create/#/"><i class="icon-pencil"></i> Remix</a>
+        <a class="HAP-helper" target="_new" id="HAP-remix-helper" href="../create/#/"><em>Re</em>mix</a>
         <a class="HAP-helper" id="HAP-helper"><i class="icon-info"></i></a>
       </div>
       <div id="output-canvas" class="HAP-canvas HAP-canvas--output">
@@ -27,12 +31,11 @@
 </div>
 {{> aside-right}}
 <div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>
-<div id="share-modal" class="modal">
+<!-- <div id="share-modal" class="modal">
   <div class="modal-mask"></div>
   <div class="modal-window">
     <div class="modal-header">
       Embed
-      <!-- FIXME -->
     </div>
     <div class="modal-close">g</div>
     <form>
@@ -46,7 +49,7 @@
       </div>
     </form>
   </div>
-</div>
+</div> -->
 {{> panel-language}}
 {{> panel-share-transcript}}
 <script src="{{path}}assets/scripts/vendorq2.js"></script>
@@ -54,7 +57,6 @@
 <script src="{{path}}assets/scripts/ports.js"></script>
 <script type="text/javascript">
 AJHAWrapper.init('Viewer', '/AJE/PalestineRemix/transcripts/html/' + L + '/', toggleHAVTour );
-//AJHAWrapper.init('Viewer', '{{path}}assets/transcripts/E/', toggleHAVTour );
 </script>
 <div id="share-selection"></div>
 </body>
