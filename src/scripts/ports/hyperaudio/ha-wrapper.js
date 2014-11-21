@@ -418,6 +418,8 @@ var AJHAWrapper = {
 
       console.log("transcript ready");
 
+      HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/poster.png";
+
 
       if (target != 'Viewer') {
 
