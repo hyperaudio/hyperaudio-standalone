@@ -505,6 +505,16 @@ var AJHAWrapper = {
 
       document.addEventListener('mixchange', function () {
 
+        // hopefully temporary belt and braces for arabic paste 'selected' issue
+
+        var output = document.getElementById('output-transcript');
+        var selected = output.querySelectorAll('.selected');
+
+        for ( var i = 0, l = selected.length; i < l; i++ ) {
+          HA.removeClass(selected[i], 'selected');
+        }
+
+
         // an effect may have been added to the mix
 
         setEffectsListeners();
