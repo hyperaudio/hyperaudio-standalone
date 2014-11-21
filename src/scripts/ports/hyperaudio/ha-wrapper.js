@@ -449,6 +449,16 @@ var AJHAWrapper = {
 
       updatePadShareUrl();
 
+      var hdBtn = document.getElementsByClassName('HAP-player-hd');
+
+      for (var i=0; i < hdBtn.length; i++) {
+
+        hdBtn[i].addEventListener('click', function () {
+
+          console.log("HD clicked");
+
+        });
+      }
 
       window.onhashchange = function() {
         console.log("hash change");
