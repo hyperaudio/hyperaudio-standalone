@@ -3055,6 +3055,8 @@ var Transcript = (function(document, hyperaudio) {
 
     selectorize: function() {
 
+      console.log("in selectorize");
+
       var self = this,
         opts = this.options;
 
@@ -3112,8 +3114,9 @@ var Transcript = (function(document, hyperaudio) {
           },
           onSelection: function(e) {
             // Update the copy and paste.
+            console.log('on selection');
             if(hyperaudio.Clipboard) {
-              hyperaudio.Clipboard.copy(self.getSelection().text);
+              hyperaudio.Clipboard.copy(self.getSelection(true).text);
             }
           },
           onClear: function(e) {
@@ -3138,7 +3141,7 @@ var Transcript = (function(document, hyperaudio) {
       delete this.textSelect;
     },
 
-    getSelection: function() {
+    getSelection: function(paraLevel) {
 
       if(this.textSelect) {
         var opts = this.options,
@@ -3152,6 +3155,61 @@ var Transcript = (function(document, hyperaudio) {
         if(words.length) {
           start = words[0].getAttribute(opts.timeAttr);
           end = words[words.length - 1].getAttribute(opts.timeAttr);
+
+          // If paragraph level select has been specified
+
+          if (paraLevel) {
+
+            var startEl = document.querySelectorAll("[data-m='"+start+"']");
+            var currentEl = startEl[0];
+
+            if (currentEl.previousSibling) {
+              var previousElInside = currentEl.previousSibling;
+              var previousEl = currentEl.previousSibling.cloneNode(true);
+
+              while (previousEl) {
+
+                el.childNodes[0].insertBefore(previousEl,el.childNodes[0].childNodes[0]);
+
+                if (previousElInside.previousSibling) {
+                  hyperaudio.addClass(previousElInside,'selected');
+                  previousEl = previousElInside.previousSibling.cloneNode(true);
+                  previousElInside = previousElInside.previousSibling;
+                  if (previousEl.tagName == 'A') {
+                    start = previousEl.getAttribute('data-m');
+                  }
+                } else {
+                  previousEl = null;
+                }
+              }
+              hyperaudio.addClass(previousElInside,'selected');
+            }
+
+            var endEl = document.querySelectorAll("[data-m='"+end+"']");
+            var currentEl = endEl[0];
+
+            if (currentEl.nextSibling) {
+              var nextElInside = currentEl.nextSibling;
+              var nextEl = currentEl.nextSibling.cloneNode(true);
+
+              while (nextEl) {
+                el.childNodes[0].insertBefore(nextEl,el.childNodes[0].childNodes[0].nextSibling);
+                
+                if (nextElInside.nextSibling) {
+                  hyperaudio.addClass(nextElInside,'selected');
+                  nextEl = nextElInside.nextSibling.cloneNode(true);
+                  nextElInside = nextElInside.nextSibling;
+                  if (nextEl.tagName == 'A') {
+                    end = nextEl.getAttribute('data-m');
+                  }
+
+                } else {
+                  nextEl = null;
+                }
+              }
+              hyperaudio.addClass(nextElInside,'selected');
+            }
+          }
         }
 
         text = el.textContent;
