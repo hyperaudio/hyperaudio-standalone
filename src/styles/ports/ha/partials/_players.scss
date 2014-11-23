@@ -73,6 +73,16 @@
   float: right;
 }
 
+.HAP-source {
+  .HAP-player-bar {
+    margin-right: $player-height;
+  }
+  .HAP-player-quality {
+    @include position-top-right(0,0);
+    box-shadow: inset -1px 0 0 $flare-weak, -1px 0 0 $flare-weak;
+  }
+}
+
 /* Buttons
 ----------------------------------------------- */
 
