@@ -2584,7 +2584,7 @@ var PlayerGUI = (function (window, document, hyperaudio) {
     // Adding HD Button
 
     this.hdButton = document.createElement('span');
-    this.hdButton.className = cssClass + '-hd'; 
+    this.hdButton.className = cssClass + '-quality';
     this.controlsElem.appendChild(this.hdButton);
     buttonCount += 1;
 
@@ -3188,7 +3188,7 @@ var Transcript = (function(document, hyperaudio) {
 
               while (nextEl) {
                 el.childNodes[0].insertBefore(nextEl,el.childNodes[0].childNodes[0].nextSibling);
-                
+
                 if (nextElInside.nextSibling) {
                   hyperaudio.addClass(nextElInside,'selected');
                   nextEl = nextElInside.nextSibling.cloneNode(true);

@@ -78,7 +78,7 @@
 
 .HAP-player-play,
 .HAP-player-fullscreen,
-.HAP-player-hd {
+.HAP-player-quality {
   @include set-size($player-height, $player-height);
   display: block;
   text-align: center;
@@ -88,7 +88,7 @@
   @include position-top-left(0,0);
   box-shadow: inset -1px 0 0 $flare-weak;
 }
-.HAP-player-hd {
+.HAP-player-quality {
   @include position-top-right(0,$player-height);
   box-shadow: -1px 0 0 $flare-weak;
 }
@@ -123,6 +123,6 @@
 .HAP-player-fullscreen:before {
   content: "\e602";
 }
-.HAP-player-hd:before {
+.HAP-player-quality:before {
   content: "HD";
 }
