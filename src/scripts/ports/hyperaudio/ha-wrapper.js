@@ -116,6 +116,7 @@ var AJHAWrapper = {
             } else {
               attribute = document.createAttribute('data-yt');
               attribute.value = ytid;
+              //document.getElementsByClassName('HAP-player-hd').style.display = 'none';
             }
 
             section.setAttributeNode(attribute);
@@ -447,8 +448,36 @@ var AJHAWrapper = {
         hdBtn[i].addEventListener('click', function () {
 
           console.log("HD clicked");
+          //console.log(HAP.transcript.options);
 
-        });
+          var videoUrl = HAP.transcript.options.player.options.media.mp4;
+
+          if (videoUrl) {
+            var videoId = 0;
+
+            for (var j=0;  j < AJHAVideoInfo.length; j++) {
+              if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
+                  videoId = j;
+              }
+            }
+
+            var hdVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
+
+            var currentTime = HAP.transcript.options.player.videoElem.currentTime;
+            HAP.transcript.options.player.videoElem.src = hdVideoUrl;
+            var paused = HAP.transcript.options.player.GUI.status.paused;
+            
+            console.log(paused);
+
+            if (paused) {
+              HAP.transcript.options.player.pause(currentTime);
+            } else {
+              HAP.transcript.options.player.play(currentTime);
+            }
+
+            HAP.transcript.options.player.options.media.mp4 = hdVideoUrl;           
+          }
+        }, false);
       }
 
       window.onhashchange = function() {
@@ -500,7 +529,7 @@ var AJHAWrapper = {
             }
             HAP.options.longformId = longformId;
             HAP.options.longformMedia = longformMedia;
-            console.log(longformMedia);
+            //console.log(longformMedia);
             HAP.transcript.load();
           }
         };
