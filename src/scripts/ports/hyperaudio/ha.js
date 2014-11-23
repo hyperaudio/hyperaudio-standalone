@@ -636,7 +636,6 @@ var DragDrop = (function (window, document, hyperaudio) {
     }
 
     document.dispatchEvent(event);
-    console.log('mixchange2');
   };
 
   DragDrop.prototype.destroy = function () {
@@ -1945,7 +1944,7 @@ var Address = (function(hyperaudio) {
   // http://diveintohtml5.info/history.html
   // http://stackoverflow.com/questions/824349/modify-the-url-without-reloading-the-page
 
-  var DEBUG = true;
+  var DEBUG = false;
 
   return {
     init: function(options) {
@@ -2421,8 +2420,6 @@ var Player = (function(window, document, hyperaudio, Popcorn) {
       }
 
       if(typeof time === 'number' && !isNaN(time)) {
-
-        console.log("attempting to play");
 
         // Attempt to play it, since iOS has been ignoring commands
         if(play && this.commandsIgnored) {
@@ -3055,8 +3052,6 @@ var Transcript = (function(document, hyperaudio) {
 
     selectorize: function() {
 
-      console.log("in selectorize");
-
       var self = this,
         opts = this.options;
 
@@ -3114,7 +3109,6 @@ var Transcript = (function(document, hyperaudio) {
           },
           onSelection: function(e) {
             // Update the copy and paste.
-            console.log('on selection');
             if(hyperaudio.Clipboard) {
               hyperaudio.Clipboard.copy(self.getSelection(true).text);
             }

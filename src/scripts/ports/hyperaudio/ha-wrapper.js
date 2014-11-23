@@ -66,9 +66,6 @@ var AJHAWrapper = {
 
     function buildTranscriptSection(index, tid, stime, length, callback) {
 
-      console.log('tid');
-      console.log(tid);
-
       var element2 = document.createElement('p');
       var attribute = document.createAttribute('dir');
       attribute.value = "auto";
@@ -232,9 +229,6 @@ var AJHAWrapper = {
       for (var i=0; i < params.length; i++) {
         var cmd = params[i].split(':');
 
-        console.log(params);
-        console.log(cmd);
-
         if (isNaN(cmd[0])) {
 
           switch (cmd[0]) {
@@ -266,7 +260,7 @@ var AJHAWrapper = {
     var q;
 
     function buildState() {
-      console.log("building state");
+
       var state = document.location.hash;
       var params = state.split('/');
 
@@ -416,10 +410,7 @@ var AJHAWrapper = {
 
     document.addEventListener('transcriptready', function () {
 
-      console.log("transcript ready");
-
       HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/poster.png";
-
 
       if (target != 'Viewer') {
 
@@ -461,7 +452,7 @@ var AJHAWrapper = {
       }
 
       window.onhashchange = function() {
-        console.log("hash change");
+
         updatePadShareUrl();
       }
 
@@ -563,8 +554,6 @@ var AJHAWrapper = {
               videoUrl = sections[i].getAttribute('data-yt');
             }
 
-            console.log(videoUrl);
-
             for ( var j = 0; j < AJHAVideoInfo.length; j++ ) {
               if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
                 videoId = j;
@@ -572,7 +561,6 @@ var AJHAWrapper = {
             }
 
             newUrlHash += "/" + videoId + ":" + sTime + "," + duration;
-            console.log(newUrlHash);
           }
 
           // If it's a form it's an effect
