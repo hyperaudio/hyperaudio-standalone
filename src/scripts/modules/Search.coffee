@@ -1,20 +1,37 @@
 # Load search index
 index = undefined # we will load the index in here
-request = new XMLHttpRequest()
-request.open "GET", "/AJE/PalestineRemix/transcripts/data/" + L + "/index.json", true
-request.onreadystatechange = ->
+titles = {} # we will load the titles in here
+
+request0 = new XMLHttpRequest()
+request0.open "GET", "/AJE/PalestineRemix/transcripts/html/" + L + "/list.json", true
+request0.onreadystatechange = ->
   if @readyState is 4
     if @status >= 200 and @status < 400
-      index = lunr.Index.load(JSON.parse(@responseText))
-      listingSearchInput = document.getElementById("search")
-      unless listingSearchInput is null
-        listingSearchInput.addEventListener "change", doSearch
-        listingSearchInput.setAttribute "value", getParameterByName("search") if getParameterByName("search")
-        event = document.createEvent("HTMLEvents")
-        event.initEvent "change", true, false
-        listingSearchInput.dispatchEvent event
-    else
-      console.log("Silent Error")
+      _titles = JSON.parse(@responseText)
+      console.log(_titles)
+      i = 0
+      while i < _titles.length
+        titles["" + _titles[i]._id] = _titles[i].label
+        i++
+      
+      request = new XMLHttpRequest()
+      request.open "GET", "/AJE/PalestineRemix/transcripts/data/" + L + "/index.json", true
+      request.onreadystatechange = ->
+        if @readyState is 4
+          if @status >= 200 and @status < 400
+            index = lunr.Index.load(JSON.parse(@responseText))
+            listingSearchInput = document.getElementById("search")
+            unless listingSearchInput is null
+              listingSearchInput.addEventListener "change", doSearch
+              listingSearchInput.setAttribute "value", getParameterByName("search") if getParameterByName("search")
+              event = document.createEvent("HTMLEvents")
+              event.initEvent "change", true, false
+              listingSearchInput.dispatchEvent event
+          else
+            console.log("Silent Error")
+
+      request.send()
+      request = null
 
 # Parse URL and populate search input with parameters
 getParameterByName = (name) ->
@@ -43,7 +60,8 @@ doSearch = ->
       second = 1 if second is 0
       el = document.createElement("div")
       # el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a class=\"thumbnail tile__thumbnail\"><img src=\"http://10.24.21.20/~laurian/PALESTINE PROJECT/DATA/MEDIA/SEARCH/images/" + idParts[0] + "/E/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p></div></div></li>"
-      el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p></div></div></li>"
+      title = titles[idParts[0]]
+      el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p>" + title + "</div></div></li>"
       result = el.children[0]
       resultsContainer.appendChild result
       # AJAX
@@ -86,5 +104,5 @@ doSearch = ->
       request = null
     )()
     r++
-request.send()
-request = null
+request0.send()
+request0 = null
