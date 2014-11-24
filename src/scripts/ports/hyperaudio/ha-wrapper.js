@@ -465,22 +465,22 @@ var AJHAWrapper = {
 
             if (mobileDevice) {
 
-              if (HA.hasClass(this,'.HAP-player-HD--active')) {
+              if (HA.hasClass(this,'HAP-player-HD--active')) {
                 newVideoUrl = AJHAVideoInfo[videoId].split(',')[1];
-                HA.removeClass(this,'.HAP-player-HD--active');
+                HA.removeClass(this,'HAP-player-HD--active');
               } else {
                 newVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
-                HA.addClass(this,'.HAP-player-HD--active');
+                HA.addClass(this,'HAP-player-HD--active');
               }
 
             } else {
 
-              if (HA.hasClass(this,'.HAP-player-HD--active')) {
+              if (HA.hasClass(this,'HAP-player-HD--active')) {
                 newVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
-                HA.removeClass(this,'.HAP-player-HD--active');
+                HA.removeClass(this,'HAP-player-HD--active');
               } else {
                 newVideoUrl = AJHAVideoInfo[videoId].split(',')[3];
-                HA.addClass(this,'.HAP-player-HD--active');
+                HA.addClass(this,'HAP-player-HD--active');
               }
 
             }
