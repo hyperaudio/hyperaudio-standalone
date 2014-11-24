@@ -2943,7 +2943,7 @@ var Transcript = (function(document, hyperaudio) {
               self.target.innerHTML = this.transcript.content;
               self._trigger(hyperaudio.event.load, {msg: 'Loaded "' + self.options.id + '"'});
             } else {
-              self.target.innerHTML = 'Problem with transcript URL.'; // TMP - This sort of things should not be in the lib code, but acting off an error event hander.
+              self.target.innerHTML = '<p class=\"HAP-notice HAP-notice--alert\">Transcript could not be loaded. Please retry.</p>'; // TMP - This sort of things should not be in the lib code, but acting off an error event hander.
               self._error(this.status + ' ' + this.statusText + ' : "' + self.options.id + '"');
             }
             setVideo();
@@ -2958,7 +2958,7 @@ var Transcript = (function(document, hyperaudio) {
               setVideo();
             },
             error: function(event) {
-              self.target.innerHTML = 'Problem with transcript URL.'; // TMP - This sort of things should not be in the lib code, but acting off an error event hander.
+              self.target.innerHTML = '<p class=\"HAP-notice HAP-notice--alert\">Transcript could not be loaded. Please retry.</p>'; // TMP - This sort of things should not be in the lib code, but acting off an error event hander.
               self._error(this.status + ' ' + this.statusText + ' : "' + self.options.src + '"');
               setVideo();
             }

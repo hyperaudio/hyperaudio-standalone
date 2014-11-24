@@ -1,7 +1,12 @@
 .HAP-notice {
   @include set-type-medium;
   font-weight: $font-bold;
-  color: $green-LD;
   padding: $space-h $space-l;
   text-align: center;
+}
+.HAP-notice--success {
+  color: $green-LD;
+}
+.HAP-notice--alert {
+  color: $red-LD;
 }
