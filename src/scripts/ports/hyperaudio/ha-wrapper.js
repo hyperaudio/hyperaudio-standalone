@@ -273,9 +273,9 @@ var AJHAWrapper = {
 
       q = queue(1);
 
-      // do we have any hash params?
+      // do we have any hash params? Are there enough?
 
-      if (state) {
+      if (state && params.length > 1) {
 
         // checking if it's a full video
 
@@ -547,86 +547,91 @@ var AJHAWrapper = {
         }
 
 
+
         // an effect may have been added to the mix
 
         setEffectsListeners();
 
-        var newUrlHash = "#";
         var mix = document.getElementById('output-transcript');
         var sections = mix.getElementsByTagName('section');
 
-        for ( var i = 0; i < sections.length; i++ ) {
-          var firstChild = sections[i].firstChild;
+        if (sections.length > 0) {
 
-          // if it's a para it's text
+          var newUrlHash = "#";
+          
+          for ( var i = 0; i < sections.length; i++ ) {
+            var firstChild = sections[i].firstChild;
 
-          if (firstChild.tagName == "P") {
+            // if it's a para it's text
 
-            var paras = sections[i].getElementsByTagName('p');
-            var lastChild = paras[paras.length-1];
+            if (firstChild.tagName == "P") {
 
-            var sTime = firstChild.firstChild.getAttribute('data-m');
+              var paras = sections[i].getElementsByTagName('p');
+              var lastChild = paras[paras.length-1];
 
-            var anchors = lastChild.getElementsByTagName('a');
-            var eTime = anchors[anchors.length-1].getAttribute('data-m');
+              var sTime = firstChild.firstChild.getAttribute('data-m');
 
-            var duration = parseInt(eTime) - parseInt(sTime);
+              var anchors = lastChild.getElementsByTagName('a');
+              var eTime = anchors[anchors.length-1].getAttribute('data-m');
 
-            // maybe we should use data-id on sections to store videoId
-            // there seems to be some provision for that in hyperaudio-pad.js
+              var duration = parseInt(eTime) - parseInt(sTime);
 
-            var videoId;
+              // maybe we should use data-id on sections to store videoId
+              // there seems to be some provision for that in hyperaudio-pad.js
 
-            var videoUrl = sections[i].getAttribute('data-mp4');
+              var videoId;
 
-            if (!videoUrl) {
-              videoUrl = sections[i].getAttribute('data-yt');
-            }
+              var videoUrl = sections[i].getAttribute('data-mp4');
 
-            for ( var j = 0; j < AJHAVideoInfo.length; j++ ) {
-              if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
-                videoId = j;
+              if (!videoUrl) {
+                videoUrl = sections[i].getAttribute('data-yt');
               }
+
+              for ( var j = 0; j < AJHAVideoInfo.length; j++ ) {
+                if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
+                  videoId = j;
+                }
+              }
+
+              newUrlHash += "/" + videoId + ":" + sTime + "," + duration;
             }
 
-            newUrlHash += "/" + videoId + ":" + sTime + "," + duration;
-          }
+            // If it's a form it's an effect
 
-          // If it's a form it's an effect
+            if (firstChild.tagName == "FORM") {
+              var type = firstChild.firstChild.firstChild.nodeValue;
+              var duration = firstChild.childNodes[1].value;
+              var prefix = "";
 
-          if (firstChild.tagName == "FORM") {
-            var type = firstChild.firstChild.firstChild.nodeValue;
-            var duration = firstChild.childNodes[1].value;
-            var prefix = "";
+              if (type == effectsLabelFade) {
+                prefix = "f";
+              }
 
-            if (type == effectsLabelFade) {
-              prefix = "f";
-            }
+              if (type == effectsLabelTrim) {
+                prefix = "r";
+              }
 
-            if (type == effectsLabelTrim) {
-              prefix = "r";
-            }
+              if (type == effectsLabelTitle) {
+                prefix = "t";
 
-            if (type == effectsLabelTitle) {
-              prefix = "t";
+                var fullscreen = firstChild[0].checked;
+                if (fullscreen) {
+                  fullscreen = '1';
+                } else {
+                  fullscreen = '0';
+                }
 
-              var fullscreen = firstChild[0].checked;
-              if (fullscreen) {
-                fullscreen = '1';
+                var title = firstChild[1].value;
+                var duration = firstChild[2].value;
+                newUrlHash += "/" + prefix + ":" + title + "," + fullscreen + "," + duration;
               } else {
-                fullscreen = '0';
+                newUrlHash += "/" + prefix + ":" + duration;
               }
-
-              var title = firstChild[1].value;
-              var duration = firstChild[2].value;
-              newUrlHash += "/" + prefix + ":" + title + "," + fullscreen + "," + duration;
-            } else {
-              newUrlHash += "/" + prefix + ":" + duration;
             }
           }
+          document.location.hash = newUrlHash;
         }
-
-        document.location.hash = newUrlHash;
+        
       }, false);
 
     }, false);

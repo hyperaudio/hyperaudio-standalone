@@ -611,7 +611,6 @@ var DragDrop = (function (window, document, hyperaudio) {
       }
 
       document.dispatchEvent(event);
-      console.log('mixchange1');
 
       return;
     }
