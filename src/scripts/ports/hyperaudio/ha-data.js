@@ -108,4 +108,6 @@ var VIDEOS = {
 var AJHAVideoInfo;
 if (L == "E") AJHAVideoInfo = VIDEOS.E;
 if (L == "A") AJHAVideoInfo = VIDEOS.A;
+if (L == "B") AJHAVideoInfo = VIDEOS.B;
+if (L == "T") AJHAVideoInfo = VIDEOS.T;
 
