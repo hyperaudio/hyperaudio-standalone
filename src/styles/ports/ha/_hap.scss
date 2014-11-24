@@ -25,97 +25,6 @@
   }
 }
 
-
-
-
-
-
-// #output-transcript .item p:last-of-type {
-//   margin-bottom: 0!important;
-// }
-
-// h1 {
-//   color: #fff;
-//   height: 48px;
-//   line-height: 48px;
-//   /*text-shadow: 0 -1px 0 rgba(0,0,0,0.35);*/
-//   text-align: center;
-// }
-
-// h1 input {
-//   text-align: center;
-//   background: transparent;
-//   padding: 3px;
-//   width: 800px;
-//   color: #fff;
-//   text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
-// }
-
-// h1 input:focus {
-//   background: #CED6F2;
-//   color: #222;
-//   outline: none;
-// }
-
-
-
-// #source-transcript {
-//   font-family: 'Varela Round', 'helvetica neue', arial, sans-serif;
-//   position: absolute;
-//   top: 328px;
-//   bottom: 48px;
-//   left: 0;
-//   padding: 2em;
-//   line-height: 1.7em;
-//   width: 50%;
-//   overflow: hidden;
-//   color: #444;
-//   border-right: 2px solid #ccc;
-//   -webkit-touch-callout: none;
-//   -webkit-user-select: none;
-//   -khtml-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-//   user-select: none;
-// }
-
-// #output-transcript {
-//   position: absolute;
-//   right: 0;
-//   top: 328px;
-//   bottom: 48px;
-//   padding: 1em;
-//   width: 50%;
-//   overflow: hidden;
-//   border-left: 2px solid #ccc;
-//   -webkit-touch-callout: none;
-//   -webkit-user-select: none;
-//   -khtml-user-select: none;
-//   -moz-user-select: none;
-//   -ms-user-select: none;
-//   user-select: none;
-// }
-
-// .video {
-//   position: absolute;
-//   top: 48px;
-//   width: 50%;
-//   height: 280px;
-//   overflow: hidden;
-//   background: #222;
-//   padding-top: 10px;
-//   border-right: 2px solid #404040;
-// }
-
-// .video video {
-//   display: block;
-//   margin: 0 auto;
-//   width: 90%;
-//   height: 260px;
-//   border: 2px solid #000;
-// }
-
-
 .tabbar li.selected {
   background: #656565 !important;
   color: #fff;
@@ -142,16 +51,6 @@
   background: #eee;
   height: 2em;
 }
-
-// #transcript-options {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 50%;
-//   color: #fff;
-//   line-height: 48px;
-//   border-right: 2px solid #808080;
-// }
 
 
 /* CSS for the clipboard stuff */
