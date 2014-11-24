@@ -28,9 +28,10 @@
   @include transition(opacity $time);
   @include position-bottom-left(0,0);
   @include position-bottom-right(0,0);
-  @include paint-invert;
   @include set-type-xsmall;
+  background: $mono-LD;
   border-top: solid 1px $flare-weak;
+  color: $mono-Lt;
   cursor: pointer;
   display: block;
   height: $player-height;
@@ -137,5 +138,6 @@
   content: "HD";
 }
 .HAP-player-quality.HAP-player-HD--active {
-  color: $red-LD;
+  color: $mono-Wt;
+  text-shadow: 0 0 $space-s $flare-medium;
 }
