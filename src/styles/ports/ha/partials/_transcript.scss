@@ -6,8 +6,9 @@
   @include set-type-small;
   position: relative; // absolutely necessary for scrollTo to function.
   overflow: auto;
-  > article {
-
+  p {
+    @include reset(last, margin-bottom);
+    margin-bottom: $line / 2;
   }
   > article > section {
     display: block;
@@ -53,9 +54,4 @@
 
 .HAP-transcript__item {
   position: relative;
-}
-
-.HAP--pad .HAP-transcript--source p,
-.HAP--viewer .HAP-transcript--output p {
-  margin-bottom: $line / 2;
 }
