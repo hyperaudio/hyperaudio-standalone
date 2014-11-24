@@ -20,7 +20,6 @@ metalsmith.use(metadata({
   "L": "data/" + L + "/language.json",
   "films": "data/" + L + "/films.json",
   "themes": "data/" + L + "/themes.json",
-  "longforms": "data/" + L + "/muse/longforms.json",
   "nav": "data/" + L + "/nav.json"
 }));
 
@@ -39,14 +38,22 @@ Handlebars.registerPartial('aside-left', fs.readFileSync('./dev/partials/aside-l
 Handlebars.registerPartial('aside-right', fs.readFileSync('./dev/partials/aside-right.html').toString());
 
 Handlebars.registerHelper('TITLE', function() {
-  var context = this;
+  // var context = this;
+  var longform = require('./src/data/' + L + '/muse/' + this.key + '.json');
+  if (typeof longform.headline == 'undefined') return '';
+  var headline = longform.headline;
   return new Handlebars.SafeString(
-    context.longforms[context.key].headline
+    // context.longforms[context.key].headline
+    // require('./src/data/' + L + '/muse/' + this.key + '.json').headline
+    headline
   );
 });
 
 Handlebars.registerHelper('FOREWORD', function() {
-  var items = this.longforms[this.key].content;
+  // var items = this.longforms[this.key].content;
+  var longform = require('./src/data/' + L + '/muse/' + this.key + '.json');
+  if (typeof longform.content == 'undefined') return '';
+  var items = longform.content;
   var content = '';
 
   for (var i = 0; i < items.length; i++) {
@@ -69,7 +76,10 @@ var contentTemplates = {
 };
 
 Handlebars.registerHelper('CONTENT', function() {
-  var items = this.longforms[this.key].content;
+  // var items = this.longforms[this.key].content;
+  var longform = require('./src/data/' + L + '/muse/' + this.key + '.json');
+  if (typeof longform.content == 'undefined') return '';
+  var items = longform.content;
   var content = '';
 
   for (var i = 0; i < items.length; i++) {
