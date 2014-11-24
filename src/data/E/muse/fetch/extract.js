@@ -23,23 +23,25 @@ var pages = [
 	"the-price-of-oslo"
 ];
 
-for (var i = 0; i < pages.length; i++) {
-var page = pages[i];
-
+var process = function (key) {
 	phantom.create(function (ph) {
 	  ph.createPage(function (page) {
-	    page.open(site + page + ".html", function (status) {
-	      console.log("opened page? ", status);
+	    page.open(site + key + ".html", function (status) {
+	      console.log("opened page? " + site + key + ".html " , status);
 	      page.evaluate(extract, function (data) {
 	        // console.log(JSON.stringify(data));
-	        jf.writeFileSync("../" + page + ".json", data);
+	        jf.writeFileSync("../" + key + ".json", data);
 	        ph.exit();
 	      });
 	    });
 	  });
 	});
+};
 
+for (var i = 0; i < pages.length; i++) {
+	process(pages[i]);
 }
+
 
 var extract = function () {
 	var data = {
