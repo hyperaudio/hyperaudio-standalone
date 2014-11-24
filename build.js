@@ -38,14 +38,21 @@ Handlebars.registerPartial('aside-left', fs.readFileSync('./dev/partials/aside-l
 Handlebars.registerPartial('aside-right', fs.readFileSync('./dev/partials/aside-right.html').toString());
 
 Handlebars.registerHelper('TITLE', function() {
-  // var context = this;
   var longform = require('./src/data/' + L + '/muse/' + this.key + '.json');
   if (typeof longform.headline == 'undefined') return '';
   var headline = longform.headline;
   return new Handlebars.SafeString(
-    // context.longforms[context.key].headline
-    // require('./src/data/' + L + '/muse/' + this.key + '.json').headline
     headline
+  );
+});
+
+Handlebars.registerHelper('AUTHOR', function() {
+  var longform = require('./src/data/' + L + '/muse/' + this.key + '.json');
+  if (typeof longform.headline == 'undefined') return '';
+  var director = longform.director;
+  var directorLabel = longform.directorLabel;
+  return new Handlebars.SafeString(
+    directorLabel + ': ' + director
   );
 });
 
