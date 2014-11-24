@@ -15,22 +15,23 @@
       @include backface-visibility(hidden);
       @include transform(translate3d($side-width,0,0));
     }
+    &.moved--left,
+    &.moved--right {
+      opacity: $opacity;
+    }
   }
-
   .page-side--left {
     @extend %page-side;
     @include transform(translate3d(0,0,0));
     left: 0;
     &.moved { @include transform(translate3d(($side-width * (-1)),0,0)); }
   }
-
   .page-side--right {
     @extend %page-side;
     @include transform(translate3d($side-width * (-1),0,0));
     left: 100%;
     &.moved { @include transform(translate3d(0,0,0)); }
   }
-
   .page-overlay {
     &.cover-left { @include position-top-right(0, $side-width, fixed); }
     &.cover-right { @include position-top-left(0, $side-width, fixed); }
