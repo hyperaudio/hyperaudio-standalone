@@ -21,7 +21,9 @@
     "metalsmith-static": "0.0.5",
     "metalsmith-templates": "^0.1.0",
     "node-bourbon": "^1.2.3",
-    "proxy-middleware": "*"
+    "proxy-middleware": "*",
+    "phantom": "*",
+    "jsonfile": "*"
   },
   "author": [
     "Mark Boas <mark.boas@gmail.com>",
