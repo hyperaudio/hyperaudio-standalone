@@ -123,13 +123,19 @@
   -moz-osx-font-smoothing: grayscale;
   font-size: $icon-size;
 }
+
 .HAP-player-play:before {
   content: "\e600";
-  .HAP-player-gui.playing & { content: "\e601"; }
+  .HAP-player-gui.playing & {
+    content: "\e601";
+  }
 }
-.HAP-player-fullscreen:before { content: "\e602"; }
-.HAP-player-quality {
-  &.HAP-player-quality--SD:before { content: "SD"; }
-  &.HAP-player-quality--HD:before { content: "HD"; }
-  &.HAP-player-quality--LD:before { content: "HD"; }
+.HAP-player-fullscreen:before {
+  content: "\e602";
+}
+.HAP-player-HD:before {
+  content: "HD";
+}
+.HAP-player-HD--active {
+  color: $red-LD;
 }
