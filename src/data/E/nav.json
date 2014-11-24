@@ -6,23 +6,23 @@
   },
   { "_id": 17,
     "label": "Al Nakba 1",
-    "file": ""
+    "file": "al-nakba"
   },
   { "_id": 18,
     "label": "Al Nakba 2",
-    "file": ""
+    "file": "al-nakba"
   },
   { "_id": 19,
     "label": "Al Nakba 3",
-    "file": ""
+    "file": "al-nakba"
   },
   { "_id": 20,
     "label": "Al Nakba 4",
-    "file": ""
+    "file": "al-nakba"
   },
   { "_id": 2,
     "label": "Area C",
-    "file": ""
+    "file": "area-c"
   },
   { "_id": 3,
     "label": "Beyond the walls",
@@ -30,7 +30,7 @@
   },
   { "_id": 4,
     "label": "Forbidden Pilgrimage",
-    "file": ""
+    "file": "forbidden-pilgrimage"
   },
   { "_id": 5,
     "label": "Gaza left in the dark",
@@ -38,11 +38,11 @@
   },
   { "_id": 6,
     "label": "Gaza lives on",
-    "file": ""
+    "file": "gaza-lives-on"
   },
   { "_id": 7,
     "label": "Gaza we are coming",
-    "file": ""
+    "file": "gaza-we-are-coming"
   },
   { "_id": 0,
     "label": "Going against the grain",
@@ -50,27 +50,27 @@
   },
   { "_id": 16,
     "label": "Hunger Strike",
-    "file": ""
+    "file": "hunger-strike"
   },
   { "_id": 8,
     "label": "Inside Shin Bet",
-    "file": ""
+    "file": "inside-shin-bet"
   },
   { "_id": 9,
     "label": "Last shepherds of the valley",
-    "file": ""
+    "file": "last-shepherds-of-the-valley"
   },
   { "_id": 10,
     "label": "Lost cities of Palestine",
-    "file": ""
+    "file": "lost-cities-of-palestine"
   },
   { "_id": 11,
     "label": "Palestine Amore",
-    "file": ""
+    "file": "palestina-amore"
   },
   { "_id": 13,
     "label": "Stronger than words",
-    "file": ""
+    "file": "stronger-than-words"
   },
   { "_id": 12,
     "label": "The pain inside",
@@ -78,11 +78,11 @@
   },
   { "_id": 14,
     "label": "The price of Oslo 1",
-    "file": ""
+    "file": "the-price-of-oslo"
   },
   { "_id": 15,
     "label": "The price of Oslo 2",
-    "file": ""
+    "file": "the-price-of-oslo"
   }
 ]
 }
