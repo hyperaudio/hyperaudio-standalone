@@ -1,8 +1,8 @@
 ---
 template: longform.html
-key: 'gaza-left-in-the-dark'
+key: 'lost-cities-of-palestine'
 path: '../../'
-cover: 'gaza-left-in-the-dark.png'
+cover: 'lost-cities-of-palestine.png'
 ---
 
 Lorem ipsum dolor sit amet and I don't know the rest, let's add some anatomical things in latin: sulcus tendinis musculis flexoris halucis longi.

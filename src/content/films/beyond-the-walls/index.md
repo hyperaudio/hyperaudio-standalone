@@ -1,6 +1,6 @@
 ---
 template: longform.html
-key: 'BEYOND THE WALLS'
+key: 'beyond-the-walls'
 path: '../../'
 cover: 'beyond-the-walls.png'
 ---

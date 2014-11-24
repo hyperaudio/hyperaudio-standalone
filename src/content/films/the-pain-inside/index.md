@@ -1,6 +1,6 @@
 ---
 template: longform.html
-key: 'THE PAIN INSIDE'
+key: 'the-pain-inside'
 path: '../../'
 cover: 'the-pain-inside.png'
 ---
