@@ -1,3 +1,9 @@
+unless window.parent is window
+  if document.body.classList
+    document.body.classList.add "tpl--compact"
+  else
+    document.body.className += " tpl--compact"
+      
 document.addEventListener "DOMContentLoaded", ->
 
   # console.log "السلام عليكم"
