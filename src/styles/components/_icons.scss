@@ -3,5 +3,6 @@
  * ============================================ */
 
 [class^="icon-"], [class*=" icon-"] {
+  font-family: 'aj' !important; // Hack around desktop version
   font-size: 16px;
 }
