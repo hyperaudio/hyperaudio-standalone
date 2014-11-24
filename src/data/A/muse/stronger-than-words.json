@@ -1,147 +1,151 @@
 {
   "content": [
     {
-      "content": "\n      \n      Israel’s ongoing attacks on Gaza have made living conditions for Palestinians unbearable. Disabled people in the region are among those least equipped to deal with the daily difficulties of life under siege.\n\n     ",
+      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
+      "type": "Body-text"
+    },
+    {
+      "content": "\n      \n      يعيش الفلسطينيون في غزة ظروفاً معيشية صعبة للغاية، بسبب الهجمات العسكرية الإسرائيلية المتتالية على القطاع.\n      ذوو الاحتياجات الخاصة هم أكثر من يعاني من هذه الظروف، بسبب قلة التجهيزات الخاصة التي تساعدهم على التأقلم مع ظروف الحياة تحت الحصار والقصف الإسرائيلي المستمر.\n       \n\n     ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "ALAA ALNAHHALL’S WIFE",
-        "label": "NAZEK ALNAHHAL",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/stronger-than-words.html",
-        "quote": "Living with deaf people is very easy as long as you love them.",
-        "share": "SHARE QUOTE"
+        "context": "زوجة علاء النحال - أصم فلسطيني",
+        "label": "نازك النحال",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "quote": "التعامل مع الصم، إذا كنت إنت حابه، سهل جدا",
+        "share": "شارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>There are 1.8 million Palestinians living in the Gaza Strip. Of those, 15,000 are deaf. In Gaza, deaf people face discrimination at home, work and school. They experience higher levels of unemployment, feelings of isolation and often, depression. Children can feel especially stigmatised because of their disability.</p>\n      \n      <p>For deaf people in Gaza, even the most routine aspects of daily life are different. During Friday prayers, for example, deaf people are unable to understand the Imam’s sermon. Financially, deaf people in Gaza also struggle. Often, they have to cobble together ways to support themselves.&nbsp; Alaa Eddin Alnahhal, a deaf taxi driver, struggles to make ends meet.</p>\n\n     ",
+      "content": "\n      \n      <p>يعيش في قطاع غزة 1.8 مليون فلسطيني، من ضمنهم 15.000 مواطن أصم.</p>\n      \n      <p>ويعاني الصم في غزة من التمييز في المعاملة، سواء في البيت أو المدرسة، أو حتى مكان العمل، ونتيجة لذلك، يقعون ضحية البطالة والإحساس بالعزل، وغالباً ما يصابون بالاكتئاب. كما يشعر الأطفال الصم بشكل خاص أنهم منبوذون اجتماعيّاً بسبب إعاقتهم.</p>\n      \n      <p>حتى روتين الحياة اليومي في غزة يبدو مختلفاً بالنسبة للصم؛ فعلى سبيل المثال، لا يستفيدون من خطبة صلاة يوم الجمعة، لأنهم لا يستطيعون سماعها.</p>\n      \n      <p>ويتعاون الصم في غزة لمساعدة بعضهم بعضاً. علاء الدين النحال، سائق تكسي أصم، يبذل قصارى جهده لمساعدة الصم الآخرين، ويدرس التمثيل والكوميديا للصم في أحد المسارح بغزة.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "LIFE OF A DEAF FATHER IN GAZA",
-        "vimeo": 110458359,
-        "yt": "zhKUZSGtzmA"
+        "label": "حياة أب أصم في قطاع غزة",
+        "vimeo": 110646862,
+        "yt": "ygUDGo5DOFQ"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>Mahmoud Almuqayad is not only deaf, but also blind in one eye. He has only partial vision in the other. For him, even the most routine tasks are fraught with difficulty. Painting, however, offers him a brief respite. His art brings him joy and gives him the chance to express himself.</p>\n\n     ",
+      "content": "\n      \n      <p>محمد المقيد، مواطن فلسطيني أصم، يرى جزئيّاً بعين واحدة، ولا يرى بالأخرى.</p>\n      \n      <p>يعاني محمد من صعوبات جمة في روتين حياته اليومية، إلا أنه يلجأ للرسم كوسيلة للتفريغ النفسي. وحدها رسوماته تشعره ببعض الفرح والقدرة على التعبير عن نفسه.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "FIGHTING ALL ODDS: A STORY OF A DEAF PAINTER",
-        "vimeo": 110458355,
-        "yt": "qK5txt9idRY"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": "VISUAL ARTIST",
-        "label": "MAHMOUD ALMUQAYAD",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/stronger-than-words.html",
-        "quote": "Life’s hard. Border crossings are closed. I can only see with one eye and I’m deaf.",
-        "share": "SHARE QUOTE"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": "\n      \n      <p><span id=\"u18063\">Atfaluna</span> is a school for deaf children in the Gaza Strip. Founded in 1992, it provides education and support services for deaf people of all ages. Over the years, it has helped thousands of deaf people in Gaza. The school offers classes, speech therapy and audiology. It also hosts a café that employs deaf people and a shop that sells crafts produced by deaf artisans.</p>\n      \n      <p><span id=\"u18063-5\">Atfaluna's</span> clients include young parents who cope with their disability while raising children. Hoda Shaheen is a young Palestinian woman who is deaf and teaches at the school. Shaheen’s husband, Ashraf, is also deaf. They say while there are some practical challenges for parents raising hearing children, they can be overcome with the right support. They still face discrimination, however, which makes it difficult for them to find good jobs. Ashraf currently works at the Ministry of Finance. The government recently passed a law that requires employers to reserve five percent of jobs for people with disabilities.</p>\n      \n      <p>Hoda, for her part, feels blessed with the support she receives from her husband and Gaza’s deaf community. Still, she says, some people she encounters believe her disability means she is “stupid”.&nbsp; Every day, she proves them wrong.</p>\n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "context": "MAHMOUD ALMUQAYAD'S MOTHER",
-        "label": "ELHAM ALMUQAYAD",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/stronger-than-words.html",
-        "quote": "We have power cuts every day here in Gaza. My deaf children can only speak to each other in sign language. So when they can’t see each other, they get stressed.",
-        "share": "SHARE QUOTE"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": {
-        "label": "STORY OF A DEAF FAMILY IN GAZA",
-        "vimeo": 110458362,
-        "yt": "hGXKisuTLZ0"
+        "label": "فنان من الصم",
+        "vimeo": 110646868,
+        "yt": "5_QHwUMnq1U"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "SCHOOL STUDENT",
-        "label": "HODA SHAHEEN",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/stronger-than-words.html",
-        "quote": "We communicate normally with people. They think the deaf are stupid but we’re normal.",
-        "share": "SHARE QUOTE"
+        "context": "فنان تشكيلي",
+        "label": "محمود المقيد",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "quote": "الحياة صعبة جدا والمعابر مغلقة، وأنا أستطيع أن أرى بعين واحدة، وأنا أصم",
+        "share": "شارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>Hashem Ghazal, the craftwork supervisor at <span id=\"u18072-2\">Atfaluna</span>, says: \"People think that deaf people are weak. But it's not true. Deaf people and hearing people are equal.\"</p>\n      \n      <p>But Ghazal acknowledges that in Gaza, “the deaf have no power” and are not taken seriously. He has become frustrated with the government's failure to implement better laws to support the deaf. Sign language interpreters should always be accessible in hospitals and government offices, for example.</p>\n\n     ",
+      "content": "\n      \n      <p>\"أطفالنا\" هي جمعية للأطفال الصم في قطاع غزة. تأسست عام 1992، تعلم الصم من مختلف الأعمار، وتقدم لهم خدمات مختلفة.</p>\n      \n      <p>نجحت \"أطفالنا\" في مساعدة آلاف الصم في قطاع غزة، فهي تقدم دروساً مختلفة للصم، وجلسات لتقوية السمع ومعالجة مشاكل النطق.</p>\n      \n      <p>كما تضم الجمعية مقهى خاصّاً يوظف الصم فقط، ومتجراً لبيع الأشغال اليدوية التي يصنعها الحرفيون الصم.</p>\n      \n      <p>يتوجه بعض الآباء الشباب من الصم إلى جمعية \"أطفالنا\" للحصول على المساعدة في تربية أطفالهم.</p>\n      \n      <p>هدى شاهين، شابة فلسطينية صماء تعمل مدرسة في جمعية \"أطفالنا\". زوجها أشرف أصم أيضاً. يؤكد الزوجان أن باستطاعة الآباء الصم تحدي المشاكل التي تواجههم في تربية أبنائهم الذين يسمعون بشكل طبيعي، عن طريق تقديم الحب والحنان والدعم المستمر لهم، إلا أنهم غالباً ما يعانون من التمييز والتفرقة، خاصة عند تقديم طلبات للحصول على وظائف.</p>\n      \n      <p>يعمل أشرف موظفاً في وزارة المالية بغزة، بعد أن طبقت الحكومة قانوناً يلزم مؤسساتها بأن تكون 5% من الوظائف فيها لذوي الاحتياجات الخاصة.</p>\n      \n      <p>تشعر هدى أنها محظوظة بسبب الدعم المستمر لها من قبل زوجها ومجتمع الصم في غزة.</p>\n      \n      <p>وتنزعج كثيراً من أولئك الأشخاص الذين يعتبرون الصم أغبياء، إلا أنها تثبت لهم عكس ذلك كل يوم.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "DEAF PALESTINIANS UNDER SIEGE",
-        "vimeo": 110458356,
-        "yt": "nCZObBthY3Y"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>Isra Ghazal’s family includes eight deaf people. Her ability to hear makes her the crucial link between her deaf siblings and the outside world.</p>\n      \n      <p>During Israeli military strikes on Gaza, Ghazal is responsible for warning her deaf siblings of danger. At the same time, she tries to shield them from the horrors of war. During Israel’s \"Operation Protective Edge\", in 2014, she told the deaf members of her family: “There are no planes or airstrikes.” But Israel’s assault was so brutal that they could “feel the ground shaking” and the explosions “through the beating of their hearts”.</p>\n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "context": "PALESTINIAN ACTIVIST FOR THE DEAF",
-        "label": "HASHEM GHAZAL",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/stronger-than-words.html",
-        "quote": "Are we like hearing people? No, we are more gifted in planning and creativity. Look, deaf people have special talent for art, sewing, ideas and creativity. ",
-        "share": "SHARE QUOTE"
+        "context": "أم فلسطينية",
+        "label": "إلهام المقيد",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "quote": "نعاني يوميّاً من انقطاع الكهرباء في غزة. أطفالي الصم يتحدثون مع بعضهم بلغة الإشارة، ولذلك، ينزعجون كثيراً عندما لا يستطيعون رؤية بعضهم بسبب انقطاع الكهرباء",
+        "share": "شارك"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "A DEAF FAMILY SURVIVES THE WAR",
-        "vimeo": 110458354,
-        "yt": "21dch96kdDk"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>More than 2,100 Palestinians were killed in Israel's 2014 offensive in Gaza. The disabled were among those victims. Powerless and frightened, Kifah Ghanam, a young deaf artist, died when Israel bombed the residential building where she lived.</p>\n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "label": "ISRAEL'S INDISCRIMINATE BRUTALITY",
-        "vimeo": 110458357,
-        "yt": "f103JlZxKbw"
+        "label": "قصة عائلة من الصم في غزة بفلسطين ",
+        "vimeo": 110646876,
+        "yt": "OedZqkfyaXg"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "PREACHER FOR THE DEAF",
-        "label": "KHADER ALRANTISI",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/stronger-than-words.html",
-        "quote": "A deaf girl was killed in the war...",
-        "share": "SHARE QUOTE"
+        "context": "مدرسة",
+        "label": "هدى شاهين",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "quote": "نتواصل مع الناس بشكل طبيعي، بعضهم يعتقد أن الصم أغبياء، إلا أننا أناس طبيعيون",
+        "share": " شارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>When the summer of 2014 ended, so did the war. For those who survived, life never returned to normal. In Gaza, Palestinians continue to cope with the consequences of a brutal Israeli siege, which permits them to survive, but nothing more.</p>\n      \n      <p>Palestinians are determined to overcome challenges in order to build their future. Even in a world where they are denied their most basic human rights, they show courage. Deaf people in Gaza Strip are determined to live full lives, despite their disabilities. Their perseverance is an example for all Palestinians.</p>\n\n     ",
+      "content": "\n      \n      <p>يقول المشرف على الأعمال الحرفية في جمعية \"أطفالنا\" هاشم غزال: \"يعتقد الناس أن الصم ضعفاء، لكن هذا غير صحيح، فالصم ومن يسمعون بشكل طبيعي، متساوون\".</p>\n      \n      <p>لكن هاشم يعترف أن الصم ليست لهم قوة أو سلطة في غزة، حتى إن الناس لا يتعاملون معهم بشكل جدي. ويعبر هاشم عن امتعاضه الشديد من الحكومة في غزة؛ لعدم إصدارها قوانين إضافية تدعم الصم في القطاع، مثل توفير مترجمين للغة الإشارة في المستشفيات والمؤسسات الحكومية.</p>\n      \n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "label": "نقاش فلسطينييين صم في قطاع غزة المحاصر ",
+        "vimeo": 110646877,
+        "yt": "XsC1mCKmtmA"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>تتكون عائلة إسراء غزال من ثمانية أشخاص صم، وأربعة يسمعون بشكل طبيعي، وهي واحدة منهم.</p>\n      <p>وتعتبر إسراء نفسها المترجمة وحلقة الوصل بين إخوتها الصم والعالم الخارجي من حولهم؛ ففي أوقات الحرب والقصف الإسرائيلي على غزة، تحذر إسراء أفراد عائلتها الصم، كما تحاول حمايتهم من خطر الضربات العسكرية.</p>\n      \n      <p>خلال الحرب الإسرائيلية الأخيرة على غزة عام 2014، حاولت إسراء مراراً وتكراراً طمأنة أفراد عائلتها الصم وإقناعهم بعدم وجود طائرات أو قصف جوي على غزة، في الوقت الذي كانت الهجمات الإسرائيلية قوية ومدمرة، حتى إنهم شعروا باهتزاز الأرض من تحتهم، وبخفقان قلوبهم بشدة، من قوة الانفجارات من حولهم.</p>\n      \n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "label": "حياة أب أصم في قطاع غزة",
+        "vimeo": 110646864,
+        "yt": "xS--ngiZgNw"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "المشرف على الأعمال الحرفية في جمعية \"أطفالنا\"",
+        "label": "هشام غزال",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "quote": "نحن مثل أولئك القادرين على السمع بشكل طبيعي، بل إننا نتمتع بمواهب وقدرات خاصة مثل الفن والتطريز والإبداع",
+        "share": "شارك"
+      },
+      "type": "AJQuote"
+    },
+    {
+      "content": "\n      \n      <p>لم يسلم أحد من سكان قطاع غزة من تبعات الحرب الإسرائيلية على القطاع عام 2014، التي أدت إلى استشهاد أكثر من 2100 فلسطيني، كان بينهم بعض الأشخاص من ذوي الاحتياجات الخاصة.</p>\n      <p>كفاح غانم، فنانة فلسطينية صماء، استشهدت في قصف إسرائيلي استهدف المبنى السكني الذي كانت تعيش فيه.</p>\n      \n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "label": "الوحشية الإسرائيلية",
+        "vimeo": 110646861,
+        "yt": "8cQgjkfiQYA"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "داعية فلسطيني أصم",
+        "label": "خضر الرنتيسي",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "quote": "في هذه الحرب (2014) استشهدت بنت صماء.. كان بيتها من عدة طوابق ودمروه عليه",
+        "share": "شارك"
+      },
+      "type": "AJQuote"
+    },
+    {
+      "content": "\n      \n      <p>انتهى صيف 2014، وانتهت حرب غزة معه، لكن لم تعد الحياة طبيعية كما كانت لأولئك الذين نجوا منها.</p>\n      \n      <p>ويحاول الفلسطينيون في غزة التأقلم مع النتائج المدمرة المترتبة عن الحصار الإسرائيلي المشدد على القطاع، التي تسمح لهم بالبقاء على قيد الحياة فقط، دون الحصول على أي من مقومات الحياة الأخرى، إلا أن قوة إرادتهم تساعدهم على التغلب على تلك الصعاب التي يواجهونها، لبناء حياتهم ومستقبلهم.</p>\n      \n      <p>وبالرغم من عدم حصولهم على أبسط حقوق الإنسان الطبيعية، إلا أنهم يتحلون بشجاعة وقوة عزيمة، لمتابعة حياتهم بشكل شبه طبيعي. وبالرغم من إعاقتهم ومن الصعوبات الجمة التي يعيشونها، يعيش سكان غزة الصم حياتهم بشكل طبيعي، ممثلين بذلك قدوة عليا لكل الفلسطينيين.</p>\n      \n\n     ",
       "type": "Body-text"
     }
   ],
-  "director": "MUSTAFA AL-NABIH",
-  "directorLabel": "Film Director",
-  "headline": "STRONGER THAN WORDS"
+  "director": "مصطفى النبيه",
+  "directorLabel": "إخراج",
+  "headline": "أقوى من الكلام"
 }

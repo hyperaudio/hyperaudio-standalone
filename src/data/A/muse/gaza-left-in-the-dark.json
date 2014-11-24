@@ -1,163 +1,167 @@
 {
   "content": [
     {
-      "content": "\n      \n      Gaza is in the midst of a severe power crisis with blackouts lasting up to 12 hours every day. The lack of electricity has had a deadly impact on 1.8 million Palestinians living in the coastal strip.\n\n     ",
+      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
+      "type": "Body-text"
+    },
+    {
+      "content": "\n      \n      يعيش قطاع غزة أزمة كهرباء حقيقية، بسبب الكهرباء أكثر من 12 ساعة متواصلة يوميّاً.\n      وتنتج عن هذه المشكلة آثار وخيمة على حياة أكثر من 1.8 مليون مواطن في القطاع.\n       \n\n     ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "GENERAL DIRECTOR OF GAZA POWER STATION",
-        "label": "SUHAIL SKAIK",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/gaza-left-in-the-dark.html",
-        "quote": "The situation in Gaza is unbearable.",
-        "share": "SHARE QUOTE"
+        "context": "مدير شركة توزيع الكهرباء في قطاع غزة ",
+        "label": "سهيل سكيك",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/gaza-left-in-the-dark.html",
+        "quote": "الوضع في غزة لا يطاق",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>In Gaza, food security, water, sanitation services, healthcare and education are all threatened by daily interruptions of electricity.</p>\n      \n      <p>Amidst the many hardships Palestinians endure, blackouts are among the most pervasive, affecting virtually every aspect of daily life.</p>\n\n     ",
+      "content": "\n      \n      <p>في غزة يتم وقف إمدادات المياه والغذاء وخدمات الصرف الصحي والخدمات الطبية، إلى جانب الآثار السلبية على أمن المواطنين وتعليمهم وصحتهم.</p>\n      \n      <p>وبالإضافة إلى المشاكل والصعاب التي يواجهها المواطنون الفلسطينيون في قطاع غزة، تعتبر مشكلة انقطاع الكهرباء الأكثر صعوبة وتأثيراً على جميع جوانب حياتهم اليومية.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "LIVING WITH POWER CUTS IN GAZA",
-        "vimeo": 109996006,
-        "yt": "lAoOCov00G8"
+        "label": "غزة بلا كهرباء",
+        "vimeo": 109997229,
+        "yt": "clnjMXwUTZE"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>The Gaza Strip was occupied by Israel in 1967. Over 60 percent of Palestinians in Gaza are refugees, expelled from their homes in other parts of Palestine in 1948. Gaza's current power crisis dates back to 2006, when Israeli airstrikes demolished all six transformers at Gaza's only power station.</p>\n      \n      <p>The power plant has only been partially rebuilt. An Israeli blockade prevents the parts, equipment and fuel needed for reconstruction from reaching Gaza. Meanwhile, Israel continues to systematically target and destroy Gaza's power lines, making the situation even worse.</p>\n      \n      <p>For years now, the power station has operated at a drastically reduced capacity, producing just 80MW of the 300MW needed to meet Gaza's daily power needs. Gaza's power authority copes with this chronic power shortage by imposing blackouts. At any given time, one third of Gaza's residents are without power.</p>\n\n     ",
+      "content": "\n      \n      <p>احتلت إسرائيل قطاع غزة عام 1967. ويشكل اللاجئون الذين هُجروا عنوة من بيوتهم في شتى أنحاء فلسطين عام 1948، أكثر من 60% من سكان القطاع.</p>\n      \n      <p>وقد بدأت أزمة انقطاع الكهرباء في غزة في شهر حزيران من عام 2006 عندما استهدف القصف الجوي الإسرائيلي محولات الكهرباء الستة في محطة الكهرباء الوحيدة في القطاع، فدمرها جميعها. وأعيد بناء محطة الكهرباء جزئيّاً، إلا أن الحصار الإسرائيلي المستمر على القطاع يمنع وصول الوقود، والمعدات وقطع الغيار اللازمة لإعادة بنائها.</p>\n      \n      <p>وفي الوقت ذاته، تستمر إسرائيل في استهداف وتدمير خطوط الكهرباء في قطاع غزة بشكل دائم، ما يزيد الأمر سوءاً أكثر مما هو عليه.</p>\n      \n      <p>وعلى مدى السنين الماضية وحتى وقتنا الحاضر، تعمل محطة الكهرباء الوحيدة في غزة بإمكانيات قليلة جداً، فهي تولد 80 ميجاوات يوميّاً فقط، بينما يحتاج القطاع إلى ما يزيد على 300 ميجاوات لتوفير الاحتياجات اليومية لمواطنيه.</p>\n      \n      <p>وبسبب النقص الشديد في الإمدادات الكهربائية، تضطر سلطة الطاقة في غزة إلى قطع الكهرباء عن السكان يوميّاً وبشكل دوري، بحيث يعيش في كل لحظة ثلث سكان قطاع غزة من دون كهرباء.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "GAZA ELECTRICITY DISTRIBUTION COMPANY",
-        "label": "ABDUL AZIZ ABU SAFIEA",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/gaza-left-in-the-dark.html",
-        "quote": " Every second, one third of Gaza’s population is without electricity.",
-        "share": "SHARE QUOTE"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": {
-        "label": "A PALESTINIAN FAMILY STRUGGLES TO SURVIVE",
-        "vimeo": 109996007,
-        "yt": "hTigtoG1lqQ "
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>Gaza's power shortage may be a relatively recent crisis, but it is one that exacerbates Gaza's older, underlying ones. This is especially true when it comes to Palestinians' access to clean water -- too scarce to support the Gaza Strip's population to begin with. Daily power cuts disrupt sewage treatment and prevent water pumps from working.</p>\n      \n      <p>Over the years, Israeli missile strikes and ground incursions have damaged Gaza's pipelines. Sewage treatment systems have been similarly degraded by the conflict. As a result, sewage often seeps into drinking water, resulting in the sharp increase of waterborne disease.</p>\n      \n      <p>Any plans to improve Gaza's water quality have been thwarted by the power crisis. Water projects are among the largest consumers of electricity. Without enough power to maintain existing water and sanitation systems, it's impossible to build new ones.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "context": "WATER SELLER",
-        "label": "EMAD HIJAZY",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/gaza-left-in-the-dark.html",
-        "quote": "Natural water in Rafah is salty and polluted. So people mostly rely on buying this clean water.",
-        "share": "SHARE QUOTE"
+        "context": "موظف في شركة كهرباء غزة",
+        "label": "عبد العزيز أبو صفية",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/gaza-left-in-the-dark.html",
+        "quote": "كل لحظة ثلث سكان قطاع غزة مقطوعة عنهم الكهرباء",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "GAZA'S WATER SHORTAGE",
-        "vimeo": 109996008,
-        "yt": "900380fQ5TE"
+        "label": "صراع من أجل الحياة... فلسطينيو قطاع غزة",
+        "vimeo": 109997228,
+        "yt": "90QoJU4I6F0"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>Israel's 2014 bombing of the power plant during Operation Protective Edge was disastrous for Gaza. Without a reliable supply of electricity, Palestinians have been forced to rely on generators, which operate on diesel fuel. Israel's 2006 blockade of Gaza triggered massive fuel shortages.</p>\n      \n      <p>The Hamas-led government was compelled to seek alternative sources: smuggled fuel from Egypt was one of the only ways to compensate for the shortfall. However, Egypt's recent clampdown on the Rafah border-crossing, which served as the conduit for smuggled fuel, has virtually choked off that supply.</p>\n\n     ",
+      "content": "\n      \n      <p>ومع أن أزمة انقطاع الكهرباء في غزة مشكلة جديدة نوعاً ما، إلا أنها من أسوأ ما يعانيه المواطنون هذه الأيام؛ حيث إنها تؤثر بشكل كبير على قدرة مواطني القطاع، الذي يعاني من كثافة سكانية عالية، على الحصول على ماء نظيف.</p>\n      \n      <p>ويؤدي انقطاع الكهرباء اليومي إلى وقف معالجة مياه الصرف الصحي وتوقف مضخات المياه الكهربائية عن العمل.</p>\n      \n      <p>بالإضافة إلى ذلك، فقد استهدفت هجمات الجيش الإسرائيلي الجوية والأرضية، على مدى سنين عدة، خطوط إمدادات المياه في القطاع، مراراً وتكراراً، ما أدى إلى تدميرها بالكامل، وتدمير أنظمة معالجة مياه الصرف الصحي أيضاً.</p>\n      \n      <p>ونتيجة لذلك، غالباً ما تتسرب مياه الصرف الصحي إلى مصادر مياه الشرب، متسببة في العديد من الأمراض الناتجة عن تلوثها.</p>\n      \n      <p>وتتسبب أزمة الكهرباء المستمرة في غزة بفشل جميع المخططات لتطوير وتنقية مياه القطاع، حيث إن مثل هذه المشاريع تحتاج إلى طاقة كهربائية عالية، ما يجعل من المستحيل أيضاً بناء أنظمة مياه شرب وصرف صحي جديدة.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "CRUMBLING GENERATORS A LIFELINE",
-        "vimeo": 109996148,
-        "yt": "YjDEfPXxdgA"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": " CHAIRMAN, GAZA POWER AUTHORITY",
-        "label": "KANAAN OBAID",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/gaza-left-in-the-dark.html",
-        "quote": "Israel uses electricity as a weapon of war. Its first reaction to the capture of soldier Gilad Shalit in 2006 was to bomb Gaza's power plant.",
-        "share": "SHARE QUOTE"
+        "context": "بائع مياه فلسطيني في قطاع غزة ",
+        "label": "عماد حجازي ",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/gaza-left-in-the-dark.html",
+        "quote": "الماء في رفح مالح وملوث. لذا يلجأ الناس إلى شراء الماء النظيف  ",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "GAZA'S POWER STATION OVERBURDENED",
-        "vimeo": 109996009,
-        "yt": "MvTUOgHFKS8"
+        "label": "نقص المياه في قطاع غزة",
+        "vimeo": 109997555,
+        "yt": "KBLj8x888vo"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>The only certain way to solve Gaza's power crisis is to lift the Israeli land and sea blockade, most observers say. The blockade has made life in Gaza increasingly precarious. The UN recently warned conditions are deteriorating at such a fast pace, Gaza will be uninhabitable by the year 2020. Israel's blockade has set the stage for a profound humanitarian catastrophe.</p>\n\n     ",
+      "content": "\n      \n      <p>وزاد استهداف إسرائيل لمحطة الكهرباء الرئيسية والوحيدة في غزة أثناء الحرب الأخيرة على القطاع الوضع سوءاً.</p>\n      \n      <p>وفي ظل هذه الأزمة، اضطر سكان القطاع إلى الاعتماد على مولدات الكهرباء التي تعمل بالديزل، إلا أن الحصار الإسرائيلي سبب نقصاً شديداً في موارد الوقود، ما أجبرهم على اللجوء إلى أساليب أخرى، كتهريب الوقود من مصر. لكن حملة الحكومة المصرية على الحدود مع القطاع وإغلاق معبر رفح، الذي يعد المنفذ الوحيد لأهالي القطاع إلى العالم الخارجي، أدت إلى وقف إمداد القطاع بالوقود.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "GAZA, A DEPRIVED CITY",
-        "vimeo": 109996149,
-        "yt": "K8v4RbKPaQ8 "
+        "label": "آلاف يصلحون مولدات الكهرباء في قطاع غزة",
+        "vimeo": 109997226,
+        "yt": "j_sVgUvFuWs"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>Power cuts have had a devastating effect on Gaza's schoolchildren. At home, they are forced to study by gas lamp or candlelight.</p>\n      \n      <p>This hinders their ability to concentrate and learn. Generators can power lights, but cause other problems. School children complain of their sound, smoke and smell. Schools provide no respite. At school, blackouts mean food rots, latrines are left dirty and there is no clean water for washing hands.</p>\n\n     ",
+      "content": {
+        "label": "محطة كهرباء قطاع غزة",
+        "vimeo": 109997554,
+        "yt": "AVhjtoLCPU8"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "رئيس سلطة الطاقة في قطاع غزة ",
+        "label": "كنعان عبيد",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/gaza-left-in-the-dark.html",
+        "quote": "الاحتلال اعتبر الكهرباء أداة حرب في يده. عندما خطف شاليط في 2006 قاموا بقصف محطة تحويل الكهرباء  ",
+        "share": "شـارك"
+      },
+      "type": "AJQuote"
+    },
+    {
+      "content": "\n      \n      <p>ويرى معظم المراقبين أن الطريقة الوحيدة لحل أزمة الكهرباء في قطاع غزة هي رفع الحصار الإسرائيلي البري والبحري الخانق على القطاع، الذي يهدد استقرار الحياة فيه بشكل متزايد.</p>\n      \n      <p>وقد حذرت الأمم المتحدة مؤخراً من أن تدهور الظروف المعيشية في قطاع غزة بشكل مطّرد، سيؤدي إلى إفراغ القطاع من السكان مع حلول عام 2020، حيث إن الحصار الإسرائيلي المشدد سيتسبب قريباً في وقوع كارثة إنسانية حقيقية في غزة.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "PALESTINIAN IN GAZA",
-        "label": "SABREEN DEEB",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/gaza-left-in-the-dark.html",
-        "quote": "The hardest part is when children have exams. They study by candlelight.",
-        "share": "SHARE QUOTE"
+        "label": "غزة- مدينة محرومة",
+        "vimeo": 109997230,
+        "yt": "GPhMeBcim9E"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>ولأزمة الكهرباء في غزة أيضاً أثر مدمر على الطلاب، الذين يضطرون لحلّ واجباتهم المدرسية على ضوء الشموع أو قناديل الغاز، ما يقلل من قدرتهم على التركيز والتعلم. كما أن لمولدات الكهرباء آثاراً سلبية كثيرة على صحة الأطفال، الذين يعانون من ضجيجها ورائحة الدخان المنبعث منها.</p>\n      \n      <p>وبالإضافة إلى الصعوبات التي يعيشها أطفال قطاع غزة داخل المدارس، فإن الانقطاع المستمر للكهرباء يؤدي إلى فساد الطعام وعدم القدرة على تنظيف المراحيض، بالإضافة إلى عدم توفر الماء النظيف للشرب وغسل الأيادي.</p>\n      \n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "context": "فلسطينية من غزة",
+        "label": "صابرين ديب",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/gaza-left-in-the-dark.html",
+        "quote": "أصعب شيء دراسة الأطفال للامتحانات. يدرسون على ضوء الشمعة   ",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "THE COST OF BLACKOUTS: A CHILD'S FUTURE",
-        "vimeo": 109996150,
-        "yt": "vngC-X2XF0U"
+        "label": "أطفال غزة ورعب الكهرباء",
+        "vimeo": 109997227,
+        "yt": "k_UKrf_T2Os"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "label": "HARDSHIPS OF DAILY POWER CUTS IN GAZA",
-        "vimeo": 109996151,
-        "yt": "vHcvwFBZcpY"
+        "label": "قطع الكهرباء- صعوبات الحياة وأخطار الموت",
+        "vimeo": 109997553,
+        "yt": "1chPiY-4YZc"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>Palestinians in Gaza face a daily struggle for survival under Israeli bombardment. Blackouts make their lives even more dangerous. The power crisis places the lives of cardiac and dialysis patients and babies in incubators at risk.</p>\n      \n      <p>But it also endangers the lives of ordinary Palestinians. Generators can be unsafe when used incorrectly. Dozens of Palestinians have been killed or injured by carbon monoxide poisoning, fire, or explosions from improper use.</p>\n      \n      <p>Gaza's power crisis is more than an inconvenience for Palestinians. It is a threat to their very existence.</p>\n\n     ",
+      "content": "\n      \n      <p>يواجه الفلسطينيون في قطاع غزة الاعتداءات الإسرائيلية المتكررة والظلام الدامس الذي يعيشون فيه، إلا أن الانقطاع المستمر للكهرباء في القطاع يعرض حياة كثير من المواطنين للخطر، خاصة الذين يعانون من أمراض القلب والفشل الكلوي، والأطفال الخدج الذين يحتاجون للبقاء في حاضنات الأوكسجين. كما يتعرض المواطنون بشكل عام للخطر بسبب الاستخدام الخاطئ أحيانًا للمولدات الكهربائية، فقد قتل وجرح عشرات منهم بسبب التسمم بغاز أول أكسيد الكربون، أو نتيجة الحرائق والانفجارات الناجمة عن الاستخدام الخاطئ للمولدات.</p>\n      \n      <p>إلى جانب كونها واحدة من أشد المصاعب التي يواجهها الفلسطينيون في قطاع غزة المحاصر، تشكل أزمة الكهرباء خطراً يهدد حياتهم ووجودهم.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "PALESTINIAN IN GAZA",
-        "label": "AMNA BARGHOUT",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/gaza-left-in-the-dark.html",
-        "quote": "My three children died because of the generator. Two others were seriously injured.",
-        "share": "SHARE QUOTE"
+        "context": "فلسطينية من غزة",
+        "label": "آمنة برغوث",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/gaza-left-in-the-dark.html",
+        "quote": "ثلاثة من أطفالي توفوا بسبب مولد الكهرباء، واثنان أصيبوا بجراح خطرة ",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     }
   ],
-  "director": "ASHRAF AL-MASHHARAWY",
-  "directorLabel": "Film Director",
-  "headline": "GAZA LEFT IN THE DARK"
+  "director": "أشرف المشهراوي",
+  "directorLabel": "إخراج",
+  "headline": "حياة بالجدول"
 }

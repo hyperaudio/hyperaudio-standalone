@@ -1,141 +1,145 @@
 {
   "content": [
     {
-      "content": "\n      \n      For young Israelis, the end of mandatory military service is supposed to mark the beginning of their adult lives. For thousands, it triggers an existential crisis.\n\n     ",
+      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
+      "type": "Body-text"
+    },
+    {
+      "content": "\n      \n      يعتبر بعض الشباب الإسرائيليين نهاية الخدمة العسكرية الإجبارية بداية حياتهم الطبيعية كأشخاص بالغين، إلا أن هذه الخدمة تترك آلافاً منهم غارقين في أصعب أزمات حياتهم، إذ تخلف الكثير من المشاكل النفسية لدى بعضهم، ممن يبدأون الشك بمبادئ هذه الدولة التي خدموها خلال المرحلة السابقة من حياتهم.\n\n     ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": " FORMER ISRAELI SERGEANT",
-        "label": "SHAHAR LEVI",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/the-pain-inside.html",
-        "quote": "The task was to terminate them. And that's what we did.",
-        "share": "SHARE QUOTE"
+        "context": "رقيب في الجيش الإسرائيلي سابقا",
+        "label": "شاهار ليفي",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/the-pain-inside.html",
+        "quote": "المهمة كانت أن نصفي الجميع، وهذا ما فعلناه",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>In Israel, military service is mandatory for most people over the age of 18. Men serve three years and women serve two. Exemption from military service is rare and highly controversial. All Israelis who complete compulsory military services become part of the Israeli reserve force. The Israeli army is one of the most prominent institutions in the country, wielding enormous influence over the economy, culture and politics.</p>\n      <p><br>Conscientious objectors are socially ostracised and often jailed for refusing to serve. Israelis view military service as a family obligation or moral duty. Most Israelis see it as a positive experience -- a prerequisite to a successful career that gives young Israelis the opportunity to network. Israeli society romanticises military service, but for some soldiers, reality proves different.</p>\n      \n      <p>Some soldiers are so psychologically damaged by their time in the army they begin to question the state they served. Growing numbers seek answers by traveling overseas. India and Berlin are two top destinations. For some ex-soldiers, it's a journey from which they never return.</p>\n\n     ",
+      "content": "\n      \n      <p>الخدمة العسكرية في إسرائيل إجبارية لمن هم فوق سن الثمانية عشر عاماً، ومدتها ثلاث سنوات للذكور وسنتان للإناث. ويعتبر الإعفاء من الخدمة العسكرية أمراً نادراً، ومن المواضيع التي تثير نقاشات حادة في المجتمع الإسرائيلي.</p>\n      \n      <p>ويتحول من ينهي الخدمة العسكرية الإجبارية في إسرائيل تلقائيّاً إلى قوات الاحتياط في الجيش الإسرائيلي، وهو أكبر وأهم مؤسسة في الدولة؛ بسبب نفوذه القوي في السياسة والاقتصاد والثقافة.</p>\n      \n      <p>أما الشباب الذين يرفضون تأدية الخدمة العسكرية الإجبارية، فإنهم يصبحون منبوذين اجتماعيّاً، وغالباً ما ينتهي بهم الأمر إلى السجن.</p>\n      \n      <p>وينظر العديد من الشباب الإسرائيليين للخدمة العسكرية على أنها واجب عائلي أو أخلاقي تجاه \"الوطن\"، بينما يراها البعض الآخر تجربة فعالة لبناء علاقات اجتماعية جيدة، غالباً ما تؤدي إلى مستقبل مهني ناجح.</p>\n      \n      <p>ويحاول المجتمع الإسرائيلي تجميل صورة الخدمة العسكرية للشباب، لتشجيعهم على الالتحاق بها، إلا أن الواقع يثبت عكس ذلك.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "FORMER ISRAELI SOLDIER",
-        "label": "SHAI MICHEL",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/the-pain-inside.html",
-        "quote": "You don't have a lot of choice in Israel.",
-        "share": "SHARE QUOTE"
+        "context": "إسرائيلي خدم في وحدة الدبابات",
+        "label": "شاي ميشال",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/the-pain-inside.html",
+        "quote": "في إسرائيل ليس لديك خيارات كثيرة",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "SERVING IN THE ISRAELI ARMY",
-        "vimeo": 110454100,
-        "yt": "4KLNfCZ3gQU"
+        "label": " الجيش في إسرائيل",
+        "vimeo": 110646937,
+        "yt": "Bb6Rrv-sLWQ"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "label": "INSIDE ISRAELI ARMY",
-        "vimeo": 110454097,
-        "yt": "RJuuoidp_HY"
+        "label": "أن تخدم في الجيش الإسرائيلي",
+        "vimeo": 110646936,
+        "yt": "ZNTBO2vAl54"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>Mandatory military service can leave Israeli soldiers with post-traumatic stress. Upon military discharge, they are given a cash bonus. Many use that money to buy a plane ticket out of Israel, to get some distance and heal psychological wounds. Most are drawn to India, with its promise of spirituality and easy access to recreational drugs.</p>\n\n     ",
+      "content": "\n      \n      <p>والخدمة العسكرية الإجبارية في إسرائيل تجربة ذات آثار مدمرة على العديد من الجنود الإسرائيليين، الذين يعانون، غالباً، من صدمة نفسية بعد إنهائها.</p>\n      \n      <p>ويحصل هؤلاء الجنود على مكافأة مالية بعد إنهاء الخدمة العسكرية، تستخدم غالباً لشراء تذاكر سفر للذهاب بعيداً عن إسرائيل، وعلاج الآثار النفسية الناتجة عن هذه التجربة.</p>\n      \n      <p>ويفضل أغلب الجنود السفر إلى الهند بحثاً عن الراحة النفسية، والعقاقير المنشطة.</p>\n      \n      <p>وتستقبل الهند سنويّاً عشرات آلاف الجنود الإسرائيليين، ما جعل مثل هذه الرحلات أمراً اعتياديّاً لهذا البلد.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "JEWS IN INDIA",
-        "vimeo": 110454096,
-        "yt": "jbiJQuHa6gE"
+        "label": "اليهود في الهند",
+        "vimeo": 110646943,
+        "yt": "uUq0MwcfvTI"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "label": "I’LL RETURN WHEN THERE IS PEACE",
-        "vimeo": 110454095,
-        "yt": "7KmfGgiV_IU"
+        "label": "سأعود حين يحل السلام",
+        "vimeo": 110646945,
+        "yt": "6JR71RMDwpc"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>Berlin is another popular destination for Israeli travellers. For Israeli citizens, who don’t require a visa to enter European countries, it is an easy escape. About 30,000 Israelis currently live in Berlin. Some refuse to return to Israel as a way to protest the occupation.</p>\n\n     ",
+      "content": "\n      \n      <p>وتأتي ألمانيا كثاني وجهة مفضلة لأولئك الجنود الفارين من ماضي الخدمة العسكرية في إسرائيل، خاصة أن حملة الجنسية الإسرائيلية لا يحتاجون إلى \"فيزا\" لزيارة البلدان الأوروبية.</p>\n      \n      <p>حاليّاً، يعيش قرابة ثلاثين ألف شاب إسرائيلي في مدينة برلين، التي يعتبرونها المكان الأفضل لهم هرباً من التوتر الذي تعرضوا له خلال فترة تجنيدهم الإجباري في الأراضي الفلسطينية المحتلة.</p>\n      \n      <p>وتصل قلة من هؤلاء الجنود إلى قناعة بضرورة انتقاد دولتهم عن بُعد، فيرفضون الرجوع إلى إسرائيل، احتجاجاً على كونها دولة احتلال.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "BERLIN, THE CHOSEN CITY FOR ISRAELI SOLDIERS",
-        "vimeo": 110453399,
-        "yt": "6QqYgHyqhzg"
+        "label": "اخترت برلين",
+        "vimeo": 110646941,
+        "yt": "dPsNLU1Vs0w"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "FREELANCE JOURNALIST",
-        "label": "ELAD JAKOBOVITCH",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/the-pain-inside.html",
-        "quote": "The number of Israelis in Berlin is increasing.",
-        "share": "SHARE QUOTE"
+        "context": "صحفي مستقل",
+        "label": "إيلاد جاكوبوفيتش",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/the-pain-inside.html",
+        "quote": "عدد الإسرائيليين في برلين يتزايد",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>Other Israelis believe it's better to criticise their country from within. They refuse to enlist. They also refuse to leave Israel. These conscientious objectors are a small, but vocal group.</p>\n      \n      <p><span id=\"u13278-4\">Breaking The Silence</span> is an Israeli NGO made up of soldiers and veterans. Its mission is to publish the testimonies of Israeli soldiers who return to civilian life and \"discover the gap between the reality which they encountered in the [occupied] territories, and the silence which they encounter at home\". Ex-soldiers speaking out against the brutality of the Israeli army is a powerful way of challenging the occupation, they say.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>ويفضل إسرائيليون آخرون انتقاد عسكرة إسرائيل من داخلها، فيرفضون أداء الخدمة العسكرية ويرفضون السفر خارج بلادهم. ورغم صغر هذه الفئة، إلا أن لها صوتاً في المجتمع الإسرائيلي.</p>\n      \n      <p>\"كسر الصمت\" منظمة إسرائيلية غير حكومية، أعضاؤها هم جنود سابقون، ومهمتها نشر شهادات هؤلاء الجنود، الذين قرروا بعد إنهاء خدمتهم العسكرية ألا يغضّوا الطرف عن الأمر، بل أن يكشفوا الفرق الشاسع بين الواقع المرير الذي عاشوه في الأراضي الفلسطينية المحتلة، والصمت الذي يواجهونه داخل مجتمعهم.</p>\n      \n      <p>ويرى هؤلاء الجنود أن فضح الأعمال والجرائم البشعة التي يمارسها الجيش الإسرائيلي هو إحدى وسائل مناهضة الاحتلال الإسرائيلي للضفة الغربية وقطاع غزة منذ عام 1967.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "ISRAEL A 'CRAZY EXPERIMENT'",
-        "vimeo": 110453398,
-        "yt": "5aE_HmJ9Kwo"
+        "label": "الخشية على مستقبل إسرائيل",
+        "vimeo": 110646942,
+        "yt": "u19dbdt7QOE"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "FORMER ISRAELI SOLDIER",
-        "label": "TOMER SAGEE",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/the-pain-inside.html",
-        "quote": "Israel is a crazy experiment.",
-        "share": "SHARE QUOTE"
+        "context": "خبير بيئي إسرائيلي خدم في الوحدة الخاصة البحرية سابقا",
+        "label": "تومر ساغي ",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/the-pain-inside.html",
+        "quote": "إسرائيل تجربة مجنونة",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>The occupation and military conscription have a profound effect on young Israelis. One young soldier says it turns young people into \"monsters in a distorted reality\". Their time in the army leaves them with deep psychological wounds that can haunt them for the rest of their lives.</p>\n\n     ",
+      "content": "\n      \n      <p>ويخلّف الاحتلال والخدمة العسكرية أثرًا سلبيّاً كبيراً على حياة الشباب الإسرائيليين، فهما يحوّلان هؤلاء الشباب إلى \"وحوش يعيشون واقعاً مشوهاً\"، حسب وصف أحد الجنود الشباب.<br><br></p>\n      <p>وتترك الخدمة العسكرية الكثير من الصدمات النفسية عند الشباب الإسرائيلي، وغالباً ما تلاحقهم بقية حياتهم.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "SERVING THE ISRAELI ARMY: 'A DISTORTED REALITY'",
-        "vimeo": 110453397,
-        "yt": "qCz9jWnkdVI"
+        "label": "الحقيقة المشوهة",
+        "vimeo": 110646946,
+        "yt": "Zgf3SEJhrrE"
       },
       "type": "AJVideo"
     },
     {
-      "content": {
-        "context": "FORMER ISRAELI SERGEANT",
-        "label": "SHAHAR LEVI",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/the-pain-inside.html",
-        "quote": "Ordinary people, even intelligent people with high self-awareness, become, in a way, monsters in this distorted reality.",
-        "share": "SHARE QUOTE"
-      },
-      "type": "AJQuote"
+      "content": "\n      \n      <p>وقد بدأت ظاهرة \"الرحالة الإسرائيليين\" في سبعينيات القرن الماضي، بعد مشاركة العديد من الجنود الإسرائيليين في حرب عام 1973، وزادت هذه الظاهرة مع استمرار الاحتلال الإسرائيلي للضفة الغربية وقطاع غزة منذ ما يقرب من خمسين عاما.</p>\n      \n      <p>والآن، يفضل بعض من ولدوا في إسرائيل وخدموا في جيشها، الهجرة من دولتهم، لإيمانهم أن الإسرائيليين يعيشون في \"فقاعة\" في تل أبيب، وأن مستقبل الحياة فيها أصبح \"معلقاً بخيط رفيع\".</p>\n      \n      <p>وتهدد الهجرة الجماعية للشباب الإسرائيليين إلى الهند وألمانيا ودول أخرى، الرؤية الصهيونية، التي تصور إسرائيل ملاذاً آمناً لليهود، حيث أصبحت إسرائيل مكاناً يودّ بعض جنودها الهرب منه.</p>\n      \n\n     ",
+      "type": "Body-text"
     },
     {
-      "content": "\n      \n      <p>Overseas, many ex-soldiers become alienated from Israel. They say people in Tel Aviv live in a \"bubble\" and that the future of Israel is \"hanging by a thread\". The yearly exodus -- to&nbsp;India, Berlin and other destinations -- threatens the Zionist vision of Israel as a safe haven for Jews. The occupation has fractured that dream. Israel has become a place that even some of its own soldiers want to flee.</p>\n\n     ",
-      "type": "Body-text"
+      "content": {
+        "context": "رقيب في الجيش الإسرائيلي سابقا",
+        "label": "شاهار ليفي",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/the-pain-inside.html",
+        "quote": "العاديون، وحتى الأذكياء، يتحولون إلى وحوش في هذه الحقيقة المشوهة",
+        "share": "شـارك"
+      },
+      "type": "AJQuote"
     }
   ],
-  "director": "CHARLOTTE BRUNEAU",
-  "directorLabel": "Film Director",
-  "headline": "THE PAIN INSIDE"
+  "director": "تشارلوت برونو",
+  "directorLabel": "إخراج",
+  "headline": "المستنقع"
 }

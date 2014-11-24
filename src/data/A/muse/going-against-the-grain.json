@@ -1,179 +1,183 @@
 {
   "content": [
     {
-      "content": "\n      \n      Gideon Levy is one of Israel's most famous journalists. He is also one of its most hated.\n\n     ",
+      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
+      "type": "Body-text"
+    },
+    {
+      "content": "\n      \n      جدعون ليفي أحد أشهر الصحافيين الإسرائيليين، وهو أيضاً من أكثر الأشخاص المكروهين في إسرائيل.\n\n     ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "ISRAELI JOURNALIST",
-        "label": "BEN DROR YEMENI",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/going-against-the-grain.html",
-        "quote": "Gideon Levy is not criticising Israel. He is portraying it as the devil and that is very dangerous.",
-        "share": "SHARE QUOTE"
+        "context": "صحفي إسرائيلي",
+        "label": "بن درور يمني",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/going-against-the-grain.html",
+        "quote": "جدعون ليفي لا ينتقد دولة إسرائيل، بل يحولها إلى شيء أشبه بالشيطان، وهذا خطير جدا",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>He has been shot at by Israeli soldiers, threatened with being \"beaten to a pulp\" by fellow Israelis and branded a \"security risk\" by Israeli politicians. All of this because Gideon Levy has done something very few other Israelis have dared: For three decades he has travelled to the occupied Palestinian territories to report what he sees on the ground.</p>\n\n     ",
+      "content": "\n      \n      <p>تعرض ليفي للكثير من المضايقات من قبل الإسرائيليين، حيث أطلق الجيش الإسرائيلي النار عليه. كما تعرض للتهديد بالضرب المبرح من قبل بعض الإسرائيليين، حتى إن عدداً من أعضاء الحكومة الإسرائيلية طالبوا بمراقبته، باعتباره يشكل خطراً أمنياً على المجتمع.</p>\n      <p>كل هذه المضايقات سببها أن ليفي -الذي تجاوز الستين من عمره ويكتب في الصحافة منذ ما يزيد على ثلاثة عقود- تجرأ على الأغلبية الإسرائيلية، وزار الأراضي الفلسطينية المحتلة مراراً، بهدف نقل الحقيقة وما يحدث على الأرض.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "THE EMPTIEST MARKET IN THE WORLD",
-        "vimeo": 109927809,
-        "yt": "O8Brbze_vr8"
+        "label": "سوق بلا حياة في مدينة الخليل",
+        "vimeo": 109931558,
+        "yt": "8wkT-WNYvBE"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "PALESTINIAN CITIZEN",
-        "label": "ZLEIKHA MOUHTASEB",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/going-against-the-grain.html",
-        "quote": "The settlers living above always throw stuff at us. Garbage, stones, dirty water, sand, glass, chemicals.",
-        "share": "SHARE QUOTE"
+        "context": "فلسطينية من الخليل",
+        "label": "زليخة محتسب",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/going-against-the-grain.html",
+        "quote": "المستوطنون المقيمون فوقنا يرمون علينا نفايات، وحجارة، وماء قذرا، ورملا، وزجاجا ومواد كيمياويا",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>His column, which appears in the Israeli newspaper <span id=\"u13386-2\">Haaretz</span>, documents the lives of regular Palestinians under Israeli occupation. Levy says most Israelis live in a \"bubble\" -- unaware of the brutalities committed by their own security forces against Palestinians.</p>\n      \n      <p>Israeli media is largely complicit, he argues, because it fails to challenge the narrative that casts Palestinians as nothing more than enemies of Israel. Levy tries to pierce that bubble with his reporting. He writes about Palestinians with humanity, plainly documenting their daily plights.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>يوثق ليفي في عموده الصحافي الذي تنشره صحيفة هآرتس الإسرائيلية حياة الفلسطينيين تحت الاحتلال الإسرائيلي لأرضهم.</p>\n      \n      <p>ويؤكد ليفي أن معظم الإسرائيليين يعيشون في \"فقاعة\"، بغضّهم الطرف عن الأعمال الوحشية التي يمارسها جنود الاحتلال الإسرائيلي ضد الشعب الفلسطيني. ويؤمن أن الإعلام الإسرائيلي متواطئ مع الحكومة الإسرائيلية؛ لفشله بتحدي الرواية الإسرائيلية التي تظهر الشعب الفلسطيني دوماً على أنه عدو لإسرائيل.</p>\n      \n      <p>ويحاول ليفي في كتاباته إخراج الإسرائيليين من هذه الفقاعة التي يعيشون فيها، فهو يكتب عما يحدث في حياة الفلسطينيين بطريقة إنسانية، ويوثق المعاناة اليومية التي يتعرضون لها.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "THE KILLING OF AWAD: A PALESTINIAN",
-        "vimeo": 109928124,
-        "yt": "PerXSdUi0Y8"
+        "label": "مقتل عواد- شاب جرمه الوحيد أنه فلسطيني",
+        "vimeo": 109933308,
+        "yt": "izUMvlV9404"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>One of Levy's earliest columns recounted the story of Fayzeh Abu Dahouk. When the pregnant Palestinian woman went into labour, her brother-in-law tried to take her to the hospital. Israeli soldiers at two separate checkpoints refused to allow them to pass.</p>\n      \n      <p>Abu Dahouk delivered her baby in the back seat of his car, then walked two kilometres to reach a hospital. By the time she did, her newborn son was sick and weak. The following day, her baby died.</p>\n\n     ",
+      "content": "\n      \n      <p>وثقت إحدى كتابات ليفي الصحافية قصة المواطنة الفلسطينية فايزة أبو داهوك. عندما حان موعد ولادتها، حاول أخو زوجها نقلها بالسيارة إلى أقرب مستشفى، إلا أن جنود الاحتلال الإسرائيلي أوقفوهما عند حاجزين عسكريين، ورفضوا السماح لهما بالعبور رغم حالتها الصحية الصعبة؛ فأنجبت مولودها على الكرسي الخلفي في السيارة.</p>\n      \n      <p>اضطرت فايزة إلى المشي مسافة كيلومترين لإيصال مولودها إلى المستشفى، إلا أنه وصل ضعيفاً وفي حالة صحية حرجة، فتوفي في اليوم التالي.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "ISRAELI JOURNALIST",
-        "label": "GIDEON LEVY",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/going-against-the-grain.html",
-        "quote": "I can’t imagine what the Israelis would do if they were under such an occupation",
-        "share": "SHARE QUOTE"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": {
-        "label": "AN ISRAELI JOURNALIST CALLED A TRAITOR",
-        "vimeo": 109928126,
-        "yt": "Ja8IwAoFsCY"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>Over the years, Levy's stories have helped to expose how Israeli soldiers act with impunity towards Palestinian citizens. Some Israelis see Levy as a hero, shedding crucial light on the disturbing consequences of the occupation. Others denounce him as a propagandist for the Palestinians. His work has made him a target of those who see him as an enemy of Israel.</p>\n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "context": "ISRAELI JOURNALIST",
-        "label": "GIDEON LEVY",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/going-against-the-grain.html",
-        "quote": "During the recent Israeli war on Gaza, the beaches [in Tel Aviv] were packed while Apache helicopters flew overhead on bombing missions to Gaza.",
-        "share": "SHARE QUOTE"
+        "context": "صحفي إسرائيلي يوثق الانتهاكات ضد الفلسطينيين",
+        "label": "جدعون ليفي",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/going-against-the-grain.html",
+        "quote": "لا أعرف كيف كان الإسرائيليون سيتصرفون تحت احتلال كهذا",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "ISRAELIS LIVING IN A BUBBLE",
-        "vimeo": 109927803,
-        "yt": "pZnEMJt2ctU"
+        "label": "جدعون ليفي الصحفي الإسرائيلي المكروه في إسرائيل",
+        "vimeo": 109931554,
+        "yt": "zTO_MLwTa-Q"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>Levy has documented settlers' destruction of olive trees. He's witnessed the brutality faced by Palestinian residents of Hebron at the hand of Israeli security forces. He's interviewed the mothers of young Palestinian men and women killed by Israeli soldiers for peacefully protesting Israel's separation wall.</p>\n      \n      <p>His stories force his Israeli audience to imagine themselves in the circumstances of their Palestinian neighbours.</p>\n\n     ",
+      "content": "\n      \n      <p>على مدى سنين عدة، كشفت أعمال ليفي الصحافية الكثير من ممارسات جنود الاحتلال الإسرائيلي الوحشية ضد الفلسطينيين، التي تمر بلا عقاب، فوثق كيف يدمر المستوطنون أشجار الزيتون التي تعتبر مصدر الرزق لكثير من المزارعين الفلسطينيين. كما شهد على الكثير من أعمال العنف التي يمارسها أولئك المستوطنون ضد مواطني مدينة الخليل.</p>\n      \n      <p>قابل ليفي العديد من أمهات الشباب والشابات الفلسطينيين الذين قتلهم جنود الاحتلال الإسرائيلي لمجرد مشاركتهم بتظاهرات احتجاجية سلمية ضد بناء الجدار الفاصل الذي تبنيه إسرائيل في أراضي الضفة الغربية المحتلة.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "ISRAELI BRUTALITY AT CHECKPOINTS",
-        "vimeo": 109926915,
-        "yt": "0qb_VDVdqKk "
+        "label": "العيش في فقاعة",
+        "vimeo": 109928694,
+        "yt": "PwTQmEAntQE"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "ISRAELI JOURNALIST",
-        "label": "GIDEON LEVY",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/going-against-the-grain.html",
-        "quote": "Israelis hate it when you ask them to imagine themselves in the Palestinians’ place.",
-        "share": "SHARE QUOTE"
+        "context": "صحفي إسرائيلي يوثق الانتهاكات ضد الفلسطينيين",
+        "label": "جدعون ليفي",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/going-against-the-grain.html",
+        "quote": "أيام الحرب على غزة، كانت الشواطئ في تل أبيب تعج بالناس، ومن فوقهم مروحيات الأباتشي في طريقها لقصف غزة",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>Levy says he has seen it all: “Children killed. Injured people. Farms on fire. Cars and houses burnt. Shepherds whose cattle were stolen. Farmers whose lands were confiscated. And so many detainees.”</p>\n\n     ",
+      "content": "\n      \n      <p>على مدى سنين عدة، كشفت أعمال ليفي الصحافية الكثير من ممارسات جنود الاحتلال الإسرائيلي الوحشية ضد الفلسطينيين، التي تمر بلا عقاب، فوثق كيف يدمر المستوطنون أشجار الزيتون التي تعتبر مصدر الرزق لكثير من المزارعين الفلسطينيين. كما شهد على الكثير من أعمال العنف التي يمارسها أولئك المستوطنون ضد مواطني مدينة الخليل.</p>\n      \n      <p>قابل ليفي العديد من أمهات الشباب والشابات الفلسطينيين الذين قتلهم جنود الاحتلال الإسرائيلي لمجرد مشاركتهم بتظاهرات احتجاجية سلمية ضد بناء الجدار الفاصل الذي تبنيه إسرائيل في أراضي الضفة الغربية المحتلة.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "PALESTINIAN FARMER",
-        "label": "YUSUF ABU SAFIYEH",
-        "link": "http://interactive.aljazeera.com/aje/PalestineRemix/going-against-the-grain.html",
-        "quote": "Many [Palestinians] have lost their olive trees. The settlers cut them down and stole the olives. Sometimes they even enter out village and attack the people.",
-        "share": "SHARE QUOTE"
+        "label": "تخيل أنه والدك",
+        "vimeo": 109931553,
+        "yt": "8pYL3ck0H_0"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "صحفي إسرائيلي يوثق الانتهاكات ضد الفلسطينيين",
+        "label": "جدعون ليفي",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/going-against-the-grain.html",
+        "quote": "أكثر ما يغيظ الإسرائيليين أن تقول لهم: ضعوا أنفسكم مكان الفلسطينيين، ولو للحظة",
+        "share": "شـارك"
       },
       "type": "AJQuote"
     },
     {
-      "content": {
-        "label": "DESTROYING PALESTINE'S OLIVE TREES",
-        "vimeo": 109926913,
-        "yt": "CcRHb4zcsok"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>To fight Israeli aggression, Levy believes Palestinians must rise up and launch a new Intifada. It’s a controversial stance for an Israeli that has led to him being targeted by some who disagree. \"Twice I've had to run from people wanting to attack me. Once in front of my home and once on the beach,\" Levy says.</p>\n\n     ",
+      "content": "\n      \n      <p>قرر جدعون ليفي عام 1994 الذهاب إلى مخيم الجلزون قرب مدينة رام الله في الضفة الغربية للتحقيق في استشهاد الفتى الفلسطيني عوض هنداش، الذي أطلق جندي إسرائيلي النار على رأسه من الخلف ثلاث مرات.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "A NEW INTIFADA",
-        "vimeo": 109926418,
-        "yt": "aT3LIbGdc5Q"
+        "label": "قلع أشجار الزيتون",
+        "vimeo": 109933300,
+        "yt": "s76Bj-uzcy4"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>Some of his colleagues at rival newspapers claim his work fuels anti-Semitism around the world. These days, Levy mostly writes from home, mindful of his personal safety. When he does venture outside, he often encounters abuse and hostility from his fellow Israelis.</p>\n\n     ",
+      "content": {
+        "context": "مزارع فلسطيني من قرية بدية – الضفة الغربية",
+        "label": "يوسف أبو صفية",
+        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/going-against-the-grain.html",
+        "quote": "كثير من الفلسطينيين خسروا زيتونهم. يأتي المستوطنون يقطعون الأشجار ويسرقون الزيتون. أحيانا يدخلون قريتنا ويهاجموننا",
+        "share": "شـارك"
+      },
+      "type": "AJQuote"
+    },
+    {
+      "content": "\n      \n      <p>يصف قلة من الإسرائيليين جدعون ليفي بأنه صحافي جريء؛ لأنه يسلط الضوء على التداعيات الوخيمة للاحتلال الإسرائيلي على الشعب الفلسطيني، إلا أن الغالبية العظمى من الإسرائيليين يتهمونه بأنه متحيز لصالح الفلسطينيين.</p>\n      \n      <p>أدت كتابات ليفي إلى جعله محط استهداف أولئك الذين يرونه عدواً لإسرائيل، ويتهمه معظم الإسرائيليين بتعزيز العداء للسامية في جميع أنحاء العالم.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "IS CRITICISM OF ISRAEL FAIR?",
-        "vimeo": 109926912,
-        "yt": "EGI3He9Uwd4"
+        "label": "انتفاضة جديدة",
+        "vimeo": 109928695,
+        "yt": "RfXmunUinCY"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>يمضي جدعون ليفي معظم وقته في بيته، ويعمل من هناك؛ حرصاً على سلامته الشخصية. وعندما يتجرأ ويخرج من المنزل، يواجه الكثير من العداء والإهانات من إسرائيليين يصفونه بالخائن.</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "label": "نقد إسرائيل",
+        "vimeo": 109934264,
+        "yt": "boafWH2__7M"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "label": "GIDEON LEVY, ISRAEL'S MOST HATED MAN",
-        "vimeo": 109926914,
-        "yt": "WoW21mjVCqc "
+        "label": "جدعون ليفي الصحفي الإسرائيلي المكروه في إسرائيل",
+        "vimeo": 110134914,
+        "yt": "GUnDOSeUrPE"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>But after more than 30 years of reporting on the atrocities committed against Palestinians, Levy is undeterred. When <span id=\"u13493-2\">Haaretz</span> began publishing an English edition, his popularity grew.</p>\n      \n      <p>Today, millions of people outside Israel read Levy's columns online to understand the injustice Palestinians face. He believes his stories are making a difference.</p>\n\n     ",
+      "content": "\n      \n      <p>وبعد ثلاثين عاماً من نقله للفظائع والجرائم البشعة التي ترتكبها إسرائيل بحق الشعب الفلسطيني، لم تردع جدعون ليفي أيٌّ من هذه المضايقات التي يتعرض لها.</p>\n      \n      <p>توسعت شعبية جدعون ليفي عالمياً بعد أن بدأت صحيفة هآرتس النشر باللغة الإنجليزية. واليوم، يستطيع القراء في أي مكان في العالم قراءة كتاباته الصحافية على الإنترنت للتعرف على حجم الظلم الذي يتعرض له الشعب الفلسطيني باستمرار من الاحتلال الإسرائيلي.</p>\n      <p>يعتقد ليفي أن أمام الفلسطينيين خيارات قليلة لمقاومة العدوان الإسرائيلي، وأحد هذه الخيارات الثورة وإطلاق انتفاضة جديدة.</p>\n      \n\n     ",
       "type": "Body-text"
     }
   ],
-  "director": "BILAL YOUSEF",
-  "directorLabel": "Film Director",
-  "headline": "GOING AGAINST THE GRAIN"
+  "director": "بلال يوسف",
+  "directorLabel": "إخراج",
+  "headline": "ضد التيار"
 }
