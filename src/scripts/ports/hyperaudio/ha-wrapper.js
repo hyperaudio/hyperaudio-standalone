@@ -441,7 +441,11 @@ var AJHAWrapper = {
 
       updatePadShareUrl();
 
+
+
       var hdBtn = document.getElementsByClassName('HAP-player-quality');
+
+      console.log(hdBtn);
 
       for (var i=0; i < hdBtn.length; i++) {
 
