@@ -46,6 +46,8 @@ for (var i = 0; i < pages.length; i++) {
 var extract = function () {
 	var data = {
 		headline: $('.Headline').first().text().trim(),
+		director: $('.Director-name').first().text().trim(),
+		directorLabel: $('.Director').first().text().trim(),		
 		content: []
 	};
 
