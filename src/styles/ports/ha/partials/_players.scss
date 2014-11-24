@@ -133,9 +133,9 @@
 .HAP-player-fullscreen:before {
   content: "\e602";
 }
-.HAP-player-HD:before {
+.HAP-player-quality:before {
   content: "HD";
 }
-.HAP-player-HD--active {
+.HAP-player-quality.HAP-player-HD--active {
   color: $red-LD;
 }
