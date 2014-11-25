@@ -1,7 +1,7 @@
 setSharePath = () ->
-  thisPageURL = document.location.href
+  thisPageURL = window.top.location.href
   shareLinks  = document.querySelectorAll ".jsSetSharePath"
   [].forEach.call shareLinks, (shareLink) ->
     shareLinkHref   = shareLink.getAttribute "href"
-    shareLinkNuHref = shareLinkHref.replace "UURRLL", thisPageURL
+    shareLinkNuHref = shareLinkHref.replace "UURRLL", escape(thisPageURL)
     shareLink.setAttribute "href", shareLinkNuHref
