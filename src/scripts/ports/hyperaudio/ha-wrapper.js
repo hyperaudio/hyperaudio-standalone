@@ -449,8 +449,6 @@ var AJHAWrapper = {
               }
             }
 
-            console.log(btnIndex);
-
             var thisVideo = document.getElementsByClassName('HAP-player--video')[btnIndex].childNodes[0];
 
             //console.log(HAP.transcript.options);
@@ -531,9 +529,67 @@ var AJHAWrapper = {
       }
     }
 
+    var videoListenersSet = false;
+
+    function setVideoClickListeners() {
+
+      if (videoListenersSet == false) {
+        var video = document.getElementsByTagName('video');
+
+        for (var i=0; i < video.length; i++) {
+
+          if (this == video[i]) {
+            videoIndex = i;
+          }
+
+          console.log("adding event listener");
+
+          video[i].addEventListener('click', function () {
+
+            var videoIndex = 0;
+
+            for (var h=0; h < video.length; h++) {
+              if (this == video[h]) {
+                videoIndex = h;
+              }
+            }
+
+            if (HAP.transcript.options.player.videoElem.paused) {
+              HAP.transcript.options.player.play();
+            } else {
+              HAP.transcript.options.player.pause();
+            }
+
+          }, false);
+        }
+
+        // For mixes we need to use a different way as the video is covered by the projector
+
+        var projector = document.getElementsByClassName('HAP-curtain');
+
+        projector[0].addEventListener('click', function () {
+
+          var thisVideo = video[video.length-1];
+
+          console.dir(thisVideo);
+
+          if (thisVideo.paused) {
+            thisVideo.play();
+          } else {
+            thisVideo.pause();
+          }
+
+        }, false);
+      }
+
+      videoListenersSet = true;
+    }
+
     document.addEventListener('mixready', function () {
 
       setHdListeners();
+
+      setVideoClickListeners();
 
     }, false);
 
@@ -575,27 +631,14 @@ var AJHAWrapper = {
 
       setHdListeners();
 
-
+      setVideoClickListeners();
 
       window.onhashchange = function() {
 
         updatePadShareUrl();
       }
 
-      var video = document.getElementsByTagName('video');
 
-      for (var i=0; i < video.length; i++) {
-
-        video[i].addEventListener('click', function () {
-
-          if (HAP.transcript.options.player.videoElem.paused) {
-            HAP.transcript.options.player.play();
-          } else {
-            HAP.transcript.options.player.pause();
-          }
-
-        });
-      }
 
       // detect clicks on the viewer menu
       var sidemenuItems = document.getElementsByClassName('menu__link');
