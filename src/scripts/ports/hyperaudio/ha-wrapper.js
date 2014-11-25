@@ -459,7 +459,8 @@ var AJHAWrapper = {
 
             //var videoUrl = HAP.transcript.options.player.options.media.mp4;
 
-            var videoUrl = thisVideo.currentSrc;
+            var videoUrl = thisVideo.currentSrc.split('&')[0];
+            //console.log(videoUrl);
 
             //var videoUrl = thisvideo
 
@@ -507,6 +508,7 @@ var AJHAWrapper = {
               //HAP.transcript.options.player.options.media.mp4 = newVideoUrl;
               thisVideo.childNodes[0].src = newVideoUrl;
               thisVideo.src = newVideoUrl;
+              //console.log(newVideoUrl);
 
               var switched = false;
 
