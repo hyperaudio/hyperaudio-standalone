@@ -567,19 +567,22 @@ var AJHAWrapper = {
 
         var projector = document.getElementsByClassName('HAP-curtain');
 
-        projector[0].addEventListener('click', function () {
+        if (projector[0]) {
 
-          var thisVideo = video[video.length-1];
+          projector[0].addEventListener('click', function () {
 
-          console.dir(thisVideo);
+            var thisVideo = video[video.length-1];
 
-          if (thisVideo.paused) {
-            thisVideo.play();
-          } else {
-            thisVideo.pause();
-          }
+            console.dir(thisVideo);
 
-        }, false);
+            if (thisVideo.paused) {
+              thisVideo.play();
+            } else {
+              thisVideo.pause();
+            }
+
+          }, false);
+        }
       }
 
       videoListenersSet = true;
