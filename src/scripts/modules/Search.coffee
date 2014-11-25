@@ -13,7 +13,7 @@ request0.onreadystatechange = ->
       while i < _titles.length
         titles["" + _titles[i]._id] = _titles[i].label
         i++
-      
+
       request = new XMLHttpRequest()
       request.open "GET", "/AJE/PalestineRemix/transcripts/data/" + L + "/index.json", true
       request.onreadystatechange = ->
@@ -37,7 +37,7 @@ request0.onreadystatechange = ->
 getParameterByName = (name) ->
   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]")
   regex = new RegExp("[\\?&]" + name + "=([^&#]*)")
-  results = regex.exec(window.top.location.search) 
+  results = regex.exec(window.top.location.search)
   (if results is null then "" else decodeURIComponent(results[1].replace(/\+/g, " ")))
 
 # Do the magic
@@ -61,7 +61,7 @@ doSearch = ->
       el = document.createElement("div")
       # el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a class=\"thumbnail tile__thumbnail\"><img src=\"http://10.24.21.20/~laurian/PALESTINE PROJECT/DATA/MEDIA/SEARCH/images/" + idParts[0] + "/E/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p></div></div></li>"
       title = titles[idParts[0]]
-      el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p>" + title + "</div></div></li>"
+      el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"" + "href" + "\">" + title + "</a></p></div></div></li>"
       result = el.children[0]
       resultsContainer.appendChild result
       # AJAX
