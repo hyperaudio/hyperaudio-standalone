@@ -4,14 +4,14 @@ runHAPTour = (stepIndex) ->
     showCancelLink: true
   )
   tour.addStep "step0",
-    title: "Watch, drag, trim and share! Create your own Palestine story right here!"
+    title: "Making a Remix can easily be done in minutes in six steps."
     buttons: [
       classes: "sec-button"
       text: "Show me how"
       action: tour.next
      ]
   tour.addStep "step1",
-    title: "Pick a film from the column on the left."
+    title: "First, pick a film or search for a word. "
     attachTo: "#panel-media right"
     buttons: [
       classes: "sec-button"
@@ -19,7 +19,7 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step2",
-    title: "The selected film will appear here."
+    title: "Second, watch the film, the transcript will be highlighted along with the video."
     attachTo: "#source-canvas bottom"
     buttons: [
       classes: "sec-button"
@@ -27,61 +27,74 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step3",
-    title: "Here you will find the transcript of the film. Click on any word and the video will play from there."
+    title: "Third, click on any word in the transcript and you will go to that point in the video"
     attachTo: "#source-transcript top"
     buttons: [
       classes: "sec-button"
-      text: "Awesome! Tell me more"
+      text: "OK"
       action: tour.next
      ]
   tour.addStep "step4",
-    title: "Select any text you want and drag it here! <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
-    attachTo: "#output-transcript top"
+    title: "Then fourth, once you find the text you would like to remix, just select, drag and drop to the other screen <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
+    attachTo: "#source-transcript top"
     buttons: [
       classes: "sec-button"
-      text: "Wow that was easy! Now what?"
+      text: "Easy!"
       action: tour.next
      ]
   tour.addStep "step5",
-    title: "Want to make your Remix fancy? Add effects and titles by dragging them from here."
-    attachTo: "#effects top"
+    title: "If you changed your mind, drag it back."
     buttons: [
       classes: "sec-button"
-      text: "Cool!"
+      text: "OK"
       action: tour.next
      ]
   tour.addStep "step6",
-    title: "Your Remix is automatically saved and will appear here. You can play and edit it anytime."
-    attachTo: "#output-canvas bottom"
+    title: "Fifth, you can add by dragging titles and effects"
+    attachTo: "#effects top"
     buttons: [
       classes: "sec-button"
-      text: "What’s next?"
+      text: "OK"
       action: tour.next
      ]
-  unless stepIndex is undefined
-    tour.addStep "step7",
-      title: "Your story is now ready for you to share with all your friends"
-      attachTo: '#HAP-share-bttn top',
+  tour.addStep "step7",
+    title: "Pick another film and repeat the selection of a new text"
+    attachTo: "#panel-media right"
+    buttons: [
+      classes: "sec-button"
+      text: "OK"
+      action: tour.next
+     ]
+  tour.addStep "step8",
+    title: "Now, it is the sixth step and the last, share with your friends. "
+    attachTo: "#HAP-share-bttn top"
+    buttons: [
+      classes: "sec-button"
+      text: "OK"
+      action: tour.next
+     ]
+  if stepIndex is undefined
+    tour.addStep "step9",
+      title: "Your remix is auto saved."
       buttons: [
         classes: "sec-button"
-        text: "Great!"
+        text: "Great"
         action: tour.cancel
        ]
   else
-    tour.addStep "step7",
-      title: "Your story is now ready for you to share with all your friends"
-      attachTo: '#HAP-share-bttn top',
+    tour.addStep "step9",
+      title: "Your remix is auto saved."
       buttons: [
         classes: "sec-button"
-        text: "Great!"
+        text: "Great"
         action: tour.next
        ]
-  tour.addStep "step8",
-    title: "I will be right here if you need me!"
-    attachTo: '#HAP-helper bottom',
+  tour.addStep "step10",
+    title: "Next time, if you are little confused, find the same tutorial here"
+    attachTo: '#HAP-helper left',
     buttons: [
       classes: "sec-button"
-      text: "Got it!"
+      text: "Ok, thanks!"
       action: tour.cancel
      ]
   if stepIndex is undefined
@@ -100,6 +113,6 @@ toggleHAPTour = () ->
   HAPhelper.addEventListener "click", (e) ->
     ShepherdCheck = Shepherd.activeTour
     if ShepherdCheck is null
-      runHAPTour("1")
+      runHAPTour()
     else if ShepherdCheck is undefined
-      runHAPTour("1")
+      runHAPTour()

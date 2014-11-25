@@ -14,7 +14,7 @@
   max-width: 300px;
   box-shadow: 0 0 5px $shadow-weak;
   border-radius: $radius-s;
-  padding: $space-l;
+  padding: $space;
   position: relative;
   &:before {
     @include set-size(0,0);
@@ -33,7 +33,10 @@
 }
 
 .shepherd-element.shepherd-has-title .shepherd-content header {
-  margin-bottom: $space;
+  margin: $space 0 ($space + $space);
+  img {
+    margin-top: $space;
+  }
 }
 .shepherd-element.shepherd-has-title .shepherd-content header a.shepherd-cancel-link {
 }
@@ -55,8 +58,10 @@
 }
 .shepherd-element .shepherd-content header a.shepherd-cancel-link {
   @include opacify;
-  @include position-top-right($space-x,$space-s);
-  @include set-type-large;
+  @include position-top-right(0,0);
+  @include set-size(28px,28px);
+  line-height: 28px;
+  text-align: center;
   color: $mono-Wt;
   font-weight: $font-bold;
   z-index: 1501;
@@ -85,7 +90,7 @@
   color: $mono-Wt;
   display: block;
   font-weight: $font-bold;
-  line-height: $space-m;
+  line-height: $space;
   padding: $space-m;
   text-align: center;
 }
