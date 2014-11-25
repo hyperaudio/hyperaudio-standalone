@@ -342,26 +342,30 @@ var AJHAWrapper = {
                 selectionTextURI     = window.top.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
                 selectionElement     = document.getElementById("share-selection");
 
-                alterPanelState("share-transcript");
 
-                [].forEach.call(document.querySelectorAll(".jsSetShareTranscriptURL"), function(el) {
-                  var shareLinkHref   = el.getAttribute("href");
-                  var shareLinkNuHref = shareLinkHref.replace("UURRLL", escape(selectionTextURI)).replace("TTEEXXTT", escape(selectionTextContent));
-                  el.setAttribute("href", shareLinkNuHref);
-                  //el.classList.remove('selected');
-                  HA.removeClass(el,'selected');
-                });
+                shorten(selectionTextURI, function(_selectionTextURI){
+                  alterPanelState("share-transcript");
+
+                  [].forEach.call(document.querySelectorAll(".jsSetShareTranscriptURL"), function(el) {
+                    var shareLinkHref   = el.getAttribute("href");
+                    var shareLinkNuHref = shareLinkHref.replace("UURRLL", escape(_selectionTextURI)).replace("TTEEXXTT", escape(selectionTextContent));
+                    el.setAttribute("href", shareLinkNuHref);
+                    //el.classList.remove('selected');
+                    HA.removeClass(el,'selected');
+                  });
 
 
-                // toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
+                  // toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
 
-                document.getElementById('hav-share-url').innerHTML = selectionTextURI;
+                  document.getElementById('hav-share-url').innerHTML = selectionTextURI;
 
-                [].forEach.call(document.querySelectorAll("a"), function(el) {
-                  //el.classList.remove('selected');
-                  HA.removeClass(el,'selected');
-                });
-              }
+                  [].forEach.call(document.querySelectorAll("a"), function(el) {
+                    //el.classList.remove('selected');
+                    HA.removeClass(el,'selected');
+                  });
+
+                });//shorten
+              }//if
             }
           }
 
@@ -798,3 +802,27 @@ var AJHAWrapper = {
     }, false);
   }
 };
+
+
+
+
+//// bitly
+function shorten(url, callback) {
+
+    var access_token = "7841e0830831228bd9d758134437a0d8e24a75e4";
+    var api_url = "https://api-ssl.bitly.com";
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", api_url + "/v3/shorten?longUrl=" + encodeURIComponent(url) + "&access_token=" + access_token);
+    xhr.onreadystatechange = function() { 
+        if(xhr.readyState == 4) { 
+            if(xhr.status==200) {
+                // console.log("CORS works!", xhr.responseText);     
+                callback(JSON.parse(xhr.responseText).url);
+            } else callback(url);
+        } 
+    }
+    xhr.send();
+}
+
+
