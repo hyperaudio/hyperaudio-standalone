@@ -8,6 +8,7 @@ var AJHAWrapper = {
 
     // browser sniff
 
+    var status = 0; // all OK
     var mobileDevice = false;
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -190,44 +191,47 @@ var AJHAWrapper = {
     function buildVideo(params) {
       longformId = params[1];
 
-      if (canPlayMP4) {
-        longformMedia = AJHAVideoInfo[longformId].split(',')[1];
-      } else {
-        longformMedia = AJHAVideoInfo[longformId].split(',')[0];
-      }
+      if(AJHAVideoInfo[longformId]) {
 
-      // check for timing parameters which means it's been shared or jumped to
+        if (canPlayMP4) {
+          longformMedia = AJHAVideoInfo[longformId].split(',')[1];
+        } else {
+          longformMedia = AJHAVideoInfo[longformId].split(',')[0];
+        }
 
-      if (params.length > 1) {
+        // check for timing parameters which means it's been shared or jumped to
 
-        startTime = params[2];
-        endTime = params[3];
+        if (params.length > 1) {
 
-        document.addEventListener('transcriptready', function () {
+          startTime = params[2];
+          endTime = params[3];
 
-          if (startTime) {
+          document.addEventListener('transcriptready', function () {
 
-            HAP.transcript.options.player.play(parseInt(startTime/1000));
+            if (startTime) {
 
-            HAP.transcript.options.player.addEventListener('timeupdate', function () {
-              var currentTime = HAP.transcript.options.player.videoElem.currentTime;
-              if (endTime)
-              {
-                if (currentTime > parseInt(endTime/1000) && selectPause == false) {
-                  HAP.transcript.options.player.pause();
-                  selectPause = true;
+              HAP.transcript.options.player.play(parseInt(startTime/1000));
+
+              HAP.transcript.options.player.addEventListener('timeupdate', function () {
+                var currentTime = HAP.transcript.options.player.videoElem.currentTime;
+                if (endTime)
+                {
+                  if (currentTime > parseInt(endTime/1000) && selectPause == false) {
+                    HAP.transcript.options.player.pause();
+                    selectPause = true;
+                  }
                 }
-              }
-            }, false);
+              }, false);
 
-            // cancels the check to pause video at passed through end time
+              // cancels the check to pause video at passed through end time
 
-            document.addEventListener('click', function () {
-              selectPause = true;
-            }, false);
-          }
+              document.addEventListener('click', function () {
+                selectPause = true;
+              }, false);
+            }
 
-        }, false);
+          }, false);
+        }
       }
     }
 
@@ -283,7 +287,7 @@ var AJHAWrapper = {
       //console.log("params = "+params[1].split(':').length);
       console.dir(params);
 
-      if (state && params.length > 1) {
+      if (state && params.length > 1 && params[1]) {
 
         // checking if it's a full video
 
@@ -295,6 +299,8 @@ var AJHAWrapper = {
 
           buildMix(params);
         }
+      } else {
+        status = 1; // Start creating your Remix by selecting a film…
       }
 
       q.awaitAll(function() {
