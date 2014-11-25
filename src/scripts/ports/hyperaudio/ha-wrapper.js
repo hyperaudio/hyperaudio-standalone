@@ -20,7 +20,7 @@ var AJHAWrapper = {
       // body[0].classList.add('tpl--compact');
       var remixButton = document.getElementById('HAP-remix-helper');
       if (remixButton) {
-        remixButton.href = "../create/"+document.location.hash;
+        remixButton.href = "../create/"+window.top.location.hash;
       }
     }
 
@@ -271,7 +271,7 @@ var AJHAWrapper = {
 
     function buildState() {
 
-      var state = document.location.hash;
+      var state = window.top.location.hash;
       var params = state.split('/');
 
       // first pass - create the sections
@@ -339,7 +339,7 @@ var AJHAWrapper = {
               if (selection.start) {
 
                 selectionTextContent = "'" + selection.text + "' :";
-                selectionTextURI     = window.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
+                selectionTextURI     = window.top.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
                 selectionElement     = document.getElementById("share-selection");
 
                 alterPanelState("share-transcript");
@@ -558,7 +558,7 @@ var AJHAWrapper = {
 
         if (HAP.options.origin != "Viewer") {
 
-          var url = window.location.href;
+          var url = window.top.location.href;
           url = url.replace("/create/","/view/");
 
           document.getElementById('hap-share-url').innerHTML = url;
@@ -614,7 +614,7 @@ var AJHAWrapper = {
         console.log('padmenuclick');
         window.onhashchange = function() {
 
-          var longformId = document.location.hash.split('/')[1];
+          var longformId = window.top.location.hash.split('/')[1];
           var longformMedia;
 
           if (isNaN(longformId) == false)
@@ -726,7 +726,7 @@ var AJHAWrapper = {
               }
             }
           }
-          document.location.hash = newUrlHash;
+          window.top.location.hash = newUrlHash;
         }
         
       }, false);
