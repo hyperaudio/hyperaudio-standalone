@@ -342,26 +342,30 @@ var AJHAWrapper = {
                 selectionTextURI     = window.top.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
                 selectionElement     = document.getElementById("share-selection");
 
-                alterPanelState("share-transcript");
 
-                [].forEach.call(document.querySelectorAll(".jsSetShareTranscriptURL"), function(el) {
-                  var shareLinkHref   = el.getAttribute("href");
-                  var shareLinkNuHref = shareLinkHref.replace("UURRLL", escape(selectionTextURI)).replace("TTEEXXTT", escape(selectionTextContent));
-                  el.setAttribute("href", shareLinkNuHref);
-                  //el.classList.remove('selected');
-                  HA.removeClass(el,'selected');
-                });
+                shorten(selectionTextURI, function(_selectionTextURI){
+                  alterPanelState("share-transcript");
+
+                  [].forEach.call(document.querySelectorAll(".jsSetShareTranscriptURL"), function(el) {
+                    var shareLinkHref   = el.getAttribute("href");
+                    var shareLinkNuHref = shareLinkHref.replace("UURRLL", escape(_selectionTextURI)).replace("TTEEXXTT", escape(selectionTextContent));
+                    el.setAttribute("href", shareLinkNuHref);
+                    //el.classList.remove('selected');
+                    HA.removeClass(el,'selected');
+                  });
 
 
-                // toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
+                  // toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
 
-                document.getElementById('hav-share-url').innerHTML = selectionTextURI;
+                  document.getElementById('hav-share-url').innerHTML = selectionTextURI;
 
-                [].forEach.call(document.querySelectorAll("a"), function(el) {
-                  //el.classList.remove('selected');
-                  HA.removeClass(el,'selected');
-                });
-              }
+                  [].forEach.call(document.querySelectorAll("a"), function(el) {
+                    //el.classList.remove('selected');
+                    HA.removeClass(el,'selected');
+                  });
+
+                });//shorten
+              }//if
             }
           }
 
