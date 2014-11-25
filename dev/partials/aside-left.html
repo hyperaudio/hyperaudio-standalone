@@ -13,7 +13,6 @@
               <i class="icon-search"></i>
             </div>
           </form>
-          <h3 class="menu__subtitle">{{L.aside-left__subtitle2}}</h3>
           <ol class="menu__list">
             <li class="menu__item">
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="documentaries">{{L.aside-left__films}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
@@ -26,18 +25,6 @@
             </li>
             <li class="menu__item">
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="quizzes">{{L.aside-left__quizzes}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
-            </li>
-          </ol>
-          <h3 class="menu__subtitle">{{L.aside-left__browseby}}</h3>
-          <ol class="menu__list mbm">
-            <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="eras">{{L.aside-left__byDate}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="places">{{L.aside-left__byPlace}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="characters">{{L.aside-left__byWitness}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
           </ol>
           <div class="menu__push"></div>
@@ -104,76 +91,6 @@
           <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/beginner/">Beginner</a></li>
           <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/beginner/">Intermediate</a></li>
           <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/beginner/">Advanced</a></li>
-        </ol>
-      </div>
-      <div id="menu__pane--eras" class="menu__pane moved--right">
-        <div class="headline" style="background-image: url('{{path}}assets/images/temp3.jpg')">
-          <h2 class="headline__title">by Date</h2>
-          <p class="headline__text">Browse through different eras of Palestinian history</p>
-        </div>
-        <ol class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="{{path}}search/">Era I</a>
-            <span class="menu__supplement-toggle toggleNext">1799 &ndash; 1947 <span class="flag">?</span></span>
-            <div class="menu__supplement next">This era begins when Napoleon Bonaparte issued a proclamation urging Jews in France to "return" to Palestine. It concludes with the end of the British Mandate.</div>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="{{path}}search/">Era II</a>
-            <span class="menu__supplement-toggle toggleNext">1948 &ndash; 1949 <span class="flag">?</span></span>
-            <div class="menu__supplement next">This era is known as the "Nakba", when more than 800 000 Palestinians were expelled from their homes during the 1948 Palestine war. Palestine was effectively erased from the world map.</div>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="{{path}}search/">Era III</a>
-            <span class="menu__supplement-toggle toggleNext">1950 &ndash; 1967 <span class="flag">?</span></span>
-            <div class="menu__supplement next">This era saw Israel extend its control over Palestinians and their land. Inside Isreal, more than 150 000 Palestinians inside Israel were forced into ghettos. Meanwhile, Israel refused to allow over a million Palestinian refugees the right to return to their historic homelands.</div>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="{{path}}search/">Era IV</a>
-            <span class="menu__supplement-toggle toggleNext">1968 &ndash; 1992 <span class="flag">?</span></span>
-            <div class="menu__supplement next">This era saw Israel's occupation expand to the area now known as the West Bank and Gaza Strip. More than 300 000 were forced out of their homes, some of them refugees for the second time in their lives. Israel established illegal settlements inside the occupied territories. </div>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="{{path}}search/">Era V</a>
-            <span class="menu__supplement-toggle toggleNext">1993 &ndash; 2014 <span class="flag">?</span></span>
-            <div class="menu__supplement next">This era marks the first time Israel recognized the Palestinian Liberation Organization as a legitimate movement. Despite signing a peace accord with the Palestinians, Israel's occupation intensifies. Palestinians in the occupied territoris and inside Israel are subjected to daily humilitation, discrimination and violence.</div>
-          </li>
-        </ol>
-      </div>
-      <div id="menu__pane--places" class="menu__pane moved--right">
-        <div class="headline" style="background-image: url('{{path}}assets/images/temp8.jpg')">
-          <h2 class="headline__title">by Place</h2>
-          <p class="headline__text">Browse through different locations in historic Palestine</p>
-        </div>
-        <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Vanishing Palestine</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Wall</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">West Bank</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Gaza</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Jerusalem</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Tel Aviv</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Jaffa</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Acre</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Jordan River</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Caesarea (near Haifa)</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Bethlehem</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Hebron</a></li>
-        </ol>
-      </div>
-      <div id="menu__pane--characters" class="menu__pane moved--right">
-        <div class="headline" style="background-image: url('{{path}}assets/images/temp1.jpg')">
-          <h2 class="headline__title">by Witness</h2>
-          <p class="headline__text">Browse through the testimonies of people who appear in our films</p>
-        </div>
-        <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Name Surname</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Nome Cognome</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Imię Nazwisko</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Name Surname</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Nome Cognome</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Imię Nazwisko</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Name Surname</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Nome Cognome</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}search/">Imię Nazwisko</a></li>
         </ol>
       </div>
       <a id="menu-reset" class="menu-reset toggleMenuPane moved" data-target-menu-pane-id="root" aria-hidden="false">

@@ -26,21 +26,16 @@
 
 	"aside-left__title": "Palestine Remix",
 	"aside-left__subtitle": "Start your search and discovery here",
-	"aside-left__subtitle2": "Explore curated content",
 	"aside-left__films": "Films",
 	"aside-left__remixes": "Remixes",
-	"aside-left__glossary": "Glossary",
+	"aside-left__glossary": "Definitions",
 	"aside-left__maps": "Maps",
 	"aside-left__quizzes": "Quizzes",
-	"aside-left__browseby": "Browse by",
-	"aside-left__byDate": "Date",
-	"aside-left__byPlace": "Place",
-	"aside-left__byWitness": "Witness",
 	"aside-left__footAJ": "Al Jazeera Network",
 	"aside-left__footProj": "The Project",
 	"aside-left__footTeam": "The Team",
 
-	"longform__watch-full-doc": "Watch the full documentary (45')",
+	"longform__watch-full-doc": "Watch the full documentary",
 
 	"pad__start-creating-remix": "Start creating your Remix by selecting a film…",
 	"pad__fade": "Fade",
