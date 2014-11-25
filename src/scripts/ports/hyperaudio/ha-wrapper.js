@@ -777,3 +777,27 @@ var AJHAWrapper = {
     }, false);
   }
 };
+
+
+
+
+//// bitly
+function shorten(url, callback) {
+
+    var access_token = "7841e0830831228bd9d758134437a0d8e24a75e4";
+    var api_url = "https://api-ssl.bitly.com";
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", api_url + "/v3/shorten?longUrl=" + encodeURIComponent(url) + "&access_token=" + access_token);
+    xhr.onreadystatechange = function() { 
+        if(xhr.readyState == 4) { 
+            if(xhr.status==200) {
+                // console.log("CORS works!", xhr.responseText);     
+                callback(JSON.parse(xhr.responseText).url);
+            } else callback(url);
+        } 
+    }
+    xhr.send();
+}
+
+
