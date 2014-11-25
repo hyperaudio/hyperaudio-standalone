@@ -120,7 +120,8 @@ var AJHAWrapper = {
             }
 
             section.setAttributeNode(attribute);
-            section.classList.add('HAP-transcript__item');
+            //section.classList.add('HAP-transcript__item');
+            HA.addClass(section,'HAP-transcript__item');
           } else {
             console.log('WARNING: Could not locate data-m="'+stime+'" and/or data-m="'+etime+'" within transcript '+tid);
           }
@@ -159,8 +160,10 @@ var AJHAWrapper = {
       var attribute = document.createAttribute('data-effect');
       attribute.value = "title";
       section.setAttributeNode(attribute);
-      section.classList.add('HAP-transcript__item');
-      section.classList.add('HAP-effect');
+      //section.classList.add('HAP-transcript__item');
+      //section.classList.add('HAP-effect');
+      HA.addClass(section,'HAP-transcript__item');
+      HA.addClass(section,'HAP-effect');
     }
 
     function buildTimedEffect(index, duration, type, label, min) {
@@ -178,8 +181,10 @@ var AJHAWrapper = {
       var attribute = document.createAttribute('data-effect');
       attribute.value = type;
       section.setAttributeNode(attribute);
-      section.classList.add('HAP-transcript__item');
-      section.classList.add('HAP-effect');
+      //section.classList.add('HAP-transcript__item');
+      //section.classList.add('HAP-effect');
+      HA.addClass(section,'HAP-transcript__item');
+      HA.addClass(section,'HAP-effect');
     }
 
     function buildVideo(params) {
@@ -337,7 +342,8 @@ var AJHAWrapper = {
                   var shareLinkHref   = el.getAttribute("href");
                   var shareLinkNuHref = shareLinkHref.replace("UURRLL", escape(selectionTextURI)).replace("TTEEXXTT", escape(selectionTextContent));
                   el.setAttribute("href", shareLinkNuHref);
-                  el.classList.remove('selected');
+                  //el.classList.remove('selected');
+                  HA.remove(el,'selected');
                 });
 
 
@@ -346,7 +352,8 @@ var AJHAWrapper = {
                 document.getElementById('hav-share-url').innerHTML = selectionTextURI;
 
                 [].forEach.call(document.querySelectorAll("a"), function(el) {
-                  el.classList.remove('selected');
+                  //el.classList.remove('selected');
+                  HA.remove(el,'selected');
                 });
               }
             }
