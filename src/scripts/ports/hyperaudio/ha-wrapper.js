@@ -247,7 +247,7 @@ var AJHAWrapper = {
               buildTitle(i,unescape(details[0]),details[1],details[2]);
               break;
             case "r": // trim
-              buildTimedEffect(i,cmd[1],"trim", effectsLabelTrim, "0");
+              buildTimedEffect(i,cmd[1],"trim", effectsLabelTrim, "-5");
               break;
             case "f": // fade
               buildTimedEffect(i,cmd[1],"fade", effectsLabelFade, "0.5");
@@ -285,7 +285,7 @@ var AJHAWrapper = {
       // do we have any hash params? Are there enough?
 
       //console.log("params = "+params[1].split(':').length);
-      console.dir(params);
+      //console.dir(params);
 
       if (state && params.length > 1 && params[1]) {
 
