@@ -185,6 +185,10 @@ $menu-back-offset : $tap-size;
       margin-right: $space;
     }
   }
+  .menu__foot .brandmark {
+    float: left;
+    margin-right: $space-x;
+  }
 }
 @if $direction == "rtl" {
   .menu-reset {
@@ -225,5 +229,9 @@ $menu-back-offset : $tap-size;
       float: right;
       margin-left: $space;
     }
+  }
+  .menu__foot .brandmark {
+    float: right;
+    margin-left: $space-x;
   }
 }
