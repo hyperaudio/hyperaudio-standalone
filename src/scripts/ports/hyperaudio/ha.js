@@ -523,6 +523,7 @@ var DragDrop = (function (window, document, hyperaudio) {
   };
 
   DragDrop.prototype.move = function (e) {
+
     e.preventDefault();
     e.stopPropagation();
 
@@ -3050,6 +3051,8 @@ var Transcript = (function(document, hyperaudio) {
 
     selectorize: function() {
 
+
+
       var self = this,
         opts = this.options;
 
@@ -3290,6 +3293,7 @@ var Stage = (function(document, hyperaudio) {
     // State Flags.
     this.ready = false;
     this.enabled = true;
+    this.options.DEBUG = false;
 
     // Properties
     this.target = typeof this.options.target === 'string' ? document.querySelector(this.options.target) : this.options.target;
@@ -3565,6 +3569,9 @@ var Stage = (function(document, hyperaudio) {
           draggableClass = 'draggableEffect';
         }
 
+        var sourceTranscript = document.getElementById('source-transcript');
+        var deleteHintClass = 'HAP-delete-hint';
+
         // Setup item for future dragdrop
         el._dragInstance = new DragDrop({
           handle: el,
@@ -3572,9 +3579,17 @@ var Stage = (function(document, hyperaudio) {
           html: html ? html : el.innerHTML,
           draggableClass: draggableClass,
           onDragStart: function () {
+            console.log("dragstart 2");
+            // RHS hint on -- MB
+            hyperaudio.addClass(sourceTranscript, deleteHintClass);
+
             hyperaudio.addClass(self.target, self.options.dragdropClass);
           },
           onDrop: function () {
+            console.log("dropstart 2");
+            // RHS hint off -- MB
+            hyperaudio.removeClass(sourceTranscript, deleteHintClass);
+
             hyperaudio.removeClass(self.target, self.options.dragdropClass);
             self.changed();
           }
