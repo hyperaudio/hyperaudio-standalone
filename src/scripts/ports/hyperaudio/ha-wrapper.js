@@ -349,7 +349,7 @@ var AJHAWrapper = {
                   var shareLinkNuHref = shareLinkHref.replace("UURRLL", escape(selectionTextURI)).replace("TTEEXXTT", escape(selectionTextContent));
                   el.setAttribute("href", shareLinkNuHref);
                   //el.classList.remove('selected');
-                  HA.remove(el,'selected');
+                  HA.removeClass(el,'selected');
                 });
 
 
@@ -359,7 +359,7 @@ var AJHAWrapper = {
 
                 [].forEach.call(document.querySelectorAll("a"), function(el) {
                   //el.classList.remove('selected');
-                  HA.remove(el,'selected');
+                  HA.removeClass(el,'selected');
                 });
               }
             }
