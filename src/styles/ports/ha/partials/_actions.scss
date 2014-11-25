@@ -4,18 +4,15 @@
 
 .HAP-transcript__item {
   .actions {
-    @include position-top-right($transcript-padding,0);
     @include set-size($space-l,$space-l);
     background: $red-LD;
     cursor: pointer;
     display: none;
     z-index: 5;
     &:before {
-      @include position-top-right(50%,100%);
       @include set-size(0,0);
       border: solid transparent;
       border-width: $space-l / 2;
-      border-right-color: $red-LD;
       margin-top: ($space-l / 2) * -1;
       content: " ";
       pointer-events: none;
@@ -58,18 +55,30 @@
       border-right: 2px solid $red-LD;
     }
   }
+  .actions {
+    display: none;
+  }
 }
 
-// #stage .actions:after {
-//   font-family: 'fontello';
-//   content: 'd';
-// }
-
-// #output-transcript .actions:after {
-//   font-family: 'fontello';
-//   content: 'd';
-// }
-
-// #output-transcript .item:hover .actions {
-//   top: 0px;
-// }
+@if $direction == "ltr" {
+  .HAP-transcript__item {
+    .actions {
+      @include position-top-right($transcript-padding,0);
+      &:before {
+        @include position-top-right(50%,100%);
+        border-right-color: $red-LD;
+      }
+    }
+  }
+}
+@if $direction == "rtl" {
+  .HAP-transcript__item {
+    .actions {
+      @include position-top-left($transcript-padding,0);
+      &:before {
+        @include position-top-left(50%,100%);
+        border-left-color: $red-LD;
+      }
+    }
+  }
+}
