@@ -19,9 +19,6 @@
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="documentaries">{{L.aside-left__films}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="remixes">{{L.aside-left__remixes}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
-            </li>
-            <li class="menu__item">
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="themes">{{L.aside-left__glossary}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
@@ -64,20 +61,6 @@
         {{#each nav.films}}
           <li class="menu__item"><a class="menu__link" href="{{../path}}films/{{file}}/">{{label}}</a></li>
         {{/each}}
-        </ol>
-      </div>
-      <div id="menu__pane--remixes" class="menu__pane moved--right">
-        <div class="headline" style="background-image: url('{{path}}assets/images/temp4.jpg')">
-          <h2 class="headline__title">{{L.aside-left__remixes}}</h2>
-          <p class="headline__text">Our films—remixed by you—into new Palestinian stories</p>
-        </div>
-        <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/3">My Palestina</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/4">Which President are you?</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/3">It may possibly a long title, as it’s user generated</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/4">Access to education</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/3">The Palestine I know</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/4">Once upon a time in Palestina</a></li>
         </ol>
       </div>
       <div id="menu__pane--themes" class="menu__pane moved--right">
