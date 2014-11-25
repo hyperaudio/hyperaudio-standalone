@@ -1,5 +1,6 @@
 {{> init }}
 <body class="tpl--pad">
+{{> aside-left}}
 <div id="page-body" class="page-body">
   <div class="HAP HAP--pad">
       <aside id="sidemenu" class="HAP-sidebar">
@@ -67,7 +68,9 @@
     </div>
   </div>
 </div>
+{{> aside-right}}
 <div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>
+{{> panel-language}}
 {{> panel-share}}
 <script src="{{path}}assets/scripts/vendorq2.js"></script>
 <script src="{{path}}assets/scripts/aj.js"></script>
