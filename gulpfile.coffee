@@ -93,7 +93,8 @@ gulp.task "compile-coffee", ->
   gulp.src([
     "./src/scripts/helpers/*.coffee",
     "./src/scripts/modules/*.coffee",
-    "./src/scripts/scripts.coffee"
+    "./src/scripts/scripts.coffee",
+    "./src/scripts/lang/" + L + "/*.coffee"
     ])
     .pipe $.concat 'aj.coffee'
     .pipe gulp.dest("./dev/assets/scripts")
@@ -119,7 +120,7 @@ gulp.task("node-build",
 gulp.task "watch", ->
   gulp.watch ["./src/styles/**/*.scss"], [ "compile-sass", "node-build" ]
   gulp.watch ["./dev/**/*.html"], ["html", "node-build"]
-  gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/*.coffee", "./bower_components/**/*.js"], ["compile-coffee", "node-build"]
+  gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/lang/" + L + "/*.coffee", "./src/scripts/*.coffee", "./bower_components/**/*.js"], ["compile-coffee", "node-build"]
   gulp.watch SCRIPTQ3, ["concat-ports", "node-build"]
   gulp.watch ["./dev/assets/**/*.*"], ["node-build"]
 

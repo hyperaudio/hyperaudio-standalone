@@ -2443,7 +2443,6 @@ var Player = (function(window, document, hyperaudio, Popcorn) {
         }
       } else {
         if(play) {
-          console.log("attempting to play 2");
           media.play();
         }
       }
@@ -2696,8 +2695,6 @@ var PlayerGUI = (function (window, document, hyperaudio) {
 
     fullscreen: function () {
 
-      console.log("fullscreen function");
-
       if ( !this._isFullscreen() ) {
         this._requestFullScreen();
         return;
@@ -2931,6 +2928,8 @@ var Transcript = (function(document, hyperaudio) {
         }, 0);
       };
 
+      console.log('in transcript prototype');
+
       if(this.target) {
         // Destroy iscroll, since is is useless after the contents of the wraper changes, changing that 1st child element.
         // self.iScroll.destroy();
@@ -3120,9 +3119,9 @@ var Transcript = (function(document, hyperaudio) {
         });
         this.ready = true;
         this._trigger(hyperaudio.event.ready, {msg: 'Transcript is ready.'});
+        console.log('firing transcript ready');
         var event = document.createEvent('Event');
         event.initEvent('transcriptready', true, true);
-
         document.dispatchEvent(event);
       }
     },
@@ -3421,6 +3420,7 @@ var Stage = (function(document, hyperaudio) {
                 self.updateStage(this.responseText);
                 self.initDragDrop();
                 self._trigger(hyperaudio.event.load, {msg: 'Loaded "' + self.options.mix.url + '"'});
+
               },
               error: function(event) {
                 self.target.innerHTML = 'Problem with mix URL.'; // TMP - This sort of things should not be in the lib code, but acting off an error event hander.
@@ -3437,6 +3437,9 @@ var Stage = (function(document, hyperaudio) {
           }
         }
       }
+
+
+
     },
 
     save: function(callback) {
@@ -4148,6 +4151,10 @@ var Projector = (function(window, document, hyperaudio, Popcorn) {
 
     getContent: function() {
 
+      var event = document.createEvent('Event');
+      event.initEvent('mixready', true, true);
+      document.dispatchEvent(event);
+
       var effect = [],
         searching = true,
         section;
@@ -4729,10 +4736,10 @@ HAP = (function (window, document, HA) {
   };
 
   var player;
-  var projector;
+  //var projector;
   var music;
   var stage;
-  //var transcript;
+  var transcript;
 
   var sidemenu;
 
