@@ -75,7 +75,7 @@ runHAPTour = (stepIndex) ->
      ]
   if stepIndex is undefined
     tour.addStep "step9",
-      title: "Your remix is auto saved."
+      title: "Your remix is automatically saved."
       buttons: [
         classes: "sec-button"
         text: "Great"
@@ -83,7 +83,7 @@ runHAPTour = (stepIndex) ->
        ]
   else
     tour.addStep "step9",
-      title: "Your remix is auto saved."
+      title: "Your remix is automatically saved."
       buttons: [
         classes: "sec-button"
         text: "Great"
