@@ -275,6 +275,9 @@ var AJHAWrapper = {
 
       // do we have any hash params? Are there enough?
 
+      //console.log("params = "+params[1].split(':').length);
+      console.dir(params);
+
       if (state && params.length > 1) {
 
         // checking if it's a full video
@@ -407,11 +410,127 @@ var AJHAWrapper = {
       }
     }
 
+    function setPosters() {
+      var posterUrl = "../../assets/images/hap/" + L + "-poster.png";
+      if (HAP.transcript) {
+        HAP.transcript.options.player.videoElem.poster = posterUrl;
+      }
+    }
 
+    var hdListenersSet = false;
+
+    function setHdListeners() {
+
+      if (hdListenersSet == false) {
+        var hdBtn = document.getElementsByClassName('HAP-player-quality');
+
+        for (var i=0; i < hdBtn.length; i++) {
+
+          hdBtn[i].addEventListener('click', function () {
+
+            var btnIndex = 0;
+
+            for (var h=0; h < hdBtn.length; h++) {
+              if (this == hdBtn[h]) {
+                btnIndex = h;
+              }
+            }
+
+            console.log(btnIndex);
+
+            var thisVideo = document.getElementsByClassName('HAP-player--video')[btnIndex].childNodes[0];
+
+            //console.log(HAP.transcript.options);
+
+            //var videoUrl = HAP.transcript.options.player.options.media.mp4;
+
+            var videoUrl = thisVideo.currentSrc;
+
+            //var videoUrl = thisvideo
+
+            if (canPlayMP4) {
+              var videoId = 0;
+
+              for (var j=0;  j < AJHAVideoInfo.length; j++) {
+                if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
+                    videoId = j;
+                }
+              }
+
+              var newVideoUrl;
+
+              if (mobileDevice) {
+
+                if (HA.hasClass(this,'HAP-player-HD--active')) {
+                  newVideoUrl = AJHAVideoInfo[videoId].split(',')[1];
+                  HA.removeClass(this,'HAP-player-HD--active');
+                } else {
+                  newVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
+                  HA.addClass(this,'HAP-player-HD--active');
+                }
+
+              } else {
+
+                if (HA.hasClass(this,'HAP-player-HD--active')) {
+                  newVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
+                  HA.removeClass(this,'HAP-player-HD--active');
+                } else {
+                  newVideoUrl = AJHAVideoInfo[videoId].split(',')[3];
+                  HA.addClass(this,'HAP-player-HD--active');
+                }
+
+              }
+              
+              /*var currentTime = HAP.transcript.options.player.videoElem.currentTime;
+              HAP.transcript.options.player.videoElem.src = newVideoUrl;
+              var paused = HAP.transcript.options.player.GUI.status.paused;*/
+
+              var currentTime = thisVideo.currentTime;
+              console.log("currentTime="+currentTime);
+              var paused = thisVideo.paused;
+
+              //HAP.transcript.options.player.options.media.mp4 = newVideoUrl;
+              thisVideo.childNodes[0].src = newVideoUrl;
+              thisVideo.src = newVideoUrl;
+
+              var switched = false;
+
+              thisVideo.addEventListener('loadeddata', function() {
+                if (switched == false) {
+                  if (paused) {
+                    //HAP.transcript.options.player.pause(currentTime);
+                    thisVideo.currentTime = currentTime;
+                    switched = true;
+                  } else {
+                    //HAP.transcript.options.player.play(currentTime);
+                    thisVideo.currentTime = currentTime;
+                    thisVideo.play();
+                  }           
+                }
+                switched = true;
+                
+              }, false);
+
+            }
+          }, false);
+        }      
+        hdListenersSet = true;
+      }
+    }
+
+    document.addEventListener('mixready', function () {
+
+      setHdListeners();
+
+    }, false);
+
+    // note transcript ready only fires when an entire transcript is loaded (Not a mix) 
 
     document.addEventListener('transcriptready', function () {
 
-      HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/" + L + "-poster.png";
+      setPosters();
+
+      //HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/" + L + "-poster.png";
 
       if (target != 'Viewer') {
 
@@ -441,72 +560,9 @@ var AJHAWrapper = {
 
       updatePadShareUrl();
 
+      setHdListeners();
 
 
-      var hdBtn = document.getElementsByClassName('HAP-player-quality');
-
-      console.log(hdBtn);
-
-      for (var i=0; i < hdBtn.length; i++) {
-
-        hdBtn[i].addEventListener('click', function () {
-
-          console.log("HD clicked");
-          //console.log(HAP.transcript.options);
-
-          var videoUrl = HAP.transcript.options.player.options.media.mp4;
-
-          if (videoUrl) {
-            var videoId = 0;
-
-            for (var j=0;  j < AJHAVideoInfo.length; j++) {
-              if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
-                  videoId = j;
-              }
-            }
-
-            var newVideoUrl;
-
-            if (mobileDevice) {
-
-              if (HA.hasClass(this,'HAP-player-HD--active')) {
-                newVideoUrl = AJHAVideoInfo[videoId].split(',')[1];
-                HA.removeClass(this,'HAP-player-HD--active');
-              } else {
-                newVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
-                HA.addClass(this,'HAP-player-HD--active');
-              }
-
-            } else {
-
-              if (HA.hasClass(this,'HAP-player-HD--active')) {
-                newVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
-                HA.removeClass(this,'HAP-player-HD--active');
-              } else {
-                newVideoUrl = AJHAVideoInfo[videoId].split(',')[3];
-                HA.addClass(this,'HAP-player-HD--active');
-              }
-
-            }
-            
-            var currentTime = HAP.transcript.options.player.videoElem.currentTime;
-            HAP.transcript.options.player.videoElem.src = newVideoUrl;
-            var paused = HAP.transcript.options.player.GUI.status.paused;
-
-            console.log(paused);
-
-            if (paused) {
-              HAP.transcript.options.player.pause(currentTime);
-            } else {
-              HAP.transcript.options.player.play(currentTime);
-            }
-
-            HAP.transcript.options.player.options.media.mp4 = newVideoUrl;
-
-            console.log(newVideoUrl);
-          }
-        }, false);
-      }
 
       window.onhashchange = function() {
 
