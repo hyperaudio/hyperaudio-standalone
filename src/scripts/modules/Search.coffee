@@ -76,7 +76,7 @@ doSearch = ->
       # el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a class=\"thumbnail tile__thumbnail\"><img src=\"http://10.24.21.20/~laurian/PALESTINE PROJECT/DATA/MEDIA/SEARCH/images/" + idParts[0] + "/E/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p></div></div></li>"
       title = titles[idParts[0]]
       if insideHAP
-        el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
+        el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
       else
         el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
       
@@ -109,7 +109,10 @@ doSearch = ->
                   sword = lunr.ar.stemmer(words[j].toLowerCase()) if L == 'A'
                   sword = lunr.tr.stemmer(words[j].toLowerCase()) if L == 'T'
                   if sword.indexOf(keyword) is 0
-                    words[j] = "<a class=\"highlight\" href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + words[j] + "</a>"
+                    if insideHAP
+                      words[j] = "<a class=\"highlight\" href=\"#/" + idParts[0] + "/" + idParts[2] + "\">" + words[j] + "</a>"
+                    else
+                      words[j] = "<a class=\"highlight\" href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + words[j] + "</a>"
                     match++
                   j++
                 i++
