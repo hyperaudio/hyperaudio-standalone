@@ -434,20 +434,6 @@ var AJHAWrapper = {
       }
     }
 
-    var shareBtnListenerSet = false;
-
-    function updateShareOnOpen() {
-      if (shareBtnListenerSet == false) {
-        var shareBtn = document.getElementById('HAP-share-bttn');
-
-        shareBtn.addEventListener('click', function () {
-            console.log("do your bitly thing here");
-        }, false);
-
-        shareBtnListenerSet = true;
-      }
-    }
-
     var hdListenersSet = false;
 
     function setHdListeners() {
@@ -612,8 +598,6 @@ var AJHAWrapper = {
 
       setVideoClickListeners();
 
-      updateShareOnOpen();
-
     }, false);
 
     // note transcript ready only fires when an entire transcript is loaded (Not a mix) 
@@ -630,8 +614,6 @@ var AJHAWrapper = {
       }
 
       setEffectsListeners();
-
-      updateShareOnOpen();
 
       // general hash change detector
 
