@@ -411,7 +411,7 @@ var AJHAWrapper = {
 
     document.addEventListener('transcriptready', function () {
 
-      HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/poster.png";
+      HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/" + L + "-poster.png";
 
       if (target != 'Viewer') {
 
