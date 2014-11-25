@@ -21,12 +21,17 @@ request0.onreadystatechange = ->
           if @status >= 200 and @status < 400
             index = lunr.Index.load(JSON.parse(@responseText))
             listingSearchInput = document.getElementById("search")
+            dispatch = true
+            if listingSearchInput is null
+              listingSearchInput = document.getElementById("HAP-search")
+              dispatch = false
             unless listingSearchInput is null
               listingSearchInput.addEventListener "change", doSearch
               listingSearchInput.setAttribute "value", getParameterByName("search") if getParameterByName("search")
-              event = document.createEvent("HTMLEvents")
-              event.initEvent "change", true, false
-              listingSearchInput.dispatchEvent event
+              if dispatch
+                event = document.createEvent("HTMLEvents")
+                event.initEvent "change", true, false
+                listingSearchInput.dispatchEvent event
           else
             console.log("Silent Error")
 
@@ -43,9 +48,18 @@ getParameterByName = (name) ->
 # Do the magic
 doSearch = ->
   # clean-up
-  resultsContainer = document.querySelectorAll(".listing")[0]
+  insideHAP = false
+  if document.querySelectorAll(".listing").length > 0
+    resultsContainer = document.querySelectorAll(".listing")[0]
+  if document.querySelectorAll(".HAP-listing").length > 0
+    resultsContainer = document.querySelectorAll(".HAP-listing")[0]
+    insideHAP = true
+
   resultsContainer.removeChild resultsContainer.firstChild  while resultsContainer.firstChild
-  query = document.getElementById("search").value.trim()
+  searchEl = document.getElementById("search")
+  if searchEl is null
+    searchEl = document.getElementById("HAP-search")
+  query = searchEl.value.trim()
   results = index.search(query)
   if results.length is 0
     console.log("hello no results")
@@ -61,7 +75,11 @@ doSearch = ->
       el = document.createElement("div")
       # el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a class=\"thumbnail tile__thumbnail\"><img src=\"http://10.24.21.20/~laurian/PALESTINE PROJECT/DATA/MEDIA/SEARCH/images/" + idParts[0] + "/E/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p></div></div></li>"
       title = titles[idParts[0]]
-      el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
+      if insideHAP
+        el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
+      else
+        el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
+      
       result = el.children[0]
       resultsContainer.appendChild result
       # AJAX
