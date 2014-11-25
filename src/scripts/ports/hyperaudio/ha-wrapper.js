@@ -624,25 +624,36 @@ var AJHAWrapper = {
           var url = window.top.location.href;
           url = url.replace("/create/","/view/");
 
-          document.getElementById('hap-share-url').innerHTML = url;
+          shorten(url, function(_url) {
 
-          document.getElementById('hap-share-facebook').href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
-          document.getElementById('hap-share-twitter').href = "https://twitter.com/home?status=" + url;
-          document.getElementById('hap-share-google').href = "https://plus.google.com/share?url=" + url;
-          document.getElementById('hap-share-email').href = "mailto:?subject=Message%20via%20PALESTINE%20REMIX&body=Hey%2C%20%0A%0Acheck%20this%20page%3A%20" + url;
+            alterPanelState('share');
+
+            document.getElementById('hap-share-url').innerHTML = _url;
+
+            document.getElementById('hap-share-facebook').href = "https://www.facebook.com/sharer/sharer.php?u=" + escape(_url);
+            document.getElementById('hap-share-twitter').href = "https://twitter.com/home?status=" + escape(_url);
+            document.getElementById('hap-share-google').href = "https://plus.google.com/share?url=" + escape(_url);
+            document.getElementById('hap-share-email').href = "mailto:?subject=Message%20via%20PALESTINE%20REMIX&body=Hey%2C%20%0A%0Acheck%20this%20page%3A%20" + escape(_url);
+
+
+          });//shorten
         }
 
       }
 
-      updatePadShareUrl();
+      document.getElementById('HAP-share-bttn').addEventListener('click', function () {
+            updatePadShareUrl()
+      }, false);
+
+
+      // updatePadShareUrl();
 
       setHdListeners();
 
       setVideoClickListeners();
 
       window.onhashchange = function() {
-
-        updatePadShareUrl();
+        // updatePadShareUrl();
       }
 
 
@@ -799,10 +810,12 @@ function shorten(url, callback) {
     xhr.onreadystatechange = function() { 
         if(xhr.readyState == 4) { 
             if(xhr.status==200) {
-                // console.log("CORS works!", xhr.responseText);     
-                callback(JSON.parse(xhr.responseText).url);
+                // console.log("CORS works!", xhr.responseText); 
+                var resp = JSON.parse(xhr.responseText);    
+                if (typeof resp.url == 'undefined') return callback(url);
+                callback(_url);
             } else callback(url);
-        } 
+        } //else callback(url);
     }
     xhr.send();
 }
