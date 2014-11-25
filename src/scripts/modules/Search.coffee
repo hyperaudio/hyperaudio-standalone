@@ -55,13 +55,13 @@ doSearch = ->
     (->
       # video-paragraph-timecode
       idParts = results[r].ref.split("-")
-      id = idParts[0] + "-" + idParts[1]
+      id = idParts[0] + "-" + (parseInt(idParts[1]) + 0)
       second = parseInt(idParts[2] / 1000)
       second = 1 if second is 0
       el = document.createElement("div")
       # el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a class=\"thumbnail tile__thumbnail\"><img src=\"http://10.24.21.20/~laurian/PALESTINE PROJECT/DATA/MEDIA/SEARCH/images/" + idParts[0] + "/E/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p></div></div></li>"
       title = titles[idParts[0]]
-      el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"" + "href" + "\">" + title + "</a></p></div></div></li>"
+      el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
       result = el.children[0]
       resultsContainer.appendChild result
       # AJAX
@@ -98,6 +98,8 @@ doSearch = ->
               if match > 0
                 sentences[s] = words.join(" ")
                 resultSentences.push sentences[s]
+              else
+                resultSentences = sentences
               s++
             document.querySelectorAll("#r" + id + " .tile__transcript")[0].innerHTML = resultSentences.join(". ") + "."
       request.send()
