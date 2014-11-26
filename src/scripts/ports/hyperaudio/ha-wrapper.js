@@ -9,6 +9,12 @@ var AJHAWrapper = {
     // browser sniff
 
     var status = 0; // all OK
+
+    var v = document.createElement('video');
+    var canPlayMP4 = !!v.canPlayType && v.canPlayType('video/mp4') != "";
+
+
+
     var mobileDevice = false;
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -46,8 +52,7 @@ var AJHAWrapper = {
     document.addEventListener("webkitfullscreenchange", fullscreenHandler, false);
     document.addEventListener("mozfullscreenchange", fullscreenHandler, false);
 
-    var v = document.createElement('video');
-    var canPlayMP4 = !!v.canPlayType && v.canPlayType('video/mp4') != "";
+
 
     // constants
 
@@ -546,6 +551,18 @@ var AJHAWrapper = {
       }
     }
 
+    function hideHdButtonsIfYouTube() {
+      if (!canPlayMP4) {
+        console.log("hiding HD buttons");
+        var hdBtns = document.getElementsByClassName('HAP-player-quality');
+        console.dir(hdBtns);
+        for (var i = 0; i < hdBtns.length; i++) {
+          console.log("display none");
+          hdBtns[i].style.display = 'none';
+        }
+      }
+    }
+
     var videoListenersSet = false;
 
     function setVideoClickListeners() {
@@ -605,11 +622,20 @@ var AJHAWrapper = {
       videoListenersSet = true;
     }
 
-    document.addEventListener('mixready', function () {
+    function generalInit() {
+
+      hideHdButtonsIfYouTube();
+
+      setPosters();
 
       setHdListeners();
 
-      setVideoClickListeners();
+      setVideoClickListeners();     
+    }
+
+    document.addEventListener('mixready', function () {
+
+      generalInit();
 
     }, false);
 
@@ -617,7 +643,7 @@ var AJHAWrapper = {
 
     document.addEventListener('transcriptready', function () {
 
-      setPosters();
+      generalInit();
 
       //HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/" + L + "-poster.png";
 
@@ -647,11 +673,8 @@ var AJHAWrapper = {
             document.getElementById('hap-share-twitter').href = "https://twitter.com/home?status=" + escape(_url);
             document.getElementById('hap-share-google').href = "https://plus.google.com/share?url=" + escape(_url);
             document.getElementById('hap-share-email').href = "mailto:?subject=Message%20via%20PALESTINE%20REMIX&body=Hey%2C%20%0A%0Acheck%20this%20page%3A%20" + escape(_url);
-
-
           });//shorten
         }
-
       }
 
       if (document.getElementById('HAP-share-bttn')) {
@@ -660,18 +683,11 @@ var AJHAWrapper = {
         }, false);
       }
 
-
       // updatePadShareUrl();
-
-      setHdListeners();
-
-      setVideoClickListeners();
 
       window.onhashchange = function() {
         // updatePadShareUrl();
       }
-
-
 
       // detect clicks on the viewer menu
       var sidemenuItems = document.getElementsByClassName('menu__link');
@@ -718,8 +734,6 @@ var AJHAWrapper = {
         for ( var i = 0, l = selected.length; i < l; i++ ) {
           HA.removeClass(selected[i], 'selected');
         }
-
-
 
         // an effect may have been added to the mix
 
@@ -812,8 +826,6 @@ var AJHAWrapper = {
 };
 
 
-
-
 //// bitly
 function shorten(url, callback) {
 
@@ -834,5 +846,3 @@ function shorten(url, callback) {
     }
     xhr.send();
 }
-
-
