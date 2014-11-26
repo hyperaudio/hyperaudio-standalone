@@ -3,7 +3,6 @@ renderDrops       = () ->
   [].forEach.call drops, (drop) ->
     dropTarget    = drop.getElementsByClassName("drop__toggle")[0]
     dropPosition  = drop.getAttribute "data-drop-position"
-    console.log dropPosition
     shareable     = new Drop
       target                  : dropTarget
       content                 : ->
