@@ -4,7 +4,21 @@ var jf = require('jsonfile');
 
 var site = "http://interactive.aljazeera.com/aje/PalestineRemix/";
 var pages = [
-	"index"
+ "admin_detention",
+ "borders",
+ "bypass_road",
+ "closure",
+ "collective_punishment",
+ "ethnic_cleansing",
+ "green_line",
+ "intifada",
+ "occupied_territories",
+ "palestinian_authority",
+ "plo",
+ "refugee",
+ "settlement",
+ "wall",
+ "zionism"
 ];
 
 var process = function (key) {
@@ -29,34 +43,22 @@ for (var i = 0; i < pages.length; i++) {
 
 var extract = function () {
 	var data = {
-        // headline: $('.Headline').first().text().trim(),
-        // director: $('.Director-name').first().text().trim(),
-        // directorLabel: $('.Director').first().text().trim(),	
 		content: []
 	};
 
 	$('.Headline').each(function(i, e){
 		var $e = $(e);
-        var content = $e.text().trim();
-        $e.data('content', content);
-        if (parseInt(content) == content) {
-            $e.data('type', 'HeadlineNumber');
-        } else $e.data('type', 'Headline');
-	});
-    
-	$('.Small-subheader').each(function(i, e){
-		var $e = $(e);
-		$e.data('type', 'Subheader');
+        $e.data('type', 'Headline');
 		$e.data('content', $e.text().trim());
 	});
-
+    
 	$('.Body-text').each(function(i, e){
 		var $e = $(e);
 		$e.data('type', 'Body-text');
 		$e.data('content', $e.html().replace(/<!--(.*?)-->/gm, '').replace(/<p>&nbsp;<\/p>/g, '').trim());
 	});
 
-	var elements = $('.Small-subheader, .Body-text, .Headline');
+	var elements = $('.Body-text, .Headline');
 	elements.sort(function(a, b) {
 		var a = $(a).offset();
 		var b = $(b).offset();
@@ -70,6 +72,7 @@ var extract = function () {
 	elements.each(function(i, e){
         var top = $(e).offset().top;
         if (top < 200) return;
+        if (top > 1000 && $(e).data('type') == "Headline") return;
         
 		data.content.push({
 			type: $(e).data('type'),
