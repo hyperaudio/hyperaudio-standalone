@@ -44,6 +44,9 @@
 	"pad__share": "Share",
 	"pad__share2": "Share",
 	"pad__share3": "Share",
-	"pad__saving": "Saving…"
+	"pad__saving": "Saving…",
+
+	"quote__share": "Share Quote",
+	"video__share": "Share Clip"
 
 }

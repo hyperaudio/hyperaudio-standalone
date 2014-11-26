@@ -44,6 +44,9 @@
 	"pad__share": "شارك",
 	"pad__share2": "شارك",
 	"pad__share3": "شارك",
-	"pad__saving": "حفظ"
+	"pad__saving": "حفظ",
+
+	"quote__share": "Share Quote",
+	"video__share": "Share Clip"
 
 }
