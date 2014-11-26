@@ -33,6 +33,7 @@
     line-height: 0;
   }
 }
+.quote__shareables.quote__shareables,
 .quote__meta.quote__meta {
   @include set-type-xsmall;
   display: block;
@@ -45,3 +46,22 @@
 .quote__author-bio {
   @include set-type-tiny;
 }
+.quote__shareable {
+  @extend .sec-button;
+  padding: 2px $space-s;
+}
+// .quote__shareables {
+//   display: block;
+//   clear: both;
+//   text-align: center;
+//   a {
+//     @include set-size(26px,26px);
+//     color: $mono-Lt;
+//     display: inline-block;
+//     margin: 0 2px;
+//     text-align: center;
+//     border-width: 1px;
+//     line-height: 26px;
+//     border-radius: $radius-s;
+//   }
+// }

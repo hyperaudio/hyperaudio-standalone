@@ -90,6 +90,7 @@ Handlebars.registerHelper('CONTENT', function() {
   var content = '';
 
   for (var i = 0; i < items.length; i++) {
+    items[i].content.L = this.L;
     content += contentTemplates[items[i].type](items[i].content);
   }
 
