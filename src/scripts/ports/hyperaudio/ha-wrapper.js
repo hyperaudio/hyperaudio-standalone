@@ -643,9 +643,11 @@ var AJHAWrapper = {
 
       }
 
-      document.getElementById('HAP-share-bttn').addEventListener('click', function () {
-            updatePadShareUrl()
-      }, false);
+      if (document.getElementById('HAP-share-bttn')) {
+        document.getElementById('HAP-share-bttn').addEventListener('click', function () {
+          updatePadShareUrl()
+        }, false);
+      }
 
 
       // updatePadShareUrl();
