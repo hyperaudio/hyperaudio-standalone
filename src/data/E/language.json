@@ -10,19 +10,19 @@
 	"panel-lang__cancel": "Cancel",
 
 	"panel-share__share-remix": "Share your remix",
-	"panel-share__share-remix-with": "Share your Remix with your closest:",
-	"panel-share__save-loc": "Save location of your Remix to come back to it later:",
+	"panel-share__share-remix-with": "Publish your remix online",
+	"panel-share__save-loc": "Or save this link to come back to your remix later:",
 	"panel-share__done": "Done",
 	"panel-share__close": "Close",
 
 	"panel-share-transcript__share-remix": "Share quote",
-	"panel-share-transcript__share-remix-with": "Share this quote with your closest:",
-	"panel-share-transcript__save-loc": "Save location of your quote to access it later:",
+	"panel-share-transcript__share-remix-with": "Share this quote online",
+	"panel-share-transcript__save-loc": "Copy this link save this quote for later:",
 	"panel-share-transcript__done": "Done",
 	"panel-share-transcript__close": "Close",
 
 	"aside-right__share-page": "Share this page",
-	"aside-right__share-page2": "Love it like we do? Pass it on.",
+	"aside-right__share-page2": "Like what you see? Pass it on.",
 
 	"aside-left__title": "Palestine Remix",
 	"aside-left__subtitle": "Start your search and discovery here",
@@ -37,7 +37,7 @@
 
 	"longform__watch-full-doc": "Watch the full documentary",
 
-	"pad__start-creating-remix": "Start creating your Remix by selecting a film…",
+	"pad__start-creating-remix": "Start creating your remix by selecting a film…",
 	"pad__fade": "Fade",
 	"pad__trim": "Trim",
 	"pad__title": "Title",

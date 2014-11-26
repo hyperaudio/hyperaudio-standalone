@@ -4,7 +4,6 @@
 
 .page-foot {
   @include fill-inverted;
-  line-height: $page-foot-height;
   padding-left: $space-s;
   padding-right: $space-s;
   text-align: center;

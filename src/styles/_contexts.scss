@@ -62,9 +62,7 @@
 
 // Adjustments of PAD and VIEWER and SEARCH on Desktop, rely on adding .tpl--compact class to body of both pages
 
-.tpl--remix.tpl--compact,
-.tpl--listing.tpl--compact,
-.tpl--pad.tpl--compact {
+.tpl--compact.tpl--compact {
   .page-head,
   .page-side,
   .page-foot {
