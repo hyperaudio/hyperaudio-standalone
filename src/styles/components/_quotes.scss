@@ -47,21 +47,12 @@
   @include set-type-tiny;
 }
 .quote__shareable {
+  @include set-type-small;
   @extend .sec-button;
   padding: 2px $space-s;
+  i {
+    font-size: 12px;
+    position: relative;
+    top: 1px;
+  }
 }
-// .quote__shareables {
-//   display: block;
-//   clear: both;
-//   text-align: center;
-//   a {
-//     @include set-size(26px,26px);
-//     color: $mono-Lt;
-//     display: inline-block;
-//     margin: 0 2px;
-//     text-align: center;
-//     border-width: 1px;
-//     line-height: 26px;
-//     border-radius: $radius-s;
-//   }
-// }

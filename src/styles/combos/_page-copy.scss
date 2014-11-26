@@ -81,6 +81,20 @@
     @include breakpoint(m) {
       margin-top: $space-l;
     }
+    .drop__toggle {
+      @include set-type-small;
+      font-family: $secondary-font;
+      border-radius: $radius-s;
+      background: $shadow-medium;
+      color: $mono-Wt;
+      padding: $space-x $space-s;
+      text-align: center;
+      i {
+        font-size: 12px;
+        position: relative;
+        top: 1px;
+      }
+    }
   }
   figcaption {
     @include set-type-xsmall;
@@ -119,7 +133,7 @@
   .page-copy {
     figure {
       .shareables {
-        @include position-top-right($space-x,$space-x);
+        @include position-top-left($space-x,$space-x);
       }
     }
   }
