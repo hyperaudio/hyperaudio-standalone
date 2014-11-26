@@ -42,7 +42,7 @@
       <div id="menu__pane--documentaries" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/temp3.jpg')">
           <h2 class="headline__title">{{L.aside-left__films}}</h2>
-          <p class="headline__text">Film descriptions</p>
+          <p class="headline__text">{{L.aside-left__filmsintro}}</p>
         </div>
         <ol class="menu__list">
         {{#each nav.films}}
@@ -53,7 +53,7 @@
       <div id="menu__pane--themes" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/temp6.jpg')">
           <h2 class="headline__title">{{L.aside-left__glossary}}</h2>
-          <p class="headline__text">Keywords to help understand Palestine Remix</p>
+          <p class="headline__text">{{L.aside-left__glossaryintro}}</p>
         </div>
         <ol class="menu__list">
           <li class="menu__item"><a class="menu__link" href="{{path}}themes/zionism/">Zionism</a></li>
@@ -69,35 +69,34 @@
       <div id="menu__pane--maps" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/temp8.jpg')">
           <h2 class="headline__title">{{L.aside-left__maps}}</h2>
-          <p class="headline__text">Explore our Palestine Maps</p>
+          <p class="headline__text">{{L.aside-left__mapsintro}}</p>
         </div>
-        <h3 class="menu__subtitle">Interactive Maps</h3>
+        <h3 class="menu__subtitle">{{L.aside-left__imaps}}</h3>
         <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}maps/">Vanishing Palestine</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}maps/">Another Map</a></li>
+          <li class="menu__item"><a class="menu__link" href="{{path}}maps/">{{L.aside-left__imaps-1}}</a></li>
+          <li class="menu__item"><a class="menu__link" href="{{path}}maps/">{{L.aside-left__imaps-2}}</a></li>
         </ol>
-        <h3 class="menu__subtitle">Video Maps</h3>
+        <h3 class="menu__subtitle">{{L.aside-left__videomaps}}</h3>
         <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/1/24000">The Wall</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/9/1108000">Area A/B/C</a></li>
+          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/1/24000">{{L.aside-left__videomaps-wall}}</a></li>
+          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/9/1108000">{{L.aside-left__videomaps-abc}}</a></li>
         </ol>
       </div>
       <div id="menu__pane--quizzes" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/temp7.jpg')">
           <h2 class="headline__title">{{L.aside-left__quizzes}}</h2>
-          <p class="headline__text">How would you rate your level of knowledge on Palestinian issues?</p>
+          <p class="headline__text">{{L.aside-left__quizzesintro}}</p>
         </div>
         <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/beginner/">Beginner</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/beginner/">Intermediate</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/beginner/">Advanced</a></li>
+          <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/beginner/">{{L.aside-left__quizzes-beginner}}</a></li>
+          <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/advanced/">{{L.aside-left__quizzes-advanced}}</a></li>
+          <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/expert/">{{L.aside-left__quizzes-expert}}</a></li>
         </ol>
       </div>
       <a id="menu-reset" class="menu-reset toggleMenuPane moved" data-target-menu-pane-id="root" aria-hidden="false">
         <span class="menu__link-icon">
           <i class="icon-point-left"></i>
         </span>
-        <span class="hide">Back</span>
       </a>
     </div>
   </div>
