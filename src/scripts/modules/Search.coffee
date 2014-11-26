@@ -62,7 +62,7 @@ doSearch = ->
   query = searchEl.value.trim()
   results = index.search(query)
   if results.length is 0
-    console.log("hello no results")
+    console.log("no results for: " + query)
   r = 0
   while r < results.length
     # don't ask
@@ -108,7 +108,7 @@ doSearch = ->
                   sword = lunr.stemmer(words[j].toLowerCase()) if L == 'B'
                   sword = lunr.ar.stemmer(words[j].toLowerCase()) if L == 'A'
                   sword = lunr.tr.stemmer(words[j].toLowerCase()) if L == 'T'
-                  if sword.indexOf(keyword) is 0
+                  if sword.indexOf(keyword) > -1
                     if insideHAP
                       words[j] = "<a class=\"highlight\" href=\"#/" + idParts[0] + "/" + idParts[2] + "\">" + words[j] + "</a>"
                     else
