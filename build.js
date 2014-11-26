@@ -39,8 +39,14 @@ Handlebars.registerPartial('aside-right', fs.readFileSync('./dev/partials/aside-
 
 Handlebars.registerHelper('TITLE', function() {
   var longform = require('./src/data/' + L + '/muse/' + this.key + '.json');
-  if (typeof longform.headline == 'undefined') return '';
-  var headline = longform.headline;
+  var headline = '';
+
+  if (typeof longform.headline != 'undefined') {
+    headline = longform.headline;
+  } else if (longform.content && longform.content.length > 0 && longform.content[0].type == 'Headline') {
+    headline = longform.content[0].content;
+  }
+  
   return new Handlebars.SafeString(
     headline
   );
@@ -80,6 +86,7 @@ var contentTemplates = {
   AJQuote: Handlebars.compile(fs.readFileSync('./dev/partials/quote.html').toString()),
   Subheader: function (text) {return '<h2>' + text + '</h2>';},
   Foreword: function (text) {return '';}, //ignore foreword here
+  Headline: function (text) {return '';}, //ignore headline here
   'Body-text': function (text) {return text;}
 };
 
