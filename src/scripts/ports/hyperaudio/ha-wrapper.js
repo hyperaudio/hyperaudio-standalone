@@ -409,6 +409,7 @@ var AJHAWrapper = {
       document.dispatchEvent(event);
     }
 
+
     function setEffectsListeners() {
       var durationSliders = document.getElementsByClassName('effect-duration');
 
@@ -553,11 +554,9 @@ var AJHAWrapper = {
 
     function hideHdButtonsIfYouTube() {
       if (!canPlayMP4) {
-        console.log("hiding HD buttons");
         var hdBtns = document.getElementsByClassName('HAP-player-quality');
-        console.dir(hdBtns);
         for (var i = 0; i < hdBtns.length; i++) {
-          console.log("display none");
+
           hdBtns[i].style.display = 'none';
         }
       }
@@ -575,8 +574,6 @@ var AJHAWrapper = {
           if (this == video[i]) {
             videoIndex = i;
           }
-
-          console.log("adding event listener");
 
           video[i].addEventListener('click', function () {
 
@@ -681,12 +678,6 @@ var AJHAWrapper = {
         document.getElementById('HAP-share-bttn').addEventListener('click', function () {
           updatePadShareUrl()
         }, false);
-      }
-
-      // updatePadShareUrl();
-
-      window.onhashchange = function() {
-        // updatePadShareUrl();
       }
 
       // detect clicks on the viewer menu
