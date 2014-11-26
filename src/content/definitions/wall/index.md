@@ -1,5 +1,6 @@
 ---
 template: theme.html
+key: 'wall'
 path: '../../'
 ---
 
