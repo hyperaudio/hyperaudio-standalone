@@ -17,6 +17,7 @@
 
   // Questions
   .question {
+    @include set-type-large;
     margin-bottom: $line /2;
     h1 {
       @extend %h3;
@@ -40,7 +41,7 @@
       }
     }
     p {
-      font-weight: $font-bold;
+      // font-weight: $font-bold;
       margin-top: $line /2;
     }
   }
@@ -54,6 +55,7 @@
   .wrong_answer {
     @extend .multiple__item;
     @include reset(last, margin-bottom);
+    @include set-type-medium;
     cursor: pointer;
     display: block;
     list-style: none;
