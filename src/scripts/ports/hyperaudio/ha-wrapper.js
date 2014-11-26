@@ -459,18 +459,25 @@ var AJHAWrapper = {
 
             //var videoUrl = HAP.transcript.options.player.options.media.mp4;
 
-            var videoUrl = thisVideo.currentSrc.split('&')[0];
+            var videoSplit = thisVideo.currentSrc.split('&');
+            var videoUrl = videoSplit[0];
+            var cachebuster = videoSplit[1];
             //console.log(videoUrl);
 
             //var videoUrl = thisvideo
 
             if (canPlayMP4) {
-              var videoId = 0;
+              var videoId = null;
 
               for (var j=0;  j < AJHAVideoInfo.length; j++) {
                 if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
                     videoId = j;
                 }
+              }
+
+              if (videoId == null) {
+                console.log("HD switch didn't work. Video could not be located.");
+                return;
               }
 
               var newVideoUrl;
@@ -495,6 +502,10 @@ var AJHAWrapper = {
                   HA.addClass(this,'HAP-player-HD--active');
                 }
 
+              }
+
+              if (cachebuster) {
+                newVideoUrl += "&" + cachebuster;
               }
               
               /*var currentTime = HAP.transcript.options.player.videoElem.currentTime;
