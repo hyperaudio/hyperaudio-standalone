@@ -75,7 +75,7 @@ Handlebars.registerHelper('FOREWORD', function() {
 });
 
 var contentTemplates = {
-  Quiz: Handlebars.compile(fs.readFileSync('./dev/quiz.html').toString()),
+  Quiz: Handlebars.compile(fs.readFileSync('./dev/partials/quiz.html').toString()),
   AJVideo: Handlebars.compile(fs.readFileSync('./dev/partials/video.html').toString()),
   AJQuote: Handlebars.compile(fs.readFileSync('./dev/partials/quote.html').toString()),
   Subheader: function (text) {return '<h2>' + text + '</h2>';},
@@ -85,6 +85,7 @@ var contentTemplates = {
 
 Handlebars.registerHelper('CONTENT', function() {
   // var items = this.longforms[this.key].content;
+  // console.log("KKKKEEEYYYY", this.key);
   var longform = require('./src/data/' + L + '/muse/' + this.key + '.json');
   if (typeof longform.content == 'undefined') return '';
   var items = longform.content;
