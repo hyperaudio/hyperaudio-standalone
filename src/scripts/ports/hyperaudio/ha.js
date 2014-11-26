@@ -2929,8 +2929,6 @@ var Transcript = (function(document, hyperaudio) {
         }, 0);
       };
 
-      console.log('in transcript prototype');
-
       if(this.target) {
         // Destroy iscroll, since is is useless after the contents of the wraper changes, changing that 1st child element.
         // self.iScroll.destroy();
@@ -3122,7 +3120,7 @@ var Transcript = (function(document, hyperaudio) {
         });
         this.ready = true;
         this._trigger(hyperaudio.event.ready, {msg: 'Transcript is ready.'});
-        console.log('firing transcript ready');
+        
         var event = document.createEvent('Event');
         event.initEvent('transcriptready', true, true);
         document.dispatchEvent(event);

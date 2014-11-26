@@ -9,6 +9,12 @@ var AJHAWrapper = {
     // browser sniff
 
     var status = 0; // all OK
+
+    var v = document.createElement('video');
+    var canPlayMP4 = !!v.canPlayType && v.canPlayType('video/mp4') != "";
+
+
+
     var mobileDevice = false;
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -46,14 +52,36 @@ var AJHAWrapper = {
     document.addEventListener("webkitfullscreenchange", fullscreenHandler, false);
     document.addEventListener("mozfullscreenchange", fullscreenHandler, false);
 
-    var v = document.createElement('video');
-    var canPlayMP4 = !!v.canPlayType && v.canPlayType('video/mp4') != "";
+
 
     // constants
+    var effectsLabelFade, effectsLabelTrim, effectsLabelTitle;
 
-    var effectsLabelFade = "Fade Effect: ";
-    var effectsLabelTrim = "Trim: ";
-    var effectsLabelTitle = "Title: ";
+    //lang override
+    switch (L) {
+      case 'A':
+        effectsLabelFade = "Fade Effect: ";
+        effectsLabelTrim = "Trim: ";
+        effectsLabelTitle = "Title: ";
+        break;
+        
+      case 'B':
+        effectsLabelFade = "Fade Effect: ";
+        effectsLabelTrim = "Trim: ";
+        effectsLabelTitle = "Title: ";
+        break;
+        
+      case 'T':
+        effectsLabelFade = "Fade Effect: ";
+        effectsLabelTrim = "Trim: ";
+        effectsLabelTitle = "Title: ";
+        break;
+        
+      default:
+        effectsLabelFade = "Fade Effect: ";
+        effectsLabelTrim = "Trim: ";
+        effectsLabelTitle = "Title: ";
+    }
 
     var transcript = null;
     var longformId = null;
@@ -404,6 +432,7 @@ var AJHAWrapper = {
       document.dispatchEvent(event);
     }
 
+
     function setEffectsListeners() {
       var durationSliders = document.getElementsByClassName('effect-duration');
 
@@ -459,18 +488,25 @@ var AJHAWrapper = {
 
             //var videoUrl = HAP.transcript.options.player.options.media.mp4;
 
-            var videoUrl = thisVideo.currentSrc.split('&')[0];
+            var videoSplit = thisVideo.currentSrc.split('&');
+            var videoUrl = videoSplit[0];
+            var cachebuster = videoSplit[1];
             //console.log(videoUrl);
 
             //var videoUrl = thisvideo
 
             if (canPlayMP4) {
-              var videoId = 0;
+              var videoId = null;
 
               for (var j=0;  j < AJHAVideoInfo.length; j++) {
                 if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
                     videoId = j;
                 }
+              }
+
+              if (videoId == null) {
+                console.log("HD switch didn't work. Video could not be located.");
+                return;
               }
 
               var newVideoUrl;
@@ -495,6 +531,10 @@ var AJHAWrapper = {
                   HA.addClass(this,'HAP-player-HD--active');
                 }
 
+              }
+
+              if (cachebuster) {
+                newVideoUrl += "&" + cachebuster;
               }
               
               /*var currentTime = HAP.transcript.options.player.videoElem.currentTime;
@@ -535,6 +575,16 @@ var AJHAWrapper = {
       }
     }
 
+    function hideHdButtonsIfYouTube() {
+      if (!canPlayMP4) {
+        var hdBtns = document.getElementsByClassName('HAP-player-quality');
+        for (var i = 0; i < hdBtns.length; i++) {
+
+          hdBtns[i].style.display = 'none';
+        }
+      }
+    }
+
     var videoListenersSet = false;
 
     function setVideoClickListeners() {
@@ -547,8 +597,6 @@ var AJHAWrapper = {
           if (this == video[i]) {
             videoIndex = i;
           }
-
-          console.log("adding event listener");
 
           video[i].addEventListener('click', function () {
 
@@ -594,11 +642,20 @@ var AJHAWrapper = {
       videoListenersSet = true;
     }
 
-    document.addEventListener('mixready', function () {
+    function generalInit() {
+
+      hideHdButtonsIfYouTube();
+
+      setPosters();
 
       setHdListeners();
 
-      setVideoClickListeners();
+      setVideoClickListeners();     
+    }
+
+    document.addEventListener('mixready', function () {
+
+      generalInit();
 
     }, false);
 
@@ -606,7 +663,7 @@ var AJHAWrapper = {
 
     document.addEventListener('transcriptready', function () {
 
-      setPosters();
+      generalInit();
 
       //HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/" + L + "-poster.png";
 
@@ -636,29 +693,15 @@ var AJHAWrapper = {
             document.getElementById('hap-share-twitter').href = "https://twitter.com/home?status=" + escape(_url);
             document.getElementById('hap-share-google').href = "https://plus.google.com/share?url=" + escape(_url);
             document.getElementById('hap-share-email').href = "mailto:?subject=Message%20via%20PALESTINE%20REMIX&body=Hey%2C%20%0A%0Acheck%20this%20page%3A%20" + escape(_url);
-
-
           });//shorten
         }
-
       }
 
-      document.getElementById('HAP-share-bttn').addEventListener('click', function () {
-            updatePadShareUrl()
-      }, false);
-
-
-      // updatePadShareUrl();
-
-      setHdListeners();
-
-      setVideoClickListeners();
-
-      window.onhashchange = function() {
-        // updatePadShareUrl();
+      if (document.getElementById('HAP-share-bttn')) {
+        document.getElementById('HAP-share-bttn').addEventListener('click', function () {
+          updatePadShareUrl()
+        }, false);
       }
-
-
 
       // detect clicks on the viewer menu
       var sidemenuItems = document.getElementsByClassName('menu__link');
@@ -705,8 +748,6 @@ var AJHAWrapper = {
         for ( var i = 0, l = selected.length; i < l; i++ ) {
           HA.removeClass(selected[i], 'selected');
         }
-
-
 
         // an effect may have been added to the mix
 
@@ -799,8 +840,6 @@ var AJHAWrapper = {
 };
 
 
-
-
 //// bitly
 function shorten(url, callback) {
 
@@ -821,5 +860,3 @@ function shorten(url, callback) {
     }
     xhr.send();
 }
-
-
