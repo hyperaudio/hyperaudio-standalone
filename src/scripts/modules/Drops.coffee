@@ -6,7 +6,7 @@ renderDrops     = () ->
       target                  : dropTarget
       content                 : ->
         return this.target.nextElementSibling.innerHTML
-      position                : 'left middle'
+      position                : 'right middle'
       openOn                  : 'hover'
       constrainToWindow       : true
       constrainToScrollParent : true

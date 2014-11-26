@@ -1,13 +1,4 @@
-.drop {
-  display: inline-block;
-  .quote__content & {
-    .drop__toggle {
-      position: relative;
-      color: $mono-LLt;
-      z-index: 95;
-    }
-  }
-}
+.drop,
 .drop__toggle {
   display: inline-block;
 }

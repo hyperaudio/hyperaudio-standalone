@@ -60,10 +60,11 @@
     margin-bottom: $space-x;
   }
   .possible_answer:hover {
-    @include fill-green;
+    @extend %well;
   }
   .wrong_answer {
-    @include fill-red;
+    color: $red-LD;
+    font-weight: $font-bold;
   }
   .correct_answer {
     @include fill-green;
@@ -71,14 +72,10 @@
 
   // Result
   .how_you_did {
-    @extend %well;
     border-top: 1px solid $shadow-light;
-    @include set-type-large;
+    @include set-type-xlarge;
     padding: $space-s;
     margin-top: $space-h;
-    margin-left: $space * -1;
-    margin-right: $space * -1;
-    margin-bottom: $space * -2;
     text-align: center;
     .correct_answers {
       font-weight: $font-bold;
