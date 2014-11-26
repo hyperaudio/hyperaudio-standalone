@@ -1,5 +1,5 @@
 ---
-template     : wrapper.html
+template     : quiz.html
 key          : 'quiz-beginner'
 ---
 
