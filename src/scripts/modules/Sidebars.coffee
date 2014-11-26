@@ -4,6 +4,7 @@ renderSides         = () ->
   head              = document.getElementById "page-head"
   body              = document.getElementById "page-body"
   states            = []
+  leftSide          = document.getElementById "page-side--left"
 
   # Populate states array with states of all sides
   # Toggle visibility classes on panels according to the data attributes

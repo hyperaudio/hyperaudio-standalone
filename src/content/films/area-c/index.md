@@ -2,7 +2,7 @@
 template: longform.html
 key: 'area-c'
 path: '../../'
-cover: 'areac.jpg'
+cover: 'film_areac.jpg'
 ---
 
 Lorem ipsum dolor sit amet and I don't know the rest, let's add some anatomical things in latin: sulcus tendinis musculis flexoris halucis longi.

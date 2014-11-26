@@ -21,7 +21,7 @@ renderFoldSwiper = () ->
       autoplay            : 10000
       speed               : 750
       noSwiping           : true
-      mousewheelControl   : true
+      # mousewheelControl   : true
 
       moveStartThreshold  : 20 # in pixels
       cssWidthAndHeight   : "height"
