@@ -55,10 +55,33 @@ var AJHAWrapper = {
 
 
     // constants
+    var effectsLabelFade, effectsLabelTrim, effectsLabelTitle;
 
-    var effectsLabelFade = "Fade Effect: ";
-    var effectsLabelTrim = "Trim: ";
-    var effectsLabelTitle = "Title: ";
+    //lang override
+    switch (L) {
+      case 'A':
+        effectsLabelFade = "Fade Effect: ";
+        effectsLabelTrim = "Trim: ";
+        effectsLabelTitle = "Title: ";
+        break;
+        
+      case 'B':
+        effectsLabelFade = "Fade Effect: ";
+        effectsLabelTrim = "Trim: ";
+        effectsLabelTitle = "Title: ";
+        break;
+        
+      case 'T':
+        effectsLabelFade = "Fade Effect: ";
+        effectsLabelTrim = "Trim: ";
+        effectsLabelTitle = "Title: ";
+        break;
+        
+      default:
+        effectsLabelFade = "Fade Effect: ";
+        effectsLabelTrim = "Trim: ";
+        effectsLabelTitle = "Title: ";
+    }
 
     var transcript = null;
     var longformId = null;
