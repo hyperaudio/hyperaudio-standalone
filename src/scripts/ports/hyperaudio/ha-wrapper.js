@@ -862,10 +862,10 @@ function shorten(url, callback) {
     xhr.onreadystatechange = function() { 
         if(xhr.readyState == 4) { 
             if(xhr.status==200) {
-                // console.log("CORS works!", xhr.responseText); 
+                console.log("CORS bitly", xhr.responseText); 
                 var resp = JSON.parse(xhr.responseText);    
-                if (typeof resp.url == 'undefined') return callback(url);
-                callback(_url);
+                if (typeof resp.data == 'undefined' || typeof resp.data.url == 'undefined') return callback(url);
+                callback(resp.data.url);
             } else callback(url);
         } //else callback(url);
     }

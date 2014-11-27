@@ -2,7 +2,7 @@
 var phantom = require('phantom');
 var jf = require('jsonfile');
 
-var site = "http://interactive.aljazeera.com/ajb/PalestineRemix/";
+var site = "http://10.24.21.20/~laurian/PALESTINE%20PROJECT/TEST_EXPORT-BO/";
 var pages = [
 	"against-the-wall",
 	"al-nakba",
