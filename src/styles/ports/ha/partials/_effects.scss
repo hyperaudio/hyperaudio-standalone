@@ -30,19 +30,19 @@
 
 .HAP-effect input[type=text],
 .HAP-effect input[type=range] {
+  border: none;
+  margin: 0;
+  padding: 0;
   display: block;
   width: 100%;
+}
+
+.HAP-effect .effect-title {
+  margin-bottom: $space-x;
 }
 .HAP-effect input[type=text] {
   @extend %text-input;
 }
-
-// .HAP-effect input[type=text]:focus {
-// }
-// .HAP-effect span:before {
-// }
-// .HAP-effect .HAP-effect-checkboxes {
-// }
 
 // Variations
 // ----------------------------------------------
