@@ -17,7 +17,7 @@
 
   // Questions
   .question {
-    @include set-type-large;
+    @include set-type-medium;
     margin-bottom: $line /2;
     h1 {
       @extend %h3;
