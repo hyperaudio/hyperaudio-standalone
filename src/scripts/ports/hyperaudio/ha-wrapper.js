@@ -639,8 +639,6 @@ var AJHAWrapper = {
 
             var thisVideo = video[video.length-1];
 
-            console.dir(thisVideo);
-
             if (thisVideo.paused) {
               thisVideo.play();
             } else {
@@ -671,6 +669,23 @@ var AJHAWrapper = {
 
     }, false);
 
+    function highlightSelectedSidebarItem() {
+      // highlight selected video in sidebar
+      var selectedClass = "HA-menu-item--selected";
+      var panel = document.getElementById('panel-media');
+      var listItems = panel.getElementsByTagName('a');
+      var listItemsLength = listItems.length;
+
+      var videoId = window.top.location.hash.split('/')[1];
+      
+      for (var l = 0; l < listItemsLength; l++) {
+        HA.removeClass(listItems[l], selectedClass);
+        if (listItems[l].getAttribute('data-id') == videoId) {
+          HA.addClass(listItems[l], selectedClass);
+        }
+      }
+    }
+
     // note transcript ready only fires when an entire transcript is loaded (Not a mix) 
 
     document.addEventListener('transcriptready', function () {
@@ -679,29 +694,11 @@ var AJHAWrapper = {
 
       //HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/" + L + "-poster.png";
 
-      function highlightSelectedSidebarItem() {
-        // highlight selected video in sidebar
-        var selectedClass = "HA-menu-item--selected";
-        var panel = document.getElementById('panel-media');
-        var listItems = panel.getElementsByTagName('a');
-        var listItemsLength = listItems.length;
-
-        var videoId = window.top.location.hash.split('/')[1];
-        
-        for (var l = 0; l < listItemsLength; l++) {
-          HA.removeClass(listItems[l], selectedClass);
-          if (listItems[l].getAttribute('data-id') == videoId) {
-            HA.addClass(listItems[l], selectedClass);
-          }
-        }
-      }
-
 
       if (target != 'Viewer') {
 
         ajOnInitCallback();
 
-        highlightSelectedSidebarItem();
       }
 
       setEffectsListeners();
@@ -752,7 +749,7 @@ var AJHAWrapper = {
 
       // detect clicks on the pad menu
       document.addEventListener('padmenuclick', function() {
-        console.log('padmenuclick');
+        //console.log('padmenuclick');
         window.onhashchange = function() {
 
           var longformId = window.top.location.hash.split('/')[1];
@@ -769,6 +766,12 @@ var AJHAWrapper = {
             HAP.options.longformMedia = longformMedia;
             //console.log(longformMedia);
             HAP.transcript.load();
+
+            highlightSelectedSidebarItem();
+
+            var ev = document.createEvent('Event');
+            ev.initEvent('mixchange', true, true);
+            document.dispatchEvent(ev);
           }
         };
       }, false);
@@ -869,6 +872,12 @@ var AJHAWrapper = {
         }
         
       }, false);
+
+    }, false);
+
+    document.addEventListener('sidemenuinit', function () {
+      
+      highlightSelectedSidebarItem();
 
     }, false);
   }
