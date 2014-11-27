@@ -19,13 +19,18 @@
 .HAP-sidebar .HA-menu-item--selected {
   &:after {
     @include set-size(8px, 8px);
-    @include position-top-right(50%, $space-s);
     border-radius: $radius-absolute;
     box-shadow: 0 0 2px 2px $flare-light;
     background: $flare-strong;
     content: " ";
     display: block;
     margin-top: 8px * -0.5;
+    @if $direction == "ltr" {
+      @include position-top-right(50%, $space-s);
+    }
+    @if $direction == "rtl" {
+      @include position-top-left(50%, $space-s);
+    }
   }
 }
 .HAP-sidebar .tile__body {
