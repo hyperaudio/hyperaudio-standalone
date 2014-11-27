@@ -16,10 +16,16 @@
 
 .HAP-sidebar .HAP-listing {
 }
-.HAP-sidebar .listing__item {
-  border-width: 1px 0 0 0;
-  &:first-child {
-    border-width: 0;
+.HAP-sidebar .HA-menu-item--selected {
+  &:after {
+    @include set-size($space, $space);
+    @include position-top-right(50%, $space-s);
+    border-radius: $radius-absolute;
+    box-shadow: 0 0 2px 2px $flare-light;
+    background: $flare-strong;
+    content: " ";
+    display: block;
+    margin-top: $space * -0.5;
   }
 }
 .HAP-sidebar .tile__body {
