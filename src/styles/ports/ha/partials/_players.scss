@@ -56,6 +56,11 @@
   .HAP-canvas--source & {
     padding-right: 0;
   }
+  .HAP-player-gui--compact & {
+    .HAP-player-quality {
+      display: none;
+    }
+  }
 }
 
 /* Progress Bar
@@ -82,6 +87,12 @@
 .HAP-source {
   .HAP-player-bar {
     margin-right: $player-height;
+  }
+  .HAP-player-gui--compact {
+    box-shadow: inset -1px 0 0 $flare-weak;
+  }
+  .HAP-player-gui--compact .HAP-player-bar {
+    margin-right: 0;
   }
   .HAP-player-quality {
     @include position-top-right(0,0);
