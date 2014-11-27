@@ -10,10 +10,11 @@ var AJHAWrapper = {
 
     var status = 0; // all OK
 
+
+
+
     var v = document.createElement('video');
     var canPlayMP4 = !!v.canPlayType && v.canPlayType('video/mp4') != "";
-
-
 
     var mobileDevice = false;
 
@@ -678,9 +679,29 @@ var AJHAWrapper = {
 
       //HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/" + L + "-poster.png";
 
+      function highlightSelectedSidebarItem() {
+        // highlight selected video in sidebar
+        var selectedClass = "HA-menu-item--selected";
+        var panel = document.getElementById('panel-media');
+        var listItems = panel.getElementsByTagName('a');
+        var listItemsLength = listItems.length;
+
+        var videoId = window.top.location.hash.split('/')[1];
+        
+        for (var l = 0; l < listItemsLength; l++) {
+          HA.removeClass(listItems[l], selectedClass);
+          if (listItems[l].getAttribute('data-id') == videoId) {
+            HA.addClass(listItems[l], selectedClass);
+          }
+        }
+      }
+
+
       if (target != 'Viewer') {
 
         ajOnInitCallback();
+
+        highlightSelectedSidebarItem();
       }
 
       setEffectsListeners();
@@ -714,13 +735,16 @@ var AJHAWrapper = {
         }, false);
       }
 
+
+
       // detect clicks on the viewer menu
       var sidemenuItems = document.getElementsByClassName('menu__link');
 
       for( var i = 0; i < sidemenuItems.length; i++){
 
         if (sidemenuItems[i].href.length > 0) {
-          sidemenuItems[i].addEventListener('click', function() {
+
+          sidemenuItems[i].addEventListener('click', function() {            
             window.onhashchange = buildState;
           }, false);
         }

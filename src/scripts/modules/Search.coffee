@@ -59,7 +59,7 @@ doSearch = ->
   searchEl = document.getElementById("search")
   if searchEl is null
     searchEl = document.getElementById("HAP-search")
-  query = searchEl.value.trim()
+  query = searchEl.value.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g," ").replace('،', ' ').replace(/\n/, ' ').replace(/\s+/g, ' ').trim()
   results = index.search(query)
   if results.length is 0
     console.log("no results for: " + query)
