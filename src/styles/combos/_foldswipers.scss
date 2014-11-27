@@ -33,6 +33,16 @@
   background-position: center center;
   float: left;
   position: relative;
+  &.home-cover__item--remixes {
+    .foldcard__content:before {
+      background: rgba(#841713,0.9);
+    }
+  }
+  &.home-cover__item--search {
+    .foldcard__content:before {
+      background: rgba(#208e4f,0.9);
+    }
+  }
 }
 .foldswiper__foot {
   @include position-bottom-left($space-x,$space-s);
