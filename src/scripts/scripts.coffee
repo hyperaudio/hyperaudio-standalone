@@ -1,4 +1,6 @@
 unless window.parent is window
+  if window.location.hash != ''
+    window.top.location.hash = window.location.hash
   if document.body.classList
     document.body.classList.add "tpl--compact"
   else
