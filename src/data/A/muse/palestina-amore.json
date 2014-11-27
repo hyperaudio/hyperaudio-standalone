@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
+      "content": "\n           <p id=\"u27749-2\">استخدم جميع الأفلام في الموقع لتبني رابطاً جديداً تشارك به أصدقاءك.</p>\n           <p id=\"u27749-3\">&nbsp;</p>\n           <p id=\"u27749-5\">اختر مقاطعك، ورتبها بطريقتك، لتنشئ فلمك أنت. في دقائق تصنع قصتك عن موضوع معين، وتضعها على مواقع التواصل، أو ترسلها بالإيميل.</p>\n           <p id=\"u27749-6\">&nbsp;</p>\n           <p id=\"u27749-8\">فرصتك لتحرر روايتك حسب رؤيتك.</p>\n           \n          ",
       "type": "Body-text"
     },
     {
@@ -12,7 +12,7 @@
       "content": {
         "context": "ناشطة في حملة مقاطعة إسرائيل",
         "label": "روسانا بلاتونيه",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/palestina-amore.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/palestina-amore.html",
         "quote": "احتلال الأراضي الفلسطينية وما تبعه من استيطان، غيّر وجهة نظري تماماً",
         "share": "شارك"
       },
@@ -46,7 +46,7 @@
       "content": {
         "context": "ناشط إيطالي – منتدى فلسطين",
         "label": "أنريكو بارتولوميه,",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/palestina-amore.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/palestina-amore.html",
         "quote": "“عندما تذهب إلى فلسطين وترى مدى الظلم الواقع على تلك القطعة الصغيرة من الأرض، فلا يمكن أن تنسى ما رأيت”",
         "share": "شارك"
       },
@@ -68,7 +68,7 @@
       "content": {
         "context": "صحفية وناشطة",
         "label": "ميلا رنيشيه,",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/palestina-amore.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/palestina-amore.html",
         "quote": "“مع الوقت، ستصبح لنضالنا قوة شعبية كتلك التي وضعت نهاية للتمييز العنصري في جنوب أفريقيا”",
         "share": "شارك"
       },

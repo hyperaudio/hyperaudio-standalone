@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
+      "content": "\n           <p id=\"u27749-2\">استخدم جميع الأفلام في الموقع لتبني رابطاً جديداً تشارك به أصدقاءك.</p>\n           <p id=\"u27749-3\">&nbsp;</p>\n           <p id=\"u27749-5\">اختر مقاطعك، ورتبها بطريقتك، لتنشئ فلمك أنت. في دقائق تصنع قصتك عن موضوع معين، وتضعها على مواقع التواصل، أو ترسلها بالإيميل.</p>\n           <p id=\"u27749-6\">&nbsp;</p>\n           <p id=\"u27749-8\">فرصتك لتحرر روايتك حسب رؤيتك.</p>\n           \n          ",
       "type": "Body-text"
     },
     {
@@ -12,7 +12,7 @@
       "content": {
         "context": "زوجة علاء النحال - أصم فلسطيني",
         "label": "نازك النحال",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/stronger-than-words.html",
         "quote": "التعامل مع الصم، إذا كنت إنت حابه، سهل جدا",
         "share": "شارك"
       },
@@ -46,7 +46,7 @@
       "content": {
         "context": "فنان تشكيلي",
         "label": "محمود المقيد",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/stronger-than-words.html",
         "quote": "الحياة صعبة جدا والمعابر مغلقة، وأنا أستطيع أن أرى بعين واحدة، وأنا أصم",
         "share": "شارك"
       },
@@ -60,7 +60,7 @@
       "content": {
         "context": "أم فلسطينية",
         "label": "إلهام المقيد",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/stronger-than-words.html",
         "quote": "نعاني يوميّاً من انقطاع الكهرباء في غزة. أطفالي الصم يتحدثون مع بعضهم بلغة الإشارة، ولذلك، ينزعجون كثيراً عندما لا يستطيعون رؤية بعضهم بسبب انقطاع الكهرباء",
         "share": "شارك"
       },
@@ -78,7 +78,7 @@
       "content": {
         "context": "مدرسة",
         "label": "هدى شاهين",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/stronger-than-words.html",
         "quote": "نتواصل مع الناس بشكل طبيعي، بعضهم يعتقد أن الصم أغبياء، إلا أننا أناس طبيعيون",
         "share": " شارك"
       },
@@ -112,7 +112,7 @@
       "content": {
         "context": "المشرف على الأعمال الحرفية في جمعية \"أطفالنا\"",
         "label": "هشام غزال",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/stronger-than-words.html",
         "quote": "نحن مثل أولئك القادرين على السمع بشكل طبيعي، بل إننا نتمتع بمواهب وقدرات خاصة مثل الفن والتطريز والإبداع",
         "share": "شارك"
       },
@@ -134,7 +134,7 @@
       "content": {
         "context": "داعية فلسطيني أصم",
         "label": "خضر الرنتيسي",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/stronger-than-words.html",
         "quote": "في هذه الحرب (2014) استشهدت بنت صماء.. كان بيتها من عدة طوابق ودمروه عليه",
         "share": "شارك"
       },

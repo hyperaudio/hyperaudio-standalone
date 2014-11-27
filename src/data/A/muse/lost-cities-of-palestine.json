@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
+      "content": "\n           <p id=\"u27749-2\">استخدم جميع الأفلام في الموقع لتبني رابطاً جديداً تشارك به أصدقاءك.</p>\n           <p id=\"u27749-3\">&nbsp;</p>\n           <p id=\"u27749-5\">اختر مقاطعك، ورتبها بطريقتك، لتنشئ فلمك أنت. في دقائق تصنع قصتك عن موضوع معين، وتضعها على مواقع التواصل، أو ترسلها بالإيميل.</p>\n           <p id=\"u27749-6\">&nbsp;</p>\n           <p id=\"u27749-8\">فرصتك لتحرر روايتك حسب رؤيتك.</p>\n           \n          ",
       "type": "Body-text"
     },
     {
@@ -12,7 +12,7 @@
       "content": {
         "context": "كاتب وباحث فلسطيني",
         "label": "أنطوان شلحت",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/lost-cities-of-palestine.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/lost-cities-of-palestine.html",
         "quote": "فقدان المدينة أو غياب المدينة كان نتيجة مخطط للمشروع الصهيوني. الصهاينة رأوا المدينة خطرا على المشروع الصهيوني برمته، ولذلك كانت حرب المشروع الصهيوني على المدينة الفلسطينية حربا شرسة للغاية",
         "share": "شارك"
       },
@@ -46,7 +46,7 @@
       "content": {
         "context": "خبير اقتصادي فلسطيني",
         "label": "باسل غطاس",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/lost-cities-of-palestine.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/lost-cities-of-palestine.html",
         "quote": "يافا كانت بوابة فلسطين للتجارة والتصدير والاستيراد، وهذا كان يخدم القطاعين الزراعي والصناعي",
         "share": "شارك"
       },
@@ -60,7 +60,7 @@
       "content": {
         "context": "كاتب وباحث فلسطيني",
         "label": "أنطوان شلحت",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/lost-cities-of-palestine.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/lost-cities-of-palestine.html",
         "quote": "سنة 1948 تم القضاء على المدينة الفلسطينية لتكريس الدعاوى الصهيونية بشأن أن فلسطين هي أرض جدباء من الناحية الثقافية، لأن أكثر شيء يمكن أن يبرهن على وجود شعب فلسطيني في فلسطين هو: المدينة الفلسطينية",
         "share": "شارك"
       },
@@ -82,7 +82,7 @@
       "content": {
         "context": "خبيرة فلسطينية في علم الإجرام",
         "label": "نادرة شلهوب",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/lost-cities-of-palestine.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/lost-cities-of-palestine.html",
         "quote": "شملت النكبة تخطيطا لمحو الوجود الفلسطيني ",
         "share": "شارك"
       },
@@ -112,7 +112,7 @@
       "content": {
         "context": "أديبة فلسطينية",
         "label": "سعاد قرمان",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/lost-cities-of-palestine.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/lost-cities-of-palestine.html",
         "quote": "وادي الصليب كان كله عرب، دمر كله. عندما عاد كثير من الفلسطينيين إلى منازلهم، وجدوا القادمين الجدد وضعوا يدهم عليها",
         "share": "شاهد"
       },

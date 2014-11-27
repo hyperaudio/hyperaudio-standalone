@@ -1,7 +1,7 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
+      "content": "\n           <p id=\"u27749-2\">استخدم جميع الأفلام في الموقع لتبني رابطاً جديداً تشارك به أصدقاءك.</p>\n           <p id=\"u27749-3\">&nbsp;</p>\n           <p id=\"u27749-5\">اختر مقاطعك، ورتبها بطريقتك، لتنشئ فلمك أنت. في دقائق تصنع قصتك عن موضوع معين، وتضعها على مواقع التواصل، أو ترسلها بالإيميل.</p>\n           <p id=\"u27749-6\">&nbsp;</p>\n           <p id=\"u27749-8\">فرصتك لتحرر روايتك حسب رؤيتك.</p>\n           \n          ",
       "type": "Body-text"
     },
     {
@@ -12,7 +12,7 @@
       "content": {
         "context": "مسؤول إسرائيلي سابق في الشاباك",
         "label": "اراك بن تسور",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/inside-shin-bet.html",
         "quote": "الشاباك كأذرع الأمن الأخرى في إسرائيل، بنيت جميعها من الحركات السرية والتنظيمات التي سبقت قيام الدولة. عمليّاً، شكل جهاز المعلومات، الذي هو جزء من تنظيم الهاغاناة، نواة جهاز الشاباك الحالي",
         "share": "شارك"
       },
@@ -38,7 +38,7 @@
       "content": {
         "context": "محام إسرائيلي",
         "label": "أفيجدور فليدمان",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/inside-shin-bet.html",
         "quote": "يستخدم الشاباك العديد من الوسائل التي يعتبرها قانونية ظاهريّاً، لكن في الحقيقة، تعتبرها الشرطة غير قانونية؛ فإذا اعتقلك الشاباك، فإنه لا يحق لك مقابلة المحامي لفترة تصل إلى 20 يوماً",
         "share": "شارك"
       },
@@ -60,7 +60,7 @@
       "content": {
         "context": "مدير لجنة مناهضة التعذيب في إسرائيل",
         "label": "يشاي منوحين",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/inside-shin-bet.html",
         "quote": "الشاباك يستخدم وسائل التعذيب النفسي. عندما أدرك معتقل فلسطيني أنهم سيعذبون والده وزوجته كما عذبوه، حاول الانتحار",
         "share": "شارك"
       },
@@ -82,7 +82,7 @@
       "content": {
         "context": "محام فلسطيني",
         "label": "حسين أبو حسين ",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/inside-shin-bet.html",
         "quote": "الشاباك ينتهك حقوق الإنسان الأساسية، حقه في التعبير والاجتماع والتظاهر",
         "share": "شارك"
       },
@@ -112,7 +112,7 @@
       "content": {
         "context": "محام فلسطيني ",
         "label": "نبيل دكور",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/inside-shin-bet.html",
         "quote": "أي مواطن أو رجل شرطة أو دبلوماسي يرتكب جريمة يتم التحقيق معه، إلا موظفو الشاباك. هل يعقل؟",
         "share": "شارك"
       },
@@ -134,7 +134,7 @@
       "content": {
         "context": "محامية فلسطينية وأسيرة سابقة",
         "label": "شيرين عيساوي",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/inside-shin-bet.html",
         "quote": "ضربوني وربطوا يديّ وقدميّ، كما وضعوا عصابة على عيني، وجروني مراراً وتكراراً على الأرض، وضربوني بالحائط",
         "share": "شارك"
       },
@@ -168,7 +168,7 @@
       "content": {
         "context": "أسير فلسطيني سابق",
         "label": "جهاد مغربي",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
+        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/inside-shin-bet.html",
         "quote": "أخبرني المحقق أن لديه مفاجأة لي، ومرّ بي على مكاتب المحققين، ثم أمرني أن أنظر من خُرم الباب، فرأيت أمي مكبلة اليدين وسمعتها تطلب الماء",
         "share": "شارك"
       },
