@@ -3134,6 +3134,38 @@ var Transcript = (function(document, hyperaudio) {
       delete this.textSelect;
     },
 
+    getMobileSelection: function() {
+
+      var selectedText = window.getSelection();
+      if (selectedText.baseNode == null) {
+        return;
+      }
+
+      var node = selectedText.baseNode.parentNode;
+      while (node.tagName != 'P') {
+        node = node.parentNode;
+      }
+
+      var anchors = node.getElementsByTagName('a');
+
+      var text = "";
+      var anchorsLength = anchors.length;
+      for (var i = 0; i < anchorsLength; i++) {
+        hyperaudio.addClass(anchors[i],'selected');
+        text += anchors[i].text;
+      }
+
+      var start = anchors[0].getAttribute('data-m');
+      var end = anchors[anchorsLength-1].getAttribute('data-m');
+
+      return {
+        text: text,
+        start: start,
+        end: end
+      };
+
+    },
+
     getSelection: function(paraLevel) {
 
       if(this.textSelect) {
@@ -3143,6 +3175,7 @@ var Transcript = (function(document, hyperaudio) {
           words, start, end, text;
 
         el.innerHTML = html;
+
         words = el.querySelectorAll(opts.word);
 
         if(words.length) {
@@ -3202,6 +3235,7 @@ var Transcript = (function(document, hyperaudio) {
               }
               hyperaudio.addClass(nextElInside,'selected');
             }
+            // add new start and end here
           }
         }
 
