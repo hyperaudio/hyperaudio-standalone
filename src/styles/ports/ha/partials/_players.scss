@@ -56,6 +56,9 @@
   .HAP-canvas--source & {
     padding-right: 0;
   }
+  .HAP-canvas--output & {
+    padding-right: $player-height;
+  }
   .HAP-player-gui--compact & {
     .HAP-player-quality {
       display: none;
