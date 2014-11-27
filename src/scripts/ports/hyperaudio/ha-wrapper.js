@@ -376,7 +376,7 @@ var AJHAWrapper = {
 
                 [].forEach.call(document.querySelectorAll(".jsSetShareTranscriptURL"), function(el) {
                   var shareLinkHref   = el.getAttribute("href");
-                  var shareLinkNuHref = shareLinkHref.replace("UURRLL", escape(_selectionTextURI)).replace("TTEEXXTT", escape(selectionTextContent));
+                  var shareLinkNuHref = shareLinkHref.replace("UURRLL", encodeURIComponent(_selectionTextURI)).replace("TTEEXXTT", encodeURIComponent(selectionTextContent));
                   el.setAttribute("href", shareLinkNuHref);
                   //el.classList.remove('selected');
                   HA.removeClass(el,'selected');
@@ -384,7 +384,7 @@ var AJHAWrapper = {
 
                 // toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
 
-                document.getElementById('hav-share-url').innerHTML = selectionTextURI;
+                document.getElementById('hav-share-url').innerHTML = _selectionTextURI;
 
                 [].forEach.call(document.querySelectorAll("a"), function(el) {
                   //el.classList.remove('selected');
@@ -639,8 +639,6 @@ var AJHAWrapper = {
 
             var thisVideo = video[video.length-1];
 
-            console.dir(thisVideo);
-
             if (thisVideo.paused) {
               thisVideo.play();
             } else {
@@ -671,6 +669,23 @@ var AJHAWrapper = {
 
     }, false);
 
+    function highlightSelectedSidebarItem() {
+      // highlight selected video in sidebar
+      var selectedClass = "HA-menu-item--selected";
+      var panel = document.getElementById('panel-media');
+      var listItems = panel.getElementsByTagName('a');
+      var listItemsLength = listItems.length;
+
+      var videoId = window.top.location.hash.split('/')[1];
+      
+      for (var l = 0; l < listItemsLength; l++) {
+        HA.removeClass(listItems[l], selectedClass);
+        if (listItems[l].getAttribute('data-id') == videoId) {
+          HA.addClass(listItems[l], selectedClass);
+        }
+      }
+    }
+
     // note transcript ready only fires when an entire transcript is loaded (Not a mix) 
 
     document.addEventListener('transcriptready', function () {
@@ -679,29 +694,11 @@ var AJHAWrapper = {
 
       //HAP.transcript.options.player.videoElem.poster = "../../assets/images/hap/" + L + "-poster.png";
 
-      function highlightSelectedSidebarItem() {
-        // highlight selected video in sidebar
-        var selectedClass = "HA-menu-item--selected";
-        var panel = document.getElementById('panel-media');
-        var listItems = panel.getElementsByTagName('a');
-        var listItemsLength = listItems.length;
-
-        var videoId = window.top.location.hash.split('/')[1];
-        
-        for (var l = 0; l < listItemsLength; l++) {
-          HA.removeClass(listItems[l], selectedClass);
-          if (listItems[l].getAttribute('data-id') == videoId) {
-            HA.addClass(listItems[l], selectedClass);
-          }
-        }
-      }
-
 
       if (target != 'Viewer') {
 
         ajOnInitCallback();
 
-        highlightSelectedSidebarItem();
       }
 
       setEffectsListeners();
@@ -721,10 +718,10 @@ var AJHAWrapper = {
 
             document.getElementById('hap-share-url').innerHTML = _url;
 
-            document.getElementById('hap-share-facebook').href = "https://www.facebook.com/sharer/sharer.php?u=" + escape(_url);
-            document.getElementById('hap-share-twitter').href = "https://twitter.com/home?status=" + escape(_url);
-            document.getElementById('hap-share-google').href = "https://plus.google.com/share?url=" + escape(_url);
-            document.getElementById('hap-share-email').href = "mailto:?subject=Message%20via%20PALESTINE%20REMIX&body=Hey%2C%20%0A%0Acheck%20this%20page%3A%20" + escape(_url);
+            document.getElementById('hap-share-facebook').href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(_url);
+            document.getElementById('hap-share-twitter').href = "https://twitter.com/home?status=" + encodeURIComponent(_url);
+            document.getElementById('hap-share-google').href = "https://plus.google.com/share?url=" + encodeURIComponent(_url);
+            document.getElementById('hap-share-email').href = "mailto:?subject=Message%20via%20PALESTINE%20REMIX&body=Hey%2C%20%0A%0Acheck%20this%20page%3A%20" + encodeURIComponent(_url);
           });//shorten
         }
       }
@@ -752,7 +749,7 @@ var AJHAWrapper = {
 
       // detect clicks on the pad menu
       document.addEventListener('padmenuclick', function() {
-        console.log('padmenuclick');
+        //console.log('padmenuclick');
         window.onhashchange = function() {
 
           var longformId = window.top.location.hash.split('/')[1];
@@ -769,6 +766,12 @@ var AJHAWrapper = {
             HAP.options.longformMedia = longformMedia;
             //console.log(longformMedia);
             HAP.transcript.load();
+
+            highlightSelectedSidebarItem();
+
+            var ev = document.createEvent('Event');
+            ev.initEvent('mixchange', true, true);
+            document.dispatchEvent(ev);
           }
         };
       }, false);
@@ -871,6 +874,12 @@ var AJHAWrapper = {
       }, false);
 
     }, false);
+
+    document.addEventListener('sidemenuinit', function () {
+      
+      highlightSelectedSidebarItem();
+
+    }, false);
   }
 };
 
@@ -886,9 +895,10 @@ function shorten(url, callback) {
     xhr.onreadystatechange = function() { 
         if(xhr.readyState == 4) { 
             if(xhr.status==200) {
-                console.log("CORS bitly", xhr.responseText); 
+                // console.log("CORS bitly", xhr.responseText); 
                 var resp = JSON.parse(xhr.responseText);    
-                if (typeof resp.data == 'undefined' || typeof resp.data.url == 'undefined') return callback(url);
+                console.log(resp);
+                // if (typeof resp.data == 'undefined' || typeof resp.data.url == 'undefined') return callback(url);
                 callback(resp.data.url);
             } else callback(url);
         } //else callback(url);

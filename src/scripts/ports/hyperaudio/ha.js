@@ -1007,6 +1007,9 @@ var SideMenu = (function (document, hyperaudio) {
           list.appendChild(anchor);
           alltrans.appendChild(list);
         }
+        var ev = document.createEvent('Event');
+        ev.initEvent('sidemenuinit', true, true);
+        document.dispatchEvent(ev);
       },
       error: function(event) {
         self.error = true;

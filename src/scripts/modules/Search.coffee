@@ -1,9 +1,11 @@
 # Load search index
 index = undefined # we will load the index in here
 titles = {} # we will load the titles in here
+searchPath = "/AJE/PalestineRemix/transcripts"
+# searchPath = "http://10.24.21.20/~laurian/PALESTINE%20PROJECT/DATA/MEDIA/SEARCH"
 
 request0 = new XMLHttpRequest()
-request0.open "GET", "/AJE/PalestineRemix/transcripts/html/" + L + "/list.json", true
+request0.open "GET", searchPath + "/html/" + L + "/list.json", true
 request0.onreadystatechange = ->
   if @readyState is 4
     if @status >= 200 and @status < 400
@@ -15,7 +17,7 @@ request0.onreadystatechange = ->
         i++
 
       request = new XMLHttpRequest()
-      request.open "GET", "/AJE/PalestineRemix/transcripts/data/" + L + "/index.json", true
+      request.open "GET", searchPath + "/data/" + L + "/index.json", true
       request.onreadystatechange = ->
         if @readyState is 4
           if @status >= 200 and @status < 400
@@ -84,7 +86,7 @@ doSearch = ->
       resultsContainer.appendChild result
       # AJAX
       request = new XMLHttpRequest()
-      request.open "GET", "/AJE/PalestineRemix/transcripts/text/" + L + "/" + id + ".txt", true
+      request.open "GET", searchPath + "/text/" + L + "/" + id + ".txt", true
       request.onreadystatechange = ->
         if @readyState is 4
           if @status >= 200 and @status < 400
