@@ -1,125 +1,121 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
-      "type": "Body-text"
-    },
-    {
-      "content": "\n      \n      بعد عام 1995، وعقب توقيع الاتفاق الانتقالي بشأن الضفة الغربية وقطاع غزة (المعروف أيضا أوسلو 2) بين إسرائيل ومنظمة التحرير الفلسطينية،  قسمت إسرائيل الضفة الغربية المحتلة إلى ثلاث مناطق: المنطقة أ والمنطقة ب والمنطقة ج. وبالنسبة للفلسطينيين، فهذا التقسيم هو مجرد عملية إسرائيلية هدفها تدمير مخططهم المستقبلي لإنشاء دولة فلسطينية مستقلة في مساحة الـ22% المتبقية من أراضي فلسطين التاريخية.\n       \n\n     ",
+      "content": "\n          \n          Izrael je 1995. godine, na osnovu Sporazuma iz Osla, Zapadnu obalu podijelio u tri glavne zone: A, B i C, što je trebalo simbolizirati napredak ka miru. Brojni su, međutim, Palestinci ovu podjelu doživjeli kao nepravdu koja narušava njihov zahtjev za budućom državom.\n\n         ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "من أهالي قرية سوسيا",
-        "label": "نصر النواجعة",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/area-c.html",
-        "quote": "تستطيع إسرائيل أن تهدم أي شيء، إلا أنها لن تستطيع أن تهدم الإرادة الفلسطينية ",
-        "share": "شارك"
+        "context": "STANOVNIK SELA SUSIYA",
+        "label": "NASER ALNOAJHA",
+        "link": "interactive.aljazeera.com/area-c.html",
+        "quote": "Izrael može uništiti sve, ali Palestincima ne može slomiti volju. Mi ćemo ponovno izgraditi sve što Izrael sruši.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>بعد اتفاقيات أوسلو، قُسمت الضفة الغربية المحتلة إلى ثلاث مناطق:</p>\n      <p>المنطقة أ: وتشكل 3% من أراضي الضفة الغربية، وامتدت عام 1999 لتشكل 18% من الضفة. وتخضع غالبية شؤون هذه المنطقة لسيطرة السلطة الفلسطينية.</p>\n      \n      <p>المنطقة ب: وتشكل 21% من أراضي الضفة الغربية، وتتحمل السلطة الفلسطينية مسؤولية قطاعات التعليم والصحة والاقتصاد في هذه المنطقة.</p>\n      \n      <p>لكن السيطرة الكاملة على الأمن الخارجي للمنطقتين أ و ب تتبع لإسرائيل، بمعنى أن لها الحق الكامل لدخول هاتين المنطقتين في أي وقت، بهدف اعتقال أو اغتيال أي مواطن فلسطيني.</p>\n      \n      <p>المنطقة ج: وتشكل 60% من أراضي الضفة الغربية المحتلة. وبناءً على اتفاقيات أوسلو، يجب أن تتبع هذه المنطقة لسيطرة السلطة الفلسطينية، لكن على أرض الواقع، تسيطر إسرائيل على جميع جوانب الحياة فيها، بما في ذلك الأمن والتخطيط العمراني والبناء.</p>\n      \n      <p>بالنسبة لبعض الفلسطينيين، جاءت إستراتيجية التقسيم كوسيلة لإيهامهم بأنها بادرة حسنة من قبل الإسرائيليين للتقدم في عملية السلام، لكن في الحقيقة، استخدمت إسرائيل هذه الإستراتيجية لتحكم السيطرة على أراضي المواطنين الفلسطينيين في الضفة الغربية وتتحكم بحياتهم؛ فإسرائيل لا تفرق بين تلك المناطق الثلاث عندما تجتاح أراضي الفلسطينيين وتداهم منازلهم، بل تكرّس الاحتلال في كل بقعة من بقاع الضفة الغربية المحتلة.</p>\n\n     ",
+      "content": "\n      \n      <p>Nakon Sporazuma iz Osla okupirana Zapadna obala podijeljena je u tri zone. Zonu A činilo je tri posto okupirane Zapadne obale, a do 1999. se područje koje zauzima ova zona proširilo na 18 posto. U ovoj zoni Palestinska narodna samouprava kontrolira većinu civilnih pitanja i unutarnju sigurnost.&nbsp; Zonu B čini blizu 21 posto okupirane Zapadne obale.&nbsp; Palestinska samouprava zadužena je za obrazovanje, zdravstvo i ekonomiju.&nbsp; U obje ove zone Izraelci u svojim rukama drže potpunu kontrolu nad pitanjima vanjske sigurnosti, što znači da imaju pravo na ovo područje ući u bilo kojem trenutku. Ponekad to čine kako bi nekoga uhapsili. Ponekad, ipak, ulaze s namjerom ciljanog ubijanja.</p>\n      \n      <p>Zonu C čini 60 posto okupirane Zapadne obale. Prema Sporazumu iz Osla, kontrola nad ovom zonom je trebala pripasti Palestinskoj upravi. Umjesto toga, Izrael je zadržao potpunu kontrolu.</p>\n      \n      <p>Za brojne Palestince strategija podjele okupirane Zapadne obale na zone A, B i C se pogrešno predstavlja kao znak napretka ka miru. U stvarnosti Izrael ovu podjelu koristi kako bi osigurao veću kontrolu nad životima Palestinaca. Kada dođe do napada na domove Palestinaca, Izrael ne pravi nikakvu razliku između zona A, B i C. Okupacija se provodi svugdje.</p>\n      \n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "أستاذ الجغرافيا السياسية – جامعة بيرزيت - فلسطين",
-        "label": "حسين الريماوي",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/area-c.html",
-        "quote": "اتفاقية أوسلو قسمت الضفة الغربية إلى مناطق جغرافية، وهذا باعتقادي كان الخطأ الكبير",
-        "share": "شارك"
+        "context": "PROFESOR POLITIČKE GEOGRAFIJE, UNIVERZITET U BIRZEITU",
+        "label": "HUSSEIN AL-RIMMAWI",
+        "link": "http://interactive.aljazeera.com/ajb/PalestineRemix/area-c.html",
+        "quote": "Sporazumom iz Osla Zapadna obala je podijeljena u geografske zone. To je, po mom mišljenju, bila najveća greška.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "تقسيم الضفة الغربية",
-        "vimeo": 110645998,
-        "yt": "v=IxxmobrmsGE"
+        "label": "Podjela Zapadne obale",
+        "vimeo": 112263755,
+        "yt": "1lp_CqfyGFo"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>تتركز المستوطنات الإسرائيلية ومناطق التدريب العسكرية في المنطقة ج بالضفة الغربية.</p>\n      \n      <p>وتوقع كثير من الفلسطينيين بعد الاتفاق الانتقالي بشأن الضفة الغربية وقطاع غزة (أوسلو 2) عام 1995 أنه بالتدريج ستنتقل سيطرة مناطق جيم للسلطة الوطنية، لكن ما حدث على أرض الواقع خلال الأعوام العشرين السابقة كرس الوجود الإسرائيلي في هذه المنطقة.</p>\n      \n      <p>وفي هذه الأيام، يعيش الفلسطينيون في قرى المنطقة ج أوضاعاً معيشية صعبة للغاية، حيث يعاني مواطنو قرى المالح وكفر قدوم والعقبة من أبشع ممارسات الاحتلال، وتسيطر إسرائيل على جميع جوانب حياتهم اليومية.</p>\n\n     ",
+      "content": "\n      \n      <p>Izraelska naselja, područja za vojnu obuku i zaobilaznice se nalaze u Zoni C. Palestinci koji tamo žive suočavaju se sa sve većim nedaćama. Sela u Zoni C, poput&nbsp; Al-Maleha, Kafr Qadduma i Aqabe, guše se pod izraelskom okupacijom i kontrolom.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "تهديد قرية العقبة",
-        "vimeo": 110646004,
-        "yt": "9RfVWya7Ev0"
+        "label": "Aqaba: palestinsko selo",
+        "vimeo": 112263753,
+        "yt": "rH7s0q1DJ5c"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "label": "كفر قدوم- قرية فلسطينية",
-        "vimeo": 110646002,
-        "yt": "watch?v=uPv6yxffxpY"
+        "label": "Kafr Qaddum: palestinsko selo",
+        "vimeo": 112263988,
+        "yt": "gcdW737qYNU"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>يعيش اليوم قرابة 150.000 فلسطيني في المنطقة ج. ويعانون من قيود إسرائيلية خانقة تمنعهم من التخطيط العمراني والبناء في أراضيهم، وتحول دون وصولهم إلى الموارد الطبيعية ومرافق الخدمات فيها.</p>\n      \n      <p>إلى جانب ذلك، وفي الوقت ذاته، يعيش قرابة 300.000 مستوطن في المنطقة ج، وهو انتهاك واضح وعلني للقوانين الدولية.</p>\n      \n      <p>وتشهد الضفة الغربية تسارعاً غير مسبوق في وتيرة بناء المستوطنات الإسرائيلية على أراضيها، فلا تكاد تخلو أي من جبالها من وجود هذه المستوطنات، وخاصة في المنطقة ج.</p>\n\n     ",
+      "content": "\n      \n      <p>Danas u Zoni C živi gotovo 150.000 Palestinaca koji se suočavaju sa strogim ograničenjima kada su u pitanju planiranje, izgradnja i pristup prirodnim resursima. Procjenjuje se da u Zoni C živi više od 300.000 jevrejskih-izraelskih naseljenika, što predstavlja jasno kršenje međunarodnog prava.</p>\n      \n      <p>Nelegalna izraelska naselja se još velikom brzinom šire na vrhu gotovo svakog brda kroz cijelu okupiranu Zapadnu obalu. Ovaj je problem posebno izražen u Zoni C.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "سرقة الأرض",
-        "vimeo": 110646001,
-        "yt": "2KJg_eurSuc"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": "رئيس مجلس قروي المالح",
-        "label": "عارف دراغمة",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/area-c.html",
-        "quote": "يتسلم الفلسطينيون يوميا إنذارات إسرائيلية لإخلاء منازلهم بهدف تدميرها. إسرائيل تصادر المزيد من الأراضي الفلسطينية كل يوم",
-        "share": "شارك"
+        "context": "PREDSJEDNIK SEOSKOG VIJEĆA AL-MALEHA",
+        "label": "AREF DARAGMEH",
+        "link": "http://interactive.aljazeera.com/ajb/PalestineRemix/area-c.html",
+        "quote": "Obavijesti o rušenjima i deložacijama se dostavljaju svakodnevno. Oduzimanje zemlje ovdje je svakodnevna pojava.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>كما يعاني المواطنون الفلسطينيون في المنطقة ج من التدمير الإسرائيلي لمنازلهم ومصادرة أراضيهم، كما يواجهون صعوبات جمة للوصول إلى موارد المياه.</p>\n      \n      <p>وحسب مؤسسة الحق لحقوق الإنسان، فإن قرابة 300.000 من المواطنين الفلسطينيين في الضفة الغربية المحتلة لا يستطيعون الحصول على مياه نظيفة للشرب.</p>\n      \n      <p>عام 1967، احتلت إسرائيل الضفة الغربية بما فيها القدس الشرقية، وقطاع غزة، فسيطرت على جميع مصادر المياه في تلك المناطق سيطرة كاملة.</p>\n      \n      <p>ومنذ ذلك الوقت، مُنع الفلسطينيون من حقهم الطبيعي في الوصول لمصادر المياه، كما مُنعوا من إنشاء مشاريع تطوير البنى التحتية للحصول على مياه نظيفة للشرب، كما تفيد تقارير مؤسسة الحق لحقوق الإنسان.</p>\n      \n      <p>يقر مكتب الأمم المتحدة لتنسيق الشؤون الإنسانية أن إسرائيل كثفت خلال الأعوام السابقة من عمليات تدمير آبار المياه الفلسطينية ومصادر المياه الأخرى في الضفة الغربية، حتى إنه من المستحيل لأي فلسطيني الحصول على تصريح لبناء أي وسيلة من وسائل استخراج المياه.</p>\n      \n      <p>يقول آلون ماكدونالد، المسؤول الإعلامي في مؤسسة أوكسفام الدولية: \"عندما تجد المستوطنين على بعد أمتار من الفلسطينيين، تتوسع مستوطناتهم بشكل دائم ودون قيود، وهم يملكون الحق في الوصول إلى 80% من مصادر المياه؛ إذاً، فلديك نظام عنصري يحق فيه للبعض البناء ويمنع آخرون من ذلك\".</p>\n\n     ",
+      "content": {
+        "label": "Otimanje zemlje",
+        "vimeo": 112264026,
+        "yt": "yN4sbs6h7_g"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>Palestinci koji žive u Zoni C nastoje se oduprijeti uništavanju svojih domova i konfisciranju zemlje koju posjeduju. Pored toga, prisiljeni su boriti se i da zadovolje osnovne potrebe, poput pristupa čistoj vodi. Prema palestinskoj grupi za ljudska prava Al-Haq, skoro 300.000 Palestinaca u više od 100 zajednica na okupiranoj Zapadnoj obali nema odgovarajući pristup čistoj vodi.</p>\n      \n      <p>Kada je Izrael 1967. godine okupirao Zapadnu obalu, Istočni Jerusalem i Pojas Gaze, vodni resursi su stavljeni pod isključivu izraelsku kontrolu. Al-Haq tvrdi da je od tada Palestincima uskraćen pristup na dio vode koji im po pravu pripada, te da ih se sprečava u razvijanju vlastite vodne infrastrukture.</p>\n      \n      <p>Prema Uredu Ujedinjenih naroda za koordinaciju humanitarnih poslova, praksa uništavanja palestinskih izvora i vodnih rezervi na Zapadnoj obali posljednjih je godina intenzivirana. Gotovo je nemoguće, barem Palestincima, dobiti dozvole za izgradnju bilo kakve vrste vodnog postrojenja ili objekta.</p>\n      \n      <p>Upravo zato, Alun McDonald, medijski službenik Oxfam Internationala, tvrdi: „Postoje izraelska naselja koja se i dalje šire i gdje se često najavljuje izgradnja novih zgrada. Ova naselja imaju pristup 80 posto vodnih resursa. To je, dakle, izrazito diskriminatoran sistem, u kojem je nekim ljudima dopušteno da grade, a drugima nije.”</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "رئيس جمعية الهيدرولوجيين الفلسطينيين",
-        "label": "عبد الرحمن التميمي",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/area-c.html",
-        "quote": "إذا بقي الأمر على ما هو عليه، فإن الشعب الفلسطيني لن يواجه العطش الشديد فحسب، لكنه سيموت حتما من العطش",
-        "share": "شارك"
+        "context": "UDRUŽENJE PALESTINSKIH HIDROLOGA",
+        "label": "ABDUL RAHMAN AL TAMIMI",
+        "link": "interactive.aljazeera.com/area-c.html",
+        "quote": "Ukoliko se stvari ne promijene, Palestinci se neće suočavati samo sa žeđu, već će umrijeti od gladi. ",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "الصراع من أجل الماء",
-        "vimeo": 110645994,
-        "yt": "nKLtJqRGxR8"
+        "label": "Borba za vodu",
+        "vimeo": 112264030,
+        "yt": "MKyFlP-MN3U"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "مزارع فلسطيني – قرية فلامية - قلقيلية",
-        "label": "محمود أبو ظاهر",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/area-c.html",
-        "quote": "كمية المياه التي نستطيع الحصول عليها محددة جدا، وإذا أخذنا أكثر من هذه الكمية المحددة، فسنخالف",
-        "share": "شارك"
+        "context": "FARMER, SELO FALAMYEH",
+        "label": "MAHMOUD ABU ZAFER",
+        "link": "http://interactive.aljazeera.com/ajb/PalestineRemix/area-c.html",
+        "quote": "Daju nam određenu količinu vode. Ukoliko to ograničenje prekršite, plaćate kaznu.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>تعطلت مفاوضات السلام بين الفلسطينيين والإسرائيليين منذ توقيع اتفاقيات أوسلو، وما زال الخلاف على المنطقة ج في الضفة الغربية المحتلة عالقاً.</p>\n      \n      <p>يواجه الفلسطينيون خطراً حقيقيّاً بسلبهم حق الوصول إلى مصادر المياه الطبيعية. وفي المقابل، تواصل سلطات الاحتلال الإسرائيلية مصادرة المواقع الفلسطينية التاريخية والأثرية، وتدمير منازل الفلسطينيين، والسيطرة التامة على المنطقة ج في الضفة الغربية المحتلة. كل هذا يتم بعيداً عن أعين المجتمع الدولي.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Od Sporazuma u Oslu mirovni pregovori između Palestinaca i Izraelaca su u zastoju. Spor vezan za Zonu C je i dalje jednako 'nedodirljiv'. Stvarna je opasnost da Palestinci izgube pristup prirodnim resursima svoje zemlje. Jednako je stvarno i prisvajanje lokacija palestinskog naslijeđa, te prisilno rušenje palestinskih kuća, kao i nastavak kontrole okupacijskih snaga nad Zonom C. Nastavljaju se užasni postupci Izraela, koji grozno postupa na ovom području, a međunarodna zajednica takvo ponašanje ne sprečava.</p>\n\n     ",
       "type": "Body-text"
     }
   ],
-  "director": "عايد نبعة",
-  "directorLabel": "إخراج",
-  "headline": "مناطق جيم"
+  "director": "AYED NABAA",
+  "directorLabel": "Režiser filma",
+  "headline": "ZONA C"
 }

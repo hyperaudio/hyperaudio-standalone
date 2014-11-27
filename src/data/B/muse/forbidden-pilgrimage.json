@@ -1,113 +1,109 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
-      "type": "Body-text"
-    },
-    {
-      "content": "\n      \n      حاولت إسرائيل جذب ملايين السياح سنويّاً إلى \"الأرض المقدسة\"، إلا أنها تقدم لهم رواية مزيفة لتاريخ فلسطين، بتعمدها تجاهل تاريخ المسيحيين والمسلمين الذين عاشوا آلاف السنين في هذه المنطقة.\n\n     ",
+      "content": "\n          \n          Svake godine Izrael privlači milione turista u posjetu 'Svetoj zemlji'. Njima se predstavlja lažna historija Palestine - verzija koji ignorira historiju kršćana i muslimana koji su tamo živjeli stoljećima.\n\n         ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "صاحب مكتب سياحي في بيت لحم",
-        "label": "فادي قطان",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/forbidden-pilgrimage.html",
-        "quote": "لا أستطيع زيارة الأماكن المقدسة المسيحية في ظل نظام الفصل العنصري بفلسطين، ونقاط التفتيش والجدار",
-        "share": "شارك"
+        "context": "STANOVNIK PALESTINE IZ BETLEHEMA",
+        "label": "FADI QATTAN",
+        "link": "http://interactive.aljazeera.com/ajb/PalestineRemix/forbidden-pilgrimage.html",
+        "quote": "Ne mogu posjetiti [kršćanske] svetinje (...) dok je na vlasti sadašnji [izraelski] separatistički režim u Palestini, sprečavaju me kontrolni punktovi i zid razdvajanja.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>يعتبر قطاع السياحة من أهم مقومات الاقتصاد الإسرائيلي. ففي عام 2013 فقط، زار قرابة 3.5 مليون سائح إسرائيل، معظمهم قدموا لأسباب دينية متعلقة بحج المسيحيين.</p>\n      \n      <p>إلا أن منظمي الرحلات السياحية الإسرائيلية يقدمون روايات مزيفة للزوار، وخاصة السياح المسيحيين، حيث تتجاهل الرواية الإسرائيلية الصلة التاريخية للدين المسيحي بهذه الأرض، ولا تذكر طرق القمع العديدة المروعة التي مارسها الإسرائيليون ضد الفلسطينيين المسيحيين منذ عام 1948.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Turizam je ključni dio izraelske ekonomije. Samo u 2013. godini Izrael je posjetilo 3,5 miliona turista, od kojih su brojni došli na vjersko hodočašće. Međutim, izraelski turoperatori svojim posjetiocima prenose iskrivljenu priču. Cenzura je posebno izražena za turiste - kršćanske. Ignorira se historijska veza kršćana sa Svetom zemljom. Cenzuriraju se i brojni načini na koje je Izrael progonio palestinske kršćane još od 1948.&nbsp; godine.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "تشويه تاريخ فلسطين",
-        "vimeo": 110646135,
-        "yt": "FcDtdSCk4Go"
+        "label": "Mijenjanje historije Palestine",
+        "vimeo": 112266981,
+        "yt": "J9asgwFt5JU"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>ويرفض منظمو الرحلات السياحية الإسرائيلية أخذ السياح المسيحيين إلى بعض أهم المدن التاريخية والمواقع المقدسة في المنطقة، كي لا يروا الآثار الوحشية لممارسات الاحتلال الإسرائيلي هناك.</p>\n      \n      <p>وينتقد بعض السياح السلوك المروع لكثير من المرشدين السياحيين الإسرائيليين عند حديثهم عن الصراع الفلسطيني الإسرائيلي؛ فبعضهم يقومون بأدوار تمثيلية ويطلبون من السياح لعب دور الجنود الإسرائيليين لشن هجوم \"وهمي\" على \"الإرهابيين\" الفلسطينيين.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Izraelski turistički vodiči ne vode kršćanske turiste u neke od najvažnijih gradova i svetih mjesta u regiji, samo kako bi ih spriječili da vide brutalne posljedice izraelske okupacije. Prema nekim turistima, mnogi izraelski od njih pokazuju šokantan nedostatak osjetljivosti kad je u pitanju objašnjavanje sukoba. Neki priređuju igre u kojima turisti imaju priliku igrati ulogu izraelskih vojnika koji napadaju palestinske \"teroriste\".</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "رئيس أساقفة سبسطية للروم الأرثودكس",
-        "label": "عطا الله حنا",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/forbidden-pilgrimage.html",
-        "quote": "هناك وزراء في الحكومة الإسرائيلية، عندما يتحدثون.. لغتهم لا تقل عنفا وعنصرية عن هؤلاء المتطرفين اليهود الذين يعتدون على الكنائس",
-        "share": "شارك"
+        "context": "SEBASTIJSKA PRAVOSLAVNA CRKVA",
+        "label": "ARHIEPISKOP ATALLAH HANNAH",
+        "link": "http://interactive.aljazeera.com/ajb/PalestineRemix/forbidden-pilgrimage.html",
+        "quote": "Kada neki izraelski ministri govore, jezik koji koriste jednako je nasilan i rasistički kao i [jevrejski ekstremni] napadači.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "أن تكون فلسطينيا مسيحيا ",
-        "vimeo": 110450299,
-        "yt": "YAUr1UNLl0A"
+        "label": "Palestinski kršćanin",
+        "vimeo": 112266980,
+        "yt": "JkXdOQxagqQ"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "label": "السياحة الإرهابية",
-        "vimeo": 110646130,
-        "yt": "rX7vTNmAkJk"
+        "label": "Izraelske ture 'straha'",
+        "vimeo": 112267037,
+        "yt": "tjLh4U4BJnc"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>عانى الفلسطينيون المسيحيون كثيراً من جراء الممارسات الإسرائيلية العنيفة ضدهم، فبالإضافة لسرقة أراضيهم وإخراجهم منها عنوة، تعرض كثير منهم لهجمات خطيرة هددت حياتهم؛ فقد استهدفت مجموعات يهودية متطرفة، تحت حماية الحكومة الإسرائيلية، زعماء فلسطينيين مسيحيين، واستخدمت القنابل والأسلحة والسكاكين في الهجوم عليهم.</p>\n      \n      <p>كما عانى أصحاب الأراضي من الفلسطينيين المسيحيين من عمليات حرق متعمد لأراضيهم.</p>\n      \n      <p>وتأتي هذه الهجمات ضمن حملات التطهير العرقي الإسرائيلية المتواصلة التي تهدف إلى إخراج الفلسطينيين من أرضهم التاريخية عنوة.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Palestinskim kršćanima oteta je njihova zemlja i otjerani su iz svojih domova, a napadani su i njihovi životi. Rulje jevrejskih ekstremista, koje je štitila Vlada Izraela, napadale su vođe palestinskih kršćana bombama, pištoljima i noževima. Obradiva zemljišta koja su pripadala palestinskim kršćanima su popaljena, a sve to kao dio izraelske kampanje etničkog čišćenja Palestinaca.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "الاعتداء على الفلسطينيين المسحيين ",
-        "vimeo": 110646131,
-        "yt": "1IOT2U-TCQU"
+        "label": "Napad na palestinske kršćane",
+        "vimeo": 112266982,
+        "yt": "_c6eBlxvPzk"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "رئيس أساقفة سبسطية للروم الأرثودكس",
-        "label": "عطا الله حنا",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/forbidden-pilgrimage.html",
-        "quote": "الفلسطيني المسيحي أو المسلم محروم من زيارة الأماكن المقدسة في القدس",
-        "share": "شارك"
+        "context": "SEBASTIJSKA PRAVOSLAVNA CRKVA",
+        "label": "ARHIEPISKOP ATALLAH HANNAH",
+        "link": "http://interactive.aljazeera.com/ajb/PalestineRemix/forbidden-pilgrimage.html",
+        "quote": "Palestincima, kršćanima ili muslimanima [Izrael] uskraćuje mogućnost da posjećuju sveta mjesta u Jerusalemu.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>كما تواصل إسرائيل حملاتها المنظمة لاحتلال ومصادرة المزيد من الأراضي الفلسطينية لضمها لدولتها اليهودية، وتواصل كذلك ادعاءاتها المفبركة بصلتها الدينية بالمنطقة.</p>\n      \n      <p>وينظر الفلسطينيون المسلمون والمسيحيون إلى مثل تلك الادعاءات باستفزاز شديد، فكيف يمكن لسلطة احتلال تتعامل بكل وحشية مع الشعب الفلسطيني ادعاء أي صفة روحانية؟</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Kako Izrael i dalje nastavlja svoju kampanju da bi prisvojio još više teritorija,&nbsp; provodi je uz tvrdnju da Jevreji imaju posebnu vjersku vezu sa zemljom. Takve tvrdnje duboko vrijeđaju Palestince - muslimane i kršćane. Kako okupatorska sila koja terorizira palestinski narod može tvrditi da ima bilo kakvu vezu sa duhovnošću?</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": " الفلسطيني محروم من زيارة القدس",
-        "vimeo": 110646136,
-        "yt": "b8GRLkjxF9Y"
+        "label": "Vjerska prava Palestinaca 'prioritet'",
+        "vimeo": 112267038,
+        "yt": "QgxxqieTeqE"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "label": "أرض تفقد قيمتها",
-        "vimeo": 110646129,
-        "yt": "rX7vTNmAkJk"
+        "label": "Zemlja gubi svoju vrijednost",
+        "vimeo": 112266979,
+        "yt": "HuDcCdUVJLM"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>وبالنهاية، فإن قدسية هذه \"الأرض المقدسة\" وأهميتها مرتبطة ارتباطاً وثيقاً بسكانها الأصليين: ألا وهم الفلسطينيون.</p>\n      \n      <p>وتعاقب سلطات الاحتلال الإسرائيلية كل الشعب الفلسطيني دون أي اعتبار لانتمائهم الديني، ولم تُستثن الأقلية المسيحية من هذه الممارسات؛ حيث تمنعهم إسرائيل من القيام بأية مشاريع لتطوير مدنهم ومقدساتهم، كما تؤمن الدعم الكامل للمتطرفين اليهود الذين يستهدفون الزعماء المسيحيين بشتى أنواع العنف.</p>\n      \n      <p>وإلى أن يتم تأمين حقوق الشعب الفلسطيني كاملة، فإن أي رواية إسرائيلية تدعي أن المنطقة هي \"أرضها المقدسة\"، هي رواية مزيفة.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Naposljetku, značaj Svete zemlje neraskidivo je povezan sa njenim ljudima, Palestincima. Kroz izraelsku okupaciju kažnjavaju se svi Palestinci, bez obzira na njihovu vjeru. Palestinski kršćani, već u manjini, ne predstavljaju izuzetak. Izrael sprečava razvoj njihovih gradova i svetinja, a, pored toga, podržava ekstremne Jevreje, koji svoje nasilje usmjeravaju na kršćanske vođe. Sve dok se Palestincima ne osiguraju njihova prava, svaka priča koja tvrdi da je ova regija 'Sveta zemlja' predstavljat će laž.</p>\n\n     ",
       "type": "Body-text"
     }
   ],
-  "director": "أحمد الضامن",
-  "directorLabel": "إخراج",
-  "headline": "الحـج المحـرم"
+  "director": "AHMAD DAMEN",
+  "directorLabel": "Režiser filma",
+  "headline": "ZABRANJENO HODOČAŠĆE"
 }

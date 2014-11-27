@@ -1,151 +1,147 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
-      "type": "Body-text"
-    },
-    {
-      "content": "\n      \n      يعيش الفلسطينيون في غزة ظروفاً معيشية صعبة للغاية، بسبب الهجمات العسكرية الإسرائيلية المتتالية على القطاع.\n      ذوو الاحتياجات الخاصة هم أكثر من يعاني من هذه الظروف، بسبب قلة التجهيزات الخاصة التي تساعدهم على التأقلم مع ظروف الحياة تحت الحصار والقصف الإسرائيلي المستمر.\n       \n\n     ",
+      "content": "\n          \n          Kontinuirani napadi Izraela na Gazu uvjete u kojima žive Palestinci učinili su nepodnošljivim. Osobe s invaliditetom u regiji su među onima koji su ponajmanje u stanju boriti se sa svakodnevnim poteškoćama života pod opsadom i izraelskog bombardiranja.\n\n         ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "زوجة علاء النحال - أصم فلسطيني",
-        "label": "نازك النحال",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "التعامل مع الصم، إذا كنت إنت حابه، سهل جدا",
-        "share": "شارك"
+        "context": "ALAOVA SUPRUGA",
+        "label": "NAZEK ALNAHHAL",
+        "link": "http://interactive.aljazeera/com/ajb/PalestineRemix/stronger-than-words.html",
+        "quote": "Živjeti s gluhim osobama je veoma lako, dok god ih volite.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>يعيش في قطاع غزة 1.8 مليون فلسطيني، من ضمنهم 15.000 مواطن أصم.</p>\n      \n      <p>ويعاني الصم في غزة من التمييز في المعاملة، سواء في البيت أو المدرسة، أو حتى مكان العمل، ونتيجة لذلك، يقعون ضحية البطالة والإحساس بالعزل، وغالباً ما يصابون بالاكتئاب. كما يشعر الأطفال الصم بشكل خاص أنهم منبوذون اجتماعيّاً بسبب إعاقتهم.</p>\n      \n      <p>حتى روتين الحياة اليومي في غزة يبدو مختلفاً بالنسبة للصم؛ فعلى سبيل المثال، لا يستفيدون من خطبة صلاة يوم الجمعة، لأنهم لا يستطيعون سماعها.</p>\n      \n      <p>ويتعاون الصم في غزة لمساعدة بعضهم بعضاً. علاء الدين النحال، سائق تكسي أصم، يبذل قصارى جهده لمساعدة الصم الآخرين، ويدرس التمثيل والكوميديا للصم في أحد المسارح بغزة.</p>\n\n     ",
+      "content": "\n      \n      <p>U Pojasu Gaze živi 1,8 miliona Palestinaca. Među njima 15.000 gluhih osoba. U Gazi se gluhi ljudi suočavaju sa diskriminacijom u kući, na poslu, u školi. Suočavaju se sa višim stepenom nezaposlenosti, osjećajem izoliranosti, a često i depresijom. Zbog svog invaliditeta se posebno stigmatiziranim mogu osjećati djeca.</p>\n      \n      <p>Za gluhe osobe u Gazi se čak i rutinski aspekti svakodnevnog života čine različitima. Tokom džume petkom gluhe osobe, npr., nisu u stanju razumjeti hutbu koju drži imam. Gluhi ljudi u Gazi bore se i s finansijskim poteškoćama. Često moraju izmišljati načine kako bi se mogli izdržavati.&nbsp; Alaa Eddin Alnahhal, gluhi vozač taksija, bori se da sastavi kraj s krajem.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "حياة أب أصم في قطاع غزة",
-        "vimeo": 110646862,
-        "yt": "ygUDGo5DOFQ"
+        "label": "Život jednog oca u Gazi",
+        "vimeo": 112273553,
+        "yt": "dIw3O9JWUkU"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>محمد المقيد، مواطن فلسطيني أصم، يرى جزئيّاً بعين واحدة، ولا يرى بالأخرى.</p>\n      \n      <p>يعاني محمد من صعوبات جمة في روتين حياته اليومية، إلا أنه يلجأ للرسم كوسيلة للتفريغ النفسي. وحدها رسوماته تشعره ببعض الفرح والقدرة على التعبير عن نفسه.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Mahmoud Almuqayad nije samo gluh, i slijep je na jedno oko. Na drugom ima sačuvan tek parcijalni vid. Za njega čak i najuobičajeniji zadaci predstavljaju teško savladiv poduhvat. Slikanje mu, međutim, nudi kratak predah. Njegova umjetnost pričinjava mu zadovoljstvo i daje mu šansu da se izrazi.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "فنان من الصم",
-        "vimeo": 110646868,
-        "yt": "5_QHwUMnq1U"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": "فنان تشكيلي",
-        "label": "محمود المقيد",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "الحياة صعبة جدا والمعابر مغلقة، وأنا أستطيع أن أرى بعين واحدة، وأنا أصم",
-        "share": "شارك"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": "\n      \n      <p>\"أطفالنا\" هي جمعية للأطفال الصم في قطاع غزة. تأسست عام 1992، تعلم الصم من مختلف الأعمار، وتقدم لهم خدمات مختلفة.</p>\n      \n      <p>نجحت \"أطفالنا\" في مساعدة آلاف الصم في قطاع غزة، فهي تقدم دروساً مختلفة للصم، وجلسات لتقوية السمع ومعالجة مشاكل النطق.</p>\n      \n      <p>كما تضم الجمعية مقهى خاصّاً يوظف الصم فقط، ومتجراً لبيع الأشغال اليدوية التي يصنعها الحرفيون الصم.</p>\n      \n      <p>يتوجه بعض الآباء الشباب من الصم إلى جمعية \"أطفالنا\" للحصول على المساعدة في تربية أطفالهم.</p>\n      \n      <p>هدى شاهين، شابة فلسطينية صماء تعمل مدرسة في جمعية \"أطفالنا\". زوجها أشرف أصم أيضاً. يؤكد الزوجان أن باستطاعة الآباء الصم تحدي المشاكل التي تواجههم في تربية أبنائهم الذين يسمعون بشكل طبيعي، عن طريق تقديم الحب والحنان والدعم المستمر لهم، إلا أنهم غالباً ما يعانون من التمييز والتفرقة، خاصة عند تقديم طلبات للحصول على وظائف.</p>\n      \n      <p>يعمل أشرف موظفاً في وزارة المالية بغزة، بعد أن طبقت الحكومة قانوناً يلزم مؤسساتها بأن تكون 5% من الوظائف فيها لذوي الاحتياجات الخاصة.</p>\n      \n      <p>تشعر هدى أنها محظوظة بسبب الدعم المستمر لها من قبل زوجها ومجتمع الصم في غزة.</p>\n      \n      <p>وتنزعج كثيراً من أولئك الأشخاص الذين يعتبرون الصم أغبياء، إلا أنها تثبت لهم عكس ذلك كل يوم.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "context": "أم فلسطينية",
-        "label": "إلهام المقيد",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "نعاني يوميّاً من انقطاع الكهرباء في غزة. أطفالي الصم يتحدثون مع بعضهم بلغة الإشارة، ولذلك، ينزعجون كثيراً عندما لا يستطيعون رؤية بعضهم بسبب انقطاع الكهرباء",
-        "share": "شارك"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": {
-        "label": "قصة عائلة من الصم في غزة بفلسطين ",
-        "vimeo": 110646876,
-        "yt": "OedZqkfyaXg"
+        "label": "Gluhonijemi slikar",
+        "vimeo": 112273550,
+        "yt": "pGbkR8mGCjo"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "مدرسة",
-        "label": "هدى شاهين",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "نتواصل مع الناس بشكل طبيعي، بعضهم يعتقد أن الصم أغبياء، إلا أننا أناس طبيعيون",
-        "share": " شارك"
+        "context": "LIKOVNI UMJETNIK",
+        "label": "MAHMOUD ALMUQAYAD",
+        "link": "http://interactive.aljazeera.com/ajb/PalestineRemix/stronger-than-words.html",
+        "quote": "Život je težak. Granični prijelazi su zatvoreni. Vidim samo na jedno oko i gluh sam.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>يقول المشرف على الأعمال الحرفية في جمعية \"أطفالنا\" هاشم غزال: \"يعتقد الناس أن الصم ضعفاء، لكن هذا غير صحيح، فالصم ومن يسمعون بشكل طبيعي، متساوون\".</p>\n      \n      <p>لكن هاشم يعترف أن الصم ليست لهم قوة أو سلطة في غزة، حتى إن الناس لا يتعاملون معهم بشكل جدي. ويعبر هاشم عن امتعاضه الشديد من الحكومة في غزة؛ لعدم إصدارها قوانين إضافية تدعم الصم في القطاع، مثل توفير مترجمين للغة الإشارة في المستشفيات والمؤسسات الحكومية.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Atfaluna je škola za gluhu djecu u Pojasu Gaze. Osnovana je 1992. i osigurava obrazovanje i usluge podrške gluhima svih uzrasta. Tokom godina, škola je pomogla hiljadama gluhih osoba u Gazi. Nudi nastavu, logopedske te audiološke usluge. U njoj se nalazi i kafić koji zapošljava gluhe osobe kao i prodavnica u kojoj se prodaju rukotvorine koje izrađuju gluhe zanatlije.</p>\n      \n      <p>Klijenti škole su, između ostalih, mladi roditelji koji se nastoje nositi sa vlastitim invaliditetom dok podižu djecu. Hoda Shaheen je mlada gluha Palestinka koja predaje u ovoj školi. Njen muž Ashraf je, također, gluh. Oni kažu da, iako postoje određene praktične prepreke s kojima se suočavaju roditelji koji podižu djecu koja čuju, one se mogu prevazići ljubavlju i podrškom. Navode da se, ipak, još suočavaju s diskriminacijom, što im posebno otežava pronalaženje dobrog posla. Ashraf trenutno radi u Ministarstvu finansija. Vlasti su nedavno usvojile zakon kojim se od poslodavaca traži da pet posto radnih mjesta rezerviraju za osobe s invaliditetom.</p>\n      \n      <p>Hoda se smatra sretnom zbog podrške koju dobiva od muža i zajednice gluhih osoba u Gazi.&nbsp; Ipak, kaže da neki ljudi koje susreće vjeruju da je njen nedostatak&nbsp; čini&nbsp; „glupom”.&nbsp; Svaki dan im dokazuje kako nisu upravu.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "نقاش فلسطينييين صم في قطاع غزة المحاصر ",
-        "vimeo": 110646877,
-        "yt": "XsC1mCKmtmA"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>تتكون عائلة إسراء غزال من ثمانية أشخاص صم، وأربعة يسمعون بشكل طبيعي، وهي واحدة منهم.</p>\n      <p>وتعتبر إسراء نفسها المترجمة وحلقة الوصل بين إخوتها الصم والعالم الخارجي من حولهم؛ ففي أوقات الحرب والقصف الإسرائيلي على غزة، تحذر إسراء أفراد عائلتها الصم، كما تحاول حمايتهم من خطر الضربات العسكرية.</p>\n      \n      <p>خلال الحرب الإسرائيلية الأخيرة على غزة عام 2014، حاولت إسراء مراراً وتكراراً طمأنة أفراد عائلتها الصم وإقناعهم بعدم وجود طائرات أو قصف جوي على غزة، في الوقت الذي كانت الهجمات الإسرائيلية قوية ومدمرة، حتى إنهم شعروا باهتزاز الأرض من تحتهم، وبخفقان قلوبهم بشدة، من قوة الانفجارات من حولهم.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "label": "حياة أب أصم في قطاع غزة",
-        "vimeo": 110646864,
-        "yt": "xS--ngiZgNw"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": "المشرف على الأعمال الحرفية في جمعية \"أطفالنا\"",
-        "label": "هشام غزال",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "نحن مثل أولئك القادرين على السمع بشكل طبيعي، بل إننا نتمتع بمواهب وقدرات خاصة مثل الفن والتطريز والإبداع",
-        "share": "شارك"
+        "context": "PALESTINSKA MAJKA",
+        "label": "ELHAM ALMUQAYAD",
+        "link": "http://interactive.aljazeera.com/ajb/PalestineRemix/stronger-than-words.html",
+        "quote": "Svaki dan imamo prekide u napajanju strujom. Moja gluha djeca među sobom mogu razgovarati jedino znakovnim jezikom. Zato se, kada ne mogu vidjeti jedno drugo, uznemire.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>لم يسلم أحد من سكان قطاع غزة من تبعات الحرب الإسرائيلية على القطاع عام 2014، التي أدت إلى استشهاد أكثر من 2100 فلسطيني، كان بينهم بعض الأشخاص من ذوي الاحتياجات الخاصة.</p>\n      <p>كفاح غانم، فنانة فلسطينية صماء، استشهدت في قصف إسرائيلي استهدف المبنى السكني الذي كانت تعيش فيه.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
       "content": {
-        "label": "الوحشية الإسرائيلية",
-        "vimeo": 110646861,
-        "yt": "8cQgjkfiQYA"
+        "label": "Priča jedne gluhonijeme porodice",
+        "vimeo": 112273632,
+        "yt": "wFXX8ORGQQE"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "داعية فلسطيني أصم",
-        "label": "خضر الرنتيسي",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "في هذه الحرب (2014) استشهدت بنت صماء.. كان بيتها من عدة طوابق ودمروه عليه",
-        "share": "شارك"
+        "context": "UČENICA",
+        "label": "HODA SHAHEEN",
+        "link": "http://interactive.aljazeera.com/ajb/PalestineRemix/stronger-than-words.html",
+        "quote": "S ljudima komuniciramo normalno. Oni misle kako su gluhi glupi, ali mi smo normalni.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>انتهى صيف 2014، وانتهت حرب غزة معه، لكن لم تعد الحياة طبيعية كما كانت لأولئك الذين نجوا منها.</p>\n      \n      <p>ويحاول الفلسطينيون في غزة التأقلم مع النتائج المدمرة المترتبة عن الحصار الإسرائيلي المشدد على القطاع، التي تسمح لهم بالبقاء على قيد الحياة فقط، دون الحصول على أي من مقومات الحياة الأخرى، إلا أن قوة إرادتهم تساعدهم على التغلب على تلك الصعاب التي يواجهونها، لبناء حياتهم ومستقبلهم.</p>\n      \n      <p>وبالرغم من عدم حصولهم على أبسط حقوق الإنسان الطبيعية، إلا أنهم يتحلون بشجاعة وقوة عزيمة، لمتابعة حياتهم بشكل شبه طبيعي. وبالرغم من إعاقتهم ومن الصعوبات الجمة التي يعيشونها، يعيش سكان غزة الصم حياتهم بشكل طبيعي، ممثلين بذلك قدوة عليا لكل الفلسطينيين.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Hashem Ghazal, nadzornik za zanatske radove u Aftaluni, kaže: „Ljudi misle kako su gluhe osobe slabe, ali to nije istina. Gluhi i oni koji nisu gluhi su jednaki.“</p>\n      \n      <p>Ali Ghazal priznaje da u Gazi \"gluhi nemaju nikakvu moć” i da ih ne uzimaju zaozbiljno. Frustrira ga to što vlasti ne uspijevaju implementirati kvalitetnije zakone koji bi gluhima osigurali podršku. Tako bi, naprimjer, u bolnicama i vladinim uredima uvijek na raspolaganju trebali biti tumači znakovnog jezika.</p>\n      \n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "label": "Gluhonijemi Palestinci pod opsadom",
+        "vimeo": 112273551,
+        "yt": "usbIA54v0SM"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>U porodici Isre Ghazal, među ostalima, živi osam gluhih osoba. Činjenica da ona čuje učinila ju je vezom između njene gluhe braće i sestara i vanjskog svijeta.</p>\n      \n      <p>Tokom vojnih napada Izraela na Gazu Ghazal je zadužena da o tome obavijesti gluhe članove svoje porodice. Ona ih, pak, istovremeno nastoji zaštititi od užasa rata. Tokom izraelske operacije „Zaštitna linija“ 2014. godine gluhim članovima svoje porodice je rekla: „Nema aviona niti zračnih udara”. Ali izraelski napad je bio toliko brutalan da su mogli osjetiti kako im se „trese tlo pod nogama“ i osjetiti eksplozije „kroz otkucaje vlastitih srca.“</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "context": "NADZORNIK ZA ZANATSKE RADOVE, UDRUŽENJE ATFALUNA ",
+        "label": "HASHEM GHAZAL",
+        "link": "http://interactive.aljazeera.com/ajb/PalestineRemix/stronger-than-words.html",
+        "quote": "Isti smo kao i oni koji čuju. U stvari, više smo nadareni za planiranje i osmišljavanje. Primijetio sam da gluhe osobe posjeduju poseban dar za umjetnost, šivenje, ideje i  kreativnost.",
+        "share": "PODIJELITE CITAT"
+      },
+      "type": "AJQuote"
+    },
+    {
+      "content": {
+        "label": "Gluhonijema porodica preživljava rat",
+        "vimeo": 112273549,
+        "yt": "yatI6GMWIGw"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>U izraelskoj ofanzivi u Gazi 2014. je poginulo više od 2.100 Palestinaca. Među žrtvama rata bilo je i osoba s invaliditetom. Bespomoćna i preplašena Kifah Ghanam, mlada gluha umjetnica, poginula je kada je Izrael bombardirao stambeno naselje u kom je živjela.</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "label": "Neselektivna brutalnost Izraela",
+        "vimeo": 112273552,
+        "yt": "hWzBWtBL1t0"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "PROPOVJEDNIK ZA GLUHE OSOBE",
+        "label": "KHADER ALRANTISI",
+        "link": "interactive.aljazeera.com/stronger-than-words.html",
+        "quote": "U ratu je ubijena gluha djevojka.",
+        "share": "PODIJELITE CITAT"
+      },
+      "type": "AJQuote"
+    },
+    {
+      "content": "\n      \n      <p>S krajem ljeta 2014. godine došao je i kraj rata. Za one koji su preživjeli, život se nikada nije vratio u normalu. U Gazi, Palestinci se nastavljaju boriti sa posljedicama brutalne izraelske opsade koja im omogućava da prežive, ali ništa više od toga.</p>\n      \n      <p>Palestinci su odlučni prevazići izazove kako bi izgradili svoju budućnost. Čak i u svijetu u kojim su uskraćeni za najosnovnija ljudska prava oni pokazuju hrabrost. Gluhi u Pojasu Gaze odlučni su živjeti punim životom uprkos svom invaliditetu. Njihova istrajnost primjer je svim Palestincima.</p>\n\n     ",
       "type": "Body-text"
     }
   ],
-  "director": "مصطفى النبيه",
-  "directorLabel": "إخراج",
-  "headline": "أقوى من الكلام"
+  "director": "Režiser filma",
+  "directorLabel": "MUSTAFA AL-NABIH",
+  "headline": "JAČI OD RIJEČI"
 }

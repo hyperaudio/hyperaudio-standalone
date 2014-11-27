@@ -1,119 +1,115 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
-      "type": "Body-text"
-    },
-    {
-      "content": "\n      \n      عندما احتلت إسرائيل قطاع غزة والضفة الغربية عام 1967، توقفت سفن البحر الأبيض المتوسط عن الإبحار إلى شواطئ غزة.\n      في عام 200٦، وبعد الانسحاب الإسرائيلي من غزة، فرض الاحتلال الإسرائيلي حصاراً بريّاً وبحريّاً وجويّاً على القطاع، نتجت عنه آثار مدمرة على حياة المواطنين الذين يعيشون فيه، والبالغ عددهم 1.8 مليون فلسطيني.\n       \n      ظل المجتمع الدولي صامتاً تجاه الاحتلال والحصار، لكن في عام 2008 قررت مجموعة صغيرة من النشطاء كسر الحصار العسكري الذي استمر سنوات عديدة، وقرروا الإبحار إلى شواطئ غزة على متن قاربين خشبيين.\n       \n\n     ",
+      "content": "\n         \n         Kada je Izrael prvi put 1967. okupirao Pojas Gaze i Zapadnu obalu, brodovi iz Mediterana preostali su uplovljavati u luke u Gazi. Izrael je 2006. Gazi nametnuo brutalnu blokadu s kopna, mora i iz zraka. Međunarodna zajednica se nije uspjela uspješno suprotstaviti okupaciji i opsadi. Mala grupa aktivista je, međutim, 2008. odlučila probiti decenijama dugu vojnu blokadu Pojasa Gaze, koristeći dva drvena broda.\n\n        ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "حركة غزة الحرة ",
-        "label": "هويدا عراف",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/gaza-we-are-coming.html",
-        "quote": "أنا فخورة لأني عضو في حركة غزة الحرة المكونة من مواطنين من جميع أنحاء العالم، تعبوا من انتظار القوانين التي سنت لحماية حقوق الإنسان لكنها نسيت الفلسطينيين  ",
-        "share": "شارك"
+        "context": "POKRET ZA OSLOBOĐENJE GAZE",
+        "label": "HUWAIDA ARRAF",
+        "link": "http://interactive.aljazeera/com/ajb/PalestineRemix/gaza-we-are-coming.html",
+        "quote": "Ponosna sam i čast mi je što sam dio ovog pokreta običnih građana iz svih dijelova svijetla, koji su umorni od čekanja na institucije zadužene za očuvanje ljudskih prava ljudi, ali su na Palestince zaboravili.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>عام 2008، اجتمع عدد من النشطاء ممن شعروا بالامتعاض الشديد من الحصار الإسرائيلي على قطاع غزة، وقرروا تأسيس \"حركة غزة الحرة\"، التي أصبحت اليوم حركة حقوقية خيرية يدعمها العديد من الشخصيات الدولية المعروفة، مثل كبير أساقفة جنوب أفريقيا ديزموند توتو والناشطة الإيرلندية الحائزة على جائزة نوبل للسلام ميريد كوريجان.</p>\n      \n      <p>بداية الحركة كانت عبارة عن \"فكرة مجنونة\"، كما وصفها مؤسسو الحركة، إلا أنهم كان يسعون وراء هدف محدد، ألا وهو رفع الحصار الإسرائيلي على غزة. أخذوا يتساءلون: كيف يمكن تحقيق هذا الهدف؟ وكانت الطريقة الواقعية الوحيدة هي كسر الحصار عن طريق البحر، إذاً، فهم يحتاجون قارباً لتحقيق هذا الهدف.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Koalicija aktivista za ljudska prava je 2008. osnovala Pokret za oslobođenje Gaze (Free Gaza Movement) s namjerom da se bori protiv izraelske blokade. Danas ova grupa djeluje kao registrirano dobrotvorno društvo koje podržava više međunarodno uglednih osoba, uključujući i južnoafričkog nadbiskupa Desmonda Tutua te dobitnicu Nobelove nagrade za mir Mairead Corrigan Maguire.</p>\n      \n      <p>Sve je, pak, počelo kao, kako su to tada smatrali čak i njeni začetnici, suluda ideja.&nbsp; Imali su jasan cilj: prekinuti izraelsku opsadu. Pitanje je bilo kako to ostvariti. Zaključili su da je jedini realan način bio da se izraelska blokada Gaze probije s mora. Za takvo nešto im je trebao brod. Dva broda, u stvari.</p>\n      \n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "تضامنا مع غزة",
-        "vimeo": 110646309,
-        "yt": "im1Z9yexrJg"
+        "label": "Solidarisanje s Gazom",
+        "vimeo": 112274430,
+        "yt": "GXSBDNVy_ro"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>أيقن النشطاء أنهم إن نجحوا بإرساء سفينتهم على شواطئ غزة، فسيوصلون بذلك رسالة قوية إلى ثلاثة أطراف: سيرى الفلسطينيون أن المواطنين العاديين في العالم يهتمون بهم وبمعاناتهم. وسيُثبت هؤلاء النشطاء للإسرائيليين أن الجيش الإسرائيلي- وإن كان من أقوى الجيوش في العالم وأكثرها تطوراً- ليس قادراً على حصار غزة للأبد. كما أنهم سيبرهنون للمجتمع الدولي بأكمله أنه من غير المقبول التخلي عن القطاع ومواطنيه مهما كان العذر.</p>\n      \n      <p>الإبحار إلى غزة خطة طموحة، وستجعل العالم بأسره يلتفت إلى أهمية هذا الهدف، ومن أجل تحقيقه، كان لا بد من أن يبني هؤلاء النشطاء قارباً ليبحروا به.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Aktivisti su vjerovali da bi, ukoliko uspiju spustiti sidro u Gazi, poslali snažnu poruku.&nbsp; Pokazali bi Palestincima da obični ljudi brinu zbog lošeg položaja u kojem se nalaze. Izraelcima bi to pokazalo da čak i najsofisticiranije vojne sile nisu u stanju opsadu održavati zauvijek. Pokazali bi međunarodnoj zajednici da ne postoji izgovor da Palestince napusti u vrijeme kada im je potrebna pomoć.</p>\n      \n      <p>Plovidba u Gazu bila je ambiciozan plan. Ukoliko bi aktivisti stigli do luke, za to bi saznao cijeli svijet.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "بحار يوناني",
-        "label": "تاسوس كارابيناس",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/gaza-we-are-coming.html",
-        "quote": "إنها المبادئ العليا التي تحملها تجاه الحياة وتجاه الناس، لأجل فلسطين، لأجل غزة، والناس الذين يقاسون  ",
-        "share": "شارك"
+        "label": "Izgradnja broda",
+        "vimeo": 112274427,
+        "yt": "3QYKlAmp0TU"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "POMORAC",
+        "label": "TASOS KARAMBINAS",
+        "link": "http://interactive.aljazeera/com/ajb/PalestineRemix/gaza-we-are-coming.html",
+        "quote": "Riječ je o nečijim idealima o životu, ljudima, o Palestini, Gazi, o ljudima koji pate.",
+        "share": "PODIJELITE CITAT"
+      },
+      "type": "AJQuote"
+    },
+    {
+      "content": "\n      \n      <p>Plan je od samog početka bio pun opasnosti. Pokret za oslobođenje Gaze nije bio prvi koji je pokušao morem stići do Gaze. Ranija nastojanja zaustavile su sabotaže. Brodovi su bivali razneseni ili, pak, sabotažom oduzeti.</p>\n      \n      <p>Vangelis Pissias, grčki inženjer, jedan od suosnivača Pokreta za oslobođenje Gaze pronašao je dva stara drvena broda i&nbsp; brodograditelja koji je pristao osposobiti ih za takvu plovidbu. Rad na brodovima potrajao je više mjeseci. Njihovi planovi su sve vrijeme držani u tajnosti. Aktivisti su koristili <span id=\"u17974-5\">pre-paid </span>telefone. Brodovi su bili pažljivo skriveni.</p>\n      \n      <p>Dr. Paul Larudee, američki državljanin i jedan od osnivača Pokreta za oslobođenje Gaze, objasnio je: \"Ovaj je projekat mogao propasti hiljadu puta i svaki put kada se trebao ugasiti pojavio bi se neko, neko nov, da ga spasi.\"</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "label": "Pokret za oslobođenje Gaze",
+        "vimeo": 112274426,
+        "yt": "Wu_gtRiO-c8"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "POKRET ZA OSLOBOĐENJE GAZE",
+        "label": "PAUL LARUDEE",
+        "link": "http://interactive.aljazeera/com/ajb/PalestineRemix/gaza-we-are-coming.html",
+        "quote": "Ovaj je projekat mogao propasti hiljadu puta i svaki put kada se trebao ugasiti pojavio bi se neko, neko nov, da ga spasi.",
+        "share": "PODIJELITE CITAT"
+      },
+      "type": "AJQuote"
+    },
+    {
+      "content": "\n      \n      <p>Prije negoli su brodovi zaplovili,&nbsp; jedan od aktivista koji su bili uključeni u Pokret za oslobođenje Gaze pronađen je mrtav. Tijelo Riada Hamada je 15. aprila 2008. pronađeno kako pluta u jezeru u Austinu u Teksasu. Oči su mu bile zalijepljene ljepljivom trakom. Ruke i noge su mu bile vezane. Hamadova smrt službeno je proglašena samoubistvom, ali je i dalje ostala sumnja da je, moždah, ubijen zbog svojih veza sa Pokretom za oslobođenje Gaze.</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "label": "Misteriozna smrt aktiviste Pokreta za oslobođenje Gaze",
+        "vimeo": 112274443,
+        "yt": "M0-4N6-GjHQ "
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>Izrael je zahtijevao da Pokret za oslobođenje Gaze otkaže flotu. Grupa je to odbila. U augustu 2008. su dva drvena broda sa 44 aktiviste iz 17 različitih zemalja, uključujući i Izrael, zaplovila ka Gazi.&nbsp; Već 41 godinu u luku Gaze nije uplovio niti jedan strani brod.&nbsp; Dvadeset i prvog augusta oba broda su se usidrila u luku Gaze. Za jedan kratki trenutak izraelska opsada Gaze bila je probijena.</p>\n      \n      <p>Palestinci u Gazi dobrodošlicom su dočekali dva broda, slaveći njihov dolazak kao trenutak pobjede.</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "context": "NACIONALNI TEHNIČKI INSTITUT IZ ATINE",
+        "label": "VANGELIS PISSIAS",
+        "link": "http://interactive.aljazeera/com/ajb/PalestineRemix/gaza-we-are-coming.html",
+        "quote": "Teško je zamisliti da ovi ljudi koji su pod opsadom toliko dugo vremena, mogu imati toliko snage, optimizma i toliko radosti i smijeha.",
+        "share": "PODIJELITE CITAT"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "بناء قارب",
-        "vimeo": 110646308,
-        "yt": "1ExQaeVKFlc"
+        "label": "Prekid opsade Gaze",
+        "vimeo": 112274444,
+        "yt": "-oeW-h4lBgk"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>منذ بداية المهمة، واجهت خطة النشطاء الكثير من العراقيل والمخاطر، فـ\"حركة غزة الحرة\" ليست أول حركة تحاول الوصول إلى شواطئ غزة، والعديد من المحاولات السابقة أُفشلت وخُرِّبت عمداً، حيث تم تفجير بعض القوارب وحجز أخرى من التي حاولت فيما مضى كسر الحصار عن طريق البحر.</p>\n      \n      <p>عثر انجيليس بيسياس، وهو مهندس يوناني وأحد مؤسسي \"حركة غزة الحرة\"، على قاربين خشبيين، واتفق مع بنَّاء سفن على تجديدهما وتجهيزهما للقيام بالمهمة.</p>\n      <p>استمر العمل على الخطة شهوراً عدة، حاول النشطاء خلالها الإبقاء على المهمة سرية واستخدام هواتف مؤقتة.</p>\n      \n      <p>يوضح بول لارودي، وهو مواطن أميركي وأحد مؤسسي \"حركة غزة الحرة\"، صعوبة المهمة، بقوله: \"كاد هذا المشروع يفشل ألف مرة، إلا أنه في كل مرة، كان أحد ما يتدخل أو يحصل شيء ما لإنقاذه مجدداً\".</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "label": "حركة غزة الحرة",
-        "vimeo": 110646311,
-        "yt": "W_PTKSPhHPI"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": "حركة غزة الحرة",
-        "label": "بول لارودي",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/gaza-we-are-coming.html",
-        "quote": "هذه المحاولة ماتت آلاف المرات، وفي كل مرة كان يأتي شخص جديد ينقذها من الموت ويعيدها للحياة",
-        "share": "شارك"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": "\n      \n      <p>قبيل تنفيذ المهمة، في 15 أبريل 2008، عُثر على جثة رياض حماد، أحد النشطاء المشاركين في \"حركة غزة الحرة\"، في بحيرة بولاية تكساس الأميركية، وكان معصوب العينين ومقيد اليدين والقدمين.</p>\n      \n      <p>بالرغم من تصنيف المسؤولين للحادثة على أنها حادثة انتحار، إلا أن العديد من النشطاء يعتقدون أن حماد قتل بسبب انضمامه لـ\"حركة غزة الحرة\".</p>\n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "label": "مقتل رياض حامد",
-        "vimeo": 110646312,
-        "yt": "LLu73TIMqYY"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>طلبت إسرائيل من \"حركة غزة الحرة\" إلغاء مهمتها، إلا أن الحركة رفضت الخضوع للأوامر الإسرائيلية.</p>\n      \n      <p>وفي أغسطس عام 2008، بدأت سفينتان خشبيتان على متنهما 44 ناشطاً من 17 دولة مختلفة، من ضمنها إسرائيل، رحلتهما باتجاه شواطئ غزة، في الوقت الذي لم تستطع أي سفينة أجنبية الوصول إلى شواطئ غزة على مدى 41 عاماً.</p>\n      \n      <p>وفي 21 أغسطس 2008، وصلت السفينتان إلى ميناء غزة، وللحظات قصيرة، كُسر الحصار الإسرائيلي المفروض على غزة، واستقبل أهالي القطاع السفينتين استقبالاً حافلاً، معتبرين لحظة وصولهما إلى غزة لحظة نصر حقيقية.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "context": "ناشط يوناني - أستاذ جامعي",
-        "label": "فاغيليس بيسياس",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/gaza-we-are-coming.html",
-        "quote": "لا تستطيع أن تتخيل كيف أن أشخاصا محاصرين هذه السنوات الطويلة يمكن أن يكون لديهم كل هذه القوة، وأن يظهروا كل هذا الفرح والابتسام  ",
-        "share": "شارك"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": {
-        "label": "كسر الحصار",
-        "vimeo": 110646313,
-        "yt": "IaGzYbDcC_s"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>ومنذ ذلك الوقت، استطاعت \"حركة غزة الحرة\" إرسال تسع بعثات إنسانية إلى قطاع غزة، محملة بالمواد الغذائية والمعدات الطبية ومواد البناء.</p>\n      \n      <p>وقد نجحت المهمات الأولى بالوصول إلى القطاع، إلا أن إسرائيل اعترضت وصول السفن الأخرى، وفي عام 2010، أدينت إسرائيل عالميّاً وانتقدت داخليّاً بعد أن استهدفت قوات البحرية الإسرائيلية سفينة \"مافي مرمرة\"، ما أدى إلى مقتل تسعة أشخاص كانوا على متنها، معظمهم أتراك.</p>\n      \n      <p>وبالرغم من ذلك، تعهدت \"حركة غزة الحرة\" بإرسال موجة ثانية من السفن المحملة بالمساعدات الإنسانية إلى القطاع، لإيمانها بأن معاناة شعب غزة تستحق المجازفة.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Od svoje prve misije Pokret za oslobođenje Gaze u Gazu je uplovio devet puta, donoseći pri tome hranu, sanitetski i građevinski materijal na njenu teritoriju.&nbsp; Početni kontingenti pomoći su uspijevali stići do Gaze, ali su izraelske snage uspjele presresti flotile koje su organizirane poslije toga.</p>\n      <p>Izrael je 2010. godine izazvao snažnu međunarodnu osudu kada su mornarički komandosi u napadu na brod Mavi Marmara ubili devet osoba, od kojih su većina bili Turci.</p>\n      \n      <p>Uprkos smrtonosnim posljedicama posljednje misije za dostavu pomoći, Pokret za oslobođenje Gaze je obećao poslati \"drugi val\" brodova u Gazu, kazavši kako se teško stanje Palestinaca u skorijim mjesecima još više pogoršalo.</p>\n\n     ",
       "type": "Body-text"
     }
   ],
-  "director": "يورغوس أفييروبولوس\n     يانيس كاريبيدس",
-  "directorLabel": "إخراج",
-  "headline": "غزة.. إننا قادمون"
+  "director": "YORGOS AVGEROPOULOS & YIANNIS KARIPIDIS",
+  "directorLabel": "Režiseri filma",
+  "headline": "GAZA DOLAZIMO!"
 }
