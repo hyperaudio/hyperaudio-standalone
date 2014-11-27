@@ -126,6 +126,11 @@ doSearch = ->
                 resultSentences = sentences
               s++
             document.querySelectorAll("#r" + id + " .tile__transcript")[0].innerHTML = resultSentences.join(". ") + "."
+
+            ev = document.createEvent("Event")
+            ev.initEvent "searchresult", true, true
+            document.querySelectorAll("#r" + id + " .tile__transcript")[0].dispatchEvent ev
+
       request.send()
       request = null
     )()
@@ -134,6 +139,6 @@ doSearch = ->
   ev = document.createEvent("Event")
   ev.initEvent "searchresults", true, true
   document.dispatchEvent ev
-  
+
 request0.send()
 request0 = null
