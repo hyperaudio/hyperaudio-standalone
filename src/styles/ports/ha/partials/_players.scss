@@ -12,10 +12,15 @@
   height: 100%;
   position: relative;
 }
-.HAP-player--video {
+.HAP-player--video,
+.HAP-player--youtube {
   @include scale-embed;
   height: 100% !important;
   padding-bottom: 0 !important; // Override the mixin madness!!
+  display: none;
+  &.solution {
+    display: block;
+  }
 }
 .HAP-player--video video {
   @include scale-embed__el;
