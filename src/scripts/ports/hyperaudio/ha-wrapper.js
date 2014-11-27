@@ -357,48 +357,59 @@ var AJHAWrapper = {
             mp4Compat: canPlayMP4
           });
 
-          var sourceTranscript = document.getElementById('source-transcript');
+          function shareHighlight() {
+            var selection = HAP.transcript.getSelection();
+            
+            if (!selection.start) {
+              selection = HAP.transcript.getMobileSelection();
+            }
 
-          if (sourceTranscript) {
-            sourceTranscript.onmouseup = function() {
+            if (selection.start) {
 
-              var selection = HAP.transcript.getSelection();
+              selectionTextContent = "'" + selection.text + "' :";
+              selectionTextURI     = window.top.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
+              selectionElement     = document.getElementById("share-selection");
 
-              if (selection.start) {
+              shorten(selectionTextURI, function(_selectionTextURI){
+                alterPanelState("share-transcript");
 
-                selectionTextContent = "'" + selection.text + "' :";
-                selectionTextURI     = window.top.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
-                selectionElement     = document.getElementById("share-selection");
+                [].forEach.call(document.querySelectorAll(".jsSetShareTranscriptURL"), function(el) {
+                  var shareLinkHref   = el.getAttribute("href");
+                  var shareLinkNuHref = shareLinkHref.replace("UURRLL", escape(_selectionTextURI)).replace("TTEEXXTT", escape(selectionTextContent));
+                  el.setAttribute("href", shareLinkNuHref);
+                  //el.classList.remove('selected');
+                  HA.removeClass(el,'selected');
+                });
 
+                // toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
 
-                shorten(selectionTextURI, function(_selectionTextURI){
-                  alterPanelState("share-transcript");
+                document.getElementById('hav-share-url').innerHTML = selectionTextURI;
 
-                  [].forEach.call(document.querySelectorAll(".jsSetShareTranscriptURL"), function(el) {
-                    var shareLinkHref   = el.getAttribute("href");
-                    var shareLinkNuHref = shareLinkHref.replace("UURRLL", escape(_selectionTextURI)).replace("TTEEXXTT", escape(selectionTextContent));
-                    el.setAttribute("href", shareLinkNuHref);
-                    //el.classList.remove('selected');
-                    HA.removeClass(el,'selected');
-                  });
+                [].forEach.call(document.querySelectorAll("a"), function(el) {
+                  //el.classList.remove('selected');
+                  HA.removeClass(el,'selected');
+                });
 
-
-                  // toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
-
-                  document.getElementById('hav-share-url').innerHTML = selectionTextURI;
-
-                  [].forEach.call(document.querySelectorAll("a"), function(el) {
-                    //el.classList.remove('selected');
-                    HA.removeClass(el,'selected');
-                  });
-
-                });//shorten
-              }//if
+              });
             }
           }
 
-          ajOnInitCallback();
+          var sourceTranscript = document.getElementById('source-transcript');
 
+          if (sourceTranscript) {
+            sourceTranscript.addEventListener('mouseup', function () {
+              shareHighlight();
+            }, false);
+
+            sourceTranscript.addEventListener('touchend', function () {
+              var selectedText = window.getSelection(); 
+              if (window.getSelection().baseNode) {
+                shareHighlight();
+              }
+            }, false);
+          }
+
+          ajOnInitCallback();
 
         } else {
 
