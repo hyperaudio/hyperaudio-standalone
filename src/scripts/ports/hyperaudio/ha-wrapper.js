@@ -384,7 +384,7 @@ var AJHAWrapper = {
 
                 // toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
 
-                document.getElementById('hav-share-url').innerHTML = selectionTextURI;
+                document.getElementById('hav-share-url').innerHTML = _selectionTextURI;
 
                 [].forEach.call(document.querySelectorAll("a"), function(el) {
                   //el.classList.remove('selected');
@@ -886,9 +886,10 @@ function shorten(url, callback) {
     xhr.onreadystatechange = function() { 
         if(xhr.readyState == 4) { 
             if(xhr.status==200) {
-                console.log("CORS bitly", xhr.responseText); 
+                // console.log("CORS bitly", xhr.responseText); 
                 var resp = JSON.parse(xhr.responseText);    
-                if (typeof resp.data == 'undefined' || typeof resp.data.url == 'undefined') return callback(url);
+                console.log(resp);
+                // if (typeof resp.data == 'undefined' || typeof resp.data.url == 'undefined') return callback(url);
                 callback(resp.data.url);
             } else callback(url);
         } //else callback(url);
