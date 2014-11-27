@@ -588,10 +588,10 @@ var AJHAWrapper = {
 
     function hideHdButtonsIfYouTube() {
       if (!canPlayMP4) {
-        var hdBtns = document.getElementsByClassName('HAP-player-quality');
-        for (var i = 0; i < hdBtns.length; i++) {
-
-          hdBtns[i].style.display = 'none';
+        var gui = document.getElementsByClassName('HAP-player-gui');
+        for (var i = 0; i < gui.length; i++) {
+          
+          HA.addClass(gui[i],'HAP-player-gui--compact');
         }
       }
     }
