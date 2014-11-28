@@ -4,14 +4,14 @@ runHAPTour = (stepIndex) ->
     showCancelLink: true
   )
   tour.addStep "step0",
-    title: "Making a Remix can easily be done in minutes in six steps."
+    title: "Remiks altı adımda kolayca oluşturulabilir."
     buttons: [
       classes: "sec-button"
       text: "Show me how"
       action: tour.next
      ]
   tour.addStep "step1",
-    title: "First, pick a film or search for a word. "
+    title: "İlk olarak filmi seçin veya belirlediğiniz kelimeyi arayın."
     attachTo: "#panel-media right"
     buttons: [
       classes: "sec-button"
@@ -19,7 +19,7 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step2",
-    title: "Second, watch the film, the transcript will be highlighted along with the video."
+    title: "İkinci adımda filmi izlemeye başlayın, film ilerledikçe metinde de vurgulanmaya devam ettiğini göreceksiniz."
     attachTo: "#source-canvas bottom"
     buttons: [
       classes: "sec-button"
@@ -27,7 +27,7 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step3",
-    title: "Third, click on any word in the transcript and you will go to that point in the video"
+    title: "Üçüncü adım olarak metinde istediğiniz bir kelimeye tıklayın, film o bölümden devam edecektir."
     attachTo: "#source-transcript top"
     buttons: [
       classes: "sec-button"
@@ -35,22 +35,22 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step4",
-    title: "Then fourth, once you find the text you would like to remix, just select, drag and drop to the other screen <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
+    title: "Dördüncü adımda remiks yapmak istediğiniz bölümü bulduğunuzda sadece yandaki pencereye sürükleyin ve bırakın. <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
     attachTo: "#source-transcript top"
     buttons: [
       classes: "sec-button"
-      text: "Easy!"
+      text: "Kolay!"
       action: tour.next
      ]
   tour.addStep "step5",
-    title: "If you changed your mind, drag it back."
+    title: "Fikrinizi değiştirirseniz aldığınız bölümü filmin metnine geri koyun."
     buttons: [
       classes: "sec-button"
       text: "OK"
       action: tour.next
      ]
   tour.addStep "step6",
-    title: "Fifth, you can add by dragging titles and effects"
+    title: "Beşinci adım başlık ve efekt ekleme olanağı sunuyor."
     attachTo: "#effects top"
     buttons: [
       classes: "sec-button"
@@ -58,7 +58,7 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step7",
-    title: "Pick another film and repeat the selection of a new text"
+    title: "Başka bir film seçin ve yeni metinle aynı adımları tekrarlayın."
     attachTo: "#panel-media right"
     buttons: [
       classes: "sec-button"
@@ -66,7 +66,7 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step8",
-    title: "Now, it is the sixth step and the last, share with your friends. "
+    title: "Ve son adım; Remiksinizi arkadaşlarınızla paylaşın!"
     attachTo: "#HAP-share-bttn top"
     buttons: [
       classes: "sec-button"
@@ -75,26 +75,26 @@ runHAPTour = (stepIndex) ->
      ]
   if stepIndex is undefined
     tour.addStep "step9",
-      title: "Your remix is automatically saved."
+      title: "Remiksiniz otomatik olarak kaydediliyor."
       buttons: [
         classes: "sec-button"
-        text: "Great"
+        text: "HARİKA"
         action: tour.cancel
        ]
   else
     tour.addStep "step9",
-      title: "Your remix is automatically saved."
+      title: "Remiksiniz otomatik olarak kaydediliyor."
       buttons: [
         classes: "sec-button"
-        text: "Great"
+        text: "HARİKA"
         action: tour.next
        ]
   tour.addStep "step10",
-    title: "Next time, if you are little confused, find the same tutorial here"
+    title: "Bir sonraki seferde zorluk yaşarsanız kullanım videosunu burada bulabilirsiniz."
     attachTo: '#HAP-helper left',
     buttons: [
       classes: "sec-button"
-      text: "Ok, thanks!"
+      text: "Ok, teşekkürler!"
       action: tour.cancel
      ]
   if stepIndex is undefined

@@ -4,7 +4,7 @@ runHAVTour = ->
     showCancelLink: true
   )
   tour.addStep "step0",
-    title: "Watch the full documentary right here. You can view and read the transcript."
+    title: "Watch the film, the transcript will highlight where you are in the video."
     classes: "example-step-extra-class"
     buttons: [
       classes: "sec-button"
@@ -12,7 +12,7 @@ runHAVTour = ->
       action: tour.next
      ]
   tour.addStep "step1",
-    title: "The film after buffering will stream here"
+    title: "The film after buffering will stream here, please wait"
     attachTo: "#source-canvas bottom"
     classes: "example-step-extra-class"
     buttons: [
@@ -21,7 +21,7 @@ runHAVTour = ->
       action: tour.next
      ]
   tour.addStep "step2",
-    title: "Want to move forward quickly in the film? Scroll to navigate, click on any word from where you want the film to start. Try it, it’s fun!"
+    title: "Scroll to navigate the transcript, click on any word and the film will start from that word"
     attachTo: "#source-transcript top"
     classes: "example-step-extra-class"
     buttons: [
@@ -30,7 +30,7 @@ runHAVTour = ->
       action: tour.next
      ]
   tour.addStep "step3",
-    title: "I am right here, if you need me"
+    title: "Next time, if you are little confused, find the same tutorial here"
     attachTo: "#HAP-helper bottom"
     classes: "example-step-extra-class"
     buttons: [

@@ -11,7 +11,7 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step1",
-    title: "First, pick a film or search for a word. "
+    title: "First, pick a film or search for a word."
     attachTo: "#panel-media right"
     buttons: [
       classes: "sec-button"
