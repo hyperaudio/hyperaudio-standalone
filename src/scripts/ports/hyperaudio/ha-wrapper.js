@@ -10,7 +10,7 @@ var AJHAWrapper = {
 
     var IE = (!! window.ActiveXObject && +(/msie\s(\d+)/i.exec(navigator.userAgent)[1])) || NaN;
     if (IE && IE < 10) {
-      alert('Sorry this functionality is not supported on this browser. This is experimental technology. Try upgrading');
+      alert('Sorry this functionality is not supported on your browser. This is experimental technology. Try upgrading');
       HA.addClass(document.getElementById('page-body'),'HAP-browser-not-supported');
     }
 
