@@ -117,8 +117,8 @@ $menu-back-offset : $tap-size;
     @include transform(translate3d(($side-width - $menu-back-offset) * -1, 0, 0));
     opacity: 0;
   }
-  .moved--left,
-  .moved--right {
+  &.moved--left,
+  &.moved--right {
     visibility:hidden;
   }
 }
@@ -139,10 +139,6 @@ $menu-back-offset : $tap-size;
 #menu__pane--documentaries,
 #menu__pane--themes,
 #menu__pane--maps,
-#menu__pane--characters,
-#menu__pane--places,
-#menu__pane--eras,
-#menu__pane--remixes,
 #menu__pane--quizzes {
   @include transition(transform $time);
   z-index: 10;
