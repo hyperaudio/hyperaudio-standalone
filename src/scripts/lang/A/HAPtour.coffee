@@ -4,97 +4,89 @@ runHAPTour = (stepIndex) ->
     showCancelLink: true
   )
   tour.addStep "step0",
-    title: "Making a Remix can easily be done in minutes in six steps."
+    title: "تستطيع إنجاز الريمكس بسهولة في ست خطوات. الخطوة الأولى، اختر الفيلم أو ابحث عن كلمة"
     buttons: [
       classes: "sec-button"
-      text: "Show me how"
-      action: tour.next
-     ]
-  tour.addStep "step1",
-    title: "First, pick a film or search for a word. "
-    attachTo: "#panel-media right"
-    buttons: [
-      classes: "sec-button"
-      text: "OK"
+      text: "موافق"
       action: tour.next
      ]
   tour.addStep "step2",
-    title: "Second, watch the film, the transcript will be highlighted along with the video."
+    title: "ثانيا، شاهد الفلم، النص سيظلل بالتوازي"
     attachTo: "#source-canvas bottom"
     buttons: [
       classes: "sec-button"
-      text: "OK"
+      text: "موافق"
       action: tour.next
      ]
   tour.addStep "step3",
-    title: "Third, click on any word in the transcript and you will go to that point in the video"
+    title: "ثالثا، اضغط على أي كلمة في النص وستذهب لمكان الفيديو مباشرة"
     attachTo: "#source-transcript top"
     buttons: [
       classes: "sec-button"
-      text: "OK"
+      text: "موافق"
       action: tour.next
      ]
   tour.addStep "step4",
-    title: "Then fourth, once you find the text you would like to remix, just select, drag and drop to the other screen <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
+    title: "ثم رابعا، عندما تجد النص الذي تريد أن تبدأ منه الريمكس، ظلل عليه، واسحبه وضعه في النافذة المقابلة <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
     attachTo: "#source-transcript top"
     buttons: [
       classes: "sec-button"
-      text: "Easy!"
+      text: "موافق"
       action: tour.next
      ]
   tour.addStep "step5",
-    title: "If you changed your mind, drag it back."
+    title: "إن غيرت رأيك في مقطع الريمكس، تستطيع إعادته للنافذة الأولى في أي مكان"
     buttons: [
       classes: "sec-button"
-      text: "OK"
+      text: "سهل!"
       action: tour.next
      ]
   tour.addStep "step6",
-    title: "Fifth, you can add by dragging titles and effects"
+    title: "خامسا، تستطيع إضافة عناوين أو مؤثرات عبر السحب إلى المكان الذي تريد"
     attachTo: "#effects top"
     buttons: [
       classes: "sec-button"
-      text: "OK"
+      text: "موافق"
       action: tour.next
      ]
   tour.addStep "step7",
-    title: "Pick another film and repeat the selection of a new text"
+    title: "اختر فلما آخر واختر مقطعا جديدا"
     attachTo: "#panel-media right"
     buttons: [
       classes: "sec-button"
-      text: "OK"
+      text: "موافق"
       action: tour.next
      ]
   tour.addStep "step8",
-    title: "Now, it is the sixth step and the last, share with your friends. "
+    title: "والآن تصل للخطوة السادسة والأخيرة، شارك الرابط مع أصدقائك"
     attachTo: "#HAP-share-bttn top"
     buttons: [
       classes: "sec-button"
-      text: "OK"
+      text: "موافق"
       action: tour.next
      ]
   if stepIndex is undefined
     tour.addStep "step9",
-      title: "Your remix is automatically saved."
+      title: "الريمكس يتم حفظه تلقائيا "
       buttons: [
         classes: "sec-button"
-        text: "Great"
+        text: "ممتاز"
         action: tour.cancel
        ]
   else
     tour.addStep "step9",
-      title: "Your remix is automatically saved."
+      title: "الريمكس يتم حفظه تلقائيا "
       buttons: [
         classes: "sec-button"
-        text: "Great"
+        text: "ممتاز"
         action: tour.next
        ]
   tour.addStep "step10",
-    title: "Next time, if you are little confused, find the same tutorial here"
+    title: "في المرة القادمة، إن وجدت أي صعوبة، هنا تجد دليل الاستخدام "
     attachTo: '#HAP-helper left',
     buttons: [
       classes: "sec-button"
-      text: "Ok, thanks!"
+      text: "شكرا!"
       action: tour.cancel
      ]
   if stepIndex is undefined

@@ -4,14 +4,14 @@ runHAPTour = (stepIndex) ->
     showCancelLink: true
   )
   tour.addStep "step0",
-    title: "Making a Remix can easily be done in minutes in six steps."
+    title: "Svoj Remix vrlo jednostavno možete napraviti samo u šest koraka."
     buttons: [
       classes: "sec-button"
-      text: "Show me how"
+      text: "OK"
       action: tour.next
      ]
   tour.addStep "step1",
-    title: "First, pick a film or search for a word. "
+    title: "Prvo, izaberite film ili pronađite određenu riječ."
     attachTo: "#panel-media right"
     buttons: [
       classes: "sec-button"
@@ -19,7 +19,7 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step2",
-    title: "Second, watch the film, the transcript will be highlighted along with the video."
+    title: "Kao drugi korak, pratite film, a tekst ispod će biti označavan."
     attachTo: "#source-canvas bottom"
     buttons: [
       classes: "sec-button"
@@ -27,7 +27,7 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step3",
-    title: "Third, click on any word in the transcript and you will go to that point in the video"
+    title: "Treće, kliknite na riječ koju želite i video će se nastaviti od tog dijela."
     attachTo: "#source-transcript top"
     buttons: [
       classes: "sec-button"
@@ -35,22 +35,22 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step4",
-    title: "Then fourth, once you find the text you would like to remix, just select, drag and drop to the other screen <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
+    title: "Zatim će te željeti napraviti svoj remix. Izaberite dio iz teksta i prenesite u drugi dio ekrana.  <img src='../../assets/images/hap/tour-dragdrop.gif'/>"
     attachTo: "#source-transcript top"
     buttons: [
       classes: "sec-button"
-      text: "Easy!"
+      text: "Vrlo jednostavno!"
       action: tour.next
      ]
   tour.addStep "step5",
-    title: "If you changed your mind, drag it back."
+    title: "Ako se predomislite vratite ga nazad."
     buttons: [
       classes: "sec-button"
       text: "OK"
       action: tour.next
      ]
   tour.addStep "step6",
-    title: "Fifth, you can add by dragging titles and effects"
+    title: "Peti korak Vam dopušta da dodate naslove i efekte. "
     attachTo: "#effects top"
     buttons: [
       classes: "sec-button"
@@ -58,7 +58,7 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step7",
-    title: "Pick another film and repeat the selection of a new text"
+    title: "Odaberite drugi film i ponovite korake za novi tekst."
     attachTo: "#panel-media right"
     buttons: [
       classes: "sec-button"
@@ -66,7 +66,7 @@ runHAPTour = (stepIndex) ->
       action: tour.next
      ]
   tour.addStep "step8",
-    title: "Now, it is the sixth step and the last, share with your friends. "
+    title: "Došli ste do šestog, posljednjeg koraka; podijelite Remix sa svojim prijateljima!"
     attachTo: "#HAP-share-bttn top"
     buttons: [
       classes: "sec-button"
@@ -75,26 +75,26 @@ runHAPTour = (stepIndex) ->
      ]
   if stepIndex is undefined
     tour.addStep "step9",
-      title: "Your remix is automatically saved."
+      title: "Vaš remix se automatski spašava. "
       buttons: [
         classes: "sec-button"
-        text: "Great"
+        text: "ODLIČNO"
         action: tour.cancel
        ]
   else
     tour.addStep "step9",
-      title: "Your remix is automatically saved."
+      title: "Vaš remix se automatski spašava. "
       buttons: [
         classes: "sec-button"
-        text: "Great"
+        text: "ODLIČNO"
         action: tour.next
        ]
   tour.addStep "step10",
-    title: "Next time, if you are little confused, find the same tutorial here"
+    title: "Ukoliko Vam upustvo sljedeći put zatreba, pronađite ga ovdje."
     attachTo: '#HAP-helper left',
     buttons: [
       classes: "sec-button"
-      text: "Ok, thanks!"
+      text: "Ok, hvala!"
       action: tour.cancel
      ]
   if stepIndex is undefined
