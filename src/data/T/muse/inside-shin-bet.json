@@ -1,185 +1,163 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
-      "type": "Body-text"
-    },
-    {
-      "content": "\n      \n      الشاباك هو جهاز الأمن الداخلي الإسرائيلي، وأحد الأقسام الثلاثة لأجهزة الأمن الإسرائيلي العام التي تضم أيضا وكالة الاستخبارات الإسرائيلية (الموساد) وجهاز المخابرات العسكرية (أمان). الشاباك (وهي الكلمة العبرية لاسم جهاز الأمن الداخلي الإسرائيلي) وهو الاسم المتداول فلسطينيا، معروف بطرق التحقيق والأساليب المثيرة للجدل التي يستخدمها ضد المعتقلين الفلسطينيين.\n       \n\n     ",
+      "content": "\n         \n         İsrail iç güvenlik birimi Şin Bet, Filistinli mahkumlara karşı kullandığı tartışmalı yöntemlerle ünlenmiş durumda. Bu hikayelerin bazılarına tanık olacaksınız.\n\n        ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "مسؤول إسرائيلي سابق في الشاباك",
-        "label": "اراك بن تسور",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
-        "quote": "الشاباك كأذرع الأمن الأخرى في إسرائيل، بنيت جميعها من الحركات السرية والتنظيمات التي سبقت قيام الدولة. عمليّاً، شكل جهاز المعلومات، الذي هو جزء من تنظيم الهاغاناة، نواة جهاز الشاباك الحالي",
-        "share": "شارك"
+        "context": "ESKİ ŞİN BET YÖNETİCİSİ",
+        "label": "BARAK BEN ZUR",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/inside-shin-bet.html",
+        "quote": "Şin Bet'in İsrail'deki diğer iki güvenlik biriminden farkı yoktur. Hepsi de İsrail kurulmadan önce gizli örgütler olarak kurulmuşlardır. Şin Bet'in çekirdeğini Haganah örgütünün istihbarat kolu oluşturmaktadır.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>يُعد الشاباك واحداً من أقوى الأجهزة الأمنية على مستوى العالم، وكانت لبعض أفراده علاقات قوية بالعصابات اليهودية المسلحة التي ارتكبت العديد من المذابح قبل قيام دولة إسرائيل عام 1948.</p>\n      \n      <p>يُعرف الشاباك بسمعته السيئة بسبب تورطه في قتل وتعذيب الأسرى الفلسطينيين في سجون الاحتلال الإسرائيلي. وقد أدانت لجنة الأمم المتحدة لمناهضة التعذيب أساليب التحقيق العنيفة التي يمارسها الشاباك حتى يومنا هذا ضد المعتقلين الفلسطينيين.</p>\n\n     ",
+      "content": "\n      \n      <p>Şabak olarak da bilinen Şin Bet dünyanın en güçlü güvenlik birimlerinden biri. Şin Bet'in bazı unsurlarının İsrail kurulmadan önce faaliyet gösteren şiddet yanlısı milis güçlerle bağlantısı var.</p>\n      \n      <p>Şin Bet Filistinli mahkumlara yaptığı işkenceler ve cinayetlerle ilgili kötü bir üne sahip. BM İşkenceyle Mücadele Komisyonu Şin Bet'i daha önce, hala da devam eden şiddet içeren sorgulama yöntemleri dolayısıyla kınadı.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "الشاباك له الحصانة الكاملة",
-        "vimeo": 110646420,
-        "yt": "_zi1NhrKlyM"
+        "vimeo": 112481910,
+        "yt": "iT7Ru89GiIY"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>أسس الشاباك ديفيد بن غوريون، أول رئيس وزراء إسرائيلي، عندما جمع عدداً من أفراد العصابة اليهودية المسلحة الهاغاناة، التي شنت العديد من الهجمات العنيفة ضد الفلسطينيين والبريطانيين على مدى عقد من الزمن قبل قيام دولة إسرائيل.</p>\n\n     ",
+      "content": "\n      \n      <p>İsrail'in ilk başbakanı David Ben Gurion Şin Bet'i oluşturmak için paramiliter grup Haganah birliklerini bir araya getirdi. Haganah İsrail kurulmadan önce Filistinlilere ve İngilizlere karşı işlediği şiddet eylemleriyle tanınıyor.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "محام إسرائيلي",
-        "label": "أفيجدور فليدمان",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
-        "quote": "يستخدم الشاباك العديد من الوسائل التي يعتبرها قانونية ظاهريّاً، لكن في الحقيقة، تعتبرها الشرطة غير قانونية؛ فإذا اعتقلك الشاباك، فإنه لا يحق لك مقابلة المحامي لفترة تصل إلى 20 يوماً",
-        "share": "شارك"
+        "vimeo": 112480966,
+        "yt": "j3OfOYJwK2M"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "AVUKAT",
+        "label": "AVIGDOR FELDMAN",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/inside-shin-bet.html",
+        "quote": "Şin Bet için hukuki olan pek çok uygulama polis için hukuk dışıdır. Şin Bet tarafından tutuklanırsanız, 20 güne kadar avukat görme hakkınız yoktur.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": {
-        "label": "ولادة الشاباك",
-        "vimeo": 110646425,
-        "yt": "-7zLj-U9cA0"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>منذ بداية تأسيسه، استخدم جهاز الشاباك وسائل تحقيق عنيفة ضد المعتقلين. وحتى يومنا هذا، يمنع الشاباك المعتقلين من أبسط حقوقهم كأسرى؛ فلا يسمح لهم مثلاً بالتحدث مع المحامين الذين يمثلونهم، ويتجاهل الإجراءات القانونية اللازمة للبدء بقضاياهم في المحاكم المختصة.</p>\n\n     ",
+      "content": "\n      \n      <p>Kuruluşundan bu yana Şin Bet mahkumlara karşı şiddet içeren sorgu yöntemleri kullanıyor. Bugün hala onları avukatlarıyla görüşmeleri gibi en temel haklarından mahrum ediyor ve hukuku hiçe sayıyor.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "مدير لجنة مناهضة التعذيب في إسرائيل",
-        "label": "يشاي منوحين",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
-        "quote": "الشاباك يستخدم وسائل التعذيب النفسي. عندما أدرك معتقل فلسطيني أنهم سيعذبون والده وزوجته كما عذبوه، حاول الانتحار",
-        "share": "شارك"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": {
-        "label": "عند الشاباك، جهاز الأمن الداخلي الإسرائيلي، كل شيء مباح ",
-        "vimeo": 110646428,
-        "yt": "VDxQLnWc_ww"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>يتحكم الشاباك تحكماً كاملاً بحياة مليون ونصف المليون فلسطيني من حملة الجنسية الإسرائيلية، إلا أنه لا يستطيع مقاضاتهم قانونيّاً من دون تهم مثبتة.</p>\n      \n      <p>يصف المحامي حسين أبو حسين العلاقة بين جهاز الشاباك وفلسطينيي الداخل بقوله: \"هناك سيطرة كاملة على حياة العرب من خلال جهاز الأمن \"الشاباك\"؛ فهو ينتهك حقوق الإنسان الأساسية مثل الحق في التعبير وإبداء الرأي، والحق في التظاهر\".</p>\n      \n      <p>في شهر نيسان عام 1984، اختطف أربعة مسلحين فلسطينيين باصاً إسرائيليّاً وأجبروه على التوجه إلى الحدود المصرية. أمر رئيس الشاباك أبراهام شالوم بتنفيذ عملية لاقتحام للباص، فقتل اثنان واعتقل اثنان، ثم قتلهما جنود الشاباك بدم بارد بإطلاق النار عليهما.</p>\n      \n      <p>أنكر الشاباك تهمة القتل بالرغم من شهادات شهود العيان.</p>\n      \n      <p>بعد الحادثة التي عرفت باسم \"الباص رقم 300\"، شكل الكنيست الإسرائيلي لجنة \"لنداو\" للتحقيق في ممارسات الشاباك.</p>\n      \n      <p>اعترفت اللجنة باستخدام الشاباك وسائل عنيفة وقالت \"إنه يسمح أحياناً باستخدام قوة جسدية معقولة\".</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "context": "محام فلسطيني",
-        "label": "حسين أبو حسين ",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
-        "quote": "الشاباك ينتهك حقوق الإنسان الأساسية، حقه في التعبير والاجتماع والتظاهر",
-        "share": "شارك"
+        "context": "İSRAİL İŞKENCE KARŞITI HALK KOMİTESİ",
+        "label": "İŞAY MENUÇİN",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/inside-shin-bet.html",
+        "quote": "(Şin Bet) psikolojik işkenceyi çok kullanır. (Filistinli bir mahkum) Babasına ve karısına işkence ettiklerini fark edince, ona da aynı işkenceyi yaptılar. O da intihara teşebbüs etti.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "لجنة لانداو",
-        "vimeo": 110646427,
-        "yt": "k7epFYH8D8o"
+        "vimeo": 112481941,
+        "yt": "rSStXwMsWKs"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>على أرض الواقع، يعني تقرير اللجنة أن الشاباك له حرية التصرف باستخدام أي وسيلة يريد اتباعها ضد المعتقلين، أي أن بإمكانه الخروج عن القانون، لو أراد.</p>\n\n     ",
+      "content": "\n      \n      <p>Şin Bet hukuk dışı davranışlarla mahkumlara her istediğini yapma hakkına sahipmiş gibi görünüyor.</p>\n      \n      <p>Şin Bet özellikle politik kimlikleriyle tanınan Filistinlilerin faaliyetleriyle ilgileniyor. İnsan hakları avukatı Şirin Essavi de Şin Bet'in hedeflerinden biri oldu. 2010 yılında bir İsrail kontrol noktasında tutuklanıp mahkum edildi, şiddet ve kötü muamele gördü. 2013 yılında gördüğü işkenceleri unutamayacağını açıkladı. 2014 yılında yeniden tutuklandı.</p>\n      \n      <p>Cihad Muğrabi de Şin Bet tarafından mahkum edildi. Mahkemeye çıkarılmadan hücreye atıldı. Hakkında bir suçlama yapılmadı ve işlediğinden şüphe edilen suçlar kendisine açıklanmadı. 2008 yılında Muğrabi iç kanama ve solunum problemleri yüzünden hastaneye sevk edildi. İki saat sonra onu dövüp kafasından yaralanmasına neden olan Şin Bet görevlilerine geri teslim edildi. Avukatı Muğrabi'nin aldığı darbı rapor etmeyen doktorla ilgili bir başvuruda bulundu. Başvuru reddedildi.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "محققو الشاباك فوق القانون",
-        "vimeo": 110646430,
-        "yt": "Oijcl8IMm8c"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": "محام فلسطيني ",
-        "label": "نبيل دكور",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
-        "quote": "أي مواطن أو رجل شرطة أو دبلوماسي يرتكب جريمة يتم التحقيق معه، إلا موظفو الشاباك. هل يعقل؟",
-        "share": "شارك"
+        "context": "FİLİSTİNLİ AVUKAT",
+        "label": "HÜSEYİN EBU HÜSEYİN",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/inside-shin-bet.html",
+        "quote": "Şin Bet temel insan haklarını ihlal ediyor. İnsanların düşüncelerini açıklama, toplanma ve gösteri yapma haklarını ellerinden alıyor.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>يركز جهاز الشاباك على الفلسطينيين المعروفين بنشاطاتهم السياسية.</p>\n      <p>المحامية الفلسطينية شيرين عيساوي كانت أحد المستهدفين من قبل الشاباك. اعتقلت عند حاجز عسكري إسرائيلي عام 2010، ومارس الشاباك أعمالاً عنيفة ومهينة ضدها.</p>\n      <p>صرحت شيرين عيساوي عام 2013 أنها لن تنسى ما فعله الشاباك بها. عام 2014 اعتقلت شيرين مجدداً.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
       "content": {
-        "label": "شيرين عيساوي، محامية وأسيرة سابقة",
-        "vimeo": 110646422,
-        "yt": "c1axrK0PfJM"
+        "vimeo": 112480967,
+        "yt": "mLo3sAd7Gqg"
       },
       "type": "AJVideo"
     },
     {
+      "content": "\n      \n      <p>Muğrabi ve Essavi mahkumiyetleri boyunca çok kötü muameleler gördü. Sadece onlar değil, sayısız Filistinli Şin Bet'in elinde işkenceye maruz kaldı.</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
       "content": {
-        "context": "محامية فلسطينية وأسيرة سابقة",
-        "label": "شيرين عيساوي",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
-        "quote": "ضربوني وربطوا يديّ وقدميّ، كما وضعوا عصابة على عيني، وجروني مراراً وتكراراً على الأرض، وضربوني بالحائط",
-        "share": "شارك"
+        "context": "FİLİSTİNLİ AVUKAT",
+        "label": "NABEEL DAKVAR",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/inside-shin-bet.html",
+        "quote": "Şin Bet görevlileri haricinde suç işleyen her vatandaş, polis veya diplomat soruşturmaya tabii tutulur. Bunun mantığı var mı?",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>جهاد مغربي، فلسطيني آخر اعتقله جهاز الشاباك دون توجيه أي تهم ضده، واحتجزه في زنزانة دون إخباره بالأسباب التي أدت إلى اعتقاله.</p>\n      \n      <p>وفي عام 2008، نُقل جهاد إلى المستشفى لمعاناته من نزيف داخلي وصعوبات في التنفس. وبعد ساعتين، أعيد مجدداً إلى السجن، وهناك، ضربه ضباط الشاباك، ما أدى إلى إصابات بليغة في رأسه.</p>\n      \n      <p>قدم محامي جهاد بلاغاً ضد الأطباء الذين كشفوا عليه لعدم تبليغهم عن إصاباته، لكن تم تجاهل البلاغ المقدم.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
       "content": {
-        "label": "جهاد مغربي، أسير سابق",
-        "vimeo": 110646424,
-        "yt": "PGYSUlQQ_Vw"
+        "vimeo": 112481914,
+        "yt": "yHhBvzkDymw"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>تعرض جهاد مغربي وشيرين عيساوي للتعذيب المتكرر طوال فترة اعتقالهما، ليس هما فقط، بل هناك الكثير من المعتقلين الفلسطينيين الذين عذبهم جهاز الشاباك جسديّاً ونفسيّاً أيضاً.</p>\n\n     ",
+      "content": "\n      \n      <p>En çok da psikolojik işkenceye maruz bırakıldılarç Muğrabi'nin mahkumiyeti onda kalıcı etkiler bıraktı. İnsan hakları avukatı ona yapılan muamelenin acımasızca olduğunu ama bir çok müvekkilinin maruz kaldığı şeyleri daha iyi anlamasına yardımcı olduğunu söylüyor. Şin Bet binlerce sivile işkence etti, suikastler düzenledi, yalancı şahitlikler yaptı ve BM tarafından kınandı.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "التعذيب النفسي في السجون الإسرائيلية",
-        "vimeo": 110646416,
-        "yt": "8SEMYYYI2Io"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": "أسير فلسطيني سابق",
-        "label": "جهاد مغربي",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/inside-shin-bet.html",
-        "quote": "أخبرني المحقق أن لديه مفاجأة لي، ومرّ بي على مكاتب المحققين، ثم أمرني أن أنظر من خُرم الباب، فرأيت أمي مكبلة اليدين وسمعتها تطلب الماء",
-        "share": "شارك"
+        "context": "ESKİ TUTUKLU",
+        "label": "ŞİRİN ESSAVİ",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/inside-shin-bet.html",
+        "quote": "Ellerimi, ayaklarımı ve gözlerimi bağladılar ve defalarca yerde sürüklediler, duvarlara çarptılar.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>تركت تجربة الاعتقال أثراً بالغاً على حياة جهاد مغربي.</p>\n      \n      <p>وبالرغم من وحشية المعاملة التي تلقتها المحامية شيرين عيساوي أثناء فترة اعتقالها، إلا أنها تقول إنها عرفت بشكل كامل ما يمر ويشعر به الأسرى الذين تدافع عنهم.</p>\n      \n      <p>عذب جهاز الشاباك آلاف المدنيين الفلسطينيين، وارتكب العديد من عمليات الاغتيال، وفبرك الحقائق، وقد أدانته الأمم المتحدة. وبالرغم من كل الأدلة التي تثبت انتهاك الشاباك لحقوق الإنسان المعترف بها دوليّاً، إلا أنه لا يزال حتى وقتنا الحاضر يستهدف بشكل عنيف أكثر من مليون ونصف المليون من فلسطينيي الداخل من حملة الجنسية الإسرائيلية، دون أية إجراءات قانونية أو حتى أي اعتبار لقوانين دولته.</p>\n      \n\n     ",
+      "content": {
+        "vimeo": 112480963,
+        "yt": "WPEvRHvV_kc"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>Açık insan hakları ihlallerine rağmen, Şin Bet bugün de faaliyetlerini sürdürüyor ve hukuku hiçe sayarak İsrail vatandaşı 1 milyon 500 bin Arabı hedef almaya devam ediyor.</p>\n      \n      <p>Şin Bet ajanları 1 milyon 500 bin İsrailli Filistinliyi kontrolü altında bulunduruyor. Bu kişiler kovuşturmadan da muaf tutuluyorlar.</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "vimeo": 112481942,
+        "yt": "OmOS2Afkoj8 "
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>Filistinli insan hakları avukatı Hüseyin Ebu Hüseyin Şin Bet'in İsrail'de yaşayan ve İsrail pasaportu taşıyan Filistinlilerle ilişkisini şöyle tanımlıyor: \"Şin Bet Arap vatandaşların yaşamını tamamen kontrol altında tutmaktan zevk alıyor. Onların fikirlerini açıklamak ve gösteri yapmak gibi temel insan haklarını çiğniyor.\"</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "vimeo": 112481912,
+        "yt": "LNSlNe2VCgY"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>Nisan 1984'te, dört silahlı Filistinli bir İsrail otobüsünü kaçırıp Mısır sınırına yönlendirdi. Şin Bet şefi Avraham Şalom eylemcileri Gazze Şeridi'nde yakaladı. Dört adam soğukkanlı biçimde vurularak öldürüldü. Birkaç tanık ifadesine rağmen Şin Bet cinayetlerin sorumluluğunu inkar etti.</p>\n      \n      <p>Otobüs olayının ardından İsrail meclisi Knesset Şin Bet'in faaliyetlerini incelemesi için Landau Komisyonu'nu kurdu. Komisyon teşkilatın şiddet içeren yöntemler kullandığını ama makul ölçüde fiziksel baskının da kaçınılmaz olduğu sonucuna vardı.</p>\n      \n\n     ",
       "type": "Body-text"
     }
   ],
-  "director": "عصام بلان",
-  "directorLabel": "إخراج",
-  "headline": "الشـابـاك"
+  "director": "ISSAM BALLAN",
+  "directorLabel": "YÖNETMEN",
+  "headline": "GÖLGE TEŞKİLAT ŞİN BET"
 }

@@ -1,151 +1,131 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
-      "type": "Body-text"
-    },
-    {
-      "content": "\n      \n      يعيش الفلسطينيون في غزة ظروفاً معيشية صعبة للغاية، بسبب الهجمات العسكرية الإسرائيلية المتتالية على القطاع.\n      ذوو الاحتياجات الخاصة هم أكثر من يعاني من هذه الظروف، بسبب قلة التجهيزات الخاصة التي تساعدهم على التأقلم مع ظروف الحياة تحت الحصار والقصف الإسرائيلي المستمر.\n       \n\n     ",
+      "content": "\n         \n         İsrail'in Gazze'de devam eden saldırıları Filistinliler için yaşamı dayanılmaz hale getiriyor. Engelliler kuşatma ve İsrail saldırılarının sonuçlarıyla başa çıkmakta en çok zorlanan grubu oluşturuyor.\n\n        ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "زوجة علاء النحال - أصم فلسطيني",
-        "label": "نازك النحال",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "التعامل مع الصم، إذا كنت إنت حابه، سهل جدا",
-        "share": "شارك"
+        "context": "ALAADİN'İN KARISI",
+        "label": "NAZİK NAHAL",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/stronger-than-words.html",
+        "quote": "Severseniz, işitme engelli insanlarla yaşamak çok kolaydır.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>يعيش في قطاع غزة 1.8 مليون فلسطيني، من ضمنهم 15.000 مواطن أصم.</p>\n      \n      <p>ويعاني الصم في غزة من التمييز في المعاملة، سواء في البيت أو المدرسة، أو حتى مكان العمل، ونتيجة لذلك، يقعون ضحية البطالة والإحساس بالعزل، وغالباً ما يصابون بالاكتئاب. كما يشعر الأطفال الصم بشكل خاص أنهم منبوذون اجتماعيّاً بسبب إعاقتهم.</p>\n      \n      <p>حتى روتين الحياة اليومي في غزة يبدو مختلفاً بالنسبة للصم؛ فعلى سبيل المثال، لا يستفيدون من خطبة صلاة يوم الجمعة، لأنهم لا يستطيعون سماعها.</p>\n      \n      <p>ويتعاون الصم في غزة لمساعدة بعضهم بعضاً. علاء الدين النحال، سائق تكسي أصم، يبذل قصارى جهده لمساعدة الصم الآخرين، ويدرس التمثيل والكوميديا للصم في أحد المسارح بغزة.</p>\n\n     ",
+      "content": "\n      \n      <p>Gazze Şeridi'nde 1 milyon 800 bin insan yaşıyor. Bunların 15 bini işitme engelli. İşitme engelli Gazzeliler evde, işte ya da okulda ayrımcılıkla karşılaşıyor. Bu insanların pek çoğu işsiz, kendilerini soyutlanmış hissediyorlar ve depresyondalar. İşitme engelli çocuklar kendilerini dışlanmış hissediyor.</p>\n      \n      <p>İşitme engelli Gazzeliler için günlük hayat aktiviteleri bile diğerlerinin yaşadığından farklı yaşanıyor. Örneğin Cuma namazında imamın vaazını bile anlayamıyorlar. Gazze'de yaşayan işitme engelliler ekonomik olarak da sıkıntılar yaşıyor. Geçinmek için birden fazla iş yapmak zorunda kalıyorlar. Alaaddin Nahhal taksi şoförlüğü yapıyor ve kıt kanaat geçiniyor.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "حياة أب أصم في قطاع غزة",
-        "vimeo": 110646862,
-        "yt": "ygUDGo5DOFQ"
+        "vimeo": 112484977,
+        "yt": "S1eSmjdrXJs"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>محمد المقيد، مواطن فلسطيني أصم، يرى جزئيّاً بعين واحدة، ولا يرى بالأخرى.</p>\n      \n      <p>يعاني محمد من صعوبات جمة في روتين حياته اليومية، إلا أنه يلجأ للرسم كوسيلة للتفريغ النفسي. وحدها رسوماته تشعره ببعض الفرح والقدرة على التعبير عن نفسه.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Gazzeli Mahmut Elmukayyad hem işitme engelli, hem de bir gözü görmüyor. Elmukayyad'ın diğer gözü de kısmen görüyor.&nbsp; Gündelik ihtiyaçlarını giderirken bile zorlanan Elmukayyad hayata resim yaparak tutunuyor. Resim yapmaktan keyif alıyor ve kendini resimle ifade ediyor.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "فنان من الصم",
-        "vimeo": 110646868,
-        "yt": "5_QHwUMnq1U"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": "فنان تشكيلي",
-        "label": "محمود المقيد",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "الحياة صعبة جدا والمعابر مغلقة، وأنا أستطيع أن أرى بعين واحدة، وأنا أصم",
-        "share": "شارك"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": "\n      \n      <p>\"أطفالنا\" هي جمعية للأطفال الصم في قطاع غزة. تأسست عام 1992، تعلم الصم من مختلف الأعمار، وتقدم لهم خدمات مختلفة.</p>\n      \n      <p>نجحت \"أطفالنا\" في مساعدة آلاف الصم في قطاع غزة، فهي تقدم دروساً مختلفة للصم، وجلسات لتقوية السمع ومعالجة مشاكل النطق.</p>\n      \n      <p>كما تضم الجمعية مقهى خاصّاً يوظف الصم فقط، ومتجراً لبيع الأشغال اليدوية التي يصنعها الحرفيون الصم.</p>\n      \n      <p>يتوجه بعض الآباء الشباب من الصم إلى جمعية \"أطفالنا\" للحصول على المساعدة في تربية أطفالهم.</p>\n      \n      <p>هدى شاهين، شابة فلسطينية صماء تعمل مدرسة في جمعية \"أطفالنا\". زوجها أشرف أصم أيضاً. يؤكد الزوجان أن باستطاعة الآباء الصم تحدي المشاكل التي تواجههم في تربية أبنائهم الذين يسمعون بشكل طبيعي، عن طريق تقديم الحب والحنان والدعم المستمر لهم، إلا أنهم غالباً ما يعانون من التمييز والتفرقة، خاصة عند تقديم طلبات للحصول على وظائف.</p>\n      \n      <p>يعمل أشرف موظفاً في وزارة المالية بغزة، بعد أن طبقت الحكومة قانوناً يلزم مؤسساتها بأن تكون 5% من الوظائف فيها لذوي الاحتياجات الخاصة.</p>\n      \n      <p>تشعر هدى أنها محظوظة بسبب الدعم المستمر لها من قبل زوجها ومجتمع الصم في غزة.</p>\n      \n      <p>وتنزعج كثيراً من أولئك الأشخاص الذين يعتبرون الصم أغبياء، إلا أنها تثبت لهم عكس ذلك كل يوم.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "context": "أم فلسطينية",
-        "label": "إلهام المقيد",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "نعاني يوميّاً من انقطاع الكهرباء في غزة. أطفالي الصم يتحدثون مع بعضهم بلغة الإشارة، ولذلك، ينزعجون كثيراً عندما لا يستطيعون رؤية بعضهم بسبب انقطاع الكهرباء",
-        "share": "شارك"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": {
-        "label": "قصة عائلة من الصم في غزة بفلسطين ",
-        "vimeo": 110646876,
-        "yt": "OedZqkfyaXg"
+        "vimeo": 112485007,
+        "yt": "tD5lNzvDnR4"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "مدرسة",
-        "label": "هدى شاهين",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "نتواصل مع الناس بشكل طبيعي، بعضهم يعتقد أن الصم أغبياء، إلا أننا أناس طبيعيون",
-        "share": " شارك"
+        "context": "GÖRSEL SANATÇI",
+        "label": "MAHMUD ELMUKAYYAD",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/stronger-than-words.html",
+        "quote": "Hayat zor. Sınırlar kapalı. Tek gözümle görebiliyorum ve işitme engelliyim.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>يقول المشرف على الأعمال الحرفية في جمعية \"أطفالنا\" هاشم غزال: \"يعتقد الناس أن الصم ضعفاء، لكن هذا غير صحيح، فالصم ومن يسمعون بشكل طبيعي، متساوون\".</p>\n      \n      <p>لكن هاشم يعترف أن الصم ليست لهم قوة أو سلطة في غزة، حتى إن الناس لا يتعاملون معهم بشكل جدي. ويعبر هاشم عن امتعاضه الشديد من الحكومة في غزة؛ لعدم إصدارها قوانين إضافية تدعم الصم في القطاع، مثل توفير مترجمين للغة الإشارة في المستشفيات والمؤسسات الحكومية.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Atfaluna Gazzeli işitme engelli çocukların gittiği bir okul. 1992'de kurulan okul her yaştan işitme engelliye eğitim ve yaşam desteği sunuyor. Okul kuruluşundan bu yana binlerce işitme engelli Gazzeli’ye yardım etmiş. Okul derslerin yanında, konuşma terapisi de sunuyor. Okulun işitme engelli insanların çalıştığı bir kafesi ve işitme engelli sanatçıların ürünlerinin satıldığı bir de mağazası bulunuyor.</p>\n      \n      <p>Buraların müşterileri arasında bir yandan engelleriyle başa çıkmaya çalışırken, bir yandan da çocuk yetiştiren genç anne babalar da var. Huda Şahin genç bir Filistinli kadın. İşitme engelli olan Şahin okulda öğretmenlik yapıyor. Şahin'in kocası Eşref de işitme engelli. İşitme engelli olmayan çocuklarını yetiştirirken bazı zorluklar yaşadıklarını ama bu zorlukların üstünden sevgi ile geldiklerini dile getiriyorlar. İkili hala ayrımcılıkla karşılaştıklarını, özellikle de iyi bir iş bulmakta zorlandıklarını söylüyor. Eşref Ekonomi Bakanlığı'nda çalışıyor. Hükümet işyerlerinde yüzde beş engelli çalıştırılmasıyla ilgili yeni bir yasa çıkardı.</p>\n      \n      <p>Huda kocasından ve işitme engelli Gazzelilerden gördüğü destekten dolayı kendini şanslı hissediyor. Huda karşılaştığı bazı insanların engelinden dolayı ona salak muamelesi yaptığını söylüyor ama o yaptıklarıyla bunun doğru olmadığını kanıtlıyor.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "نقاش فلسطينييين صم في قطاع غزة المحاصر ",
-        "vimeo": 110646877,
-        "yt": "XsC1mCKmtmA"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>تتكون عائلة إسراء غزال من ثمانية أشخاص صم، وأربعة يسمعون بشكل طبيعي، وهي واحدة منهم.</p>\n      <p>وتعتبر إسراء نفسها المترجمة وحلقة الوصل بين إخوتها الصم والعالم الخارجي من حولهم؛ ففي أوقات الحرب والقصف الإسرائيلي على غزة، تحذر إسراء أفراد عائلتها الصم، كما تحاول حمايتهم من خطر الضربات العسكرية.</p>\n      \n      <p>خلال الحرب الإسرائيلية الأخيرة على غزة عام 2014، حاولت إسراء مراراً وتكراراً طمأنة أفراد عائلتها الصم وإقناعهم بعدم وجود طائرات أو قصف جوي على غزة، في الوقت الذي كانت الهجمات الإسرائيلية قوية ومدمرة، حتى إنهم شعروا باهتزاز الأرض من تحتهم، وبخفقان قلوبهم بشدة، من قوة الانفجارات من حولهم.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "label": "حياة أب أصم في قطاع غزة",
-        "vimeo": 110646864,
-        "yt": "xS--ngiZgNw"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": "المشرف على الأعمال الحرفية في جمعية \"أطفالنا\"",
-        "label": "هشام غزال",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "نحن مثل أولئك القادرين على السمع بشكل طبيعي، بل إننا نتمتع بمواهب وقدرات خاصة مثل الفن والتطريز والإبداع",
-        "share": "شارك"
+        "context": "FİLİSTİNLİ BİR ANNE",
+        "label": "ELHAM ELMUKAYYAD",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/stronger-than-words.html",
+        "quote": "Burada her gün elektrik kesintisi yaşıyoruz. İşitme engelli çocuklarım sadece işaret diliyle anlaşabiliyor. Dolayısıyla birbirlerini göremeyince sıkıntı yaşıyorlar.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>لم يسلم أحد من سكان قطاع غزة من تبعات الحرب الإسرائيلية على القطاع عام 2014، التي أدت إلى استشهاد أكثر من 2100 فلسطيني، كان بينهم بعض الأشخاص من ذوي الاحتياجات الخاصة.</p>\n      <p>كفاح غانم، فنانة فلسطينية صماء، استشهدت في قصف إسرائيلي استهدف المبنى السكني الذي كانت تعيش فيه.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
       "content": {
-        "label": "الوحشية الإسرائيلية",
-        "vimeo": 110646861,
-        "yt": "8cQgjkfiQYA"
+        "vimeo": 112484975,
+        "yt": "m4gXUHOhkQQ"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "داعية فلسطيني أصم",
-        "label": "خضر الرنتيسي",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/stronger-than-words.html",
-        "quote": "في هذه الحرب (2014) استشهدت بنت صماء.. كان بيتها من عدة طوابق ودمروه عليه",
-        "share": "شارك"
+        "context": "ATFALUNA TOPLULUĞU EL SANATLARI SÜPERVİZÖRÜ",
+        "label": "HAŞİM GAZALİ",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/stronger-than-words.html",
+        "quote": "Duyan insanlarla aynıyız. Aslında planlama ve algılamada daha yetenekliyiz. İşitme engellilerin sanat, dikiş-nakış ve yaratıcılık konusunda daha yetenekli olduğunu fark ettim.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>انتهى صيف 2014، وانتهت حرب غزة معه، لكن لم تعد الحياة طبيعية كما كانت لأولئك الذين نجوا منها.</p>\n      \n      <p>ويحاول الفلسطينيون في غزة التأقلم مع النتائج المدمرة المترتبة عن الحصار الإسرائيلي المشدد على القطاع، التي تسمح لهم بالبقاء على قيد الحياة فقط، دون الحصول على أي من مقومات الحياة الأخرى، إلا أن قوة إرادتهم تساعدهم على التغلب على تلك الصعاب التي يواجهونها، لبناء حياتهم ومستقبلهم.</p>\n      \n      <p>وبالرغم من عدم حصولهم على أبسط حقوق الإنسان الطبيعية، إلا أنهم يتحلون بشجاعة وقوة عزيمة، لمتابعة حياتهم بشكل شبه طبيعي. وبالرغم من إعاقتهم ومن الصعوبات الجمة التي يعيشونها، يعيش سكان غزة الصم حياتهم بشكل طبيعي، ممثلين بذلك قدوة عليا لكل الفلسطينيين.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Atfaluna'da el sanatları bölümünü yöneten Haşim Gazali şunları söylüyor: \"İnsanlar işitme engellilerin güçsüz olduğunu düşünüyor. Ama bu yanlış. İşitme engelliler ve işitme engelli olmayanlar eşittir.\"</p>\n      \n      <p>Ama Gazali Gazze'de işitme engellilerin güçlü olmadığını ve ciddiye alınmadıklarını kabul ediyor. Hükümetin işitme engellilerin hayatını kolaylaştıracak kanunlar çıkarmadaki başarısızlığından da şikayetçi. Hükümetin işitme engellilerin hayatını kolaylaştıracak kanunlar çıkarmamasından da şikeyetçi . Örneğin hastanelerde ve devlet dairelerinde işaret dili bilen personel bulunması gerektiğini düşünüyor.</p>\n      \n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "vimeo": 112484982,
+        "yt": "reeS-2B38II"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>İsra Gazali'nin ailesinde sekiz kişi işitme engelli. O duyabildiği için işitme engelli kardeşleriyle dünya arasında bir köprü işlevi görüyor.</p>\n      \n      <p>İsrail'in Gazze'ye düzenlediği saldırılar boyunca, ailenin işitme engelli üyelerini uyarma sorumluluğu İsra'nın üstündeydi. İsra aynı zamanda onları savaşın dehşetinden korumaya çalışıyordu. 2014 yılındaki Koruyucu Hat Operasyonu sırasında işitme engelli kardeşlerini \"hava saldırısı olmuyor, uçak falan yok\" diyerek oyalamaya çalışıyordu. Ama İsrail saldırıları öyle korkunçtu ki, ailenin işitme engelli üyeleri yer sarsıntılarını ve patlamaları kalp atışlarıyla hissediyorlardı.</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "vimeo": 112485009,
+        "yt": "9JnIj_emFSg"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>İsrail'in 2014'teki saldırılarında 2 bin 100'den fazla Filistinli öldürüldü. Savaşın kurbanları arasında engelliler de vardı. İşitme engelli genç bir sanatçı olan Kifah Ganam, İsrail'in yaşadığı evi bombalaması sonucu yaşamını yitirdi.</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "vimeo": 112484979,
+        "yt": "IVIcDfRwJYM"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "İŞİTME ENGELLİ İMAM",
+        "label": "KADER RANTİSİ",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/stronger-than-words.html",
+        "quote": "Savaşta işitme engelli bir kız öldürüldü.",
+        "share": "PAYLAŞ"
+      },
+      "type": "AJQuote"
+    },
+    {
+      "content": "\n      \n      <p>2014 yazı bittiğinde saldırılar da bitmişti. Hayatta kalanlar için hayat normale hiç dönmedi. Gazzeli Filistinliler hala acımasız İsrail kuşatmasının sonuçlarıyla baş etmeye çalışıyor.</p>\n      \n      <p>Filistinliler iyi bir gelecek için zorlukların üstesinden gelmeye kararlılar. En temel insan haklarından bile mahrum olmalarına rağmen cesaretlerinden bir şey kaybetmiyorlar. Gazze'de yaşayan işitme engelliler de yaşamı dolu dolu yaşamaya kararlılar. Onların azmi tüm Filistinlilere örnek oluyor.</p>\n      \n\n     ",
       "type": "Body-text"
     }
   ],
-  "director": "مصطفى النبيه",
-  "directorLabel": "إخراج",
-  "headline": "أقوى من الكلام"
+  "director": "MUSTAFA AL-NABIH",
+  "directorLabel": "YÖNETMEN",
+  "headline": "SAĞIR DÜNYA"
 }

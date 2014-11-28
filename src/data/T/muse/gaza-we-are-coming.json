@@ -1,119 +1,110 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
-      "type": "Body-text"
-    },
-    {
-      "content": "\n      \n      عندما احتلت إسرائيل قطاع غزة والضفة الغربية عام 1967، توقفت سفن البحر الأبيض المتوسط عن الإبحار إلى شواطئ غزة.\n      في عام 200٦، وبعد الانسحاب الإسرائيلي من غزة، فرض الاحتلال الإسرائيلي حصاراً بريّاً وبحريّاً وجويّاً على القطاع، نتجت عنه آثار مدمرة على حياة المواطنين الذين يعيشون فيه، والبالغ عددهم 1.8 مليون فلسطيني.\n       \n      ظل المجتمع الدولي صامتاً تجاه الاحتلال والحصار، لكن في عام 2008 قررت مجموعة صغيرة من النشطاء كسر الحصار العسكري الذي استمر سنوات عديدة، وقرروا الإبحار إلى شواطئ غزة على متن قاربين خشبيين.\n       \n\n     ",
+      "content": "\n          \n          İsrail 1967'de Gazze Şeridi ve Batı Şeria'yı işgal edince, gemilerin Gazze limanlarına girmesi yasaklandı. İsrail 2006'da Gazze'ye karadan, havadan ve denizden katı bir kuşatma uygulamaya başladı. Uluslararası kamuoyu işgal ve kuşatmaya karşı çıkmakta başarısız oldu. Ancak 2008'de küçük bir eylemci grubu iki ahşap tekneyle Gazze Şeridi'ne uzun yıllardır uygulanan ablukayı kırdı.\n\n         ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "حركة غزة الحرة ",
-        "label": "هويدا عراف",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/gaza-we-are-coming.html",
-        "quote": "أنا فخورة لأني عضو في حركة غزة الحرة المكونة من مواطنين من جميع أنحاء العالم، تعبوا من انتظار القوانين التي سنت لحماية حقوق الإنسان لكنها نسيت الفلسطينيين  ",
-        "share": "شارك"
+        "context": "ÖZGÜR GAZZE HAREKETİ ÜYESİ",
+        "label": "HUVEYDA ARRAF",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/gaza-we-are-coming.html",
+        "quote": "İnsan haklarını savunmakla görevli olan ama Filistin'i hep unutan kurumların harekete geçmesini beklemekten yorulan sıradan insanların oluşturduğu bu hareketin bir parçası olmaktan onur duyuyorum.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>عام 2008، اجتمع عدد من النشطاء ممن شعروا بالامتعاض الشديد من الحصار الإسرائيلي على قطاع غزة، وقرروا تأسيس \"حركة غزة الحرة\"، التي أصبحت اليوم حركة حقوقية خيرية يدعمها العديد من الشخصيات الدولية المعروفة، مثل كبير أساقفة جنوب أفريقيا ديزموند توتو والناشطة الإيرلندية الحائزة على جائزة نوبل للسلام ميريد كوريجان.</p>\n      \n      <p>بداية الحركة كانت عبارة عن \"فكرة مجنونة\"، كما وصفها مؤسسو الحركة، إلا أنهم كان يسعون وراء هدف محدد، ألا وهو رفع الحصار الإسرائيلي على غزة. أخذوا يتساءلون: كيف يمكن تحقيق هذا الهدف؟ وكانت الطريقة الواقعية الوحيدة هي كسر الحصار عن طريق البحر، إذاً، فهم يحتاجون قارباً لتحقيق هذا الهدف.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>İnsan hakları aktivistlerinden oluşan bir koalisyon İsrail kuşatmasına karşı gelmek üzere 2008'de Gazze'ye Özgürlük Hareketi'ni kurdu. Grup bugün tanınan ve aralarında Güney Afrika Başpiskoposu Desmond, Tutu ve Nobel Barış Ödülü sahibi Mairead Corrigan gibi önemli kişiler tarafından desteklenen bir hayır kuruluşu.</p>\n      \n      <p>Ancak grup kurulurken, grup üyeleri bile bunun bir çılgınlık olduğunu düşünüyordu. Tek amaçları İsrail kuşatmasını kaldırmaktı. Ancak mesele bunu nasıl yapacaklarıydı. Gazze'deki İsrail ablukasını kırmanın tek gerçekçi yolunun denizden olacağına karar verdiler. Bunun için de bir tekneye ihtiyaçları vardı.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "تضامنا مع غزة",
-        "vimeo": 110646309,
-        "yt": "im1Z9yexrJg"
+        "vimeo": 112480141,
+        "yt": "x_5k91yWy3I"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>أيقن النشطاء أنهم إن نجحوا بإرساء سفينتهم على شواطئ غزة، فسيوصلون بذلك رسالة قوية إلى ثلاثة أطراف: سيرى الفلسطينيون أن المواطنين العاديين في العالم يهتمون بهم وبمعاناتهم. وسيُثبت هؤلاء النشطاء للإسرائيليين أن الجيش الإسرائيلي- وإن كان من أقوى الجيوش في العالم وأكثرها تطوراً- ليس قادراً على حصار غزة للأبد. كما أنهم سيبرهنون للمجتمع الدولي بأكمله أنه من غير المقبول التخلي عن القطاع ومواطنيه مهما كان العذر.</p>\n      \n      <p>الإبحار إلى غزة خطة طموحة، وستجعل العالم بأسره يلتفت إلى أهمية هذا الهدف، ومن أجل تحقيقه، كان لا بد من أن يبني هؤلاء النشطاء قارباً ليبحروا به.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Grup üyeleri Gazze'ye demir atabilmeyi başarırlarsa bunun güçlü bir mesaj vereceğine inanıyorlardı. Filistinlilere sıradan insanların onların acısıyla ilgilendiğini gösterebileceklerdi. İsrail gibi dünyanın en büyük silahlı güçlerinden birine, bir tecridi sonsuza kadar sürdüremeyeceği mesajını verebileceklerdi. Ayrıca uluslararası kamuoyuna da Filistinlileri desteğe ihtiyaçları olduğu bir dönemde yüzüstü bırakmanın hiçbir mazereti olamayacağını anlatacaklardı.</p>\n      \n      <p>Gazze'ye gitmek büyük bir şeydi. Eğer grup limana varmayı başarabilirse, tüm dünyanın dikkatini çekecekti.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "بحار يوناني",
-        "label": "تاسوس كارابيناس",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/gaza-we-are-coming.html",
-        "quote": "إنها المبادئ العليا التي تحملها تجاه الحياة وتجاه الناس، لأجل فلسطين، لأجل غزة، والناس الذين يقاسون  ",
-        "share": "شارك"
+        "vimeo": 112911386,
+        "yt": "NPhrzUZk0_c"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "DENİZCİ",
+        "label": "TASSOS KARAMBINAS",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/gaza-we-are-coming.html",
+        "quote": "Bu hayat, insanlık, Filistin, Gazze ve acı çeken insanlarla ilgili kaygıları olanların meselesi.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": {
-        "label": "بناء قارب",
-        "vimeo": 110646308,
-        "yt": "1ExQaeVKFlc"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>منذ بداية المهمة، واجهت خطة النشطاء الكثير من العراقيل والمخاطر، فـ\"حركة غزة الحرة\" ليست أول حركة تحاول الوصول إلى شواطئ غزة، والعديد من المحاولات السابقة أُفشلت وخُرِّبت عمداً، حيث تم تفجير بعض القوارب وحجز أخرى من التي حاولت فيما مضى كسر الحصار عن طريق البحر.</p>\n      \n      <p>عثر انجيليس بيسياس، وهو مهندس يوناني وأحد مؤسسي \"حركة غزة الحرة\"، على قاربين خشبيين، واتفق مع بنَّاء سفن على تجديدهما وتجهيزهما للقيام بالمهمة.</p>\n      <p>استمر العمل على الخطة شهوراً عدة، حاول النشطاء خلالها الإبقاء على المهمة سرية واستخدام هواتف مؤقتة.</p>\n      \n      <p>يوضح بول لارودي، وهو مواطن أميركي وأحد مؤسسي \"حركة غزة الحرة\"، صعوبة المهمة، بقوله: \"كاد هذا المشروع يفشل ألف مرة، إلا أنه في كل مرة، كان أحد ما يتدخل أو يحصل شيء ما لإنقاذه مجدداً\".</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Plan başından itibaren çok tehlikeliydi. Gazze'ye Özgürlük Hareketi, Gazze'ye denizden ulaşmaya çalışan ilk grup değildi. Önceki girişimler İsrail saldırılarıyla sona erdirilmişti. Tekneler havaya uçurulmuştu.</p>\n      \n      <p>Gazze'ye Özgürlük Hareketi'nin kurucularından olan Vangelis Pissias, iki eski ahşap tekne ve bu tekneleri bir deniz seyahatine hazırlamayı kabul eden bir tekne ustası buldu. Çalışmalar iki ay sürdü. Bu süre boyunca, plan bir sır olarak saklandı. Grup kontörlü telefon hatları kullandı. Tekneler başarılı biçimde gizlendi.</p>\n      \n      <p>Gazze'ye Özgürlük Hareketi kurucu üyelerinden Amerikan vatandaşı Dr. Paul Larudee o günleri şöyle anlatıyor: \"Proje belki bin kere ölme noktasına geldi, ama her defasında yeni biri ortaya çıkıp projeyi kurtardı\".</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "حركة غزة الحرة",
-        "vimeo": 110646311,
-        "yt": "W_PTKSPhHPI"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "context": "حركة غزة الحرة",
-        "label": "بول لارودي",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/gaza-we-are-coming.html",
-        "quote": "هذه المحاولة ماتت آلاف المرات، وفي كل مرة كان يأتي شخص جديد ينقذها من الموت ويعيدها للحياة",
-        "share": "شارك"
-      },
-      "type": "AJQuote"
-    },
-    {
-      "content": "\n      \n      <p>قبيل تنفيذ المهمة، في 15 أبريل 2008، عُثر على جثة رياض حماد، أحد النشطاء المشاركين في \"حركة غزة الحرة\"، في بحيرة بولاية تكساس الأميركية، وكان معصوب العينين ومقيد اليدين والقدمين.</p>\n      \n      <p>بالرغم من تصنيف المسؤولين للحادثة على أنها حادثة انتحار، إلا أن العديد من النشطاء يعتقدون أن حماد قتل بسبب انضمامه لـ\"حركة غزة الحرة\".</p>\n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "label": "مقتل رياض حامد",
-        "vimeo": 110646312,
-        "yt": "LLu73TIMqYY"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>طلبت إسرائيل من \"حركة غزة الحرة\" إلغاء مهمتها، إلا أن الحركة رفضت الخضوع للأوامر الإسرائيلية.</p>\n      \n      <p>وفي أغسطس عام 2008، بدأت سفينتان خشبيتان على متنهما 44 ناشطاً من 17 دولة مختلفة، من ضمنها إسرائيل، رحلتهما باتجاه شواطئ غزة، في الوقت الذي لم تستطع أي سفينة أجنبية الوصول إلى شواطئ غزة على مدى 41 عاماً.</p>\n      \n      <p>وفي 21 أغسطس 2008، وصلت السفينتان إلى ميناء غزة، وللحظات قصيرة، كُسر الحصار الإسرائيلي المفروض على غزة، واستقبل أهالي القطاع السفينتين استقبالاً حافلاً، معتبرين لحظة وصولهما إلى غزة لحظة نصر حقيقية.</p>\n      \n\n     ",
-      "type": "Body-text"
-    },
-    {
-      "content": {
-        "context": "ناشط يوناني - أستاذ جامعي",
-        "label": "فاغيليس بيسياس",
-        "link": "interactive.aljazeera.com/AJA/PalestineRemix-TEST/gaza-we-are-coming.html",
-        "quote": "لا تستطيع أن تتخيل كيف أن أشخاصا محاصرين هذه السنوات الطويلة يمكن أن يكون لديهم كل هذه القوة، وأن يظهروا كل هذا الفرح والابتسام  ",
-        "share": "شارك"
+        "context": "ÖZGÜR GAZZE HAREKETİ ÜYESİ ",
+        "label": "PAUL LARUDEE",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/gaza-we-are-coming.html",
+        "quote": "Proje belki bin kere ölme noktasına geldi, ama her defasında yeni biri ortaya çıkıp projeyi kurtardı.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "كسر الحصار",
-        "vimeo": 110646313,
-        "yt": "IaGzYbDcC_s"
+        "vimeo": 112480139,
+        "yt": "K3UPma4aaxg"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>ومنذ ذلك الوقت، استطاعت \"حركة غزة الحرة\" إرسال تسع بعثات إنسانية إلى قطاع غزة، محملة بالمواد الغذائية والمعدات الطبية ومواد البناء.</p>\n      \n      <p>وقد نجحت المهمات الأولى بالوصول إلى القطاع، إلا أن إسرائيل اعترضت وصول السفن الأخرى، وفي عام 2010، أدينت إسرائيل عالميّاً وانتقدت داخليّاً بعد أن استهدفت قوات البحرية الإسرائيلية سفينة \"مافي مرمرة\"، ما أدى إلى مقتل تسعة أشخاص كانوا على متنها، معظمهم أتراك.</p>\n      \n      <p>وبالرغم من ذلك، تعهدت \"حركة غزة الحرة\" بإرسال موجة ثانية من السفن المحملة بالمساعدات الإنسانية إلى القطاع، لإيمانها بأن معاناة شعب غزة تستحق المجازفة.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Tekneler sefere hazırlanmadan önce Gazze'ye Özgürlük Hareketi üyelerinden biri ölü bulundu. 15 Nisan 2008'de Riad Hamad'ın cesedi Texas Austin yakınlarında bir gölde bulundu. Gözleri bantlanmıştı. Bacakları ve elleri bağlıydı. Hamad'ın ölümü kayıtlara intihar olarak geçti ancak Hamad'ın Gazze'ye Özgürlük Hareketi'yle bağlantısı yüzünden bir cinayete kurban gitmiş olabileceği şüphesi hala devam ediyor.</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "vimeo": 112480140,
+        "yt": "ZIeucmyCeaE"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>İsrail Gazze'ye Özgürlük Hareketi'nden planı durdurmasını istedi. Grup buna karşı çıktı. Ahşap tekneler, 2008 Ağustos'unda aralarında İsrail'in de olduğu 17 farklı ülkeden 44 aktivistle Gazze'ye doğru yola çıktı. Gazze limanına 41 yıldır yabancı bir gemi yanaşmamıştı. 21 Ağustos'ta iki tekne de Gazze limanına halat bağladı. İsrail'in Gazze kuşatması bir anlığına sona ermişti.</p>\n      \n      <p>Gazzeli Filistinliler tekneleri sevinçle ve zafer çığlıklarıyla karşıladı.</p>\n      \n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "context": "ATİNA ULUSAL TEKNİK ÜNİVERSİTESİ",
+        "label": "VANGELIS PISSIAS",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/gaza-we-are-coming.html",
+        "quote": "Bu kadar uzun süredir abluka altında yaşayan insanların bu kadar metanetli ve pozitif olduklarını ve hala eğlenip gülebildiğini görmek gerçekten çok şaşırtıcı.",
+        "share": "PAYLAŞ"
+      },
+      "type": "AJQuote"
+    },
+    {
+      "content": {
+        "vimeo": 112480960,
+        "yt": "ohP12_hSQIM"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>İlk görev boyunca, Gazze'ye Özgürlük Hareketi Gazze'ye dokuz sefer düzenledi ve bölgeye gıda, sağlık ve inşaat malzemesi götürdü. İlk seferlerdeki yardımlar Gazze'ye ulaşmayı başarabildi ancak İsrail güçleri müteakip seferleri engelledi.</p>\n      \n      <p>2010 yılında su altı taarruz komandoları Mavi Marmara'ya saldırıp dokuz Türk’ü öldürünce İsrail uluslararası kamuoyu tarafından yoğun bir şekilde kınandı.</p>\n      \n      <p>Son yardım seferinin ölümcül sonuçlarına rağmen, Gazze'ye Özgürlük Hareketi, Filistinlilerin durumunun son aylarda daha da aciliyet kazandığını söyleyerek Gazze'ye ikinci bir yardım dalgası göndermeye karar verdi.</p>\n      \n\n     ",
       "type": "Body-text"
     }
   ],
-  "director": "يورغوس أفييروبولوس\n     يانيس كاريبيدس",
-  "directorLabel": "إخراج",
-  "headline": "غزة.. إننا قادمون"
+  "director": "YORGOS AVGEROPOULOS & YIANNIS KARIPIDIS",
+  "directorLabel": "YÖNETMENLER",
+  "headline": "BEKLE BİZİ, GAZZE"
 }

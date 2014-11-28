@@ -1,313 +1,287 @@
 {
   "content": [
     {
-      "content": "\n           <p id=\"u8336-2\">يمكنك الريمكس من استخدام أي أجزاء من الأفلام لإنشاء فلمك الجديد ومشاركة أصدقائك به</p>\n           <p id=\"u8336-3\">&nbsp;</p>\n           <p id=\"u8336-5\">تستطيع استخدام أداة الريمكس لتختار أي مشاهد تريد من الأفلام وتدمجها سويا لتصبح فلما جديدا. في خلال دقائق تستطيع المشاركة بقصة عن فلسطين مع أصدقائك</p>\n           <p id=\"u8336-6\">&nbsp;</p>\n           <p id=\"u8336-8\">ستختار الجزيرة أفضل الريمكسات وتعرضها لديها</p>\n           \n          ",
-      "type": "Body-text"
-    },
-    {
-      "content": "\n      \n      النكبة ترمز إلى التهجير القسري الجماعي عام 1948 لأكثر من 750,000 فلسطيني من بيوتهم وأراضيهم في فلسطين.\n      يعتقد غالبية الناس أن النكبة بدأت عام 1948، إلا أنها في الحقيقة بدأت قبل ذلك بعقود.\n       \n\n     ",
+      "content": "\n         \n         Filistinliler o güne Nekbet diyor. Nekbet Arapça'da \"felaket\" demek. Nekbet yaklaşık 750 bin Arabın Filistin'den topluca göç ettirilmesini ifade ediyor. Bir çok kişiye göre göç 1948'de başladı ama aslında Nekbet çok daha öncesine dayanıyor.\n\n        ",
       "type": "Foreword"
     },
     {
       "content": {
-        "context": "مؤلف أطلس فلسطين 48",
-        "label": "سلمان أبو ستة",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/al-nakba.html",
-        "quote": "إن طرد الناس من ديارهم هو جريمة حرب، ومنعهم من عودتهم إلى ديارهم هو أيضا جريمة حرب. لذا فإن إسرائيل لم تقترف جريمة عام 1948 بل تستمر فيها إلى اليوم",
-        "share": "شـارك"
+        "context": "FİLİSTİN ATLASI'NIN YAZARI",
+        "label": "SELMAN EBU SİTTE",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/al-nakba.html",
+        "quote": "İnsanları evlerinden etmek bir savaş suçudur. Evlerine dönmelerini engellemek de öyle. İsrail sadece 1948'te bir savaş suçu işlemedi, hala işlemeye devam ediyor. ",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>في عام 1799، خلال الحملة الفرنسية على العالم العربي، نشر نابليون بونابرت بياناً يدعو فيه إلى إنشاء وطن لليهود على أرض فلسطين تحت حماية فرنسية، بهدف تعزيز الوجود الفرنسي في المنطقة.</p>\n      \n      <p>لم تنجح خطة نابليون لإقامة دولة يهودية في الشرق الأوسط في ذلك الوقت، إلا أنها لم تمت أيضاً، حيث أعاد البريطانيون إحياء هذه الخطة في أواخر القرن التاسع عشر.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>1799'da Fransa'nın Arap dünyasını işgali sırasında Napolyon Filistin'i Fransız koruması altında Yahudilere anavatan olarak sunan bir kanun yayınladı. Bu aynı zamanda bölgedeki Fransız varlığını sağlamanın da bir yoluydu. Napolyon'un Ortadoğu'da bir Yahudi devleti fikri o dönemde gerçekleşmedi ancak ortadan da kalkmadı. 19. yüzyılın sonlarında plan İngilizler tarafından yeniden gündeme getirildi.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "إضراب عام 1936 ",
-        "vimeo": 110647263,
-        "yt": "Gv6aSqowX7w"
+        "vimeo": 112612065,
+        "yt": "HI5TJZsoZhk"
       },
       "type": "AJVideo"
     },
     {
-      "content": "&nbsp;",
+      "content": "\n      \n      <p>Osmanlı İmparatorluğu'nun yıkılıp, Filistin'de İngiliz mandasının kurulmasından sonra, sömürgeci İngiliz güçler Filistin topraklarında Siyonist bir devlet yaratma planını uygulamaya başladı. Aynı dönemde Siyonist hareket sömürgeci güçler üzerinde Yahudilerin Filistin'e kitlesel göçünü desteklemeleri ve Siyonistlerin toprak talebini tanımaları yönünde lobi faaliyetleri yürütüyordu.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "آفي شليم",
-        "vimeo": 110647270,
-        "yt": "PNttwvU-qBs"
+        "vimeo": 112612043,
+        "yt": "oTuBqrGy62s"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "مؤرخ إسرائيلي – جامعة أكسفورد - بريطانيا",
-        "label": "آفي شليم",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/al-nakba.html",
-        "quote": "لم يكن لبريطانيا حق أخلاقي أو سياسي أو قانوني يخول لها أن تعد بإعطاء أرض هي ملك للعرب إلى أناس آخرين",
-        "share": "شارك"
+        "context": "İSRAİLLİ TARİHÇİ",
+        "label": "AVİ SHLAİM",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/al-nakba.html",
+        "quote": "İngiltere'nin Araplara ait bir toprağı başkalarına söz vermeye ne ahlaki, ne politik ne de hukuken hakkı vardı. ",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>في عام 1917، أعلن وعد بلفور الدعم البريطاني لإنشاء \"وطن قومي للشعب اليهودي\" في فلسطين.</p>\n      \n      <p>وجاء وعد بلفور في رسالة كتبها وزير خارجية بريطانيا السابق آرثر بلفور إلى البارون روتشيلد، أحد زعماء الجالية اليهودية في بريطانيا، لإحالته إلى الاتحاد الصهيوني في بريطانيا العظمى وإيرلندا.</p>\n      \n      <p>دعم هذه الرسالة رئيس وزراء بريطانيا آنذاك ديفيد لويد جورج، الذي تبنى الفكر الصهيوني عام 1914.</p>\n      \n      <p>رأى الصهاينة هذا الوعد على أنه نصر حقيقي، فقد نصت الرسالة على أن البريطانيين \"سيبذلون قصارى جهدهم لتسهيل إنجاز هذا الهدف\".</p>\n      \n\n     ",
+      "content": "\n      \n      <p>1917'de yayınlanan Balfour Deklarasyonu İngilizlerin Filistin'de ulusal bir Yahudi anayurdunu desteklediğini ilan ediyordu. Deklarasyon dönemin İngiliz Dışişleri Bakanı Arthur James Balfour'un İngiliz Siyonist hareketinin önderi Baron Rothschild'e yazdığı bir mektuptu. 1914 yılında Siyonist olan dönemin İngiliz başbakanı David Lloyd George da mektubun arkasında durdu.</p>\n      \n      <p>Mektupta İngiltere'nin bu amacın gerçekleşmesi için elinden gelen çabayı göstereceği belirtiliyordu. Siyonistler için bu açık bir zaferdi.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": " خطة بريطانيا لمستقبل فلسطين عام 1915 ",
-        "vimeo": 110647266,
-        "yt": "D3c4Ep-xoPE"
+        "vimeo": 112612048,
+        "yt": "gOWBpuW6MT0"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "مؤلف أطلس فلسطين 48",
-        "label": "سلمان أبو ستة",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/al-nakba.html",
-        "quote": "أهم ما عمله الإنجليز أن سمحوا لهم بأن يكون لهم (للصهاينة) جيش منفصل، أنا أتكلم عن 1920",
-        "share": "شارك"
+        "context": "FİLİSTİN ATLASI'NIN YAZARI",
+        "label": "SELMAN EBU SİTTE",
+        "link": "http://interactive.aljazeera.com/ajt/PalestineRemix/al-nakba.html",
+        "quote": "İngilizlerin başarısı (Siyonistlere ettikleri yardım) Yahudilerin kendi ordularına sahip olmasına izin verdi. ",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>توافد الصهاينة إلى فلسطين بدعم من البريطانيين، وقوبلت هذه التحركات بمقاومة شديدة من قبل الفلسطينيين.</p>\n      \n      <p>اشترى اليهود عدداً من الأراضي الفلسطينية لبناء مستوطنات صهيونية عليها، ما أدى إلى تهجير عشرات آلاف الفلسطينيين من بيوتهم. وكل هذا تم بدعم كامل من البريطانيين.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Siyonistlerin Filistin'e İngiliz desteğiyle gerçekleşen akını Filistinlilerin sert direnciyle karşılaştı. Siyonist yerleşimler için Yahudilerin toprak satın almasıyla on binlerce Filistinli yerinden yurdundan edildi. Tüm süreç İngiliz desteğiyle yürütülüyordu.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "بدأت النكبة عشرات السنين قبل 1948",
-        "vimeo": 110647267,
-        "yt": "SM5pH5n2NqQ"
+        "vimeo": 112612064,
+        "yt": "o_tv4GTWtoU"
       },
       "type": "AJVideo"
     },
     {
-      "content": {
-        "label": "بداية المقاومة الفلسطينية المسلحة",
-        "vimeo": 110647269,
-        "yt": "Jk_i7AmYm-o"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": {
-        "label": " الإضراب العام لمدة ستة أشهر",
-        "vimeo": 110647263,
-        "yt": "TOJhGKxCKKI"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>وفي عام 1935، حاصر البريطانيون عز الدين القسام وقتلوه مع عدد آخر من رفاقه. تأثر الفلسطينيون بمقاومة القسام، وقامت عام 1936 ثورة عربية ضد الإمبريالية البريطانية والاستعمار الاستيطاني الصهيوني.</p>\n\n     ",
+      "content": "\n      \n      <p>Kudüs'teki Filistin yönetimi toprak sorunuyla ilgili görüşmeleri sürdürme konusunda ısrar ederken, 1922'ye kadar Hayfa'da yaşayan Suriyeli bir lider olan İzzettin El Kassam İngilizlere ve Siyonistlere karşı silahlı mücadele çağrısı yaptı.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "ثورة  1936",
-        "vimeo": 112387306,
-        "yt": "U7xLZmISRlQ"
+        "vimeo": 112612044,
+        "yt": "ZkZcwDyDywg"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "مؤرخ إسرائيلي – جامعة أكسفورد – بريطانيا",
-        "label": "آفي شليم",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/al-nakba.html",
-        "quote": "لم يخسر الفلسطينيون معركة فلسطين عام 1948، بل أواخر الثلاثينات لأن بريطانيا أجهزت تماما على الثورة الفلسطينية والقوى العربية غير النظامية",
-        "share": "شارك"
+        "vimeo": 112612046,
+        "yt": "GIce5Nw9FDo"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": "\n      \n      <p>1935'te El Kassam'ın çevresi İngiliz güçleri tarafından kuşatıldı ve Kassam birkaç adamıyla birlikte öldürüldü. Onun direnci pek çok Filistinliye öncü oldu. 1936'dan itibaren İngiliz emperyalizmi ve Siyonizm'e karşı bir Arap isyanı başladı.</p>\n\n     ",
+      "type": "Body-text"
+    },
+    {
+      "content": {
+        "vimeo": 112614711,
+        "yt": "wwenVapOpUY"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "İSRAİLLİ TARİHÇİ",
+        "label": "AVİ SHLAİM",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/al-nakba.html",
+        "quote": "Filistinliler için savaş 1948'de değil, 1930 sonlarında İngilizler Arap isyanını ve düzensiz Arap güçlerini alt edince kaybedilmişti. ",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>وفي عام 1935، حاصر البريطانيون عز الدين القسام وقتلوه مع عدد آخر من رفاقه. تأثر الفلسطينيون بمقاومة القسام، وقامت عام 1936 ثورة عربية ضد الإمبريالية البريطانية والاستعمار الاستيطاني الصهيوني.</p>\n      \n      <p>سحق البريطانيون الثورة العربية عام 1939، ووجد الفلسطينيون أنفسهم في مواجهة عدوين: قوات الاستعمار البريطاني والعصابات المسلحة الصهيونية التي تزايدت أعدادها لتصل إلى 40.000 شخص في ذلك الوقت.</p>\n      \n      <p>بالرغم من الدعم البريطاني للهجرة الجماعية لليهود إلى أرض فلسطين، إلا أن قوى الاستعمار البريطاني بدأت بتحديد أعداد المهاجرين اليهود القادمين إلى المنطقة.</p>\n      <p>جاءت هذه الخطوة في محاولة لاحتواء الغضب العربي بالرغم من إعلان بريطانيا أن فلسطين أصبحت جاهزة لتكون \"وطناً قوميّاً لليهود\".</p>\n      <p>امتعض الصهاينة من الخطوة البريطانية لتحديد هجرة اليهود إلى فلسطين، فشنوا سلسلة من الهجمات الإرهابية ضد البريطانيين أنفسهم، بهدف دفعهم إلى الخروج من المنطقة.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>1939 yılında İngilizler isyanı bastırdı. Filistinliler kendilerini iki düşmanla birden savaşırken buldular: Sömürgeci İngiliz güçler ve Siyonist milis güçleri.</p>\n      \n      <p>İngilizler başta Yahudilerin Filistin'e kitlesel göçünü desteklemiş olmasına rağmen, daha sonra Arap direncini yumuşatmak amacıyla ülkeye gelecek Yahudi sayısına sınırlama getirdiler.</p>\n      \n      <p>Bu sınırlama Siyonsitleri hayal kırıklığına uğrattı. İngilizleri ülkeden çıkarmak için İngiliz yetkililerine karşı bir dizi terörist saldırı başlattılar.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "الإرهاب الصهيوني ضد بريطانيا في فلسطين ",
-        "vimeo": 110647335,
-        "yt": "K8XYmTD5kto"
+        "vimeo": 112614713,
+        "yt": "EI9osAVJhK8"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "رئيس تحرير الموسوعة الفلسطينية",
-        "label": "أنيس صايغ",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/al-nakba.html",
-        "quote": "لا أتصور الصهيونية بدون عنف، سواء قبل قيام دولة إسرائيل أو بعد قيام دولة إسرائيل",
-        "share": "شارك"
+        "context": "FİLİSTİN ANSİKLOPEDİSİ EDİTÖRÜ",
+        "label": "ENİS SAYİG",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/al-nakba.html",
+        "quote": "İster İsrail devletinin kurulmasında önce isterse de sonrasında, Siyonizmi şiddetten ayrı düşünemiyorum. ",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>وفي الوقت الذي تابع الصهاينة فيه استخدام كل الوسائل الممكنة لتحقيق حلمهم بإقامة دولتهم على أرض فلسطين العربية، اتضح لهم أن المقاومة الفلسطينية كانت ضعيفة جدا&nbsp; في أرض المعركة.</p>\n\n     ",
+      "content": "\n      \n      <p>Siyonistler Arap Filistin topraklarında bir Yahudi devleti kurma hayallerini sürdürmeye devam ettiler. Öte yandan direnişçi Filistin güçlerinin yetersizliği ve silahsızlığı ortadaydı.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "الصهيونية والاستخبارات في الثلاثينات والأربعينات ",
-        "vimeo": 110647336,
-        "yt": "MW_R6JTfNtA"
+        "vimeo": 112614712,
+        "yt": "4XkkAnK7MG8"
       },
       "type": "AJVideo"
     },
     {
-      "content": "لم تأت الإستراتيجية الصهيونية لطرد الفلسطينيين من بيوتهم وأراضيهم في ليلة وضحاها، بل خطط لها مسبقاً.",
-      "type": "Body-text"
-    },
-    {
-      "content": "&nbsp;",
-      "type": "Body-text"
-    },
-    {
-      "content": "يؤكد المؤرخ الإسرائيلي إيلان بابيه أن زعماء الصهاينة وقادتهم العسكريين عقدوا اجتماعات دورية لمدة عام كامل، وبالتحديد من شهر آذار 1947 حتى آذار 1948 للتخطيط والاتفاق على كيفية القيام بعملية تطهير عرقي في فلسطين.",
+      "content": "\n      \n      <p>İngilizlere ve Araplara karşı Siyonist saldırılar arttıkça, İngilizler Filistin sorununu yeni kurulan Birleşmiş Milletler'e devretmeye karar verdi.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "مؤرخ إسرائيلي – جامعة اكستر - بريطانيا",
-        "label": "يلان بابيه",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/al-nakba.html",
-        "quote": "مجموعة صغيرة من قادة الصهاينة كانوا يلتقون بانتظام... على مدى عام... يخططون لتطهير فلسطين عرقيا. لم يتخذوا هذا القرار في يوم واحد",
-        "share": "شارك"
+        "context": "İSRAİLLİ TARİHÇİ",
+        "label": "ILAN PAPPE",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/al-nakba.html",
+        "quote": "Bir grup Siyonist lider ve ordu komutanları Filistinlilerin etnik temizliğini planlamak için bir yıl boyunca düzenli olarak görüştüler. Buna bir günde karar vermediler. ",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "التخطيط للتطهير العرقي لفلسطين",
-        "vimeo": 110647365,
-        "yt": "fpi0lgbJNuM"
+        "vimeo": 112828756,
+        "yt": "96dmIzaBqlA"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>ومع تصاعد الهجمات الإرهابية الصهيونية ضد العرب والبريطانيين، قرر البريطانيون تسليم مسؤولية ملف فلسطين للأمم المتحدة التي تشكلت حديثاً في ذلك الوقت.</p>\n      \n      <p>في تشرين الثاني عام 1947، اقترحت الجمعية العامة للأمم المتحدة خطة لتقسيم فلسطين إلى دولتين: يهودية وعربية.</p>\n      <p>شكل اليهود في فلسطين وقتها ثلث السكان، غالبيتهم قدموا من أوروبا خلال السنوات القليلة التي سبقت هذا التاريخ، وكانوا يسيطرون على مساحة تصل إلى أقل من 6% فقط من دولة فلسطين التاريخية.</p>\n      <p>إلا أن الخطة المقترحة من قبل الأمم المتحدة خصصت لهم 55% من مساحة دولة فلسطين التاريخية.</p>\n      <p>رفض الفلسطينيون وحلفاؤهم العرب الخطة المقترحة.</p>\n      \n      <p>من جهتها، وافقت الحركة الصهيونية على الخطة المقترحة، خاصة أنها أضفت صفة الشرعية على فكرة بناء دولة يهودية على أرض فلسطين العربية، إلا أنها لم توافق على الحدود المقترحة.</p>\n      <p>ولذلك، أطلق الصهاينة حملات مكثفة للاستيلاء على المزيد من أراضي فلسطين التاريخية.</p>\n      \n      <p>ومع بداية عام 1948، سيطر الصهاينة على عشرات المدن والقرى الفلسطينية وطردوا سكانها الفلسطينيين من بيوتهم بالقوة، كل ذلك تم تحت أعين سلطات الانتداب البريطاني الموجودة في المنطقة. وفي أغلب الحالات، ارتكب الصهاينة مجازر جماعية منظمة ضد الشعب الفلسطيني.</p>\n      \n      <p>كانت رسالة الصهاينة واضحة: إما أن يغادر الفلسطينيون أراضيهم، أو سنقتلهم.</p>\n\n     ",
+      "content": "\n      \n      <p>Kasım 1947'de, BM Genel Kurul'u Filistin'in bir Yahudi, bir de Arap devleti olarak ikiye bölünmesini öngören bir plan teklifinde bulundu. Filistin'de bir çoğu henüz birkaç yıl önce Avrupa'dan gelen Yahudiler, nüfusun üçte birini oluşturuyordu ve tarihi Filistin'in %5,5'inden bile azının kontrolünü ellerinde bulunduruyordu. Ancak BM'nin teklifine göre tarihi Filistin'in %55'ine sahip olacaklardı. Filistinliler ve Arap müttefikleri plana karşı çıktılar.</p>\n      \n      <p>Ancak Siyonist hareket Arap topraklarında bir Yahudi Devleti düşüncesini meşrulaştıracağı perspektifiyle planı kabul etti. Fakat onlar da teklif edilen sınırları kabul etmeyip tarihi Filistin'in daha büyük bir kısmını işgal etmek için mücadeleye devam ettiler. Filistin'de İngiliz mandasının etkili olduğu 1948 yılı başlarında Siyonist güçler onlarca köy ve şehri ele geçirmişti. Birçok defa organize soykırımlar gerçekleştirdiler. Siyonistlerin mesajı çok açıktı: Filistinliler ya topraklarını terk edeceklerdi ya da öleceklerdi.</p>\n      \n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "مؤرخ إسرائيلي وباحث في المذابح الصهيونية",
-        "label": "ثيودور كاتس",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/al-nakba.html",
-        "quote": "حدث مرات عديدة أن الجنود الإسرائيليين أخذوا عشرة من الشباب (الفلسطينيين) إلى وسط القرية، وأطلق النار عليهم، وقتلوهم، كي يرى جميع الناس ذلك فيهربوا",
-        "share": "شارك"
+        "context": "İSRAİLLİ TARİHÇİ",
+        "label": "THEODOR KATZ",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/al-nakba.html",
+        "quote": "Çoğu zaman İsrail askerleri diğerlerinin görüp kaçması için köyün on gencini köy meydanına çıkarıp vuruyordu. ",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "الصهاينة سيطروا على كل شيء",
-        "vimeo": 110647372,
-        "yt": "AMeTAGhmP6E"
+        "vimeo": 112828759,
+        "yt": "GlDhB8rajbU"
       },
       "type": "AJVideo"
     },
     {
-      "content": {
-        "label": "على الفلسطيني أن يرحل أو يموت",
-        "vimeo": 110647369,
-        "yt": "aBfpaZviK1A"
-      },
-      "type": "AJVideo"
-    },
-    {
-      "content": "\n      \n      <p>قرر البريطانيون إنهاء فترة انتدابهم لفلسطين يوم 14 أيار 1948.</p>\n      \n      <p>ومع اقتراب هذا التاريخ، كثف الصهاينة جهودهم للسيطرة على أكبر قدر ممكن من الأراضي الفلسطينية. ففي شهر نيسان عام 1948، سيطر الصهاينة على مدينة حيفا، إحدى أكبر المدن الفلسطينية، وكان هدفهم التالي مدينة يافا.</p>\n      \n      <p>وفي اليوم نفسه الذي انسحبت فيه قوات الانتداب البريطاني رسميّاً من فلسطين، أعلن ديفيد بن غوريون، رئيس الوكالة الصهيونية، إقامة دولة إسرائيل.</p>\n\n     ",
+      "content": "\n      \n      <p>14 Mayıs 1948'de İngiliz mandası sona erecekti. Bu tarih yaklaştıkça, Siyonist güçler Filistin topraklarını ele geçirme çabalarına hız verdiler. Nisan 1948'te Siyonistler en büyük Filistin şehirlerinden biri olan Hayfa'yı ele geçirdi. Daha sonra gözlerini Yafa'ya çevirdiler. İngiliz güçlerinin ülkeden resmen ayrıldığı gün Siyonistlerin o dönemki lideri David Ben Gurion İsrail Devleti'nin kuruluşunu ilan etti.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "إعلان دولة إسرائيل في 1948",
-        "vimeo": 110647366,
-        "yt": "-3ORNA5QXc0"
+        "vimeo": 112828752,
+        "yt": "k9cKnvp50Ak"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "context": "مواليد ترشيحة – قضاء عكا",
-        "label": "سامي كمال عبد الرازق",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/al-nakba.html",
-        "quote": "لو الدول العربية ما تعمل حجر علينا، بندخل، بنعمل قلاقل، ما بنخلي إسرائيل تتأمن",
-        "share": "شارك"
+        "vimeo": 112828800,
+        "yt": "jHfKXkbR8eQ"
+      },
+      "type": "AJVideo"
+    },
+    {
+      "content": {
+        "context": "FİLİSTİNLİ MÜLTECİ",
+        "label": "SAMİ ABDURREZZAK ",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/al-nakba.html",
+        "quote": "Arap ülkeleri bize izin verselerdi, Filistin'e giderdik. Protestolar düzenler ve İsrail'in topraklarımızda bu kadar rahat davranmasına izin vermezdik. ",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
-      "content": "\n      \n      <p>وفي ليلة وضحاها، أصبح الفلسطينيون بلا دولة.</p>\n      \n      <p>وخلال دقائق قليلة، اعترفت أكبر قوتين من قوى العالم؛ الولايات المتحدة الأميركية والاتحاد السوفييتي، بإسرائيل.</p>\n      <p>وبينما واصل الصهاينة حملات التطهير العرقي ضد الفلسطينيين، نشبت حرب بين بعض الدول العربية المجاورة والدولة الصهيونية الحديثة.</p>\n      \n      <p>عينت الأمم المتحدة الدبلوماسي السويدي فولك برنادوت وسيطاً لها في فلسطين. اعترف برنادوت بمأساة الشعب الفلسطيني وحاول إيجاد حل لإنهاء معاناتهم التي تسبب بها الصهاينة.</p>\n      \n      <p>انتهت جهوده الحثيثة للتوصل إلى حل سلمي لإيقاف حملات التطهير العرقي الصهيونية المستمرة ضد الفلسطينيين، عندما اغتاله الصهاينة في أيلول عام 1948.</p>\n\n     ",
+      "content": "\n      \n      <p>Filistinliler bir gecede devletsiz kaldı. Dünyanın iki büyük gücü ABD ve Rusya İsrail Devleti'ni dakikalar içinde tanıdı.</p>\n      \n      <p>Siyonistler, Filistinliler üzerindeki etnik temizlik kampanyalarına devam edince, komşu Arap ülkeler ve Yahudi devleti arasında bir savaş patlak verdi. BM İsveçli diplomat Folke Bernadotte'yi Filistin arabulucusu olarak tayin etti. Bernadotte Filistinlilerin çektiği acıların farkına vardı ve bu noktaya dikkat çekti. Ancak İsveçli diplomatın devam eden etnik temizliği sona erdirme ve barışçı bir çözüm getirme çabaları Eylül 1948'te Siyonistler tarafından bir suikast sonucu öldürülmesiyle sona erdi.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "اغتيال وسيط الأمم المتحدة ",
-        "vimeo": 110647487,
-        "yt": "QzmeAbYHbFQ"
+        "vimeo": 112828708,
+        "yt": "91w4njWcPiU"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>ومع حلول عام 1949، تحول أكثر من 750.000 مواطنا فلسطينيا إلى لاجئ، بينما قتل أكثر من 13.000 آخرين على أيدي القوات الإسرائيلية.</p>\n      \n      <p>تابعت الأمم المتحدة جهودها للتوصل إلى اتفاق هدنة بين إسرائيل والدول العربية المجاورة. وبعد اغتيال برنادوت، تم تعيين نائبه، الوسيط الأمريكي رالف بنش.</p>\n      \n      <p>ترأس بنش المفاوضات بين إسرائيل والدول العربية، والنتيجة كانت تنازل الدول العربية عن المزيد من الأراضي الفلسطينية للدولة الصهيونية الحديثة. وبعد يوم واحد من توقيع اتفاق الهدنة الأردني الإسرائيلي في أيار 1949، انضمت إسرائيل للأمم المتحدة كدولة عضو، وعززت سيطرتها على أكثر من 78% من أراضي فلسطين التاريخية، وتمت تسمية الـ22% المتبقية منها \"الضفة الغربية وقطاع غزة\".</p>\n      \n\n     ",
+      "content": "\n      \n      <p>1949 yılına kadar 700 binin üzerinde Filistinli mülteci durumuna düştü ve 13 binden fazla Filistinli İsrail ordusu tarafından öldürüldü. BM savaşan İsrail ve Arap ülkeleri arasında bir ateşkes anlaşması sağlama çalışmalarına devam etti.</p>\n      \n      <p>Bernadotte'nin yerine Amerikalı yardımcısı Ralphe Bunche atandı. Bunche Arap ülkeleri ve İsrail arasındaki görüşmelere liderlik etti. Görüşmeler Arap ülkelerinin yeni kurulan Siyonist devlete daha fazla Filistin toprağı vermesiyle sonuçlandı. İsrail Mayıs 1949'da BM'ye kabul edildi ve tarihî Filistin topraklarının %78'i üzerindeki hakimiyeti tescillenmiş oldu. Kalan %22'si ise hala işgal altındaki Gazze Şeridi ve Batı Şeria olarak şekillendi.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "context": "مواليد ترشيحة – قضاء عكا",
-        "label": "منيب صبحية",
-        "link": "http://interactive.aljazeera.com/aja/PalestineRemix/al-nakba.html",
-        "quote": "بدون وطن، بظل الإنسان منتقص، كرامته بتظل منتقصة",
-        "share": "شارك"
+        "context": "FİLİSTİNLİ MÜLTECİ",
+        "label": "MUNİB SUBHİYYE",
+        "link": "http://interactive.aljazeera.com/ajT/PalestineRemix/al-nakba.html",
+        "quote": "Anayurt olmadan, her zaman bir şeyler eksik kalır. Hiçbir zaman saygınlığımız olmayacak.",
+        "share": "PAYLAŞ"
       },
       "type": "AJQuote"
     },
     {
       "content": {
-        "label": "نتاج نكبة عام 1948",
-        "vimeo": 110647485,
-        "yt": "hPYsZgU-JRg"
+        "vimeo": 112828653,
+        "yt": "XacdA3F-OsA"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "label": "أوضاع اللاجئين الفلسطينيين اليوم",
-        "vimeo": 110647497,
-        "yt": "TCCDiRX4lm4"
+        "vimeo": 112828649,
+        "yt": "sG3Jl6kOg0s"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>وفي غضون ذلك، ظل مئات آلاف اللاجئين الفلسطينيين الذين تم حشرهم في مخيمات للاجئين، بانتظار العودة إلى بيوتهم.</p>\n      \n      <p>خطط الصهاينة لتطهير أرض فلسطين من سكانها، وبذلوا قصارى جهدهم لمسح التراث والثقافة الفلسطينية من الوجود.</p>\n      \n      <p>كان الهدف الأساسي للأجندة الصهيونية هو: مسح فلسطين من خارطة العالم.</p>\n      \n\n     ",
+      "content": "\n      \n      <p>Halihazırda yüz binlerce Filistinli mülteci, mülteci kamplarında eve dönmeyi bekliyor.</p>\n      \n      <p>Siyonist anlayış Filistinlileri kendi topraklarından temizlemeyi amaçladı. Aynı zamanda Filistin kültür ve mirasını da silmeye çalıştı. Genel amaç Filistinlileri dünya haritasından tamamen silmekten başka bir şey değildi.</p>\n\n     ",
       "type": "Body-text"
     },
     {
       "content": {
-        "label": "الإنكار الصهيوني لحق الفلسطينيين في الوطن ",
-        "vimeo": 110647481,
-        "yt": "0ltbYtBl9DE"
+        "vimeo": 112828646,
+        "yt": "ySsVqa0-h5g"
       },
       "type": "AJVideo"
     },
     {
       "content": {
-        "label": "النكبة المستمرة- شكل جديد للفكرة ذاتها",
-        "vimeo": 110647486,
-        "yt": "fgHdeepQqjo"
+        "vimeo": 112828648,
+        "yt": "4sx5oXO-IWE"
       },
       "type": "AJVideo"
     },
     {
-      "content": "\n      \n      <p>لم تنته النكبة الفلسطينية عام 1948، ولا تزال عمليات التطهير العرقي في فلسطين التاريخية مستمرة حتى يومنا هذا، وبالمقابل، لا تزال المقاومة الفلسطينية مستمرة كذلك.</p>\n\n     ",
+      "content": "\n      \n      <p>Nekbet 1948'de sona ermedi. Filistin'in etnik temizliği hala devam ediyor. Tabii ki buna bağlı olarak Filistin direnişi de devam ediyor.</p>\n\n     ",
       "type": "Body-text"
     }
   ],
-  "director": "روان الضامن",
-  "directorLabel": "إخراج",
-  "headline": "النكـبة"
+  "director": "RAWAN DAMEN",
+  "directorLabel": "YÖNETMEN",
+  "headline": "FİLİSTİN REMİKS"
 }
