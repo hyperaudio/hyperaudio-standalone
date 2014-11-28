@@ -785,10 +785,13 @@ var AJHAWrapper = {
         // use the event to find out on which element to add the listener
 
         // put the element we're listening to here.
-        var searchElement; // = e.something???;
+        var searchElements = e.source.getElementsByTagName('a');
+        var searchElementsLength = searchElements.length;
 
-        searchElement.removeEventListener('click', generatePadMenuClickEvent, false);
-        searchElement.addEventListener('click', generatePadMenuClickEvent, false);
+        for (var s = 0; s < searchElementsLength; s++) {
+          searchElements[s].removeEventListener('click', generatePadMenuClickEvent, false);
+          searchElements[s].addEventListener('click', generatePadMenuClickEvent, false);
+        }
 
       }, false);
 
