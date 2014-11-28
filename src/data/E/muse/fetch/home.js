@@ -17,7 +17,7 @@ var process = function (key) {
             
             var elements = data.content;
             var content = [];
-            var labels = ["A","B","C","D","E","F","G","H"];
+            var labels = ["A","B","C","D","E","F","G","H","K","L","Z"];
             var l = 0
             var group = {
                 type: labels[l]
@@ -26,7 +26,9 @@ var process = function (key) {
             l++;
             for (var i = 0; i < elements.length; i++) {
                 // console.log()
-                if (elements[i].type == "HeadlineNumber") {
+                if ((elements[i].type == "HeadlineNumber" && i < 7)
+                    ||(elements[i].type == "Headline" && i >= 7))
+                {
                     group = {
                         type: labels[l]
                     };

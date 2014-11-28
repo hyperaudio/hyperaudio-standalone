@@ -7,42 +7,53 @@
     },
     {
       "type": "B",
-      "HeadlineNumber": "17",
+      "HeadlineNumber": "250",
       "Headline": "FILMS",
       "Subheader": "DOCUMENTARIES IN FOUR DIFFERENT LANGUAGES ABOUT PALESTINE",
       "Body-text": "<p>This is the story of Palestine like you've never seen it before. Our filmmakers take you on a journey through the Palestinian cities past and present, inside Israeli prisons and behind the scenes of the resistance movements challenging the occupation today.</p>"
     },
     {
       "type": "C",
-      "HeadlineNumber": "250",
       "Headline": "PEOPLE",
       "Subheader": "UNIQUE PERSPECTIVES ON PALESTINE",
-      "Body-text": "<p>Meet the array of eyewitnesses, activists, academics and power brokers shaping the reality of Palestine today.</p>"
+      "Body-text": "<p>Meet the array of eyewitnesses, activists, academics and power brokers shaping the reality of Palestine today.</p>",
+      "HeadlineNumber": "580"
     },
     {
       "type": "D",
-      "HeadlineNumber": "580",
       "Headline": "PLACES",
       "Subheader": "PALESTINE WAS ERASED FROM THE WORLD MAP. HERE IT IS REVIVED",
-      "Body-text": "<p>Qisarya. Dayr Yassin. Tantura. These villages were destroyed by Zionists during the creation of Israeli state. Our interactive maps show you how thousands of Palestinian villages vanished and how the residents were dispossessed of their land. We have drone footage that shows you what Palestine's most iconic cities and landmarks look like today.</p>"
+      "Body-text": "<p>Qisarya. Dayr Yassin. Tantura. These villages were destroyed by Zionists during the creation of Israeli state. Our interactive maps show you how thousands of Palestinian villages vanished and how the residents were dispossessed of their land. We have drone footage that shows you what Palestine's most iconic cities and landmarks look like today.</p>",
+      "HeadlineNumber": "215"
     },
     {
       "type": "E",
-      "HeadlineNumber": "215",
       "Headline": "YEARS",
       "Subheader": "A CHRONOLOGY OF MILESTONES IN PALESTINIAN HISTORY",
-      "Body-text": "<p>The Palestinians' plight today can only be understood through the lens of the past. Our timeline spans more than two centuries to explain the dramatic chain of events that led to Palestine's transformation into a Jewish state. Explore pivotal years in depth through our films.</p>"
+      "Body-text": "<p>The Palestinians' plight today can only be understood through the lens of the past. Our timeline spans more than two centuries to explain the dramatic chain of events that led to Palestine's transformation into a Jewish state. Explore pivotal years in depth through our films.</p>",
+      "HeadlineNumber": "15"
     },
     {
       "type": "F",
-      "HeadlineNumber": "15",
       "Headline": "DEFINITIONS",
       "Subheader": "A GUIDE TO TERMS AND THEMES USED IN OUR FILMS",
-      "Body-text": "<p>Occupation. Zionism. Green Line. These terms are used again and again in Palestinian stories. This glossary helps explain their history and meaning.</p>"
+      "Body-text": "<p>Occupation. Zionism. Green Line. These terms are used again and again in Palestinian stories. This glossary helps explain their history and meaning.</p>",
+      "HeadlineNumber": "3"
     },
     {
       "type": "G",
-      "HeadlineNumber": "3",
+      "Headline": "QUIZZES",
+      "Subheader": "HOW MUCH DO YOU KNOW ABOUT PALESTINE?",
+      "Body-text": "<p>Test your knowledge of the story of Palestine. We have quizzes at all levels. Measure your knowledge!</p>"
+    },
+    {
+      "type": "H",
+      "Headline": "SEARCH",
+      "Subheader": "SEARCH OUR FILM SCRIPTS FOR ANYTHING",
+      "Body-text": "<p>Yasser Arafat. Israel. 1917. Olive tree. Search all <span id=\"u4599-2\">PALESTINE </span><span id=\"u4599-3\">RE</span><span id=\"u4599-4\">MIX </span>films for anything: a name, number or word. The results pull clips that match your search term from all of our films and put them in one place for you to view. Discover our content more easily.</p>"
+    },
+    {
+      "type": "K",
       "Headline": "REMIX",
       "Subheader": "LEARN HOW TO USE OUR REMIX TOOL",
       "Body-text": "<p>Use our Remix tool to select your favourite scenes and weave them together into something new. The possibilities are endless. Create your own short film and within minutes you can share your story with others.</p>\n     \n     <p>Al Jazeera will select its favourite remixes and feature them on <a class=\"nonblock\" href=\"http://www.facebook.com/PalestineRemix\">Facebook</a>.</p>"
