@@ -10,9 +10,6 @@ var AJHAWrapper = {
 
     var status = 0; // all OK
 
-
-
-
     var v = document.createElement('video');
     var canPlayMP4 = !!v.canPlayType && v.canPlayType('video/mp4') != "";
 
@@ -774,6 +771,24 @@ var AJHAWrapper = {
             document.dispatchEvent(ev);
           }
         };
+      }, false);
+
+      function generatePadMenuClickEvent() {
+        var ev = document.createEvent('Event');
+        ev.initEvent('padmenuclick', true, true);
+        document.dispatchEvent(ev);        
+      }
+
+      // detect clicks on the search results
+      document.addEventListener('searchresult', function(e) {
+        // use the event to find out on which element to add the listener
+
+        // put the element we're listening to here.
+        var searchElement; // = e.something???;
+
+        searchElement.removeEventListener('click', generatePadMenuClickEvent, false);
+        searchElement.addEventListener('click', generatePadMenuClickEvent, false);
+
       }, false);
 
       document.addEventListener('mixchange', function () {
