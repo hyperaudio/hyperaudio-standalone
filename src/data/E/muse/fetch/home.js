@@ -14,7 +14,30 @@ var process = function (key) {
 	      console.log("opened page? " + site + key + ".html " , status);
 	      page.evaluate(extract, function (data) {
             // console.log(JSON.stringify(data));
-            jf.writeFileSync("../" + key + ".json", data);
+            
+            var elements = data.content;
+            var content = [];
+            var labels = ["A","B","C","D","E","F","G","H"];
+            var l = 0
+            var group = {
+                type: labels[l]
+            };
+            content.push(group);
+            l++;
+            for (var i = 0; i < elements.length; i++) {
+                // console.log()
+                if (elements[i].type == "HeadlineNumber") {
+                    group = {
+                        type: labels[l]
+                    };
+                    content.push(group);
+                    l++;
+                }
+                group[elements[i].type] = elements[i].content;
+            }
+            
+            var data2 = {content: content};
+            jf.writeFileSync("../" + key + ".json", data2);
 	        ph.exit();
 	      });
 	    });
