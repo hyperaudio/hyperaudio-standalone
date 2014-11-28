@@ -117,10 +117,6 @@ $menu-back-offset : $tap-size;
     @include transform(translate3d(($side-width - $menu-back-offset) * -1, 0, 0));
     opacity: 0;
   }
-  &.moved--left,
-  &.moved--right {
-    visibility:hidden;
-  }
 }
 
 .menu-reset {
@@ -143,6 +139,10 @@ $menu-back-offset : $tap-size;
   @include transition(transform $time);
   z-index: 10;
   width: $side-width - $menu-back-offset;
+  &.moved--left,
+  &.moved--right {
+    visibility:hidden;
+  }
 }
 
 /* ********** DIRECTION DECLARATIONS ********** */

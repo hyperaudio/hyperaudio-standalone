@@ -1,14 +1,14 @@
 renderSides         = () ->
 
-  leftSide = document.getElementById "page-side--left"
+  leftSide          = document.getElementById "page-side--left"
   windowWidth       = window.innerWidth
-  if windowWidth < 1024
+  if windowWidth > 1024
     leftSide.setAttribute "data-side-state", "active"
     leftSide.setAttribute "data-side-state-persist", "true"
-  else
-    leftSide.setAttribute "data-side-state", "inactive"
-    leftSide.setAttribute "data-side-state-persist", ""
     leftSide.classList.add "page-side--persistent"
+  else
+    leftSide.setAttribute "data-side-state-persist", ""
+    leftSide.classList.remove "page-side--persistent"
 
   page              = document.body
   sides             = document.querySelectorAll ".page-side"
@@ -56,7 +56,8 @@ alterSideState    = (targetSideId) ->
   else
     targetSide      = document.getElementById "page-side--" + targetSideId
     targetSideState = targetSide.getAttribute "data-side-state"
-    unless targetSide.getAttribute "data-side-state-persist" is "true"
+    persistAttr     = targetSide.getAttribute "data-side-state-persist"
+    unless persistAttr is "true"
       if targetSideState is "active"
         targetSide.setAttribute "data-side-state", "inactive"
       else
