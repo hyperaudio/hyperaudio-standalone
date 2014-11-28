@@ -2,7 +2,7 @@
 var phantom = require('phantom');
 var jf = require('jsonfile');
 
-var site = "http://10.24.21.20/~laurian/PALESTINE%20PROJECT/TEST_EXPORT-BO/";
+var site = "http://interactive.aljazeera.com/ajb/PalestineRemix/";
 var pages = [
 	"index"
 ];
@@ -14,7 +14,32 @@ var process = function (key) {
 	      console.log("opened page? " + site + key + ".html " , status);
 	      page.evaluate(extract, function (data) {
             // console.log(JSON.stringify(data));
-            jf.writeFileSync("../" + key + ".json", data);
+            
+            var elements = data.content;
+            var content = [];
+            var labels = ["A","B","C","D","E","F","G","H","K","L","Z"];
+            var l = 0
+            var group = {
+                type: labels[l]
+            };
+            content.push(group);
+            l++;
+            for (var i = 0; i < elements.length; i++) {
+                // console.log()
+                if ((elements[i].type == "HeadlineNumber" && i < 7)
+                    ||(elements[i].type == "Headline" && i >= 7))
+                {
+                    group = {
+                        type: labels[l]
+                    };
+                    content.push(group);
+                    l++;
+                }
+                group[elements[i].type] = elements[i].content;
+            }
+            
+            var data2 = {content: content};
+            jf.writeFileSync("../" + key + ".json", data2);
 	        ph.exit();
 	      });
 	    });
@@ -53,7 +78,8 @@ var extract = function () {
 	$('.Body-text').each(function(i, e){
 		var $e = $(e);
 		$e.data('type', 'Body-text');
-		$e.data('content', $e.html().replace(/<!--(.*?)-->/gm, '').replace(/<p>&nbsp;<\/p>/g, '').trim());
+        // $e.data('content', $e.html().replace(/<!--(.*?)-->/gm, '').replace(/<p>&nbsp;<\/p>/g, '').trim());
+		$e.data('content', $e.text().trim());
 	});
 
 	var elements = $('.Small-subheader, .Body-text, .Headline');
