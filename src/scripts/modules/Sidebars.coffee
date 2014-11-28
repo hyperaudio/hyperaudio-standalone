@@ -12,10 +12,10 @@ renderSides         = () ->
     if windowWidth > 1024
       leftSide.setAttribute "data-side-state", "active"
       leftSide.setAttribute "data-side-state-persist", "true"
-      leftSide.classList.add "page-side--persistent"
+      addClass leftSide, "page-side--persistent"
     else
       leftSide.setAttribute "data-side-state-persist", ""
-      leftSide.classList.remove "page-side--persistent"
+      removeClass leftSide, "page-side--persistent"
 
   # Populate states array with states of all sides
   # Toggle visibility classes on panels according to the data attributes
@@ -26,17 +26,17 @@ renderSides         = () ->
     unless persistAttr is "true"
       states.push(sideState)
       if sideState is "active"
-        body.classList.add "moved--" + sideDirection
-        head.classList.add "moved--" + sideDirection
-        side.classList.remove "moved"
+        addClass body, "moved--" + sideDirection
+        addClass head, "moved--" + sideDirection
+        removeClass side, "moved"
         if sideDirection is "left"
           toggleOverlay "cover-left"
         else
           toggleOverlay "cover-right"
       else
-        body.classList.remove "moved--" + sideDirection
-        head.classList.remove "moved--" + sideDirection
-        side.classList.add "moved"
+        removeClass body, "moved--" + sideDirection
+        removeClass head, "moved--" + sideDirection
+        addClass side, "moved"
 
   # See if there are any panels open and, if so, toggle overlay and clip body
   if states.indexOf("active") is -1

@@ -2,7 +2,7 @@ onMultipleSelect = (el, cat, key) ->
   elParent    = el.parentNode
   elSiblings  = elParent.getElementsByClassName "multiple__item"
   [].forEach.call elSiblings, (aSibling) ->
-    aSibling.classList.remove "multiple__item--selected"
+    removeClass aSibling, "multiple__item--selected"
   toggleClass el, "multiple__item--selected"
 
   console.log "category: " + cat + " key: " + key
@@ -27,7 +27,7 @@ renderMultiples = () ->
     widths      = calcDim items
 
     if centered is "true" and widths > width
-      multiple.classList.add "multiple--centered"
+      addClass multiple, "multiple--centered"
       if slideDef is null
         items     = multiple.querySelectorAll ".multiple__item"
         initSlide = Math.round(items.length / 2) - 1

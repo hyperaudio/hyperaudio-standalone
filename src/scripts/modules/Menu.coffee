@@ -12,17 +12,17 @@ renderMenu = () ->
       menuPanes = document.querySelectorAll ".menu__pane"
       i = 0
       while i < menuPanes.length
-        menuPanes[i].classList.add "moved--right"
+        addClass menuPanes[i], "moved--right"
         ++i
-      rootPane.classList.remove "moved--right"
-      rootPane.classList.remove "moved--left"
-      menuReset.classList.add "moved"
+      removeClass rootPane, "moved--right"
+      removeClass rootPane, "moved--left"
+      addClass menuReset, "moved"
 
     else
-      rootPane.classList.add "moved--left"
+      addClass rootPane, "moved--left"
       activePaneEl      = document.getElementById "menu__pane--" + activePaneId
-      activePaneEl.classList.remove "moved--right"
-      menuReset.classList.remove "moved"
+      removeClass activePaneEl, "moved--right"
+      removeClass menuReset, "moved"
 
 onMenuPaneToggle = (el) ->
   targetPaneId  = el.getAttribute "data-target-menu-pane-id"

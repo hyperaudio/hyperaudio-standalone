@@ -3,6 +3,6 @@ renderPage = () ->
   pageState = page.getAttribute "data-page-state"
 
   if pageState is "clipped"
-    page.classList.add "clipped"
+    addClass page, "clipped"
   else
-    page.classList.remove "clipped"
+    removeClass page, "clipped"

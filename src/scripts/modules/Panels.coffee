@@ -9,9 +9,9 @@ renderPanels        = () ->
     panelState      = panel.getAttribute "data-panel-state"
     states.push(panelState)
     if panelState is "active"
-      panel.classList.add "panel--active"
+      addClass panel, "panel--active"
     else
-      panel.classList.remove "panel--active"
+      removeClass panel, "panel--active"
 
   # See if there are any panels open and, if so, toggle overlay and clip body
   if states.indexOf("active") is -1

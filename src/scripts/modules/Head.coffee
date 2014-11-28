@@ -1,12 +1,11 @@
-
 renderHead = () ->
   pageHead      = document.getElementById "page-head"
   unless pageHead is null
     pageHeadState = pageHead.getAttribute "data-head-state"
     if pageHeadState is "altered"
-      pageHead.classList.add "page-head--altered"
+      addClass(pageHead, "page-head--altered")
     else
-      pageHead.classList.remove "page-head--altered"
+      removeClass(pageHead, "page-head--altered")
 
 toggleHead = ->
   pageHead        = document.getElementById "page-head"
