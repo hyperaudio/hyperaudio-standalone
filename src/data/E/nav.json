@@ -87,9 +87,22 @@
 ],
 
 "glossary": [
-  { 
-    "label": "Zionism",
-    "file": "zionism"
-  }
+
+{"file": "admin_detention", "label": "Admin Detention"},
+{"file": "borders", "label": "Borders"},
+{"file": "bypass_road", "label": "Bypass Road"},
+{"file": "closure", "label": "Closure"},
+{"file": "collective_punishment", "label": "Collective Punishment"},
+{"file": "ethnic_cleansing", "label": "Ethnic Cleansing"},
+{"file": "green_line", "label": "Green Line"},
+{"file": "intifada", "label": "Intifada"},
+{"file": "occupied_territories", "label": "Occupied Territories"},
+{"file": "palestinian_authority", "label": "Palestinian Authority"},
+{"file": "plo", "label": "PLO"},
+{"file": "refugee", "label": "Refugee"},
+{"file": "settlement", "label": "Settlement"},
+{"file": "wall", "label": "Wall"},
+{"file": "zionism", "label": "Zionism"}
+
 ]
 }
