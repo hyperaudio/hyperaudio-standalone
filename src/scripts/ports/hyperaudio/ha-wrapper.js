@@ -28,6 +28,25 @@ var AJHAWrapper = {
       }
     }
 
+    function CreateMSXMLDocumentObject () {
+      if (typeof (ActiveXObject) != "undefined") {
+        var progIDs = [
+                        "Msxml2.DOMDocument.6.0", 
+                        "Msxml2.DOMDocument.5.0", 
+                        "Msxml2.DOMDocument.4.0", 
+                        "Msxml2.DOMDocument.3.0", 
+                        "MSXML2.DOMDocument", 
+                        "MSXML.DOMDocument"
+                      ];
+        for (var i = 0; i < progIDs.length; i++) {
+          try { 
+              return new ActiveXObject(progIDs[i]); 
+          } catch(e) {};
+        }
+      }
+      return null;
+    }
+
     function isFullScreen() {
       return !!(document.fullscreenElement || document.mozFullScreenElement || document.webkitFullscreenElement || document.webkitCurrentFullScreenElement || document.msFullscreenElement || false);
     }
@@ -106,7 +125,14 @@ var AJHAWrapper = {
       req.onload = function() {
         var html = this.responseText;
         var parser = new DOMParser();
-        var transcript = parser.parseFromString(html, "text/xml");
+        var transcript;
+
+        try {
+          transcript = parser.parseFromString(html, "text/xml");
+        } catch(e) {
+          xmlDoc = CreateMSXMLDocumentObject ();
+          xmlDoc.loadXML(html);
+        }
 
         var firstWordInTrans;
         var lastWordInTrans;

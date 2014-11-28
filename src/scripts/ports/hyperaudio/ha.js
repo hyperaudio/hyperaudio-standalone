@@ -322,12 +322,12 @@ var hyperaudio = (function() {
       detail.type = detail.type ? detail.type : 'no type';
       detail.action = detail.action ? detail.action : 'no action';
 
-      var event = new CustomEvent("ga", {
+      /*var event = new CustomEvent("ga", {
         detail: detail,
         bubbles: true,
         cancelable: true
       });
-      document.dispatchEvent(event);
+      document.dispatchEvent(event);*/
     },
 
     hasClass: function(e, c) {
