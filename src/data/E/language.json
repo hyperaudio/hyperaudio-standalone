@@ -5,6 +5,7 @@
 	"header__current-lang": "EN",
 	"header__menu": "Menu",
 	"header__share": "Share",
+	"header__sitename": "Palestine Remix",
 
 	"panel-lang__change-lang": "Change language",
 	"panel-lang__cancel": "Cancel",
@@ -62,6 +63,9 @@
 	"pad__saving": "Saving…",
 
 	"quote__share": "Share Quote",
-	"video__share": "Share Clip"
+	"video__share": "Share Clip",
+
+	"home-slide-people": "Meet key witnesses",
+	"home-slide-events": "Explore events"
 
 }
