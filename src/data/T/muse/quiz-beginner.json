@@ -4,8 +4,8 @@
       "content": {
         "path": "../../",
         "cover": "quiz-beginner.jpg",
-    		"quizTitle": "Beginner Quiz",
-    		"quizSubtitle": "Check your Knowledge bla bla bla",
+    		"quizTitle": "Level 1",
+    		"quizSubtitle": "Filistin konusunu yeni mi keşfediyorsunuz? Başlangıç seviyesindeki testimiz tam size göre.",
     		"quizID": "0ApwzQmkWl4rTdGlweFd1Qk81LVlsWF9kcVJYM1hPSGc"
       },
       "type": "Quiz"
