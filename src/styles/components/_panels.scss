@@ -11,7 +11,9 @@
   box-shadow: 0 -1px 5px $shadow-weak;
   background-color: rgba(255,255,255,0.95);
   z-index: 500;
+  visibility: hidden;
   &.panel--active {
+    visibility: visible;
     @include transform(translate3d(0,0,0));
   }
   .tpl--responsive & {

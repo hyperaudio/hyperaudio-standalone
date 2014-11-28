@@ -18,7 +18,7 @@
 }
 .HAP-sidebar .HA-menu-item--selected {
   &:after {
-    @include set-size(8px, 8px);
+    @include set-size(8px, 7px);
     border-radius: $radius-absolute;
     box-shadow: 0 0 2px 2px $flare-light;
     background: $flare-strong;
