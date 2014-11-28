@@ -123,7 +123,7 @@ var AJHAWrapper = {
             var endPart = html.substring(endPos, html.length);
             var endPosRemainder = endPart.indexOf("</a>");
 
-            var element2 = '<p dir="auto"><a '+html.substring(startPos,endPos+endPosRemainder)+' </a></p>';
+            var element2 = '<p dir="auto"><a '+html.substring(startPos,endPos+endPosRemainder)+' </a></p><div class="actions"></div>';
 
             var section = output.childNodes[index-1];
             section.innerHTML += element2;
@@ -149,6 +149,7 @@ var AJHAWrapper = {
             section.setAttributeNode(attribute);
             //section.classList.add('HAP-transcript__item');
             HA.addClass(section,'HAP-transcript__item');
+
           } else {
             console.log('WARNING: Could not locate data-m="'+stime+'" and/or data-m="'+etime+'" within transcript '+tid);
           }
