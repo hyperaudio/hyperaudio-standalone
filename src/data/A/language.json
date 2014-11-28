@@ -5,6 +5,7 @@
 	"header__current-lang": "AR",
 	"header__menu": "القائمة",
 	"header__share": "شارك",
+	"header__sitename": "Palestine Remix",
 
 	"panel-lang__change-lang": "اختر اللغة",
 	"panel-lang__cancel": "الغاء",
@@ -62,6 +63,10 @@
 	"pad__saving": "حفظ",
 
 	"quote__share": "Share Quote",
-	"video__share": "Share Clip"
+	"video__share": "Share Clip",
+
+	"home-slide-people": "Meet key witnesses",
+	"home-slide-events": "Explore events"
 
 }
+

@@ -97,11 +97,12 @@ var contentTemplates = {
   G: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-G.html').toString()),
   H: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-H.html').toString()),
   K: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-K.html').toString()),
+  L: function (text) {return '';},
 };
 
 Handlebars.registerHelper('CONTENT', function() {
   // var items = this.longforms[this.key].content;
-  // console.log("KKKKEEEYYYY", this.key);
+  console.log("KKKKEEEYYYY", this.key);
   var longform = require('./src/data/' + L + '/muse/' + this.key + '.json');
   if (typeof longform.content == 'undefined') return '';
   var items = longform.content;
