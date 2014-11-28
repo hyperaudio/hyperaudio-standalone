@@ -78,7 +78,8 @@ var extract = function () {
 	$('.Body-text').each(function(i, e){
 		var $e = $(e);
 		$e.data('type', 'Body-text');
-		$e.data('content', $e.html().replace(/<!--(.*?)-->/gm, '').replace(/<p>&nbsp;<\/p>/g, '').trim());
+        // $e.data('content', $e.html().replace(/<!--(.*?)-->/gm, '').replace(/<p>&nbsp;<\/p>/g, '').trim());
+		$e.data('content', $e.text().trim());
 	});
 
 	var elements = $('.Small-subheader, .Body-text, .Headline');
