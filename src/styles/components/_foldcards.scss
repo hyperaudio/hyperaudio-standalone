@@ -34,7 +34,7 @@
   &:before {
     @include position-top-left(0,0);
     @include position-bottom-right(0,0);
-    background: $shadow-medium;
+    background: $shadow-strong;
     content: "";
     display: block;
     z-index: 5;

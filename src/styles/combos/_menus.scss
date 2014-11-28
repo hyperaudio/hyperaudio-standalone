@@ -117,6 +117,10 @@ $menu-back-offset : $tap-size;
     @include transform(translate3d(($side-width - $menu-back-offset) * -1, 0, 0));
     opacity: 0;
   }
+  .moved--left,
+  .moved--right {
+    visibility:hidden;
+  }
 }
 
 .menu-reset {
@@ -158,10 +162,6 @@ $menu-back-offset : $tap-size;
   #menu__pane--documentaries,
   #menu__pane--themes,
   #menu__pane--maps,
-  #menu__pane--characters,
-  #menu__pane--places,
-  #menu__pane--eras,
-  #menu__pane--remixes,
   #menu__pane--quizzes {
     @include position-top-left(0,$menu-back-offset, fixed);
   }
@@ -201,10 +201,6 @@ $menu-back-offset : $tap-size;
   #menu__pane--documentaries,
   #menu__pane--themes,
   #menu__pane--maps,
-  #menu__pane--characters,
-  #menu__pane--places,
-  #menu__pane--eras,
-  #menu__pane--remixes,
   #menu__pane--quizzes {
     @include position-top-right(0,$menu-back-offset, fixed);
   }

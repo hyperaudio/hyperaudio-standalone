@@ -3,7 +3,7 @@ unless window.parent is window
     document.body.classList.add "tpl--compact"
   else
     document.body.className += " tpl--compact"
-      
+
 document.addEventListener "DOMContentLoaded", ->
 
   # console.log "السلام عليكم"
@@ -24,6 +24,7 @@ document.addEventListener "DOMContentLoaded", ->
     renderOverlay()
     renderFoldCards()
     renderMultiples()
+    renderSides()
   , 350)
 
   window.onscroll = throttle((event) ->

@@ -21,11 +21,12 @@ renderFoldSwiper = () ->
       autoplay            : 10000
       speed               : 750
       noSwiping           : true
-      # mousewheelControl   : true
+      mousewheelControl   : true
+      mousewheelControlForceToAxis: true
 
       moveStartThreshold  : 20 # in pixels
       cssWidthAndHeight   : "height"
       DOMAnimation        : false
       resizeReInit        : true
-      onSlideChangeEnd    : ->
-        swipaa.stopAutoplay()
+      # onSlideChangeEnd    : ->
+      #   swipaa.stopAutoplay()

@@ -53,6 +53,9 @@
   width: $side-width;
 }
 
+.page-side--persistent {
+  z-index: 1000;
+}
 .page-side.moved {
   overflow: hidden;
 }
@@ -104,7 +107,7 @@
 .page-head {
   @include transform(translate3d(0,0,0));
   @include position-top-left(0,0, fixed);
-  width: 100%;
+  @include position-top-right(0,0, fixed);
   line-height: $page-head-height;
   z-index: 100;
 }

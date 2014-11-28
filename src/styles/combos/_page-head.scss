@@ -37,10 +37,13 @@
   line-height: 0;
   min-width: 80px;
   z-index: 50;
-  // width: auto;
   a {
     line-height: $page-head-height;
   }
+}
+
+.page-head__menu-item--last .drop {
+  display: none;
 }
 
 /* Altered variation
@@ -78,5 +81,26 @@
   .page-head__menu-item--last {
     text-align: left;
     .toggleSide { float: left; }
+  }
+}
+
+@include breakpoint(l) {
+  .page-head__menu-item--last {
+    .drop {
+      display: inline-block;
+    }
+    .toggleSide {
+      display: none;
+    }
+    @if $direction == "rtl" {
+      a {
+        float: left;
+      }
+    }
+    @if $direction == "ltr" {
+      a {
+        float: right;
+      }
+    }
   }
 }

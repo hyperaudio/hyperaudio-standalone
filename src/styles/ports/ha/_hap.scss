@@ -5,9 +5,9 @@
 .HAP--pad {
 
   .HAP-sidebar {
-    @include position-top-left(0,0,fixed);
+    @include position-top-left($page-head-height,0,fixed);
+    @include position-bottom-left(0,0,fixed);
     width: $HAP-side-width;
-    height: 100%;
     overflow: auto;
   }
   .HAP--core {

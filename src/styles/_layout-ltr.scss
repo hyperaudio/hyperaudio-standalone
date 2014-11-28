@@ -37,4 +37,21 @@
     &.cover-right { @include position-top-left(0, $side-width, fixed); }
     &.cover-all { @include position-top-left(0, 0, fixed); background: $shadow-light; }
   }
+
+  // Desktop Variation
+
+  @include breakpoint(l) {
+    .page-side--left,
+    .page-side--left.moved {
+      @include transform(translate3d(0,0,0));
+    }
+    .page-body,
+    .page-head {
+      @include transform(translate3d(0,0,0));
+      margin-left: $side-width;
+    }
+    .page-head__menu-item--first {
+      display: none;
+    }
+  }
 }

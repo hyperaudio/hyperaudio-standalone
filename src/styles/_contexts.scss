@@ -23,22 +23,16 @@
 }
 
 .tpl--listing,
-.tpl--remix {
-  .page-wrap {
-    padding-top: $page-head-height;
-    padding-bottom: 0;
-  }
-}
-
+.tpl--remix,
 .tpl--pad {
-  .page-wrap {
-    padding-bottom: 0;
-  }
-}
-.tpl--remix {
   .page-body {
     padding-top: $page-head-height;
   }
+  .page-wrap {
+    padding: 0;
+  }
+}
+.tpl--remix {
   .HAP-header {
     display: none;
   }
@@ -70,9 +64,13 @@
   }
   .page-body {
     padding-top: 0;
+    margin: 0;
   }
   #HAP-remix-helper {
     display: inline-block;
+  }
+  .HAP--pad .HAP-sidebar {
+    top: 0;
   }
 }
 
