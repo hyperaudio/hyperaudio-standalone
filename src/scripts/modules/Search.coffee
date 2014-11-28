@@ -10,7 +10,7 @@ request0.onreadystatechange = ->
   if @readyState is 4
     if @status >= 200 and @status < 400
       _titles = JSON.parse(@responseText)
-      # console.log(_titles)
+      console.log(_titles)
       i = 0
       while i < _titles.length
         titles["" + _titles[i]._id] = _titles[i].label
@@ -34,8 +34,8 @@ request0.onreadystatechange = ->
                 event = document.createEvent("HTMLEvents")
                 event.initEvent "change", true, false
                 listingSearchInput.dispatchEvent event
-          else
-            # console.log("Silent Error")
+          # else
+          #   console.log("Silent Error")
 
       request.send()
       request = null
@@ -63,8 +63,8 @@ doSearch = ->
     searchEl = document.getElementById("HAP-search")
   query = searchEl.value.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g," ").replace('،', ' ').replace(/\n/, ' ').replace(/\s+/g, ' ').trim()
   results = index.search(query)
-  if results.length is 0
-    # console.log("no results for: " + query)
+  # if results.length is 0
+  #   console.log("no results for: " + query)
   r = 0
   while r < results.length
     # don't ask
