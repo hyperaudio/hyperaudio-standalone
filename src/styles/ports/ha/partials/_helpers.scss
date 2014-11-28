@@ -27,4 +27,10 @@
 
 #HAP-remix-helper {
   display: none;
+  @include breakpoint(l) {
+    display: inline-block;
+  }
+  .tpl--compact & {
+    display: none;
+  }
 }
