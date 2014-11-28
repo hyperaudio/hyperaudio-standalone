@@ -85,7 +85,7 @@
 }
 
 @include breakpoint(l) {
-  .tpl--responsive {
+  // .tpl--responsive {
     .page-head__menu-item--last {
       .drop {
         display: inline-block;
@@ -104,5 +104,5 @@
         }
       }
     }
-  }
+  // }
 }

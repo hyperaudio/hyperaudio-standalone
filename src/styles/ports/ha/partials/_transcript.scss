@@ -4,8 +4,9 @@
 
 .HAP-transcript {
   @include set-type-small;
-  position: relative; // absolutely necessary for scrollTo to function.
+  opacity: 1;
   overflow: auto;
+  position: relative; // absolutely necessary for scrollTo to function.
   p {
     @include reset(first, margin-top);
     margin-top: $line / 2;
@@ -54,4 +55,34 @@
 
 .HAP-transcript__item {
   position: relative;
+}
+
+.HAP-transcript--source.HAP-delete-hint {
+  &:before {
+    @include position-top-left($transcript-padding,$transcript-padding);
+    @include position-bottom-right($transcript-padding,$transcript-padding);
+    background: $flare-strong;
+    content: " ";
+    display: block;
+    z-index: 50;
+  }
+  &:after {
+    @include position-top-left(50%,50%);
+    @include set-size(80px,80px);
+    color: $shadow-light;
+    display: block;
+    margin: -40px 0 0 -40px;
+    font-family: 'aj';
+    font-size: 80px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e610";
+    z-index: 51;
+  }
 }
