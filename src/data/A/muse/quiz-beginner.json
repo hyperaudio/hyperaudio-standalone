@@ -4,8 +4,8 @@
       "content": {
         "path": "../../",
         "cover": "quiz-beginner.jpg",
-    		"quizTitle": "Beginner Quiz",
-    		"quizSubtitle": "Check your Knowledge bla bla bla",
+    		"quizTitle": "المستوى الأول",
+    		"quizSubtitle": "هل تود أن تعرف أكثر عن فلسطين؟ جرب اختبارا بسيطا.",
     		"quizID": "0Auj9P4UEJc8cdFUxYUwxWW5icmcxV1ZSTWlXRFkwb0E"
       },
       "type": "Quiz"

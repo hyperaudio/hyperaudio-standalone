@@ -4,8 +4,8 @@
       "content": {
         "path": "../../",
         "cover": "quiz-expert.jpg",
-        "quizTitle": "Expert Quiz",
-        "quizSubtitle": "Check your Knowledge bla bla bla",
+        "quizTitle": "المستوى الثالث",
+        "quizSubtitle": "هناك اختبار لكل مستوى، هذا هو المستوى الثالث، جربه.",
         "quizID": "0Auj9P4UEJc8cdHZLMldVczN0QnhZN1V6Y2kzX21CR2c"
       },
       "type": "Quiz"

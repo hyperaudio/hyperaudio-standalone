@@ -4,8 +4,8 @@
       "content": {
         "path": "../../",
         "cover": "quiz-beginner.jpg",
-    		"quizTitle": "Beginner Quiz",
-    		"quizSubtitle": "Check your Knowledge bla bla bla",
+    		"quizTitle": "Level 1",
+    		"quizSubtitle": "Are you a newcomer to the Palestine Story? Learn about Palestine through our beginner quiz",
     		"quizID": "0ApwzQmkWl4rTdERxU0ZCVmc1TUZ3NmlzYlJxOWFiTGc"
       },
       "type": "Quiz"
