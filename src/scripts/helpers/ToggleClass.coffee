@@ -14,3 +14,11 @@ hasClass = (el, className) ->
   className = " " + className + " "
   return true if (" " + el.className + " ").replace(/[\n\t]/g, " ").indexOf(className) > -1
   false
+
+addClass = (el, className) ->
+  el.className += " " + className  unless hasClass(el, className)
+
+removeClass = (el, className) ->
+  if hasClass(el, className)
+    reg = new RegExp("(\\s|^)" + className + "(\\s|$)")
+    el.className = el.className.replace(reg, " ")
