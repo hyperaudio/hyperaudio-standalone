@@ -10,7 +10,7 @@ request0.onreadystatechange = ->
   if @readyState is 4
     if @status >= 200 and @status < 400
       _titles = JSON.parse(@responseText)
-      console.log(_titles)
+      # console.log(_titles)
       i = 0
       while i < _titles.length
         titles["" + _titles[i]._id] = _titles[i].label
@@ -35,7 +35,7 @@ request0.onreadystatechange = ->
                 event.initEvent "change", true, false
                 listingSearchInput.dispatchEvent event
           else
-            console.log("Silent Error")
+            # console.log("Silent Error")
 
       request.send()
       request = null
@@ -64,7 +64,7 @@ doSearch = ->
   query = searchEl.value.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g," ").replace('،', ' ').replace(/\n/, ' ').replace(/\s+/g, ' ').trim()
   results = index.search(query)
   if results.length is 0
-    console.log("no results for: " + query)
+    # console.log("no results for: " + query)
   r = 0
   while r < results.length
     # don't ask
@@ -79,10 +79,10 @@ doSearch = ->
       title = titles[idParts[0]]
       if insideHAP
         el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
-        # el.querySelector('a').addEventListener('click', function() {}); 
+        # el.querySelector('a').addEventListener('click', function() {});
       else
         el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
-      
+
       result = el.children[0]
       resultsContainer.appendChild result
       # AJAX
@@ -135,7 +135,7 @@ doSearch = ->
       request = null
     )()
     r++
-  
+
   ev = document.createEvent("Event")
   ev.initEvent "searchresults", true, true
   document.dispatchEvent ev
