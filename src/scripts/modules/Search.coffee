@@ -66,7 +66,10 @@ doSearch = ->
   # if results.length is 0
   #   console.log("no results for: " + query)
   r = 0
-  while r < results.length
+  _length = results.length
+  if _length > 20
+    _length = 20
+  while r < _length
     # don't ask
     (->
       # video-paragraph-timecode
