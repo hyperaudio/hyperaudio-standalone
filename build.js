@@ -46,7 +46,7 @@ Handlebars.registerHelper('TITLE', function() {
   } else if (longform.content && longform.content.length > 0 && longform.content[0].type == 'Headline') {
     headline = longform.content[0].content;
   }
-  
+
   return new Handlebars.SafeString(
     headline
   );
@@ -87,7 +87,16 @@ var contentTemplates = {
   Subheader: function (text) {return '<h2>' + text + '</h2>';},
   Foreword: function (text) {return '';}, //ignore foreword here
   Headline: function (text) {return '';}, //ignore headline here
-  'Body-text': function (text) {return text;}
+  'Body-text': function (text) {return text;},
+  A: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-A.html').toString()),
+  B: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-B.html').toString()),
+  C: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-C.html').toString()),
+  D: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-D.html').toString()),
+  E: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-E.html').toString()),
+  F: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-F.html').toString()),
+  G: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-G.html').toString()),
+  H: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-H.html').toString()),
+  K: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-K.html').toString()),
 };
 
 Handlebars.registerHelper('CONTENT', function() {
@@ -99,9 +108,14 @@ Handlebars.registerHelper('CONTENT', function() {
   var content = '';
 
   for (var i = 0; i < items.length; i++) {
-    items[i].content.L = this.L;
-    content += contentTemplates[items[i].type](items[i].content);
-  }
+     if (typeof items[i].content != 'undefined') {
+         items[i].content.L = this.L;
+         content += contentTemplates[items[i].type](items[i].content);
+     } else {
+         items[i].L = this.L;
+         content += contentTemplates[items[i].type](items[i]);
+     }
+   }
 
   return new Handlebars.SafeString(
     content
