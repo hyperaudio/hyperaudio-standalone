@@ -8,6 +8,11 @@ var AJHAWrapper = {
 
     // browser sniff
 
+    /*var IE = (!! window.ActiveXObject && +(/msie\s(\d+)/i.exec(navigator.userAgent)[1])) || NaN;
+    if (IE && IE < 10) {
+      document.documentElement.className += ' lt-ie9' + ' ie' + IE;
+    }*/
+
     var status = 0; // all OK
 
     var v = document.createElement('video');

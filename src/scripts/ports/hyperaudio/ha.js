@@ -243,7 +243,7 @@ var hyperaudio = (function() {
         entity: 'core'
       },
       _trigger: function(eventType, eventData) {
-        var eventObject = hyperaudio.extend(true, {options: this.options}, eventData),
+        /*var eventObject = hyperaudio.extend(true, {options: this.options}, eventData),
           event = new CustomEvent(eventType, {
             detail: eventObject,
             bubbles: true,
@@ -253,7 +253,7 @@ var hyperaudio = (function() {
           type: this.options.entity,
           action: eventType + ' event: ' + (eventObject.msg ? eventObject.msg : '')
         });
-        this.target.dispatchEvent(event);
+        this.target.dispatchEvent(event);*/
       },
       _error: function(msg) {
         var data = {msg: this.options.entity + ' Error : ' + msg};
