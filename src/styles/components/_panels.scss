@@ -14,14 +14,16 @@
   &.panel--active {
     @include transform(translate3d(0,0,0));
   }
-  @if $direction == "ltr" {
-    @include breakpoint(l) {
-      left: $side-width;
+  .tpl--responsive & {
+    @if $direction == "ltr" {
+      @include breakpoint(l) {
+        left: $side-width;
+      }
     }
-  }
-  @if $direction == "rtl" {
-    @include breakpoint(l) {
-      right: $side-width;
+    @if $direction == "rtl" {
+      @include breakpoint(l) {
+        right: $side-width;
+      }
     }
   }
 }

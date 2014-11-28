@@ -9,3 +9,8 @@ toggleClass = (el, className) ->
     else
       classes.push className
     el.className = classes.join(" ")
+
+hasClass = (el, className) ->
+  className = " " + className + " "
+  return true if (" " + el.className + " ").replace(/[\n\t]/g, " ").indexOf(className) > -1
+  false

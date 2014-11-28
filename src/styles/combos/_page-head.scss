@@ -85,21 +85,23 @@
 }
 
 @include breakpoint(l) {
-  .page-head__menu-item--last {
-    .drop {
-      display: inline-block;
-    }
-    .toggleSide {
-      display: none;
-    }
-    @if $direction == "rtl" {
-      a {
-        float: left;
+  .tpl--responsive {
+    .page-head__menu-item--last {
+      .drop {
+        display: inline-block;
       }
-    }
-    @if $direction == "ltr" {
-      a {
-        float: right;
+      .toggleSide {
+        display: none;
+      }
+      @if $direction == "rtl" {
+        a {
+          float: left;
+        }
+      }
+      @if $direction == "ltr" {
+        a {
+          float: right;
+        }
       }
     }
   }

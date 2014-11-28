@@ -1,20 +1,21 @@
 renderSides         = () ->
 
-  leftSide          = document.getElementById "page-side--left"
-  windowWidth       = window.innerWidth
-  if windowWidth > 1024
-    leftSide.setAttribute "data-side-state", "active"
-    leftSide.setAttribute "data-side-state-persist", "true"
-    leftSide.classList.add "page-side--persistent"
-  else
-    leftSide.setAttribute "data-side-state-persist", ""
-    leftSide.classList.remove "page-side--persistent"
-
   page              = document.body
   sides             = document.querySelectorAll ".page-side"
   head              = document.getElementById "page-head"
   body              = document.getElementById "page-body"
   states            = []
+
+  if hasClass(page, "tpl--responsive")
+    leftSide          = document.getElementById "page-side--left"
+    windowWidth       = window.innerWidth
+    if windowWidth > 1024
+      leftSide.setAttribute "data-side-state", "active"
+      leftSide.setAttribute "data-side-state-persist", "true"
+      leftSide.classList.add "page-side--persistent"
+    else
+      leftSide.setAttribute "data-side-state-persist", ""
+      leftSide.classList.remove "page-side--persistent"
 
   # Populate states array with states of all sides
   # Toggle visibility classes on panels according to the data attributes
