@@ -68,24 +68,26 @@
 }
 
 .foldswiper__skipper {
-  display: none;
-  @include breakpoint(l) {
-    border-radius: $radius-s;
-    @include set-size(40px,40px);
-    background: $shadow-medium;
-    line-height: 40px;
-    text-align: center;
-    margin-top: -20px;
-    top: 50%;
-    display: block;
-    position: absolute;
-    z-index: 55;
-    i {
-      font-size: 40px;
-    }
-    &.foldswiper__skipper--prev { left: $space; }
-    &.foldswiper__skipper--next { right: $space; }
+  @include breakpoint(s) {
+    display: none;
   }
+  @include breakpoint(l) {
+    display: block;
+  }
+  border-radius: $radius-s;
+  @include set-size(40px,40px);
+  background: $shadow-medium;
+  line-height: 40px;
+  text-align: center;
+  margin-top: -20px;
+  top: 50%;
+  position: absolute;
+  z-index: 55;
+  i {
+    font-size: 40px;
+  }
+  &.foldswiper__skipper--prev { left: $space; }
+  &.foldswiper__skipper--next { right: $space; }
 }
 
 /* ********** DIRECTION DECLARATIONS ********** */
