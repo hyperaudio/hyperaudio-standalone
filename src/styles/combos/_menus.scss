@@ -136,12 +136,12 @@ $menu-back-offset : $tap-size;
 #menu__pane--themes,
 #menu__pane--maps,
 #menu__pane--quizzes {
-  @include transition(transform $time);
+  @include transition(transform $time, visibility $time $delay);
   z-index: 10;
   width: $side-width - $menu-back-offset;
   &.moved--left,
   &.moved--right {
-    visibility:hidden;
+    visibility: hidden;
   }
 }
 
