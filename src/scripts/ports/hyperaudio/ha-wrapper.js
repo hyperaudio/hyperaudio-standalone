@@ -8,10 +8,11 @@ var AJHAWrapper = {
 
     // browser sniff
 
-    /*var IE = (!! window.ActiveXObject && +(/msie\s(\d+)/i.exec(navigator.userAgent)[1])) || NaN;
+    var IE = (!! window.ActiveXObject && +(/msie\s(\d+)/i.exec(navigator.userAgent)[1])) || NaN;
     if (IE && IE < 10) {
-      document.documentElement.className += ' lt-ie9' + ' ie' + IE;
-    }*/
+      alert('Sorry browser not supported. This is experimental technology. Try upgrading');
+      document.getElementById('page-body').addClass('HAP-browser-not-supported');
+    }
 
     var status = 0; // all OK
 
