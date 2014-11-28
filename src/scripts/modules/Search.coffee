@@ -79,6 +79,7 @@ doSearch = ->
       title = titles[idParts[0]]
       if insideHAP
         el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
+        # el.querySelector('a').addEventListener('click', function() {}); 
       else
         el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
       
@@ -125,9 +126,19 @@ doSearch = ->
                 resultSentences = sentences
               s++
             document.querySelectorAll("#r" + id + " .tile__transcript")[0].innerHTML = resultSentences.join(". ") + "."
+
+            ev = document.createEvent("Event")
+            ev.initEvent "searchresult", true, true
+            document.querySelectorAll("#r" + id + " .tile__transcript")[0].dispatchEvent ev
+
       request.send()
       request = null
     )()
     r++
+  
+  ev = document.createEvent("Event")
+  ev.initEvent "searchresults", true, true
+  document.dispatchEvent ev
+
 request0.send()
 request0 = null
