@@ -1,6 +1,9 @@
 renderFoldSwiper = () ->
   foldSwipers     = document.querySelectorAll ".foldswiper"
   [].forEach.call foldSwipers, (foldSwiper) ->
+    togglePrev      = document.getElementById "slide-prev"
+    toggleNext      = document.getElementById "slide-next"
+
     swipaa                = new Swiper foldSwiper,
       wrapperClass        : "foldswiper__wrapper"
       slideClass          : "foldswiper__item"
@@ -30,3 +33,9 @@ renderFoldSwiper = () ->
       resizeReInit        : true
       # onSlideChangeEnd    : ->
       #   swipaa.stopAutoplay()
+
+    togglePrev.addEventListener "click", (e) ->
+      swipaa.swipePrev()
+
+    toggleNext.addEventListener "click", (e) ->
+      swipaa.swipeNext()
