@@ -56,32 +56,12 @@
           <p class="headline__text">{{L.aside-left__glossaryintro}}</p>
         </div>
         <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}themes/zionism/">Zionism</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}themes/zionism/">Occupation</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}themes/zionism/">Refugees</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}themes/zionism/">Resistance</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}themes/zionism/">Prisoners</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}themes/zionism/">Negotiations</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}themes/zionism/">International Solidarity</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}themes/zionism/">Children</a></li>
+        {{#each nav.glossary}}
+          <li class="menu__item"><a class="menu__link" href="{{../path}}glossary/{{file}}/">{{label}}</a></li>
+        {{/each}}
         </ol>
       </div>
-      <div id="menu__pane--maps" class="menu__pane moved--right">
-        <div class="headline" style="background-image: url('{{path}}assets/images/covers/homeslides/slide-maps.jpg')">
-          <h2 class="headline__title">{{L.aside-left__maps}}</h2>
-          <p class="headline__text">{{L.aside-left__mapsintro}}</p>
-        </div>
-        <h3 class="menu__subtitle">{{L.aside-left__imaps}}</h3>
-        <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}maps/">{{L.aside-left__imaps-1}}</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}maps/">{{L.aside-left__imaps-2}}</a></li>
-        </ol>
-        <h3 class="menu__subtitle">{{L.aside-left__videomaps}}</h3>
-        <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/1/{{L.aside-left__videomaps-wall-href}}">{{L.aside-left__videomaps-wall}}</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}remix/view/#/9/{{L.aside-left__videomaps-abc-href}}">{{L.aside-left__videomaps-abc}}</a></li>
-        </ol>
-      </div>
+      <!-- maps -->
       <div id="menu__pane--quizzes" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/covers/homeslides/slide-quizzes.jpg')">
           <h2 class="headline__title">{{L.aside-left__quizzes}}</h2>
