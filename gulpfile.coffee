@@ -23,6 +23,7 @@ STYLES = [
 SCRIPTQ1 = [
   "./src/scripts/lang/" + L + "/lang.js"
   "./bower_components/pace/pace.js"
+  "./src/scripts/muse/museredirect.js"
 ]
 SCRIPTQ2 = [
   "./bower_components/xregexp/xregexp-all.js"
