@@ -398,7 +398,13 @@ var AJHAWrapper = {
             if (selection.start) {
 
               selectionTextContent = "'" + selection.text + "' :";
-              selectionTextURI     = window.top.location.href + "/" + selection.start + "/" + (parseInt(selection.end) + 1000);
+
+              var videoId = window.top.location.hash.split('/')[1];
+              window.top.location.hash = "#/" + videoId +"/";
+              
+              selectionTextURI     = window.top.location.href + selection.start + "/" + (parseInt(selection.end) + 1000);
+              console.log(selectionTextURI);
+
               selectionElement     = document.getElementById("share-selection");
 
               shorten(selectionTextURI, function(_selectionTextURI){
