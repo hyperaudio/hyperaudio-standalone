@@ -402,8 +402,14 @@ var AJHAWrapper = {
               var videoId = window.top.location.hash.split('/')[1];
               window.top.location.hash = "#/" + videoId +"/";
               
-              selectionTextURI     = window.top.location.href + selection.start + "/" + (parseInt(selection.end) + 1000);
-              console.log(selectionTextURI);
+              // selectionTextURI     = window.top.location.href + selection.start + "/" + (parseInt(selection.end) + 1000);
+              var prefix = '/aje';
+              if (L == 'A') prefix = 'http://interactive.aljazeera.com/aja';
+              if (L == 'B') prefix = 'http://interactive.aljazeera.com/ajb';
+              if (L == 'T') prefix = 'http://interactive.aljazeera.com/ajt';
+
+               selectionTextURI   = prefix + "/PalestineRemix/view_remix.html" + "#/" + videoId +"/" + selection.start + "/" + (parseInt(selection.end) + 1000);
+              // console.log(selectionTextURI);
 
               selectionElement     = document.getElementById("share-selection");
 
@@ -747,6 +753,13 @@ var AJHAWrapper = {
 
           var url = window.top.location.href;
           url = url.replace("/create/","/view/");
+
+          var prefix = '/aje';
+          if (L == 'A') prefix = 'http://interactive.aljazeera.com/aja';
+          if (L == 'B') prefix = 'http://interactive.aljazeera.com/ajb';
+          if (L == 'T') prefix = 'http://interactive.aljazeera.com/ajt';
+
+          url = prefix + "/PalestineRemix/view_remix.html" + "#/" + window.top.location.hash;
 
           shorten(url, function(_url) {
 
