@@ -1,88 +1,92 @@
 {
 "films": [
   { "_id": 1,
-    "label": "Against the wall",
+    "label": "قرى تتحدى الجدار",
     "file": "against-the-wall"
   },
   { "_id": 17,
-    "label": "Al Nakba 1",
-    "file": ""
-  },
-  { "_id": 18,
-    "label": "Al Nakba 2",
-    "file": ""
-  },
-  { "_id": 19,
-    "label": "Al Nakba 3",
-    "file": ""
-  },
-  { "_id": 20,
-    "label": "Al Nakba 4",
-    "file": ""
+    "label": "النكبة",
+    "file": "al-nakba"
   },
   { "_id": 2,
-    "label": "Area C",
-    "file": ""
+    "label": "مناطق جيم",
+    "file": "area-c"
   },
   { "_id": 3,
-    "label": "Beyond the walls",
+    "label": "خارج الأسوار",
     "file": "beyond-the-walls"
   },
   { "_id": 4,
-    "label": "Forbidden Pilgrimage",
-    "file": ""
+    "label": "الحج المحرم",
+    "file": "forbidden-pilgrimage"
   },
   { "_id": 5,
-    "label": "Gaza left in the dark",
+    "label": "حياة بالجدول",
     "file": "gaza-left-in-the-dark"
   },
   { "_id": 6,
-    "label": "Gaza lives on",
-    "file": ""
+    "label": "غزة تعيش",
+    "file": "gaza-lives-on"
   },
   { "_id": 7,
-    "label": "Gaza we are coming",
-    "file": ""
+    "label": "غزة إننا قادمون",
+    "file": "gaza-we-are-coming"
   },
   { "_id": 0,
-    "label": "Going against the grain",
+    "label": "ضد التيار",
     "file": "going-against-the-grain"
   },
   { "_id": 16,
-    "label": "Hunger Strike",
-    "file": ""
+    "label": "معركة الأمعاء الخاوية",
+    "file": "hunger-strike"
   },
   { "_id": 8,
-    "label": "Inside Shin Bet",
-    "file": ""
+    "label": "الشاباك",
+    "file": "inside-shin-bet"
   },
   { "_id": 9,
-    "label": "Last shepherds of the valley",
-    "file": ""
+    "label": "الاقتلاع من الغور",
+    "file": "last-shepherds-of-the-valley"
   },
   { "_id": 10,
-    "label": "Lost cities of Palestine",
-    "file": ""
+    "label": "اغتيال المدينة",
+    "file": "lost-cities-of-palestine"
   },
   { "_id": 11,
-    "label": "Palestine Amore",
-    "file": ""
+    "label": "فلسطين في قلوب إيطالية",
+    "file": "palestina-amore"
   },
   { "_id": 13,
-    "label": "Stronger than words",
-    "file": ""
+    "label": "أقوى من الكلام",
+    "file": "stronger-than-words"
   },
   { "_id": 12,
-    "label": "The pain inside",
+    "label": "المستنقع",
     "file": "the-pain-inside"
   },
   { "_id": 14,
-    "label": "The price of Oslo 1",
-    "file": ""
-  },
-  { "_id": 15,
-    "label": "The price of Oslo 2",
-    "file": ""
+    "label": "ثمن أوسلو",
+    "file": "the-price-of-oslo"
   }
+],
+
+"glossary": [
+
+{"file": "admin_detention", "label": "الاعتقال الإداري"},
+{"file": "borders", "label": "الحـدود"},
+{"file": "bypass_road", "label": "الطـريق الالتفـافي"},
+{"file": "closure", "label": "الإغـلاق"},
+{"file": "collective_punishment", "label": "العقـاب الجماعي"},
+{"file": "ethnic_cleansing", "label": "التطهير العـرقي"},
+{"file": "green_line", "label": "الخـط الأخضـر"},
+{"file": "intifada", "label": "الانتفـاضة"},
+{"file": "occupied_territories", "label": " الأراضي الفلسطينية المحتلة"},
+{"file": "palestinian_authority", "label": "السلطة الفلسطينية"},
+{"file": "plo", "label": "منظمة التحرير الفلسطينية"},
+{"file": "refugee", "label": "اللاجئ"},
+{"file": "settlement", "label": "المستوطنة"},
+{"file": "wall", "label": "الجدار الفاصل"},
+{"file": "zionism", "label": "الصهيونية"}
+
 ]
 }
