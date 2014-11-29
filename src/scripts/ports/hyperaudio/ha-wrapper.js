@@ -403,7 +403,7 @@ var AJHAWrapper = {
               window.top.location.hash = "#/" + videoId +"/";
               
               // selectionTextURI     = window.top.location.href + selection.start + "/" + (parseInt(selection.end) + 1000);
-              var prefix = '/aje';
+              var prefix = 'http://interactive.aljazeera.com/aje';
               if (L == 'A') prefix = 'http://interactive.aljazeera.com/aja';
               if (L == 'B') prefix = 'http://interactive.aljazeera.com/ajb';
               if (L == 'T') prefix = 'http://interactive.aljazeera.com/ajt';
@@ -754,7 +754,7 @@ var AJHAWrapper = {
           var url = window.top.location.href;
           url = url.replace("/create/","/view/");
 
-          var prefix = '/aje';
+          var prefix = 'http://interactive.aljazeera.com/aje';
           if (L == 'A') prefix = 'http://interactive.aljazeera.com/aja';
           if (L == 'B') prefix = 'http://interactive.aljazeera.com/ajb';
           if (L == 'T') prefix = 'http://interactive.aljazeera.com/ajt';
