@@ -1,88 +1,92 @@
 {
 "films": [
   { "_id": 1,
-    "label": "Against the wall",
+    "label": "BORBA PROTIV ZIDA",
     "file": "against-the-wall"
   },
   { "_id": 17,
-    "label": "Al Nakba 1",
-    "file": ""
-  },
-  { "_id": 18,
-    "label": "Al Nakba 2",
-    "file": ""
-  },
-  { "_id": 19,
-    "label": "Al Nakba 3",
-    "file": ""
-  },
-  { "_id": 20,
-    "label": "Al Nakba 4",
-    "file": ""
+    "label": "AL-NAKBA",
+    "file": "al-nakba"
   },
   { "_id": 2,
-    "label": "Area C",
-    "file": ""
+    "label": "ZONA C",
+    "file": "area-c"
   },
   { "_id": 3,
-    "label": "Beyond the walls",
-    "file": ""
+    "label": "IZVAN ZIDINA",
+    "file": "beyond-the-walls"
   },
   { "_id": 4,
-    "label": "Forbidden Pilgrimage",
-    "file": ""
+    "label": "ZABRANJENO HODOČAŠĆE",
+    "file": "forbidden-pilgrimage"
   },
   { "_id": 5,
-    "label": "Gaza left in the dark",
+    "label": "GAZA OSTAVLJENA U MRAKU",
     "file": "gaza-left-in-the-dark"
   },
   { "_id": 6,
-    "label": "Gaza lives on",
-    "file": ""
+    "label": "GAZA ĆE I DALJE ŽIVJETI",
+    "file": "gaza-lives-on"
   },
   { "_id": 7,
-    "label": "Gaza we are coming",
-    "file": ""
+    "label": "GAZA DOLAZIMO!",
+    "file": "gaza-we-are-coming"
   },
   { "_id": 0,
-    "label": "Going against the grain",
-    "file": ""
+    "label": "PROTIV STRUJE",
+    "file": "going-against-the-grain"
   },
   { "_id": 16,
-    "label": "Hunger Strike",
-    "file": ""
+    "label": "ŠTRAJK GLAĐU",
+    "file": "hunger-strike"
   },
   { "_id": 8,
-    "label": "Inside Shin Bet",
-    "file": ""
+    "label": "SHIN BET: IZA KULISA",
+    "file": "inside-shin-bet"
   },
   { "_id": 9,
-    "label": "Last shepherds of the valley",
-    "file": ""
+    "label": "POSLJEDNJI PASTIRI DOLINE JORDANA",
+    "file": "last-shepherds-of-the-valley"
   },
   { "_id": 10,
-    "label": "Lost cities of Palestine",
-    "file": ""
+    "label": "IZGUBLJENI GRADOVI PALESTINE",
+    "file": "lost-cities-of-palestine"
   },
   { "_id": 11,
-    "label": "Palestine Amore",
-    "file": ""
+    "label": "PALESTINO, LJUBAVI MOJA",
+    "file": "palestina-amore"
   },
   { "_id": 13,
-    "label": "Stronger than words",
-    "file": ""
+    "label": "JAČI OD RIJEČI",
+    "file": "stronger-than-words"
   },
   { "_id": 12,
-    "label": "The pain inside",
-    "file": ""
+    "label": "UNUTRAŠNJI BOL",
+    "file": "the-pain-inside"
   },
   { "_id": 14,
-    "label": "The price of Oslo 1",
-    "file": ""
-  },
-  { "_id": 15,
-    "label": "The price of Oslo 2",
-    "file": ""
+    "label": "CIJENA OSLA",
+    "file": "the-price-of-oslo"
   }
+],
+
+"glossary": [
+
+{"file": "admin_detention", "label": "ADMINISTRATIVNI PRITVOR"},
+{"file": "borders", "label": "GRANICE"},
+{"file": "bypass_road", "label": "ZAOBILAZNICE"},
+{"file": "closure", "label": "ZATVARANJE"},
+{"file": "collective_punishment", "label": "KOLEKTIVNO KAŽNJAVANJE"},
+{"file": "ethnic_cleansing", "label": "ETNIČKO ČIŠĆENJE"},
+{"file": "green_line", "label": "ZELENA LINIJA"},
+{"file": "intifada", "label": "INTIFADA"},
+{"file": "occupied_territories", "label": "OKUPIRANE PALESTINSKE TERITORIJE"},
+{"file": "palestinian_authority", "label": "PALESTINSKA SAMOUPRAVA"},
+{"file": "plo", "label": "PLO"},
+{"file": "refugee", "label": "IZBJEGLICA"},
+{"file": "settlement", "label": "DOSELJENIČKA NASELJA"},
+{"file": "wall", "label": "ZID RAZDVAJANJA"},
+{"file": "zionism", "label": "CIONIZAM"}
+
 ]
 }
