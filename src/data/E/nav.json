@@ -5,19 +5,7 @@
     "file": "against-the-wall"
   },
   { "_id": 17,
-    "label": "Al Nakba 1",
-    "file": "al-nakba"
-  },
-  { "_id": 18,
-    "label": "Al Nakba 2",
-    "file": "al-nakba"
-  },
-  { "_id": 19,
-    "label": "Al Nakba 3",
-    "file": "al-nakba"
-  },
-  { "_id": 20,
-    "label": "Al Nakba 4",
+    "label": "Al Nakba",
     "file": "al-nakba"
   },
   { "_id": 2,
@@ -78,10 +66,6 @@
   },
   { "_id": 14,
     "label": "The price of Oslo 1",
-    "file": "the-price-of-oslo"
-  },
-  { "_id": 15,
-    "label": "The price of Oslo 2",
     "file": "the-price-of-oslo"
   }
 ],
