@@ -90,14 +90,16 @@ var contentTemplates = {
   'Body-text': function (text) {return text;},
   A: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-A.html').toString()),
   B: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-B.html').toString()),
-  C: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-C.html').toString()),
-  D: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-D.html').toString()),
+  // C: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-C.html').toString()),
+  // D: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-D.html').toString()),
   E: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-E.html').toString()),
   F: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-F.html').toString()),
   G: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-G.html').toString()),
   H: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-H.html').toString()),
   K: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-K.html').toString()),
   L: function (text) {return '';},
+  C: function (text) {return '';},
+  D: function (text) {return '';},
 };
 
 Handlebars.registerHelper('CONTENT', function() {
@@ -114,6 +116,7 @@ Handlebars.registerHelper('CONTENT', function() {
          content += contentTemplates[items[i].type](items[i].content);
      } else {
          items[i].L = this.L;
+         items[i].nav = this.nav;
          content += contentTemplates[items[i].type](items[i]);
      }
    }
