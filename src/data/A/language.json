@@ -5,7 +5,7 @@
 	"header__current-lang": "AR",
 	"header__menu": "القائمة",
 	"header__share": "شارك",
-	"header__sitename": "Palestine Remix",
+	"header__sitename": "ريمكس فلسطين",
 
 	"panel-lang__change-lang": "اختر اللغة",
 	"panel-lang__cancel": "الغاء",
@@ -25,12 +25,12 @@
 	"aside-right__share-page": "شارك هذه الصفحة",
 	"aside-right__share-page2": "Love it like we do? Pass it on.",
 
-	"aside-left__title": "Palestine Remix",
+	"aside-left__title": "ريمكس فلسطين",
 	"aside-left__subtitle": "Start your search and discovery here",
-	"aside-left__films": "Films",
+	"aside-left__films": "الأفلام",
 	"aside-left__filmsintro": "Film descriptions",
 	"aside-left__remixes": "Remixes",
-	"aside-left__glossary": "Definitions",
+	"aside-left__glossary": "المصطلحات",
 	"aside-left__glossaryintro": "Keywords to help understand Palestine Remix",
 	"aside-left__maps": "Maps",
 	"aside-left__imaps": "Interactive Maps",
@@ -44,14 +44,14 @@
 	"aside-left__videomaps-abc-href": "470660",
 	"aside-left__quizzes": "Quizzes",
 	"aside-left__quizzesintro": "How would you rate your level of knowledge on Palestinian issues?",
-	"aside-left__quizzes-beginner": "Beginner",
-	"aside-left__quizzes-advanced": "Advanced",
-	"aside-left__quizzes-expert": "Expert",
+	"aside-left__quizzes-beginner": "بسيط",
+	"aside-left__quizzes-advanced": "متوسط",
+	"aside-left__quizzes-expert": "متقدم",
 	"aside-left__footAJ": "Al Jazeera Network",
 	"aside-left__footProj": "The Project",
 	"aside-left__footTeam": "The Team",
 
-	"longform__watch-full-doc": "Watch the full documentary",
+	"longform__watch-full-doc": "شـاهد",
 
 	"pad__start-creating-remix": "Start creating your Remix by selecting a film…",
 	"pad__fade": "اخفي",
@@ -62,8 +62,8 @@
 	"pad__share3": "شارك",
 	"pad__saving": "حفظ",
 
-	"quote__share": "Share Quote",
-	"video__share": "Share Clip",
+	"quote__share": "شارك",
+	"video__share": "شارك",
 
 	"home-slide-people": "Meet key witnesses",
 	"home-slide-events": "Explore events"
