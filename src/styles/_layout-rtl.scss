@@ -41,6 +41,7 @@
       .page-side--left,
       .page-side--left.moved {
         right: 0%;
+        visibility: visible;
         // @include transform(translate3d(0,0,0));
       }
       .page-body,
