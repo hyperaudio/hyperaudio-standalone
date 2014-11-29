@@ -18,24 +18,14 @@
         <div class="s-span-1of1 m-span-2of3 m-center l-span-3of5 l-center">
           <span class="label">{{L.aside-left__glossaryintro}}</span>
           <div class="foldcard__multiple multiple--vertical disable-swiper mtx mbl">
-            <a class="multiple__item" href="themes/zionism/">Zionism</a>
-            <a class="multiple__item" href="themes/zionism/">Occupation</a>
-            <a class="multiple__item" href="themes/zionism/">Refugees</a>
-            <a class="multiple__item" href="themes/zionism/">Resistance</a>
-            <a class="multiple__item" href="themes/zionism/">Prisoners</a>
-            <a class="multiple__item" href="themes/zionism/">Negotiations</a>
-            <a class="multiple__item" href="themes/zionism/">International Solidarity</a>
-            <a class="multiple__item" href="themes/zionism/">Children</a>
+          {{#each nav.glossary}}
+            <a class="multiple__item" href="{{../path}}definitions/{{file}}/">{{label}}</a>
+          {{/each}}
           </div>
           <div class="foldcard__multiple multiple--horizontal disable-swiper mbl" aria-hidden="true">
-            <li class="multiple__item"><a href="themes/zionism/">Zionism</a></li>
-            <li class="multiple__item"><a href="themes/zionism/">Occupation</a></li>
-            <li class="multiple__item"><a href="themes/zionism/">Refugees</a></li>
-            <li class="multiple__item"><a href="themes/zionism/">Resistance</a></li>
-            <li class="multiple__item"><a href="themes/zionism/">Prisoners</a></li>
-            <li class="multiple__item"><a href="themes/zionism/">Negotiations</a></li>
-            <li class="multiple__item"><a href="themes/zionism/">International Solidarity</a></li>
-            <li class="multiple__item"><a href="themes/zionism/">Children</a></li>
+          {{#each nav.glossary}}
+            <li class="multiple__item"><a href="{{../path}}definitions/{{file}}/">{{label}}</a></li>
+          {{/each}}
           </div>
         </div>
       </div>
