@@ -798,10 +798,13 @@ var AJHAWrapper = {
 
       // detect clicks on the pad menu
       document.addEventListener('padmenuclick', function() {
-        //console.log('padmenuclick');
+        console.log('padmenuclick');
         window.onhashchange = function() {
 
-          var longformId = window.top.location.hash.split('/')[1];
+          //var longformId = window.top.location.hash.split('/')[1];
+          var longformId = window.location.hash.split('/')[1];
+          window.top.location.hash = window.location.hash;
+
           var longformMedia;
 
           if (isNaN(longformId) == false)
