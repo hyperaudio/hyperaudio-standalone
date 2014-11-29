@@ -79,7 +79,10 @@ html.english .noenglish, html.arabic .noarabic, html.turkish .noturkish, html.bo
 }
 
 html.arabic {
+  body {
+    @include set-type-large;
+  }
   .HAP-transcript p {
-    @include set-type-medium;
+    @include set-type-large;
   }
 }
