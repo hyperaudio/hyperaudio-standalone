@@ -116,6 +116,8 @@ var AJHAWrapper = {
 
     var mixTitle = null;
 
+    var shareBtnListenerSet = false;
+
     function buildTranscriptSection(index, tid, stime, length, callback) {
 
       //console.log(tid);
@@ -777,7 +779,8 @@ var AJHAWrapper = {
 
           url = prefix + "/PalestineRemix/view_remix.html/" + window.top.location.hash;
           //url = prefix + "/PalestineRemix/mobile/remix/view/" + window.top.location.hash;
-          console.log(url);
+
+          console.log('updatePadShareUrl');
 
           shorten(url, function(_url) {
 
@@ -793,14 +796,17 @@ var AJHAWrapper = {
         }
       }
 
-      if (document.getElementById('HAP-share-bttn')) {
+      
+      var shareBtn = document.getElementById('HAP-share-bttn');
 
-        document.getElementById('HAP-share-bttn').addEventListener('click', function () {
-  
-          updatePadShareUrl()
-        }, false);
+      if (shareBtn) {
+
+        if (!shareBtnListenerSet) {
+          shareBtnListenerSet = true;
+          shareBtn.addEventListener('click', updatePadShareUrl, false);
+        }
+        
       }
-
 
 
       // detect clicks on the viewer menu
@@ -979,6 +985,8 @@ var AJHAWrapper = {
 
 //// bitly
 function shorten(url, callback) {
+
+    console.log("shorten");
 
     var access_token = "7841e0830831228bd9d758134437a0d8e24a75e4";
     var api_url = "https://api-ssl.bitly.com";
