@@ -118,6 +118,8 @@ var AJHAWrapper = {
 
     function buildTranscriptSection(index, tid, stime, length, callback) {
 
+      //console.log(tid);
+      //console.log(stime);
       var element2 = document.createElement('p');
       var attribute = document.createAttribute('dir');
       attribute.value = "auto";
@@ -132,6 +134,8 @@ var AJHAWrapper = {
         var html = this.responseText;
         var parser = new DOMParser();
         var transcript;
+
+        //console.log(html);
 
         try {
           transcript = parser.parseFromString(html, "text/xml");
@@ -295,8 +299,10 @@ var AJHAWrapper = {
     }
 
     function buildMix(params) {
+     // console.log(params);
       for (var i=0; i < params.length; i++) {
         var cmd = params[i].split(':');
+        //console.log(cmd);
 
         if (isNaN(cmd[0])) {
 
@@ -332,6 +338,7 @@ var AJHAWrapper = {
 
       var state = window.top.location.hash;
       var params = state.split('/');
+      //console.log(state);
 
       // first pass - create the sections
 
@@ -365,6 +372,14 @@ var AJHAWrapper = {
       q.awaitAll(function() {
 
         var mixHTML = output.outerHTML;
+        /*console.log("mixHTML");
+        console.log(mixHTML);
+        console.log("longformId");
+        console.log(longformId);
+        console.log("longformMedia");
+        console.log(longformMedia);
+        console.log("transcriptsPath");
+        console.log(longformMedia);*/
 
         if (mixTitle == null) {
 
@@ -408,8 +423,8 @@ var AJHAWrapper = {
               if (L == 'B') prefix = 'http://interactive.aljazeera.com/ajb';
               if (L == 'T') prefix = 'http://interactive.aljazeera.com/ajt';
 
-               selectionTextURI   = prefix + "/PalestineRemix/view_remix.html" + "#/" + videoId +"/" + selection.start + "/" + (parseInt(selection.end) + 1000);
-              // console.log(selectionTextURI);
+
+              selectionTextURI   = prefix + "/PalestineRemix/view_remix.html" + "#/" + videoId +"/" + selection.start + "/" + (parseInt(selection.end) + 1000);
 
               selectionElement     = document.getElementById("share-selection");
 
@@ -596,7 +611,7 @@ var AJHAWrapper = {
               var paused = HAP.transcript.options.player.GUI.status.paused;*/
 
               var currentTime = thisVideo.currentTime;
-              console.log("currentTime="+currentTime);
+              //console.log("currentTime="+currentTime);
               var paused = thisVideo.paused;
 
               //HAP.transcript.options.player.options.media.mp4 = newVideoUrl;
@@ -759,7 +774,9 @@ var AJHAWrapper = {
           if (L == 'B') prefix = 'http://interactive.aljazeera.com/ajb';
           if (L == 'T') prefix = 'http://interactive.aljazeera.com/ajt';
 
-          url = prefix + "/PalestineRemix/view_remix.html" + "#/" + window.top.location.hash;
+
+          //url = prefix + "/PalestineRemix/view_remix.html" + "#/" + window.top.location.hash;
+          url = prefix + "/PalestineRemix/mobile/remix/view/" + window.top.location.hash;
 
           shorten(url, function(_url) {
 
@@ -776,7 +793,9 @@ var AJHAWrapper = {
       }
 
       if (document.getElementById('HAP-share-bttn')) {
+
         document.getElementById('HAP-share-bttn').addEventListener('click', function () {
+  
           updatePadShareUrl()
         }, false);
       }
