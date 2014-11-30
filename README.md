@@ -26,7 +26,10 @@ Should you have problems installing Node, please refer to [this article](http://
 ```
     $ npm install --global gulp
 ```
-
+4. Install MetalSmith:
+```
+    $ npm install metalsmith
+```
 # Running the thing.
 
 ```
