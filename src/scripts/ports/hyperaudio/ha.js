@@ -4823,7 +4823,7 @@ HAP = (function (window, document, HA) {
   var highlightedText;
 
   //loose way of determining whether a mix is passed through
-  if (document.location.hash.split(":").length > 1) {
+  if (window.top.location.hash.split(":").length > 1) {
     mixId = "x"
   }
 
