@@ -13,6 +13,9 @@
           <i class="icon-search"></i>
         </div>
       </div>
+      <a class="toolbar__toggle togglePanel" data-panel-target="filter">
+        <i class="icon-filter" alt="Filter"></i> <span class="hide">Filter</span>
+      </a>
     </div>
     <ol class="listing">
       <li class="listing__item" width="100% !important">
@@ -30,6 +33,7 @@
 {{> aside-right}}
 <div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>
 {{> panel-language}}
+{{> panel-filter}}
 <script src="{{path}}assets/scripts/vendorq2.js"></script>
 <script src="{{path}}assets/scripts/aj.js"></script>
 </body>
