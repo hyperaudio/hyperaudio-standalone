@@ -1,5 +1,4 @@
 {
-
 	"search__placeholder": "ابحث، مثال٬ حيفا",
 
 	"header__current-lang": "AR",
@@ -58,15 +57,10 @@
 	"pad__trim": "قصر",
 	"pad__title":"عنوان",
 	"pad__share": "شارك",
-	"pad__share2": "شارك",
-	"pad__share3": "شارك",
-	"pad__saving": "حفظ",
 
 	"quote__share": "شارك",
 	"video__share": "شارك",
 
 	"home-slide-people": "Meet key witnesses",
 	"home-slide-events": "Explore events"
-
 }
-

@@ -1,5 +1,4 @@
 {
-
 	"search__placeholder": "Search, e.g. 1948, David Ben-Gurion, Haifa…",
 
 	"header__current-lang": "EN",
@@ -58,14 +57,10 @@
 	"pad__trim": "Trim",
 	"pad__title": "Title",
 	"pad__share": "Share",
-	"pad__share2": "Share",
-	"pad__share3": "Share",
-	"pad__saving": "Saving…",
 
 	"quote__share": "Share Quote",
 	"video__share": "Share Clip",
 
 	"home-slide-people": "Meet key witnesses",
 	"home-slide-events": "Explore events"
-
 }
