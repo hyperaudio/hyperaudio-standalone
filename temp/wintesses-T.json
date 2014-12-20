@@ -1,0 +1,886 @@
+[
+  {
+    "name" : "Abdulhalim Kandil",
+    "title": "Aktivist"
+  },
+  {
+    "name" : "David",
+    "title": "İsrailli ihracat müdürü"
+  },
+  {
+    "name" : "Abdulaziz Ebu Sayiyye",
+    "title": "Gazze Elektrik Dağıtım Şirketi çalışanı"
+  },
+  {
+    "name" : "Abdulmuti Abd Rabbu",
+    "title": "Yönetmen"
+  },
+  {
+    "name" : "Dr. Abdurrahman Tamimi",
+    "title": "Filistinli Su Bilimcileri Derneği"
+  },
+  {
+    "name" : "Abdurrezzak Muhammed Huneyti",
+    "title": "Muhammed Hamid Huneyti'nin oğlu"
+  },
+  {
+    "name" : "Abdussettar Kasım",
+    "title": "Politik Bilimler Profesörü"
+  },
+  {
+    "name" : "Abdurrahman Şükeyr",
+    "title": "Direnişçi"
+  },
+  {
+    "name" : "Ebu Enver Cahcuh",
+    "title": "Mısır satıcısı"
+  },
+  {
+    "name" : "Adil Menna",
+    "title": "Tarihçi"
+  },
+  {
+    "name" : "Ahmed Ebu Matar",
+    "title": "İşitme engelli"
+  },
+  {
+    "name" : "Ahmed Tibi",
+    "title": "Knesset üyesi"
+  },
+  {
+    "name" : "Ahmet Ebu Sukkar",
+    "title": "Ahmed Abu Al-Sukkar"
+  },
+  {
+    "name" : "Ahmet Ebu Hedbah",
+    "title": "Ahmed Abu Hedbah"
+  },
+  {
+    "name" : "Ahmed Kurei",
+    "title": "Filistinli Kurtuluş Örgütü"
+  },
+  {
+    "name" : "Antam Ebu Ayla",
+    "title": "Mısır Elektrik Bakanlığı Müsteşarı"
+  },
+  {
+    "name" : "Alaa Ebu Rukba",
+    "title": "Öğretmen"
+  },
+  {
+    "name" : "Alaaddin Nahhal",
+    "title": "Şoför"
+  },
+  {
+    "name" : "Aleks Levak",
+    "title": "İsrailli foto-muhabiri"
+  },
+  {
+    "name" : "Alfredo Tradardi",
+    "title": "Uluslararası Dayanışma Hareketi'nde aktivist"
+  },
+  {
+    "name" : "Ali Muhammed Ali Cubeyl",
+    "title": "Filistinli mülteci"
+  },
+  {
+    "name" : "Alun Mcdonald",
+    "title": "Medya temsilcisi, Oxfam International"
+  },
+  {
+    "name" : "Rahip Emcad Sabbara",
+    "title": "Nasıra Katolik Kilisesi Papazı"
+  },
+  {
+    "name" : "Amine Bargut",
+    "title": "Filistin vatandaşı"
+  },
+  {
+    "name" : "Enes Fevzi Kasım",
+    "title": "Filistinli hukuk danışmanı"
+  },
+  {
+    "name" : "Enis Sayig",
+    "title": "Filistin Ansiklopedisi Editörü"
+  },
+  {
+    "name" : "Antoine Shalhat",
+    "title": "Araştırmacı"
+  },
+  {
+    "name" : "Enver Yasin",
+    "title": "Anwar Yaseen"
+  },
+  {
+    "name" : "Arif Daragmih",
+    "title": "El Malih Köyü İhtiyar Heyeti Başkanı"
+  },
+  {
+    "name" : "Arne Orum",
+    "title": "Norveçli araştırmacı"
+  },
+  {
+    "name" : "Eşref Şahin",
+    "title": "Maliye Bakanlığı'nda memur"
+  },
+  {
+    "name" : "Başpiskopos Ataallah Hannah",
+    "title": "Sabastia Ortodoks Kilisesi"
+  },
+  {
+    "name" : "Avi Shlaim",
+    "title": "İsrailli tarihçi"
+  },
+  {
+    "name" : "Avigdor Feldman",
+    "title": "Avukat"
+  },
+  {
+    "name" : "Avner Gvaryahu",
+    "title": "Sessizliği Bozma Derneği"
+  },
+  {
+    "name" : "Eya Ahmed",
+    "title": "Öğrenci"
+  },
+  {
+    "name" : "Ayid Murar",
+    "title": "Direnişçi"
+  },
+  {
+    "name" : "Eymen Şaravna",
+    "title": "Eski mahkum - açlık grevcisi"
+  },
+  {
+    "name" : "Azmi Bişara",
+    "title": "Siyasetçi ve yazar"
+  },
+  {
+    "name" : "Barak Ben Zur",
+    "title": "Eski Şin Bet Yöneticisi"
+  },
+  {
+    "name" : "Basil Ğattas",
+    "title": "Ekonomist"
+  },
+  {
+    "name" : "Basil Mansur",
+    "title": "Direnişçi"
+  },
+  {
+    "name" : "Basim İyd",
+    "title": "İnsan hakları savunucusu"
+  },
+  {
+    "name" : "Ben Dror Yemeni",
+    "title": "İsrailli gazeteci - Maariv"
+  },
+  {
+    "name" : "Brendan Mcfarlane",
+    "title": "eski IRA üyesi – açlık grevcisi"
+  },
+  {
+    "name" : "Hayim Noy",
+    "title": "\"İsrail Yolcularının Sesi\" kitabının yazarı"
+  },
+  {
+    "name" : "Dan Meridor",
+    "title": "Eski İsrail İstihbarat Bakanı"
+  },
+  {
+    "name" : "Dana Lauriola",
+    "title": "İsrail/İtalya vatandaşı"
+  },
+  {
+    "name" : "Fethi Hudeyrat",
+    "title": "Ürdün Vadisi Dayanışma Vakfı"
+  },
+  {
+    "name" : "David Hurst",
+    "title": "Gazeteci"
+  },
+  {
+    "name" : "Diana Carminati",
+    "title": "Uluslararası Dayanışma Hareketi'nde aktivist"
+  },
+  {
+    "name" : "Dima Karraz",
+    "title": "6'ıncı sınıf öğrencisi"
+  },
+  {
+    "name" : "Dror Etkes",
+    "title": "İsrailli araştırmacı"
+  },
+  {
+    "name" : "Elad Jakobovitch",
+    "title": "Serbest gazeteci"
+  },
+  {
+    "name" : "Elham Elmukayyad",
+    "title": "Mahmud'un annesi"
+  },
+  {
+    "name" : "Eliahu Ben Moşe",
+    "title": "İstatistikçi"
+  },
+  {
+    "name" : "İmad Hicazi",
+    "title": "Su satıcısı"
+  },
+  {
+    "name" : "İman Rantisi",
+    "title": "Kuaför"
+  },
+  {
+    "name" : "Eyman Hamad",
+    "title": "Velid'in annesi"
+  },
+  {
+    "name" : "Enrico Bartolomei",
+    "title": "Öğrenci"
+  },
+  {
+    "name" : "Eugene Rogan",
+    "title": "Ortadoğu Merkezi, Oxford"
+  },
+  {
+    "name" : "Evangelos Hatzigiannakis",
+    "title": "Cerrah"
+  },
+  {
+    "name" : "Fadi Kattan",
+    "title": "Turizm acentası sahibi, Beytüllahim"
+  },
+  {
+    "name" : "Fahri Cudai",
+    "title": "Eczacı"
+  },
+  {
+    "name" : "Fethi Bereket",
+    "title": "Filistin vatandaşı"
+  },
+  {
+    "name" : "Hasan Zubeydat",
+    "title": "Zubeydat Belediye Başkanı"
+  },
+  {
+    "name" : "Fatma Hendaş",
+    "title": "Avad'ın annesi"
+  },
+  {
+    "name" : "Fayize Ebu Dahuk",
+    "title": "Filistinli"
+  },
+  {
+    "name" : "Fuat Kuffaş",
+    "title": "gazeteci ve araştırmacı"
+  },
+  {
+    "name" : "Gabriel S. Moses",
+    "title": "Askerlikten muaf"
+  },
+  {
+    "name" : "Gal Skolnik",
+    "title": "Eski asker"
+  },
+  {
+    "name" : "Gerald Green",
+    "title": "Filistin Polis Gücü"
+  },
+  {
+    "name" : "Germano",
+    "title": "İtalyan aktivist, Filistin forumu"
+  },
+  {
+    "name" : "Gazi Sadi",
+    "title": "Dar el Celil Araştırma Kuruluşu"
+  },
+  {
+    "name" : "Gideon Levi",
+    "title": "İsrailli gazeteci"
+  },
+  {
+    "name" : "Hadas Perez",
+    "title": "Eski asker"
+  },
+  {
+    "name" : "Hamdi Eman",
+    "title": "Ailesinden üç şehit vermiş Filistinli"
+  },
+  {
+    "name" : "Hana Şalabi",
+    "title": "Eski mahkum - açlık grevcisi"
+  },
+  {
+    "name" : "Hani Amir",
+    "title": "Filistin vatandaşı"
+  },
+  {
+    "name" : "Hans Longva",
+    "title": "Norveçli diplomat"
+  },
+  {
+    "name" : "Haşim Gazali",
+    "title": "Atölye yöneticisi"
+  },
+  {
+    "name" : "Hüseyin Oqab",
+    "title": "Mayın kurbanı"
+  },
+  {
+    "name" : "Hilde Henriksen Waage",
+    "title": "Norveçli tarihçi"
+  },
+  {
+    "name" : "Hillel Kohen",
+    "title": "İsrailli tarihçi"
+  },
+  {
+    "name" : "Hind Davud Duvhi",
+    "title": "Filistinli mülteci"
+  },
+  {
+    "name" : "Huda Şahin",
+    "title": "Öğrenci"
+  },
+  {
+    "name" : "Husni Muhammed Semada",
+    "title": "Filistinli mülteci"
+  },
+  {
+    "name" : "Hüseyin Ebu Dahuk",
+    "title": "Filistinli"
+  },
+  {
+    "name" : "Hüseyin Ebu Hüseyin",
+    "title": "Avukat"
+  },
+  {
+    "name" : "Hüseyin Deyri",
+    "title": "Filistinli mülteci"
+  },
+  {
+    "name" : "Prof. Hüseyin Rimmavi",
+    "title": "Birzeyt Üniversitesi"
+  },
+  {
+    "name" : "Jonathan",
+    "title": "İsrailli inşaat işçisi"
+  },
+  {
+    "name" : "İlan Pappe",
+    "title": "İsrailli tarihçi"
+  },
+  {
+    "name" : "Dr. İşay Menuçin",
+    "title": "İsrail İşkence Karşıtı Halk Komitesi"
+  },
+  {
+    "name" : "İsmail Ebu Şehade",
+    "title": "Yafa sakini"
+  },
+  {
+    "name" : "İsra Gazali",
+    "title": "Haşim'in kızı"
+  },
+  {
+    "name" : "Cemil Hatip",
+    "title": "Avukat"
+  },
+  {
+    "name" : "Jan Egeland",
+    "title": "Norveç İşçi Partisi"
+  },
+  {
+    "name" : "Dr. Cevad Hamid",
+    "title": "Ortadoğu Araştırmaları Başkanı, Ürdün"
+  },
+  {
+    "name" : "Cevad Bulos",
+    "title": "Avukat"
+  },
+  {
+    "name" : "Cevdet Muhammed",
+    "title": "Filistinli askeri liderin oğlu"
+  },
+  {
+    "name" : "Jeff Halper",
+    "title": "Özgür Gazze Hareketi Üyesi"
+  },
+  {
+    "name" : "Cihad Muğrabi",
+    "title": "Eski tutuklu"
+  },
+  {
+    "name" : "Muhammed Daragmi",
+    "title": "Ürdün Vadisi sakini"
+  },
+  {
+    "name" : "Jonathan Pollak",
+    "title": "İsrailli direnişçi"
+  },
+  {
+    "name" : "Kemal Halef",
+    "title": "Müteahhit"
+  },
+  {
+    "name" : "Kenan Ubeyd",
+    "title": "Gazze Enerji Kurumu Genel Başkanı"
+  },
+  {
+    "name" : "Kader Rantisi",
+    "title": "işitme engelli imam"
+  },
+  {
+    "name" : "Kadir Mansur",
+    "title": "Çiftçi"
+  },
+  {
+    "name" : "Halil Tufekci",
+    "title": "Filistinli STK üyesi"
+  },
+  {
+    "name" : "Mehdi Abdulhadi",
+    "title": "Filistinli STK üyesi"
+  },
+  {
+    "name" : "Mahmud Ebu Zafer",
+    "title": "Çiftçi, El Halil"
+  },
+  {
+    "name" : "Mahmud Elmukayyad",
+    "title": "Sanatçı"
+  },
+  {
+    "name" : "Mahmud Mislavi",
+    "title": "Mahmoud Mshilawi"
+  },
+  {
+    "name" : "Macid Zir",
+    "title": "Filistin'e Geri Dönüş Merkezi"
+  },
+  {
+    "name" : "Marco",
+    "title": "İtalyan aktivist, Filistin forumu"
+  },
+  {
+    "name" : "Mey Verde",
+    "title": "Nuseyrat Kampı sakini"
+  },
+  {
+    "name" : "Meysa Ömer",
+    "title": "Öğrenci"
+  },
+  {
+    "name" : "Michalis Tiktopoulos",
+    "title": "İnşaat Mühendisi"
+  },
+  {
+    "name" : "Mila Pernice",
+    "title": "Gazeteci ve radyo spikeri"
+  },
+  {
+    "name" : "Dr. Milatios Basal",
+    "title": "St. Joachim ve Anne Manastırı Başkanı, Kudüs"
+  },
+  {
+    "name" : "Mital Nasır",
+    "title": "İnsan Hakları İçin Hekimler Örgütü"
+  },
+  {
+    "name" : "Muhammed Cilani",
+    "title": "Mohamed Al-Jilani"
+  },
+  {
+    "name" : "Muhammed Amireh",
+    "title": "Direnişçi"
+  },
+  {
+    "name" : "Naim Ebu Humus",
+    "title": "Filistinli yetkili"
+  },
+  {
+    "name" : "Dr. Muhammed Vahib",
+    "title": "Ürdünlü arkeolog"
+  },
+  {
+    "name" : "Muhammed Rantisi",
+    "title": "İman ve Kader'in babası"
+  },
+  {
+    "name" : "Muhsin Salih",
+    "title": "Zeytuna Araştırma Merkezi"
+  },
+  {
+    "name" : "Mona Juul",
+    "title": "Norveçli diplomat"
+  },
+  {
+    "name" : "Munib Subhiyye",
+    "title": "Filistinli mülteci"
+  },
+  {
+    "name" : "Mor Dovrat",
+    "title": "Eski asker"
+  },
+  {
+    "name" : "Mordehay Kedar",
+    "title": "Bar-İlan Üniversitesi"
+  },
+  {
+    "name" : "Munzir Şiblak",
+    "title": "Al-Sahel Su İşleri Müdürü"
+  },
+  {
+    "name" : "Murad Eştavi",
+    "title": "Kefr Kaddum Halk Komitesi"
+  },
+  {
+    "name" : "Musellem Bisiso",
+    "title": "AP muhabiri (1948)"
+  },
+  {
+    "name" : "Mustafa Bergusi",
+    "title": "Filistin Milli İnsiyatifi"
+  },
+  {
+    "name" : "Mustafa Kabha",
+    "title": "Filistinli tarihçi"
+  },
+  {
+    "name" : "Nebil Dakvar",
+    "title": "Avukat"
+  },
+  {
+    "name" : "Nadire Şelhub Kevorkyan",
+    "title": "Kriminiloji uzmanı"
+  },
+  {
+    "name" : "Nahla Ömer",
+    "title": "Meysa'nın annesi"
+  },
+  {
+    "name" : "Rami",
+    "title": "İsrailli güvenlik memuru"
+  },
+  {
+    "name" : "Nasır Nucha",
+    "title": "Susiyeli köylü"
+  },
+  {
+    "name" : "Nazik Nahal",
+    "title": "Nazek Al Nahhal"
+  },
+  {
+    "name" : "Nikos Bolos",
+    "title": "Kimyager"
+  },
+  {
+    "name" : "Nur Ahmed",
+    "title": "Eya'nın kız kardeşi"
+  },
+  {
+    "name" : "Ofer Aderet",
+    "title": "Gazeteci, Haaretz"
+  },
+  {
+    "name" : "Ömer Natur",
+    "title": "Filistinli tarihçi"
+  },
+  {
+    "name" : "Ömer Kitmitto",
+    "title": "Filistinli diplomat"
+  },
+  {
+    "name" : "Usame İsa",
+    "title": "Filistinli yazar ve tarihçi"
+  },
+  {
+    "name" : "Pat Sheehan",
+    "title": "eski IRA üyesi – açlık grevcisi"
+  },
+  {
+    "name" : "Paul Larudee",
+    "title": "Özgür Gazze Hareketi Üyesi"
+  },
+  {
+    "name" : "Petros Yiotis",
+    "title": "Gazeteci"
+  },
+  {
+    "name" : "Hanan Herbest",
+    "title": "Haham"
+  },
+  {
+    "name" : "Raid Türl",
+    "title": "Garson"
+  },
+  {
+    "name" : "Raif Zreyk",
+    "title": "Yazar"
+  },
+  {
+    "name" : "Ramazan Hendaş",
+    "title": "Avad’ın kardeşi"
+  },
+  {
+    "name" : "Şedad El Atiyli",
+    "title": "Filistin Su Bakanı"
+  },
+  {
+    "name" : "Ramiz Caraysi",
+    "title": "Eski Nasıra Belediye Başkanı"
+  },
+  {
+    "name" : "Riad Hamad",
+    "title": "Filistinli aktivist"
+  },
+  {
+    "name" : "Riyah Ebu Asal",
+    "title": "Riyah Abu El-Assal"
+  },
+  {
+    "name" : "Ron Pundak",
+    "title": "İsrailli tarihçi"
+  },
+  {
+    "name" : "Rozana Pilatone",
+    "title": "Emekli öğretmen"
+  },
+  {
+    "name" : "Roy Caruchy",
+    "title": "Eski asker"
+  },
+  {
+    "name" : "Roy Rothfeld",
+    "title": "Eski asker"
+  },
+  {
+    "name" : "Ruba Şurab",
+    "title": "Öğrenci"
+  },
+  {
+    "name" : "Ruth Hiller",
+    "title": "New Profile Örgütü"
+  },
+  {
+    "name" : "Sabah Bereket",
+    "title": "Filistinli vatandaş"
+  },
+  {
+    "name" : "Sabrin Dib",
+    "title": "Filistinli vatandaş"
+  },
+  {
+    "name" : "Sahar Vardi",
+    "title": "Vicdani retçi"
+  },
+  {
+    "name" : "Dr. Selam Feyyad",
+    "title": "Filistin Ulusal Yönetimi eski Başkanı"
+  },
+  {
+    "name" : "Selem Kanan",
+    "title": "Filistinli aktivist"
+  },
+  {
+    "name" : "Salih Ebu Leban",
+    "title": "Saleh Abu Laban"
+  },
+  {
+    "name" : "Selman Ebu Sitte",
+    "title": "Filistin Atlası'nın yazarı"
+  },
+  {
+    "name" : "Samir İssavi",
+    "title": "Eski mahkum"
+  },
+  {
+    "name" : "Sami Abdurrezzak",
+    "title": "Filistinli mülteci"
+  },
+  {
+    "name" : "Sami Sadık",
+    "title": "Akabe Köyü İhtiyar Heyeti Başkanı"
+  },
+  {
+    "name" : "Semih Kasım",
+    "title": "Filistinli şair"
+  },
+  {
+    "name" : "Samira Gazal",
+    "title": "Haşim'in karısı"
+  },
+  {
+    "name" : "Sirin Hudeyri",
+    "title": "Ürdün Vadisi Dayanışma Vakfı"
+  },
+  {
+    "name" : "Şahar Levi",
+    "title": "Eski asker"
+  },
+  {
+    "name" : "Shai Michel",
+    "title": "Eski asker"
+  },
+  {
+    "name" : "Sharif Sarhan",
+    "title": "Fotoğraf sanatçısı"
+  },
+  {
+    "name" : "Şir Givoni",
+    "title": "Vicdani retçi"
+  },
+  {
+    "name" : "Şirin Essavi",
+    "title": "Avukat ve eski tutuklu"
+  },
+  {
+    "name" : "Tomer Sagee",
+    "title": "Shiri Shemesh"
+  },
+  {
+    "name" : "Yonah",
+    "title": "Güvenlik elemanı"
+  },
+  {
+    "name" : "Salime Ebu Rahme",
+    "title": "Cevahir ve Basim'in annesi"
+  },
+  {
+    "name" : "Rahip Stephen Sizer",
+    "title": "Hristiyan yazar ve yorumcu"
+  },
+  {
+    "name" : "Suad Karaman",
+    "title": "Yazar"
+  },
+  {
+    "name" : "Suheyl Skeyk",
+    "title": "Gazze Enerji Santrali Genel Müdürü"
+  },
+  {
+    "name" : "Suheyl Diab",
+    "title": "Nasıra Belediyesi eski Sözcüsü"
+  },
+  {
+    "name" : "Tahsin Halibi",
+    "title": "Tahseen Al-Halabi"
+  },
+  {
+    "name" : "Takis Politis",
+    "title": "Öğretim görevlisi"
+  },
+  {
+    "name" : "Tassos Karambinas",
+    "title": "Denizci"
+  },
+  {
+    "name" : "Tassos Kourakis",
+    "title": "Syriza Partisi Milletvekili"
+  },
+  {
+    "name" : "Terje Rod-Larsen",
+    "title": "FAFO Direktörü"
+  },
+  {
+    "name" : "Theodor Katz",
+    "title": "İsrailli tarihçi"
+  },
+  {
+    "name" : "Tereza Halasa",
+    "title": "Therese Halaseh"
+  },
+  {
+    "name" : "Thorvald Stoltenberg",
+    "title": "Norveç Dışişleri eski Bakanı"
+  },
+  {
+    "name" : "Vasim Faruk Han",
+    "title": "Eski asker"
+  },
+  {
+    "name" : "Tommy Donnellan",
+    "title": "İrlandalı direnişçi"
+  },
+  {
+    "name" : "Um Alaa",
+    "title": "Şati Kampı sakini"
+  },
+  {
+    "name" : "Uri Savir",
+    "title": "İsrailli diplomat"
+  },
+  {
+    "name" : "Vangelis Pissias",
+    "title": "Athina Ulusal Teknik Üniversitesi"
+  },
+  {
+    "name" : "Vassos Lissaridis",
+    "title": "Güney Kıbrıs Temsilciler Meclisi Eski Başkanı"
+  },
+  {
+    "name" : "Valil Ebu Riyala",
+    "title": "Balıkçı"
+  },
+  {
+    "name" : "Vakim Vakim",
+    "title": "Filistinli STK üyesi"
+  },
+  {
+    "name" : "Valla Nahhal",
+    "title": "Alaaddin'in kızı"
+  },
+  {
+    "name" : "Velid Hamed",
+    "title": "Öğrenci"
+  },
+  {
+    "name" : "Yaeli Freespirit",
+    "title": "Dükkan sahibi"
+  },
+  {
+    "name" : "Yoav Stern",
+    "title": "Eski asker"
+  },
+  {
+    "name" : "Yasemin Mukayyad",
+    "title": "Mahmud'un kız kardeşi"
+  },
+  {
+    "name" : "Yasir Abid Rabbo",
+    "title": "Filistin Kurtuluş Örgütü"
+  },
+  {
+    "name" : "Yiannis Karipidis",
+    "title": "Yönetmen"
+  },
+  {
+    "name" : "Yorgos Klontzas",
+    "title": "Kaptan"
+  },
+  {
+    "name" : "Yosi Beilin",
+    "title": "Eski İsrail Adalet Bakanı"
+  },
+  {
+    "name" : "Yusuf Hicazi",
+    "title": "Araştırmacı"
+  },
+  {
+    "name" : "Yusra Ramahi",
+    "title": "Filistinli mülteci"
+  },
+  {
+    "name" : "Yusuf Ebu Safiye",
+    "title": "Filistinli çiftçi"
+  },
+  {
+    "name" : "Zahava Gal On",
+    "title": "Meretz Partisi Başkanı"
+  },
+  {
+    "name" : "Züleyha Muhtasıb",
+    "title": "Filistinli"
+  }
+]
