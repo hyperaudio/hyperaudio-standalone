@@ -37,6 +37,13 @@ Should you have problems installing Node, please refer to [this article](http://
     $ gulp
 ```
 
+or, if you want to run the thing in a lang different than English:
+
+```
+    $ cd directory
+    $ LCODE=A gulp
+```
+
 Open http://localhost:8002/ in the browser.
 
 ======================================

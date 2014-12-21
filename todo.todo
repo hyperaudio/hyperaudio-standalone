@@ -1,10 +1,10 @@
 First things first:
  ☐ Add maps [6]
- ☐ Add people [1]
- ☐ Share a quote to FB from the viewer [?]
+ ☐ Add in People search narrower [5]
 
 Backlog:
   ☐ Sharing of Quiz Results cc: @pio [2]
+  ☐ Share a quote to FB from the viewer [?]
   ☐ Add hover states/active states throughout to cater for desktop browsing up to 1200px [2]
   ☐ Fix swiping from side on sidebar active [1.5]
   ☐ Unscroll to top when toggling page sidebars [2]
@@ -13,6 +13,7 @@ Backlog:
   ☐ Arabic fonts
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ Add people [1] @done (14-12-21 20:14) @project(First things first)
  ✔ Testing for desktop up to 18200px [2] @done (14-11-28 18:31)
  ✔ Add in Home Page swiper pagers on desktop [1] @done (14-11-28 14:53)
  ✔ Populate Quiz json files for all languages in /src/data/*/muse/quiz-*.json cc: @Haddad @done (14-11-28 14:35) @project(THINGS MISSING PER SECTION / QUIZZES)

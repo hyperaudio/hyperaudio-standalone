@@ -72,6 +72,12 @@ $menu-back-offset : $tap-size;
       text-align: center;
     }
   }
+  .menu__link-suffix {
+    @include truncate;
+    font-size: $font-s;
+    display: block;
+    opacity: $opacity;
+  }
 }
 .menu__supplement-toggle {
   display: block;
@@ -134,6 +140,7 @@ $menu-back-offset : $tap-size;
 }
 #menu__pane--documentaries,
 #menu__pane--themes,
+#menu__pane--people,
 #menu__pane--maps,
 #menu__pane--quizzes {
   @include transition(transform $time, visibility $time $delay);
@@ -157,6 +164,7 @@ $menu-back-offset : $tap-size;
   }
   #menu__pane--documentaries,
   #menu__pane--themes,
+  #menu__pane--people,
   #menu__pane--maps,
   #menu__pane--quizzes {
     @include position-top-left(0,$menu-back-offset, fixed);
@@ -196,6 +204,7 @@ $menu-back-offset : $tap-size;
   }
   #menu__pane--documentaries,
   #menu__pane--themes,
+  #menu__pane--people,
   #menu__pane--maps,
   #menu__pane--quizzes {
     @include position-top-right(0,$menu-back-offset, fixed);

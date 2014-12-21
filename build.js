@@ -17,10 +17,11 @@ metalsmith.source('./src/content');
 metalsmith.destination('./mobile-' + L);
 
 metalsmith.use(metadata({
-  "L": "data/" + L + "/language.json",
-  "films": "data/" + L + "/films.json",
-  "themes": "data/" + L + "/themes.json",
-  "nav": "data/" + L + "/nav.json"
+  "L"          : "data/" + L + "/language.json",
+  "films"      : "data/" + L + "/films.json",
+  "themes"     : "data/" + L + "/themes.json",
+  "nav"        : "data/" + L + "/nav.json",
+  "witnesses"  : "data/" + L + "/witnesses.json"
 }));
 
 metalsmith.use(markdown({}));
