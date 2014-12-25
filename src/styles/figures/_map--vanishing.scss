@@ -1,0 +1,28 @@
+/**
+ * Figure: Map of Vanishing Palestine
+ * ============================================ */
+
+.mapv {
+  @include position-bottom-right($space,$space);
+  @include position-bottom-left($space,$space);
+}
+
+.mapv__control {
+  margin-top: $space;
+  clear: both;
+  float: left;
+}
+
+.mapv__population {
+  margin-top: $space;
+  clear: both;
+  float: left;
+}
+
+.mapv__map {
+
+}
+
+.mapv__map-image {
+  height: 50%;
+}
