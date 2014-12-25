@@ -53,3 +53,9 @@
     margin-top: $space-m;
   }
 }
+
+.hgroup__text.masked {
+  @include set-size(auto,75px);
+  @include mask-v(72px);
+  overflow: scroll;
+}
