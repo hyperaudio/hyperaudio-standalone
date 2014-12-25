@@ -31,6 +31,7 @@ Handlebars.registerPartial('panel-filter', fs.readFileSync('./dev/partials/panel
 Handlebars.registerPartial('panel-language', fs.readFileSync('./dev/partials/panel-language.html').toString());
 Handlebars.registerPartial('panel-share', fs.readFileSync('./dev/partials/panel-share.html').toString());
 Handlebars.registerPartial('panel-share-transcript', fs.readFileSync('./dev/partials/panel-share-transcript.html').toString());
+Handlebars.registerPartial('map-vanishing', fs.readFileSync('./dev/partials/map-vanishing.html').toString());
 
 Handlebars.registerPartial('header', fs.readFileSync('./dev/partials/header.html').toString());
 Handlebars.registerPartial('footer', fs.readFileSync('./dev/partials/footer.html').toString());
