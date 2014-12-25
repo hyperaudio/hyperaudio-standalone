@@ -10,7 +10,7 @@ request0.onreadystatechange = ->
   if @readyState is 4
     if @status >= 200 and @status < 400
       _titles = JSON.parse(@responseText)
-      console.log(_titles)
+      # console.log(_titles)
       i = 0
       while i < _titles.length
         titles["" + _titles[i]._id] = _titles[i].label
