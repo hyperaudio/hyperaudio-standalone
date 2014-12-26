@@ -1,0 +1,80 @@
+First things first:
+ ☐ Add maps [6]
+ ☐ Add in People search narrower [5]
+
+Backlog:
+  ☐ Sharing of Quiz Results cc: @pio [2]
+  ☐ Share a quote to FB from the viewer [?]
+  ☐ Add hover states/active states throughout to cater for desktop browsing up to 1200px [2]
+  ☐ Fix swiping from side on sidebar active [1.5]
+  ☐ Unscroll to top when toggling page sidebars [2]
+  ☐ Cookie for active slide on the home page [0.5]
+  ☐ Sharing text from the viewer the tiny-drop way and not overlay panel [2] cc: @Maboa
+  ☐ Arabic fonts
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ Add people [1] @done (14-12-21 20:14) @project(First things first)
+ ✔ Testing for desktop up to 18200px [2] @done (14-11-28 18:31)
+ ✔ Add in Home Page swiper pagers on desktop [1] @done (14-11-28 14:53)
+ ✔ Populate Quiz json files for all languages in /src/data/*/muse/quiz-*.json cc: @Haddad @done (14-11-28 14:35) @project(THINGS MISSING PER SECTION / QUIZZES)
+ ✔ HAP remove icon: HAP-delete-hint appears on #source-transcript when you drag text on the RHS test or effects [1] @done (14-11-28 13:02)
+ ✔ Create nav flow from viewer to creator also on Desktop up to 1200px [2] @done (14-11-28 12:13)
+ ✔ Vanishing Palestine map @Haddad @done (14-11-28 02:48) @project(THINGS MISSING PER SECTION / MAPS)
+ ✔ Second Map @Haddad @done (14-11-28 02:48) @project(THINGS MISSING PER SECTION / MAPS)
+ ✔ Generate Quiz cover images for all 3 quiz levels cc: @yritzen @done (14-11-28 02:48) @project(THINGS MISSING PER SECTION / QUIZZES)
+ ✔ Double Check Beginner Quiz https://ajinfographics.slack.com/archives/palestineinfocus/p1417020553001981 cc: @yritzen @Haddad @done (14-11-28 02:48) @project(THINGS MISSING PER SECTION / QUIZZES)
+ ✔ Area ABC Map: where is this in the films? GDocs no longer says cc: @yritzen @done (14-11-28 02:48) @project(THINGS MISSING PER SECTION / MAPS)
+ ✔ Arabic search needs styling [1] @done (14-11-28 02:29)
+ ✔ Desktop site UX expertise [2] @done (14-11-27 23:29)
+ ✔ HAP Pad highlight selected item currently being viewed in the left-hand panel cc: @Maboa [1] @done (14-11-27 18:51)
+ ✔ Arabic Long Forms @done (14-11-27 16:39)
+ ✔ firefox video styling (ie youtube) @done (14-11-27 16:38)
+ ✔ Quiz type size adjustments for tablet up cc: @pio @done (14-11-26 19:59) @project(THINGS MISSING PER SECTION / QUIZZES)
+ ✔ Quizzes need tpl--compact variation when iFramed cc: @pio @laurian @done (14-11-26 19:54) @project(THINGS MISSING PER SECTION / QUIZZES)
+ ✔ Provide a nicer solution for Search results in the PAD [3] @done (14-11-25 22:43)
+ ✔ paras in transcripts formatted in the same way on both the left and right hand side of the pad. [0.5] @done (14-11-24 23:09)
+ ✔ Tweak REMIX button to reflect the branding, add in shuffle icon [1] @started(14-11-20 17:40) @toggle(14-11-20 17:48) @done (14-11-23 23:39) @lasted(0:08)
+ ✔ Add HD button to the player [2] cc: @Maboa @started(14-11-20 17:25) @toggle(14-11-20 17:36) @done (14-11-23 23:18) @lasted(0:11)
+ ✔ Integrate Home Page content [3] @started(14-11-20 18:00) @toggle(14-11-20 18:08) @done (14-11-23 19:33) @lasted(0:08)
+ ✔ Edit HAP tutorial text @started(14-11-21 17:37) @done (14-11-21 18:45) @lasted(0:38)
+ ✔ Edit poster image [0.2] @done (14-11-21 18:15)
+ ✔ Fix player progress bar on arabic going the other way [0.5] @started(14-11-20 14:25) @done (14-11-20 14:29) @lasted(0:04)
+
+ ✔ Sample Working Quiz [1] @done (14-11-13 17:38)
+ ✔ Fix home page search on focus [1] @done (14-11-13 16:26)
+ ✔ Fix home page scrolling issues [2] @done (14-11-13 16:26)
+ ✔ Rearrange narrative content in JSON files cc: @Gridinoc @done (14-11-13 16:14)
+ ✔ Change social share icons in lonfgorms [1] @done (14-11-13 15:15)
+ ✔ Fix viewer in full screen being cut [0.5] @done (14-11-13 14:54)
+ ✔ hide viewer/pad headers with a context class. [0.5] @done (14-11-13 12:13)
+ ✔ viewer edit button [0.5] @done (14-11-13 11:52)
+ ✔ Native iOS transcripts cc: @Maboa @done (14-11-12 18:34)
+ ✔ Make iPhone splash screens cc: @Haddad @done (14-11-12 18:19)
+ ✔ Integrate People cc: @Gridinoc @done (14-11-12 18:19)
+ ✔ Integrate Maps cc: @Haddad @done (14-11-12 18:19)
+ ✔ Integrate Events cc: @Gridinoc @done (14-11-12 18:19)
+ ✔ Disable autoplay in the PAD cc: @Maboa @done (14-11-12 18:19)
+ ✔ Placeholder for Pad search module [2] @done (14-11-09 09:54)
+ ✔ Style the PAD [3] @done (14-11-09 09:26)
+ ✔ Pad sharing modal [2] @done (14-11-09 09:26)
+ ✔ Shepherd tutorial on the viewer [1] @done (14-11-05 20:54)
+ ✔ Fix #-pattern navigation between mixes cc: @Maboa @done (14-11-05 20:37)
+ ✔ Debug on Windows Phone cc: @Haddad [8] @done (14-11-05 20:18)
+ ✔ Build process optimization [8] @done (14-11-05 20:18)
+ ✔ Integrate search @Gridinoc @4.11 [2] @done (14-11-05 18:35)
+ ✔ Debug on Android cc: @Haddad [8] @done (14-11-05 06:57)
+ ✔ Style walk-through [1] @done (14-11-04 17:55)
+ ✔ Play video on video canvas tap cc: @Maboa @done (14-11-04 14:44)
+ ✔ HAP style adjustments cc: @Maboa [2] @done (14-11-04 14:44)
+ ✔ Fix HAP drag&drop @done (14-11-04 14:43)
+ ✔ Populate channels with films cc: @Maboa @done (14-11-03 15:24)
+ ✔ Fix HAP drag-arrange in output panel cc: @Maboa @done (14-11-03 15:24)
+ ✔ Move 'channels/' to init parameter cc: @Maboa @done (14-11-03 15:20)
+ ✔ Test sharing, fetch page URL cc: @Gridinoc @3.11 [2] @done (14-11-03 13:45)
+ ✔ Cookie for HAP [1] @done (14-11-03 12:17)
+ ✔ Double check arabic on page-copy cc: @Gridinoc @2.11 [1] @done (14-11-03 12:02)
+ ✔ Mobile style adjustments to match desktop version [2] @done (14-11-01 20:19)
+ ✔ A global preloader [3] @done (14-11-01 18:56)
+ ✔ Integrate a narrative’s content [1] @done (14-11-01 15:37)
+ ✔ HAP walk-through [8] @done (14-10-31 22:55)
+ ✔ Arabic UI [16] @done (14-10-31 12:56)

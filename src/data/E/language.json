@@ -1,5 +1,4 @@
 {
-
 	"search__placeholder": "Search, e.g. 1948, David Ben-Gurion, Haifa…",
 
 	"header__current-lang": "EN",
@@ -32,6 +31,8 @@
 	"aside-left__remixes": "Remixes",
 	"aside-left__glossary": "Definitions",
 	"aside-left__glossaryintro": "Keywords to help understand Palestine Remix",
+	"aside-left__people": "People",
+	"aside-left__peopleintro": "Meet key witnesses",
 	"aside-left__maps": "Maps",
 	"aside-left__imaps": "Interactive Maps",
 	"aside-left__imaps-1": "Vanishing Palestine",
@@ -58,14 +59,10 @@
 	"pad__trim": "Trim",
 	"pad__title": "Title",
 	"pad__share": "Share",
-	"pad__share2": "Share",
-	"pad__share3": "Share",
-	"pad__saving": "Saving…",
 
 	"quote__share": "Share Quote",
 	"video__share": "Share Clip",
 
 	"home-slide-people": "Meet key witnesses",
 	"home-slide-events": "Explore events"
-
 }

@@ -20,10 +20,10 @@
             <li class="menu__item">
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="themes">{{L.aside-left__glossary}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
-<!--             <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="maps">{{L.aside-left__maps}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+            <li class="menu__item">
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="people">{{L.aside-left__people}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
- -->            <li class="menu__item">
+            <li class="menu__item">
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="quizzes">{{L.aside-left__quizzes}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
           </ol>
@@ -61,7 +61,17 @@
         {{/each}}
         </ol>
       </div>
-      <!-- maps -->
+      <div id="menu__pane--people" class="menu__pane moved--right">
+        <div class="headline" style="background-image: url('{{path}}assets/images/covers/homeslides/slide-people.jpg')">
+          <h2 class="headline__title">{{L.aside-left__people}}</h2>
+          <p class="headline__text">{{L.aside-left__peopleintro}}</p>
+        </div>
+        <ol class="menu__list">
+        {{#each witnesses}}
+          <li class="menu__item"><a class="menu__link" href="{{../path}}search/?search={{name}}">{{name}} <span class="menu__link-suffix">{{title}}</span></a></li>
+        {{/each}}
+        </ol>
+      </div>
       <div id="menu__pane--quizzes" class="menu__pane moved--right">
         <div class="headline" style="background-image: url('{{path}}assets/images/covers/homeslides/slide-quizzes.jpg')">
           <h2 class="headline__title">{{L.aside-left__quizzes}}</h2>
