@@ -107,20 +107,24 @@
   }
   dl {
     @include clearfix;
+    @include set-type-xsmall;
     display: block;
-    margin-bottom: $line;
-  }
-  dt, dd {
-    width: 100%;
-    text-align: center;
   }
   dt {
-    @include reset(first, margin-top);
-    display: block;
-    margin-top: $line;
+    clear: left;
+    color: $mono-M;
+    float: left;
+    font-weight: $font-bold;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 33%;
   }
   dd {
-    color: $mono-M;
+    clear: right;
+    margin-left: 33%;
+    position: relative;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
   blockquote {
     margin-top: $space-s;

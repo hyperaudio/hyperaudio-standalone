@@ -64,5 +64,17 @@
 	"video__share": "Share Clip",
 
 	"home-slide-people": "Meet key witnesses",
-	"home-slide-events": "Explore events"
+	"home-slide-events": "Explore events",
+
+	"maps-vanishing-palestine": "Vanishing Palestine",
+	"maps-vanishing-palestine-intro": "The transformation of Palestine into a Jewish state was a deliberate, drawn-out and violent process. Palestinians were dispossessed of vast swaths of land. Over 80 percent of Palestinians, in what became Israel in 1948, were made into refugees overnight. This process culminated in 1948 but began in the early 20th century. It continues today.",
+	"maps-vanishing-palestine": "Vanishing Palestine",
+	"maps-vp-population": "Population",
+	"maps-vp-landcontrol": "Land Control",
+	"maps-vp-arabs": "Arabs",
+	"maps-vp-jews": "Jews",
+	"maps-vp-y1917-title": "1917–1939",
+	"maps-vp-y1917-text": "The British mandate's main objective was to place historic Palestine under political, administrative and economic conditions that would secure the establishment of a Jewish national home in Palestine. Before the British mandate in Palestine, Jews made up three percent of the total population.",
+	"maps-vp-y1917-arab-val": "97",
+	"maps-vp-y1917-jew-val": "3"
 }
