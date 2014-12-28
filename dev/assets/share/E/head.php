@@ -14,6 +14,10 @@ if ($_GET["t"]) $title = $_GET["t"];
 if ($_GET["d"]) $description = $_GET["d"];
 if ($_GET["v"]) $image = "http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" . $_GET["v"] . "/" . $L . "/p/img" . $_GET["i"] . ".jpg";
 
+?>
+
+<!-- <base href="http://interactive.aljazeera.com/aje/palestineremix/" /> -->
+
 <meta property="og:locale" content="<?php echo htmlspecialchars($locale); ?>" />
 
 <meta property="og:title" content="<?php echo htmlspecialchars($title); ?>" />
@@ -28,5 +32,3 @@ if ($_GET["v"]) $image = "http://interactive.aljazeera.com/aje/PalestineRemix/tr
 <meta property="twitter:title" content="<?php echo htmlspecialchars($title); ?>" />
 <meta property="twitter:description" content="<?php echo htmlspecialchars($description); ?>" />
 <meta property="twitter:image:src" content="<?php echo htmlspecialchars($image); ?>" />
-
-?>
