@@ -1,25 +1,40 @@
-{{> init}}
-<body class="tpl--map tpl--responsive">
+{{> init }}
+<body class="tpl--theme tpl--responsive">
 {{> aside-left}}
 <header class="page-head" id="page-head" data-head-state="" data-head-state-persist="false">
-{{> header}}
+{{> header }}
 </header>
 <div id="page-body" class="page-body">
   <div class="page-wrap">
-    <div class="foldcard" data-fit="true">
-      <div class="foldswiper">
-        <div class="foldswiper__wrapper">
-          {{> map-vanishing}}
+    <div class="foldcard" data-fit="false" style="background-image: url('{{path}}assets/images/covers/maps/{{cover}}')">
+      <div class="foldcard__content">
+        <div class="foldcard__head mth">
+          <span class="label">{{L.aside-left__maps}}</span>
         </div>
-        <div class="foldswiper__foot">
-          <div class="foldswiper__pager pager">
+        <div class="foldcard__body">
+          <div class="group">
+            <div class="s-span-1of1 m-span-4of5 m-center l-span-3of5 l-center">
+              <div class="hgroup">
+                <h2 class="hgroup__title">Vanishing Palestine</h2>
+                <p class="hgroup__text">The transformation of Palestine into a Jewish state was a deliberate, drawn-out and violent process. Palestinians were dispossessed of vast swaths of land. Over 80 percent of Palestinians, in what became Israel in 1948, were made into refugees overnight. This process culminated in 1948 but began in the early 20th century. It continues today.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <a class="foldswiper__skipper foldswiper__skipper--prev" id="slide-prev"><i class="icon-point-left"></i></a>
-        <a class="foldswiper__skipper foldswiper__skipper--next" id="slide-next"><i class="icon-point-right"></i></a>
       </div>
     </div>
+    <section class="page-content">
+      <div class="group">
+        <div class="s-span-1of1 m-span-3of5 m-center l-span-3of5 l-center">
+          <div class="page-copy">
+            {{> map-vanishing}}
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="page-push"></div>
   </div>
+  {{> footer}}
 </div>
 {{> aside-right}}
 <div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>

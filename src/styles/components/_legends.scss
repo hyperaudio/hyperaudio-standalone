@@ -1,0 +1,52 @@
+/**
+ * Legends
+ * ============================================ */
+
+.legend {
+  @include clearfix;
+  height: $line-s;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.legend__val1,
+.legend__val2 {
+  height: $line-s;
+  float: left;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  i {
+    text-transform: uppercase;
+    font-size: $font-xxs;
+    min-width: 60px;
+  }
+}
+
+.legend__val1 {
+  background: $mono-HL;
+  color: $mono-M;
+  display: block;
+}
+
+.legend__val2 {
+  background: #7f91b8;
+  color: #0038B8;
+  display: block;
+}
+
+.legend__lable--tl {
+  @include position-bottom-left(100%,0);
+}
+.legend__lable--tr {
+  @include position-bottom-right(100%,0);
+  text-align: right;
+}
+.legend__lable--bl {
+  @include position-top-left(100%,0);
+}
+.legend__lable--br {
+  @include position-top-right(100%,0);
+  text-align: right;
+}

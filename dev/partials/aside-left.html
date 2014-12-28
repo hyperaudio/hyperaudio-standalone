@@ -21,6 +21,9 @@
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="themes">{{L.aside-left__glossary}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
+              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="maps">{{L.aside-left__maps}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
+            </li>
+            <li class="menu__item">
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="people">{{L.aside-left__people}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
             <li class="menu__item">
@@ -59,6 +62,15 @@
         {{#each nav.glossary}}
           <li class="menu__item"><a class="menu__link" href="{{../path}}definitions/{{file}}/">{{label}}</a></li>
         {{/each}}
+        </ol>
+      </div>
+      <div id="menu__pane--maps" class="menu__pane moved--right">
+        <div class="headline" style="background-image: url('{{path}}assets/images/covers/homeslides/slide-maps.jpg')">
+          <h2 class="headline__title">{{L.aside-left__maps}}</h2>
+          <p class="headline__text">{{L.aside-left__mapsintro}}</p>
+        </div>
+        <ol class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="{{../path}}vanishing-palestine/">Vanishing Palestine</a></li>
         </ol>
       </div>
       <div id="menu__pane--people" class="menu__pane moved--right">

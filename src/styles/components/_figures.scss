@@ -1,0 +1,45 @@
+/**
+ * Figures
+ * ============================================ */
+
+%figure {
+  background-size: cover;
+}
+
+.figure--compact.figure--compact {
+  @extend %figure;
+  margin-top: $line * -1;
+  text-align: center;
+  @include breakpoint(m) {
+    margin-top: $line;
+  }
+  &:after {
+    @include position-top-right(0,0);
+    @include position-bottom-left(0,0);
+    background: $shadow-strong;
+    content: " ";
+    display: block;
+  }
+  img {
+    display: inline-block;
+    max-width: none;
+    max-height: 300px;
+    position: relative;
+    z-index: 5;
+    width: auto;
+    @include breakpoint(m) {
+      max-height: 500px;
+    }
+  }
+  & + p {
+    margin-top: $space;
+  }
+  figcaption {
+    border-width: 0 1px 1px 1px;
+    background: $mono-Wt;
+    display: block;
+    padding: $space-l $space;
+    z-index: 5;
+    text-align: left;
+  }
+}
