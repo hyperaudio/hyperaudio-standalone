@@ -5,7 +5,8 @@ $L = "E";
 
 $title = "PalestineRemix";
 $description = "Explore the story of Palestine. Take our content and use our creative remix tool to re-edit our films. Create your own palestine story";
-$url = "http://interactive.aljazeera.com/aje/palestineremix/index.html";
+// $url = "http://interactive.aljazeera.com/aje/palestineremix/index.html";
+$url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 $image = "assets/english.png";
 
@@ -13,6 +14,7 @@ $image = "assets/english.png";
 if ($_GET["t"]) $title = $_GET["t"];
 if ($_GET["d"]) $description = $_GET["d"];
 if ($_GET["v"]) $image = "http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" . $_GET["v"] . "/" . $L . "/p/img" . $_GET["i"] . ".jpg";
+if ($_GET["h"]) $url .= '#' . $_GET["h"];
 
 ?>
 
