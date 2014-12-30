@@ -776,11 +776,12 @@ var AJHAWrapper = {
           if (L == 'B') prefix = 'http://interactive.aljazeera.com/ajb';
           if (L == 'T') prefix = 'http://interactive.aljazeera.com/ajt';
 
-
-          url = prefix + "/PalestineRemix/view_remix.html/" + window.top.location.hash;
+          url = prefix + "/PalestineRemix/view_remix.html" + window.top.location.hash;
+          //url = prefix + "/PalestineRemix/view_remix.html/" + window.top.location.hash;
           //url = prefix + "/PalestineRemix/mobile/remix/view/" + window.top.location.hash;
 
-          console.log('updatePadShareUrl');
+          //console.log('updatePadShareUrl');
+          //console.log(url);
 
           shorten(url, function(_url) {
 
