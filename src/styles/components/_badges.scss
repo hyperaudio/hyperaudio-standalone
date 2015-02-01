@@ -1,0 +1,16 @@
+/**
+ * Badges
+ * ============================================ */
+
+.badge {
+  // @include position-top-left(100%,50%);
+  // position: absolute !important;
+  border-radius: $radius;
+  display: inline-block;
+  padding: $space-x;
+  line-height: 1.1em;
+  background: $shadow;
+  color: $flare-strong;
+  text-transform: uppercase;
+  font-size: $font-xxs;
+}
