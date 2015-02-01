@@ -84,7 +84,7 @@ doSearch = ->
         el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
         # el.querySelector('a').addEventListener('click', function() {});
       else
-        el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\" class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
+        el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><a class=\"tile\" href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\"><div class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></div><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\">" + title + "</p></div></a></li>"
 
       result = el.children[0]
       resultsContainer.appendChild result
