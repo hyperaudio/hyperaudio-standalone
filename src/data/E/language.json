@@ -1,6 +1,9 @@
 {
 	"search__placeholder": "Search, e.g. 1948, David Ben-Gurion, Haifa…",
 
+	"mailto-subject": "Shared via Palestine Remix",
+	"mailto-body": "The link below is shared from Palestine Remix, an interactive website of Al Jazeera on Palestine",
+
 	"header__current-lang": "EN",
 	"header__menu": "Menu",
 	"header__share": "Share",
