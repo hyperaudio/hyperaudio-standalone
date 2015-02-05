@@ -1,8 +1,8 @@
 {
   "search__placeholder": "ابحث، مثال٬ حيفا",
 
-  "mailto-subject": "ريمكس فلسطين – نافذة تفاعلية",
-  "mailto-body": "هذا الرابط من الموقع التفاعلي ريمكس فلسطين، نافذة تفاعلية للجزيرة عن فلسطين",
+  "mailto-subject": "من ريمكس فلسطين – الجزيرة",
+  "mailto-body": "من ريمكس فلسطين، موقع تفاعلي لشبكة الجزيرة، اطلع على هذا:",
 
   "header__current-lang": "عربي",
   "header__menu": "القائمة",
@@ -67,7 +67,7 @@
 
   "home-slide-people": "التق الشخصيات",
   "home-slide-events": "استكشف الأحداث",
-  "home-slide-remix-badge": "Desktop Only",
+  "home-slide-remix-badge": "على الكمبيوتر فقط",
 
   "definition__watch-remix": "المزيد عن",
 

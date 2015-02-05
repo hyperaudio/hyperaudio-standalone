@@ -1,8 +1,8 @@
 {
 	"search__placeholder": "Ara…",
 
-	"mailto-subject": "Shared via Palestine Remix",
-	"mailto-body": "The link below is shared from Palestine Remix, an interactive website of Al Jazeera on Palestine",
+	"mailto-subject": "Filistin Remiks - Al Jazeera",
+	"mailto-body": "Filistin Remiks - Al Jazeera'nin interaktif web sitesine göz atın",
 
 	"header__current-lang": "TR",
 	"header__menu": "Menu",
@@ -68,7 +68,7 @@
 
 	"home-slide-people": "Kişi seçin",
 	"home-slide-events": "Bir dönem seçin",
-	"home-slide-remix-badge": "Desktop Only",
+	"home-slide-remix-badge": "Yalnızca bilgisayarlarda çalışır ",
 
 	"definition__watch-remix": "Ara",
 
