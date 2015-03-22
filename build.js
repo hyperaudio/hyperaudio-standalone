@@ -139,6 +139,7 @@ metalsmith.use(assets({
 }));
 
 metalsmith.build(function(err){
+  console.log(err);
   if (err) throw err;
 });
 
