@@ -134,7 +134,7 @@ metalsmith.use(templates({
 }));
 
 metalsmith.use(assets({
-  "source": "./assets",
+  "source": "./dev/assets",
   "destination": "./assets"
 }));
 
