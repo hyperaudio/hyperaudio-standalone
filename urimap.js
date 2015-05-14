@@ -50,32 +50,32 @@ var urimap = [
 ["/films_main.html",	"/mobile/index.html"]
 ];
 
-var mobileLink = document.location.href; 
-var desktopLink = document.location.href;
+var mobileLink = window.top.location.href; 
+var desktopLink = window.top.location.href;
 
 var md = new MobileDetect(window.navigator.userAgent);
 
-if (document.location.href.indexOf('/mobile/') > -1) {
+if (window.top.location.href.indexOf('/mobile/') > -1) {
   for (var i = 0; i < urimap.length; i++) {
-    if (document.location.href.indexOf(urimap[i][1]) > -1) {
+    if (window.top.location.href.indexOf(urimap[i][1]) > -1) {
       desktopLink = mobileLink.replace(urimap[i][1], urimap[i][0]);
       break;
     }
     if (urimap[i][1].replace('index.html', '') == '/mobile/') continue;
-    if (document.location.href.indexOf(urimap[i][1].replace('index.html', '')) > -1) {
+    if (window.top.location.href.indexOf(urimap[i][1].replace('index.html', '')) > -1) {
       desktopLink = mobileLink.replace(urimap[i][1].replace('index.html', ''), urimap[i][0]);
       break;
     }
   }
-  if (!md.mobile()) document.location.href = desktopLink;
+  if (!md.mobile()) window.top.location.href = desktopLink;
 } else {
   for (var i = 0; i < urimap.length; i++) {
-    if (document.location.href.indexOf(urimap[i][0]) > -1) {
+    if (window.top.location.href.indexOf(urimap[i][0]) > -1) {
       mobileLink = desktopLink.replace(urimap[i][0], urimap[i][1]);
       break;
     }
   }
-  if (md.mobile()) document.location.href = mobileLink;
+  if (md.mobile()) window.top.location.href = mobileLink;
 }
 
 //MUSE fix
