@@ -50,7 +50,7 @@ var urimap = [
 ["/films_main.html",	"/mobile/index.html"]
 ];
 
-var mobileLink = window.top.location.href; 
+var mobileLink = window.top.location.href;
 var desktopLink = window.top.location.href;
 
 var md = new MobileDetect(window.navigator.userAgent);
@@ -82,7 +82,7 @@ if (window.top.location.href.indexOf('/mobile/') > -1) {
     }
   }
   if (md.mobile()) {
-    if (window.top.location.href == mobileLink) {
+    if (window.top.location.href != mobileLink) {
       window.top.location.href = mobileLink;
     } else {
       window.top.location.href = mobileLink + 'mobile/index.html';
@@ -93,4 +93,3 @@ if (window.top.location.href.indexOf('/mobile/') > -1) {
 //MUSE fix
 typeof Muse == "undefined" && (Muse = {});
 Muse.Redirect = { redirect: function(){}};
-
