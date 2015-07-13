@@ -29,5 +29,13 @@
     "Mark Boas <mark.boas@gmail.com>",
     "Laurian Gridinoc <laurian@gmail.com>",
     "Piotr Fedorczyk <piotr@piotrf.pl>"
-  ]
+  ],
+  "scripts": {
+    "build-english": "LCODE=E ./node_modules/gulp/bin/gulp.js build",
+    "build-arabic": "LCODE=A ./node_modules/gulp/bin/gulp.js build",
+    "build-turkish": "LCODE=T ./node_modules/gulp/bin/gulp.js build",
+    "build-bosnian": "LCODE=B ./node_modules/gulp/bin/gulp.js build",
+    "build": "npm run build-english",
+    "build-all": "npm run build-english && npm run build-arabic && npm run build-turkish && npm run build-bosnian"
+  }
 }
