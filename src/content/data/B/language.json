@@ -1,0 +1,86 @@
+{
+  "search__placeholder": "Potražite, npr. 1948, David Ben-Gurion, Haifa…",
+
+  "mailto-subject": "Palestina Remix – Al Jazeera",
+  "mailto-body": "Palestina Remix, interaktivna web stranica Al Jazeere, pogledajte:",
+
+  "header__current-lang": "EN",
+  "header__menu": "Glavni meni",
+  "header__share": "Podijelite",
+  "header__sitename": "Palestina Remix",
+
+  "panel-lang__change-lang": "Promijenite jezik",
+  "panel-lang__cancel": "Poništite",
+
+  "panel-share__share-remix": "Podijelite svoj remix",
+  "panel-share__share-remix-with": "Podijelite svoj Remix sa svojim najbližima:",
+  "panel-share__save-loc": "Snimite lokaciju Remixa kako biste kasnije nastavili:",
+  "panel-share__done": "Završeno",
+  "panel-share__close": "Zatvori",
+
+  "panel-share-transcript__share-remix": "Podijelite citat",
+  "panel-share-transcript__share-remix-with": "Podijelite ovaj citat sa svojim najbližim:",
+  "panel-share-transcript__save-loc": "Snimite lokaciju citata kako biste mu kasnije pristupili:",
+  "panel-share-transcript__done": "Završeno",
+  "panel-share-transcript__close": "Zatvori",
+
+  "aside-right__share-page": "Podijelite ovu stranicu",
+  "aside-right__share-page2": "Volite ovu stranicu? Podijelite je.",
+
+  "aside-left__title": "Palestina Remix",
+  "aside-left__subtitle": "Započnite svoje istraživanje ovdje",
+  "aside-left__films": "Filmovi",
+  "aside-left__filmsintro": "Opis filmova",
+  "aside-left__remixes": "Remix",
+  "aside-left__glossary": "Definicije",
+  "aside-left__glossaryintro": "Ključne riječi za razumijevanje Palestina Remixa",
+  "aside-left__people": "Ljudi",
+  "aside-left__peopleintro": "Upoznati ljude",
+  "aside-left__maps": "Karte",
+  "aside-left__imaps": "Interaktivne karte",
+  "aside-left__imaps-1": "Palestina koja nestaje",
+  "aside-left__imaps-2": "Druga karta",
+  "aside-left__mapsintro": "Istražite naše karte Palestine",
+  "aside-left__videomaps": "Video karte",
+  "aside-left__videomaps-wall": "Zid",
+  "aside-left__videomaps-abc": "Zona A/B/C",
+  "aside-left__videomaps-wall-href": "",
+  "aside-left__videomaps-abc-href": "470660",
+  "aside-left__quizzes": "Kviz",
+  "aside-left__quizzesintro": "Kako biste ocijenili svoje poznavanje palestinskih problema?",
+  "aside-left__quizzes-beginner": "Početno",
+  "aside-left__quizzes-advanced": "Napredno",
+  "aside-left__quizzes-expert": "Stručno",
+  "aside-left__footAJ": "Mreža Al Jazeera",
+  "aside-left__footProj": "Projekt",
+  "aside-left__footTeam": "Tim",
+
+  "longform__watch-full-doc": "Pogledajte cijeli dokumentarac",
+
+  "pad__start-creating-remix": "Započnite svoj Remix odabirom filma…",
+  "pad__fade": "Prelaz",
+  "pad__trim": "Rezanje",
+  "pad__title": "Naslov",
+  "pad__share": "Podijelite",
+
+  "quote__share": "Podijelite citat",
+  "video__share": "Podijelite klip",
+
+  "home-slide-people": "Upoznajte ključne svjedoke",
+  "home-slide-events": "Istražite događaje",
+  "home-slide-remix-badge": "Desktop verzija",
+
+  "definition__watch-remix": "Više o",
+
+  "maps-vanishing-palestine": "Vanishing Palestine",
+  "maps-vanishing-palestine-intro": "The transformation of Palestine into a Jewish state was a deliberate, drawn-out and violent process. Palestinians were dispossessed of vast swaths of land. Over 80 percent of Palestinians, in what became Israel in 1948, were made into refugees overnight. This process culminated in 1948 but began in the early 20th century. It continues today.",
+  "maps-vanishing-palestine": "Vanishing Palestine",
+  "maps-vp-population": "Population",
+  "maps-vp-landcontrol": "Land Control",
+  "maps-vp-arabs": "Arabs",
+  "maps-vp-jews": "Jews",
+  "maps-vp-y1917-title": "1917–1939",
+  "maps-vp-y1917-text": "The British mandate's main objective was to place historic Palestine under political, administrative and economic conditions that would secure the establishment of a Jewish national home in Palestine. Before the British mandate in Palestine, Jews made up three percent of the total population.",
+  "maps-vp-y1917-arab-val": "97",
+  "maps-vp-y1917-jew-val": "3"
+}

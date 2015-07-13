@@ -71,5 +71,5 @@ Remove cookies and comment out:
 ## Iframing PAD and VIEWER in desktop version
 
 Add in .tpl--compact to `<body>` tag
-
-======================================
+	
+	

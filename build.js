@@ -134,11 +134,12 @@ metalsmith.use(templates({
 }));
 
 metalsmith.use(assets({
-  "source": "./assets",
+  "source": "./dev/assets",
   "destination": "./assets"
 }));
 
 metalsmith.build(function(err){
+  console.log(err);
   if (err) throw err;
 });
 

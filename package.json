@@ -10,7 +10,7 @@
     "gulp-load-plugins": "^0.6.0",
     "gulp-plumber": "^0.6.5",
     "gulp-sass": "^0.7.3",
-    "gulp-shell": "^0.2.10",
+    "gulp-shell": "0.4.0",
     "gulp-uglifyjs": "^0.4.4",
     "gulp-watch": "^1.0.7",
     "handlebars": "^2.0.0-alpha.2",
@@ -29,5 +29,13 @@
     "Mark Boas <mark.boas@gmail.com>",
     "Laurian Gridinoc <laurian@gmail.com>",
     "Piotr Fedorczyk <piotr@piotrf.pl>"
-  ]
+  ],
+  "scripts": {
+    "build-english": "LCODE=E ./node_modules/gulp/bin/gulp.js build",
+    "build-arabic": "LCODE=A ./node_modules/gulp/bin/gulp.js build",
+    "build-turkish": "LCODE=T ./node_modules/gulp/bin/gulp.js build",
+    "build-bosnian": "LCODE=B ./node_modules/gulp/bin/gulp.js build",
+    "build": "npm run build-english",
+    "build-all": "npm run build-english && npm run build-arabic && npm run build-turkish && npm run build-bosnian"
+  }
 }

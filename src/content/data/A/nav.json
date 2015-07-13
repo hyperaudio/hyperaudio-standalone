@@ -1,0 +1,92 @@
+{
+"films": [
+  { "_id": 1,
+    "label": "قرى تتحدى الجدار",
+    "file": "against-the-wall"
+  },
+  { "_id": 17,
+    "label": "النكبة",
+    "file": "al-nakba"
+  },
+  { "_id": 2,
+    "label": "مناطق جيم",
+    "file": "area-c"
+  },
+  { "_id": 3,
+    "label": "خارج الأسوار",
+    "file": "beyond-the-walls"
+  },
+  { "_id": 4,
+    "label": "الحج المحرم",
+    "file": "forbidden-pilgrimage"
+  },
+  { "_id": 5,
+    "label": "حياة بالجدول",
+    "file": "gaza-left-in-the-dark"
+  },
+  { "_id": 6,
+    "label": "غزة تعيش",
+    "file": "gaza-lives-on"
+  },
+  { "_id": 7,
+    "label": "غزة إننا قادمون",
+    "file": "gaza-we-are-coming"
+  },
+  { "_id": 0,
+    "label": "ضد التيار",
+    "file": "going-against-the-grain"
+  },
+  { "_id": 16,
+    "label": "معركة الأمعاء الخاوية",
+    "file": "hunger-strike"
+  },
+  { "_id": 8,
+    "label": "الشاباك",
+    "file": "inside-shin-bet"
+  },
+  { "_id": 9,
+    "label": "الاقتلاع من الغور",
+    "file": "last-shepherds-of-the-valley"
+  },
+  { "_id": 10,
+    "label": "اغتيال المدينة",
+    "file": "lost-cities-of-palestine"
+  },
+  { "_id": 11,
+    "label": "فلسطين في قلوب إيطالية",
+    "file": "palestina-amore"
+  },
+  { "_id": 13,
+    "label": "أقوى من الكلام",
+    "file": "stronger-than-words"
+  },
+  { "_id": 12,
+    "label": "المستنقع",
+    "file": "the-pain-inside"
+  },
+  { "_id": 14,
+    "label": "ثمن أوسلو",
+    "file": "the-price-of-oslo"
+  }
+],
+
+"glossary": [
+
+{"file": "admin_detention", "label": "الاعتقال الإداري"},
+{"file": "borders", "label": "الحـدود"},
+{"file": "bypass_road", "label": "الطـريق الالتفـافي"},
+{"file": "closure", "label": "الإغـلاق"},
+{"file": "collective_punishment", "label": "العقـاب الجماعي"},
+{"file": "ethnic_cleansing", "label": "التطهير العـرقي"},
+{"file": "green_line", "label": "الخـط الأخضـر"},
+{"file": "intifada", "label": "الانتفـاضة"},
+{"file": "occupied_territories", "label": " الأراضي الفلسطينية المحتلة"},
+{"file": "palestinian_authority", "label": "السلطة الفلسطينية"},
+{"file": "plo", "label": "منظمة التحرير الفلسطينية"},
+{"file": "refugee", "label": "اللاجئ"},
+{"file": "settlement", "label": "المستوطنة"},
+{"file": "wall", "label": "الجدار الفاصل"},
+{"file": "zionism", "label": "الصهيونية"}
+
+]
+}

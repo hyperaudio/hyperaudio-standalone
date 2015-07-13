@@ -156,3 +156,14 @@ gulp.task "default", [
   "connect"
   "watch"
 ]
+
+gulp.task "build", [
+  "compile-sass"
+  "concat-vendorq1"
+  "concat-vendorq2"
+  "concat-vendorqt"
+  "concat-ports"
+  "compile-coffee"
+  "copyfiles"
+  "node-build"
+]
