@@ -23,9 +23,11 @@ var pages = [
 	// "the-price-of-oslo",
 
 	// "jerusalem-hitting-home",
-	"palestine-divided",
+	// "palestine-divided",
 	// "return-to-morocco",
-	// "stories-from-the-intifada"
+	// "stories-from-the-intifada",
+	// "born-in-48",
+	"deportees"
 ];
 
 var process = function (key) {
