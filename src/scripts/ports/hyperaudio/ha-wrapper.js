@@ -37,16 +37,16 @@ var AJHAWrapper = {
     function CreateMSXMLDocumentObject () {
       if (typeof (ActiveXObject) != "undefined") {
         var progIDs = [
-                        "Msxml2.DOMDocument.6.0", 
-                        "Msxml2.DOMDocument.5.0", 
-                        "Msxml2.DOMDocument.4.0", 
-                        "Msxml2.DOMDocument.3.0", 
-                        "MSXML2.DOMDocument", 
+                        "Msxml2.DOMDocument.6.0",
+                        "Msxml2.DOMDocument.5.0",
+                        "Msxml2.DOMDocument.4.0",
+                        "Msxml2.DOMDocument.3.0",
+                        "MSXML2.DOMDocument",
                         "MSXML.DOMDocument"
                       ];
         for (var i = 0; i < progIDs.length; i++) {
-          try { 
-              return new ActiveXObject(progIDs[i]); 
+          try {
+              return new ActiveXObject(progIDs[i]);
           } catch(e) {};
         }
       }
@@ -87,19 +87,19 @@ var AJHAWrapper = {
         effectsLabelTrim = "Trim: ";
         effectsLabelTitle = "Title: ";
         break;
-        
+
       case 'B':
         effectsLabelFade = "Fade Effect: ";
         effectsLabelTrim = "Trim: ";
         effectsLabelTitle = "Title: ";
         break;
-        
+
       case 'T':
         effectsLabelFade = "Fade Effect: ";
         effectsLabelTrim = "Trim: ";
         effectsLabelTitle = "Title: ";
         break;
-        
+
       default:
         effectsLabelFade = "Fade Effect: ";
         effectsLabelTrim = "Trim: ";
@@ -407,7 +407,7 @@ var AJHAWrapper = {
 
           function shareHighlight() {
             var selection = HAP.transcript.getSelection();
-            
+
             if (!selection.start) {
               selection = HAP.transcript.getMobileSelection();
             }
@@ -417,8 +417,8 @@ var AJHAWrapper = {
               selectionTextContent = "'" + selection.text + "' :";
 
               var videoId = window.top.location.hash.split('/')[1];
-              window.top.location.hash = "#/" + videoId +"/";
-              
+              window.top.location.hash = "#!/" + videoId +"/";
+
               // selectionTextURI     = window.top.location.href + selection.start + "/" + (parseInt(selection.end) + 1000);
               var prefix = 'http://interactive.aljazeera.com/aje';
               if (L == 'A') prefix = 'http://interactive.aljazeera.com/aja';
@@ -426,7 +426,7 @@ var AJHAWrapper = {
               if (L == 'T') prefix = 'http://interactive.aljazeera.com/ajt';
 
 
-              selectionTextURI   = prefix + "/PalestineRemix/view_remix.html" + "#/" + videoId +"/" + selection.start + "/" + (parseInt(selection.end) + 1000);
+              selectionTextURI   = prefix + "/PalestineRemix/view_remix.html" + "#!/" + videoId +"/" + selection.start + "/" + (parseInt(selection.end) + 1000);
 
               selectionElement     = document.getElementById("share-selection");
 
@@ -462,7 +462,7 @@ var AJHAWrapper = {
             }, false);
 
             sourceTranscript.addEventListener('touchend', function () {
-              var selectedText = window.getSelection(); 
+              var selectedText = window.getSelection();
               if (window.getSelection().baseNode) {
                 shareHighlight();
               }
@@ -607,7 +607,7 @@ var AJHAWrapper = {
               if (cachebuster) {
                 newVideoUrl += "&" + cachebuster;
               }
-              
+
               /*var currentTime = HAP.transcript.options.player.videoElem.currentTime;
               HAP.transcript.options.player.videoElem.src = newVideoUrl;
               var paused = HAP.transcript.options.player.GUI.status.paused;*/
@@ -633,15 +633,15 @@ var AJHAWrapper = {
                     //HAP.transcript.options.player.play(currentTime);
                     thisVideo.currentTime = currentTime;
                     thisVideo.play();
-                  }           
+                  }
                 }
                 switched = true;
-                
+
               }, false);
 
             }
           }, false);
-        }      
+        }
         hdListenersSet = true;
       }
     }
@@ -650,7 +650,7 @@ var AJHAWrapper = {
       if (!canPlayMP4) {
         var gui = document.getElementsByClassName('HAP-player-gui');
         for (var i = 0; i < gui.length; i++) {
-          
+
           HA.addClass(gui[i],'HAP-player-gui--compact');
         }
       }
@@ -719,7 +719,7 @@ var AJHAWrapper = {
 
       setHdListeners();
 
-      setVideoClickListeners();     
+      setVideoClickListeners();
     }
 
     document.addEventListener('mixready', function () {
@@ -736,7 +736,7 @@ var AJHAWrapper = {
       var listItemsLength = listItems.length;
 
       var videoId = window.top.location.hash.split('/')[1];
-      
+
       for (var l = 0; l < listItemsLength; l++) {
         HA.removeClass(listItems[l], selectedClass);
         if (listItems[l].getAttribute('data-id') == videoId) {
@@ -745,7 +745,7 @@ var AJHAWrapper = {
       }
     }
 
-    // note transcript ready only fires when an entire transcript is loaded (Not a mix) 
+    // note transcript ready only fires when an entire transcript is loaded (Not a mix)
 
     document.addEventListener('transcriptready', function () {
 
@@ -797,7 +797,7 @@ var AJHAWrapper = {
         }
       }
 
-      
+
       var shareBtn = document.getElementById('HAP-share-bttn');
 
       if (shareBtn) {
@@ -806,7 +806,7 @@ var AJHAWrapper = {
           shareBtnListenerSet = true;
           shareBtn.addEventListener('click', updatePadShareUrl, false);
         }
-        
+
       }
 
 
@@ -817,7 +817,7 @@ var AJHAWrapper = {
 
         if (sidemenuItems[i].href.length > 0) {
 
-          sidemenuItems[i].addEventListener('click', function() {            
+          sidemenuItems[i].addEventListener('click', function() {
             window.onhashchange = buildState;
           }, false);
         }
@@ -858,7 +858,7 @@ var AJHAWrapper = {
       function generatePadMenuClickEvent() {
         var ev = document.createEvent('Event');
         ev.initEvent('padmenuclick', true, true);
-        document.dispatchEvent(ev);        
+        document.dispatchEvent(ev);
       }
 
       // detect clicks on the search results
@@ -896,8 +896,8 @@ var AJHAWrapper = {
 
         if (sections.length > 0) {
 
-          var newUrlHash = "#";
-          
+          var newUrlHash = "#!";
+
           for ( var i = 0; i < sections.length; i++ ) {
             var firstChild = sections[i].firstChild;
 
@@ -970,13 +970,13 @@ var AJHAWrapper = {
           }
           window.top.location.hash = newUrlHash;
         }
-        
+
       }, false);
 
     }, false);
 
     document.addEventListener('sidemenuinit', function () {
-      
+
       highlightSelectedSidebarItem();
 
     }, false);
@@ -994,11 +994,11 @@ function shorten(url, callback) {
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", api_url + "/v3/shorten?longUrl=" + encodeURIComponent(url) + "&access_token=" + access_token);
-    xhr.onreadystatechange = function() { 
-        if(xhr.readyState == 4) { 
+    xhr.onreadystatechange = function() {
+        if(xhr.readyState == 4) {
             if(xhr.status==200) {
-                // console.log("CORS bitly", xhr.responseText); 
-                var resp = JSON.parse(xhr.responseText);    
+                // console.log("CORS bitly", xhr.responseText);
+                var resp = JSON.parse(xhr.responseText);
                 console.log(resp);
                 // if (typeof resp.data == 'undefined' || typeof resp.data.url == 'undefined') return callback(url);
                 callback(resp.data.url);

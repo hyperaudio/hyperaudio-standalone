@@ -997,7 +997,7 @@ var SideMenu = (function (document, hyperaudio) {
           list = document.createElement('li');
           anchor = document.createElement('a');
           anchor.setAttribute('data-id', trans._id);
-          anchor.setAttribute('href', "#/"+trans._id);
+          anchor.setAttribute('href', "#!/"+trans._id);
           anchor.innerHTML = trans.label;
           anchor.addEventListener('click', function() {
             var ev = document.createEvent('Event');
@@ -2010,6 +2010,7 @@ var Address = (function(hyperaudio) {
       var param_index = url.indexOf('?');
       var param_url = '';
       var hash_index = url.indexOf('#');
+      if (url.indexOf('#!') > -1) hash_index++;
       var hash_url = '';
 
       // Do we have any parameters
@@ -2062,7 +2063,7 @@ var Address = (function(hyperaudio) {
         }
       }
       if(detail.hash) {
-        href += '#' + detail.hash;
+        href += '#!' + detail.hash;
       }
       if(DEBUG) console.log('[History|buildUrl] href = "' + href + '"');
       return href;
@@ -3123,7 +3124,7 @@ var Transcript = (function(document, hyperaudio) {
         });
         this.ready = true;
         this._trigger(hyperaudio.event.ready, {msg: 'Transcript is ready.'});
-        
+
         var event = document.createEvent('Event');
         event.initEvent('transcriptready', true, true);
         document.dispatchEvent(event);
