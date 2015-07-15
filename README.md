@@ -1,6 +1,7 @@
 Al Jazeera - Palestine Remixed Mobile
 ======================================
 
+
 # Installation
 
 ## 1. If you have Bower and Node installed
@@ -21,30 +22,46 @@ Al Jazeera - Palestine Remixed Mobile
 
 Should you have problems installing Node, please refer to [this article](http://piotrf.pl/wrote/troubleshooting-command-line-tools).
 
-3. Install Gulp CLI:
-
-```
-    $ npm install --global gulp
-```
-4. Install MetalSmith:
-```
-    $ npm install metalsmith
-```
 # Running the thing.
 
 ```
-    $ cd directory
-    $ gulp
+    $ npm run build
 ```
 
-or, if you want to run the thing in a lang different than English:
+which is equivalent to
 
 ```
-    $ cd directory
-    $ LCODE=A gulp
+    $ npm run build-english
+```
+
+or, if you want to run the thing in a lang different than English, substitute with arabic, turkish or bosnian
+
+```
+    $ npm run build-arabic
+```
+
+or build all the languages
+
+```
+    $ npm run build-all
 ```
 
 Open http://localhost:8002/ in the browser.
+
+# Scraping MUSE pages
+
+Install phantomjs, on OSX use `brew install phantomjs`, be sure phantomjs is in your PATH
+
+```
+    $ cd src/data/E/muse/fetch
+    $ node extract.js
+```
+
+or supply the proper PATH
+
+```
+    $ PATH=$PATH:/usr/local/Cellar/phantomjs/2.0.0/bin node extract.js
+```
 
 ======================================
 
@@ -54,7 +71,7 @@ Open http://localhost:8002/ in the browser.
 Set $direction variable in _config.scss.
 
 ## Enabling viewer and pad walk-through tips locally
-Remove cookies and comment out: 
+Remove cookies and comment out:
 
 ```
     createCookie("HAPtourStatus", "done", 30)
@@ -71,5 +88,3 @@ Remove cookies and comment out:
 ## Iframing PAD and VIEWER in desktop version
 
 Add in .tpl--compact to `<body>` tag
-	
-	
