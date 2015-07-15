@@ -1,5 +1,5 @@
 var VIDEOS = {
-	E: 
+	E:
 [
 "http://www.youtube.com/watch?v=4hRzdAgc8FM,http://player.vimeo.com/external/109585527.mobile.mp4?s=7cc3e82e7500925575fa4a80aa38a380,http://player.vimeo.com/external/109585527.sd.mp4?s=e99f33109ff46499874083681f22910a,http://player.vimeo.com/external/109585527.hd.mp4?s=7bd504c45f373de7f627177e3c3f1bcb",
 "http://www.youtube.com/watch?v=HomYG95MO3k,http://player.vimeo.com/external/109585525.mobile.mp4?s=0e9cf2efcd029f38f4ac24adf0e04527,http://player.vimeo.com/external/109585525.sd.mp4?s=b84469ac8b71df005ce2da6ec1568e7f,http://player.vimeo.com/external/109585525.hd.mp4?s=dbcb3c3e779426f92f5ef51f64acbba5",
@@ -21,7 +21,19 @@ var VIDEOS = {
 "http://www.youtube.com/watch?v=H7FML0wzJ6A,http://player.vimeo.com/external/111081058.mobile.mp4?s=2c9283df2d2132791282fd473d95d413,http://player.vimeo.com/external/111081058.sd.mp4?s=d20ded9a08ad462f6ff44790b40d7693,http://player.vimeo.com/external/111081058.hd.mp4?s=cad76b3823904863171ec927e50bd7a0",
 "http://www.youtube.com/watch?v=yI2D5Fsd9lg,http://player.vimeo.com/external/111081059.mobile.mp4?s=9a8cd0a739805a9b847e2a330e3af851,http://player.vimeo.com/external/111081059.sd.mp4?s=6c853d32b8dd2e7167a0f79d4c06033d,http://player.vimeo.com/external/111081059.hd.mp4?s=f08274591b8f2d75919792837dcbb99a",
 "http://www.youtube.com/watch?v=5SKECszemmA,http://player.vimeo.com/external/111081089.mobile.mp4?s=2da6e706be1f8852def6bda4d77eb1cf,http://player.vimeo.com/external/111081089.sd.mp4?s=95254f6be7ac51226c4dc37ed5e602c9,http://player.vimeo.com/external/111081089.hd.mp4?s=7fc73b36d5f23c2b46272f0c2466fdeb",
-"http://www.youtube.com/watch?v=0m__A7MlDrk,http://player.vimeo.com/external/111081090.mobile.mp4?s=f4fde8d2304350fed1fc70771f292032,http://player.vimeo.com/external/111081090.sd.mp4?s=e4e8d05d5093187411eda737120d1c54,http://player.vimeo.com/external/111081090.hd.mp4?s=a243a21bb0ceb9c63e1504fa6ae16376"
+"http://www.youtube.com/watch?v=0m__A7MlDrk,http://player.vimeo.com/external/111081090.mobile.mp4?s=f4fde8d2304350fed1fc70771f292032,http://player.vimeo.com/external/111081090.sd.mp4?s=e4e8d05d5093187411eda737120d1c54,http://player.vimeo.com/external/111081090.hd.mp4?s=a243a21bb0ceb9c63e1504fa6ae16376",
+// new:
+'https://www.youtube.com/watch?v=gvVlHE5nYJw', 'http://player.vimeo.com/external/129669280.mobile.mp4?s=ecd8a4bf45009a26f1a1e5facab0ff74&profile_id=116', 'http://player.vimeo.com/external/129669280.sd.mp4?s=67cccdeeab0622a8c2a583187bd936ab&profile_id=112', 'http://player.vimeo.com/external/129669280.hd.mp4?s=e2b2185feabd68d101b37f5830c84404&profile_id=113',
+'https://www.youtube.com/watch?v=kdBMXTd0DfI', 'http://player.vimeo.com/external/129669283.mobile.mp4?s=5fe075e71719b42cfc36f67b118a9e19&profile_id=116', 'http://player.vimeo.com/external/129669283.sd.mp4?s=709197ba49b0f4d924c6a95d9fd80852&profile_id=112', 'http://player.vimeo.com/external/129669283.hd.mp4?s=041ac74ba08aec62e8943cdaa6273b49&profile_id=113',
+
+'https://www.youtube.com/watch?v=0pRnUPaIesQ', 'http://player.vimeo.com/external/129860384.mobile.mp4?s=ff86e42222ab9d3fb4b175ac0ed73183&profile_id=116', 'http://player.vimeo.com/external/129860384.sd.mp4?s=1b2fe6ae662d2634853b7703063b4c2b&profile_id=112', 'https://player.vimeo.com/external/129669284.hd.mp4?s=5fd5f7d52570ef419ac3c5baf5878b7c&profile_id=119',
+'https://www.youtube.com/watch?v=S6P6JNDfbRE', 'http://player.vimeo.com/external/130102374.mobile.mp4?s=dfe5057f497bb8f3dbf0d64a67bf45d1&profile_id=116', 'http://player.vimeo.com/external/130102374.sd.mp4?s=de7125f7bd4f1a0dd59a589a9524a590&profile_id=112', 'http://player.vimeo.com/external/130102374.hd.mp4?s=fcb7680f87cf1777b129085890163b91&profile_id=113',
+
+'https://www.youtube.com/watch?v=b_rUa26HSDk', 'http://player.vimeo.com/external/129669287.mobile.mp4?s=5f5e9dc074d733f471bf1759b2fd7d6d&profile_id=116', 'http://player.vimeo.com/external/129669287.sd.mp4?s=12a321b15d408c3da395675f5fbfdb02&profile_id=112', 'http://player.vimeo.com/external/129669287.hd.mp4?s=5f563bdcba33a0fbb053853d13f8dd30&profile_id=113',
+'https://www.youtube.com/watch?v=uawQ84q7Fl0', 'http://player.vimeo.com/external/129669812.mobile.mp4?s=e5c6fc49081ed17eb363d41c94c4b6a5&profile_id=116', 'http://player.vimeo.com/external/129669812.sd.mp4?s=1d7fb4d35960cfd0771bdeda82ac723e&profile_id=112', 'http://player.vimeo.com/external/129669812.hd.mp4?s=0ebaa742f4d74ea6b84f6d641dae5dda&profile_id=113',
+'https://www.youtube.com/watch?v=mW0O0KIfsxs', 'https://player.vimeo.com/external/131341123.mobile.mp4?s=b9176169dddc24ef95601f9d95e16710&profile_id=116', 'https://player.vimeo.com/external/131341123.sd.mp4?s=640c68f6ae913dc1b2e08cac6e75e19f&profile_id=112', 'https://player.vimeo.com/external/131341123.hd.mp4?s=d9f3cac89e0d8570cbda1d67217bbfd9&profile_id=113'
+
+
 ],
 
 	A:
@@ -48,7 +60,15 @@ var VIDEOS = {
 "http://www.youtube.com/watch?v=rFYmRX7A_Fc,http://player.vimeo.com/external/111081702.mobile.mp4?s=abfb0e5e03306403415e9acd3d2418ce,http://player.vimeo.com/external/111081702.sd.mp4?s=186077c154c7ff6fe50c8df131ab106d,http://player.vimeo.com/external/111081702.hd.mp4?s=1cf17720bcb1274cd8a4e2cb85f1af8c",
 "http://www.youtube.com/watch?v=WuBKtzi2Cos,http://player.vimeo.com/external/111081701.mobile.mp4?s=8c765af7431e158f6ddba499943121d5,http://player.vimeo.com/external/111081701.sd.mp4?s=138fc50b8572993c6a42754c72690c9f,http://player.vimeo.com/external/111081701.hd.mp4?s=a12b63ca215bc1b2f03a39db7f1f8dc5",
 "http://www.youtube.com/watch?v=z4w43Ynv1qM,http://player.vimeo.com/external/111081703.mobile.mp4?s=599f101ec177a4e078da44dbdc8cbfe5,http://player.vimeo.com/external/111081703.sd.mp4?s=a81a2929cbfb1d9d52145911225c7fd1,http://player.vimeo.com/external/111081703.hd.mp4?s=921d9fc2812bad401c8662ffa95ab3e8",
-"http://www.youtube.com/watch?v=9sMQFrPnYfg,http://player.vimeo.com/external/111081704.mobile.mp4?s=d2be573c85d6169343bc18eff02e85b4,http://player.vimeo.com/external/111081704.sd.mp4?s=0ac5c3ffb44169d6f8e198914ab7b519,http://player.vimeo.com/external/111081704.hd.mp4?s=594fc0668efe5f5ff086191584719c07"
+"http://www.youtube.com/watch?v=9sMQFrPnYfg,http://player.vimeo.com/external/111081704.mobile.mp4?s=d2be573c85d6169343bc18eff02e85b4,http://player.vimeo.com/external/111081704.sd.mp4?s=0ac5c3ffb44169d6f8e198914ab7b519,http://player.vimeo.com/external/111081704.hd.mp4?s=594fc0668efe5f5ff086191584719c07",
+// new:
+'', 'http://player.vimeo.com/external/129860381.mobile.mp4?s=fac9f1b5c9c642c0a964e5cf36535f2e&profile_id=116', 'http://player.vimeo.com/external/129860381.sd.mp4?s=5e2271dcc3e84086da93dc78cf45d82b&profile_id=112', 'http://player.vimeo.com/external/129860381.hd.mp4?s=f98be818d46addbd78a9d99d747ef1cf&profile_id=113',
+'', 'http://player.vimeo.com/external/129860383.mobile.mp4?s=a7712f6daa580cfcc4800b964d7a32fd&profile_id=116', 'http://player.vimeo.com/external/129860383.sd.mp4?s=76cb7745f8a2d9ab7344bced26bb56b2&profile_id=112', 'http://player.vimeo.com/external/129860383.hd.mp4?s=909a718a397dbaf861ea6fa6d9a85b06&profile_id=113',
+'', 'http://player.vimeo.com/external/129860384.mobile.mp4?s=ff86e42222ab9d3fb4b175ac0ed73183&profile_id=116', 'http://player.vimeo.com/external/129860384.sd.mp4?s=1b2fe6ae662d2634853b7703063b4c2b&profile_id=112', 'http://player.vimeo.com/external/129860384.hd.mp4?s=3a97e4faac5d89cb2bc4ea48788d1d59&profile_id=113',
+'', 'http://player.vimeo.com/external/129860385.mobile.mp4?s=871e9e5969386d6aaa9c89b4fae1e0aa&profile_id=116', 'http://player.vimeo.com/external/129860385.sd.mp4?s=18dadf8561579a68e5bcb0c42eafcd0a&profile_id=112', 'http://player.vimeo.com/external/129860385.hd.mp4?s=d00d653a9c2089b8fa2bd623ad98d239&profile_id=113',
+'', 'http://player.vimeo.com/external/129774128.mobile.mp4?s=b0dc890f5b7e85080717f5ff8ea87851&profile_id=116', 'http://player.vimeo.com/external/129774128.sd.mp4?s=331bbf7dd850bac6386a2fed0034797c&profile_id=112', 'http://player.vimeo.com/external/129774128.hd.mp4?s=19e017129160af5226b125ca1a2e07fb&profile_id=113',
+'', 'http://player.vimeo.com/external/129860388.mobile.mp4?s=1d96fa13edd6f034e1b4dad0550dfb6e&profile_id=116', 'http://player.vimeo.com/external/129860388.sd.mp4?s=c10e516b4f51d586b17cffa7e1b7e9f6&profile_id=112', 'http://player.vimeo.com/external/129860388.hd.mp4?s=ea72fff02c021854b657354d58ec09ad&profile_id=113',
+'', 'http://player.vimeo.com/external/129860404.mobile.mp4?s=83a81d774e6b3e9a37573c996b48501e&profile_id=116', 'http://player.vimeo.com/external/129860404.sd.mp4?s=3e55c9262310935374cfe311b9202aa1&profile_id=112', 'http://player.vimeo.com/external/129860404.hd.mp4?s=c707eb5b68edf206f444270d6f8e73b2&profile_id=113'
 ],
 
 	B: //FIXME missing YT
@@ -110,4 +130,3 @@ if (L == "E") AJHAVideoInfo = VIDEOS.E;
 if (L == "A") AJHAVideoInfo = VIDEOS.A;
 if (L == "B") AJHAVideoInfo = VIDEOS.B;
 if (L == "T") AJHAVideoInfo = VIDEOS.T;
-
