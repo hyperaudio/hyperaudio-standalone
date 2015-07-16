@@ -67,7 +67,34 @@
   { "_id": 14,
     "label": "ثمن أوسلو",
     "file": "the-price-of-oslo"
+  },
+
+
+  { "_id": 25,
+    "label": "Born in '48",
+    "file": "born-in-48"
+  },
+  { "_id": 21,
+    "label": "The Deportees",
+    "file": "deportees"
+  },
+  { "_id": 26,
+    "label": "Jerusalem hitting home",
+    "file": "jerusalem-hitting-home"
+  },
+  { "_id": 27,
+    "label": "Palestine Divided",
+    "file": "palestine-divided"
+  },
+  { "_id": 22,
+    "label": "Return to Morocco",
+    "file": "return-to-morocco"
+  },
+  { "_id": 23,
+    "label": "Stories from the Intifada 1",
+    "file": "stories-from-the-intifada"
   }
+
 ],
 
 "glossary": [
