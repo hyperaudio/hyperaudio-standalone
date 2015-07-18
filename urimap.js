@@ -43,6 +43,14 @@ var urimap = [
 ["/view_remix.html",	"/mobile/remix/view/index.html"],
 ["/wall.html",	"/mobile/definitions/wall/index.html"],
 ["/zionism.html",	"/mobile/definitions/zionism/index.html"],
+
+["/jerusalem-hitting-home.html", "/mobile/films/jerusalem-hitting-home/index.html"],
+["/palestine-divided.html", "/mobile/films/palestine-divided/index.html"],
+["/return-to-morocco.html", "/mobile/films/return-to-morocco/index.html"],
+["/stories-from-the-intifada.html", "/mobile/films/stories-from-the-intifada/index.html"],
+["/born-in-48.html", "/mobile/films/born-in-48/index.html"],
+["/deportees.html", "/mobile/films/deportees/index.html"],
+
 ["/index.html",	"/mobile/index.html"],
 ["/about.html",	"/mobile/index.html"],
 ["/timeline_main.html",	"/mobile/index.html"],
