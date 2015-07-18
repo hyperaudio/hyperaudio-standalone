@@ -2,25 +2,32 @@
 var phantom = require('phantom');
 var jf = require('jsonfile');
 
-var site = "http://interactive.aljazeera.com/aja/PalestineRemix/";
+var site = "http://interactive.aljazeera.com/aje/PalremixBeta157AR/";
 var pages = [
-	"against-the-wall",
-	"al-nakba",
-	"area-c",
-	"beyond-the-walls",
-	"forbidden-pilgrimage",
-	"gaza-left-in-the-dark",
-	"gaza-lives-on",
-	"gaza-we-are-coming",
-	"going-against-the-grain",
-	"hunger-strike",
-	"inside-shin-bet",
-	"last-shepherds-of-the-valley",
-	"lost-cities-of-palestine",
-	"palestina-amore",
-	"stronger-than-words",
-	"the-pain-inside",
-	"the-price-of-oslo"
+	// "against-the-wall",
+	// "al-nakba",
+	// "area-c",
+	// "beyond-the-walls",
+	// "forbidden-pilgrimage",
+	// "gaza-left-in-the-dark",
+	// "gaza-lives-on",
+	// "gaza-we-are-coming",
+	// "going-against-the-grain",
+	// "hunger-strike",
+	// "inside-shin-bet",
+	// "last-shepherds-of-the-valley",
+	// "lost-cities-of-palestine",
+	// "palestina-amore",
+	// "stronger-than-words",
+	// "the-pain-inside",
+	// "the-price-of-oslo",
+
+	// "jerusalem-hitting-home",
+	// "palestine-divided",
+	// "return-to-morocco",
+	// "stories-from-the-intifada",
+	// "born-in-48",
+	"deportees"
 ];
 
 var process = function (key) {
@@ -47,7 +54,7 @@ var extract = function () {
 	var data = {
 		headline: $('.Headline').first().text().trim(),
 		director: $('.Director-name').first().text().trim(),
-		directorLabel: $('.Director').first().text().trim(),		
+		directorLabel: $('.Director').first().text().trim(),
 		content: []
 	};
 
@@ -74,10 +81,10 @@ var extract = function () {
 		var content = {
 			vimeo: $e.data('video')
 		};
-		
+
 		if ($e.data('showshare')) content.yt = $e.data('yt');
 		if ($e.data('showlabel')) content.label = $e.data('label');
-		
+
 		$e.data('type', 'AJVideo');
 		$e.data('content', content);
 	});
@@ -89,10 +96,10 @@ var extract = function () {
 			link: $e.data('link'),
 			share: $e.data('share')
 		};
-		
+
 		if ($e.hasClass('showLabel-true')) content.label = $e.find('.label').text();
 		if ($e.hasClass('showContext-true')) content.context = $e.find('.context').text();
-		
+
 		$e.data('type', 'AJQuote');
 		$e.data('content', content);
 	});

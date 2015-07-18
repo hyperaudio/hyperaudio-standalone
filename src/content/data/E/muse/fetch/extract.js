@@ -27,7 +27,7 @@ var pages = [
 	// "return-to-morocco",
 	// "stories-from-the-intifada",
 	// "born-in-48",
-	"deportees"
+	// "deportees"
 ];
 
 var process = function (key) {
