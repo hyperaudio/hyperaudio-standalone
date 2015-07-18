@@ -2,7 +2,7 @@
 var phantom = require('phantom');
 var jf = require('jsonfile');
 
-var site = "http://interactive.aljazeera.com/aje/PalremixBeta147/";
+var site = "http://interactive.aljazeera.com/aje/PalremixBeta187/";
 var pages = [
 	// "against-the-wall",
 	// "al-nakba",
@@ -52,7 +52,7 @@ for (var i = 0; i < pages.length; i++) {
 
 var extract = function () {
 	var data = {
-		headline: $('.Headline').first().text().trim(),
+		headline:  $('.Realheadline').first().text().trim(),
 		director: $('.Director-name').first().text().trim(),
 		directorLabel: $('.Director').first().text().trim(),
 		content: []
