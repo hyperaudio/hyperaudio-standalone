@@ -2,7 +2,7 @@
 template: longform.html
 key: 'born-in-1948'
 path: '../../'
-cover: 'film_againstthewall.jpg'
+cover: 'bornin48small.jpg'
 filmID: '25'
 ---
 
