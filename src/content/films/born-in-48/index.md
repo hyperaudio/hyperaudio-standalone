@@ -1,6 +1,6 @@
 ---
 template: longform.html
-key: 'born-in-48'
+key: 'born-in-1948'
 path: '../../'
 cover: 'film_againstthewall.jpg'
 filmID: '25'
