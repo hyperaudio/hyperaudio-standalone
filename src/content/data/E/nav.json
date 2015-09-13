@@ -68,12 +68,9 @@
     "label": "The price of Oslo",
     "file": "the-price-of-oslo"
   },
-
-
-
   { "_id": 25,
     "label": "Born in '48",
-    "file": "born-in-48"
+    "file": "born-in-1948"
   },
   { "_id": 21,
     "label": "The Deportees",
@@ -95,9 +92,6 @@
     "label": "Stories from the Intifada 1",
     "file": "stories-from-the-intifada"
   }
-
-
-
 ],
 
 "glossary": [
