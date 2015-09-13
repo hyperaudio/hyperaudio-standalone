@@ -26,7 +26,7 @@ var pages = [
 	// "palestine-divided",
 	// "return-to-morocco",
 	// "stories-from-the-intifada",
-	// "born-in-48",
+	// "born-in-1948",
 	// "deportees"
 ];
 
