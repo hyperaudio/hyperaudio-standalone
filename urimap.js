@@ -48,7 +48,7 @@ var urimap = [
 ["/palestine-divided.html", "/mobile/films/palestine-divided/index.html"],
 ["/return-to-morocco.html", "/mobile/films/return-to-morocco/index.html"],
 ["/stories-from-the-intifada.html", "/mobile/films/stories-from-the-intifada/index.html"],
-["/born-in-48.html", "/mobile/films/born-in-48/index.html"],
+["/born-in-1948.html", "/mobile/films/born-in-1948/index.html"],
 ["/deportees.html", "/mobile/films/deportees/index.html"],
 
 ["/index.html",	"/mobile/index.html"],
