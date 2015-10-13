@@ -6,8 +6,6 @@ unless window.parent is window
 
 document.addEventListener "DOMContentLoaded", ->
 
-  # console.log "السلام عليكم"
-
   renderDrops()
   renderFoldCards()
   renderFoldSwiper()
