@@ -24,16 +24,16 @@ metalsmith.use(metadata({
 metalsmith.use(markdown({}));
 
 Handlebars.registerPartial('init', fs.readFileSync('./dev/partials/init-' + L + '.html').toString());
-Handlebars.registerPartial('panel-filter', fs.readFileSync('./dev/partials/panel-filter.html').toString());
-Handlebars.registerPartial('panel-language', fs.readFileSync('./dev/partials/panel-language.html').toString());
+// Handlebars.registerPartial('panel-filter', fs.readFileSync('./dev/partials/panel-filter.html').toString());
+// Handlebars.registerPartial('panel-language', fs.readFileSync('./dev/partials/panel-language.html').toString());
 Handlebars.registerPartial('panel-share', fs.readFileSync('./dev/partials/panel-share.html').toString());
 Handlebars.registerPartial('panel-share-transcript', fs.readFileSync('./dev/partials/panel-share-transcript.html').toString());
 
-Handlebars.registerPartial('header', fs.readFileSync('./dev/partials/header.html').toString());
-Handlebars.registerPartial('footer', fs.readFileSync('./dev/partials/footer.html').toString());
+// Handlebars.registerPartial('header', fs.readFileSync('./dev/partials/header.html').toString());
+// Handlebars.registerPartial('footer', fs.readFileSync('./dev/partials/footer.html').toString());
 
 Handlebars.registerPartial('aside-left', fs.readFileSync('./dev/partials/aside-left.html').toString());
-Handlebars.registerPartial('aside-right', fs.readFileSync('./dev/partials/aside-right.html').toString());
+// Handlebars.registerPartial('aside-right', fs.readFileSync('./dev/partials/aside-right.html').toString());
 
 // Handlebars.registerHelper('TITLE', function() {
 //   var longform = require('./src/data/' + L + '/muse/' + this.key + '.json');
@@ -83,18 +83,18 @@ var contentTemplates = {
   Foreword: function (text) {return '';}, //ignore foreword here
   Headline: function (text) {return '';}, //ignore headline here
   'Body-text': function (text) {return text;},
-  A: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-A.html').toString()),
-  B: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-B.html').toString()),
-  // C: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-C.html').toString()),
-  // D: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-D.html').toString()),
-  E: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-E.html').toString()),
-  F: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-F.html').toString()),
-  G: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-G.html').toString()),
-  H: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-H.html').toString()),
-  K: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-K.html').toString()),
-  L: function (text) {return '';},
-  C: function (text) {return '';},
-  D: function (text) {return '';},
+  // A: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-A.html').toString()),
+  // B: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-B.html').toString()),
+  // // C: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-C.html').toString()),
+  // // D: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-D.html').toString()),
+  // E: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-E.html').toString()),
+  // F: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-F.html').toString()),
+  // G: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-G.html').toString()),
+  // H: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-H.html').toString()),
+  // K: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-K.html').toString()),
+  // L: function (text) {return '';},
+  // C: function (text) {return '';},
+  // D: function (text) {return '';},
 };
 
 // Handlebars.registerHelper('CONTENT', function() {

@@ -469,7 +469,7 @@ var AJHAWrapper = {
             }, false);
           }
 
-          ajOnInitCallback();
+          if (ajOnInitCallback) ajOnInitCallback();
 
         } else {
 
@@ -756,7 +756,7 @@ var AJHAWrapper = {
 
       if (target != 'Viewer') {
 
-        ajOnInitCallback();
+        if (ajOnInitCallback) ajOnInitCallback();
 
       }
 

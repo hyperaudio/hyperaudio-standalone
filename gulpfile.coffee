@@ -30,9 +30,9 @@ SCRIPTQ2 = [
   "./bower_components/lunr-languages/lunr.stemmer.support.js"
   "./bower_components/lunr-languages/lunr.tr.js"
   "./bower_components/lunr-languages/lunr.ar.js"
-  "./bower_components/tether/tether.js"
-  "./bower_components/shepherd.js/shepherd.js"
-  "./bower_components/drop/drop.js"
+  # "./bower_components/tether/tether.js"
+  # "./bower_components/shepherd.js/shepherd.js"
+  # "./bower_components/drop/drop.js"
   "./bower_components/swiper/dist/idangerous.swiper.min.js"
   "./bower_components/fastclick/lib/fastclick.js"
 ]
@@ -47,9 +47,9 @@ SCRIPTQ3 = [
   "./src/scripts/ports/hyperaudio/ha-wrapper.js"
 ]
 TERRIBLESCRIPTQ = [
-  "./bower_components/newsquiz/libs/jquery/jquery.js"
-  "./bower_components/newsquiz/libs/tabletop.js"
-  "./bower_components/newsquiz/dist/newsquiz.min.js"
+  # "./bower_components/newsquiz/libs/jquery/jquery.js"
+  # "./bower_components/newsquiz/libs/tabletop.js"
+  # "./bower_components/newsquiz/dist/newsquiz.min.js"
 ]
 
 # DEFINE PARTIAL TASKS
