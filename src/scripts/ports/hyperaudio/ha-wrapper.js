@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 var AJHAWrapper = {
 
   // Todo validate url input so that an invalid url does not cause JS errors.
@@ -338,8 +340,13 @@ var AJHAWrapper = {
 
     function buildState() {
 
-      var state = window.top.location.hash;
+      var state = window.top.location.hash
       var params = state.split('/');
+      if (state.length < 2 && window.top.location.href.indexOf('?') > -1) {
+        window.top.location.hash = window.top.location.href.substring(window.top.location.href.indexOf('?'));
+        state = window.top.location.hash
+        params = state.split('/');
+      }
       //console.log(state);
 
       // first pass - create the sections
@@ -996,7 +1003,7 @@ function shorten(url, callback) {
     var api_url = "https://api-ssl.bitly.com";
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", api_url + "/v3/shorten?longUrl=" + encodeURIComponent(url) + "&access_token=" + access_token);
+    xhr.open("GET", api_url + "/v3/shorten?longUrl=" + encodeURIComponent(url.replace('#', '?')) + "&access_token=" + access_token);
     xhr.onreadystatechange = function() {
         if(xhr.readyState == 4) {
             if(xhr.status==200) {

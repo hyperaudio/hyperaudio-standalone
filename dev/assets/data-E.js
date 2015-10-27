@@ -1,3 +1,4 @@
+var SEARCH = '/AJE/PalestineRemix/transcripts/';
 var TRANSCRIPTS = '/AJE/PalestineRemix/transcripts/html/';
 // var TRANSCRIPTS = 'http://interactive.aljazeera.com/AJE/PalestineRemix/transcripts/html/';
 

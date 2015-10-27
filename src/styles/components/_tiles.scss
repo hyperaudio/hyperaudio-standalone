@@ -22,7 +22,13 @@
   }
 }
 
-.tile__transcript {
+.tile__transcript.nohap {
+  @include set-type-xsmall;
+  @include hyphenate;
+  color: $color;
+}
+
+.tile__transcript.hap {
   @include set-type-xsmall;
   @include hyphenate;
   // color: $color;
