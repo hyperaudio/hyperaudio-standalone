@@ -67,8 +67,8 @@ doSearch = ->
   #   console.log("no results for: " + query)
   r = 0
   _length = results.length
-  if _length > 20
-    _length = 20
+  if _length > 200
+    _length = 200
   while r < _length
     # don't ask
     (->

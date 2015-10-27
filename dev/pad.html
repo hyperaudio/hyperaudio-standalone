@@ -74,9 +74,10 @@
 {{> panel-share}}
 <script src="{{path}}assets/scripts/vendorq2.js"></script>
 <script src="{{path}}assets/scripts/aj.js"></script>
+<script src="{{path}}assets/data-{{L.code}}.js"></script>
 <script src="{{path}}assets/scripts/ports.js"></script>
 <script type="text/javascript">
-AJHAWrapper.init('Pad', '/AJE/PalestineRemix/transcripts/html/' + L + '/');
+AJHAWrapper.init('Pad', TRANSCRIPTS + L + '/');
 </script>
 </body>
 </html>

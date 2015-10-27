@@ -11,6 +11,7 @@ var metadata = require('metalsmith-metadata');
 var markdown = require('metalsmith-markdown');
 var templates = require('metalsmith-templates');
 var assets = require('metalsmith-assets');
+var copy = require('metalsmith-copy');
 
 var metalsmith = Metalsmith(__dirname);
 metalsmith.source('./src/content');
@@ -130,6 +131,11 @@ metalsmith.use(assets({
   "source": "./dev/assets",
   "destination": "./assets"
 }));
+
+// metalsmith.use(copy({
+//   pattern: '../dev/data.js',
+//   directory: '/'
+// }));
 
 metalsmith.build(function(err){
   console.log(err);

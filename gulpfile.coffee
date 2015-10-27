@@ -46,6 +46,9 @@ SCRIPTQ3 = [
   "./src/scripts/ports/hyperaudio/ha.js"
   "./src/scripts/ports/hyperaudio/ha-wrapper.js"
 ]
+SCRIPTDATA = [
+  "./src/data.js"
+]
 TERRIBLESCRIPTQ = [
   # "./bower_components/newsquiz/libs/jquery/jquery.js"
   # "./bower_components/newsquiz/libs/tabletop.js"
@@ -72,6 +75,11 @@ gulp.task "compile-sass", ->
     .on "error", handleError
     .pipe gulp.dest "dev/assets/styles"
     .pipe $.connect.reload()
+
+# Data
+# ---------------------------------------------- #
+gulp.task "concat-data", ->
+  gulp.src(SCRIPTDATA).pipe($.concat("data.js")).pipe gulp.dest("./dev")
 
 # Concat Vendor
 # ---------------------------------------------- #
@@ -149,6 +157,7 @@ gulp.task "default", [
   "concat-vendorq1"
   "concat-vendorq2"
   "concat-vendorqt"
+  # "concat-data"
   "concat-ports"
   "compile-coffee"
   "copyfiles"
@@ -162,6 +171,7 @@ gulp.task "build", [
   "concat-vendorq1"
   "concat-vendorq2"
   "concat-vendorqt"
+  # "concat-data"
   "concat-ports"
   "compile-coffee"
   "copyfiles"

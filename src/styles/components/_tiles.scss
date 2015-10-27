@@ -25,7 +25,7 @@
 .tile__transcript {
   @include set-type-xsmall;
   @include hyphenate;
-  color: $color;
+  // color: $color;
 }
 
 .tile__title {

@@ -30,9 +30,10 @@
 {{> panel-share-transcript}}
 <script src="{{path}}assets/scripts/vendorq2.js"></script>
 <script src="{{path}}assets/scripts/aj.js"></script>
+<script src="{{path}}assets/data-{{L.code}}.js"></script>
 <script src="{{path}}assets/scripts/ports.js"></script>
 <script type="text/javascript">
-AJHAWrapper.init('Viewer', '/AJE/PalestineRemix/transcripts/html/' + L + '/');
+AJHAWrapper.init('Viewer', TRANSCRIPTS + L + '/');
 </script>
 <div id="share-selection"></div>
 </body>

@@ -985,37 +985,59 @@ var SideMenu = (function (document, hyperaudio) {
 
     var username = '';
 
-    xhr({
-      url: HAP.options.transcripts + 'list.json',
-      complete: function(event) {
-        var json = JSON.parse(this.responseText);
+  //   xhr({
+  //     url: HAP.options.transcripts + 'list.json',
+  //     complete: function(event) {
+  //       var json = JSON.parse(this.responseText);
+  //
+  //       var alltrans = self.makeMenuFolder(self.transcripts, '');
+  //
+  //       for(var i = 0, l = json.length; i < l; i++) {
+  //         trans = json[i];
+  //         list = document.createElement('li');
+  //         anchor = document.createElement('a');
+  //         anchor.setAttribute('data-id', trans._id);
+  //         anchor.setAttribute('href', "#!/"+trans._id);
+  //         anchor.innerHTML = trans.label;
+  //         anchor.addEventListener('click', function() {
+  //           var ev = document.createEvent('Event');
+  //           ev.initEvent('padmenuclick', true, true);
+  //           document.dispatchEvent(ev);
+  //         }, false);
+  //         list.appendChild(anchor);
+  //         alltrans.appendChild(list);
+  //       }
+  //       var ev = document.createEvent('Event');
+  //       ev.initEvent('sidemenuinit', true, true);
+  //       document.dispatchEvent(ev);
+  //     },
+  //     error: function(event) {
+  //       self.error = true;
+  //     }
+  //   });
+    var alltrans = self.makeMenuFolder(self.transcripts, '');
 
-        var alltrans = self.makeMenuFolder(self.transcripts, '');
-
-        for(var i = 0, l = json.length; i < l; i++) {
-          trans = json[i];
-          list = document.createElement('li');
-          anchor = document.createElement('a');
-          anchor.setAttribute('data-id', trans._id);
-          anchor.setAttribute('href', "#!/"+trans._id);
-          anchor.innerHTML = trans.label;
-          anchor.addEventListener('click', function() {
-            var ev = document.createEvent('Event');
-            ev.initEvent('padmenuclick', true, true);
-            document.dispatchEvent(ev);
-          }, false);
-          list.appendChild(anchor);
-          alltrans.appendChild(list);
-        }
+    for(var i = 0, l = FILMS.length; i < l; i++) {
+      trans = FILMS[i];
+      list = document.createElement('li');
+      anchor = document.createElement('a');
+      anchor.setAttribute('data-id', trans._id);
+      anchor.setAttribute('href', "#!/"+trans._id);
+      anchor.innerHTML = trans.label;
+      anchor.addEventListener('click', function() {
         var ev = document.createEvent('Event');
-        ev.initEvent('sidemenuinit', true, true);
+        ev.initEvent('padmenuclick', true, true);
         document.dispatchEvent(ev);
-      },
-      error: function(event) {
-        self.error = true;
-      }
-    });
+      }, false);
+      list.appendChild(anchor);
+      alltrans.appendChild(list);
+    }
+    var ev = document.createEvent('Event');
+    ev.initEvent('sidemenuinit', true, true);
+    document.dispatchEvent(ev);
   };
+
+
 
   return SideMenu;
 })(document, hyperaudio);
@@ -3146,7 +3168,7 @@ var Transcript = (function(document, hyperaudio) {
       }
 
       var node = selectedText.baseNode.parentNode;
-      while (node.tagName != 'P') {
+      while (node && node.tagName != 'P') {
         node = node.parentNode;
       }
 

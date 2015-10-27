@@ -407,9 +407,11 @@ var AJHAWrapper = {
 
           function shareHighlight() {
             var selection = HAP.transcript.getSelection();
+            if (!selection) return;
 
             if (!selection.start) {
-              selection = HAP.transcript.getMobileSelection();
+              // selection = HAP.transcript.getMobileSelection();
+              return;
             }
 
             if (selection.start) {
@@ -864,9 +866,10 @@ var AJHAWrapper = {
       // detect clicks on the search results
       document.addEventListener('searchresult', function(e) {
         // use the event to find out on which element to add the listener
+        // console.log(e);
 
         // put the element we're listening to here.
-        var searchElements = e.source.getElementsByTagName('a');
+        var searchElements = e.srcElement.getElementsByTagName('a');
         var searchElementsLength = searchElements.length;
 
         for (var s = 0; s < searchElementsLength; s++) {
