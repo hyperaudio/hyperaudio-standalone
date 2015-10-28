@@ -11,7 +11,7 @@ var metadata = require('metalsmith-metadata');
 var markdown = require('metalsmith-markdown');
 var templates = require('metalsmith-templates');
 var assets = require('metalsmith-assets');
-var copy = require('metalsmith-copy');
+// var copy = require('metalsmith-copy');
 
 var metalsmith = Metalsmith(__dirname);
 metalsmith.source('./src/content');

@@ -1,6 +1,6 @@
 <?php
-$locale = "en_GB";
-$L = "E";
+$locale = "ar-QA";
+$L = "A";
 $title = "PalestineRemix";
 $description = "Explore the story of Palestine. Take our content and use our creative remix tool to re-edit our films. Create your own palestine story";
 $images = "http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/";
