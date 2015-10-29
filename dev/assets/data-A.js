@@ -4,64 +4,98 @@ var TRANSCRIPTS = '/AJE/PalestineRemix/transcripts/html/';
 
 var FILMS = [
   { "_id": 1,
-    "label": "Against the wall"
+    "label": "قرى تتحدى الجدار"
   },
   { "_id": 17,
-    "label": "Al Nakba 1"
+    "label": "1 النكـبة"
   },
   { "_id": 18,
-    "label": "Al Nakba 2"
+    "label": "النكبة 2"
   },
   { "_id": 19,
-    "label": "Al Nakba 3"
+    "label": "النكبة 3"
   },
   { "_id": 20,
-    "label": "Al Nakba 4"
+    "label": "النكبة 4"
   },
   { "_id": 2,
-    "label": "Area C"
+    "label": "مناطق جيم"
   },
   { "_id": 3,
-    "label": "Beyond the walls"
+    "label": "خارج الأسوار"
   },
+  { "_id": 25,
+    "label": "ولدن في النكبة"
+  },
+  { "_id": 21,
+    "label": "منسيون خارج الوطن"
+  },
+  { "_id": 4,
+    "label": "الحج المحرم"
+  },
+  { "_id": 5,
+    "label": "حياة بالجدول"
+  },
+  { "_id": 6,
+    "label": "غزة تعيش"
+  },
+  { "_id": 7,
+    "label": "غزة إننا قادمون"
+  },
+  { "_id": 0,
+    "label": "ضد التيار"
+  },
+  { "_id": 16,
+    "label": "معركة الأمعاء الخاوية"
+  },
+  { "_id": 8,
+    "label": "الشاباك"
+  },
+   { "_id": 26,
+    "label": "اهدم بيتك بيدك"
+  },
+  { "_id": 9,
+    "label": "الاقتلاع من الغور"
+  },
+  { "_id": 10,
+    "label": "اغتيال المدينة"
+  },
+  { "_id": 11,
+    "label": "فلسطين في قلوب إيطالية"
+  },
+  { "_id": 27,
+    "label": "مقطع الأوصال"
+  },
+  { "_id": 22,
+    "label": "فسيفساء"
+  },
+  { "_id": 23,
+    "label": "1 حكايات من انتفاضة الحجارة"
+  },
+  { "_id": 24,
+    "label": "2 حكايات من انتفاضة الحجارة"
+  },
+  { "_id": 13,
+    "label": "أقوى من الكلام"
+  },
+  { "_id": 12,
+    "label": "المستنقع"
+  },
+  { "_id": 14,
+    "label": "ثمن أوسلو 1"
+  },
+  { "_id": 15,
+    "label": "ثمن أوسلو 2"
+  },
+
   { "_id": 25,
     "label": "Born in 1948"
   },
   { "_id": 21,
     "label": "The Deportees"
   },
-  { "_id": 4,
-    "label": "Forbidden Pilgrimage"
-  },
-  { "_id": 5,
-    "label": "Gaza left in the dark"
-  },
-  { "_id": 6,
-    "label": "Gaza lives on"
-  },
-  { "_id": 7,
-    "label": "Gaza we are coming"
-  },
-  { "_id": 0,
-    "label": "Going against the grain"
-  },
-  { "_id": 16,
-    "label": "Hunger Strike"
-  },
-  { "_id": 8,
-    "label": "Inside Shin Bet"
-  },
   { "_id": 26,
     "label": "Jerusalem hitting home"
-  },
-  { "_id": 9,
-    "label": "Last shepherds of the valley"
-  },
-  { "_id": 10,
-    "label": "Lost cities of Palestine"
-  },
-  { "_id": 11,
-    "label": "Palestina Amore"
   },
   { "_id": 27,
     "label": "Palestine Divided"
@@ -74,19 +108,11 @@ var FILMS = [
   },
   { "_id": 24,
     "label": "Stories from the Intifada 2"
-  },
-  { "_id": 13,
-    "label": "Stronger than words"
-  },
-  { "_id": 12,
-    "label": "The pain inside"
-  },
-  { "_id": 14,
-    "label": "The price of Oslo 1"
-  },
-  { "_id": 15,
-    "label": "The price of Oslo 2"
   }
+
+
+
+
 ];
 
 

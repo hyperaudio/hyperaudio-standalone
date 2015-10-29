@@ -3,90 +3,107 @@ var TRANSCRIPTS = '/AJE/PalestineRemix/transcripts/html/';
 // var TRANSCRIPTS = 'http://interactive.aljazeera.com/AJE/PalestineRemix/transcripts/html/';
 
 var FILMS = [
+
   { "_id": 1,
-    "label": "Against the wall"
+    "label": "DUVARA KARŞI",
+    "file": "against-the-wall"
   },
+
+
   { "_id": 17,
-    "label": "Al Nakba 1"
+    "label": "BÜYÜK FELAKET 1",
+    "file": "al-nakba"
   },
   { "_id": 18,
-    "label": "Al Nakba 2"
+    "label": "BÜYÜK FELAKET 2",
+    "file": "al-nakba"
   },
   { "_id": 19,
-    "label": "Al Nakba 3"
+    "label": "BÜYÜK FELAKET 3",
+    "file": "al-nakba"
   },
   { "_id": 20,
-    "label": "Al Nakba 4"
+    "label": "BÜYÜK FELAKET 4",
+    "file": "al-nakba"
   },
+
+
+
   { "_id": 2,
-    "label": "Area C"
+    "label": "C BÖLGESİ",
+    "file": "area-c"
   },
   { "_id": 3,
-    "label": "Beyond the walls"
-  },
-  { "_id": 25,
-    "label": "Born in 1948"
-  },
-  { "_id": 21,
-    "label": "The Deportees"
+    "label": "AÇIK CEZAEVİ",
+    "file": "beyond-the-walls"
   },
   { "_id": 4,
-    "label": "Forbidden Pilgrimage"
+    "label": "YASAKLAR ÜLKESİ İSRAİL",
+    "file": "forbidden-pilgrimage"
   },
   { "_id": 5,
-    "label": "Gaza left in the dark"
+    "label": "GAZZE'Yİ KARARTMA",
+    "file": "gaza-left-in-the-dark"
   },
   { "_id": 6,
-    "label": "Gaza lives on"
+    "label": "GAZZE YENİDEN",
+    "file": "gaza-lives-on"
   },
   { "_id": 7,
-    "label": "Gaza we are coming"
+    "label": "BEKLE BİZİ GAZZE",
+    "file": "gaza-we-are-coming"
   },
   { "_id": 0,
-    "label": "Going against the grain"
+    "label": "İSRAİLLİ RADİKAL GİDEON LEVİ",
+    "file": "going-against-the-grain"
   },
   { "_id": 16,
-    "label": "Hunger Strike"
+    "label": "ÖLÜMÜNE DİRENİŞ",
+    "file": "hunger-strike"
   },
   { "_id": 8,
-    "label": "Inside Shin Bet"
-  },
-  { "_id": 26,
-    "label": "Jerusalem hitting home"
+    "label": "GÖLGE TEŞKİLAT ŞİN BET",
+    "file": "inside-shin-bet"
   },
   { "_id": 9,
-    "label": "Last shepherds of the valley"
+    "label": "DİRENEN TOPRAKLAR",
+    "file": "last-shepherds-of-the-valley"
   },
   { "_id": 10,
-    "label": "Lost cities of Palestine"
+    "label": "YİTİK ŞEHİRLER",
+    "file": "lost-cities-of-palestine"
   },
   { "_id": 11,
-    "label": "Palestina Amore"
-  },
-  { "_id": 27,
-    "label": "Palestine Divided"
-  },
-  { "_id": 22,
-    "label": "Return to Morocco"
-  },
-  { "_id": 23,
-    "label": "Stories from the Intifada 1"
-  },
-  { "_id": 24,
-    "label": "Stories from the Intifada 2"
+    "label": "FİLİSTİN AŞKINA",
+    "file": "palestina-amore"
   },
   { "_id": 13,
-    "label": "Stronger than words"
+    "label": "GAZZE: SAĞIR DÜNYA",
+    "file": "stronger-than-words"
   },
   { "_id": 12,
-    "label": "The pain inside"
+    "label": "İŞGALİN ASKERLERİ",
+    "file": "the-pain-inside"
   },
   { "_id": 14,
-    "label": "The price of Oslo 1"
+    "label": "OSLO'NUN BEDELİ 1",
+    "file": "the-price-of-oslo"
   },
   { "_id": 15,
-    "label": "The price of Oslo 2"
-  }
+    "label": "OSLO'NUN BEDELİ 2",
+    "file": "the-price-of-oslo"
+  },
+
+{_id: 21	, label: "SÜRGÜN EDİLENLER"},
+{_id: 22	, label: "FAS'A DÖNÜŞ"},
+{_id: 23	, label: "İNTİFADA HİKAYELERİ - 1"},
+{_id: 24	, label: "İNTİFADA HİKAYELERİ - 2"},
+{_id: 25	, label: "48'LİLER"},
+{_id: 26	, label: "KUDÜS: KENDİ EVİNİ YIKMAK"},
+{_id: 27	, label: "PARÇALANAN FİLİSTİN"}
+
+
+
 ];
 
 
@@ -119,7 +136,7 @@ var VIDEOS = {
 ",http://player.vimeo.com/external/111082115.mobile.mp4?s=6968575c01e314d6d5348b4f0c2133fc,http://player.vimeo.com/external/111082115.sd.mp4?s=29d62b699e7f3ddbda77d56b4ce2878e,http://player.vimeo.com/external/111082115.hd.mp4?s=8d5c58a21270e200dc661d42834863fb",
 
 // new
-// 
+//
 "https://youtu.be/hxQYPUnrOyI,https://player.vimeo.com/external/142108848.mobile.mp4?s=fc518d0cc85e5f3abd549fa0d557f507&profile_id=116,https://player.vimeo.com/external/142108848.sd.mp4?s=cdec2011c88fff0949e658e1e2f926a7&profile_id=112,https://player.vimeo.com/external/142108848.hd.mp4?s=a94041da0de4b0aca91146820a9af7b4&profile_id=113",
 "https://youtu.be/1RL5JUaS5RY,https://player.vimeo.com/external/142108849.mobile.mp4?s=09ed7afbdc522f5ff845a215c717f490&profile_id=116,https://player.vimeo.com/external/142108849.sd.mp4?s=0e05c9160371b50c0328dd0eb8a20e95&profile_id=112,https://player.vimeo.com/external/142108849.hd.mp4?s=2f4646f17b8f69364669d69de4f918e8&profile_id=113",
 "https://youtu.be/avaJjJvXElY,https://player.vimeo.com/external/142108847.mobile.mp4?s=4b8bdf25a9db0ee92ec4d409f07c4a59&profile_id=116,https://player.vimeo.com/external/142108847.sd.mp4?s=0100608d3d338ae29df2860a3fcd917e&profile_id=112,https://player.vimeo.com/external/142108847.hd.mp4?s=9c0adb96b1b456ac127e54478315c35a&profile_id=113",

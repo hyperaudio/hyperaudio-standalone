@@ -3,90 +3,100 @@ var TRANSCRIPTS = '/AJE/PalestineRemix/transcripts/html/';
 // var TRANSCRIPTS = 'http://interactive.aljazeera.com/AJE/PalestineRemix/transcripts/html/';
 
 var FILMS = [
-  { "_id": 1,
-    "label": "Against the wall"
-  },
-  { "_id": 17,
-    "label": "Al Nakba 1"
-  },
-  { "_id": 18,
-    "label": "Al Nakba 2"
-  },
-  { "_id": 19,
-    "label": "Al Nakba 3"
-  },
-  { "_id": 20,
-    "label": "Al Nakba 4"
-  },
-  { "_id": 2,
-    "label": "Area C"
-  },
-  { "_id": 3,
-    "label": "Beyond the walls"
-  },
-  { "_id": 25,
-    "label": "Born in 1948"
-  },
-  { "_id": 21,
-    "label": "The Deportees"
-  },
-  { "_id": 4,
-    "label": "Forbidden Pilgrimage"
-  },
-  { "_id": 5,
-    "label": "Gaza left in the dark"
-  },
-  { "_id": 6,
-    "label": "Gaza lives on"
-  },
-  { "_id": 7,
-    "label": "Gaza we are coming"
-  },
-  { "_id": 0,
-    "label": "Going against the grain"
-  },
-  { "_id": 16,
-    "label": "Hunger Strike"
-  },
-  { "_id": 8,
-    "label": "Inside Shin Bet"
-  },
-  { "_id": 26,
-    "label": "Jerusalem hitting home"
-  },
-  { "_id": 9,
-    "label": "Last shepherds of the valley"
-  },
-  { "_id": 10,
-    "label": "Lost cities of Palestine"
-  },
-  { "_id": 11,
-    "label": "Palestina Amore"
-  },
-  { "_id": 27,
-    "label": "Palestine Divided"
-  },
-  { "_id": 22,
-    "label": "Return to Morocco"
-  },
-  { "_id": 23,
-    "label": "Stories from the Intifada 1"
-  },
-  { "_id": 24,
-    "label": "Stories from the Intifada 2"
-  },
-  { "_id": 13,
-    "label": "Stronger than words"
-  },
-  { "_id": 12,
-    "label": "The pain inside"
-  },
-  { "_id": 14,
-    "label": "The price of Oslo 1"
-  },
-  { "_id": 15,
-    "label": "The price of Oslo 2"
-  }
+
+    { "_id": 1,
+      "label": "BORBA PROTIV ZIDA",
+      "file": "against-the-wall"
+    },
+    { "_id": 17,
+      "label": "AL-NAKBA 1",
+      "file": "al-nakba"
+    },
+    { "_id": 18,
+      "label": "AL-NAKBA 2",
+      "file": "al-nakba"
+    },
+    { "_id": 19,
+      "label": "AL-NAKBA 3",
+      "file": "al-nakba"
+    },
+    { "_id": 20,
+      "label": "AL-NAKBA 4",
+      "file": "al-nakba"
+    },
+    { "_id": 2,
+      "label": "ZONA C",
+      "file": "area-c"
+    },
+    { "_id": 3,
+      "label": "IZVAN ZIDINA",
+      "file": "beyond-the-walls"
+    },
+    { "_id": 4,
+      "label": "ZABRANJENO HODOČAŠĆE",
+      "file": "forbidden-pilgrimage"
+    },
+    { "_id": 5,
+      "label": "GAZA OSTAVLJENA U MRAKU",
+      "file": "gaza-left-in-the-dark"
+    },
+    { "_id": 6,
+      "label": "GAZA ĆE I DALJE ŽIVJETI",
+      "file": "gaza-lives-on"
+    },
+    { "_id": 7,
+      "label": "GAZA DOLAZIMO!",
+      "file": "gaza-we-are-coming"
+    },
+    { "_id": 0,
+      "label": "PROTIV STRUJE",
+      "file": "going-against-the-grain"
+    },
+    { "_id": 16,
+      "label": "ŠTRAJK GLAĐU",
+      "file": "hunger-strike"
+    },
+    { "_id": 8,
+      "label": "SHIN BET: IZA KULISA",
+      "file": "inside-shin-bet"
+    },
+    { "_id": 9,
+      "label": "POSLJEDNJI PASTIRI DOLINE JORDANA",
+      "file": "last-shepherds-of-the-valley"
+    },
+    { "_id": 10,
+      "label": "IZGUBLJENI GRADOVI PALESTINE",
+      "file": "lost-cities-of-palestine"
+    },
+    { "_id": 11,
+      "label": "PALESTINO, LJUBAVI MOJA",
+      "file": "palestina-amore"
+    },
+    { "_id": 13,
+      "label": "JAČI OD RIJEČI",
+      "file": "stronger-than-words"
+    },
+    { "_id": 12,
+      "label": "UNUTRAŠNJI BOL",
+      "file": "the-pain-inside"
+    },
+    { "_id": 14,
+      "label": "CIJENA OSLA 1",
+      "file": "the-price-of-oslo"
+    },
+    { "_id": 14,
+      "label": "CIJENA OSLA 2",
+      "file": "the-price-of-oslo"
+    },
+
+    {_id: 23  , label: "Priče Intifade 1"},
+    {_id: 24	, label: "Priče Intifade 2"},
+    {_id: 25	, label: "Rođene '48-e"},
+    {_id: 22	, label: "Povratak u Maroko"},
+    {_id: 21	, label: "Deportovani"},
+    {_id: 27	, label: "Podijeljena Palestina"},
+    {_id: 26	, label: "Jeruzalem: rušenje domova"}
+
 ];
 
 
