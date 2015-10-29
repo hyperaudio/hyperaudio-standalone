@@ -2,8 +2,10 @@
   "code": "A",
   "search__placeholder": "ابحث، مثال٬ حيفا",
 
-  "mailto-subject": "من ريمكس فلسطين – الجزيرة",
-  "mailto-body": "من ريمكس فلسطين، موقع تفاعلي لشبكة الجزيرة، اطلع على هذا:",
+  "mailto-subject": "رسالة من ريمكس فلسطين",
+  "mailto-body": " من موقع ريمكس فلسطين التفاعلي",
+  "mailto-body2": "Palestineremix.net",
+  "mailto-body3": "الموقع التفاعلي الرائد عن قصة فلسطين بصريا",
 
   "header__current-lang": "عربي",
   "header__menu": "القائمة",
