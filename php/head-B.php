@@ -1,5 +1,5 @@
 <?php
-$locale = "hr-HR"; //bs_BA
+$locale = "bs_BA"; 
 $L = "B";
 $title = "PalestineRemix";
 $description = "Explore the story of Palestine. Take our content and use our creative remix tool to re-edit our films. Create your own palestine story";
