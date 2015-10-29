@@ -27,3 +27,4 @@ sftp-config.json
 #node_modules.zip
 npm-debug.log
 transcripts.zip
+*.zip

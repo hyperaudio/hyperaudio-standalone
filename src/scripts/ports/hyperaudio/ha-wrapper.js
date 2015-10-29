@@ -1003,7 +1003,7 @@ function shorten(url, callback) {
     var api_url = "https://api-ssl.bitly.com";
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", api_url + "/v3/shorten?longUrl=" + encodeURIComponent(url) + "&access_token=" + access_token);
+    xhr.open("GET", api_url + "/v3/shorten?longUrl=" + encodeURIComponent(url.replace('.html', '.php')) + "&access_token=" + access_token);
     xhr.onreadystatechange = function() {
         if(xhr.readyState == 4) {
             if(xhr.status==200) {
