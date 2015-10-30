@@ -18,12 +18,12 @@ document.addEventListener "DOMContentLoaded", ->
   # renderMultiples()
   # setSharePath()
 
-  # window.onresize = throttle((event) ->
-  #   renderOverlay()
-  #   renderFoldCards()
-  #   renderMultiples()
-  #   renderSides()
-  # , 350)
+  window.onresize = throttle((event) ->
+    renderOverlay()
+    # renderFoldCards()
+    # renderMultiples()
+    # renderSides()
+  , 350)
 
   # window.onscroll = throttle((event) ->
   #   toggleHead()
