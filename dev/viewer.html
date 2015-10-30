@@ -1,8 +1,6 @@
 {{> init }}
-<body class="tpl--remix tpl--responsive">
-{{> aside-left}}
+<body class="tpl--remix tpl--responsive tpl--compact">
 <header class="page-head" id="page-head" data-head-state="altered" data-head-state-persist="true">
-{{> header }}
 </header>
 <div id="page-body" class="page-body">
   <div class="HAP HAP--viewer">
@@ -20,24 +18,22 @@
     <div id="viewer-wrapper" class="HAP-output">
       <div class="HAP-helpers">
         <a class="HAP-helper" target="_new" id="HAP-remix-helper" href="../create/#/"><i class="icon-shuffle" style="font-size: 13px;"></i> <em>Re</em>mix</a>
-        <a class="HAP-helper" id="HAP-helper"><i class="icon-info"></i></a>
+        <!-- <a class="HAP-helper" id="HAP-helper"><i class="icon-info"></i></a> -->
       </div>
       <div id="output-canvas" class="HAP-canvas HAP-canvas--output">
       </div>
       <div id="output-transcript" class="HAP-transcript HAP-transcript--output"></div>
     </div>
   </div>
-  {{> footer}}
 </div>
-{{> aside-right}}
 <div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>
-{{> panel-language}}
 {{> panel-share-transcript}}
+<script src="{{path}}assets/data-{{L.code}}.js"></script>
 <script src="{{path}}assets/scripts/vendorq2.js"></script>
 <script src="{{path}}assets/scripts/aj.js"></script>
 <script src="{{path}}assets/scripts/ports.js"></script>
 <script type="text/javascript">
-AJHAWrapper.init('Viewer', '/AJE/PalestineRemix/transcripts/html/' + L + '/', toggleHAVTour );
+AJHAWrapper.init('Viewer', TRANSCRIPTS + L + '/');
 </script>
 <div id="share-selection"></div>
 </body>

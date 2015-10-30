@@ -1,3 +1,5 @@
+/*eslint-disable */
+
 var AJHAWrapper = {
 
   // Todo validate url input so that an invalid url does not cause JS errors.
@@ -338,8 +340,13 @@ var AJHAWrapper = {
 
     function buildState() {
 
-      var state = window.top.location.hash;
+      var state = window.top.location.hash
       var params = state.split('/');
+      if (state.length < 2 && window.top.location.href.indexOf('?') > -1) {
+        window.top.location.hash = window.top.location.href.substring(window.top.location.href.indexOf('?'));
+        state = window.top.location.hash
+        params = state.split('/');
+      }
       //console.log(state);
 
       // first pass - create the sections
@@ -407,9 +414,11 @@ var AJHAWrapper = {
 
           function shareHighlight() {
             var selection = HAP.transcript.getSelection();
+            if (!selection) return;
 
             if (!selection.start) {
-              selection = HAP.transcript.getMobileSelection();
+              // selection = HAP.transcript.getMobileSelection();
+              return;
             }
 
             if (selection.start) {
@@ -469,7 +478,7 @@ var AJHAWrapper = {
             }, false);
           }
 
-          ajOnInitCallback();
+          if (ajOnInitCallback) ajOnInitCallback();
 
         } else {
 
@@ -756,7 +765,7 @@ var AJHAWrapper = {
 
       if (target != 'Viewer') {
 
-        ajOnInitCallback();
+        if (ajOnInitCallback) ajOnInitCallback();
 
       }
 
@@ -864,9 +873,10 @@ var AJHAWrapper = {
       // detect clicks on the search results
       document.addEventListener('searchresult', function(e) {
         // use the event to find out on which element to add the listener
+        // console.log(e);
 
         // put the element we're listening to here.
-        var searchElements = e.source.getElementsByTagName('a');
+        var searchElements = e.srcElement.getElementsByTagName('a');
         var searchElementsLength = searchElements.length;
 
         for (var s = 0; s < searchElementsLength; s++) {
@@ -993,7 +1003,7 @@ function shorten(url, callback) {
     var api_url = "https://api-ssl.bitly.com";
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", api_url + "/v3/shorten?longUrl=" + encodeURIComponent(url) + "&access_token=" + access_token);
+    xhr.open("GET", api_url + "/v3/shorten?longUrl=" + encodeURIComponent(url.replace('.html', '.php')) + "&access_token=" + access_token);
     xhr.onreadystatechange = function() {
         if(xhr.readyState == 4) {
             if(xhr.status==200) {

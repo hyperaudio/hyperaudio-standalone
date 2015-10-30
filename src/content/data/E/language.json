@@ -1,8 +1,11 @@
 {
+	"code": "E",
 	"search__placeholder": "Search, e.g. 1948, David Ben-Gurion, Haifa…",
 
-	"mailto-subject": "Via Palestine Remix – Al Jazeera",
-	"mailto-body": "Via Palestine Remix, an interactive website of Al Jazeera, look at this:",
+	"mailto-subject": "Message from Palestine Remix",
+	"mailto-body": "Shared from Palestine Remix: ",
+	"mailto-body2": "Palestineremix.com",
+	"mailto-body3": "The leading interactive audio-visual resource on Palestine",
 
 	"header__current-lang": "EN",
 	"header__menu": "Menu",

@@ -1,8 +1,7 @@
 {{> init }}
-<body class="tpl--pad">
+<body class="tpl--pad tpl--compact">
 {{> aside-left}}
 <header class="page-head" id="page-head" data-head-state="altered" data-head-state-persist="true">
-{{> header }}
 </header>
 <div id="page-body" class="page-body">
   <div class="HAP HAP--pad">
@@ -29,7 +28,7 @@
           <div class="s-span-1of1 m-span-1of2">
             <div class="HAP-output">
               <div class="HAP-helpers">
-                <a class="HAP-helper" id="HAP-helper"><i class="icon-info"></i></a>
+                <!-- <a class="HAP-helper" id="HAP-helper"><i class="icon-info"></i></a> -->
               </div>
               <div id="output-canvas" class="HAP-canvas HAP-canvas--output">
               </div>
@@ -71,15 +70,14 @@
     </div>
   </div>
 </div>
-{{> aside-right}}
 <div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>
-{{> panel-language}}
 {{> panel-share}}
+<script src="{{path}}assets/data-{{L.code}}.js"></script>
 <script src="{{path}}assets/scripts/vendorq2.js"></script>
 <script src="{{path}}assets/scripts/aj.js"></script>
 <script src="{{path}}assets/scripts/ports.js"></script>
 <script type="text/javascript">
-AJHAWrapper.init('Pad', '/AJE/PalestineRemix/transcripts/html/' + L + '/', toggleHAPTour);
+AJHAWrapper.init('Pad', TRANSCRIPTS + L + '/');
 </script>
 </body>
 </html>

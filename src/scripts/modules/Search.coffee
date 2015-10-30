@@ -1,44 +1,80 @@
 # Load search index
 index = undefined # we will load the index in here
 titles = {} # we will load the titles in here
-searchPath = "/AJE/PalestineRemix/transcripts"
+searchPath = SEARCH #"/AJE/PalestineRemix/transcripts"
 # searchPath = "http://10.24.21.20/~laurian/PALESTINE%20PROJECT/DATA/MEDIA/SEARCH"
 
-request0 = new XMLHttpRequest()
-request0.open "GET", searchPath + "/html/" + L + "/list.json", true
-request0.onreadystatechange = ->
+# request0 = new XMLHttpRequest()
+# request0.open "GET", searchPath + "/html/" + L + "/list.json", true
+# request0.onreadystatechange = ->
+#   if @readyState is 4
+#     if @status >= 200 and @status < 400
+#       _titles = JSON.parse(@responseText)
+#       # console.log(_titles)
+#       i = 0
+#       while i < _titles.length
+#         titles["" + _titles[i]._id] = _titles[i].label
+#         i++
+#
+#       request = new XMLHttpRequest()
+#       request.open "GET", searchPath + "/data/" + L + "/index.json", true
+#       request.onreadystatechange = ->
+#         if @readyState is 4
+#           if @status >= 200 and @status < 400
+#             index = lunr.Index.load(JSON.parse(@responseText))
+#             listingSearchInput = document.getElementById("search")
+#             dispatch = true
+#             if listingSearchInput is null
+#               listingSearchInput = document.getElementById("HAP-search")
+#               dispatch = false
+#             unless listingSearchInput is null
+#               listingSearchInput.addEventListener "change", doSearch
+#               listingSearchInput.setAttribute "value", getParameterByName("search") if getParameterByName("search")
+#               if dispatch
+#                 event = document.createEvent("HTMLEvents")
+#                 event.initEvent "change", true, false
+#                 listingSearchInput.dispatchEvent event
+#           # else
+#           #   console.log("Silent Error")
+#
+#       request.send()
+#       request = null
+
+# request0 = new XMLHttpRequest()
+# request0.open "GET", searchPath + "/html/" + L + "/list.json", true
+# request0.onreadystatechange = ->
+#   if @readyState is 4
+#     if @status >= 200 and @status < 400
+_titles = FILMS
+# console.log(_titles)
+i = 0
+while i < _titles.length
+  titles["" + _titles[i]._id] = _titles[i].label
+  i++
+
+request = new XMLHttpRequest()
+request.open "GET", searchPath + "/data/" + L + "/index.json", true
+request.onreadystatechange = ->
   if @readyState is 4
     if @status >= 200 and @status < 400
-      _titles = JSON.parse(@responseText)
-      # console.log(_titles)
-      i = 0
-      while i < _titles.length
-        titles["" + _titles[i]._id] = _titles[i].label
-        i++
+      index = lunr.Index.load(JSON.parse(@responseText))
+      listingSearchInput = document.getElementById("search")
+      dispatch = true
+      if listingSearchInput is null
+        listingSearchInput = document.getElementById("HAP-search")
+        dispatch = false
+      unless listingSearchInput is null
+        listingSearchInput.addEventListener "change", doSearch
+        listingSearchInput.setAttribute "value", getParameterByName("search") if getParameterByName("search")
+        if dispatch
+          event = document.createEvent("HTMLEvents")
+          event.initEvent "change", true, false
+          listingSearchInput.dispatchEvent event
+    # else
+    #   console.log("Silent Error")
 
-      request = new XMLHttpRequest()
-      request.open "GET", searchPath + "/data/" + L + "/index.json", true
-      request.onreadystatechange = ->
-        if @readyState is 4
-          if @status >= 200 and @status < 400
-            index = lunr.Index.load(JSON.parse(@responseText))
-            listingSearchInput = document.getElementById("search")
-            dispatch = true
-            if listingSearchInput is null
-              listingSearchInput = document.getElementById("HAP-search")
-              dispatch = false
-            unless listingSearchInput is null
-              listingSearchInput.addEventListener "change", doSearch
-              listingSearchInput.setAttribute "value", getParameterByName("search") if getParameterByName("search")
-              if dispatch
-                event = document.createEvent("HTMLEvents")
-                event.initEvent "change", true, false
-                listingSearchInput.dispatchEvent event
-          # else
-          #   console.log("Silent Error")
-
-      request.send()
-      request = null
+request.send()
+request = null
 
 # Parse URL and populate search input with parameters
 getParameterByName = (name) ->
@@ -67,8 +103,8 @@ doSearch = ->
   #   console.log("no results for: " + query)
   r = 0
   _length = results.length
-  if _length > 20
-    _length = 20
+  if _length > 200
+    _length = 200
   while r < _length
     # don't ask
     (->
@@ -81,10 +117,10 @@ doSearch = ->
       # el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><a class=\"thumbnail tile__thumbnail\"><img src=\"http://10.24.21.20/~laurian/PALESTINE PROJECT/DATA/MEDIA/SEARCH/images/" + idParts[0] + "/E/p/img" + second + ".jpg\" class=\"thumbnail__image\"></a><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p></div></div></li>"
       title = titles[idParts[0]]
       if insideHAP
-        el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\"><a href=\"#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
+        el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><div class=\"tile\"><div class=\"tile__body\"><p class=\"tile__transcript hap\">loading…</p><p class=\"tile__title\"><a href=\"#/" + idParts[0] + "/" + idParts[2] + "\">" + title + "</a></p></div></div></li>"
         # el.querySelector('a').addEventListener('click', function() {});
       else
-        el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><a class=\"tile\" href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\"><div class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></div><div class=\"tile__body\"><p class=\"tile__transcript\">loading…</p><p class=\"tile__title\">" + title + "</p></div></a></li>"
+        el.innerHTML = "<li id=r" + id + " class=\"listing__item\"><a class=\"tile\" href=\"../remix/view/#/" + idParts[0] + "/" + idParts[2] + "\"><div class=\"thumbnail tile__thumbnail\"><img src=\"http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/" + idParts[0] + "/" + L + "/p/img" + second + ".jpg\" class=\"thumbnail__image\"></div><div class=\"tile__body\"><p class=\"tile__transcript nohap\">loading…</p><p class=\"tile__title\">" + title + "</p></div></a></li>"
 
       result = el.children[0]
       resultsContainer.appendChild result
@@ -143,5 +179,5 @@ doSearch = ->
   ev.initEvent "searchresults", true, true
   document.dispatchEvent ev
 
-request0.send()
-request0 = null
+# request0.send()
+# request0 = null
