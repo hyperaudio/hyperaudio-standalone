@@ -80,14 +80,17 @@ Handlebars.registerPartial('aside-left', fs.readFileSync('./dev/partials/aside-l
 // });
 
 var contentTemplates = {
+  Quiz: Handlebars.compile(fs.readFileSync('./dev/partials/quiz.html').toString()),
+  // AJVideo: Handlebars.compile(fs.readFileSync('./dev/partials/video.html').toString()),
+  // AJQuote: Handlebars.compile(fs.readFileSync('./dev/partials/quote.html').toString()),
   Subheader: function (text) {return '<h2>' + text + '</h2>';},
   Foreword: function (text) {return '';}, //ignore foreword here
   Headline: function (text) {return '';}, //ignore headline here
   'Body-text': function (text) {return text;},
   // A: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-A.html').toString()),
   // B: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-B.html').toString()),
-  // // C: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-C.html').toString()),
-  // // D: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-D.html').toString()),
+  // C: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-C.html').toString()),
+  // D: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-D.html').toString()),
   // E: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-E.html').toString()),
   // F: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-F.html').toString()),
   // G: Handlebars.compile(fs.readFileSync('./dev/partials/home-slide-G.html').toString()),
@@ -98,29 +101,29 @@ var contentTemplates = {
   // D: function (text) {return '';},
 };
 
-// Handlebars.registerHelper('CONTENT', function() {
-//   // var items = this.longforms[this.key].content;
-//   console.log("KKKKEEEYYYY", this.key);
-//   var longform = require('./src/data/' + L + '/muse/' + this.key + '.json');
-//   if (typeof longform.content == 'undefined') return '';
-//   var items = longform.content;
-//   var content = '';
-//
-//   for (var i = 0; i < items.length; i++) {
-//      if (typeof items[i].content != 'undefined') {
-//          items[i].content.L = this.L;
-//          content += contentTemplates[items[i].type](items[i].content);
-//      } else {
-//          items[i].L = this.L;
-//          items[i].nav = this.nav;
-//          content += contentTemplates[items[i].type](items[i]);
-//      }
-//    }
-//
-//   return new Handlebars.SafeString(
-//     content
-//   );
-// });
+Handlebars.registerHelper('CONTENT', function() {
+  // var items = this.longforms[this.key].content;
+  console.log("KKKKEEEYYYY", this.key);
+  var longform = require('./src/content/data/' + L + '/muse/' + this.key + '.json');
+  if (typeof longform.content == 'undefined') return '';
+  var items = longform.content;
+  var content = '';
+
+  for (var i = 0; i < items.length; i++) {
+     if (typeof items[i].content != 'undefined') {
+         items[i].content.L = this.L;
+         content += contentTemplates[items[i].type](items[i].content);
+     } else {
+         items[i].L = this.L;
+         items[i].nav = this.nav;
+         content += contentTemplates[items[i].type](items[i]);
+     }
+   }
+
+  return new Handlebars.SafeString(
+    content
+  );
+});
 
 metalsmith.use(templates({
   "engine": "handlebars",

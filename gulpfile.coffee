@@ -50,9 +50,9 @@ SCRIPTDATA = [
   "./src/data.js"
 ]
 TERRIBLESCRIPTQ = [
-  "./bower_components/newsquiz/libs/jquery/jquery.js"
-  "./bower_components/newsquiz/libs/tabletop.js"
-  "./bower_components/newsquiz/dist/newsquiz.min.js"
+  "./bower_components/newsquiz/js/jquery.js"
+  "./bower_components/newsquiz/js/tabletop.js"
+  "./bower_components/newsquiz/js/script.js"
 ]
 
 # DEFINE PARTIAL TASKS
