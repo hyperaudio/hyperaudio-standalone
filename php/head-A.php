@@ -3,40 +3,11 @@ $locale = "ar-QA";
 $L = "A";
 $title = "PalestineRemix";
 $description = "Explore the story of Palestine. Take our content and use our creative remix tool to re-edit our films. Create your own palestine story";
-$images = "http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/";
-$image = $images . "default.png";
-$TROOT = "../PalestineRemix/transcripts/html/";
+$images = "http://interactive.aljazeera.com/aja/PalestineRemix/transcripts/images/";
+$image = "http://interactive.aljazeera.com/aja/PalestineRemix/images/arabic.jpg";
+$TROOT = "transcripts/html/";
 
-$titles = [
-"Going against the grain",
-"Against the wall",
-"Area C",
-"Beyond the walls",
-"Forbidden Pilgrimage",
-"Gaza left in the dark",
-"Gaza lives on",
-"Gaza we are coming",
-"Inside Shin Bet",
-"Last shepherds of the valley",
-"Lost cities of Palestine",
-"Palestina Amore",
-"The pain inside",
-"Stronger than words",
-"The price of Oslo 1",
-"The price of Oslo 2",
-"Hunger Strike",
-"Al Nakba 1",
-"Al Nakba 2",
-"Al Nakba 3",
-"Al Nakba 4",
-"Deportees",
-"Return to Morocco",
-"Stories from the Intifada p1",
-"Stories from the Intifada p2",
-"Born in 1948",
-"Jerusalem Hitting Home",
-"Palestine Divided"
-];
+$titles = ["ضد التيار","قرى تتحدى الجدار","مناطق جيم","خارج الأسوار","الحج المحرم","حياة بالجدول","غزة تعيش","غزة إننا قادمون","الشاباك","الاقتلاع من الغور","اغتيال المدينة","فلسطين في قلوب إيطالية","المستنقع","أقوى من الكلام","ثمن أوسلو الجزء الأول","ثمن أوسلو الجزء الثاني","معركة الأمعاء الخاوية","النكبة الجزء الأول","النكبة الجزء الثاني","النكبة الجزء الثالث","النكبة الجزء الرابع","منسيون خارج الوطن","فسيفساء","حكايات من انتفاضة الحجارة الجزء الأول","حكايات من انتفاضة الحجارة الجزء الثاني","ولدن في النكبة","اهدم بيتك بيدك","مقطع الأوصال"];
 
 
 $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";

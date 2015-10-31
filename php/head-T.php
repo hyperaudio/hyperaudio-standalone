@@ -3,40 +3,11 @@ $locale = "tr-TR";
 $L = "T";
 $title = "PalestineRemix";
 $description = "Explore the story of Palestine. Take our content and use our creative remix tool to re-edit our films. Create your own palestine story";
-$images = "http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/";
-$image = $images . "default.png";
+$images = "http://interactive.aljazeera.com/ajt/PalestineRemix/transcripts/images/";
+$image = "http://interactive.aljazeera.com/ajt/PalestineRemix/images/turkish.jpg";
 $TROOT = "transcripts/html/";
 
-$titles = [
-"Going against the grain",
-"Against the wall",
-"Area C",
-"Beyond the walls",
-"Forbidden Pilgrimage",
-"Gaza left in the dark",
-"Gaza lives on",
-"Gaza we are coming",
-"Inside Shin Bet",
-"Last shepherds of the valley",
-"Lost cities of Palestine",
-"Palestina Amore",
-"The pain inside",
-"Stronger than words",
-"The price of Oslo 1",
-"The price of Oslo 2",
-"Hunger Strike",
-"Al Nakba 1",
-"Al Nakba 2",
-"Al Nakba 3",
-"Al Nakba 4",
-"Deportees",
-"Return to Morocco",
-"Stories from the Intifada p1",
-"Stories from the Intifada p2",
-"Born in 1948",
-"Jerusalem Hitting Home",
-"Palestine Divided"
-];
+$titles = ["İSRAİLLİ RADİKAL GİDEON LEVİ","DUVARA KARŞI","C BÖLGESİ","AÇIK CEZAEVİ","YASAKLAR ÜLKESİ İSRAİL","GAZZE'Yİ KARARTMA","GAZZE YENİDEN","BEKLE BİZİ GAZZE","GÖLGE TEŞKİLAT ŞİN BET","DİRENEN TOPRAKLAR","YİTİK ŞEHİRLER","FİLİSTİN AŞKINA","İŞGALİN ASKERLERİ","GAZZE: SAĞIR DÜNYA","OSLO'NUN BEDELİ - 1. BÖLÜM","OSLO'NUN BEDELİ - 2. BÖLÜM","ÖLÜMÜNE DİRENİŞ","BÜYÜK FELAKET - 1. BÖLÜM","BÜYÜK FELAKET - 2. BÖLÜM","BÜYÜK FELAKET - 3. BÖLÜM","BÜYÜK FELAKET - 4. BÖLÜM","SÜRGÜN EDİLENLER","FAS'A DÖNÜŞ","İNTİFADA HİKAYELERİ - 1","İNTİFADA HİKAYELERİ - 2","48'LİLER","KUDÜS: KENDİ EVİNİ YIKMAK","PARÇALANAN FİLİSTİN"];
 
 
 $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";

@@ -4,7 +4,7 @@ $L = "E";
 $title = "PalestineRemix";
 $description = "Explore the story of Palestine. Take our content and use our creative remix tool to re-edit our films. Create your own palestine story";
 $images = "http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/";
-$image = $images . "default.png";
+$image = "http://interactive.aljazeera.com/aje/PalestineRemix/images/english.jpg";
 $TROOT = "transcripts/html/";
 
 $titles = [

@@ -89,25 +89,25 @@ var FILMS = [
   },
 
   { "_id": 25,
-    "label": "Born in 1948"
+    "label": "ولدن في النكبة"
   },
   { "_id": 21,
-    "label": "The Deportees"
+    "label": "فسيفساء"
   },
   { "_id": 26,
-    "label": "Jerusalem hitting home"
+    "label": "اهدم بيتك بيدك"
   },
   { "_id": 27,
-    "label": "Palestine Divided"
+    "label": "مقطع الأوصال"
   },
   { "_id": 22,
-    "label": "Return to Morocco"
+    "label": "فسيفساء"
   },
   { "_id": 23,
-    "label": "Stories from the Intifada 1"
+    "label": "حكايات من انتفاضة الحجارة الجزء الأول"
   },
   { "_id": 24,
-    "label": "Stories from the Intifada 2"
+    "label": "حكايات من انتفاضة الحجارة الجزء الثاني"
   }
 
 

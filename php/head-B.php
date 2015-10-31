@@ -3,40 +3,11 @@ $locale = "bs_BA";
 $L = "B";
 $title = "PalestineRemix";
 $description = "Explore the story of Palestine. Take our content and use our creative remix tool to re-edit our films. Create your own palestine story";
-$images = "http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/";
-$image = $images . "default.png";
+$images = "http://interactive.aljazeera.com/ajb/PalestineRemix/transcripts/images/";
+$image = "http://interactive.aljazeera.com/ajb/PalestineRemix/images/bosnian.jpg";
 $TROOT = "transcripts/html/";
 
-$titles = [
-"Going against the grain",
-"Against the wall",
-"Area C",
-"Beyond the walls",
-"Forbidden Pilgrimage",
-"Gaza left in the dark",
-"Gaza lives on",
-"Gaza we are coming",
-"Inside Shin Bet",
-"Last shepherds of the valley",
-"Lost cities of Palestine",
-"Palestina Amore",
-"The pain inside",
-"Stronger than words",
-"The price of Oslo 1",
-"The price of Oslo 2",
-"Hunger Strike",
-"Al Nakba 1",
-"Al Nakba 2",
-"Al Nakba 3",
-"Al Nakba 4",
-"Deportees",
-"Return to Morocco",
-"Stories from the Intifada p1",
-"Stories from the Intifada p2",
-"Born in 1948",
-"Jerusalem Hitting Home",
-"Palestine Divided"
-];
+$titles = ["Protiv struje","Borba protiv zida","Zona C ","Izvan zidina","Zabranjeno hodočašće","Gaza ostavljena u mraku","Gaza će i dalje živjeti","Gaza dolazimo!","Shin Bet: Iza kulisa","Posljednji pastiri doline Jordana","Izgubljeni gradovi Palestine","Palestino, ljubavi moja","Unutrašnji bol","Jači od riječi","Cijena Osla: prvi dio","Cijena Osla: drugi dio","Štrajk glađu","Al Nakba: Palestinska katastrofa, Epizoda 1","Al Nakba: Palestinska katastrofa, Epizoda 2","Al Nakba: Palestinska katastrofa, Epizoda 3","Al Nakba: Palestinska katastrofa, Epizoda 4","Deportovani","Povratak u Maroko","Priče Intifade 1","Priče Intifade 2","Rođene '48-e","Jeruzalem: rušenje domova","Podijeljena Palestina"];
 
 
 $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
