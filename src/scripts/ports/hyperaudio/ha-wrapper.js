@@ -32,7 +32,7 @@ var AJHAWrapper = {
       // body[0].classList.add('tpl--compact');
       var remixButton = document.getElementById('HAP-remix-helper');
       if (remixButton) {
-        remixButton.href = "../create/"+window.top.location.hash;
+        remixButton.href = "../../../remix_main.html"+window.top.location.hash;
       }
     }
 
