@@ -26,7 +26,7 @@ SCRIPTQ1 = [
 ]
 SCRIPTQ2 = [
   "./bower_components/xregexp/xregexp-all.js"
-  "./bower_components/lunr.js/lunr.min.js"
+  "./bower_components/lunr.js/lunr.js"
   "./bower_components/lunr-languages/lunr.stemmer.support.js"
   "./bower_components/lunr-languages/lunr.tr.js"
   "./bower_components/lunr-languages/lunr.ar.js"

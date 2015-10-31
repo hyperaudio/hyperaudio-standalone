@@ -24,7 +24,4 @@ dev/assets/styles/aj.css
 # Other Stuff
 _icons.md
 sftp-config.json
-#node_modules.zip
 npm-debug.log
-transcripts.zip
-*.zip
