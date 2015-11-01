@@ -1,9 +1,9 @@
 # Distribution Package
-mobile/
-mobile-E/
-mobile-A/
-mobile-B/
-mobile-T/
+#mobile/
+#mobile-E/
+#mobile-A/
+#mobile-B/
+#mobile-T/
 
 # Node modules
 node_modules/
@@ -12,7 +12,7 @@ node_modules/
 bower_components/
 
 # Compiled styles and scripts
-mobile/
+#mobile/
 
 dev/assets/scripts/
 dev/assets/scripts/vendorq1.js
