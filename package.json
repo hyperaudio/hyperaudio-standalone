@@ -36,7 +36,6 @@
     "build-turkish": "LCODE=T ./node_modules/gulp/bin/gulp.js build",
     "build-bosnian": "LCODE=B ./node_modules/gulp/bin/gulp.js build",
     "build": "npm run build-english",
-    "build-all": "npm run build-english && npm run build-arabic && npm run build-turkish && npm run build-bosnian",
     "dev": "LCODE=E ./node_modules/gulp/bin/gulp.js",
     "dev-E": "LCODE=E ./node_modules/gulp/bin/gulp.js",
     "dev-A": "LCODE=A ./node_modules/gulp/bin/gulp.js",
