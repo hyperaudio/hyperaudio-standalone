@@ -450,6 +450,14 @@ var AJHAWrapper = {
                   HA.removeClass(el,'selected');
                 });
 
+                [].forEach.call(document.querySelectorAll(".jsSetSaveVideoURL"), function(el) {
+                  var shareLinkHref   = el.getAttribute("href");
+                  var shareLinkNuHref = shareLinkHref.replace("#DOWNLOAD", "http://prx.147.pm/video?download=1&remix=" + encodeURIComponent(_selectionTextURI));
+                  el.setAttribute("href", shareLinkNuHref);
+                  //el.classList.remove('selected');
+                  HA.removeClass(el,'selected');
+                });
+
                 // toggleHAVDrop(selectionElement, selectionTextContent, selectionTextURI);
 
                 document.getElementById('hav-share-url').innerHTML = _selectionTextURI;
@@ -802,6 +810,8 @@ var AJHAWrapper = {
             document.getElementById('hap-share-twitter').href = "https://twitter.com/home?status=" + encodeURIComponent(_url);
             document.getElementById('hap-share-google').href = "https://plus.google.com/share?url=" + encodeURIComponent(_url);
             document.getElementById('hap-share-email').href = "mailto:?subject=Message%20via%20PALESTINE%20REMIX&body=Hey%2C%20%0A%0Acheck%20this%20page%3A%20" + encodeURIComponent(_url);
+
+            document.getElementById('hap-download-url').href = "http://prx.147.pm/video?download=1&remix=" + encodeURIComponent(_url);
           });//shorten
         }
       }
