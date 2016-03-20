@@ -98,3 +98,19 @@
 @import "layout-ltr";
 @import "layout-rtl";
 @import "contexts";
+
+a#hap-download-url:focus {
+    cursor: wait;
+}
+
+a#hap-download-url:active {
+    cursor: wait;
+}
+
+a.jsSetSaveVideoURL:focus {
+    cursor: wait;
+}
+
+a.jsSetSaveVideoURL:active {
+    cursor: wait;
+}
