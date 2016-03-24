@@ -1,4 +1,6 @@
 <?php
+require('phpQuery/phpQuery.php');
+
 $locale = "en_GB";
 $L = "E";
 $title = "PalestineRemix";
@@ -98,7 +100,6 @@ if ($_GET["_escaped_fragment_"]) {
 
   $lastPara = "";
 
-  require('phpQuery/phpQuery.php');
   $doc = phpQuery::newDocument($transcript);
   phpQuery::selectDocument($doc);
   $words = pq('article')['a'];
@@ -117,10 +118,17 @@ if ($_GET["_escaped_fragment_"]) {
   $url .= '#!' . urldecode($_GET["_escaped_fragment_"]);
 } // _escaped_fragment_
 
+$html = get_include_contents('view_remix.html');
+$doc = phpQuery::newDocument($html);
+phpQuery::selectDocument($doc);
+pq('meta')->remove();
+pq('title')->remove();
+ob_start();
 ?>
+<title><?php echo htmlspecialchars($title); ?></title>
+<meta name="description" content="<?php echo htmlspecialchars($description); ?>" />
 
 <meta property="og:locale" content="<?php echo htmlspecialchars($locale); ?>" />
-
 <meta property="og:title" content="<?php echo htmlspecialchars($title); ?>" />
 <meta property="og:type" content="video.other" />
 <meta property="og:description" content="<?php echo htmlspecialchars($description); ?>" />
@@ -133,3 +141,10 @@ if ($_GET["_escaped_fragment_"]) {
 <meta property="twitter:title" content="<?php echo htmlspecialchars($title); ?>" />
 <meta property="twitter:description" content="<?php echo htmlspecialchars($description); ?>" />
 <meta property="twitter:image:src" content="<?php echo htmlspecialchars($image); ?>" />
+
+<?php
+$out = ob_get_contents();
+ob_end_clean();
+pq('head')->append($out);
+echo $doc->html();
+?>
