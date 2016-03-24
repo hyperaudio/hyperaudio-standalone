@@ -1,13 +1,13 @@
 <?php
-$locale = "bs_BA";
-$L = "B";
+$locale = "tr_TR";
+$L = "T";
 $title = "PalestineRemix";
 $description = "Explore the story of Palestine. Take our content and use our creative remix tool to re-edit our films. Create your own palestine story";
-$images = "http://interactive.aljazeera.com/ajb/PalestineRemix/transcripts/images/";
-$image = "http://interactive.aljazeera.com/ajb/PalestineRemix/images/bosnian.jpg";
+$images = "http://interactive.aljazeera.com/ajt/PalestineRemix/transcripts/images/";
+$image = "http://interactive.aljazeera.com/ajt/PalestineRemix/images/turkish.jpg";
 $TROOT = "transcripts/html/";
 
-$titles = ["Protiv struje","Borba protiv zida","Zona C ","Izvan zidina","Zabranjeno hodočašće","Gaza ostavljena u mraku","Gaza će i dalje živjeti","Gaza dolazimo!","Shin Bet: Iza kulisa","Posljednji pastiri doline Jordana","Izgubljeni gradovi Palestine","Palestino, ljubavi moja","Unutrašnji bol","Jači od riječi","Cijena Osla: prvi dio","Cijena Osla: drugi dio","Štrajk glađu","Al Nakba: Palestinska katastrofa, Epizoda 1","Al Nakba: Palestinska katastrofa, Epizoda 2","Al Nakba: Palestinska katastrofa, Epizoda 3","Al Nakba: Palestinska katastrofa, Epizoda 4","Deportovani","Povratak u Maroko","Priče Intifade 1","Priče Intifade 2","Rođene '48-e","Jeruzalem: rušenje domova","Podijeljena Palestina"];
+$titles = ["İSRAİLLİ RADİKAL GİDEON LEVİ","DUVARA KARŞI","C BÖLGESİ","AÇIK CEZAEVİ","YASAKLAR ÜLKESİ İSRAİL","GAZZE'Yİ KARARTMA","GAZZE YENİDEN","BEKLE BİZİ GAZZE","GÖLGE TEŞKİLAT ŞİN BET","DİRENEN TOPRAKLAR","YİTİK ŞEHİRLER","FİLİSTİN AŞKINA","İŞGALİN ASKERLERİ","GAZZE: SAĞIR DÜNYA","OSLO'NUN BEDELİ - 1. BÖLÜM","OSLO'NUN BEDELİ - 2. BÖLÜM","ÖLÜMÜNE DİRENİŞ","BÜYÜK FELAKET - 1. BÖLÜM","BÜYÜK FELAKET - 2. BÖLÜM","BÜYÜK FELAKET - 3. BÖLÜM","BÜYÜK FELAKET - 4. BÖLÜM","SÜRGÜN EDİLENLER","FAS'A DÖNÜŞ","İNTİFADA HİKAYELERİ - 1","İNTİFADA HİKAYELERİ - 2","48'LİLER","KUDÜS: KENDİ EVİNİ YIKMAK","PARÇALANAN FİLİSTİN"];
 
 
 $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -37,7 +37,7 @@ if ($_GET["_escaped_fragment_"]) {
     $ts = floor($t / 1000);
     $t2 = $frag[3];
     $image = $images . $v . "/" . $L . "/p/img" . $ts . ".jpg";
-    $title = "Isječak iz Palestina Remix - " . $titles[$v];
+    $title = "Filistin Remiks özeti - " . $titles[$v];
   } else {
     // mix
     for ($i = 1; $i < count($frag); $i++) {
@@ -52,7 +52,7 @@ if ($_GET["_escaped_fragment_"]) {
       break;
     }
 
-    if ($vid) $title = "Remix iz Palestina Remix - " . $titles[$vid];
+    if ($vid) $title = "Filistin Remiks'ten remiks - " . $titles[$vid];
 
     for ($i = 1; $i < count($frag); $i++) {
       $vt = explode(":", $frag[$i]);
@@ -88,10 +88,17 @@ if ($_GET["_escaped_fragment_"]) {
   $url .= '#!' . urldecode($_GET["_escaped_fragment_"]);
 } // _escaped_fragment_
 
+$html = get_include_contents('view_remix.html');
+$doc = phpQuery::newDocument($html);
+phpQuery::selectDocument($doc);
+pq('meta')->remove();
+pq('title')->remove();
+ob_start();
 ?>
+<title><?php echo htmlspecialchars($title); ?></title>
+<meta name="description" content="<?php echo htmlspecialchars($description); ?>" />
 
 <meta property="og:locale" content="<?php echo htmlspecialchars($locale); ?>" />
-
 <meta property="og:title" content="<?php echo htmlspecialchars($title); ?>" />
 <meta property="og:type" content="video.other" />
 <meta property="og:description" content="<?php echo htmlspecialchars($description); ?>" />
@@ -104,3 +111,10 @@ if ($_GET["_escaped_fragment_"]) {
 <meta property="twitter:title" content="<?php echo htmlspecialchars($title); ?>" />
 <meta property="twitter:description" content="<?php echo htmlspecialchars($description); ?>" />
 <meta property="twitter:image:src" content="<?php echo htmlspecialchars($image); ?>" />
+
+<?php
+$out = ob_get_contents();
+ob_end_clean();
+pq('head')->append($out);
+echo $doc->html();
+?>
