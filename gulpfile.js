@@ -20,19 +20,19 @@ const STYLES = [
 ];
 let SCRIPTQ1 = [
   `./src/scripts/lang/${L}/lang.js`,
-  "./bower_components/pace/pace.js"
+  // "./bower_components/pace/pace.js"
 ];
 let SCRIPTQ2 = [
-  "./bower_components/xregexp/xregexp-all.js",
+  "./node_modules/xregexp/src/xregexp.js",
   "./bower_components/lunr.js/lunr.min.js",
-  "./bower_components/lunr-languages/lunr.stemmer.support.js",
-  "./bower_components/lunr-languages/lunr.tr.js",
-  "./bower_components/lunr-languages/lunr.ar.js",
-  "./bower_components/tether/tether.js",
-  "./bower_components/shepherd.js/shepherd.js",
-  "./bower_components/drop/drop.js",
-  "./bower_components/swiper/dist/idangerous.swiper.min.js",
-  "./bower_components/fastclick/lib/fastclick.js"
+  // "./bower_components/lunr-languages/lunr.stemmer.support.js",
+  // "./bower_components/lunr-languages/lunr.tr.js",
+  // "./bower_components/lunr-languages/lunr.ar.js",
+  // "./bower_components/tether/tether.js",
+  // "./bower_components/shepherd.js/shepherd.js",
+  // "./bower_components/drop/drop.js",
+  // "./bower_components/swiper/dist/idangerous.swiper.min.js",
+  // "./bower_components/fastclick/lib/fastclick.js"
 ];
 let SCRIPTQ3 = [
   "./bower_components/popcorn-js/popcorn.js",
@@ -44,14 +44,6 @@ let SCRIPTQ3 = [
   "./src/scripts/ports/hyperaudio/ha.js",
   "./src/scripts/ports/hyperaudio/ha-wrapper.js"
 ];
-const TERRIBLESCRIPTQ = [
-  "./bower_components/newsquiz/libs/jquery/jquery.js",
-  "./bower_components/newsquiz/libs/tabletop.js",
-  "./bower_components/newsquiz/dist/newsquiz.min.js"
-];
-
-// DEFINE PARTIAL TASKS
-// ============================================== #
 
 // HTML tasks
 // ---------------------------------------------- #
@@ -87,8 +79,6 @@ gulp.task("concat-vendorq2", () => gulp.src(SCRIPTQ2).pipe($.concat("vendorq2.js
 gulp.task("concat-ports", () => gulp.src(SCRIPTQ3).pipe($.concat("ports.js")).pipe(gulp.dest("./dev/assets/scripts"))
 );
 
-gulp.task("concat-vendorqt", () => gulp.src(TERRIBLESCRIPTQ).pipe($.concat("vendorqt.js")).pipe(gulp.dest("./dev/assets/scripts"))
-);
 
 // Compile Coffeescript
 // ---------------------------------------------- #
@@ -169,7 +159,7 @@ gulp.task("build", [
   "concat-vendorq2",
   "concat-vendorqt",
   "concat-ports",
-  "compile-coffee",
+  // "compile-coffee",
   "copyfiles",
   "node-build"
 ]);

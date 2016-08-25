@@ -1,29 +1,19 @@
 {
-  "name": "aj-palestine-retold",
-  "version": "1.0.0-alpha",
+  "name": "hyperaudio-standalone",
+  "version": "0.0.3",
   "dependencies": {
-    "coffee-script": "^1.8.0",
+    "catalyst": "https://github.com/interactivethings/catalyst.git#1.0.0-beta",
     "gulp": "^3.8.8",
-    "gulp-coffee": "^2.2.0",
     "gulp-concat": "^2.4.1",
-    "gulp-connect": "^2.0.6",
-    "gulp-load-plugins": "^0.6.0",
-    "gulp-plumber": "^0.6.5",
-    "gulp-sass": "^0.7.3",
-    "gulp-shell": "0.4.0",
-    "gulp-uglifyjs": "^0.4.4",
-    "gulp-watch": "^1.0.7",
-    "handlebars": "^2.0.0-alpha.2",
-    "metalsmith": "^0.2.3",
-    "metalsmith-assets": "0.0.1",
-    "metalsmith-markdown": "^0.2.1",
-    "metalsmith-metadata": "*",
-    "metalsmith-static": "0.0.5",
-    "metalsmith-templates": "^0.1.0",
-    "node-bourbon": "^1.2.3",
-    "proxy-middleware": "*",
-    "phantom": "*",
-    "jsonfile": "*"
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-shell": "0.5.2",
+    "jsonfile": "2.3.1",
+    "lunr-languages": "git://github.com/AJInteractive/lunr-languages.git#5ff618aec749dadfe3175a7320583e029cc443ed",
+    "lunr": "0.7.1",
+    "node-bourbon": "^4.2.8",
+    "xregexp": "^3.1.1"
   },
   "author": [
     "Mark Boas <mark.boas@gmail.com>",
@@ -32,10 +22,6 @@
   ],
   "scripts": {
     "build-english": "LCODE=E ./node_modules/gulp/bin/gulp.js build",
-    "build-arabic": "LCODE=A ./node_modules/gulp/bin/gulp.js build",
-    "build-turkish": "LCODE=T ./node_modules/gulp/bin/gulp.js build",
-    "build-bosnian": "LCODE=B ./node_modules/gulp/bin/gulp.js build",
-    "build": "npm run build-english",
-    "build-all": "npm run build-english && npm run build-arabic && npm run build-turkish && npm run build-bosnian"
+    "build": "npm run build-english"
   }
 }
