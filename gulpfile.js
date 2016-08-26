@@ -2,9 +2,9 @@ const L       = 'E';
 // L       = process.env.LCODE if process.env.LCODE
 
 const gulp = require("gulp");
-let $       = require("gulp-load-plugins")();
+const $ = require("gulp-load-plugins")();
 
-let handleError = function(err) {
+const handleError = function(err) {
   console.log(err.toString());
   return this.emit("end");
 };
@@ -45,13 +45,6 @@ let SCRIPTQ3 = [
   "./src/scripts/ports/hyperaudio/ha-wrapper.js"
 ];
 
-// HTML tasks
-// ---------------------------------------------- #
-gulp.task("html", () =>
-  gulp.src(["./dist/**/*.html"])
-    .pipe($.connect.reload())
-
-);
 
 // Compile Sass
 // ---------------------------------------------- #
@@ -89,6 +82,7 @@ gulp.task("compile-coffee", () =>
     `./src/scripts/lang/${L}/*.js`
     ])
     .pipe($.concat('aj.js'))
+    .on("error", handleError)
     .pipe(gulp.dest("./dist/assets/scripts"))
 );
 
@@ -97,55 +91,7 @@ gulp.task("compile-coffee", () =>
 gulp.task("copyfiles", () => gulp.src("./bower_components/hyperaudio/dist/assets/fonts/**/*").pipe(gulp.dest("./dist/assets/fonts"))
 );
 
-// Build Dist
-// ---------------------------------------------- #
-// gulp.task("node-build",
-//   $.shell.task(['node build'], { env: { LCODE: L } })
-// );
-
-// Watch files
-// ---------------------------------------------- #
-// gulp.task "watch", ->
-//   gulp.watch ["./src/styles/**/*.scss"], [ "compile-sass", "node-build" ]
-//   gulp.watch ["./dev/**/*.html"], ["html", "node-build"]
-//   gulp.watch ["./src/scripts/**/*.coffee", "./src/scripts/lang/" + L + "/*.coffee", "./src/scripts/*.coffee", "./bower_components/**/*.js"], ["compile-coffee", "node-build"]
-//   gulp.watch SCRIPTQ3, ["concat-ports", "node-build"]
-//   gulp.watch ["./dev/assets/**/*.*"], ["node-build"]
-
-// Connect server
-// ---------------------------------------------- #
-// gulp.task "connect", ->
-//   $.connect.server
-//     root: "./mobile-" + L
-//     port: 8002
-//     livereload: true
-//     middleware: (connect, o) ->
-//       [(->
-//         url = require("url")
-//         proxy = require("proxy-middleware")
-//         options = url.parse("http://interactive.aljazeera.com/AJE/PalestineRemix/transcripts")
-//         #options = url.parse("http://10.24.21.20/~laurian/PALESTINE%20PROJECT/DATA/MEDIA/SEARCH")
-//         options.route = "/AJE/PalestineRemix/transcripts"
-//         proxy options
-//       )()]
-
-// DEFAULT TASK
-// ============================================== #
-
-// gulp.task "default", [
-//   "compile-sass"
-//   "concat-vendorq1"
-//   "concat-vendorq2"
-//   "concat-vendorqt"
-//   "concat-ports"
-//   "compile-coffee"
-//   "copyfiles"
-//   "node-build"
-//   "connect"
-//   "watch"
-// ]
-
-gulp.task("build", [
+gulp.task("default", [
   "compile-sass",
   "concat-vendorq1",
   "concat-vendorq2",
