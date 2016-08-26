@@ -1,29 +1,4 @@
-# Distribution Package
-mobile/
-mobile-E/
-mobile-A/
-mobile-B/
-mobile-T/
-
-# Node modules
 node_modules/
-
-# Bower components
-bower_components/
-
-# Compiled styles and scripts
-mobile/
-
-dev/assets/scripts/
-dev/assets/scripts/vendorq1.js
-dev/assets/scripts/vendorqt.js
-
-dev/assets/styles/
-dev/assets/styles/aj.css
-
-# Other Stuff
-_icons.md
-sftp-config.json
-#node_modules.zip
 npm-debug.log
-transcripts.zip
+
+bower_components/

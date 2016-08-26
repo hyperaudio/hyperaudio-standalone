@@ -1,7 +1,7 @@
 const L       = 'E';
 // L       = process.env.LCODE if process.env.LCODE
 
-import gulp from "gulp";
+const gulp = require("gulp");
 let $       = require("gulp-load-plugins")();
 
 let handleError = function(err) {
@@ -48,7 +48,7 @@ let SCRIPTQ3 = [
 // HTML tasks
 // ---------------------------------------------- #
 gulp.task("html", () =>
-  gulp.src(["./dev/**/*.html"])
+  gulp.src(["./dist/**/*.html"])
     .pipe($.connect.reload())
 
 );
@@ -63,20 +63,19 @@ gulp.task("compile-sass", () =>
     })
   )
     .on("error", handleError)
-    .pipe(gulp.dest("dev/assets/styles"))
-    .pipe($.connect.reload())
+    .pipe(gulp.dest("dist/assets/styles"))
 
 );
 
 // Concat Vendor
 // ---------------------------------------------- #
-gulp.task("concat-vendorq1", () => gulp.src(SCRIPTQ1).pipe($.concat("vendorq1.js")).pipe(gulp.dest("./dev/assets/scripts"))
+gulp.task("concat-vendorq1", () => gulp.src(SCRIPTQ1).pipe($.concat("vendorq1.js")).pipe(gulp.dest("./dist/assets/scripts"))
 );
 
-gulp.task("concat-vendorq2", () => gulp.src(SCRIPTQ2).pipe($.concat("vendorq2.js")).pipe(gulp.dest("./dev/assets/scripts"))
+gulp.task("concat-vendorq2", () => gulp.src(SCRIPTQ2).pipe($.concat("vendorq2.js")).pipe(gulp.dest("./dist/assets/scripts"))
 );
 
-gulp.task("concat-ports", () => gulp.src(SCRIPTQ3).pipe($.concat("ports.js")).pipe(gulp.dest("./dev/assets/scripts"))
+gulp.task("concat-ports", () => gulp.src(SCRIPTQ3).pipe($.concat("ports.js")).pipe(gulp.dest("./dist/assets/scripts"))
 );
 
 
@@ -84,32 +83,25 @@ gulp.task("concat-ports", () => gulp.src(SCRIPTQ3).pipe($.concat("ports.js")).pi
 // ---------------------------------------------- #
 gulp.task("compile-coffee", () =>
   gulp.src([
-    "./src/scripts/helpers/*.coffee",
-    "./src/scripts/modules/*.coffee",
-    "./src/scripts/scripts.coffee",
-    `./src/scripts/lang/${L}/*.coffee`
+    "./src/scripts/helpers/*.js",
+    "./src/scripts/modules/*.js",
+    "./src/scripts/scripts.js",
+    `./src/scripts/lang/${L}/*.js`
     ])
-    .pipe($.concat('aj.coffee'))
-    .pipe(gulp.dest("./dev/assets/scripts"))
-    .pipe($.coffee({
-      bare: true})
-  )
-    .on("error", handleError)
-    .pipe(gulp.dest("./dev/assets/scripts"))
-    .pipe($.connect.reload())
-
+    .pipe($.concat('aj.js'))
+    .pipe(gulp.dest("./dist/assets/scripts"))
 );
 
 // Copy Font Files from Bower Dependencies
 // ---------------------------------------------- #
-gulp.task("copyfiles", () => gulp.src("./bower_components/hyperaudio/dist/assets/fonts/**/*").pipe(gulp.dest("./dev/assets/fonts"))
+gulp.task("copyfiles", () => gulp.src("./bower_components/hyperaudio/dist/assets/fonts/**/*").pipe(gulp.dest("./dist/assets/fonts"))
 );
 
 // Build Dist
 // ---------------------------------------------- #
-gulp.task("node-build",
-  $.shell.task(['node build'], { env: { LCODE: L } })
-);
+// gulp.task("node-build",
+//   $.shell.task(['node build'], { env: { LCODE: L } })
+// );
 
 // Watch files
 // ---------------------------------------------- #
@@ -157,9 +149,9 @@ gulp.task("build", [
   "compile-sass",
   "concat-vendorq1",
   "concat-vendorq2",
-  "concat-vendorqt",
+  // "concat-vendorqt",
   "concat-ports",
-  // "compile-coffee",
+  "compile-coffee",
   "copyfiles",
-  "node-build"
+  // "node-build"
 ]);
