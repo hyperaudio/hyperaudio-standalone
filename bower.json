@@ -17,11 +17,8 @@
   ],
   "dependencies": {
     "bourbon": "~4.2.7",
-    "catalyst": "https://github.com/interactivethings/catalyst.git#1.0.0-beta",
+    "catalyst": "https://github.com/interactivethings/catalyst.git#1.0.0-beta3",
     "margarine": "https://github.com/piotrf/margarine.git#~1.0.21",
-    "lunr.js": "~0.7.1",
-    "lunr-languages": "git://github.com/AJInteractive/lunr-languages.git#5ff618aec749dadfe3175a7320583e029cc443ed",
-    "xregexp": "3.1.1",
     "popcorn-js": "~1.5.10"
   }
 }
