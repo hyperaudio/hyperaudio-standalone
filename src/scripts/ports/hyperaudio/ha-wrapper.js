@@ -348,7 +348,7 @@ var AJHAWrapper = {
         output.appendChild(document.createElement('section'));
       }
 
-      q = queue(1);
+      q = d3.queue(); // queue(1);
 
       // do we have any hash params? Are there enough?
 
@@ -469,7 +469,7 @@ var AJHAWrapper = {
             }, false);
           }
 
-          ajOnInitCallback();
+          if (ajOnInitCallback) ajOnInitCallback();
 
         } else {
 
@@ -756,7 +756,7 @@ var AJHAWrapper = {
 
       if (target != 'Viewer') {
 
-        ajOnInitCallback();
+        if (ajOnInitCallback) ajOnInitCallback();
 
       }
 

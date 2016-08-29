@@ -12,8 +12,7 @@
     "jsonfile": "2.3.1",
     "lunr-languages": "git://github.com/AJInteractive/lunr-languages.git#5ff618aec749dadfe3175a7320583e029cc443ed",
     "lunr": "0.7.1",
-    "node-bourbon": "^4.2.8",
-    "xregexp": "^3.1.1"
+    "node-bourbon": "^4.2.8"
   },
   "author": [
     "Mark Boas <mark.boas@gmail.com>",

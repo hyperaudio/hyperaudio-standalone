@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="assets/fonts/hyperaudio-player/style.css">
 <link rel="stylesheet" href="assets/styles/loader.css">
 
-<script src="assets/scripts/vendorq1.js"></script>
+<!-- <script src="assets/scripts/vendorq1.js"></script> -->
 </head>
 <!-- **> init ** -->
 <body class="tpl--pad tpl--compact">
@@ -214,11 +214,12 @@
   <a class="panel__action--sec togglePanel" data-panel-target="share">Close</a>
 </div>
 <!-- **> panel-share** -->
+<script src="data/data.js"></script>
 <script src="assets/scripts/vendorq2.js"></script>
 <script src="assets/scripts/aj.js"></script>
 <script src="assets/scripts/ports.js"></script>
 <script type="text/javascript">
-AJHAWrapper.init('Pad', '/AJE/PalestineRemix/transcripts/html/' + L + '/', toggleHAPTour);
+AJHAWrapper.init('Pad', 'data/transcripts/');
 </script>
 </body>
 </html>

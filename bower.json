@@ -19,6 +19,8 @@
     "bourbon": "~4.2.7",
     "catalyst": "https://github.com/interactivethings/catalyst.git#1.0.0-beta3",
     "margarine": "https://github.com/piotrf/margarine.git#~1.0.21",
-    "popcorn-js": "~1.5.10"
+    "popcorn-js": "~1.5.10",
+    "xregexp": "3.1.1",
+    "d3-queue": "3.0.3"
   }
 }

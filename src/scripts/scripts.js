@@ -30,6 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
   window.onscroll = throttle(event => toggleHead()
   , 350);
 
-  return window.addEventListener("load", (() => FastClick.attach(document.body)), false);
+  // return window.addEventListener("load", (() => FastClick.attach(document.body)), false);
 }
 );

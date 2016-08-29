@@ -1,7 +1,7 @@
 // Load search index
 let index = undefined; // we will load the index in here
 let titles = {}; // we will load the titles in here
-let searchPath = "/AJE/PalestineRemix/transcripts";
+let searchPath = "data/search";
 // searchPath = "http://10.24.21.20/~laurian/PALESTINE%20PROJECT/DATA/MEDIA/SEARCH"
 
 let request0 = new XMLHttpRequest();

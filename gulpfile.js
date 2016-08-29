@@ -18,12 +18,12 @@ const SASSPATHS = [
 const STYLES = [
   `./src/styles/lang/${L}/loader.scss`
 ];
-let SCRIPTQ1 = [
-  `./src/scripts/lang/${L}/lang.js`,
-  // "./bower_components/pace/pace.js"
-];
+// let SCRIPTQ1 = [
+//   `./src/scripts/lang/${L}/lang.js`,
+//   // "./bower_components/pace/pace.js"
+// ];
 let SCRIPTQ2 = [
-  "./node_modules/xregexp/src/xregexp.js",
+  "./bower_components/xregexp/xregexp-all.js",
   "./bower_components/lunr.js/lunr.min.js",
   // "./bower_components/lunr-languages/lunr.stemmer.support.js",
   // "./bower_components/lunr-languages/lunr.tr.js",
@@ -38,7 +38,7 @@ let SCRIPTQ3 = [
   "./bower_components/popcorn-js/popcorn.js",
   "./bower_components/popcorn-js/wrappers/common/popcorn._MediaElementProto.js",
   "./bower_components/popcorn-js/wrappers/youtube/popcorn.HTMLYouTubeVideoElement.js",
-  "./bower_components/queue-async/queue.min.js",
+  "./bower_components/d3-queue/d3-queue.js",
   "./src/scripts/ports/hyperaudio/popcorn-extras.js",
   "./src/scripts/ports/hyperaudio/ha-data.js",
   "./src/scripts/ports/hyperaudio/ha.js",
@@ -62,8 +62,8 @@ gulp.task("compile-sass", () =>
 
 // Concat Vendor
 // ---------------------------------------------- #
-gulp.task("concat-vendorq1", () => gulp.src(SCRIPTQ1).pipe($.concat("vendorq1.js")).pipe(gulp.dest("./dist/assets/scripts"))
-);
+// gulp.task("concat-vendorq1", () => gulp.src(SCRIPTQ1).pipe($.concat("vendorq1.js")).pipe(gulp.dest("./dist/assets/scripts"))
+// );
 
 gulp.task("concat-vendorq2", () => gulp.src(SCRIPTQ2).pipe($.concat("vendorq2.js")).pipe(gulp.dest("./dist/assets/scripts"))
 );
@@ -93,7 +93,7 @@ gulp.task("copyfiles", () => gulp.src("./bower_components/hyperaudio/dist/assets
 
 gulp.task("default", [
   "compile-sass",
-  "concat-vendorq1",
+  // "concat-vendorq1",
   "concat-vendorq2",
   // "concat-vendorqt",
   "concat-ports",

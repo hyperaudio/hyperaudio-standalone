@@ -297,7 +297,7 @@ let renderMultiples = function() {
           return onMultipleSelect(el, category, key);
         }
         )
-      
+
       );
     }
   }
@@ -451,7 +451,7 @@ let panelTogglers = document.querySelectorAll(".togglePanel");
 // Load search index
 let index = undefined; // we will load the index in here
 let titles = {}; // we will load the titles in here
-let searchPath = "/AJE/PalestineRemix/transcripts";
+let searchPath = "data/search";
 // searchPath = "http://10.24.21.20/~laurian/PALESTINE%20PROJECT/DATA/MEDIA/SEARCH"
 
 let request0 = new XMLHttpRequest();
@@ -549,7 +549,7 @@ var doSearch = function() {
         el.innerHTML = `<li id=r${id} class="listing__item"><div class="tile"><div class="tile__body"><p class="tile__transcript">loading…</p><p class="tile__title"><a href="#/${idParts[0]}/${idParts[2]}">${title}</a></p></div></div></li>`;
         // el.querySelector('a').addEventListener('click', function() {});
       } else {
-        el.innerHTML = `<li id=r${id} class="listing__item"><a class="tile" href="../remix/view/#/${idParts[0]}/${idParts[2]}"><div class="thumbnail tile__thumbnail"><img src="http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/${idParts[0]}/${L}/p/img${second}.jpg" class="thumbnail__image"></div><div class="tile__body"><p class="tile__transcript">loading…</p><p class="tile__title">${title}</p></div></a></li>`;
+        // el.innerHTML = `<li id=r${id} class="listing__item"><a class="tile" href="../remix/view/#/${idParts[0]}/${idParts[2]}"><div class="thumbnail tile__thumbnail"><img src="http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/${idParts[0]}/${L}/p/img${second}.jpg" class="thumbnail__image"></div><div class="tile__body"><p class="tile__transcript">loading…</p><p class="tile__title">${title}</p></div></a></li>`;
       }
 
       let result = el.children[0];
@@ -622,6 +622,7 @@ var doSearch = function() {
 
 request0.send();
 request0 = null;
+
 let setSharePath = function() {
   let thisPageURL = window.top.location.href;
   let shareLinks  = document.querySelectorAll(".jsSetSharePath");
@@ -736,9 +737,6 @@ if (window.parent !== window) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-
-  // console.log "السلام عليكم"
-
   renderDrops();
   renderFoldCards();
   renderFoldSwiper();
@@ -762,6 +760,6 @@ document.addEventListener("DOMContentLoaded", function() {
   window.onscroll = throttle(event => toggleHead()
   , 350);
 
-  return window.addEventListener("load", (() => FastClick.attach(document.body)), false);
+  // return window.addEventListener("load", (() => FastClick.attach(document.body)), false);
 }
 );
