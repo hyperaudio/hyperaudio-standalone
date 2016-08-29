@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- {{> init }} -->
+<!-- **> init ** -->
 <html lang="en" class="english">
 <head>
 <meta charset="utf-8">
@@ -20,9 +20,9 @@
 
 <script src="assets/scripts/vendorq1.js"></script>
 </head>
-<!-- {{> init }} -->
-<body class="tpl--pad">
-<!-- {{> aside-left}} -->
+<!-- **> init ** -->
+<body class="tpl--pad tpl--compact">
+<!-- **> aside-left** -->
 <aside id="page-side--left" class="page-side page-side--left moved" data-side-push="right" data-side-state="inactive">
   <div class="page-side__body">
     <div id="page-menu" class="menu" data-active-pane="root">
@@ -42,15 +42,6 @@
             <li class="menu__item">
               <a class="menu__link toggleMenuPane" data-target-menu-pane-id="documentaries">{{L.aside-left__films}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="themes">{{L.aside-left__glossary}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="people">{{L.aside-left__people}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link toggleMenuPane" data-target-menu-pane-id="quizzes">{{L.aside-left__quizzes}} <span class="menu__link-icon"><i class="icon-point-right"></i></span></a>
-            </li>
           </ol>
           <div class="menu__push"></div>
         </div>
@@ -69,9 +60,9 @@
           <p class="headline__text">{{L.aside-left__filmsintro}}</p>
         </div>
         <ol class="menu__list">
-        {{#each nav.films}}
-          <li class="menu__item"><a class="menu__link" href="{{../path}}films/{{file}}/">{{label}}</a></li>
-        {{/each}}
+        <!-- **#each nav.films** -->
+          <li class="menu__item"><a class="menu__link" href="XXX">XXX</a></li>
+        <!-- **/each** -->
         </ol>
       </div>
       <div id="menu__pane--themes" class="menu__pane moved--right">
@@ -80,40 +71,9 @@
           <p class="headline__text">{{L.aside-left__glossaryintro}}</p>
         </div>
         <ol class="menu__list">
-        {{#each nav.glossary}}
-          <li class="menu__item"><a class="menu__link" href="{{../path}}definitions/{{file}}/">{{label}}</a></li>
-        {{/each}}
-        </ol>
-      </div>
-      <div id="menu__pane--maps" class="menu__pane moved--right">
-        <div class="headline" style="background-image: url('assets/images/covers/homeslides/slide-maps.jpg')">
-          <h2 class="headline__title">{{L.aside-left__maps}}</h2>
-          <p class="headline__text">{{L.aside-left__mapsintro}}</p>
-        </div>
-        <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{../path}}vanishing-palestine/">{{L.maps-vanishing-palestine}}</a></li>
-        </ol>
-      </div>
-      <div id="menu__pane--people" class="menu__pane moved--right">
-        <div class="headline" style="background-image: url('assets/images/covers/homeslides/slide-people.jpg')">
-          <h2 class="headline__title">{{L.aside-left__people}}</h2>
-          <p class="headline__text">{{L.aside-left__peopleintro}}</p>
-        </div>
-        <ol class="menu__list">
-        {{#each witnesses}}
-          <li class="menu__item"><a class="menu__link" href="{{../path}}search/?search={{name}}">{{name}} <span class="menu__link-suffix">{{title}}</span></a></li>
-        {{/each}}
-        </ol>
-      </div>
-      <div id="menu__pane--quizzes" class="menu__pane moved--right">
-        <div class="headline" style="background-image: url('assets/images/covers/homeslides/slide-quizzes.jpg')">
-          <h2 class="headline__title">{{L.aside-left__quizzes}}</h2>
-          <p class="headline__text">{{L.aside-left__quizzesintro}}</p>
-        </div>
-        <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/beginner/">{{L.aside-left__quizzes-beginner}}</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/advanced/">{{L.aside-left__quizzes-advanced}}</a></li>
-          <li class="menu__item"><a class="menu__link" href="{{path}}quizzes/expert/">{{L.aside-left__quizzes-expert}}</a></li>
+        <!-- **#each nav.glossary** -->
+          <li class="menu__item"><a class="menu__link" href="YYY">YYY</a></li>
+        <!-- **/each** -->
         </ol>
       </div>
       <a id="menu-reset" class="menu-reset toggleMenuPane moved" data-target-menu-pane-id="root" aria-hidden="false">
@@ -124,29 +84,10 @@
     </div>
   </div>
 </aside>
-<!-- {{> aside-left}} -->
+<!-- **> aside-left** -->
 <header class="page-head" id="page-head" data-head-state="altered" data-head-state-persist="true">
-<!-- {{> header }} -->
-<h1 class="page-head__brandmark"><a href="{{path}}" title="Home Page" aria-hidden="true">{{L.header__sitename}}</a></h1>
-<div class="page-head__menu-item--first">
-  <a class="button toggleSide" data-side-target="left" aria-hidden="true"><i class="icon-menu"></i> <span class="hide">{{L.header__menu}}</span></a>
-</div>
-<div class="page-head__menu-item--last">
-  <span class="drop" data-drop-position="bottom center">
-    <a class="drop__toggle button">
-      <i class="icon-share"></i>
-    </a>
-    <span class="drop__content">
-      <a href='https://www.facebook.com/sharer/sharer.php?u=UURRLL' target='_blank' class='drop__button jsSetSharePath'><i class='icon-facebook'></i></a>
-      <a href='https://twitter.com/home?status=UURRLL' target='_blank' class='drop__button jsSetSharePath'><i class='icon-twitter'></i></a>
-      <a href='https://plus.google.com/share?url=UURRLL' target='_blank' class='drop__button jsSetSharePath'><i class='icon-googleplus'></i></a>
-      <a href="mailto:?subject={{L.mailto-subject}}&body=Shared%20from%20Palestine%20Remix%20UURRLL" class='drop__button jsSetSharePath'><i class='icon-mail'></i></a>
-    </span>
-  </span>
-  <a class="button togglePanel" data-panel-target="language">{{L.header__current-lang}}</a>
-  <a class="button toggleSide" data-side-target="right" aria-hidden="true"><i class="icon-share"></i> <span class="hide">{{L.header__share}}</span></a>
-</div>
-<!-- {{> header }} -->
+<!-- **> header ** -->
+<!-- **> header ** -->
 </header>
 <div id="page-body" class="page-body">
   <div class="HAP HAP--pad">
@@ -215,9 +156,9 @@
     </div>
   </div>
 </div>
-{{> aside-right}}
+<!-- **> aside-right** -->
 <div id="page-overlay" class="page-overlay toggleSide togglePanel" data-overlay-state="cover-none" data-panel-target="all" data-side-target="all"></div>
-<!-- {{> panel-language}} -->
+<!-- **> panel-language** -->
 <div id="panel--language" class="panel" data-panel-state="inactive">
   <div class="panel__head">
     <h2 class="panel__title">{{L.panel-lang__change-lang}}</h2>
@@ -234,8 +175,8 @@
   </div>
   <a class="panel__action--sec togglePanel" data-panel-target="language">{{L.panel-lang__cancel}}</a>
 </div>
-<!-- {{> panel-language}} -->
-<!-- {{> panel-share}} -->
+<!-- **> panel-language** -->
+<!-- **> panel-share** -->
 <div id="panel--share" class="panel" data-panel-state="inactive">
   <div class="panel__head">
     <h2 class="panel__title">{{L.panel-share__share-remix}}</h2>
@@ -272,7 +213,7 @@
   </div>
   <a class="panel__action--sec togglePanel" data-panel-target="share">{{L.panel-share__close}}</a>
 </div>
-<!-- {{> panel-share}} -->
+<!-- **> panel-share** -->
 <script src="assets/scripts/vendorq2.js"></script>
 <script src="assets/scripts/aj.js"></script>
 <script src="assets/scripts/ports.js"></script>
