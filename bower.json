@@ -21,6 +21,8 @@
     "margarine": "https://github.com/piotrf/margarine.git#~1.0.21",
     "popcorn-js": "~1.5.10",
     "xregexp": "3.1.1",
+    "lunr.js": "~0.5.6",
+    "lunr-languages": "git://github.com/AJInteractive/lunr-languages.git#5ff618aec749dadfe3175a7320583e029cc443ed",
     "d3-queue": "3.0.3"
   }
 }

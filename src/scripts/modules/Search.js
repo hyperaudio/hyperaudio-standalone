@@ -1,11 +1,11 @@
 // Load search index
 let index = undefined; // we will load the index in here
 let titles = {}; // we will load the titles in here
-let searchPath = "data/search";
+let searchPath = "data/search/";
 // searchPath = "http://10.24.21.20/~laurian/PALESTINE%20PROJECT/DATA/MEDIA/SEARCH"
 
 let request0 = new XMLHttpRequest();
-request0.open("GET", searchPath + "/html/" + L + "/list.json", true);
+request0.open("GET", TRANSCRIPTS + "list.json", true);
 request0.onreadystatechange = function() {
   if (this.readyState === 4) {
     if (this.status >= 200 && this.status < 400) {
@@ -18,7 +18,7 @@ request0.onreadystatechange = function() {
       }
 
       let request = new XMLHttpRequest();
-      request.open("GET", searchPath + "/data/" + L + "/index.json", true);
+      request.open("GET", searchPath + "index.json", true);
       request.onreadystatechange = function() {
         if (this.readyState === 4) {
           if (this.status >= 200 && this.status < 400) {

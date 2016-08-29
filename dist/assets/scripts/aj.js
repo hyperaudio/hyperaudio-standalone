@@ -297,7 +297,7 @@ let renderMultiples = function() {
           return onMultipleSelect(el, category, key);
         }
         )
-
+      
       );
     }
   }
@@ -451,11 +451,11 @@ let panelTogglers = document.querySelectorAll(".togglePanel");
 // Load search index
 let index = undefined; // we will load the index in here
 let titles = {}; // we will load the titles in here
-let searchPath = "data/search";
+let searchPath = "data/search/";
 // searchPath = "http://10.24.21.20/~laurian/PALESTINE%20PROJECT/DATA/MEDIA/SEARCH"
 
 let request0 = new XMLHttpRequest();
-request0.open("GET", searchPath + "/html/" + L + "/list.json", true);
+request0.open("GET", TRANSCRIPTS + "list.json", true);
 request0.onreadystatechange = function() {
   if (this.readyState === 4) {
     if (this.status >= 200 && this.status < 400) {
@@ -468,7 +468,7 @@ request0.onreadystatechange = function() {
       }
 
       let request = new XMLHttpRequest();
-      request.open("GET", searchPath + "/data/" + L + "/index.json", true);
+      request.open("GET", searchPath + "index.json", true);
       request.onreadystatechange = function() {
         if (this.readyState === 4) {
           if (this.status >= 200 && this.status < 400) {
@@ -549,7 +549,7 @@ var doSearch = function() {
         el.innerHTML = `<li id=r${id} class="listing__item"><div class="tile"><div class="tile__body"><p class="tile__transcript">loading…</p><p class="tile__title"><a href="#/${idParts[0]}/${idParts[2]}">${title}</a></p></div></div></li>`;
         // el.querySelector('a').addEventListener('click', function() {});
       } else {
-        // el.innerHTML = `<li id=r${id} class="listing__item"><a class="tile" href="../remix/view/#/${idParts[0]}/${idParts[2]}"><div class="thumbnail tile__thumbnail"><img src="http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/${idParts[0]}/${L}/p/img${second}.jpg" class="thumbnail__image"></div><div class="tile__body"><p class="tile__transcript">loading…</p><p class="tile__title">${title}</p></div></a></li>`;
+        el.innerHTML = `<li id=r${id} class="listing__item"><a class="tile" href="../remix/view/#/${idParts[0]}/${idParts[2]}"><div class="thumbnail tile__thumbnail"><img src="http://interactive.aljazeera.com/aje/PalestineRemix/transcripts/images/${idParts[0]}/${L}/p/img${second}.jpg" class="thumbnail__image"></div><div class="tile__body"><p class="tile__transcript">loading…</p><p class="tile__title">${title}</p></div></a></li>`;
       }
 
       let result = el.children[0];
