@@ -7,9 +7,6 @@ if (window.parent !== window) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-
-  // console.log "السلام عليكم"
-
   renderDrops();
   renderFoldCards();
   renderFoldSwiper();

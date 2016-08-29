@@ -25,14 +25,14 @@ var AJHAWrapper = {
       mobileDevice = true;
     }
 
-    if (mobileDevice == false) { // add the Remix icon and link
-      // var body = document.getElementsByTagName('body');
-      // body[0].classList.add('tpl--compact');
-      var remixButton = document.getElementById('HAP-remix-helper');
-      if (remixButton) {
-        remixButton.href = "../create/"+window.top.location.hash;
-      }
-    }
+    // if (mobileDevice == false) { // add the Remix icon and link
+    //   // var body = document.getElementsByTagName('body');
+    //   // body[0].classList.add('tpl--compact');
+    //   var remixButton = document.getElementById('HAP-remix-helper');
+    //   if (remixButton) {
+    //     remixButton.href = "../create/"+window.top.location.hash;
+    //   }
+    // }
 
     function CreateMSXMLDocumentObject () {
       if (typeof (ActiveXObject) != "undefined") {
