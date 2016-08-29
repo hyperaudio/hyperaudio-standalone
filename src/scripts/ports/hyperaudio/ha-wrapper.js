@@ -166,8 +166,11 @@ var AJHAWrapper = {
             var section = output.childNodes[index-1];
             section.innerHTML += element2;
 
-            var ytid = AJHAVideoInfo[parseInt(tid)].split(',')[0];
-            var mp4id = AJHAVideoInfo[parseInt(tid)].split(',')[1];
+            var ytid = null; // AJHAVideoInfo[parseInt(tid)].split(',')[0];
+            var mp4id = null; //AJHAVideoInfo[parseInt(tid)].split(',')[1];
+            for (var v = 0; v < LIST.length; v++) {
+              if (LIST[v]._id == parseInt(tid)) mp4id = "http://videogrep.com" + LIST[v].url;
+            }
 
             var attribute = document.createAttribute('data-unit');
             attribute.value = "0.001";
@@ -256,12 +259,16 @@ var AJHAWrapper = {
     function buildVideo(params) {
       longformId = params[1];
 
-      if(AJHAVideoInfo[longformId]) {
+      if(true || AJHAVideoInfo[longformId]) {
 
-        if (canPlayMP4) {
-          longformMedia = AJHAVideoInfo[longformId].split(',')[1];
+        if (true || canPlayMP4) {
+          longformMedia = null; // AJHAVideoInfo[longformId].split(',')[1];
+          for (var v = 0; v < LIST.length; v++) {
+            if (LIST[v]._id == parseInt(longformId)) longformMedia = "http://videogrep.com" + LIST[v].url;
+          }
+          // console.log(longformId, longformMedia);
         } else {
-          longformMedia = AJHAVideoInfo[longformId].split(',')[0];
+          // longformMedia = AJHAVideoInfo[longformId].split(',')[0];
         }
 
         // check for timing parameters which means it's been shared or jumped to
@@ -392,6 +399,18 @@ var AJHAWrapper = {
 
           // Hyperaudio Viewer Set Up
 
+          console.log({
+            viewer: true,
+            origin: 'Viewer',
+            editBtn: '#edit',
+            shareBtn: '#share',
+            mixHTML : mixHTML,
+            mixTitle : mixTitle,
+            longformId : longformId,
+            longformMedia : longformMedia,
+            transcripts: transcriptsPath,
+            mp4Compat: canPlayMP4
+          });
           HAP.init({
             viewer: true,
             origin: 'Viewer',
@@ -475,6 +494,14 @@ var AJHAWrapper = {
 
           // Hyperaudio Pad Set Up
 
+          console.log({
+            mixHTML : mixHTML,
+            mixTitle : mixTitle,
+            longformId : longformId,
+            longformMedia : longformMedia,
+            transcripts: transcriptsPath,
+            mp4Compat: canPlayMP4
+          });
           HAP.init({
             mixHTML : mixHTML,
             mixTitle : mixTitle,
@@ -569,10 +596,14 @@ var AJHAWrapper = {
             if (canPlayMP4) {
               var videoId = null;
 
-              for (var j=0;  j < AJHAVideoInfo.length; j++) {
-                if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
-                    videoId = j;
-                }
+              // for (var j=0;  j < AJHAVideoInfo.length; j++) {
+              //   if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
+              //       videoId = j;
+              //   }
+              // }
+
+              for (var v = 0; v < LIST.length; v++) {
+                if ("http://videogrep.com" + LIST[v].url === videoUrl) videoId = LIST[v]._id;
               }
 
               if (videoId == null) {
@@ -581,28 +612,31 @@ var AJHAWrapper = {
               }
 
               var newVideoUrl;
-
-              if (mobileDevice) {
-
-                if (HA.hasClass(this,'HAP-player-HD--active')) {
-                  newVideoUrl = AJHAVideoInfo[videoId].split(',')[1];
-                  HA.removeClass(this,'HAP-player-HD--active');
-                } else {
-                  newVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
-                  HA.addClass(this,'HAP-player-HD--active');
-                }
-
-              } else {
-
-                if (HA.hasClass(this,'HAP-player-HD--active')) {
-                  newVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
-                  HA.removeClass(this,'HAP-player-HD--active');
-                } else {
-                  newVideoUrl = AJHAVideoInfo[videoId].split(',')[3];
-                  HA.addClass(this,'HAP-player-HD--active');
-                }
-
+              for (var v = 0; v < LIST.length; v++) {
+                if (LIST[v]._id === parseInt(videoId)) newVideoUrl = "http://videogrep.com" + LIST[v].url;
               }
+
+              // if (mobileDevice) {
+              //
+              //   if (HA.hasClass(this,'HAP-player-HD--active')) {
+              //     newVideoUrl = AJHAVideoInfo[videoId].split(',')[1];
+              //     HA.removeClass(this,'HAP-player-HD--active');
+              //   } else {
+              //     newVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
+              //     HA.addClass(this,'HAP-player-HD--active');
+              //   }
+              //
+              // } else {
+
+                // if (HA.hasClass(this,'HAP-player-HD--active')) {
+                //   newVideoUrl = AJHAVideoInfo[videoId].split(',')[2];
+                //   HA.removeClass(this,'HAP-player-HD--active');
+                // } else {
+                //   newVideoUrl = AJHAVideoInfo[videoId].split(',')[3];
+                //   HA.addClass(this,'HAP-player-HD--active');
+                // }
+
+              // }
 
               if (cachebuster) {
                 newVideoUrl += "&" + cachebuster;
@@ -837,9 +871,12 @@ var AJHAWrapper = {
           if (isNaN(longformId) == false)
           {
             if (canPlayMP4) {
-              longformMedia = AJHAVideoInfo[longformId].split(',')[1];
+              longformMedia = null; // AJHAVideoInfo[longformId].split(',')[1];
+              for (var v = 0; v < LIST.length; v++) {
+                if (LIST[v]._id == parseInt(longformId)) longformMedia = "http://videogrep.com" + LIST[v].url;
+              }
             } else {
-              longformMedia = AJHAVideoInfo[longformId].split(',')[0];
+              // longformMedia = AJHAVideoInfo[longformId].split(',')[0];
             }
             HAP.options.longformId = longformId;
             HAP.options.longformMedia = longformMedia;
@@ -926,10 +963,14 @@ var AJHAWrapper = {
                 videoUrl = sections[i].getAttribute('data-yt');
               }
 
-              for ( var j = 0; j < AJHAVideoInfo.length; j++ ) {
-                if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
-                  videoId = j;
-                }
+              // for ( var j = 0; j < AJHAVideoInfo.length; j++ ) {
+              //   if (AJHAVideoInfo[j].indexOf(videoUrl) >= 0) {
+              //     videoId = j;
+              //   }
+              // }
+
+              for (var v = 0; v < LIST.length; v++) {
+                if ("http://videogrep.com" + LIST[v].url === videoUrl) videoId = LIST[v]._id;
               }
 
               newUrlHash += "/" + videoId + ":" + sTime + "," + duration;

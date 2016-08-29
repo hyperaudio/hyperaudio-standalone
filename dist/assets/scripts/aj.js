@@ -460,6 +460,7 @@ request0.onreadystatechange = function() {
   if (this.readyState === 4) {
     if (this.status >= 200 && this.status < 400) {
       let _titles = JSON.parse(this.responseText);
+      window.LIST = _titles;
       // console.log(_titles)
       let i = 0;
       while (i < _titles.length) {

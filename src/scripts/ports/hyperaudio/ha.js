@@ -332,24 +332,27 @@ var hyperaudio = (function() {
 
     hasClass: function(e, c) {
       if ( !e ) return false;
-
-      var re = new RegExp("(^|\\s)" + c + "(\\s|$)");
-      return re.test(e.className);
+      //
+      // var re = new RegExp("(^|\\s)" + c + "(\\s|$)");
+      // return re.test(e.className);
+      return e.classList.contains(c);
     },
     addClass: function(e, c) {
       if ( this.hasClass(e, c) ) {
         return;
       }
 
-      e.className += ' ' + c;
+      // e.className += ' ' + c;
+      e.classList.add(c);
     },
     removeClass: function (e, c) {
       if ( !this.hasClass(e, c) ) {
         return;
       }
 
-      var re = new RegExp("(^|\\s)" + c + "(\\s|$)", 'g');
-      e.className = e.className.replace(re, ' ').replace(/\s{2,}/g, ' ');
+      // var re = new RegExp("(^|\\s)" + c + "(\\s|$)", 'g');
+      // e.className = e.className.replace(re, ' ').replace(/\s{2,}/g, ' ');
+      e.classList.remove(c);
     },
     toggleClass: function (e, c) {
       if ( this.hasClass(e, c) ) {
@@ -360,9 +363,10 @@ var hyperaudio = (function() {
     },
     empty: function(el) {
       // Empties the element... Possibly better than el.innerHTML = '';
-      while(el && el.firstChild) {
-        el.removeChild(el.firstChild);
-      }
+      // while(el && el.firstChild) {
+      //   el.removeChild(el.firstChild);
+      // }
+      el.innerHTML = '';
     }
 
   });
@@ -1693,72 +1697,174 @@ var api = (function(hyperaudio) {
       var transcriptObj;
 
       if (HAP.options.longformId) {
-        xhr({
-          url: HAP.options.transcripts + HAP.options.longformId + ".html",
-          complete: function(event) {
-            var html = this.responseText;
-            var parser = new DOMParser();
-            var doc = parser.parseFromString(html, "text/html");
-            var label = doc.getElementsByTagName('header')[0].innerHTML;
+        if (! window.LIST) {
+          xhr({
+            url: HAP.options.transcripts + HAP.options.longformId + ".html",
+            complete: function(event) {
+              var html = this.responseText;
+              // fix if json?
 
-            transcriptObj = {
-              _id: "",
-              label: label,
-              type: "html",
-              owner: "",
-              meta: {
-                status: null,
-                state: 2,
-                mod9: {
-                  jobid: ""
-                }
-              },
-              content: this.responseText,
-              media: {
+              //
+              var parser = new DOMParser();
+              var doc = parser.parseFromString(html, "text/html");
+              var label = doc.getElementsByTagName('header')[0].innerHTML;
+
+              transcriptObj = {
                 _id: "",
-                label: "",
-                desc: "",
-                type: "video",
+                label: label,
+                type: "html",
                 owner: "",
-                namespace: null,
-                meta: "",
-                channel: null,
-                tags: [],
-                modified : "",
-                created : "",
-              },
-              status: "",
-              modified: "",
-              created: ""
-            };
+                meta: {
+                  status: null,
+                  state: 2,
+                  mod9: {
+                    jobid: ""
+                  }
+                },
+                content: this.responseText,
+                media: {
+                  _id: "",
+                  label: "",
+                  desc: "",
+                  type: "video",
+                  owner: "",
+                  namespace: null,
+                  meta: "",
+                  channel: null,
+                  tags: [],
+                  modified : "",
+                  created : "",
+                },
+                status: "",
+                modified: "",
+                created: ""
+              };
 
-            if (HAP.options.mp4Compat) {
-              transcriptObj.media.source = {
-                mp4: {
-                  type: "video/mp4",
-                  url: HAP.options.longformMedia,
-                  thumbnail: ""
-                }
-              };
-            } else {
-              transcriptObj.media.source = {
-                youtube: {
-                  type: "video/youtube",
-                  url: HAP.options.longformMedia,
-                  thumbnail: ""
-                }
-              };
+              if (HAP.options.mp4Compat) {
+                transcriptObj.media.source = {
+                  mp4: {
+                    type: "video/mp4",
+                    url: HAP.options.longformMedia,
+                    thumbnail: ""
+                  }
+                };
+              } else {
+                transcriptObj.media.source = {
+                  youtube: {
+                    type: "video/youtube",
+                    url: HAP.options.longformMedia,
+                    thumbnail: ""
+                  }
+                };
+              }
+
+              //var json = JSON.parse(this.responseText);
+              self.transcript = transcriptObj;
+              self.callback(callback, true);
+            },
+            error: function(event) {
+              console.log(event);
+              self.error = true;
+              self.callback(callback, false);
             }
+          });
+        } else {
+          // LIST
+          xhr({
+            url: "data/transcripts/" + HAP.options.longformId + ".json",
+            complete: function(event) {
+              var json = JSON.parse(this.responseText);
+              // fix if json?
+              // console.log(json);
+              var html = "<article><header></header><section><header></header><p>";
+              var segments = [];
 
-            //var json = JSON.parse(this.responseText);
-            self.transcript = transcriptObj;
-            self.callback(callback, true);
-          },
-          error: function(event) {
-            self.error = true;
-            self.callback(callback, false);
-          }
-        });
+              for (var p = 0; p < json.length; p++) {
+                // console.log(json[p]);
+                var words = [];
+                for (var w = 0; w < json[p].words.length; w++) {
+                  words.push([
+                    '<a data-m="',
+                    json[p].words[w].start * 1000,
+                    '">',
+                    json[p].words[w].word,
+                    ' </a>'
+                  ].join(''));
+                }
+                segments.push(words.join(''));
+              }
+
+              html += segments.join('</p><p>') + '</p>';
+              // console.log(html);
+              //
+              var parser = new DOMParser();
+              var doc = parser.parseFromString(html, "text/html");
+              var label = doc.getElementsByTagName('header')[0].innerHTML;
+
+              transcriptObj = {
+                _id: "",
+                label: label,
+                type: "html",
+                owner: "",
+                meta: {
+                  status: null,
+                  state: 2,
+                  mod9: {
+                    jobid: ""
+                  }
+                },
+                content: html,
+                media: {
+                  _id: "",
+                  label: "",
+                  desc: "",
+                  type: "video",
+                  owner: "",
+                  namespace: null,
+                  meta: "",
+                  channel: null,
+                  tags: [],
+                  modified : "",
+                  created : "",
+                },
+                status: "",
+                modified: "",
+                created: ""
+              };
+
+              for (var v = 0; v < LIST.length; v++) {
+                if (v._id === parseInt(HAP.options.longformId)) HAP.options.longformMedia = "http://videogrep.com" + LIST[v].url;
+              }
+
+              // if (HAP.options.mp4Compat) {
+                transcriptObj.media.source = {
+                  mp4: {
+                    type: "video/mp4",
+                    url: HAP.options.longformMedia,
+                    thumbnail: ""
+                  }
+                };
+              // } else {
+              //   transcriptObj.media.source = {
+              //     youtube: {
+              //       type: "video/youtube",
+              //       url: HAP.options.longformMedia,
+              //       thumbnail: ""
+              //     }
+              //   };
+              // }
+
+              self.transcript = transcriptObj;
+              self.callback(callback, true);
+            },
+            error: function(event) {
+              console.log(event);
+              self.error = true;
+              self.callback(callback, false);
+            }
+          });
+          // LIST
+        }
       } else {
         self.callback(callback, false);
       }
@@ -2941,6 +3047,7 @@ var Transcript = (function(document, hyperaudio) {
 
         if(this.options.id) {
           hyperaudio.api.getTranscript(this.options.id, function(success) {
+            // console.log('getTranscript', self.target);
             if(success) {
               self.target.innerHTML = this.transcript.content;
               self._trigger(hyperaudio.event.load, {msg: 'Loaded "' + self.options.id + '"'});
